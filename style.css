@@ -1,208 +1,436 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Karumbé - Dicionário Guarani Nhandewa</title>
+html {
+    min-height: 100%;
+}
 
-    <!-- CSS PRINCIPAL -->
-    <link rel="stylesheet" href="./style.css">
+/* =====================================================
+   FUNDO DO SITE COM GRAFISMO DE TARTARUGA
+===================================================== */
 
-    <!-- PWA -->
-    <link rel="manifest" href="./manifest.json">
+body {
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: #0b241c;
+    /* Grafismo de tartaruga em SVG transparente + Degradê */
+    background-image: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.08'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E"),
+        radial-gradient(
+            ellipse at 50% 5%,
+            #507b5d 0%,
+            #3c684f 18%,
+            #294f3e 40%,
+            #17382d 65%,
+            #0b241c 100%
+        );
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    background-size: 550px auto, cover;
+    background-attachment: fixed;
+}
 
-    <!-- COR DA BARRA DO APLICATIVO -->
-    <meta name="theme-color" content="#112822">
+/* =====================================================
+   CONTAINER E CABEÇALHO BASE (CELULAR)
+===================================================== */
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Karumbé">
-</head>
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 24px 20px 35px;
+    transition: max-width 0.3s ease;
+}
 
-<body>
+.app-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 20px;
+}
 
-    <div class="app-container">
+.header-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        <!-- CABEÇALHO -->
-        <header class="app-header">
-            <div class="header-info">
-                <img src="./assets/svg/tartaruga.png" alt="Karumbé" class="logo-tartaruga">
-                <div class="header-titulos">
-                    <h1 class="titulo-projeto">PROJETO KARUMBÉ</h1>
-                    <h2 class="titulo-principal">DICIONÁRIO GUARANI NHANDEWA</h2>
-                </div>
-            </div>
+.logo-tartaruga {
+    width: 260px;
+    height: 170px;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 2px;
+    filter: drop-shadow(0 8px 10px rgba(8, 35, 27, 0.25));
+}
 
-            <button class="btn-download" type="button" title="Baixar App">📥</button>
-        </header>
+.header-titulos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        <!-- BUSCA -->
-        <section class="barra-busca-wrapper">
-            <span class="icone-busca">🔍</span>
-            <input type="text" id="busca" placeholder="Eheka apy..." autocomplete="off" oninput="executarBusca(this.value)">
-        </section>
+.titulo-projeto {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.45);
+}
 
-        <!-- CATEGORIAS -->
-        <main id="lista" class="lista-vertical">
+.titulo-principal {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
 
-            <!-- VERBOS -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Verbos')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/verbos.png" class="icone-cat" alt="Verbos">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">VERBOS</span>
-                    <small class="cat-sub">Djapo</small>
-                </div>
-            </button>
+.btn-download {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
 
-            <!-- EXPRESSÕES -->
-            <button class="card-categoria cat-laranja" type="button" onclick="mostrarCategoria('Expressões')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/expressões.png" class="icone-cat" alt="Expressões">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">EXPRESSÕES</span>
-                    <small class="cat-sub">Nhanderueté</small>
-                </div>
-            </button>
+.btn-download:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.05);
+}
 
-            <!-- NATUREZA -->
-            <button class="card-categoria cat-azul" type="button" onclick="mostrarCategoria('Natureza')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/natureza.png" class="icone-cat" alt="Natureza">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">NATUREZA</span>
-                    <small class="cat-sub">Ywyrá</small>
-                </div>
-            </button>
+/* =====================================================
+   BUSCA
+===================================================== */
 
-            <!-- FAMÍLIA -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Família')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/familia.png" class="icone-cat" alt="Família">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">FAMÍLIA</span>
-                    <small class="cat-sub">Txeru</small>
-                </div>
-            </button>
+.barra-busca-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 6px 0 26px;
+}
 
-            <!-- PÓS-POSIÇÕES -->
-            <button class="card-categoria cat-laranja" type="button" onclick="mostrarCategoria('Pós-posições')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/posposicoes.png" class="icone-cat" alt="Pós-posições">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">PÓS-POSIÇÕES</span>
-                    <small class="cat-sub">Tekoá-py</small>
-                </div>
-            </button>
+.icone-busca {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    opacity: 0.72;
+    pointer-events: none;
+    z-index: 2;
+}
 
-            <!-- ANIMAIS -->
-            <button class="card-categoria cat-azul" type="button" onclick="mostrarCategoria('Animais')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/animais.png" class="icone-cat" alt="Animais">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">ANIMAIS</span>
-                    <small class="cat-sub">Djagwareté</small>
-                </div>
-            </button>
+#busca {
+    width: 100%;
+    height: 54px;
+    padding: 0 20px 0 55px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
 
-            <!-- CORPO HUMANO -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Corpo humano')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/corpo humano.png" class="icone-cat" alt="Corpo Humano">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">CORPO HUMANO</span>
-                    <small class="cat-sub">Akã</small>
-                </div>
-            </button>
+#busca:focus {
+    border-color: rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.14);
+}
 
-            <!-- LOCALIZAÇÃO -->
-            <button class="card-categoria cat-laranja" type="button" onclick="mostrarCategoria('Localização')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/localizacao.png" class="icone-cat" alt="Localização">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">LOCALIZAÇÃO</span>
-                    <small class="cat-sub">Nhandé Kupé-Regwá</small>
-                </div>
-            </button>
+#busca::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
 
-            <!-- OBJETOS -->
-            <button class="card-categoria cat-azul" type="button" onclick="mostrarCategoria('Objetos')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/objetos.png" class="icone-cat" alt="Objetos">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">OBJETOS</span>
-                    <small class="cat-sub">Adjaká</small>
-                </div>
-            </button>
+/* =====================================================
+   CATEGORIAS E CARTÕES (GRADE MOBILE - 2 COLUNAS)
+===================================================== */
 
-            <!-- PRONOMES -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Pronomes')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/pronomes.png" class="icone-cat" alt="Pronomes">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">PRONOMES</span>
-                    <small class="cat-sub">Txeé</small>
-                </div>
-            </button>
+.lista-vertical {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
 
-        </main>
+.card-categoria {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    cursor: pointer;
+    text-align: left;
+    color: #ffffff;
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.30);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-        <!-- APOIO INSTITUCIONAL -->
-        <footer class="secao-apoio">
-            <span class="titulo-apoio">AS INSTITUIÇÕES APÓIAM ESTA IDEIA:</span>
+.card-categoria:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 28px rgba(0, 0, 0, 0.40);
+}
 
-            <div class="logos-apoio">
-                <div class="logo-apoio-item">
-                    <img src="./assets/logos/escola karugwa.png" alt="Escola Karugwá">
-                    <span>E.E.I.ALDEIA KARUGWÁ PEI</span>
-                </div>
+.card-categoria:active {
+    transform: scale(0.98);
+}
 
-                <div class="logo-apoio-item">
-                    <img src="./assets/logos/tekoa-karugwa.png" alt="Tekoa Karugwa">
-                    <span>TEKOÁ KARUGWÁ</span>
-                </div>
+/* CORES DAS CATEGORIAS */
 
-                <div class="logo-apoio-item">
-                    <img src="./assets/logos/associacao curucaca.jpg" alt="Associação Curucaca">
-                    <span>ASSOCIAÇÃO CURUCACA</span>
-                </div>
-            </div>
-        </footer>
+.cat-verde { background: #28583e; }
+.cat-laranja { background: #a95527; }
+.cat-azul { background: #285f78; }
 
-    </div>
+/* IMAGENS DAS CATEGORIAS */
 
-    <!-- SCRIPTS DO PROJETO -->
-    <script src="./dicionario.js"></script>
-    <script src="./mapa.js"></script>
-    <script src="./script.js"></script>
+.icone-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background: transparent;
+}
 
-    <!-- REGISTRO DO APLICATIVO -->
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function () {
-                navigator.serviceWorker
-                    .register("./service-worker.js")
-                    .then(function () {
-                        console.log("Projeto Karumbé: aplicativo preparado!");
-                    })
-                    .catch(function (erro) {
-                        console.error("Erro ao registrar o aplicativo:", erro);
-                    });
-            });
-        }
-    </script>
+.icone-cat {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.72;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
 
-</body>
+.card-categoria:hover .icone-cat {
+    transform: scale(1.05);
+    opacity: 0.86;
+}
 
-</html>
+.icone-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.02) 10%,
+        rgba(0, 0, 0, 0.12) 42%,
+        rgba(0, 0, 0, 0.86) 100%
+    );
+}
+
+.cat-textos {
+    position: absolute;
+    z-index: 5;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.70);
+}
+
+.cat-nome {
+    font-size: 22px;
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.cat-sub {
+    margin-top: 4px;
+    font-size: 13px;
+    line-height: 1.2;
+    opacity: 0.88;
+}
+
+/* =====================================================
+   BOTÃO VOLTAR E RESULTADOS DO DICIONÁRIO
+===================================================== */
+
+.voltar {
+    grid-column: 1 / -1;
+    width: fit-content;
+    padding: 11px 18px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.card-pronuncia {
+    grid-column: 1 / -1;
+    background: rgba(25, 59, 49, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 22px;
+    margin-bottom: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.palavra-titulo {
+    font-size: 28px;
+    color: #5be0ac;
+}
+
+.secao-bloco {
+    margin-top: 15px;
+}
+
+.secao-titulo {
+    font-size: 11px;
+    letter-spacing: 1px;
+    opacity: 0.65;
+}
+
+.btn-play {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #4cd9a4;
+    color: #12352a;
+    cursor: pointer;
+}
+
+/* =====================================================
+   APOIO INSTITUCIONAL (RODAPÉ)
+===================================================== */
+
+.secao-apoio {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 15px 22px;
+    background: rgba(255, 255, 255, 0.96);
+    color: #17352b;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+}
+
+.titulo-apoio {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #28583e;
+}
+
+.logos-apoio {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.logo-apoio-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.logo-apoio-item img {
+    max-width: 80px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.logo-apoio-item img:hover {
+    transform: scale(1.05);
+}
+
+.logo-apoio-item span {
+    font-size: 10px;
+    font-weight: 700;
+    color: #28583e;
+    position: relative;
+    z-index: 5;
+}
+
+.logo-apoio-item img[alt="Associação Curucaca"] {
+    max-width: 100px;
+    height: 85px;
+    transform: scale(1.4);
+    transform-origin: center center;
+}
+
+/* =====================================================
+   ADAPTAÇÃO AUTOMÁTICA PARA COMPUTADOR (DESKTOP)
+===================================================== */
+
+@media (min-width: 768px) {
+
+    /* Expande e centraliza o aplicativo na tela do monitor */
+    .app-container {
+        max-width: 900px;
+        padding: 40px 30px;
+    }
+
+    /* Grade em 4 colunas no computador */
+    .lista-vertical {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .card-categoria {
+        height: 200px;
+    }
+
+    .barra-busca-wrapper {
+        margin: 15px 0 32px;
+    }
+
+    #busca {
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .titulo-projeto {
+        font-size: 42px;
+    }
+
+    .titulo-principal {
+        font-size: 18px;
+    }
+
+    /* Aumenta a tartaruga do fundo no computador */
+    body {
+        background-size: 750px auto, cover;
+    }
+}
