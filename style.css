@@ -173,19 +173,12 @@ body {
 .link-rodape:hover, .link-rodape.ativo {
     color: #5be0ac;
 }
-
-/* RESPONSIVIDADE PARA CELULARES */
-@media (max-width: 480px) {
-    .grid-categorias {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-/* Configuração limpa para 5 colunas no computador */
 @media (min-width: 1024px) {
     #lista, .lista-vertical {
         display: grid !important;
         grid-template-columns: repeat(5, 1fr) !important;
-        gap: 15px !important;
+        gap: 12px !important;
+        max-width: 100% !important;
     }
 
     #lista .card-categoria {
@@ -193,13 +186,26 @@ body {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
+        padding: 10px !important;
+        text-align: center !important;
         box-sizing: border-box !important;
     }
 
-    #lista .icone-wrapper img, 
-    #lista .icone-cat {
+    /* Reduz levemente o tamanho do texto para caber nas 5 colunas sem sumir */
+    #lista .cat-nome {
+        font-size: 13px !important;
         display: block !important;
-        max-width: 100% !important;
-        height: auto !important;
+    }
+
+    #lista .cat-sub {
+        font-size: 11px !important;
+        display: block !important;
+    }
+
+    #lista .icone-cat {
+        width: 45px !important;
+        height: 45px !important;
+        object-fit: contain !important;
+        display: block !important;
     }
 }
