@@ -1,64 +1,117 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Karumbé - Dicionário Guarani Nhandewa</title>
+    <title>Karumbé - Dicionário Nhandewa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
         <div class="logo-container">
-            <img src="assets/tartaruga.png" alt="Projeto Karumbé" class="logo-tartaruga">
+            <img src="assets/img/karumbe-logo.png" alt="Karumbé Logo" class="logo-img" onerror="this.style.display='none'">
+            <h1>KARUMBÉ</h1>
         </div>
-        <h1>PROJETO KARUMBÉ</h1>
-        <h2>📖 Dicionário Guarani Nhandewa</h2>
-        
-        <div class="search-container">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="search-input" placeholder="Busca Inteligente (Levenshtein)">
-        </div>
+        <p class="subtitulo">Dicionário e Expressões Nhandewa</p>
     </header>
 
-    <main class="main-content">
-        <!-- Grid com as Caixas Coloridas das Categorias -->
-        <div class="categorias-grid">
-            <!-- Caixa Verbos (Verde) -->
-            <a href="#" class="cat-card verbos">
-                <div class="card-img"><img src="assets/verbo.png" alt="Verbos"></div>
-                <div class="card-text">
-                    <span class="card-title">Verbos</span>
-                    <span class="card-sub">Adjapo</span>
-                </div>
-            </a>
+    <!-- BARRA DE BUSCA -->
+    <div class="busca-container">
+        <input 
+            type="text" 
+            id="inputBusca" 
+            placeholder="Eheka apy... (Buscar palavra ou tradução)" 
+            oninput="executarBusca()"
+        >
+    </div>
 
-            <!-- Caixa Expressões (Laranja) -->
-            <a href="#" class="cat-card expressoes">
-                <div class="card-img"><img src="assets/expressao.png" alt="Expressões"></div>
-                <div class="card-text">
-                    <span class="card-title">Expressões</span>
-                    <span class="card-sub">Nhanduereté</span>
-                </div>
-            </a>
+    <!-- CONTEÚDO PRINCIPAL (GRADE DE CATEGORIAS / LISTA DE PALAVRAS) -->
+    <main class="conteudo-principal">
+        <div id="lista" class="grid-categorias">
+            
+            <!-- 1. VERBOS -->
+            <div class="card-categoria" onclick="mostrarCategoria('Verbos')">
+                <img src="assets/img/verbos.png" alt="Verbos" onerror="this.style.display='none'">
+                <h3>Verbos</h3>
+                <span>Nhã, Karu, Ke...</span>
+            </div>
 
-            <!-- Caixa Cultura (Azul) -->
-            <a href="#" class="cat-card cultura">
-                <div class="card-img"><img src="assets/natureza.png" alt="Cultura"></div>
-                <div class="card-text">
-                    <span class="card-title">Cultura</span>
-                    <span class="card-sub">Tekoa</span>
-                </div>
-            </a>
+            <!-- 2. EXPRESSÕES -->
+            <div class="card-categoria" onclick="mostrarCategoria('Expressões')">
+                <img src="assets/img/expressoes.png" alt="Expressões" onerror="this.style.display='none'">
+                <h3>Expressões</h3>
+                <span>Aiko porã, Aguyjevái...</span>
+            </div>
+
+            <!-- 3. NATUREZA -->
+            <div class="card-categoria" onclick="mostrarCategoria('Natureza')">
+                <img src="assets/img/natureza.png" alt="Natureza" onerror="this.style.display='none'">
+                <h3>Natureza</h3>
+                <span>Yvy, Y, Yva...</span>
+            </div>
+
+            <!-- 4. FAMÍLIA -->
+            <div class="card-categoria" onclick="mostrarCategoria('Família')">
+                <img src="assets/img/familia.png" alt="Família" onerror="this.style.display='none'">
+                <h3>Família</h3>
+                <span>Ru, Sy, Tayra...</span>
+            </div>
+
+            <!-- 5. PÓS-POSIÇÕES -->
+            <div class="card-categoria" onclick="mostrarCategoria('Pós-posições')">
+                <img src="assets/img/posposicoes.png" alt="Pós-posições" onerror="this.style.display='none'">
+                <h3>Pós-posições</h3>
+                <span>-py, -pe, -re...</span>
+            </div>
+
+            <!-- 6. ANIMAIS -->
+            <div class="card-categoria" onclick="mostrarCategoria('Animais')">
+                <img src="assets/img/animais.png" alt="Animais" onerror="this.style.display='none'">
+                <h3>Animais</h3>
+                <span>Jagua, Mbarakaja...</span>
+            </div>
+
+            <!-- 7. CORPO HUMANO -->
+            <div class="card-categoria" onclick="mostrarCategoria('Corpo humano')">
+                <img src="assets/img/corpohumano.png" alt="Corpo humano" onerror="this.style.display='none'">
+                <h3>Corpo humano</h3>
+                <span>Aka, Po, Py...</span>
+            </div>
+
+            <!-- 8. LOCALIZAÇÃO -->
+            <div class="card-categoria" onclick="mostrarCategoria('Localização')">
+                <img src="assets/img/localizacao.png" alt="Localização" onerror="this.style.display='none'">
+                <h3>Localização</h3>
+                <span>Apy, Kova'e-py...</span>
+            </div>
+
+            <!-- 9. OBJETOS -->
+            <div class="card-categoria" onclick="mostrarCategoria('Objetos')">
+                <img src="assets/img/objetos.png" alt="Objetos" onerror="this.style.display='none'">
+                <h3>Objetos</h3>
+                <span>Apyka, Mbya...</span>
+            </div>
+
+            <!-- 10. PRONOMES -->
+            <div class="card-categoria" onclick="mostrarCategoria('Pronomes')">
+                <img src="assets/img/pronomes.png" alt="Pronomes" onerror="this.style.display='none'">
+                <h3>Pronomes</h3>
+                <span>Txeé, Ndee, Ha'e...</span>
+            </div>
+
         </div>
     </main>
 
-    <!-- Barra de Apoiadores na Base -->
-    <footer class="apoiadores-bar">
-        <div class="apoio-content">
-            <span class="apoio-label">APOIO:</span>
-            <div class="apoio-item">🏠 ESCOLA KARUGWÁ</div>
-            <div class="apoio-item">🐦 ASSOCIAÇÃO CURUCACA</div>
-        </div>
+    <!-- RODAPÉ -->
+    <footer class="rodape-links">
+        <a href="#" class="link-rodape ativo" onclick="MapaApp.voltarInicio(); return false;">Início</a>
     </footer>
+
+    <!-- CHAMADA DOS SCRIPTS NA ORDEM CORRETA -->
+    <script src="dicionario.js"></script>
+    <script src="mapa.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
