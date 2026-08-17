@@ -218,7 +218,23 @@ body {
         font-size: 0.95rem !important;
         margin-bottom: 2px !important;
     }
+@media (min-width: 1024px) {
+    .grid-categorias .card-categoria {
+        min-height: 140px !important;
+        justify-content: space-between !important;
+        padding: 12px 8px !important;
+    }
 
+    .grid-categorias .card-categoria img {
+        width: 42px !important;
+        height: 42px !important;
+        max-height: 42px !important;
+        object-fit: contain !important;
+        margin-bottom: 4px !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+}
     .grid-categorias .card-categoria span {
         font-size: 0.75rem !important;
     }
