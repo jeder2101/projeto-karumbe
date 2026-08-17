@@ -19,88 +19,66 @@
     <main class="main-content">
         <!-- Grid de Categorias -->
         <div class="categorias-grid">
-            <a href="#" class="cat-card verbos">
-                <div class="card-img"><img src="assets/verbo.png" alt="Verbos"></div>
-                <div class="card-info">
-                    <span class="card-title">VERBOS</span>
-                    <span class="card-sub">Djapo</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">VERBOS</div>
+                <div class="card-sub">Djapo</div>
             </a>
 
-            <a href="#" class="cat-card expressoes">
-                <div class="card-img"><img src="assets/expressao.png" alt="Expressões"></div>
-                <div class="card-info">
-                    <span class="card-title">EXPRESSÕES</span>
-                    <span class="card-sub">Nhanduereté</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">EXPRESSÕES</div>
+                <div class="card-sub">Nhanduereté</div>
             </a>
 
-            <a href="#" class="cat-card natureza">
-                <div class="card-img"><img src="assets/natureza.png" alt="Natureza"></div>
-                <div class="card-info">
-                    <span class="card-title">NATUREZA</span>
-                    <span class="card-sub">Ywyra</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">NATUREZA</div>
+                <div class="card-sub">Ywyra</div>
             </a>
 
-            <a href="#" class="cat-card familia">
-                <div class="card-img"><img src="assets/familia.png" alt="Família"></div>
-                <div class="card-info">
-                    <span class="card-title">FAMÍLIA</span>
-                    <span class="card-sub">Txeru</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">FAMÍLIA</div>
+                <div class="card-sub">Txeru</div>
             </a>
 
-            <a href="#" class="cat-card pos-posicoes">
-                <div class="card-img"><img src="assets/posposicao.png" alt="Pós-posições"></div>
-                <div class="card-info">
-                    <span class="card-title">PÓS-POSIÇÕES</span>
-                    <span class="card-sub">Tekoá-py</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">PÓS-POSIÇÕES</div>
+                <div class="card-sub">Tekoá-py</div>
             </a>
 
-            <a href="#" class="cat-card animais">
-                <div class="card-img"><img src="assets/animal.png" alt="Animais"></div>
-                <div class="card-info">
-                    <span class="card-title">ANIMAIS</span>
-                    <span class="card-sub">Djagwaretê</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">ANIMAIS</div>
+                <div class="card-sub">Djagwaretê</div>
             </a>
 
-            <a href="#" class="cat-card corpo">
-                <div class="card-img"><img src="assets/corpo.png" alt="Corpo Humano"></div>
-                <div class="card-info">
-                    <span class="card-title">CORPO HUMANO</span>
-                    <span class="card-sub">Akã</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">CORPO HUMANO</div>
+                <div class="card-sub">Akã</div>
             </a>
 
-            <a href="#" class="cat-card localizacao">
-                <div class="card-img"><img src="assets/localizacao.png" alt="Localização"></div>
-                <div class="card-info">
-                    <span class="card-title">LOCALIZAÇÃO</span>
-                    <span class="card-sub">Nhandé Kupé-Regwá</span>
-                </div>
+            <a href="#" class="cat-card">
+                <div class="card-title">LOCALIZAÇÃO</div>
+                <div class="card-sub">Nhandé Kupé-Regwá</div>
             </a>
         </div>
 
-        <!-- Seção de Apoiadores / Sobre o Projeto (Clicável) -->
+        <!-- Seção de Apoiadores (Clicável) -->
         <section class="apoiadores-section">
-            <button class="apoiadores-btn" onclick="toggleApoiadores()">
-                🤝 Apoiadores, Missão e Ações do Projeto
-            </button>
+            <button class="apoiadores-btn" onclick="toggleApoiadores()">🤝 Apoiadores, Missão e Ações</button>
             <div id="apoiadores-conteudo" class="apoiadores-content hidden">
                 <h3>Conheça Nossa História e Ações</h3>
-                <p>Aqui você encontra registros fotográficos, vídeos, a nossa missão na Aldeia Karugwá e todos os apoiadores que caminham junto conosco.</p>
-                <!-- Espaço para fotos e vídeos -->
+                <p>Aqui você encontra registros fotográficos, vídeos, a nossa missão na Aldeia Karugwá e todos os apoiadores.</p>
                 <div class="midia-grid">
-                    <div class="midia-box">📸 Galeria de Fotos (Em breve)</div>
-                    <div class="midia-box">🎥 Vídeos e Ações (Em breve)</div>
+                    <div class="midia-box">📸 Galeria de Fotos</div>
+                    <div class="midia-box">🎥 Vídeos e Ações</div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleApoiadores() {
+            const conteudo = document.getElementById('apoiadores-conteudo');
+            conteudo.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
