@@ -2,7 +2,7 @@ const CACHE_NAME = "karumbe-demo-v1";
 
 const ARQUIVOS = [
     "./",
-    "./inicio.html",
+    "./index.html",
     "./style.css",
     "./script.js",
     "./dicionario.js",
