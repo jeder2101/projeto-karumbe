@@ -174,68 +174,14 @@ body {
     color: #5be0ac;
 }
 
-/* =====================================================
-   AJUSTE DE 5 COLUNAS COM AS IMAGENS PERFEITAS
-===================================================== */
-@media (min-width: 1024px) {
-    .cabecalho,
-    .busca-container,
-    .conteudo-principal,
-    .rodape-links {
-        max-width: 1200px !important;
-    }
-
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 480px) {
     .grid-categorias {
-        display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important;
-        gap: 16px !important;
-        width: 100% !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
-
-    .grid-categorias .card-categoria {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 16px 10px !important;
-        text-align: center !important;
-        box-sizing: border-box !important;
-        height: auto !important;
-    }
-
-    /* FORÇA A EXIBIÇÃO E O TAMANHO CORRETO DAS IMAGENS DA TARTARUGA */
-    .grid-categorias .card-categoria img {
-        display: block !important;
-        width: 50px !important;
-        height: 50px !important;
-        object-fit: contain !important;
-        margin-bottom: 10px !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-
-    .grid-categorias .card-categoria h3 {
-        font-size: 0.95rem !important;
-        margin-bottom: 2px !important;
-    }
-@media (min-width: 1024px) {
-    .grid-categorias .card-categoria {
-        min-height: 140px !important;
-        justify-content: space-between !important;
-        padding: 12px 8px !important;
-    }
-
-    .grid-categorias .card-categoria img {
-        width: 42px !important;
-        height: 42px !important;
-        max-height: 42px !important;
-        object-fit: contain !important;
-        margin-bottom: 4px !important;
-        display: block !important;
-        visibility: visible !important;
-    }
-}
-    .grid-categorias .card-categoria span {
-        font-size: 0.75rem !important;
+    
+    .cabecalho h1 {
+        font-size: 1.6rem;
     }
 }
