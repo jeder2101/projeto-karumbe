@@ -8,86 +8,54 @@
 </head>
 <body>
     <header class="site-header">
-        <img src="assets/tartaruga.png" alt="Projeto Karumbé" class="logo-tartaruga">
+        <div class="logo-container">
+            <img src="assets/tartaruga.png" alt="Projeto Karumbé" class="logo-tartaruga">
+        </div>
         <h1>PROJETO KARUMBÉ</h1>
-        <p>DICIONÁRIO GUARANI NHANDEWA</p>
+        <h2>📖 Dicionário Guarani Nhandewa</h2>
         
         <div class="search-container">
-            <input type="text" id="search-input" placeholder="Eheka apy... (Buscar palavra ou tradução)">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="Busca Inteligente (Levenshtein)">
         </div>
     </header>
 
     <main class="main-content">
-        <!-- Grid de Categorias Coloridas -->
+        <!-- Grid de Categorias em Blocos Largos -->
         <div class="categorias-grid">
             <a href="#" class="cat-card verbos">
                 <div class="card-img"><img src="assets/verbo.png" alt="Verbos"></div>
-                <div class="card-title">VERBOS</div>
-                <div class="card-sub">Djapo</div>
+                <div class="card-text">
+                    <span class="card-title">Verbos</span>
+                    <span class="card-sub">Adjapo</span>
+                </div>
             </a>
 
             <a href="#" class="cat-card expressoes">
                 <div class="card-img"><img src="assets/expressao.png" alt="Expressões"></div>
-                <div class="card-title">EXPRESSÕES</div>
-                <div class="card-sub">Nhanduereté</div>
+                <div class="card-text">
+                    <span class="card-title">Expressões</span>
+                    <span class="card-sub">Nhanduereté</span>
+                </div>
             </a>
 
-            <a href="#" class="cat-card natureza">
-                <div class="card-img"><img src="assets/natureza.png" alt="Natureza"></div>
-                <div class="card-title">NATUREZA</div>
-                <div class="card-sub">Ywyra</div>
-            </a>
-
-            <a href="#" class="cat-card familia">
-                <div class="card-img"><img src="assets/familia.png" alt="Família"></div>
-                <div class="card-title">FAMÍLIA</div>
-                <div class="card-sub">Txeru</div>
-            </a>
-
-            <a href="#" class="cat-card pos-posicoes">
-                <div class="card-img"><img src="assets/posposicao.png" alt="Pós-posições"></div>
-                <div class="card-title">PÓS-POSIÇÕES</div>
-                <div class="card-sub">Tekoá-py</div>
-            </a>
-
-            <a href="#" class="cat-card animais">
-                <div class="card-img"><img src="assets/animal.png" alt="Animais"></div>
-                <div class="card-title">ANIMAIS</div>
-                <div class="card-sub">Djagwaretê</div>
-            </a>
-
-            <a href="#" class="cat-card corpo">
-                <div class="card-img"><img src="assets/corpo.png" alt="Corpo Humano"></div>
-                <div class="card-title">CORPO HUMANO</div>
-                <div class="card-sub">Akã</div>
-            </a>
-
-            <a href="#" class="cat-card localizacao">
-                <div class="card-img"><img src="assets/localizacao.png" alt="Localização"></div>
-                <div class="card-title">LOCALIZAÇÃO</div>
-                <div class="card-sub">Nhandé Kupé-Regwá</div>
+            <a href="#" class="cat-card cultura">
+                <div class="card-img"><img src="assets/natureza.png" alt="Cultura"></div>
+                <div class="card-text">
+                    <span class="card-title">Cultura</span>
+                    <span class="card-sub">Tekoa</span>
+                </div>
             </a>
         </div>
-
-        <!-- Seção de Apoiadores Clicável -->
-        <section class="apoiadores-section">
-            <button class="apoiadores-btn" onclick="toggleApoiadores()">🤝 Apoiadores, Missão e Ações</button>
-            <div id="apoiadores-conteudo" class="apoiadores-content hidden">
-                <h3>Conheça Nossa História e Ações</h3>
-                <p>Registros fotográficos, vídeos, missão na Aldeia Karugwá e apoiadores.</p>
-                <div class="midia-grid">
-                    <div class="midia-box">📸 Galeria de Fotos</div>
-                    <div class="midia-box">🎥 Vídeos e Ações</div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <script>
-        function toggleApoiadores() {
-            const conteudo = document.getElementById('apoiadores-conteudo');
-            conteudo.classList.toggle('hidden');
-        }
-    </script>
+    <!-- Barra de Apoio Fixa na Base -->
+    <footer class="apoiadores-bar">
+        <div class="apoio-content">
+            <span class="apoio-label">APOIO:</span>
+            <div class="apoio-item">🏠 ESCOLA KARUGWÁ</div>
+            <div class="apoio-item">🐦 ASSOCIAÇÃO CURUCACA</div>
+        </div>
+    </footer>
 </body>
 </html>
