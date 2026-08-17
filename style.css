@@ -173,29 +173,22 @@ body {
 .link-rodape:hover, .link-rodape.ativo {
     color: #5be0ac;
 }
+
+/* =====================================================
+   AJUSTE DE 5 COLUNAS PARA COMPUTADOR (CORRIGIDO E COMPLETO)
+===================================================== */
 @media (min-width: 1024px) {
-    #lista, .lista-vertical {
-        display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important;
-        gap: 12px !important;
-        max-width: 100% !important;
+    .cabecalho,
+    .busca-container,
+    .conteudo-principal,
+    .rodape-links {
+        max-width: 1200px !important;
     }
 
-    #lista .card-categoria {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        padding: 10px !important;
-        text-align: center !important;
-        box-sizing: border-box !important;
-    }
-/* Garante as 5 colunas EXCLUSIVAMENTE na tela inicial das categorias */
-@media (min-width: 1024px) {
     .grid-categorias {
         display: grid !important;
         grid-template-columns: repeat(5, 1fr) !important;
-        gap: 12px !important;
+        gap: 16px !important;
         width: 100% !important;
     }
 
@@ -204,26 +197,26 @@ body {
         flex-direction: column !important;
         align-items: center !important;
         justify-content: center !important;
-        padding: 10px !important;
+        padding: 16px 10px !important;
         text-align: center !important;
         box-sizing: border-box !important;
-        height: 100% !important;
+        height: auto !important;
     }
 
-    .grid-categorias .cat-nome {
-        font-size: 13px !important;
-        display: block !important;
-    }
-
-    .grid-categorias .cat-sub {
-        font-size: 11px !important;
-        display: block !important;
-    }
-
-    .grid-categorias .icone-cat {
-        width: 45px !important;
-        height: 45px !important;
+    .grid-categorias .card-categoria img {
+        width: 48px !important;
+        height: 48px !important;
         object-fit: contain !important;
+        margin-bottom: 8px !important;
         display: block !important;
+    }
+
+    .grid-categorias .card-categoria h3 {
+        font-size: 0.95rem !important;
+        margin-bottom: 2px !important;
+    }
+
+    .grid-categorias .card-categoria span {
+        font-size: 0.75rem !important;
     }
 }
