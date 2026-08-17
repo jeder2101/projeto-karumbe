@@ -1,4 +1,4 @@
-const CACHE_NAME = "karumbe-demo-v1";
+const CACHE_NAME = "karumbe-v1";
 
 const ARQUIVOS = [
     "./",
