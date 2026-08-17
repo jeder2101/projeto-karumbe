@@ -175,7 +175,7 @@ body {
 }
 
 /* =====================================================
-   AJUSTE DE 5 COLUNAS PARA COMPUTADOR (CORRIGIDO E COMPLETO)
+   AJUSTE DE 5 COLUNAS COM AS IMAGENS PERFEITAS
 ===================================================== */
 @media (min-width: 1024px) {
     .cabecalho,
@@ -203,12 +203,15 @@ body {
         height: auto !important;
     }
 
+    /* FORÇA A EXIBIÇÃO E O TAMANHO CORRETO DAS IMAGENS DA TARTARUGA */
     .grid-categorias .card-categoria img {
-        width: 48px !important;
-        height: 48px !important;
-        object-fit: contain !important;
-        margin-bottom: 8px !important;
         display: block !important;
+        width: 50px !important;
+        height: 50px !important;
+        object-fit: contain !important;
+        margin-bottom: 10px !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .grid-categorias .card-categoria h3 {
