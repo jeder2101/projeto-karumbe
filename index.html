@@ -1,208 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Karumbé - Dicionário Guarani Nhandewa</title>
-
-    <!-- CSS PRINCIPAL -->
-    <link rel="stylesheet" href="./style.css?v=2">
-
-    <!-- PWA -->
-    <link rel="manifest" href="./manifest.json">
-
-    <!-- COR DA BARRA DO APLICATIVO -->
-    <meta name="theme-color" content="#112822">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Karumbé">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="site-header">
+        <h1>PROJETO KARUMBÉ</h1>
+        <p>DICIONÁRIO GUARANI NHANDEWA</p>
+        
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Eheka apy... (Buscar palavra ou tradução)">
+        </div>
+    </header>
 
-    <div class="app-container">
+    <main class="main-content">
+        <!-- Grid de Categorias -->
+        <div class="categorias-grid">
+            <a href="#" class="cat-card verbos">
+                <div class="card-img"><img src="assets/verbo.png" alt="Verbos"></div>
+                <div class="card-info">
+                    <span class="card-title">VERBOS</span>
+                    <span class="card-sub">Djapo</span>
+                </div>
+            </a>
 
-        <!-- CABEÇALHO -->
-        <header class="app-header">
-            <div class="header-info">
-                <img src="./assets/svg/tartaruga.png" alt="Karumbé" class="logo-tartaruga">
-                <div class="header-titulos">
-                    <h1 class="titulo-projeto">PROJETO KARUMBÉ</h1>
-                    <h2 class="titulo-principal">DICIONÁRIO GUARANI NHANDEWA</h2>
+            <a href="#" class="cat-card expressoes">
+                <div class="card-img"><img src="assets/expressao.png" alt="Expressões"></div>
+                <div class="card-info">
+                    <span class="card-title">EXPRESSÕES</span>
+                    <span class="card-sub">Nhanduereté</span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card natureza">
+                <div class="card-img"><img src="assets/natureza.png" alt="Natureza"></div>
+                <div class="card-info">
+                    <span class="card-title">NATUREZA</span>
+                    <span class="card-sub">Ywyra</span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card familia">
+                <div class="card-img"><img src="assets/familia.png" alt="Família"></div>
+                <div class="card-info">
+                    <span class="card-title">FAMÍLIA</span>
+                    <span class="card-sub">Txeru</span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card pos-posicoes">
+                <div class="card-img"><img src="assets/posposicao.png" alt="Pós-posições"></div>
+                <div class="card-info">
+                    <span class="card-title">PÓS-POSIÇÕES</span>
+                    <span class="card-sub">Tekoá-py</span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card animais">
+                <div class="card-img"><img src="assets/animal.png" alt="Animais"></div>
+                <div class="card-info">
+                    <span class="card-title">ANIMAIS</span>
+                    <span class="card-sub">Djagwaretê</span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card corpo">
+                <div class="card-img"><img src="assets/corpo.png" alt="Corpo Humano"></div>
+                <div class="card-info">
+                    <span class="card-title">CORPO HUMANO</span>
+                    <span class="card-sub">Akã</span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card localizacao">
+                <div class="card-img"><img src="assets/localizacao.png" alt="Localização"></div>
+                <div class="card-info">
+                    <span class="card-title">LOCALIZAÇÃO</span>
+                    <span class="card-sub">Nhandé Kupé-Regwá</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Seção de Apoiadores / Sobre o Projeto (Clicável) -->
+        <section class="apoiadores-section">
+            <button class="apoiadores-btn" onclick="toggleApoiadores()">
+                🤝 Apoiadores, Missão e Ações do Projeto
+            </button>
+            <div id="apoiadores-conteudo" class="apoiadores-content hidden">
+                <h3>Conheça Nossa História e Ações</h3>
+                <p>Aqui você encontra registros fotográficos, vídeos, a nossa missão na Aldeia Karugwá e todos os apoiadores que caminham junto conosco.</p>
+                <!-- Espaço para fotos e vídeos -->
+                <div class="midia-grid">
+                    <div class="midia-box">📸 Galeria de Fotos (Em breve)</div>
+                    <div class="midia-box">🎥 Vídeos e Ações (Em breve)</div>
                 </div>
             </div>
-
-            <button class="btn-download" type="button" title="Baixar App">📥</button>
-        </header>
-
-        <!-- BUSCA -->
-        <section class="barra-busca-wrapper">
-            <span class="icone-busca">🔍</span>
-            <input type="text" id="busca" placeholder="Eheka apy..." autocomplete="off" oninput="executarBusca(this.value)">
         </section>
+    </main>
 
-        <!-- CATEGORIAS -->
-        <main id="lista" class="lista-vertical">
-
-            <!-- VERBOS -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Verbos')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/verbos.png" class="icone-cat" alt="Verbos">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">VERBOS</span>
-                    <small class="cat-sub">Djapo</small>
-                </div>
-            </button>
-
-            <!-- EXPRESSÕES -->
-            <button class="card-categoria cat-laranja" type="button" onclick="mostrarCategoria('Expressões')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/expressões.png" class="icone-cat" alt="Expressões">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">EXPRESSÕES</span>
-                    <small class="cat-sub">Nhanderueté</small>
-                </div>
-            </button>
-
-            <!-- NATUREZA -->
-            <button class="card-categoria cat-azul" type="button" onclick="mostrarCategoria('Natureza')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/natureza.png" class="icone-cat" alt="Natureza">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">NATUREZA</span>
-                    <small class="cat-sub">Ywyrá</small>
-                </div>
-            </button>
-
-            <!-- FAMÍLIA -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Família')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/familia.png" class="icone-cat" alt="Família">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">FAMÍLIA</span>
-                    <small class="cat-sub">Txeru</small>
-                </div>
-            </button>
-
-            <!-- PÓS-POSIÇÕES -->
-            <button class="card-categoria cat-laranja" type="button" onclick="mostrarCategoria('Pós-posições')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/posposicoes.png" class="icone-cat" alt="Pós-posições">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">PÓS-POSIÇÕES</span>
-                    <small class="cat-sub">Tekoá-py</small>
-                </div>
-            </button>
-
-            <!-- ANIMAIS -->
-            <button class="card-categoria cat-azul" type="button" onclick="mostrarCategoria('Animais')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/animais.png" class="icone-cat" alt="Animais">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">ANIMAIS</span>
-                    <small class="cat-sub">Djagwareté</small>
-                </div>
-            </button>
-
-            <!-- CORPO HUMANO -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Corpo humano')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/corpo humano.png" class="icone-cat" alt="Corpo Humano">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">CORPO HUMANO</span>
-                    <small class="cat-sub">Akã</small>
-                </div>
-            </button>
-
-            <!-- LOCALIZAÇÃO -->
-            <button class="card-categoria cat-laranja" type="button" onclick="mostrarCategoria('Localização')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/localizacao.png" class="icone-cat" alt="Localização">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">LOCALIZAÇÃO</span>
-                    <small class="cat-sub">Nhandé Kupé-Regwá</small>
-                </div>
-            </button>
-
-            <!-- OBJETOS -->
-            <button class="card-categoria cat-azul" type="button" onclick="mostrarCategoria('Objetos')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/objetos.png" class="icone-cat" alt="Objetos">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">OBJETOS</span>
-                    <small class="cat-sub">Adjaká</small>
-                </div>
-            </button>
-
-            <!-- PRONOMES -->
-            <button class="card-categoria cat-verde" type="button" onclick="mostrarCategoria('Pronomes')">
-                <div class="icone-wrapper">
-                    <img src="./assets/img/pronomes.png" class="icone-cat" alt="Pronomes">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">PRONOMES</span>
-                    <small class="cat-sub">Txeé</small>
-                </div>
-            </button>
-
-        </main>
-
-        <!-- APOIO INSTITUCIONAL -->
-        <footer class="secao-apoio">
-            <span class="titulo-apoio">AS INSTITUIÇÕES APÓIAM ESTA IDEIA:</span>
-
-            <div class="logos-apoio">
-                <div class="logo-apoio-item">
-                    <img src="./assets/logos/escola karugwa.png" alt="Escola Karugwá">
-                    <span>E.E.I.ALDEIA KARUGWÁ PEI</span>
-                </div>
-
-                <div class="logo-apoio-item">
-                    <img src="./assets/logos/tekoa-karugwa.png" alt="Tekoa Karugwa">
-                    <span>TEKOÁ KARUGWÁ</span>
-                </div>
-
-                <div class="logo-apoio-item">
-                    <img src="./assets/logos/associacao curucaca.jpg" alt="Associação Curucaca">
-                    <span>ASSOCIAÇÃO CURUCACA</span>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-
-    <!-- SCRIPTS DO PROJETO -->
-    <script src="./dicionario.js"></script>
-    <script src="./mapa.js"></script>
-    <script src="./script.js"></script>
-
-    <!-- REGISTRO DO APLICATIVO -->
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function () {
-                navigator.serviceWorker
-                    .register("./service-worker.js")
-                    .then(function () {
-                        console.log("Projeto Karumbé: aplicativo preparado!");
-                    })
-                    .catch(function (erro) {
-                        console.error("Erro ao registrar o aplicativo:", erro);
-                    });
-            });
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
-
 </html>
