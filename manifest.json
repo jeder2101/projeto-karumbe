@@ -2,7 +2,7 @@
   "name": "Projeto Karumbé - Dicionário Guarani Nhandewa",
   "short_name": "Karumbé",
   "description": "Dicionário Guarani Nhandewa - Projeto Karumbé",
-  "start_url": "./inicio.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#112822",
   "theme_color": "#112822",
