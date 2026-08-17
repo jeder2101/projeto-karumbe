@@ -180,6 +180,25 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
+   /* =================================================
+   AJUSTE DE 5 COLUNAS PARA COMPUTADOR (GRID)
+================================================== */
+
+/* Comportamento padrão para celulares (1 coluna) */
+#lista, .lista-vertical {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Em telas de computador (a partir de 1024px), distribui em 5 colunas */
+@media (min-width: 1024px) {
+    #lista, .lista-vertical {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+}
     
     .cabecalho h1 {
         font-size: 1.6rem;
