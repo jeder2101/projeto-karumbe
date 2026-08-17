@@ -1,436 +1,199 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-html {
-    min-height: 100%;
-}
-
-/* =====================================================
-   FUNDO DO SITE COM GRAFISMO DE TARTARUGA
-===================================================== */
 
 body {
+    background: linear-gradient(135deg, #061a10 0%, #0b3520 100%);
+    color: #fff;
     min-height: 100vh;
-    color: #ffffff;
-    background-color: #0b241c;
-    /* Grafismo de tartaruga em SVG transparente + Degradê */
-    background-image: 
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.08'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E"),
-        radial-gradient(
-            ellipse at 50% 5%,
-            #507b5d 0%,
-            #3c684f 18%,
-            #294f3e 40%,
-            #17382d 65%,
-            #0b241c 100%
-        );
-    background-repeat: no-repeat;
-    background-position: center 100px;
-    background-size: 550px auto, cover;
-    background-attachment: fixed;
-}
-
-/* =====================================================
-   CONTAINER E CABEÇALHO BASE (CELULAR)
-===================================================== */
-
-.app-container {
-    width: 100%;
-    max-width: 500px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 24px 20px 35px;
-    transition: max-width 0.3s ease;
-}
-
-.app-header {
-    position: relative;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.site-header p {
+    font-size: 0.9rem;
+    color: #8fbc8f;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: 1px solid #2e8b57;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-input::placeholder {
+    color: #a8a8a8;
+}
+
+#search-input:focus {
+    border-color: #3cb371;
+    box-shadow: 0 0 10px rgba(60, 179, 113, 0.3);
+}
+
+.main-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cat-card {
+    background: rgba(20, 40, 30, 0.85);
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 0 20px;
+    border: 1px solid rgba(46, 139, 87, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
-.header-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-tartaruga {
-    width: 260px;
-    height: 170px;
-    display: block;
-    object-fit: contain;
-    object-position: center;
-    margin-bottom: 2px;
-    filter: drop-shadow(0 8px 10px rgba(8, 35, 27, 0.25));
-}
-
-.header-titulos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titulo-projeto {
-    font-size: 32px;
-    line-height: 1;
-    font-weight: 900;
-    letter-spacing: 2px;
-    color: #ffffff;
-    text-shadow: 0 3px 7px rgba(0, 0, 0, 0.45);
-}
-
-.titulo-principal {
-    margin-top: 8px;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
-}
-
-.btn-download {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.btn-download:hover {
-    background: rgba(255, 255, 255, 0.18);
-    transform: scale(1.05);
-}
-
-/* =====================================================
-   BUSCA
-===================================================== */
-
-.barra-busca-wrapper {
-    position: relative;
-    width: 100%;
-    margin: 6px 0 26px;
-}
-
-.icone-busca {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    opacity: 0.72;
-    pointer-events: none;
-    z-index: 2;
-}
-
-#busca {
-    width: 100%;
-    height: 54px;
-    padding: 0 20px 0 55px;
-    border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.10);
-    color: #ffffff;
-    font-size: 16px;
-    outline: none;
-    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-#busca:focus {
-    border-color: rgba(255, 255, 255, 0.50);
-    background: rgba(255, 255, 255, 0.14);
-}
-
-#busca::placeholder {
-    color: rgba(255, 255, 255, 0.65);
-}
-
-/* =====================================================
-   CATEGORIAS E CARTÕES (GRADE MOBILE - 2 COLUNAS)
-===================================================== */
-
-.lista-vertical {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-}
-
-.card-categoria {
-    position: relative;
-    width: 100%;
-    height: 180px;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.20);
-    cursor: pointer;
-    text-align: left;
-    color: #ffffff;
-    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.30);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card-categoria:hover {
+.cat-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 28px rgba(0, 0, 0, 0.40);
+    background: rgba(30, 60, 45, 0.95);
+    border-color: #3cb371;
 }
 
-.card-categoria:active {
-    transform: scale(0.98);
-}
-
-/* CORES DAS CATEGORIAS */
-
-.cat-verde { background: #28583e; }
-.cat-laranja { background: #a95527; }
-.cat-azul { background: #285f78; }
-
-/* IMAGENS DAS CATEGORIAS */
-
-.icone-wrapper {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    overflow: hidden;
-    background: transparent;
-}
-
-.icone-cat {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    opacity: 0.72;
-    transition: transform 0.35s ease, opacity 0.35s ease;
-}
-
-.card-categoria:hover .icone-cat {
-    transform: scale(1.05);
-    opacity: 0.86;
-}
-
-.icone-wrapper::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.02) 10%,
-        rgba(0, 0, 0, 0.12) 42%,
-        rgba(0, 0, 0, 0.86) 100%
-    );
-}
-
-.cat-textos {
-    position: absolute;
-    z-index: 5;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
+.card-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.70);
+    align-items: center;
+    justify-content: center;
 }
 
-.cat-nome {
-    font-size: 22px;
-    line-height: 1.1;
-    font-weight: 900;
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
     letter-spacing: 0.5px;
 }
 
-.cat-sub {
-    margin-top: 4px;
-    font-size: 13px;
-    line-height: 1.2;
-    opacity: 0.88;
+.card-sub {
+    font-size: 0.8rem;
+    color: #a3c1ad;
+    font-style: italic;
 }
 
-/* =====================================================
-   BOTÃO VOLTAR E RESULTADOS DO DICIONÁRIO
-===================================================== */
+/* Cores específicas de destaque para os cards */
+.cat-card.verbos { border-bottom: 4px solid #2e8b57; }
+.cat-card.expressoes { border-bottom: 4px solid #d9534f; }
+.cat-card.natureza { border-bottom: 4px solid #5cb85c; }
+.cat-card.familia { border-bottom: 4px solid #f0ad4e; }
+.cat-card.pos-posicoes { border-bottom: 4px solid #337ab7; }
+.cat-card.animais { border-bottom: 4px solid #e67e22; }
+.cat-card.corpo { border-bottom: 4px solid #9b59b6; }
+.cat-card.localizacao { border-bottom: 4px solid #e74c3c; }
 
-.voltar {
-    grid-column: 1 / -1;
-    width: fit-content;
-    padding: 11px 18px;
-    border-radius: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.10);
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.card-pronuncia {
-    grid-column: 1 / -1;
-    background: rgba(25, 59, 49, 0.96);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
-    padding: 22px;
-    margin-bottom: 5px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-.palavra-titulo {
-    font-size: 28px;
-    color: #5be0ac;
-}
-
-.secao-bloco {
-    margin-top: 15px;
-}
-
-.secao-titulo {
-    font-size: 11px;
-    letter-spacing: 1px;
-    opacity: 0.65;
-}
-
-.btn-play {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background: #4cd9a4;
-    color: #12352a;
-    cursor: pointer;
-}
-
-/* =====================================================
-   APOIO INSTITUCIONAL (RODAPÉ)
-===================================================== */
-
-.secao-apoio {
-    width: 100%;
-    margin-top: 30px;
-    padding: 20px 15px 22px;
-    background: rgba(255, 255, 255, 0.96);
-    color: #17352b;
-    border-radius: 20px;
+/* Seção de Apoiadores */
+.apoiadores-section {
     text-align: center;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
 }
 
-.titulo-apoio {
-    display: block;
-    margin-bottom: 18px;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 1.5px;
-    color: #28583e;
+.apoiadores-btn {
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-.logos-apoio {
-    width: 100%;
+.apoiadores-btn:hover {
+    background-color: #3cb371;
+}
+
+.apoiadores-content {
+    margin-top: 15px;
+    background: rgba(15, 30, 20, 0.9);
+    border: 1px solid #2e8b57;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.apoiadores-content h3 {
+    color: #3cb371;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.apoiadores-content p {
+    color: #ccc;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.midia-grid {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
     gap: 10px;
+    justify-content: center;
 }
 
-.logo-apoio-item {
+.midia-box {
+    background: rgba(0,0,0,0.5);
+    border: 1px dashed #2e8b57;
+    padding: 15px;
+    border-radius: 8px;
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 8px;
+    text-align: center;
+    font-size: 0.85srem;
+    color: #aaa;
 }
 
-.logo-apoio-item img {
-    max-width: 80px;
-    height: 65px;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.2s ease;
-}
-
-.logo-apoio-item img:hover {
-    transform: scale(1.05);
-}
-
-.logo-apoio-item span {
-    font-size: 10px;
-    font-weight: 700;
-    color: #28583e;
-    position: relative;
-    z-index: 5;
-}
-
-.logo-apoio-item img[alt="Associação Curucaca"] {
-    max-width: 100px;
-    height: 85px;
-    transform: scale(1.4);
-    transform-origin: center center;
-}
-
-/* =====================================================
-   ADAPTAÇÃO AUTOMÁTICA PARA COMPUTADOR (DESKTOP)
-===================================================== */
-
-@media (min-width: 768px) {
-
-    /* Expande e centraliza o aplicativo na tela do monitor */
-    .app-container {
-        max-width: 900px;
-        padding: 40px 30px;
-    }
-
-    /* Grade em 4 colunas no computador */
-    .lista-vertical {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 18px;
-    }
-
-    .card-categoria {
-        height: 200px;
-    }
-
-    .barra-busca-wrapper {
-        margin: 15px 0 32px;
-    }
-
-    #busca {
-        height: 60px;
-        font-size: 18px;
-    }
-
-    .titulo-projeto {
-        font-size: 42px;
-    }
-
-    .titulo-principal {
-        font-size: 18px;
-    }
-
-    /* Aumenta a tartaruga do fundo no computador */
-    body {
-        background-size: 750px auto, cover;
-    }
+.hidden {
+    display: none;
 }
