@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #061a10 0%, #0b3520 100%);
+    background: #061a10;
     color: #fff;
     min-height: 100vh;
     display: flex;
@@ -15,10 +15,20 @@ body {
     padding: 20px;
 }
 
+/* Estilo do Topo com a Tartaruga */
 .site-header {
     text-align: center;
     margin-bottom: 25px;
-    margin-top: 10px;
+    max-width: 600px;
+}
+
+.site-header img.logo-tartaruga {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 .site-header h1 {
@@ -37,7 +47,6 @@ body {
 
 .search-container {
     width: 100%;
-    max-width: 550px;
 }
 
 #search-input {
@@ -51,26 +60,24 @@ body {
     outline: none;
 }
 
-#search-input::placeholder {
-    color: #a8a8a8;
-}
-
 .main-content {
     width: 100%;
-    max-width: 850px;
+    max-width: 1000px;
 }
 
+/* Grid de Categorias Organizado */
 .categorias-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 12px;
-    margin-bottom: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-items: center;
 }
 
 .cat-card {
     background: rgba(20, 40, 30, 0.85);
-    border-radius: 10px;
-    padding: 18px 10px;
+    border-radius: 15px;
+    padding: 15px;
     text-decoration: none;
     color: #fff;
     display: flex;
@@ -78,44 +85,62 @@ body {
     align-items: center;
     text-align: center;
     border: 1px solid rgba(46, 139, 87, 0.4);
-    border-bottom: 4px solid #2e8b57;
+    width: 100%;
+    max-width: 230px;
     transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .cat-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     background: rgba(30, 60, 45, 0.95);
     border-color: #3cb371;
 }
 
+/* Limita o tamanho das imagens circulares das categorias */
+.card-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 .card-title {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     letter-spacing: 0.5px;
 }
 
 .card-sub {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: #a3c1ad;
     font-style: italic;
 }
 
+/* Seção de Apoiadores */
 .apoiadores-section {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .apoiadores-btn {
     background-color: #2e8b57;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 0.95rem;
+    padding: 12px 24px;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 .apoiadores-btn:hover {
@@ -123,43 +148,12 @@ body {
 }
 
 .apoiadores-content {
-    margin-top: 12px;
+    margin-top: 15px;
     background: rgba(15, 30, 20, 0.95);
     border: 1px solid #2e8b57;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
     text-align: left;
-}
-
-.apoiadores-content h3 {
-    color: #3cb371;
-    font-size: 1rem;
-    margin-bottom: 8px;
-    text-align: center;
-}
-
-.apoiadores-content p {
-    color: #ccc;
-    font-size: 0.85rem;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.midia-grid {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.midia-box {
-    background: rgba(0,0,0,0.4);
-    border: 1px dashed #2e8b57;
-    padding: 10px;
-    border-radius: 6px;
-    flex: 1;
-    text-align: center;
-    font-size: 0.8rem;
-    color: #aaa;
 }
 
 .hidden {
