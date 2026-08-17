@@ -180,27 +180,26 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
     }
-   /* =================================================
-   AJUSTE DE 5 COLUNAS PARA COMPUTADOR (GRID)
-================================================== */
-
-/* Comportamento padrão para celulares (1 coluna) */
-#lista, .lista-vertical {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-    width: 100%;
-}
-
-/* Em telas de computador (a partir de 1024px), distribui em 5 colunas */
+/* Configuração limpa para 5 colunas no computador */
 @media (min-width: 1024px) {
     #lista, .lista-vertical {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 20px;
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 15px !important;
     }
-}
-    
-    .cabecalho h1 {
-        font-size: 1.6rem;
+
+    #lista .card-categoria {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+
+    #lista .icone-wrapper img, 
+    #lista .icone-cat {
+        display: block !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
 }
