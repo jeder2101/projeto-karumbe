@@ -190,22 +190,3 @@ body {
         text-align: center !important;
         box-sizing: border-box !important;
     }
-
-    /* Reduz levemente o tamanho do texto para caber nas 5 colunas sem sumir */
-    #lista .cat-nome {
-        font-size: 13px !important;
-        display: block !important;
-    }
-
-    #lista .cat-sub {
-        font-size: 11px !important;
-        display: block !important;
-    }
-
-    #lista .icone-cat {
-        width: 45px !important;
-        height: 45px !important;
-        object-fit: contain !important;
-        display: block !important;
-    }
-}
