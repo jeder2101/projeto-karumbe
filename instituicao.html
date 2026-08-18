@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Instituição</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container" style="text-align: center; padding-top: 50px;">
+        <h1 style="color: #5be0ac; margin-bottom: 20px;">Detalhes da Instituição</h1>
+        <p id="info-instituicao" style="font-size: 18px; margin-bottom: 30px;">Carregando informações...</p>
+        
+        <a href="index.html" class="voltar" style="display: inline-block; text-decoration: none;">Voltar para o Início</a>
+    </div>
+
+    <script>
+        // Pega o ID que veio no link (ex: associacao-curucaca)
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+
+        const textoInfo = document.getElementById('info-instituicao');
+
+        if (id === 'associacao-curucaca') {
+            textoInfo.innerText = "Aqui ficarão a Missão, as Ações e as Fotos da Associação Curucaca.";
+        } else if (id === 'escola-karugwa') {
+            textoInfo.innerText = "Aqui ficarão a Missão, as Ações e as Fotos da Escola Karugwá.";
+        } else if (id === 'tekoa-karugwa') {
+            textoInfo.innerText = "Aqui ficarão a Missão, as Ações e as Fotos do Tekoá Karugwá.";
+        } else {
+            textoInfo.innerText = "Instituição não encontrada.";
+        }
+    </script>
+</body>
+</html>
