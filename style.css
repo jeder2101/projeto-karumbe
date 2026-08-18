@@ -9,30 +9,42 @@ html {
     min-height: 100%;
 }
 
+/* =====================================================
+   FUNDO DO SITE COM GRAFISMO DE TARTARUGA
+===================================================== */
+
 body {
     min-height: 100vh;
     color: #ffffff;
-    background: radial-gradient(
-        ellipse at 50% 5%,
-        #507b5d 0%,
-        #3c684f 18%,
-        #294f3e 40%,
-        #17382d 65%,
-        #0b241c 100%
-    );
+    background-color: #0b241c;
+    /* Grafismo de tartaruga em SVG transparente + Degradê */
+    background-image: 
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.08'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E"),
+        radial-gradient(
+            ellipse at 50% 5%,
+            #507b5d 0%,
+            #3c684f 18%,
+            #294f3e 40%,
+            #17382d 65%,
+            #0b241c 100%
+        );
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    background-size: 550px auto, cover;
     background-attachment: fixed;
 }
 
 /* =====================================================
-   CONTAINER E CABEÇALHO (AJUSTADO PARA COMPUTADOR E MOBILE)
+   CONTAINER E CABEÇALHO BASE (CELULAR)
 ===================================================== */
 
 .app-container {
     width: 100%;
-    max-width: 540px; /* Mantém proporção perfeita de aplicativo na tela do computador */
+    max-width: 500px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 24px 20px 35px;
+    transition: max-width 0.3s ease;
 }
 
 .app-header {
@@ -154,7 +166,7 @@ body {
 }
 
 /* =====================================================
-   CATEGORIAS E CARTÕES (GRADE ORGANIZADA)
+   CATEGORIAS E CARTÕES (GRADE MOBILE - 2 COLUNAS)
 ===================================================== */
 
 .lista-vertical {
@@ -190,17 +202,9 @@ body {
 
 /* CORES DAS CATEGORIAS */
 
-.cat-verde {
-    background: #28583e;
-}
-
-.cat-laranja {
-    background: #a95527;
-}
-
-.cat-azul {
-    background: #285f78;
-}
+.cat-verde { background: #28583e; }
+.cat-laranja { background: #a95527; }
+.cat-azul { background: #285f78; }
 
 /* IMAGENS DAS CATEGORIAS */
 
@@ -379,8 +383,6 @@ body {
     z-index: 5;
 }
 
-/* AJUSTE ESPECÍFICO - ASSOCIAÇÃO CURUCACA */
-
 .logo-apoio-item img[alt="Associação Curucaca"] {
     max-width: 100px;
     height: 85px;
@@ -389,19 +391,46 @@ body {
 }
 
 /* =====================================================
-   RESPONSIVIDADE (TELAS MUITO PEQUENAS)
+   ADAPTAÇÃO AUTOMÁTICA PARA COMPUTADOR (DESKTOP)
 ===================================================== */
 
-@media (max-width: 380px) {
+@media (min-width: 768px) {
+
+    /* Expande e centraliza o aplicativo na tela do monitor */
+    .app-container {
+        max-width: 900px;
+        padding: 40px 30px;
+    }
+
+    /* Grade em 4 colunas no computador */
     .lista-vertical {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
     }
 
     .card-categoria {
-        height: 160px;
+        height: 200px;
+    }
+
+    .barra-busca-wrapper {
+        margin: 15px 0 32px;
+    }
+
+    #busca {
+        height: 60px;
+        font-size: 18px;
     }
 
     .titulo-projeto {
-        font-size: 25px;
+        font-size: 42px;
+    }
+
+    .titulo-principal {
+        font-size: 18px;
+    }
+
+    /* Aumenta a tartaruga do fundo no computador */
+    body {
+        background-size: 750px auto, cover;
     }
 }
