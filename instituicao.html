@@ -110,12 +110,15 @@
                 </div>
             `).join('');
 
-            // Insere o link útil apenas se for a página da Escola
+ // Insere os links úteis apenas se for a página da Escola
             if (id === 'escola-karugwa') {
                 htmlGaleria += `
-                    <div style="width: 100%; text-align: center; margin-top: 20px;">
+                    <div style="width: 100%; text-align: center; margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
                         <a href="https://qedu.org.br/escola/35268574-aldeia-karugwa" target="_blank" rel="noopener noreferrer" style="color: #5be0ac; font-weight: bold; text-decoration: underline; font-size: 16px;">
-                            🔗 Link útil da escola no QEdu
+                            🔗 Acesse o link do QEdu da escola
+                        </a>
+                        <a href="https://google.com/maps/place/E.E.I.ALDEIA+KARUGWA+PEI/data=!4m2!3m1!1s0x0:0xf9ed96c96fe6438d?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" style="color: #5be0ac; font-weight: bold; text-decoration: underline; font-size: 16px;">
+                            📍 Ver localização no Google Maps
                         </a>
                     </div>
                 `;
