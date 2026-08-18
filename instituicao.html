@@ -102,13 +102,13 @@
             missao.innerText = dados.missao;
             acoes.innerText = dados.acoes;
 
-            // Gera as fotos com suas respectivas legendas automaticamente
-            let htmlGaleria = dados.fotosAcoes.map(item => `
-                <div style="text-align: center; max-width: 260px; margin-bottom: 15px;">
-                    <img src="${item.url}" alt="Foto da Ação" style="width: 100%; height: 180px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
-                    <p style="color: #ccc; font-size: 14px; margin-top: 8px; line-height: 1.4;">${item.legenda}</p>
-                </div>
-            `).join('');
+// Gera as fotos com suas respectivas legendas automaticamente
+let htmlGaleria = dados.fotosAcoes.map(item => `
+    <div style="text-align: center; max-width: 260px; margin-bottom: 15px;">
+        <img src="${item.url}" alt="Foto da Ação" class="foto-acao">
+        <p style="color: #ccc; font-size: 14px; margin-top: 8px; line-height: 1.4;">${item.legenda}</p>
+    </div>
+`).join('');
 
  // Insere os links úteis apenas se for a página da Escola
             if (id === 'escola-karugwa') {
