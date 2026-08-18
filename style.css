@@ -433,4 +433,15 @@ body {
     body {
         background-size: 750px auto, cover;
     }
+} 
+
+/* Exibição em grade de 5 colunas apenas para Computador */
+@media screen and (min-width: 1024px) {
+    .container-icones {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
