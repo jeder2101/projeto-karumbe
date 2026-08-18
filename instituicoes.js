@@ -11,7 +11,7 @@ const dadosInstituicoes =
     },
     "escola-karugwa": {
         nome: "E.E.I. Aldeia Karugwá Pei",
-        missao: "Missão da escola...",
+        missao: "Proporcionar uma educação escolar indígena diferenciada, bilíngue e intercultural, valorizando a língua materna, os saberes ancestrais e o respeito à natureza",
         acoes: "Ações da escola...",
         fotos: [
             "assets/logos/escola-karugwa/fotos/acao1.png"
