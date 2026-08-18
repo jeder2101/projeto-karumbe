@@ -19,7 +19,7 @@ const dadosInstituicoes =
     },
     {
     "aldeia-karugwa": {
-        nome: "AldeiaKarugwá",
+        nome: "Aldeia Karugwá",
         missao: "Escreva a missão aqui...",
         acoes: "Escreva as ações aqui...",
         fotos: [
