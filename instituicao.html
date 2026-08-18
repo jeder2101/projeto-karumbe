@@ -53,19 +53,21 @@
                 missao: "A Associação Curucaca tem como missão principal fortalecer a cultura, preservar as tradições e garantir os direitos e o bem-estar da comunidade, promovendo o desenvolvimento sustentável e a união entre todos.",
                 acoes: "Desenvolvemos projetos voltados para a educação tradicional, oficinas culturais, preservação ambiental do território e apoio às famílias através de iniciativas comunitárias.",
                 fotosAcoes: [
-                    "assets/logos/associacao-curucaca/fotos/acao1.png",
-                    "assets/logos/associacao-curucaca/fotos/acao2.png"
+                    {
+                        url: "assets/logos/associacao-curucaca/fotos/acao1.png",
+                        legenda: "Atividades da associação."
+                    }
                 ]
             },
             "escola-karugwa": {
                 nome: "E.E.I. Aldeia Karugwá Pei",
-                missao:"Nossa Missão: Raiz, Luta e Futuro na E.E.I. Aldeia Karugwá. Nossa missão nasceu da força coletiva. A história da E.E.I. Aldeia Karugwá — que teve início em 2005 como Escola Ywy Pyhau — não se resume a paredes ou cronogramas, mas ao pulsar de toda uma comunidade unida pelo sonho da emancipação através da educação. Impulsionada pelo trabalho de dois professores formados pela USP através do Magistério Indígena, a escola deu seus primeiros passos em locais improvisados, sustentada unicamente pela coragem, pela esperança e pela participação ativa do nosso povo. Hoje, essa semente plantada com tanto esforço floresceu em um prédio estruturado, transformando a Karugwá em uma referência educacional na região de Itararé, celebrada com orgulho por seus alunos medalhistas e por seu destaque acadêmico. Nossa missão diária é caminhar com firmeza por dois extremos que se completam e se fortalecem: O Rigor e a Conquista: Cumprimos a matriz curricular do Estado com excelência, garantindo que nossos jovens dominem os saberes formais, ocupem espaços e alcancem o topo, provando seu talento através de medalhas e reconhecimento regional. A Essência e a Ancestralidade: Em uníssono, vivemos e respiramos a matriz curricular diversificada, tendo como eixo central a preservação intransigente da língua, da cultura e dos saberes do povo Tupi-Guarani Nhandewa. Nossa missão é ser a ponte entre o passado dos nossos ancestrais e o futuro das nossas crianças, garantindo que caminhar pelos dois mundos seja a maior prova de que nossa identidade é nossa maior força.",",
-                
-    acoes: "Realização de aulas práticas de campo, resgate de histórias tradicionais com os anciãos, feiras culturais e acompanhamento pedagógico focado na identidade Nhandewa.",
-                fotosAcoes: [{
-                    url: "assets/logos/escola-karugwa/fotos/primeira escola.png",
-                    legenda:"Primeira escola da comunidade em seus primeiros anos."
-                }
+                missao: "Nossa Missão: Raiz, Luta e Futuro na E.E.I. Aldeia Karugwá. Nossa missão nasceu da força coletiva. A história da E.E.I. Aldeia Karugwá — que teve início em 2005 como Escola Ywy Pyhau — não se resume a paredes ou cronogramas, mas ao pulsar de toda uma comunidade unida pelo sonho da emancipação através da educação. Impulsionada pelo trabalho de dois professores formados pela USP através do Magistério Indígena, a escola deu seus primeiros passos em locais improvisados, sustentada unicamente pela coragem, pela esperança e pela participação ativa do nosso povo. Hoje, essa semente plantada com tanto esforço floresceu em um prédio estruturado, transformando a Karugwá em uma referência educacional na região de Itararé, celebrada com orgulho por seus alunos medalhistas e por seu destaque acadêmico. Nossa missão diária é caminhar com firmeza por dois extremos que se completam e se fortalecem: O Rigor e a Conquista: Cumprimos a matriz curricular do Estado com excelência, garantindo que nossos jovens dominem os saberes formais, ocupem espaços e alcancem o topo, provando seu talento através de medalhas e reconhecimento regional. A Essência e a Ancestralidade: Em uníssono, vivemos e respiramos a matriz curricular diversificada, tendo como eixo central a preservação intransigente da língua, da cultura e dos saberes do povo Tupi-Guarani Nhandewa. Nossa missão é ser a ponte entre o passado dos nossos ancestrais e o futuro das nossas crianças, garantindo que caminhar pelos dois mundos seja a maior prova de que nossa identidade é nossa maior força.",
+                acoes: "Realização de aulas práticas de campo, resgate de histórias tradicionais com os anciãos, feiras culturais e acompanhamento pedagógico focado na identidade Nhandewa.",
+                fotosAcoes: [
+                    {
+                        url: "assets/logos/escola-karugwa/fotos/primeira escola.png",
+                        legenda: "Primeira escola da comunidade em seus primeiros anos."
+                    }
                 ]
             },
             "tekoa-karugwa": {
@@ -73,10 +75,14 @@
                 missao: "Manter viva a nossa terra, o nosso modo de ser e a harmonia com o meio ambiente, garantindo a sustentabilidade e a autonomia da comunidade para as futuras gerações.",
                 acoes: "Organização de mutirões comunitários, manejo sustentável, festivais de canto e dança tradicional e fortalecimento da espiritualidade.",
                 fotosAcoes: [
-                    "assets/logos/tekoa-karugwa/fotos/acao1.png"
+                    {
+                        url: "assets/logos/tekoa-karugwa/fotos/acao1.png",
+                        legenda: "Vivência na comunidade."
+                    }
                 ]
             }
         };
+
         const dados = instituicoes[id];
 
         if (dados) {
@@ -84,9 +90,12 @@
             missao.innerText = dados.missao;
             acoes.innerText = dados.acoes;
 
-            // Gera as fotos da seção de ações automaticamente usando o caminho da pasta fotos/
-            galeriaAcoes.innerHTML = dados.fotosAcoes.map(foto => `
-                <img src="${foto}" alt="Foto da Ação" style="width: 100%; max-width: 260px; height: 180px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+            // Gera as fotos com suas respectivas legendas automaticamente
+            galeriaAcoes.innerHTML = dados.fotosAcoes.map(item => `
+                <div style="text-align: center; max-width: 260px; margin-bottom: 15px;">
+                    <img src="${item.url}" alt="Foto da Ação" style="width: 100%; height: 180px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+                    <p style="color: #ccc; font-size: 14px; margin-top: 8px; line-height: 1.4;">${item.legenda}</p>
+                </div>
             `).join('');
         } else {
             titulo.innerText = "Instituição não encontrada";
