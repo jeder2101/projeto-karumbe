@@ -103,12 +103,25 @@
             acoes.innerText = dados.acoes;
 
             // Gera as fotos com suas respectivas legendas automaticamente
-            galeriaAcoes.innerHTML = dados.fotosAcoes.map(item => `
+            let htmlGaleria = dados.fotosAcoes.map(item => `
                 <div style="text-align: center; max-width: 260px; margin-bottom: 15px;">
                     <img src="${item.url}" alt="Foto da Ação" style="width: 100%; height: 180px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
                     <p style="color: #ccc; font-size: 14px; margin-top: 8px; line-height: 1.4;">${item.legenda}</p>
                 </div>
             `).join('');
+
+            // Insere o link útil apenas se for a página da Escola
+            if (id === 'escola-karugwa') {
+                htmlGaleria += `
+                    <div style="width: 100%; text-align: center; margin-top: 20px;">
+                        <a href="https://qedu.org.br/escola/35268574-aldeia-karugwa" target="_blank" rel="noopener noreferrer" style="color: #5be0ac; font-weight: bold; text-decoration: underline; font-size: 16px;">
+                            🔗 Acesse o link útil da escola no QEdu
+                        </a>
+                    </div>
+                `;
+            }
+
+            galeriaAcoes.innerHTML = htmlGaleria;
         } else {
             titulo.innerText = "Instituição não encontrada";
             missao.innerText = "";
