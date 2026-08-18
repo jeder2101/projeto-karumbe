@@ -3,32 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes da Instituição</title>
+    <title>Projeto Karumbé - Detalhes da Instituição</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container" style="text-align: center; padding-top: 50px;">
-        <h1 style="color: #5be0ac; margin-bottom: 20px;">Detalhes da Instituição</h1>
-        <p id="info-instituicao" style="font-size: 18px; margin-bottom: 30px;">Carregando informações...</p>
-        
-        <a href="index.html" class="voltar" style="display: inline-block; text-decoration: none;">Voltar para o Início</a>
+    <div class="app-container" style="padding: 20px; text-align: center;">
+
+        <!-- TÍTULO DA INSTITUIÇÃO -->
+        <h1 id="titulo-inst" style="color: #5be0ac; margin-bottom: 15px;">Instituição</h1>
+
+        <!-- SEÇÃO DE MISSÃO E AÇÕES -->
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: left;">
+            <h3 style="color: #fff; margin-bottom: 8px;">Missão</h3>
+            <p id="texto-missao" style="color: #ccc; margin-bottom: 15px;">Carregando missão...</p>
+
+            <h3 style="color: #fff; margin-bottom: 8px;">Ações</h3>
+            <p id="texto-acoes" style="color: #ccc;">Carregando ações...</p>
+        </div>
+
+        <!-- GALERIA DE FOTOS -->
+        <h3 style="color: #fff; margin-bottom: 10px;">Galeria de Fotos</h3>
+        <div id="galeria-fotos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 30px;">
+            <!-- As fotos aparecem aqui automaticamente -->
+        </div>
+
+        <!-- BOTÃO DE VOLTAR -->
+        <a href="index.html" class="btn-voltar" style="display: inline-block; background: #112822; color: #5be0ac; border: 1px solid #5be0ac; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+            ← Voltar para o Início
+        </a>
+
     </div>
 
     <script>
-        // Pega o ID que veio no link (ex: associacao-curucaca)
+        // Pega o ID da URL (ex: associacao-curucaca)
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
 
-        const textoInfo = document.getElementById('info-instituicao');
+        const titulo = document.getElementById('titulo-inst');
+        const missao = document.getElementById('texto-missao');
+        const acoes = document.getElementById('texto-acoes');
+        const galeria = document.getElementById('galeria-fotos');
 
+        // Textos e fotos de cada instituição
         if (id === 'associacao-curucaca') {
-            textoInfo.innerText = "Aqui ficarão a Missão, as Ações e as Fotos da Associação Curucaca.";
-        } else if (id === 'escola-karugwa') {
-            textoInfo.innerText = "Aqui ficarão a Missão, as Ações e as Fotos da Escola Karugwá.";
-        } else if (id === 'tekoa-karugwa') {
-            textoInfo.innerText = "Aqui ficarão a Missão, as Ações e as Fotos do Tekoá Karugwá.";
-        } else {
-            textoInfo.innerText = "Instituição não encontrada.";
+            titulo.innerText = "Associação Curucaca";
+            missao.innerText = "Escreva aqui a missão da associação...";
+            acoes.innerText = "Escreva aqui as principais ações realizadas...";
+            
+            // Adicione suas fotos aqui dentro (mude o nome do arquivo conforme o que você subiu na pasta)
+            galeria.innerHTML = `
+                <img src="assets/logos/associacao-curucaca/foto1.jpg" alt="Foto Associação" style="width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover;">
+            `;
+        } 
+        else if (id === 'escola-karugwa') {
+            titulo.innerText = "E.E.I. Aldeia Karugwá Pei";
+            missao.innerText = "Escreva aqui a missão da escola...";
+            acoes.innerText = "Escreva aqui as ações pedagógicas e culturais...";
+            
+            galeria.innerHTML = `
+                <img src="assets/logos/escola-karugwa/foto1.jpg" alt="Foto Escola" style="width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover;">
+            `;
+        } 
+        else if (id === 'tekoa-karugwa') {
+            titulo.innerText = "Tekoá Karugwá";
+            missao.innerText = "Escreva aqui a missão da comunidade...";
+            acoes.innerText = "Escreva aqui as ações da comunidade...";
+            
+            galeria.innerHTML = `
+                <img src="assets/logos/tekoa-karugwa/foto1.jpg" alt="Foto Tekoa" style="width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover;">
+            `;
+        } 
+        else {
+            titulo.innerText = "Instituição não encontrada";
+            missao.innerText = "";
+            acoes.innerText = "";
         }
     </script>
 </body>
