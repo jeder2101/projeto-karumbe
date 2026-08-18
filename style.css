@@ -395,17 +395,10 @@ body {
 ===================================================== */
 
 @media (min-width: 768px) {
-
     /* Expande e centraliza o aplicativo na tela do monitor */
     .app-container {
         max-width: 900px;
         padding: 40px 30px;
-    }
-
-    /* Grade em 4 colunas no computador */
-    .lista-vertical {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 18px;
     }
 
     .card-categoria {
@@ -429,19 +422,19 @@ body {
         font-size: 18px;
     }
 
-    /* Aumenta a tartaruga do fundo no computador */
     body {
         background-size: 750px auto, cover;
     }
-} 
+}
 
-/* Exibição em grade de 5 colunas apenas para Computador */
+/* Exatamente 5 colunas e largura estendida para telas grandes */
 @media screen and (min-width: 1024px) {
-    .container-icones {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
+    .app-container {
+        max-width: 1400px; /* Libera espaço na horizontal para o computador */
+    }
+
+    .lista-vertical {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important; /* Força as 5 colunas */
         gap: 20px;
-        max-width: 1400px;
-        margin: 0 auto;
     }
 }
