@@ -456,3 +456,12 @@ body {
     background: #000;    /* Fundo preto elegante */
     display: block;
 }
+.foto-dicionario {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: contain !important;
+    background: #000;
+    display: block;
+    transform: rotate(90deg); /* Gira a foto para ficar em pé */
+}
