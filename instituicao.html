@@ -7,76 +7,90 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container" style="padding: 20px; text-align: center;">
+    <div class="app-container" style="padding: 20px; text-align: center; max-width: 800px; margin: 0 auto;">
 
         <!-- TÍTULO DA INSTITUIÇÃO -->
-        <h1 id="titulo-inst" style="color: #5be0ac; margin-bottom: 15px;">Instituição</h1>
+        <h1 id="titulo-inst" style="color: #5be0ac; margin-bottom: 20px;">Instituição</h1>
 
-        <!-- SEÇÃO DE MISSÃO E AÇÕES -->
-        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: left;">
-            <h3 style="color: #fff; margin-bottom: 8px;">Missão</h3>
-            <p id="texto-missao" style="color: #ccc; margin-bottom: 15px;">Carregando missão...</p>
-
-            <h3 style="color: #fff; margin-bottom: 8px;">Ações</h3>
-            <p id="texto-acoes" style="color: #ccc;">Carregando ações...</p>
+        <!-- SEÇÃO DE MISSÃO -->
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 10px; margin-bottom: 20px; text-align: left;">
+            <h3 style="color: #5be0ac; margin-bottom: 10px;">🌟 Missão</h3>
+            <p id="texto-missao" style="color: #ccc; line-height: 1.5;">Carregando missão...</p>
         </div>
 
-        <!-- GALERIA DE FOTOS -->
-        <h3 style="color: #fff; margin-bottom: 10px;">Galeria de Fotos</h3>
-        <div id="galeria-fotos" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 30px;">
-            <!-- As fotos aparecem aqui automaticamente -->
+        <!-- SEÇÃO DE AÇÕES E FOTOS DAS AÇÕES -->
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 10px; margin-bottom: 30px; text-align: left;">
+            <h3 style="color: #5be0ac; margin-bottom: 10px;">🛠️ Ações Realizadas</h3>
+            <p id="texto-acoes" style="color: #ccc; margin-bottom: 20px; line-height: 1.5;">Carregando ações...</p>
+            
+            <h4 style="color: #fff; margin-bottom: 12px; font-size: 16px;">Fotos das Ações:</h4>
+            <div id="galeria-acoes" style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+                <!-- As fotos específicas das ações entram aqui automaticamente -->
+            </div>
         </div>
 
         <!-- BOTÃO DE VOLTAR -->
-        <a href="index.html" class="btn-voltar" style="display: inline-block; background: #112822; color: #5be0ac; border: 1px solid #5be0ac; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+        <a href="index.html" style="display: inline-block; background: #112822; color: #5be0ac; border: 1px solid #5be0ac; padding: 10px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-bottom: 20px;">
             ← Voltar para o Início
         </a>
 
     </div>
 
     <script>
-        // Pega o ID da URL (ex: associacao-curucaca)
+        // Pega o ID da URL para saber qual instituição foi clicada
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
 
         const titulo = document.getElementById('titulo-inst');
         const missao = document.getElementById('texto-missao');
         const acoes = document.getElementById('texto-acoes');
-        const galeria = document.getElementById('galeria-fotos');
+        const galeriaAcoes = document.getElementById('galeria-acoes');
 
-        // Textos e fotos de cada instituição
-        if (id === 'associacao-curucaca') {
-            titulo.innerText = "Associação Curucaca";
-            missao.innerText = "Escreva aqui a missão da associação...";
-            acoes.innerText = "Escreva aqui as principais ações realizadas...";
-            
-            // Adicione suas fotos aqui dentro (mude o nome do arquivo conforme o que você subiu na pasta)
-            galeria.innerHTML = `
-                <img src="assets/logos/associacao-curucaca/foto1.jpg" alt="Foto Associação" style="width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover;">
-            `;
-        } 
-        else if (id === 'escola-karugwa') {
-            titulo.innerText = "E.E.I. Aldeia Karugwá Pei";
-            missao.innerText = "Escreva aqui a missão da escola...";
-            acoes.innerText = "Escreva aqui as ações pedagógicas e culturais...";
-            
-            galeria.innerHTML = `
-                <img src="assets/logos/escola-karugwa/foto1.jpg" alt="Foto Escola" style="width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover;">
-            `;
-        } 
-        else if (id === 'tekoa-karugwa') {
-            titulo.innerText = "Tekoá Karugwá";
-            missao.innerText = "Escreva aqui a missão da comunidade...";
-            acoes.innerText = "Escreva aqui as ações da comunidade...";
-            
-            galeria.innerHTML = `
-                <img src="assets/logos/tekoa-karugwa/foto1.jpg" alt="Foto Tekoa" style="width: 100%; max-width: 300px; border-radius: 8px; object-fit: cover;">
-            `;
-        } 
-        else {
+        // Banco de dados organizado com missão, ações e fotos exclusivas para as ações
+        const instituicoes = {
+            "associacao-curucaca": {
+                nome: "Associação Curucaca",
+                missao: "Escreva aqui a missão detalhada da associação...",
+                acoes: "Escreva aqui as explicações sobre as ações desenvolvidas...",
+                fotosAcoes: [
+                    "assets/logos/associacao-curucaca/fotos/acao1.jpg",
+                    "assets/logos/associacao-curucaca/fotos/acao2.jpg"
+                ]
+            },
+            "escola-karugwa": {
+                nome: "E.E.I. Aldeia Karugwá Pei",
+                missao: "Escreva aqui a missão pedagógica da escola...",
+                acoes: "Escreva aqui as ações pedagógicas e culturais...",
+                fotosAcoes: [
+                    "assets/logos/escola-karugwa/fotos/acao1.jpg"
+                ]
+            },
+            "tekoa-karugwa": {
+                nome: "Tekoá Karugwá",
+                missao: "Escreva aqui a missão da comunidade...",
+                acoes: "Escreva aqui as ações e vivências da comunidade...",
+                fotosAcoes: [
+                    "assets/logos/tekoa-karugwa/fotos/acao1.jpg"
+                ]
+            }
+        };
+
+        const dados = instituicoes[id];
+
+        if (dados) {
+            titulo.innerText = dados.nome;
+            missao.innerText = dados.missao;
+            acoes.innerText = dados.acoes;
+
+            // Gera as fotos da seção de ações automaticamente usando o caminho da pasta fotos/
+            galeriaAcoes.innerHTML = dados.fotosAcoes.map(foto => `
+                <img src="${foto}" alt="Foto da Ação" style="width: 100%; max-width: 260px; height: 180px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+            `).join('');
+        } else {
             titulo.innerText = "Instituição não encontrada";
             missao.innerText = "";
             acoes.innerText = "";
+            galeriaAcoes.innerHTML = "";
         }
     </script>
 </body>
