@@ -458,15 +458,14 @@ body {
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 .foto-acao {
     width: 100%;
-    height: 180px;
+    height: 220px; /* Aumentamos um pouquinho a altura para dar espaço */
     border-radius: 8px;
-    object-fit: cover;
-    background: #000;
+    object-fit: contain !important; /* Mostra a foto INTEIRA sem cortar nada */
+    background: #000;              /* Fundo preto elegante nas laterais */
     display: block;
+    margin: 0 auto;
 }
 
 .card-foto p {
