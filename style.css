@@ -541,5 +541,5 @@ body {
     height: 100% !important;
     object-fit: contain !important;
     display: block !important;
-    transform: scale(1.6); /* Ajuste este valor se quiser aumentar ou diminuir o ícone */
+    transform: scale(2.6); /* Ajuste este valor se quiser aumentar ou diminuir o ícone */
 }
