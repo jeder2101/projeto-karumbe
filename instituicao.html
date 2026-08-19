@@ -30,8 +30,8 @@
             </div>
         </div>
 
-        <!-- SEÇÃO DE LINKS ÚTEIS (Cor Original com Textos em Branco) -->
-        <div id="caixa-links-uteis" style="display: none; background: #112822; border: 1px solid rgba(91, 224, 172, 0.3); padding: 25px; border-radius: 10px; margin: 20px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+        <!-- SEÇÃO DE LINKS ÚTEIS (Com a classe padrão que aplica o grafismo da tartaruga) -->
+        <div id="caixa-links-uteis" class="app-container" style="display: none; background: #112822; border: 1px solid rgba(91, 224, 172, 0.3); padding: 25px; border-radius: 10px; margin: 20px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
             <h3 style="color: #5be0ac; margin-bottom: 15px;">🔗 Links Úteis</h3>
             
             <div style="display: flex; gap: 30px; justify-content: center; align-items: center; width: 100%; padding: 10px 0;">
@@ -139,7 +139,7 @@
             
             galeriaAcoes.innerHTML = htmlGaleria;
 
-            // Se for a escola, exibe a caixa de links com a cor padrão e textos brancos
+            // Se for a escola, exibe a caixa de links com o fundo original e grafismo
             if (id === 'escola-karugwa') {
                 caixaLinksUteis.style.display = 'block';
             }
