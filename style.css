@@ -539,7 +539,10 @@ body {
 .btn-link-inst img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: contain !important;
+    /* object-fit: fill força a imagem a esticar e preencher todo o espaço, 
+       ignorando as margens transparentes originais */
+    object-fit: fill !important; 
     display: block !important;
-    transform: scale(2.6); /* Ajuste este valor se quiser aumentar ou diminuir o ícone */
+    padding: 0 !important;
+    margin: 0 !important;
 }
