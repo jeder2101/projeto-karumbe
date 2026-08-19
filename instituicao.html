@@ -24,7 +24,7 @@
             <p id="texto-acoes" style="color: #ccc; margin-bottom: 20px; line-height: 1.5;">Carregando ações...</p>
             
             <h4 style="color: #fff; margin-bottom: 12px; font-size: 16px;">Fotos das Ações:</h4>
-            <div id="galeria-acoes" style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+            <div id="galeria-acoes">
                 <!-- As fotos específicas das ações entram aqui automaticamente -->
             </div>
         </div>
@@ -102,15 +102,15 @@
             missao.innerText = dados.missao;
             acoes.innerText = dados.acoes;
 
-// Gera as fotos com suas respectivas legendas automaticamente
-        let htmlGaleria = dados.fotosAcoes.map(item => `
-            <div class="card-foto">
-                <img src="${item.url}" alt="Foto da Ação" class="foto-acao">
-                <p>${item.legenda}</p>
-            </div>
-        `).join('');
+            // Gera as fotos com suas respectivas legendas automaticamente em cards estruturados
+            let htmlGaleria = dados.fotosAcoes.map(item => `
+                <div class="card-foto">
+                    <img src="${item.url}" alt="Foto da Ação" class="foto-acao">
+                    <p>${item.legenda}</p>
+                </div>
+            `).join('');
 
- // Insere os links úteis apenas se for a página da Escola
+            // Insere os links úteis apenas se for a página da Escola
             if (id === 'escola-karugwa') {
                 htmlGaleria += `
                     <div style="width: 100%; text-align: center; margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
