@@ -395,7 +395,6 @@ body {
 ===================================================== */
 
 @media (min-width: 768px) {
-    /* Expande e centraliza o aplicativo na tela do monitor */
     .app-container {
         max-width: 900px;
         padding: 40px 30px;
@@ -427,20 +426,21 @@ body {
     }
 }
 
-/* Exatamente 5 colunas e largura estendida para telas grandes */
 @media screen and (min-width: 1024px) {
     .app-container {
-        max-width: 1400px; /* Libera espaço na horizontal para o computador */
+        max-width: 1400px;
     }
 
     .lista-vertical {
-        grid-template-columns: repeat(5, minmax(0, 1fr)) !important; /* Força as 5 colunas */
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
         gap: 20px;
     }
+}
 
+/* =====================================================
+   AJUSTES DE CARDS E FOTOS DE AÇÃO / DICIONÁRIO
+===================================================== */
 
-
-/* --- AJUSTE DEFINITIVO DOS CARDS E FOTOS DE AÇÃO --- */
 #galeria-acoes {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
@@ -458,20 +458,18 @@ body {
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-    .foto-acao {
+.foto-acao {
     width: 100%;
     height: 220px;
     border-radius: 8px;
-    object-fit: contain !important; /* Mantém a foto inteira sem cortar */
-    
-    /* Fundo escuro com o grafismo da tartaruga aplicado de forma suave */
+    object-fit: contain !important;
     background-color: #0b241c;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.12'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    
     display: block;
     margin: 0 auto;
 }
@@ -482,26 +480,30 @@ body {
     margin-top: 10px;
     line-height: 1.4;
 }
-/* --- AJUSTE PARA A FOTO DO DICIONÁRIO --- */
+
+/* --- AJUSTE DA LARGURA DA FOTO DO DICIONÁRIO (ENTRE AS LINHAS) --- */
 .card-dicionario {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
     padding: 12px;
     text-align: center;
-    max-width: 280px;
+    max-width: 540px; /* <--- Controla a largura exata entre as linhas pretas que você marcou */
     margin: 15px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .foto-dicionario {
     width: 100%;
-    max-width: 250px;
-    height: 180px;
+    max-width: 100%;
+    height: 240px;
     border-radius: 8px;
     object-fit: contain !important;
-    background: #000;
+    background-color: #0b241c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.12'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     display: block;
     margin: 0 auto;
-    transform: rotate(90deg);
 }
