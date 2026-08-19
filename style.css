@@ -43,7 +43,11 @@ body {
     max-width: 500px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 24px 20px 35px;
+    padding: 100px 20px 35px 20px; /* Joga todo o conteúdo para baixo, tirando da borda superior */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     transition: max-width 0.3s ease;
 }
 
@@ -397,7 +401,7 @@ body {
 @media (min-width: 768px) {
     .app-container {
         max-width: 900px;
-        padding: 40px 30px;
+        padding: 60px 30px;
     }
 
     .card-categoria {
@@ -481,14 +485,14 @@ body {
     line-height: 1.4;
 }
 
-/* --- AJUSTE DA LARGURA DA FOTO DO DICIONÁRIO (ENTRE AS LINHAS) --- */
+/* --- AJUSTE DA LARGURA DA FOTO DO DICIONÁRIO --- */
 .card-dicionario {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
     padding: 12px;
     text-align: center;
-    max-width: 540px; /* <--- Controla a largura exata entre as linhas pretas que você marcou */
+    max-width: 540px;
     margin: 15px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -507,6 +511,7 @@ body {
     display: block;
     margin: 0 auto;
 }
+
 /* --- ESTILO DOS BOTÕES DE LINKS DA ESCOLA --- */
 .botoes-instituicao {
     display: flex;
@@ -543,11 +548,10 @@ body {
     background: rgba(255, 255, 255, 0.15);
 }
 
-/* Força ambas as imagens a terem o mesmo comportamento exato dentro do quadrado */
 .btn-link-inst img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* Faz a imagem preencher toda a caixa de forma uniforme */
+    object-fit: cover !important;
     display: block !important;
     border-radius: 12px;
-}}
+}
