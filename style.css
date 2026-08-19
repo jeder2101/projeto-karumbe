@@ -510,10 +510,10 @@ body {
 /* --- ESTILO DOS BOTÕES DE LINKS DA ESCOLA --- */
 .botoes-instituicao {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centraliza os botões lado a lado no meio*/
     align-items: center;
-    gap: 25px;
-    margin-top: 30px;
+    gap: 30px;
+    margin-top: 20px;
     width: 100%;
 }
 
