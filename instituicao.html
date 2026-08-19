@@ -5,41 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Karumbé - Detalhes da Instituição</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo garantido para as fotos nunca vazarem da tela ou da caixa */
+        .foto-acao {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            display: block;
+            border-radius: 8px;
+        }
+    </style>
 </head>
     
 <body>
-    <div class="app-container" style="padding: 60px 20px 20px 20px; text-align: center; max-width: 900px; margin: 0 auto;">
+    <div class="app-container" style="padding: 40px 15px 20px 15px; text-align: center; max-width: 900px; margin: 0 auto; box-sizing: border-box;">
 
         <!-- TÍTULO DA INSTITUIÇÃO -->
-        <h1 id="titulo-inst" style="color: #ffffff; margin-bottom: 25px; text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Instituição</h1>
+        <h1 id="titulo-inst" style="color: #ffffff; margin-bottom: 25px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-size: 24px;">Instituição</h1>
 
-        <!-- SEÇÃO DE MISSÃO (Fundo Branco, Letras Pretas e Confortáveis) -->
-        <div style="background: #ffffff; color: #112822; border: 1px solid #d1d5db; padding: 30px; border-radius: 12px; margin: 0 auto 25px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
-            <h3 style="color: #0b241c; font-size: 22px; font-weight: 800; margin-bottom: 15px;">🌟 Missão</h3>
+        <!-- SEÇÃO DE MISSÃO -->
+        <div style="background: #ffffff; color: #112822; border: 1px solid #d1d5db; padding: 25px; border-radius: 12px; margin: 0 auto 20px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+            <h3 style="color: #0b241c; font-size: 20px; font-weight: 800; margin-bottom: 15px;">🌟 Missão</h3>
             <p id="texto-missao" style="color: #222222; font-size: 16px; line-height: 1.6; font-weight: 500; word-break: break-word;">Carregando missão...</p>
         </div>
 
-        <!-- SEÇÃO DE AÇÕES REALIZADAS (Fundo Branco, Letras Pretas e Confortáveis) -->
-        <div style="background: #ffffff; color: #112822; border: 1px solid #d1d5db; padding: 30px; border-radius: 12px; margin: 0 auto 25px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
-            <h3 style="color: #0b241c; font-size: 22px; font-weight: 800; margin-bottom: 15px;">🛠️ Ações Realizadas</h3>
+        <!-- SEÇÃO DE AÇÕES REALIZADAS -->
+        <div style="background: #ffffff; color: #112822; border: 1px solid #d1d5db; padding: 25px; border-radius: 12px; margin: 0 auto 20px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+            <h3 style="color: #0b241c; font-size: 20px; font-weight: 800; margin-bottom: 15px;">🛠️ Ações Realizadas</h3>
             <p id="texto-acoes" style="color: #222222; font-size: 16px; line-height: 1.6; font-weight: 500; margin-bottom: 20px;">Carregando ações...</p>
             
             <h4 style="color: #0b241c; margin-bottom: 12px; font-size: 18px; font-weight: 700;">Fotos das Ações:</h4>
-            <div id="galeria-acoes">
-                <!-- As fotos específicas das ações entram aqui -->
+            <div id="galeria-acoes" style="width: 100%; box-sizing: border-box;">
+                <!-- As fotos específicas das ações entram aqui perfeitamente ajustadas -->
             </div>
         </div>
 
-        <!-- SEÇÃO DE LINKS ÚTEIS (Compacta, com fundo da tartaruga e textos brancos) -->
-        <div id="caixa-links-uteis" style="display: none; background: #112822; border: 1px solid rgba(91, 224, 172, 0.3); padding: 20px 30px; border-radius: 12px; margin: 0 auto 25px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
-            <h3 style="color: #5be0ac; font-size: 20px; font-weight: 800; margin-bottom: 15px;">🔗 Links Úteis</h3>
+        <!-- SEÇÃO DE LINKS ÚTEIS -->
+        <div id="caixa-links-uteis" style="display: none; background: #112822; border: 1px solid rgba(91, 224, 172, 0.3); padding: 20px; border-radius: 12px; margin: 0 auto 20px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+            <h3 style="color: #5be0ac; font-size: 18px; font-weight: 800; margin-bottom: 15px;">🔗 Links Úteis</h3>
             
-            <div style="display: flex; gap: 30px; justify-content: center; align-items: center; width: 100%;">
+            <div style="display: flex; gap: 20px; justify-content: center; align-items: center; width: 100%; flex-wrap: wrap;">
                 
                 <!-- Botão QEdu -->
                 <div style="display: flex; flex-direction: column; align-items: center;">
                     <a href="https://qedu.org.br/escola/35268574-aldeia-karugwa" target="_blank" rel="noopener noreferrer" class="btn-link-inst">
-                        <img src="assets/links/qedu.png" alt="QEdu">
+                        <img src="assets/links/qedu.png" alt="QEdu" style="max-width: 60px; height: auto;">
                     </a>
                     <span style="color: #ffffff; font-weight: bold; font-size: 14px; margin-top: 8px;">QEdu</span>
                 </div>
@@ -47,7 +57,7 @@
                 <!-- Botão Localização -->
                 <div style="display: flex; flex-direction: column; align-items: center;">
                     <a href="https://google.com/maps/place/E.E.I.ALDEIA+KARUGWA+PEI/data=!4m2!3m1!1s0x0:0xf9ed96c96fe6438d?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" class="btn-link-inst">
-                        <img src="assets/links/mapa.png" alt="Localização">
+                        <img src="assets/links/mapa.png" alt="Localização" style="max-width: 60px; height: auto;">
                     </a>
                     <span style="color: #ffffff; font-weight: bold; font-size: 14px; margin-top: 8px;">Localização</span>
                 </div>
@@ -63,7 +73,6 @@
     </div>
 
     <script>
-        // Pega o ID da URL para saber qual instituição foi clicada
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id');
 
@@ -73,7 +82,6 @@
         const galeriaAcoes = document.getElementById('galeria-acoes');
         const caixaLinksUteis = document.getElementById('caixa-links-uteis');
 
-        // Banco de dados organizado com missão, ações e fotos exclusivas para as ações
         const instituicoes = {
             "associacao-curucaca": {
                 nome: "Associação Curucaca",
@@ -149,9 +157,8 @@
             missao.innerText = dados.missao;
             acoes.innerText = dados.acoes;
 
-            // Gera as fotos na galeria de ações
             let htmlGaleria = dados.fotosAcoes.map(item => `
-                <div class="card-foto" style="background: rgba(0,0,0,0.03); border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; margin-bottom: 12px;">
+                <div class="card-foto" style="background: rgba(0,0,0,0.03); border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; margin-bottom: 15px; box-sizing: border-box;">
                     <img src="${item.url}" alt="Foto da Ação" class="foto-acao">
                     <p style="color: #4b5563; font-size: 14px; margin-top: 8px;">${item.legenda}</p>
                 </div>
@@ -159,7 +166,6 @@
             
             galeriaAcoes.innerHTML = htmlGaleria;
 
-            // Se for a escola, exibe a caixa de links compacta
             if (id === 'escola-karugwa') {
                 caixaLinksUteis.style.display = 'block';
             }
