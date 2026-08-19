@@ -110,26 +110,26 @@
                 </div>
             `).join('');
 
-    // Insere os links úteis apenas se for a página da Escola
+  // Insere os links úteis apenas se for a página da Escola
             if (id === 'escola-karugwa') {
                 htmlGaleria += `
-                    <div style="width: 100%; margin-top: 40px; text-align: center;">
+                    <div style="width: 100%; margin-top: 40px; text-align: center; display: flex; flex-direction: column; align-items: center;">
                         <h3 style="color: #5be0ac; margin-bottom: 20px;">🔗 Links Úteis</h3>
                         <div class="botoes-instituicao">
                             <!-- Botão QEdu -->
-                            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                            <div class="item-link">
                                 <a href="https://qedu.org.br/escola/35268574-aldeia-karugwa" target="_blank" rel="noopener noreferrer" title="Mais informações no QEdu" class="btn-link-inst">
                                     <img src="assets/links/qedu.png" alt="QEdu">
                                 </a>
-                                <span style="color: #5be0ac; font-weight: bold; font-size: 14px;">QEdu</span>
+                                <span style="color: #5be0ac; font-weight: bold; font-size: 14px; margin-top: 8px; display: block;">QEdu</span>
                             </div>
 
                             <!-- Botão Localização -->
-                            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                            <div class="item-link">
                                 <a href="https://google.com/maps/place/E.E.I.ALDEIA+KARUGWA+PEI/data=!4m2!3m1!1s0x0:0xf9ed96c96fe6438d?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" title="Localização" class="btn-link-inst">
                                     <img src="assets/links/mapa.png" alt="Localização">
                                 </a>
-                                <span style="color: #5be0ac; font-weight: bold; font-size: 14px;">Localização</span>
+                                <span style="color: #5be0ac; font-weight: bold; font-size: 14px; margin-top: 8px; display: block;">Localização</span>
                             </div>
                         </div>
                     </div>
