@@ -30,11 +30,10 @@
             </div>
         </div>
 
-        <!-- SEÇÃO EXCLUSIVA PARA LINKS ÚTEIS (Fundo Branco) -->
-        <div id="caixa-links-uteis" style="display: none; background: #ffffff; color: #112822; border: 1px solid #d1d5db; padding: 30px; border-radius: 12px; margin: 0 auto 25px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
-            <h3 style="color: #0b241c; font-size: 22px; font-weight: 800; margin-bottom: 15px;">🔗 Links Úteis</h3>
+        <!-- SEÇÃO DE LINKS ÚTEIS (Cor Original com Textos em Branco) -->
+        <div id="caixa-links-uteis" style="display: none; background: #112822; border: 1px solid rgba(91, 224, 172, 0.3); padding: 25px; border-radius: 10px; margin: 20px auto; max-width: 900px; width: 100%; box-sizing: border-box; text-align: left; box-shadow: 0 8px 20px rgba(0,0,0,0.4);">
+            <h3 style="color: #5be0ac; margin-bottom: 15px;">🔗 Links Úteis</h3>
             
-            <!-- Botões organizados diretamente no HTML para garantir que nunca fiquem de fora -->
             <div style="display: flex; gap: 30px; justify-content: center; align-items: center; width: 100%; padding: 10px 0;">
                 
                 <!-- Botão QEdu -->
@@ -42,7 +41,7 @@
                     <a href="https://qedu.org.br/escola/35268574-aldeia-karugwa" target="_blank" rel="noopener noreferrer" class="btn-link-inst">
                         <img src="assets/links/qedu.png" alt="QEdu">
                     </a>
-                    <span style="color: #0b241c; font-weight: bold; font-size: 14px; margin-top: 8px;">QEdu</span>
+                    <span style="color: #ffffff; font-weight: bold; font-size: 14px; margin-top: 8px;">QEdu</span>
                 </div>
 
                 <!-- Botão Localização -->
@@ -50,7 +49,7 @@
                     <a href="https://google.com/maps/place/E.E.I.ALDEIA+KARUGWA+PEI/data=!4m2!3m1!1s0x0:0xf9ed96c96fe6438d?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener noreferrer" class="btn-link-inst">
                         <img src="assets/links/mapa.png" alt="Localização">
                     </a>
-                    <span style="color: #0b241c; font-weight: bold; font-size: 14px; margin-top: 8px;">Localização</span>
+                    <span style="color: #ffffff; font-weight: bold; font-size: 14px; margin-top: 8px;">Localização</span>
                 </div>
 
             </div>
@@ -130,7 +129,7 @@
             missao.innerText = dados.missao;
             acoes.innerText = dados.acoes;
 
-            // Gera as fotos na galeria de ações com visual limpo
+            // Gera as fotos na galeria de ações
             let htmlGaleria = dados.fotosAcoes.map(item => `
                 <div class="card-foto" style="background: rgba(0,0,0,0.03); border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; margin-bottom: 12px;">
                     <img src="${item.url}" alt="Foto da Ação" class="foto-acao">
@@ -140,7 +139,7 @@
             
             galeriaAcoes.innerHTML = htmlGaleria;
 
-            // Se for a escola, mostra a caixa de links úteis que já está pronta no HTML
+            // Se for a escola, exibe a caixa de links com a cor padrão e textos brancos
             if (id === 'escola-karugwa') {
                 caixaLinksUteis.style.display = 'block';
             }
