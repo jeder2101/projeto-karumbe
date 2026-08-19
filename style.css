@@ -458,12 +458,20 @@ body {
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-.foto-acao {
+
+    .foto-acao {
     width: 100%;
-    height: 220px; /* Aumentamos um pouquinho a altura para dar espaço */
+    height: 220px;
     border-radius: 8px;
-    object-fit: contain !important; /* Mostra a foto INTEIRA sem cortar nada */
-    background: #000;              /* Fundo preto elegante nas laterais */
+    object-fit: contain !important; /* Mantém a foto inteira sem cortar */
+    
+    /* Fundo escuro com o grafismo da tartaruga aplicado de forma suave */
+    background-color: #0b241c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.12'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
     display: block;
     margin: 0 auto;
 }
