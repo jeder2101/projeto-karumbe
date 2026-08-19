@@ -526,7 +526,7 @@ body {
     background: rgba(255, 255, 255, 0.08);
     border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 18px;
-    padding: 0px; /* <--- Zerado para a imagem aproveitar 100% do espaço da caixa */
+    padding: 10px;
     box-sizing: border-box;
     transition: transform 0.2s ease, background 0.2s ease;
 }
@@ -541,4 +541,5 @@ body {
     height: 100% !important;
     object-fit: contain !important;
     display: block !important;
+    transform: scale(1.6); /* Ajuste este valor se quiser aumentar ou diminuir o ícone */
 }
