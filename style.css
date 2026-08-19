@@ -510,11 +510,18 @@ body {
 /* --- ESTILO DOS BOTÕES DE LINKS DA ESCOLA --- */
 .botoes-instituicao {
     display: flex;
-    justify-content: center; /* Centraliza os botões lado a lado no meio*/
+    justify-content: center;
     align-items: center;
     gap: 30px;
     margin-top: 20px;
     width: 100%;
+}
+
+.item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .btn-link-inst {
@@ -526,7 +533,7 @@ body {
     background: rgba(255, 255, 255, 0.08);
     border: 2px solid rgba(255, 255, 255, 0.25);
     border-radius: 18px;
-    padding: 10px;
+    padding: 12px;
     box-sizing: border-box;
     transition: transform 0.2s ease, background 0.2s ease;
 }
@@ -536,11 +543,10 @@ body {
     background: rgba(255, 255, 255, 0.15);
 }
 
-
+/* Força ambas as imagens a terem o mesmo comportamento exato dentro do quadrado */
 .btn-link-inst img {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
     display: block !important;
-    transform: scale(2.5); /* Ajuste este valor se quiser aumentar ou diminuir o ícone */
 }
