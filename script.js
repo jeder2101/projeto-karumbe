@@ -361,7 +361,7 @@ function mostrarPalavras(palavras) {
         }
 
 
-        /* =================================================
+    /* =================================================
            IMAGEM
         ================================================= */
 
@@ -369,23 +369,19 @@ function mostrarPalavras(palavras) {
             item.imagem
             ? `
 
-                <div style="
-                    margin-top:15px;
-                    border-radius:12px;
-                    overflow:hidden;
-                    max-height:280px;
-                ">
+                <div class="card-foto" style="margin-top: 15px;">
 
                     <img
                         src="${item.imagem}"
                         alt="${item.palavra}"
-                        style="
-                            width:100%;
-                            height:100%;
-                            object-fit:cover;
-                            display:block;
-                        "
+                        class="foto-acao"
                     >
+
+                    ${
+                        item.legenda
+                        ? `<p>${item.legenda}</p>`
+                        : ""
+                    }
 
                 </div>
 
