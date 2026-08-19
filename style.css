@@ -465,3 +465,59 @@ body {
     display: block;
     transform: rotate(90deg); /* Gira a foto para ficar em pé */
 }
+/* --- AJUSTE DEFINITIVO DOS CARDS E FOTOS DE AÇÃO --- */
+#galeria-acoes {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+    gap: 16px !important;
+    width: 100%;
+}
+
+.card-foto {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foto-acao {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #000;
+    display: block;
+}
+
+.card-foto p {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+/* --- AJUSTE PARA A FOTO DO DICIONÁRIO --- */
+.card-dicionario {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 12px;
+    text-align: center;
+    max-width: 280px;
+    margin: 15px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.foto-dicionario {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: contain !important;
+    background: #000;
+    display: block;
+    transform: rotate(90deg); /* Mantém a rotação caso precise */
+}
