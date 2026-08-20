@@ -6332,5 +6332,205 @@ const DICIONARIO = [
             "Não pegue no meu braço. / Não segure no meu braço (Ordem).",
             "Você não pegue meu braço. / Você não está segurando meu braço (Afirmação de um fato)."
         ]
+    },
+    {
+        palavra: "Djywá-tãkã / Txedjywá-tãkã",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Cotovelo / Meu cotovelo.",
+        audio: "assets/audios/txedjywatakan.mp3",
+        imagem: "assets/svg/cotovelo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txedjywá-tãkã oĩ rasy.",
+            "Erekó nhangarekó ndedjywá-tã.",
+            "Txe o´ama ambyai txedjywá-tãkã."
+        ],
+        traducao: [
+            "Meu cotovelo está doendo.",
+            "Tenha cuidado com o teu cotovelo.",
+            "Quando eu caí machuquei meu cotovelo."
+        ]
+    },
+    {
+        palavra: "Ka'e / Txeka'e",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Axila / Minha axila.",
+        audio: "assets/audios/txekae.mp3",
+        imagem: "assets/svg/axila.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Ndeka´e oĩ iné-wei, edjau aỹ.",
+            "Ndeka'e-py oĩ emõ, emoĩ moã.",
+            "Txe emõ e´ỹ, txeka´e-py aỹ."
+        ],
+        traducao: [
+            "Teu suvaco (axila) está fedendo, tome banho agora / lave-se.",
+            "A tua axila está com coceira, passe o remédio.",
+            "Eu estou sem coceira no meu suvaco agora."
+        ]
+    },
+    {
+        palavra: "Py / Txepy",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Pé / Meu pé.",
+        audio: "assets/audios/txepy.mp3",
+        imagem: "assets/svg/pe.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txepy iky´a.",
+            "Ndepy oĩ imã, edju apy toma´ẽ.",
+            "Txepy imã."
+        ],
+        traducao: [
+            "Meu pé está sujo.",
+            "Teu pé está torto, venha aqui para eu dar uma olhada!",
+            "Meu pé está torto."
+        ]
+    },
+    {
+        palavra: "Pytsã / Txepytsã",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Dedo do pé / Meu dedo do pé.",
+        audio: "assets/audios/txepytsan.mp3",
+        imagem: "assets/svg/dedopedo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Ikatu ma´ẽ ndepytsã?",
+            "Pytsã-py oĩ pytsãpẽ.",
+            "Ndepytsã iruru."
+        ],
+        traducao: [
+            "Posso (é possível) olhar o seu dedo do pé?",
+            "No dedo do pé tem unha.",
+            "Seu dedo do pé está inchado."
+        ]
+    },
+    {
+        palavra: "Retasay / Txeretasay",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Lágrima / Minha lágrima.",
+        audio: "assets/audios/txeretasay.mp3",
+        imagem: "assets/svg/lagrima.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Oẽ txeretasay txeretsá py.",
+            "Amboatsy ramõ oẽ retasay txeretsá.",
+            "Edja´emẽ nderetasay, ndaikatui o´a ywy-re."
+        ],
+        traducao: [
+            "Sai minha lágrima do meu olho.",
+            "Quando estou triste sai lágrima dos meus olhos.",
+            "Não chore, as tuas lágrimas não podem cair no chão."
+        ]
+    },
+    {
+        palavra: "Radju / Txeradju",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Nervo / Meu nervo.",
+        audio: "assets/audios/txeradju.mp3",
+        imagem: "assets/svg/nervo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu txeradju rasy.",
+            "Nderadju oĩ ruru.",
+            "Ambyai txeradju, mombo itá ysyru-py."
+        ],
+        traducao: [
+            "Sinto meu nervo doer.",
+            "Seu nervo está inchado.",
+            "Machuquei meu nervo, jogando pedra no rio."
+        ]
+    },
+    {
+        palavra: "Pytu'ũ / Txepytu'ũ",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Cérebro / Meu cérebro.",
+        audio: "assets/audios/txepytun.mp3",
+        imagem: "assets/svg/cerebro.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Arandu txepytu'ũ-py.",
+            "Pytu'ũ-py oĩ pensa porã ha wai.",
+            "Ereko pensa porã."
+        ],
+        traducao: [
+            "Há sabedoria no meu cérebro.",
+            "Na mente (cérebro) tem pensamentos bons e ruins.",
+            "Tenha bons pensamentos."
+        ]
+    },
+    {
+        palavra: "Kangwé / Txekangwé",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Osso / Meu osso.",
+        audio: "assets/audios/txekangwe.mp3",
+        imagem: "assets/svg/osso.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu rasy txekangwé-py.",
+            "Kangwé atã.",
+            "Etxakeke txemaminó, ndekangwé rembyai-eme."
+        ],
+        traducao: [
+            "Sinto dor no meu osso.",
+            "O osso é duro.",
+            "Cuidado, meu neto, para não quebrar teus ossos!"
+        ]
+    },
+    {
+        palavra: "Ragwé / Txeragwé",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Pelo / Meu pelo.",
+        audio: "assets/audios/txeragwe.mp3",
+        imagem: "assets/svg/pelo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Oĩ ragwé nde rembi´u.",
+            "Edjyro nde rowaragwé.",
+            "Djawu txupé edjyro rowa-ragué."
+        ],
+        traducao: [
+            "Tem pelo na sua comida.",
+            "Corte os pelos do seu rosto.",
+            "Fale pra ele tirar os pelos da cara."
+        ]
+    },
+    {
+        palavra: "Edjyro",
+        tipo: "verbo",
+        categoria: "Verbo de Ação / Modo Imperativo (2ª Pessoa)",
+        significado: "Desça / Tire / Retire / Raspe / Remova",
+        audio: "assets/audios/edjyro.mp3",
+        imagem: "assets/svg/acao.jpg",
+        sentido_de: "Ação de raspar ou remover",
+        falante: "Uso geral",
+        exemplos: [
+            "Edjyro rowa-ragwé.",
+            "Edjyro póa-ragwé.",
+            "Edjyro aoké."
+        ],
+        traducao: [
+            "Raspe / tire a barba (pelos do rosto).",
+            "Raspe / tire os pelos do braço/mão.",
+            "Tire a roupa."
+        ]
     }
 ];
