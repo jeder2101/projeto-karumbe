@@ -695,27 +695,6 @@ const DICIONARIO = [
         ]
     },
     {
-        palavra: "Ãkã",
-        tipo: "substantivo",
-        categoria: "Corpo humano",
-        significado: "Cabeça.",
-        audio: "assets/audios/aka.mp3",
-        sentido_de: "Parte superior da anatomia do corpo humano",
-        falante: "Uso geral",
-        exemplos: [
-            "Txeãkã.",
-            "Aetxa neãkã.",
-            "Ãkã tuwitxa.",
-            "Txeãkã naporãi."
-        ],
-        traducao: [
-            "Minha cabeça.",
-            "Eu vejo sua cabeça.",
-            "Cabeça grande.",
-            "Minha cabeça não está bem."
-        ]
-    },
-    {
         palavra: "Aka'ẽ",
         tipo: "substantivo",
         categoria: "Animais",
