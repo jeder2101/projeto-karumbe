@@ -39,10 +39,10 @@ body {
 
 .app-container {
     width: 100%;
-    max-width: 900px; /* Mantém um tamanho excelente para a tela inicial */
+    max-width: 1100px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 60px 20px 35px 20px;
+    padding: 50px 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -67,8 +67,8 @@ body {
 }
 
 .logo-tartaruga {
-    width: 260px;
-    height: 170px;
+    width: 240px;
+    height: 150px;
     display: block;
     object-fit: contain;
     object-position: center;
@@ -84,7 +84,7 @@ body {
 }
 
 .titulo-projeto {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 1;
     font-weight: 900;
     letter-spacing: 2px;
@@ -129,7 +129,8 @@ body {
 .barra-busca-wrapper {
     position: relative;
     width: 100%;
-    margin: 15px 0 26px;
+    max-width: 800px;
+    margin: 15px auto 26px auto;
 }
 
 .icone-busca {
@@ -168,7 +169,7 @@ body {
 }
 
 /* =====================================================
-   CATEGORIAS (TELA INICIAL)
+   CATEGORIAS (TELA INICIAL) - GRID ORGANIZADO
 ===================================================== */
 
 .lista-vertical {
@@ -176,6 +177,18 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .lista-vertical {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .lista-vertical {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 .card-categoria {
@@ -253,49 +266,66 @@ body {
 }
 
 .cat-nome {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.1;
     font-weight: 900;
 }
 
 .cat-sub {
     margin-top: 4px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.2;
     opacity: 0.88;
 }
 
 /* =====================================================
-   RESULTADOS DE PALAVRAS / PRONÚNCIA (CARDS REDUZIDOS E EMPILHADOS)
+   RESULTADOS / CARDS DE PRONÚNCIA E FOTOS (TRAVADOS E EMPILHADOS)
 ===================================================== */
 
-#lista:has(.card-pronuncia) {
+#lista:has(.card-pronuncia),
+#lista:has(.card-dicionario),
+#lista:has(.card-foto) {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
 }
 
-.card-pronuncia {
+.card-pronuncia,
+.card-dicionario,
+.card-foto {
     background: rgba(25, 59, 48, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 22px;
-    padding: 18px 22px;
+    padding: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     
-    /* Aqui limitamos o tamanho para o card não ficar gigante de ponta a ponta */
     width: 100% !important;
-    max-width: 650px !important; 
-    margin: 0 auto 18px auto !important;
+    max-width: 750px !important; 
+    margin: 0 auto 20px auto !important;
     
     display: flex !important;
     flex-direction: column !important;
-    justify-content: space-between !important;
+}
+
+/* TRAVA AS IMAGENS DENTRO DOS CARDS PARA NÃO "FUGIREM" */
+.card-pronuncia img,
+.card-dicionario img,
+.card-foto img,
+.foto-dicionario,
+.foto-acao {
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 320px !important;
+    object-fit: contain !important;
+    border-radius: 12px;
+    display: block;
+    margin: 10px auto;
 }
 
 .voltar {
     width: fit-content;
-    padding: 10px 16px;
+    padding: 10px 18px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     background: rgba(255, 255, 255, 0.10);
@@ -306,7 +336,7 @@ body {
 }
 
 .palavra-titulo {
-    font-size: 24px;
+    font-size: 26px;
     color: #5be0ac;
 }
 
@@ -336,7 +366,8 @@ body {
 
 .secao-apoio {
     width: 100%;
-    margin-top: 30px;
+    max-width: 900px;
+    margin: 30px auto 0 auto;
     padding: 20px 15px 22px;
     background: rgba(255, 255, 255, 0.96);
     color: #17352b;
@@ -382,11 +413,4 @@ body {
     font-size: 10px;
     font-weight: 700;
     color: #28583e;
-}
-
-@media screen and (min-width: 1024px) {
-    .lista-vertical {
-        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-        gap: 16px;
-    }
 }
