@@ -295,13 +295,13 @@ body {
     grid-column: 1 / -1;
     background: rgba(25, 59, 49, 0.96);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 20px;
+    border-radius: 28px;
     padding: 22px;
     margin-bottom: 5px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     /*ADICIONE ESTAS DUAS LIHAS ABAIXO:*/
-    max-width:25px;
-    margin:0 auto 25px auto;
+    max-width:750px;
+    margin:25px auto;
 }
 
 .palavra-titulo {
