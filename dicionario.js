@@ -9,7 +9,7 @@ const DICIONARIO = [
         sentido_de: "Saudação matinal ou amanhecer agradável",
         falante: "Uso geral",
         exemplos: [
-            "Kõé'porã! nderá eweri?",
+            "Ko´ẽ porã! nderá eweri?",
             "Aiko porã! A'e ndee?",
             "Aiko pkrã awei!"
         ],
