@@ -39,7 +39,7 @@ body {
 
 .app-container {
     width: 100%;
-    max-width: 1350px; /* Largura ampla para acomodar os 5 cards na horizontal */
+    max-width: 1350px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 50px 20px;
@@ -296,7 +296,6 @@ body {
     flex-direction: column !important;
 }
 
-/* MANTÉM AS FOTOS DO DICIONÁRIO PERFEITAS E DENTRO DOS CARDS */
 .card-pronuncia img,
 .card-dicionario img,
 .card-foto img,
@@ -346,6 +345,44 @@ body {
     background: #4cd9a4;
     color: #12352a;
     cursor: pointer;
+}
+
+/* =====================================================
+   BOTÃO / CARD DA GALERIA (Substituindo "Fotos das Ações")
+===================================================== */
+
+.btn-galeria-acoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100% !important;
+    max-width: 750px !important;
+    margin: 20px auto 15px auto !important;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #28583e 0%, #17382d 100%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-galeria-acoes:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #326d4e 0%, #1f4739 100%);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+/* Estilo opcional para a imagem ou ícone clicável dentro do botão de Galeria */
+.btn-galeria-acoes img {
+    max-height: 35px;
+    object-fit: contain;
+    border-radius: 6px;
 }
 
 /* =====================================================
