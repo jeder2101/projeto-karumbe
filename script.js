@@ -320,8 +320,8 @@ function mostrarPalavras(palavras) {
 
                                     <p style="
                                         margin:0;
-                                        font-style:italic;
-                                        font-size:18px;
+                                        font-style:normal;
+                                        font-size:20px;
                                         line-height:1.5;
                                     ">
 
