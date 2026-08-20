@@ -320,9 +320,9 @@ function mostrarPalavras(palavras) {
 
                                     <p style="
                                         margin:0;
-                                        font-style:normal;
                                         font-size:20px;
                                         line-height:1.5;
+                                        color:#e67e22;
                                     ">
 
                                         ${ex}
