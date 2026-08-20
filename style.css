@@ -439,3 +439,20 @@ body {
     font-weight: 700;
     color: #28583e;
 }
+/* =====================================================
+   AJUSTE AUTOMÁTICO PARA CELULAR (MOBILE)
+===================================================== */
+@media (max-width: 768px) {
+    .lista-vertical {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important; /* Deixa 2 colunas no celular para os cards ficarem largos e proporcionais */
+        gap: 12px !important;
+    }
+    
+    .card-categoria {
+        height: 130px !important; /* Reduz a altura no celular para não esticar */
+    }
+    
+    .cat-nome {
+        font-size: 15px !important; /* Ajusta o tamanho do texto para caber bem */
+    }
+}
