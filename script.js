@@ -325,7 +325,7 @@ function mostrarPalavras(palavras) {
                                         line-height:1.5;
                                     ">
 
-                                        "${ex}"
+                                        ${ex}
 
                                     </p>
 
