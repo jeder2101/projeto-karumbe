@@ -17,7 +17,6 @@ body {
     min-height: 100vh;
     color: #ffffff;
     background-color: #0b241c;
-    /* Grafismo de tartaruga em SVG transparente + Degradê */
     background-image: 
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 800' opacity='0.08'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M400,150 C550,150 680,260 680,420 C680,580 550,680 400,680 C250,680 120,580 120,420 C120,260 250,150 400,150 Z'/%3E%3Cpolygon points='400,220 480,280 480,380 400,440 320,380 320,280'/%3E%3Cpolygon points='400,440 480,500 480,600 400,640 320,600 320,500'/%3E%3Cpolyline points='480,280 600,240 640,340 480,380'/%3E%3Cpolyline points='320,280 200,240 160,340 320,380'/%3E%3Cpolyline points='480,500 620,520 600,620 480,600'/%3E%3Cpolyline points='320,500 180,520 200,620 320,600'/%3E%3C/g%3E%3C/svg%3E"),
         radial-gradient(
@@ -43,7 +42,7 @@ body {
     max-width: 500px;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 100px 20px 35px 20px; /* Joga todo o conteúdo para baixo, tirando da borda superior */
+    padding: 100px 20px 35px 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -170,7 +169,7 @@ body {
 }
 
 /* =====================================================
-   CATEGORIAS E CARTÕES (GRADE MOBILE - 2 COLUNAS)
+   CATEGORIAS E TELA INICIAL (MANTIDAS 100% ORIGINAIS)
 ===================================================== */
 
 .lista-vertical {
@@ -204,13 +203,9 @@ body {
     transform: scale(0.98);
 }
 
-/* CORES DAS CATEGORIAS */
-
 .cat-verde { background: #28583e; }
 .cat-laranja { background: #a95527; }
 .cat-azul { background: #285f78; }
-
-/* IMAGENS DAS CATEGORIAS */
 
 .icone-wrapper {
     position: absolute;
@@ -275,18 +270,33 @@ body {
     line-height: 1.2;
     opacity: 0.88;
 }
+
 /* =====================================================
-   CONTAINER DA LISTA DE PALAVRAS (RESULTADOS)
+   RESULTADOS DO DICIONÁRIO (ACIONADO APENAS QUANDO BUSCA/CLICA)
+   Aqui ele empilha os cards e usa largura maior (1100px) para o monitor
 ===================================================== */
 
-#lista {
+#lista.modo-resultados {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    max-width: 950px !important; /* Aumentado para 950px (mude aqui se quiser maior) */
+    max-width: 1100px !important;
     margin: 0 auto !important;
-    padding: 0 10px !important;
+}
+
+.voltar {
+    width: fit-content;
+    padding: 11px 18px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-pronuncia {
@@ -296,9 +306,9 @@ body {
     padding: 22px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     
-    /* Largura ampliada e centralizada */
+    /* Largura ampla de 1100px, centralizada e empilhada */
     width: 100% !important;
-    max-width: 950px !important; /* Mesmo valor para acompanhar o container */
+    max-width: 1100px !important;
     margin: 0 auto 25px auto !important;
     
     display: flex !important;
@@ -490,7 +500,6 @@ body {
     line-height: 1.4;
 }
 
-/* --- AJUSTE DA LARGURA DA FOTO DO DICIONÁRIO --- */
 .card-dicionario {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -517,7 +526,6 @@ body {
     margin: 0 auto;
 }
 
-/* --- ESTILO DOS BOTÕES DE LINKS DA ESCOLA --- */
 .botoes-instituicao {
     display: flex;
     justify-content: center;
