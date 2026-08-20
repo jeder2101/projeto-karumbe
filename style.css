@@ -289,6 +289,16 @@ body {
 
 
 /* =====================================================
+   TELA INICIAL (BOTÕES DE CATEGORIA)
+   Mantém o layout original sem alterar a grade inicial
+===================================================== */
+
+#lista {
+    /* Deixe aqui o comportamento original que estava funcionando para as categorias da tela inicial */
+}
+
+
+/* =====================================================
    BOTÃO VOLTAR E RESULTADOS DO DICIONÁRIO
 ===================================================== */
 
@@ -302,6 +312,21 @@ body {
     color: #ffffff;
     cursor: pointer;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =====================================================
+   CONTAINER E ALINHAMENTO EXCLUSIVO DOS CARDS DE PALAVRAS
+===================================================== */
+
+#lista:has(.card-pronuncia) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .card-pronuncia {
@@ -316,7 +341,7 @@ body {
     max-width: 750px;
     margin-bottom: 25px;
     
-    /* Faz o conteúdo interno se distribuir bem */
+    /* Conteúdo interno */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
