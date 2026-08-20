@@ -5826,4 +5826,532 @@ const DICIONARIO = [
       "minha roupa cor-de-rosa."
     ]
   },
+    {
+        palavra: "Akã / Txeakã",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Cabeça / Minha cabeça.",
+        audio: "assets/audios/txeakan.mp3",
+        imagem: "assets/svg/cabeca.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txeakã Onhemõ.",
+            "Aetxa neãkã.",
+            "Akã gwasu.",
+            "Txeakã naporãi."
+        ],
+        traducao: [
+            "Minha cabeça coça.",
+            "Eu vejo sua cabeça.",
+            "Cabeça grande.",
+            "Minha cabeça não está bem."
+        ]
+    },
+    {
+        palavra: "'Awy / Txe'awy",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Cabelo / Meu cabelo.",
+        audio: "assets/audios/txeawy.mp3",
+        imagem: "assets/svg/cabelo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añemõ txe'awy-py.",
+            "Oĩ 'awy.",
+            "Txe'awy puku."
+        ],
+        traducao: [
+            "Me coço no meu cabelo.",
+            "Tem cabelo.",
+            "Meu cabelo está grande / comprido."
+        ]
+    },
+    {
+        palavra: "Kupé / Txekupé",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Costas / Minhas costas.",
+        audio: "assets/audios/txekupe.mp3",
+        imagem: "assets/svg/costas.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Enhemõ txekupé.",
+            "Oĩ pere kupé-py.",
+            "Anhandu txekupe rasy."
+        ],
+        traducao: [
+            "Coce minhas costas.",
+            "Tem uma ferida nas costas.",
+            "Sinto dor nas minhas costas."
+        ]
+    },
+    {
+        palavra: "Poapy / Texepoapy",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Pulso / Meu pulso.",
+        audio: "assets/audios/texepoapy.mp3",
+        imagem: "assets/svg/pulso.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu radju texepoapy-py.",
+            "Oĩ poapy.",
+            "Txepoapy irasy."
+        ],
+        traducao: [
+            "Sinto o nervo no meu pulso.",
+            "Tem pulso / É o pulso.",
+            "Meu pulso está doendo."
+        ]
+    },
+    {
+        palavra: "Nambi / Txenambi",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Orelha / Minha orelha.",
+        audio: "assets/audios/txenambi.mp3",
+        imagem: "assets/svg/orelha.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Eñemõ mbewe txenambi.",
+            "Oĩ nambi.",
+            "Inambi gwasu marũ oendu porã."
+        ],
+        traducao: [
+            "Coce devagar minha orelha.",
+            "Tem orelha.",
+            "A orelha dele é grande, por isso ouve bem."
+        ]
+    },
+    {
+        palavra: "Apytsã-kwá / Txeapytsã-kwá",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Ouvido / Meu ouvido.",
+        audio: "assets/audios/txeapytsakwa.mp3",
+        imagem: "assets/svg/ouvido.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu emõ txeapytsã-kwá py.",
+            "Apytsã-kwá py oĩ.",
+            "Txeapytsã-kwá kya'eỹ."
+        ],
+        traducao: [
+            "Sinto coceira no meu ouvido.",
+            "Está no ouvido.",
+            "Meu ouvido não está sujo (está limpo)."
+        ]
+    },
+    {
+        palavra: "Apyté / Txeapyté",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Testa / Minha testa.",
+        audio: "assets/audios/txeapyte.mp3",
+        imagem: "assets/svg/testa.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añemõ mbegwe txeapyté.",
+            "Apyté py oĩ pere.",
+            "Oatsã uruku txeapyté."
+        ],
+        traducao: [
+            "Coço devagar minha testa.",
+            "Tem ferida na testa.",
+            "Ele(a) pintou minha testa com urucum."
+        ]
+    },
+    {
+        palavra: "Nhe'ẽ / Txenhe'ẽ",
+        tipo: "expressão",
+        categoria: "Expressões / Corpo humano",
+        significado: "Espírito / Meu espírito.",
+        audio: "assets/audios/txenheen.mp3",
+        imagem: "assets/svg/espirito.jpg",
+        sentido_de: "Dimensão espiritual e interna",
+        falante: "Uso geral",
+        exemplos: [
+            "Txenhe'ẽ owy'a.",
+            "Arandu nhe'ẽ py.",
+            "Txenhe´ẽ ndapotai mba´e wai."
+        ],
+        traducao: [
+            "Meu espírito se alegra.",
+            "Sabedoria no espírito.",
+            "Meu espírito não gosta do mal."
+        ]
+    },
+    {
+        palavra: "Retsá / Txeretsá",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Olho / Meu olho.",
+        audio: "assets/audios/txeretsa.mp3",
+        imagem: "assets/svg/olho.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Ebotý nderetsá.",
+            "Iretsá porã.",
+            "Oĩ rasy retsá."
+        ],
+        traducao: [
+            "Feche seus olhos / Feche os olhos.",
+            "Os olhos dele(a) são bonitos / Tem uma boa visão (enxerga bem).",
+            "Tem dor no olho."
+        ]
+    },
+    {
+        palavra: "Rowá / Txerowá",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Rosto / Meu rosto.",
+        audio: "assets/audios/txerowa.mp3",
+        imagem: "assets/svg/rosto.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txerowá.",
+            "Oĩ nderowá py.",
+            "Txe etxa nderowá, ndaetxaĩ neretsá."
+        ],
+        traducao: [
+            "Coço meu rosto.",
+            "Está no seu rosto / Tem no seu rosto.",
+            "Eu vejo o seu rosto, mas não vejo os seus olhos."
+        ]
+    },
+    {
+        palavra: "Apyingwá / Txeapyingwá",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Nariz / Meu nariz.",
+        audio: "assets/audios/txeapyingwa.mp3",
+        imagem: "assets/svg/nariz.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu emõ txeapyingwá py.",
+            "Oĩ apyingwá gwasu.",
+            "Txeapyingwá naporãi kowa'e áry."
+        ],
+        traducao: [
+            "Sinto coceira no meu nariz.",
+            "Tem nariz enorme.",
+            "O meu nariz não está bom hoje / não está bom neste dia."
+        ]
+    },
+    {
+        palavra: "Djuru / Txedjuru",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Boca / Minha boca.",
+        audio: "assets/audios/txedjuru.mp3",
+        imagem: "assets/svg/boca.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Ebotý txedjuru.",
+            "Ere djuru py.",
+            "Akaru txejuru-py."
+        ],
+        traducao: [
+            "Feche minha boca / Feche a boca.",
+            "Você diz pela boca.",
+            "Eu como com a minha boca."
+        ]
+    },
+    {
+        palavra: "Raĩ / Txeraĩ",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Dente / Meu dente.",
+        audio: "assets/audios/txerain.mp3",
+        imagem: "assets/svg/dente.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu rasy txeraĩ-py.",
+            "Tapeo ky'aĩtiro nderaĩ, mitãngwe.",
+            "Ireko raĩ iporã."
+        ],
+        traducao: [
+            "Sinto dor no meu dente.",
+            "Vão escovar / limpar os seus dentes, crianças.",
+            "Ele(a) tem dentes bonitos / dentes bons (saudáveis)."
+        ]
+    },
+    {
+        palavra: "Rembé / Txerembé",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Lábio / Meu lábio.",
+        audio: "assets/audios/txerembe.mp3",
+        imagem: "assets/svg/labio.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txerembé rasy.",
+            "Oĩ rembé py.",
+            "Txerembe pota nepute porã."
+        ],
+        traducao: [
+            "Coço devagar meu lábio.",
+            "Está no lábio.",
+            "Meu lábio quer o seu beijo gostoso."
+        ]
+    },
+    {
+        palavra: "Rembeytá / Txerembeytá",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Queixo / Meu queixo.",
+        audio: "assets/audios/txerembeyta.mp3",
+        imagem: "assets/svg/queixo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txerembeytá oĩ atã.",
+            "Rembeytá py oĩ pere.",
+            "Txerembeytá apyta atã djapo ro'y-ramõ.",
+            "Añandu txerembeytá oĩ atã."
+        ],
+        traducao: [
+            "Coço meu queixo.",
+            "Tem uma ferida no queixo.",
+            "Meu queixo está duro quando faz frio.",
+            "Sinto que meu queixo está firme/contraído."
+        ]
+    },
+    {
+        palavra: "Apenkũ / Txeapenkũ",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Língua / Minha língua.",
+        audio: "assets/audios/txeapenkun.mp3",
+        imagem: "assets/svg/lingua.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Ere nepenkũ-py nhandewa-rupi, kowa'e porã-ete txeiru.",
+            "Enhe'ẽ nepenkũ-py nhandewa-rupi.",
+            "Apenkũ py oĩ."
+        ],
+        traducao: [
+            "Você fala na sua língua conforme o nhandewa, isto é muito bom, meu amigo.",
+            "Fale na sua língua do jeito nhandewa.",
+            "Está na língua."
+        ]
+    },
+    {
+        palavra: "Ati'y / Txeati'y",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Ombro / Meu ombro.",
+        audio: "assets/audios/txeatiy.mp3",
+        imagem: "assets/svg/ombro.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Gweraa djape´a ndeati'y-py.",
+            "Gweraa nderywy neati'y-py.",
+            "Txeati'y-rõ rasy txesy oatsa moã."
+        ],
+        traducao: [
+            "Leve a lenha no seu ombro / Carregue a lenha no seu ombro.",
+            "Carregue o seu irmão mais novo no seu ombro / Leve o seu irmão mais novo no seu ombro.",
+            "Quando meu ombro dói, minha mãe passa remédio."
+        ]
+    },
+    {
+        palavra: "Poti'á / Txepoti'á",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Peito / Meu peito.",
+        audio: "assets/audios/txepotia.mp3",
+        imagem: "assets/svg/peito.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Gweraa txepoti'á-py mandu´a ymaguare-gwi.",
+            "Poti'á-py oĩ.",
+            "Aipota agweraa txepoti'á-py mandu'a porã."
+        ],
+        traducao: [
+            "Carrego no meu peito a lembrança de antigamente.",
+            "Está no peito.",
+            "Quero carregar no meu peito uma boa lembrança."
+        ]
+    },
+    {
+        palavra: "Pó / Txepó",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Mão / Minha mão.",
+        audio: "assets/audios/txepo.mp3",
+        imagem: "assets/svg/mao.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Eipyy txepó.",
+            "Eipyy txepó-py ko'aỹ.",
+            "Ndepo irasy."
+        ],
+        traducao: [
+            "Segure a minha mão / Pegue na minha mão.",
+            "Segure na minha mão agora / Pegue na minha mão agora.",
+            "A sua mão dói."
+        ]
+    },
+    {
+        palavra: "Kwã / Txekwã",
+        tipo: "expressão",
+        categoria: "Partes do Corpo / Membros Superiores",
+        significado: "Dedo da mão / Meu dedo da mão.",
+        audio: "assets/audios/txekwan.mp3",
+        imagem: "assets/svg/dedo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txekwã iko txepo-py.",
+            "Kwã-py oĩ poapẽ.",
+            "Ambyai txekwã."
+        ],
+        traducao: [
+            "O meu dedo está na minha mão.",
+            "No dedo da mão tem unha.",
+            "Machuquei o meu dedo / Estraguei o meu dedo / Feri o meu dedo."
+        ]
+    },
+    {
+        palavra: "Ryé / Txeryé",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Barriga / Minha barriga.",
+        audio: "assets/audios/txerye.mp3",
+        imagem: "assets/svg/barriga.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu emõ txeryé py.",
+            "Ryé py oĩ.",
+            "Txeryé oĩ kororo, txembyai."
+        ],
+        traducao: [
+            "Sinto coceira na minha barriga.",
+            "Está na barriga.",
+            "Minha barriga está roncando, estou com fome."
+        ]
+    },
+    {
+        palavra: "Puru'ã / Txepuru'ã",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Umbigo / Meu umbigo.",
+        audio: "assets/audios/txepuruan.mp3",
+        imagem: "assets/svg/umbigo.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Enhemõ txepuru'ã.",
+            "Puru'ã py oĩ pere.",
+            "Edjoi nepuru'ã djau ramõ!"
+        ],
+        traducao: [
+            "Coce meu umbigo.",
+            "Tem uma ferida no umbigo.",
+            "Lave o seu umbigo quando for tomar banho! / Lave o seu umbigo ao tomar banho!"
+        ]
+    },
+    {
+        palavra: "Tymã / Txetymã",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Perna / Minha perna.",
+        audio: "assets/audios/txetyman.mp3",
+        imagem: "assets/svg/perna.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añemõ mbewe txetymã.",
+            "Oĩ tymã mbarete.",
+            "Netymã irasy, aha atsa moã."
+        ],
+        traducao: [
+            "Coço devagar minha perna.",
+            "Tem perna forte / Ele(a) tem pernas fortes / A perna dele(a) é forte.",
+            "A sua perna dói, eu vou e passo remédio / Se a sua perna doer, vou passar remédio."
+        ]
+    },
+    {
+        palavra: "Tãkã / Txetãkã",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Joelho / Meu joelho.",
+        audio: "assets/audios/txetakan.mp3",
+        imagem: "assets/svg/joelho.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu rasy txetãkã-py, pynhare.",
+            "Mamõ rasy ndetãkã-pe?",
+            "Txetãkã mbyte-py.",
+            "Txetãkã ywatý-py.",
+            "Txetãkã igwype."
+        ],
+        traducao: [
+            "Sinto dor na minha canela de noite / Sinto dor na minha canela durante a noite.",
+            "Onde dói na sua canela? / Em qual parte da sua canela dói?",
+            "No meio da minha canela.",
+            "Na parte de cima da minha canela (perto do joelho).",
+            "Na parte de baixo da minha canela (perto do tornozelo)."
+        ]
+    },
+    {
+        palavra: "Adju'y / Txeadju'y",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Pescoço / Meu pescoço.",
+        audio: "assets/audios/txeadjuy.mp3",
+        imagem: "assets/svg/pescoco.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Txeadju'y rasy.",
+            "Txe mbo´y oĩ ndeadju'y py oĩ.",
+            "Neadju´y oĩ pytã, ha oĩ rasy."
+        ],
+        traducao: [
+            "Meu pescoço está doendo.",
+            "Meu colar está no seu pescoço.",
+            "Seu pescoço está vermelho e está dolorido/doendo."
+        ]
+    },
+    {
+        palavra: "Djywá / Txedjywá",
+        tipo: "expressão",
+        categoria: "Corpo humano",
+        significado: "Braço / Meu braço.",
+        audio: "assets/audios/txedjywa.mp3",
+        imagem: "assets/svg/braco.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Nemba´e txedjywá imabareté.",
+            "Reipyy e´ỹ txedjuwá.",
+            "Ndareipyyi txedjuwá."
+        ],
+        traducao: [
+            "O teu braço, ele é forte. / Você tem o braço forte.",
+            "Não pegue no meu braço. / Não segure no meu braço (Ordem).",
+            "Você não pegue meu braço. / Você não está segurando meu braço (Afirmação de um fato)."
+        ]
+    }
 ];
