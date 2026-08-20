@@ -4898,36 +4898,6 @@ const DICIONARIO = [
       "Qual destes é o seu animal?"
     ]
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
   {
     palavra: "pa / piko",
     tipo: "partícula interrogativa",
