@@ -39,7 +39,7 @@ body {
 
 .app-container {
     width: 100%;
-    max-width: 750px; /* Mantém a largura perfeita para exibir exatamente 2 colunas */
+    max-width: 1350px; /* Largura ampla para acomodar os 5 cards na horizontal */
     min-height: 100vh;
     margin: 0 auto;
     padding: 50px 20px;
@@ -129,7 +129,8 @@ body {
 .barra-busca-wrapper {
     position: relative;
     width: 100%;
-    margin: 15px 0 26px auto;
+    max-width: 800px;
+    margin: 15px auto 26px auto;
 }
 
 .icone-busca {
@@ -168,13 +169,13 @@ body {
 }
 
 /* =====================================================
-   CATEGORIAS (TELA INICIAL) - TRAVADO EM EXATAMENTE 2 COLUNAS
+   CATEGORIAS (TELA INICIAL) - 5 COLUNAS NA HORIZONTAL
 ===================================================== */
 
 .lista-vertical {
     width: 100%;
     display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
     gap: 16px !important;
 }
 
@@ -253,14 +254,14 @@ body {
 }
 
 .cat-nome {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
     font-weight: 900;
 }
 
 .cat-sub {
     margin-top: 4px;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.2;
     opacity: 0.88;
 }
@@ -353,7 +354,7 @@ body {
 
 .secao-apoio {
     width: 100%;
-    max-width: 750px;
+    max-width: 1350px;
     margin: 30px auto 0 auto;
     padding: 20px 15px 22px;
     background: rgba(255, 255, 255, 0.96);
