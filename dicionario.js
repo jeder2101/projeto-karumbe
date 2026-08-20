@@ -1,6 +1,6 @@
 const DICIONARIO = [
     {
-        palavra: "Kõé'porã",
+        palavra: "ko'ẽ porã",
         tipo: "expressão",
         categoria: "Expressões",
         significado: "Bom dia; amanhecer bonito.",
