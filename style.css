@@ -34,7 +34,7 @@ body {
 }
 
 /* =====================================================
-   CONTAINER E CABEÇALHO BASE (CELULAR)
+   CONTAINER E CABEÇALHO BASE
 ===================================================== */
 
 .app-container {
@@ -169,7 +169,7 @@ body {
 }
 
 /* =====================================================
-   CATEGORIAS E TELA INICIAL (MANTIDAS 100% ORIGINAIS)
+   CATEGORIAS (TELA INICIAL) - MANTIDO INTACTO
 ===================================================== */
 
 .lista-vertical {
@@ -272,17 +272,35 @@ body {
 }
 
 /* =====================================================
-   RESULTADOS DO DICIONÁRIO (ACIONADO APENAS QUANDO BUSCA/CLICA)
-   Aqui ele empilha os cards e usa largura maior (1100px) para o monitor
+   RESULTADOS DE PALAVRAS / PRONÚNCIA (INTELIGENTE)
+   Usa o seletor :has() para só alterar quando estiver nos resultados,
+   garantindo largura de 1100px, centralizados e empilhados.
 ===================================================== */
 
-#lista.modo-resultados {
+#lista:has(.card-pronuncia) {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
     max-width: 1100px !important;
     margin: 0 auto !important;
+    padding: 0 10px !important;
+}
+
+.card-pronuncia {
+    background: rgba(25, 59, 48, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 28px;
+    padding: 22px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin: 0 auto 25px auto !important;
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
 }
 
 .voltar {
@@ -293,27 +311,8 @@ body {
     background: rgba(255, 255, 255, 0.10);
     color: #ffffff;
     cursor: pointer;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-pronuncia {
-    background: rgba(25, 59, 48, 0.95);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 28px;
-    padding: 22px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    
-    /* Largura ampla de 1100px, centralizada e empilhada */
-    width: 100% !important;
-    max-width: 1100px !important;
-    margin: 0 auto 25px auto !important;
-    
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
+    margin: 0 auto 20px auto !important;
+    display: block !important;
 }
 
 .palavra-titulo {
@@ -410,7 +409,7 @@ body {
 }
 
 /* =====================================================
-   ADAPTAÇÃO AUTOMÁTICA PARA COMPUTADOR (DESKTOP)
+   RESPONSIVIDADE E OUTROS ELEMENTOS
 ===================================================== */
 
 @media (min-width: 768px) {
@@ -455,10 +454,6 @@ body {
         gap: 20px;
     }
 }
-
-/* =====================================================
-   AJUSTES DE CARDS E FOTOS DE AÇÃO / DICIONÁRIO
-===================================================== */
 
 #galeria-acoes {
     display: grid !important;
