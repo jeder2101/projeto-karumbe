@@ -6532,5 +6532,65 @@ const DICIONARIO = [
             "Raspe / tire os pelos do braço/mão.",
             "Tire a roupa."
         ]
+    },
+    {
+        palavra: "Poapẽ / Txepoapẽ",
+        tipo: "expressão",
+        categoria: "Partes do Corpo / Revestimento e Anexos",
+        significado: "Unha da mão / Minha unha da mão.",
+        audio: "assets/audios/txepoapen.mp3",
+        imagem: "assets/svg/unhamao.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Oĩguasu txepoapẽ txepo-py.",
+            "Poapẽ oĩ kwã py.",
+            "Eky'aityro ndepoapẽ."
+        ],
+        traducao: [
+            "Me coço com a minha unha da mão.",
+            "A unha da mão está no dedo.",
+            "Limpe suas unhas da mão."
+        ]
+    },
+    {
+        palavra: "Pytsãpẽ / Txepytsãpẽ",
+        tipo: "expressão",
+        categoria: "Partes do Corpo / Revestimento e Anexos",
+        significado: "Unha do pé / Minha unha do pé.",
+        audio: "assets/audios/txepytsapen.mp3",
+        imagem: "assets/svg/unhape.jpg",
+        sentido_de: "Parte do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu rasy txepytsãpẽ py.",
+            "Pytsãpẽ oĩ pytsã py.",
+            "Edjyro txepytsãpẽ iky'a."
+        ],
+        traducao: [
+            "Sinto dor na minha unha do pé.",
+            "A unha do pé está no dedo do pé.",
+            "Tire a sujeira da minha unha do pé / A unha do pé está suja."
+        ]
+    },
+    {
+        palavra: "Ygwy rapé / Txe ygwy rapé",
+        tipo: "expressão",
+        categoria: "Partes do Corpo / Anatomia Interna",
+        significado: "Veia / Minha veia (Caminho do sangue).",
+        audio: "assets/audios/txeygwyrape.mp3",
+        imagem: "assets/svg/veia.jpg",
+        sentido_de: "Anatomia interna do corpo humano",
+        falante: "Uso geral",
+        exemplos: [
+            "Añandu radju txe ygwy rapé py.",
+            "Ygwy rapé py oĩ ygwy.",
+            "Txe ygwy rapé ikatu."
+        ],
+        traducao: [
+            "Sinto pulsar na minha veia.",
+            "Na veia tem sangue.",
+            "Minha veia está boa / Minha circulação está boa."
+        ]
     }
 ];
