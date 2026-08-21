@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos - Associação Curucaca</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; padding: 20px; text-align: center; }
+        .grid-galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1000px; margin: 0 auto; }
+        .card-foto { background: #ffffff; border: 1px solid #d1d5db; border-radius: 10px; padding: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .grid-galeria img { width: 100%; height: auto; border-radius: 8px; object-fit: cover; }
+        .btn-voltar { display: inline-block; background: #112822; color: #5be0ac; border: 1px solid #5be0ac; padding: 12px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+    <h1 style="color: #112822; margin-bottom: 20px;">Galeria de Fotos - Associação Curucaca</h1>
+    
+    <div class="grid-galeria">
+        <!-- Exemplo de card de foto para a Associação (substitua o nome da imagem e legenda quando tiver as fotos novas) -->
+        <div class="card-foto">
+            <img src="acao1.png" alt="Atividades da associação">
+            <p style="color: #4b5563; font-size: 14px; margin-top: 8px;">Atividades da associação</p>
+        </div>
+        <!-- Adicione mais blocos <div class="card-foto">...</div> aqui conforme precisar -->
+    </div>
+
+    <br>
+    <a href="../../../instituicao.html?id=associacao-curucaca" class="btn-voltar">← Voltar para as Ações</a>
+</body>
+</html>
