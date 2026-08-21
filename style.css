@@ -378,7 +378,6 @@ body {
     border-color: rgba(255, 255, 255, 0.45);
 }
 
-/* Estilo opcional para a imagem ou ícone clicável dentro do botão de Galeria */
 .btn-galeria-acoes img {
     max-height: 35px;
     object-fit: contain;
@@ -386,7 +385,7 @@ body {
 }
 
 /* =====================================================
-   APOIO INSTITUCIONAL (RODAPÉ)
+   APOIO INSTITUCIONAL (RODAPÉ) - LOGOS MAIORES E PROPORCIONAIS
 ===================================================== */
 
 .secao-apoio {
@@ -415,7 +414,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    gap: 10px;
+    gap: 15px;
 }
 
 .logo-apoio-item {
@@ -427,11 +426,19 @@ body {
     gap: 8px;
 }
 
+/* Logos em geral maiores (altura máxima aumentada para 95px proporcionalmente) */
 .logo-apoio-item img {
-    max-width: 80px;
-    height: 65px;
+    max-width: 110px;
+    height: auto;
+    max-height: 95px;
     object-fit: contain;
     display: block;
+    transition: transform 0.2s ease;
+}
+
+/* Efeito de zoom sutil ao passar o mouse para indicar que são clicáveis */
+.logo-apoio-item a:hover img {
+    transform: scale(1.06);
 }
 
 .logo-apoio-item span {
@@ -439,7 +446,7 @@ body {
     font-weight: 700;
     color: #28583e;
 }
-/* =====================================================
+
 /* =====================================================
    AJUSTE AUTOMÁTICO PARA CELULAR (MOBILE)
 ===================================================== */
@@ -459,12 +466,11 @@ body {
 }
 
 /* =====================================================
-   CORREÇÃO GLOBAL PARA O ÍCONE DA ASSOCIAÇÃO CURUCACA (PC E MOBILE)
+   CORREÇÃO ESPECÍFICA PARA A ASSOCIAÇÃO CURUCACA (PROPORÇÃO PERFEITA)
 ===================================================== */
 .logo-apoio-item:nth-child(3) img {
-    height: auto !important;     /* Deixa a altura livre para respeitar o formato natural */
-    max-height: 65px !important; /* Limita a altura máxima para não estourar */
+    height: auto !important;     
+    max-height: 95px !important; /* Aumentado proporcionalmente para equiparar aos outros */
     width: auto !important;
-    max-width: 75px !important;  /* Dá uma largura excelente para ela aparecer bem */
+    max-width: 110px !important; 
 }
-
