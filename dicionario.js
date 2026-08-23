@@ -863,7 +863,7 @@ const DICIONARIO = [
         ]
     },
     {
-        palavra: "Amboe",
+        palavra: "Amboae",
         tipo: "pronome",
         categoria: "Pronomes",
         significado: "Outro; outra.",
@@ -871,10 +871,10 @@ const DICIONARIO = [
         sentido_de: "Referência a elemento diferente ou adicional",
         falante: "Uso geral",
         exemplos: [
-            "Amboe óga.",
-            "Amboe tekoa-pe agwata.",
-            "Aipota amboe tembi'u.",
-            "Aetxa amboe akara."
+            "Amboae óga.",
+            "Amboae tekoa-pe agwata.",
+            "Aipota amboae tembi'u.",
+            "Aetxa amboae akara."
         ],
         traducao: [
             "Outra casa.",
