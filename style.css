@@ -600,3 +600,8 @@ body {
         max-width: 100%;
     }
 }
+/* Força a cor vermelha apenas no card restrito */
+.container-card-restrito .card-categoria {
+    background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
+    border: 1px solid rgba(255, 82, 82, 0.5) !important;
+}
