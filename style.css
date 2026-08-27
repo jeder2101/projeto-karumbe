@@ -476,7 +476,7 @@ body {
 }
 
 /* =====================================================
-   MODAL DE SENHA DE ACESSO (ADICIONADO NO FINAL)
+   MODAL DE SENHA DE ACESSO (CORRIGIDO PARA O HTML)
 ===================================================== */
 
 .modal-overlay {
@@ -492,7 +492,8 @@ body {
     padding: 20px;
 }
 
-.modal-content {
+/* Ajustado para .modal-caixa */
+.modal-caixa {
     background: rgba(25, 59, 48, 0.98);
     border: 1px solid rgba(255, 255, 255, 0.20);
     border-radius: 24px;
@@ -503,21 +504,22 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.50);
 }
 
-.modal-titulo {
+.modal-caixa h3 {
     font-size: 20px;
     font-weight: 800;
     color: #ffffff;
     margin-bottom: 8px;
 }
 
-.modal-descricao {
+.modal-caixa p {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.75);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: 1.4;
 }
 
-.modal-input {
+/* Estilização do id="senha-input" */
+#senha-input {
     width: 100%;
     height: 48px;
     padding: 0 16px;
@@ -530,9 +532,10 @@ body {
     text-align: center;
     margin-bottom: 15px;
     transition: border-color 0.2s ease;
+    box-sizing: border-box;
 }
 
-.modal-input:focus {
+#senha-input:focus {
     border-color: #5be0ac;
     background: rgba(255, 255, 255, 0.15);
 }
@@ -543,7 +546,8 @@ body {
     justify-content: center;
 }
 
-.btn-modal-confirmar {
+/* Ajustado para .btn-confirmar */
+.btn-confirmar {
     flex: 1;
     height: 44px;
     border-radius: 22px;
@@ -556,11 +560,12 @@ body {
     transition: background 0.2s ease;
 }
 
-.btn-modal-confirmar:hover {
+.btn-confirmar:hover {
     background: #5be0ac;
 }
 
-.btn-modal-cancelar {
+/* Ajustado para .btn-cancelar */
+.btn-cancelar {
     flex: 1;
     height: 44px;
     border-radius: 22px;
@@ -573,6 +578,6 @@ body {
     transition: background 0.2s ease;
 }
 
-.btn-modal-cancelar:hover {
-    background: rgba(255, 255, 255, 0.18);
+.btn-cancelar:hover {
+    background: rgba(255, 255, 255, 0.20);
 }
