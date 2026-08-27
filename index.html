@@ -450,6 +450,36 @@
             </button>
 
 
+
+            <!-- LINGUAGEM DE RUA / TABU VERBAL (NOVA RESTRITA) -->
+
+            <button
+                class="card-categoria cat-laranja"
+                type="button"
+                onclick="solicitarAcessoTabu()"
+            >
+
+                <div class="icone-wrapper">
+
+                    <span style="font-size: 1.5rem;">🔒</span>
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        LINGUAGEM DE RUA
+                    </span>
+
+                    <small class="cat-sub">
+                        Tabu Verbal / Uso de Campo
+                    </small>
+
+                </div>
+
+            </button>
+
+
         </main>
 
 
@@ -524,6 +554,35 @@
         </footer>
 
 
+        <!-- =================================================
+             MODAL DE ACESSO RESTRITO (SENHA)
+        ================================================== -->
+
+        <div id="modal-senha" class="modal-overlay" style="display: none;">
+
+            <div class="modal-caixa">
+
+                <h3>Acesso Restrito: Pesquisa Linguística</h3>
+
+                <p>Esta seção contém documentação de baixo calão e linguagem de rua para fins de pesquisa e registro.</p>
+
+                <p><strong>Digite a senha de autorização:</strong></p>
+
+                <input type="password" id="senha-input" placeholder="Digite a senha">
+
+                <div class="modal-botoes">
+
+                    <button type="button" class="btn-confirmar" onclick="validarSenha()">Confirmar</button>
+
+                    <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
 
@@ -567,14 +626,10 @@
                         );
 
                     });
-
             });
-
         }
 
     </script>
 
-
 </body>
-
 </html>
