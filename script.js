@@ -3,15 +3,19 @@ console.log("Script Karumbé Carregado e Atualizado!");
 const lista = document.getElementById("lista");
 
 /* =====================================================
-   ÁUDIO
+   1. ÁUDIO
 ===================================================== */
 
+/**
+ * Reproduz o áudio do termo em Nhandewa
+ * @param {string} caminho - Caminho relativo/absoluto para o arquivo de áudio
+ */
 function tocarAudio(caminho) {
-
     if (
         !caminho ||
         caminho === "" ||
-        caminho === "undefined"
+        caminho === "undefined" ||
+        caminho === "null"
     ) {
         alert("Gravação em Nhandewa indisponível no momento.");
         return;
@@ -20,21 +24,22 @@ function tocarAudio(caminho) {
     const audio = new Audio(caminho);
 
     audio.play().catch(err => {
-
         console.warn("Erro ao tocar áudio:", err);
-
         alert("Não foi possível reproduzir o áudio.");
-
     });
 }
 
 
 /* =====================================================
-   NORMALIZAR TEXTO
+   2. NORMALIZAR TEXTO (Remoção de acentos e diacríticos)
 ===================================================== */
 
+/**
+ * Normaliza o texto removendo acentos e convertendo para caixa baixa
+ * @param {string} texto 
+ * @returns {string} Texto limpo
+ */
 function normalizar(texto) {
-
     if (!texto) return "";
 
     return texto
@@ -45,11 +50,13 @@ function normalizar(texto) {
 
 
 /* =====================================================
-   LEVENSHTEIN
+   3. DISTÂNCIA DE LEVENSHTEIN (Busca Aproximada)
 ===================================================== */
 
+/**
+ * Calcula a distância de edição entre duas strings
+ */
 function distancia(a, b) {
-
     const matriz = [];
 
     for (let i = 0; i <= b.length; i++) {
@@ -61,24 +68,14 @@ function distancia(a, b) {
     }
 
     for (let i = 1; i <= b.length; i++) {
-
         for (let j = 1; j <= a.length; j++) {
-
             if (b[i - 1] === a[j - 1]) {
-
-                matriz[i][j] =
-                    matriz[i - 1][j - 1];
-
+                matriz[i][j] = matriz[i - 1][j - 1];
             } else {
-
                 matriz[i][j] = Math.min(
-
-                    matriz[i - 1][j - 1] + 1,
-
-                    matriz[i][j - 1] + 1,
-
-                    matriz[i - 1][j] + 1
-
+                    matriz[i - 1][j - 1] + 1, // substituição
+                    matriz[i][j - 1] + 1,     // inserção
+                    matriz[i - 1][j] + 1      // remoção
                 );
             }
         }
@@ -89,640 +86,297 @@ function distancia(a, b) {
 
 
 /* =====================================================
-   BUSCA APROXIMADA
+   4. BUSCA APROXIMADA / SUGESTÕES
 ===================================================== */
 
+/**
+ * Encontra termos semelhantes caso a busca exata falhe
+ * @param {string} texto - Termo digitado pelo usuário
+ * @returns {Array} Lista de itens sugeridos
+ */
 function buscaAproximada(texto) {
-
     const textoNorm = normalizar(texto);
 
-    if (textoNorm.length < 3) {
+    if (textoNorm.length < 3 || typeof DICIONARIO === "undefined") {
         return [];
     }
 
     return DICIONARIO.filter(item => {
-
         const campos = [
-
             item.palavra,
-
             item.significado,
-
             item.categoria,
-
             ...(item.exemplos || []),
-
             ...(item.traducao || [])
-
         ];
 
         return campos.some(valor =>
-
             valor &&
             distancia(
                 textoNorm,
                 normalizar(valor)
             ) <= 1
-
         );
     });
 }
 
 
 /* =====================================================
-   VOLTAR AO INÍCIO
+   5. VOLTAR AO INÍCIO
 ===================================================== */
 
 function voltarAoInicio() {
-
     location.reload();
-
 }
 
 
 /* =====================================================
-   MOSTRAR PALAVRAS
+   6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
 ===================================================== */
 
+/**
+ * Renderiza os cards de palavras na tela
+ * @param {Array} palavras - Subconjunto de itens do dicionário
+ */
 function mostrarPalavras(palavras) {
-
     if (!lista) return;
 
     lista.innerHTML = "";
 
-
     /* BOTÃO VOLTAR */
-
-    const voltar =
-        document.createElement("button");
-
+    const voltar = document.createElement("button");
     voltar.className = "voltar";
-
-    voltar.innerHTML =
-        "⬅️ Voltar ao início";
-
-    voltar.onclick =
-        voltarAoInicio;
-
+    voltar.innerHTML = "⬅️ Voltar ao início";
+    voltar.onclick = voltarAoInicio;
     lista.appendChild(voltar);
 
-
-    /* NENHUM RESULTADO */
-
-    if (
-        !palavras ||
-        palavras.length === 0
-    ) {
-
-        const inputBusca =
-            document.getElementById("busca");
-
-        const termoPesquisado =
-            inputBusca
-                ? inputBusca.value
-                : "";
-
-        const sugestoes =
-            buscaAproximada(
-                termoPesquisado
-            );
-
+    /* CASO NENHUM RESULTADO SEJA ENCONTRADO */
+    if (!palavras || palavras.length === 0) {
+        const inputBusca = document.getElementById("busca");
+        const termoPesquisado = inputBusca ? inputBusca.value : "";
+        const sugestoes = buscaAproximada(termoPesquisado);
 
         let html = `
             <div class="card-pronuncia">
-
-                <h3 style="
-                    font-size:22px;
-                    margin-bottom:12px;
-                ">
+                <h3 style="font-size:22px; margin-bottom:12px;">
                     Nenhum resultado encontrado.
                 </h3>
         `;
 
-
         if (sugestoes.length > 0) {
-
             html += `
-                <div style="
-                    margin-top:15px;
-                    font-size:18px;
-                ">
-
+                <div style="margin-top:15px; font-size:18px;">
                     🔎 Você quis dizer:
-
-                    <strong>
-                        ${sugestoes[0].palavra}
-                    </strong>
-
+                    <strong>${sugestoes[0].palavra}</strong> 
                     (${sugestoes[0].significado})
-
                 </div>
             `;
         }
-
 
         html += "</div>";
-
         lista.innerHTML += html;
-
         return;
     }
 
-
-    /* =================================================
-       CADA PALAVRA
-    ================================================= */
-
+    /* CONSTRUÇÃO DOS CARDS DE CADA PALAVRA */
     palavras.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "card-pronuncia";
 
-        const card =
-            document.createElement("div");
+        /* Áudio Path */
+        const audioPath = item.audio || (item.audios && item.audios.nhandewa ? item.audios.nhandewa : "");
 
-        card.className =
-            "card-pronuncia";
+        /* Sentido e Falante */
+        const sentido = item.sentido_de || item.sentido || "";
+        const falante = item.falante || "";
 
-
-        /* ÁUDIO */
-
-        const audioPath =
-            item.audio ||
-            (
-                item.audios &&
-                item.audios.nhandewa
-                    ? item.audios.nhandewa
-                    : ""
-            );
-
-
-        /* SENTIDO */
-
-        const sentido =
-            item.sentido_de ||
-            item.sentido ||
-            "";
-
-
-        /* FALANTE */
-
-        const falante =
-            item.falante ||
-            "";
-
-
-        /* =================================================
-           EXEMPLOS
-        ================================================= */
-
+        /* BLOCO DE EXEMPLOS PRÁTICOS */
         let blocoExemplos = "";
-
-
-        if (
-            item.exemplos &&
-            item.exemplos.length > 0
-        ) {
-
+        if (item.exemplos && item.exemplos.length > 0) {
             blocoExemplos = `
-
                 <div class="secao-bloco">
-
-                    <h4 class="secao-titulo"
-                        style="
-                            font-size:15px;
-                            opacity:0.8;
-                            margin-bottom:10px;
-                        ">
-
+                    <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:10px;">
                         EXEMPLO(S) PRÁTICO(S)
-
                     </h4>
-
-
-                    ${item.exemplos.map(
-                        (ex, idx) => {
-
-                            const trad =
-                                (
-                                    item.traducao &&
-                                    item.traducao[idx]
-                                )
-                                ? item.traducao[idx]
-                                : "";
-
-
-                            return `
-
-                                <div style="
-                                    margin-bottom:10px;
-                                    background:rgba(0,0,0,0.20);
-                                    padding:12px;
-                                    border-radius:10px;
-                                ">
-
-                                    <p style="
-                                        margin:0;
-                                        font-size:20px;
-                                        line-height:1.5;
-                                        color:#e67e22;
-                                    ">
-
-                                        ${ex}
-
+                    ${item.exemplos.map((ex, idx) => {
+                        const trad = (item.traducao && item.traducao[idx]) ? item.traducao[idx] : "";
+                        return `
+                            <div style="margin-bottom:10px; background:rgba(0,0,0,0.20); padding:12px; border-radius:10px;">
+                                <p style="margin:0; font-size:20px; line-height:1.5; color:#e67e22;">
+                                    ${ex}
+                                </p>
+                                ${trad ? `
+                                    <p style="margin:6px 0 0 0; opacity:0.9; font-size:16px; line-height:1.4;">
+                                        👉 ${trad}
                                     </p>
-
-
-                                    ${
-                                        trad
-                                        ? `
-
-                                            <p style="
-                                                margin:6px 0 0 0;
-                                                opacity:0.9;
-                                                font-size:16px;
-                                                line-height:1.4;
-                                            ">
-
-                                                👉 ${trad}
-
-                                            </p>
-
-                                        `
-                                        : ""
-                                    }
-
-                                </div>
-
-                            `;
-                        }
-                    ).join("")}
-
+                                ` : ""}
+                            </div>
+                        `;
+                    }).join("")}
                 </div>
-
             `;
         }
 
+        /* BLOCO DE IMAGEM */
+        const blocoImagem = item.imagem ? `
+            <div class="card-foto" style="margin-top: 15px;">
+                <img src="${item.imagem}" alt="${item.palavra}" class="foto-acao">
+                ${item.legenda ? `<p>${item.legenda}</p>` : ""}
+            </div>
+        ` : "";
 
-    /* =================================================
-           IMAGEM
-        ================================================= */
-
-        const blocoImagem =
-            item.imagem
-            ? `
-
-                <div class="card-foto" style="margin-top: 15px;">
-
-                    <img
-                        src="${item.imagem}"
-                        alt="${item.palavra}"
-                        class="foto-acao"
-                    >
-
-                    ${
-                        item.legenda
-                        ? `<p>${item.legenda}</p>`
-                        : ""
-                    }
-
-                </div>
-
-            `
-            : "";
-
-
-        /* =================================================
-           CARD COMPLETO
-        ================================================= */
-
+        /* CORPO INTEGRAL DO CARD */
         card.innerHTML = `
-
             <!-- PALAVRA -->
-
-            <h2
-                class="palavra-titulo"
-                style="
-                    font-size:32px;
-                    margin-bottom:6px;
-                "
-            >
-
+            <h2 class="palavra-titulo" style="font-size:32px; margin-bottom:6px;">
                 ${item.palavra || "-"}
-
             </h2>
 
-
-            <!-- CATEGORIA -->
-
-            <p style="
-                font-size:15px;
-                opacity:0.75;
-                text-transform:capitalize;
-                margin-bottom:14px;
-            ">
-
+            <!-- CATEGORIA / TIPO -->
+            <p style="font-size:15px; opacity:0.75; text-transform:capitalize; margin-bottom:14px;">
                 ${item.tipo || item.categoria || "-"}
-
             </p>
 
-
             <!-- SIGNIFICADO -->
-
             <div class="secao-bloco">
-
-                <h4
-                    class="secao-titulo"
-                    style="
-                        font-size:15px;
-                        opacity:0.8;
-                        margin-bottom:6px;
-                    "
-                >
-
+                <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
                     SIGNIFICADO
-
                 </h4>
-
-
-                <p style="
-                    font-size:20px;
-                    line-height:1.5;
-                    font-weight:600;
-                ">
-
+                <p style="font-size:20px; line-height:1.5; font-weight:600;">
                     ${item.significado || "-"}
-
                 </p>
-
             </div>
-
 
             <!-- SENTIDO DE -->
-
-            ${
-                sentido
-                ? `
-
-                    <div class="secao-bloco">
-
-                        <h4
-                            class="secao-titulo"
-                            style="
-                                font-size:15px;
-                                opacity:0.8;
-                                margin-bottom:6px;
-                            "
-                        >
-
-                            SENTIDO DE
-
-                        </h4>
-
-
-                        <p style="
-                            font-size:18px;
-                            line-height:1.5;
-                        ">
-
-                            ${sentido}
-
-                        </p>
-
-                    </div>
-
-                `
-                : ""
-            }
-
+            ${sentido ? `
+                <div class="secao-bloco">
+                    <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
+                        SENTIDO DE
+                    </h4>
+                    <p style="font-size:18px; line-height:1.5;">
+                        ${sentido}
+                    </p>
+                </div>
+            ` : ""}
 
             <!-- USO / FALANTE -->
-
-            ${
-                falante
-                ? `
-
-                    <div class="secao-bloco">
-
-                        <h4
-                            class="secao-titulo"
-                            style="
-                                font-size:15px;
-                                opacity:0.8;
-                                margin-bottom:6px;
-                            "
-                        >
-
-                            USO / FALANTE
-
-                        </h4>
-
-
-                        <p style="
-                            font-size:18px;
-                            line-height:1.5;
-                        ">
-
-                            ${falante}
-
-                        </p>
-
-                    </div>
-
-                `
-                : ""
-            }
-
-
-            <!-- PRONÚNCIA -->
-
-            <div class="secao-bloco">
-
-                <h4
-                    class="secao-titulo"
-                    style="
-                        font-size:15px;
-                        opacity:0.8;
-                        margin-bottom:8px;
-                    "
-                >
-
-                    PRONÚNCIA NHANDEWA
-
-                </h4>
-
-
-                <div style="
-                    display:flex;
-                    align-items:center;
-                    gap:12px;
-                    margin-top:6px;
-                ">
-
-                    <button
-                        class="btn-play"
-                        onclick="tocarAudio('${audioPath}')"
-                    >
-
-                        ▶
-
-                    </button>
-
-
-                    <span style="
-                        font-size:16px;
-                    ">
-
-                        Ouvir áudio nativo
-
-                    </span>
-
+            ${falante ? `
+                <div class="secao-bloco">
+                    <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
+                        USO / FALANTE
+                    </h4>
+                    <p style="font-size:18px; line-height:1.5;">
+                        ${falante}
+                    </p>
                 </div>
+            ` : ""}
 
+            <!-- PRONÚNCIA NHANDEWA -->
+            <div class="secao-bloco">
+                <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:8px;">
+                    PRONÚNCIA NHANDEWA
+                </h4>
+                <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                    <button class="btn-play" onclick="tocarAudio('${audioPath}')">
+                        ▶
+                    </button>
+                    <span style="font-size:16px;">
+                        Ouvir áudio nativo
+                    </span>
+                </div>
             </div>
 
-
             <!-- EXEMPLOS -->
-
             ${blocoExemplos}
 
-
             <!-- IMAGEM -->
-
             ${blocoImagem}
-
         `;
 
-
         lista.appendChild(card);
-
     });
-
 }
 
 
 /* =====================================================
-   BUSCA EM TEMPO REAL
+   7. BUSCA EM TEMPO REAL
 ===================================================== */
 
+/**
+ * Filtra as palavras do dicionário com base na consulta digitada
+ * @param {string} valor 
+ */
 function executarBusca(valor) {
-
-    const texto =
-        valor.trim();
-
+    const texto = valor.trim();
 
     if (texto === "") {
-
         location.reload();
-
         return;
     }
 
+    if (typeof DICIONARIO === "undefined") {
+        console.error("Variável DICIONARIO não encontrada.");
+        return;
+    }
 
-    const busca =
-        normalizar(texto);
+    const busca = normalizar(texto);
 
+    const resultado = DICIONARIO.filter(item => {
+        const palavra = normalizar(item.palavra);
+        const significado = normalizar(item.significado);
+        const categoria = normalizar(item.categoria);
 
-    const resultado =
-        DICIONARIO.filter(item => {
+        const exemplos = (item.exemplos || []).some(ex =>
+            normalizar(ex).includes(busca)
+        );
 
-            const palavra =
-                normalizar(
-                    item.palavra
-                );
+        const trad = (item.traducao || []).some(tr =>
+            normalizar(tr).includes(busca)
+        );
 
+        return (
+            palavra.includes(busca) ||
+            significado.includes(busca) ||
+            categoria.includes(busca) ||
+            exemplos ||
+            trad
+        );
+    });
 
-            const significado =
-                normalizar(
-                    item.significado
-                );
-
-
-            const categoria =
-                normalizar(
-                    item.categoria
-                );
-
-
-            const exemplos =
-                (item.exemplos || [])
-                .some(ex =>
-                    normalizar(ex)
-                    .includes(busca)
-                );
-
-
-            const trad =
-                (item.traducao || [])
-                .some(tr =>
-                    normalizar(tr)
-                    .includes(busca)
-                );
-
-
-            return (
-
-                palavra.includes(busca) ||
-
-                significado.includes(busca) ||
-
-                categoria.includes(busca) ||
-
-                exemplos ||
-
-                trad
-
-            );
-
-        });
-
-
-    mostrarPalavras(
-        resultado.slice(0, 20)
-    );
+    mostrarPalavras(resultado.slice(0, 20));
 }
 
 
 /* =====================================================
-   FILTRO POR CATEGORIA
+   8. FILTRO POR CATEGORIA
 ===================================================== */
 
+/**
+ * Filtra e exibe o conjunto de palavras de uma determinada categoria
+ * @param {string} nome - Nome da categoria
+ */
 function mostrarCategoria(nome) {
+    if (typeof DICIONARIO === "undefined") {
+        console.error("Variável DICIONARIO não encontrada.");
+        return;
+    }
 
-    const categoriaBusca =
-        normalizar(nome);
+    const categoriaBusca = normalizar(nome);
 
-
-    const resultado =
-        DICIONARIO.filter(item => {
-
-            if (!item.categoria) {
-                return false;
-            }
-
-
-            return normalizar(
-                item.categoria
-            ).includes(
-                categoriaBusca
-            );
-
-        });
-
+    const resultado = DICIONARIO.filter(item => {
+        if (!item.categoria) return false;
+        return normalizar(item.categoria).includes(categoriaBusca);
+    });
 
     mostrarPalavras(resultado);
 }
 
 
 /* =====================================================
-   EVENTOS GLOBAIS
+   9. EVENTOS GLOBAIS (Exposição para o Escopo da Window)
 ===================================================== */
 
-window.tocarAudio =
-    tocarAudio;
-
-window.mostrarCategoria =
-    mostrarCategoria;
-
-window.executarBusca =
-    executarBusca;
-
-window.voltarAoInicio =
-    voltarAoInicio;
+window.tocarAudio = tocarAudio;
+window.mostrarCategoria = mostrarCategoria;
+window.executarBusca = executarBusca;
+window.voltarAoInicio = voltarAoInicio;
