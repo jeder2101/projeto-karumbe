@@ -553,82 +553,52 @@
 
         </footer>
 
-
-        <!-- =================================================
+<!-- =================================================
              MODAL DE ACESSO RESTRITO (SENHA)
         ================================================== -->
-
         <div id="modal-senha" class="modal-overlay" style="display: none;">
-
             <div class="modal-caixa">
-
                 <h3>Acesso Restrito: Pesquisa Linguística</h3>
-
                 <p>Esta seção contém documentação de baixo calão e linguagem de rua para fins de pesquisa e registro.</p>
-
                 <p><strong>Digite a senha de autorização:</strong></p>
-
                 <input type="password" id="senha-input" placeholder="Digite a senha">
-
                 <div class="modal-botoes">
-
                     <button type="button" class="btn-confirmar" onclick="validarSenha()">Confirmar</button>
-
                     <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
-
                 </div>
-
             </div>
-
         </div>
 
-
     </div>
-
-
 
     <!-- =================================================
          SCRIPTS DO PROJETO
     ================================================== -->
-
     <script src="dicionario.js"></script>
     <script src="mapa.js"></script>
     <script src="script.js"></script>
 
-
-
     <!-- =================================================
          REGISTRO DO APLICATIVO
     ================================================== -->
-
     <script>
-
         if ("serviceWorker" in navigator) {
-
             window.addEventListener("load", function () {
-
                 navigator.serviceWorker
                     .register("./service-worker.js")
-
                     .then(function () {
-
                         console.log(
                             "Projeto Karumbé: aplicativo preparado!"
                         );
-
                     })
-
                     .catch(function (erro) {
-
                         console.error(
                             "Erro ao registrar o aplicativo:",
                             erro
                         );
-
                     });
             });
         }
-
     </script>
 
 </body>
