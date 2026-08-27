@@ -445,7 +445,7 @@ function validarSenha() {
  * Abre o cliente de e-mail pré-preenchendo o pedido de acesso para o administrador
  */
 function solicitarSenhaEmail() {
-    const emailAdmin = "contato@projetokarumbe.org";
+    const emailAdmin = "projeto.karumbe.org@gmail.com";
     const assunto = encodeURIComponent("Solicitação de Acesso - Linguagem de Rua (Projeto Karumbé)");
     const corpo = encodeURIComponent(
         "Olá,\n\nGostaria de solicitar a senha de acesso para a seção de pesquisa linguística 'Linguagem de Rua / Tabu Verbal' do Projeto Karumbé.\n\nMotivo/Instituição:\n\nAtenciosamente,"
