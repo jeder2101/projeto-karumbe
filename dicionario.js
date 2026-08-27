@@ -4001,7 +4001,7 @@ const DICIONARIO = [
     ]
   },
   {
-    palavra: "djaipiró",
+    palavra: "Djaipiró",
     tipo: "verbo",
     categoria: "Verbos",
     significado: "Descascar, tirar a casca, pelar (frutas, raízes, legumes).",
@@ -4020,7 +4020,7 @@ const DICIONARIO = [
     ]
   },
   {
-    palavra: "djaipyy",
+    palavra: "Djaipyy",
     tipo: "verbo",
     categoria: "Verbos",
     significado: "Vamos pegar, vamos segurar, vamos agarrar.",
@@ -4039,26 +4039,7 @@ const DICIONARIO = [
     ]
   },
   {
-    palavra: "djakaré",
-    tipo: "substantivo",
-    categoria: "Animais",
-    significado: "Jacaré.",
-    audio: "assets/audios/djakare.mp3",
-    sentido_de: "Jacaré",
-    falante: "uso geral",
-    exemplos: [
-      "Oĩ djakaré ỹ-pe.",
-      "Djaetxa djakaré!",
-      "Djakaré gwasu oĩ ysyry-pe."
-    ],
-    traducao: [
-      "Tem jacaré na água.",
-      "Vamos ver o jacaré!",
-      "Tem um jacaré grande no rio."
-    ]
-  },
-  {
-    palavra: "djakaru",
+    palavra: "Djakaru",
     tipo: "verbo",
     categoria: "Verbos",
     significado: "Vamos comer, vamos fazer a refeição.",
