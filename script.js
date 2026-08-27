@@ -373,7 +373,7 @@ function mostrarCategoria(nome) {
 
 
 /* =====================================================
-   9. MODAL DE ACESSO RESTRITO (SENHA)
+   9. MODAL DE ACESSO RESTRITO (SENHA & EMAIL)
 ===================================================== */
 
 const SENHA_TABU = "1234"; // Defina a senha desejada aqui
@@ -418,6 +418,19 @@ function validarSenha() {
     }
 }
 
+/**
+ * Abre o cliente de e-mail do usuário pré-preenchendo o pedido de acesso
+ */
+function solicitarSenhaEmail() {
+    const emailAdmin = "contato@projetokarumbe.org"; // Altere para o e-mail do administrador
+    const assunto = encodeURIComponent("Solicitação de Acesso - Linguagem de Rua (Projeto Karumbé)");
+    const corpo = encodeURIComponent(
+        "Olá,\n\nGostaria de solicitar a senha de acesso para a seção de pesquisa linguística 'Linguagem de Rua / Tabu Verbal' do Projeto Karumbé.\n\nMotivo/Instituição:\n\nAtenciosamente,"
+    );
+
+    window.location.href = `mailto:${emailAdmin}?subject=${assunto}&body=${corpo}`;
+}
+
 // Suporte para acionar o botão de confirmar apertando Enter no campo de senha
 document.addEventListener("DOMContentLoaded", () => {
     const inputSenha = document.getElementById("senha-input");
@@ -442,3 +455,4 @@ window.voltarAoInicio = voltarAoInicio;
 window.solicitarAcessoTabu = solicitarAcessoTabu;
 window.fecharModal = fecharModal;
 window.validarSenha = validarSenha;
+window.solicitarSenhaEmail = solicitarSenhaEmail;
