@@ -581,3 +581,16 @@ body {
 .btn-cancelar:hover {
     background: rgba(255, 255, 255, 0.20);
 }
+/* =====================================================
+   CENTRALIZAR CATEGORIA RESTREITA NO COMPUTADOR
+===================================================== */
+@media (min-width: 768px) {
+    .container-card-restrito {
+        grid-column: 1 / -1; /* Ocupa toda a largura da grade para ficar isolado na linha de baixo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
