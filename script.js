@@ -102,6 +102,11 @@ function buscaAproximada(texto) {
     }
 
     return DICIONARIO.filter(item => {
+        // Bloqueia termos da "Linguagem de rua" nas sugestões gerais
+        if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
+            return false;
+        }
+
         const campos = [
             item.palavra,
             item.significado,
@@ -322,6 +327,11 @@ function executarBusca(valor) {
     const busca = normalizar(texto);
 
     const resultado = DICIONARIO.filter(item => {
+        // BLOQUEIO: Não exibe "Linguagem de rua" na barra de busca comum
+        if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
+            return false;
+        }
+
         const palavra = normalizar(item.palavra);
         const significado = normalizar(item.significado);
         const categoria = normalizar(item.categoria);
