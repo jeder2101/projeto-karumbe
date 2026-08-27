@@ -373,10 +373,20 @@ function mostrarCategoria(nome) {
 
 
 /* =====================================================
-   9. MODAL DE ACESSO RESTRITO (SENHA & EMAIL)
+   9. MODAL DE ACESSO RESTRITO (GERAÇÃO E VALIDAÇÃO DE SENHA)
 ===================================================== */
 
-const SENHA_TABU = "1234"; // Defina a senha desejada aqui
+/**
+ * Gera a senha do dia automaticamente com base no calendário (Ex: KRM-2708)
+ * Muda diariamente à meia-noite sem precisar alterar código.
+ */
+function obterSenhaDoDia() {
+    const hoje = new Date();
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+    
+    return `KRM-${dia}${mes}`;
+}
 
 function solicitarAcessoTabu() {
     const modal = document.getElementById("modal-senha");
@@ -404,9 +414,12 @@ function fecharModal() {
 
 function validarSenha() {
     const input = document.getElementById("senha-input");
-    const senhaDigitada = input ? input.value.trim() : "";
+    const senhaDigitada = input ? input.value.trim().toUpperCase() : "";
+    
+    // Obtém a senha gerada dinamicamente para o dia de hoje
+    const senhaCorreta = obterSenhaDoDia();
 
-    if (senhaDigitada === SENHA_TABU) {
+    if (senhaDigitada === senhaCorreta) {
         fecharModal();
         mostrarCategoria("Linguagem de rua");
     } else {
@@ -419,10 +432,10 @@ function validarSenha() {
 }
 
 /**
- * Abre o cliente de e-mail do usuário pré-preenchendo o pedido de acesso
+ * Abre o cliente de e-mail pré-preenchendo o pedido de acesso para o administrador
  */
 function solicitarSenhaEmail() {
-    const emailAdmin = "contato@projetokarumbe.org"; // Altere para o e-mail do administrador
+    const emailAdmin = "contato@projetokarumbe.org";
     const assunto = encodeURIComponent("Solicitação de Acesso - Linguagem de Rua (Projeto Karumbé)");
     const corpo = encodeURIComponent(
         "Olá,\n\nGostaria de solicitar a senha de acesso para a seção de pesquisa linguística 'Linguagem de Rua / Tabu Verbal' do Projeto Karumbé.\n\nMotivo/Instituição:\n\nAtenciosamente,"
@@ -456,3 +469,4 @@ window.solicitarAcessoTabu = solicitarAcessoTabu;
 window.fecharModal = fecharModal;
 window.validarSenha = validarSenha;
 window.solicitarSenhaEmail = solicitarSenhaEmail;
+window.obterSenhaDoDia = obterSenhaDoDia;
