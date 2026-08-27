@@ -453,33 +453,33 @@
 
 
 
-<!-- LINGUAGEM DE RUA / TABU VERBAL (NOVA RESTRITA) -->
-<div class="container-card-restrito">
-    <button
-        class="card-categoria cat-vermelha"
-        type="button"
-        onclick="solicitarAcessoTabu()"
-    >
-        <div class="icone-wrapper">
-            <span style="font-size: 1.5rem;">🔒</span>
-        </div>
+            <!-- LINGUAGEM DE RUA / TABU VERBAL (NOVA RESTRITA) -->
+            <div class="container-card-restrito">
+                <button
+                    class="card-categoria cat-vermelha"
+                    type="button"
+                    onclick="solicitarAcessoTabu()"
+                >
+                    <div class="icone-wrapper">
+                        <span style="font-size: 1.5rem;">🔒</span>
+                    </div>
 
-        <div class="cat-textos">
-            <span class="cat-nome">
-                LINGUAGEM DE RUA
-            </span>
+                    <div class="cat-textos">
+                        <span class="cat-nome">
+                            LINGUAGEM DE RUA
+                        </span>
 
-            <small class="cat-sub">
-                Tabu Verbal / Uso de Campo
-            </small>
+                        <small class="cat-sub">
+                            Tabu Verbal / Uso de Campo
+                        </small>
 
-            <!-- MENSAGEM ADICIONADA -->
-            <small class="cat-aviso" style="display:block; margin-top:6px; font-size:11px; opacity:0.85; color:#ffebee;">
-                Entre em contato com o administrador para ter acesso
-            </small>
-        </div>
-    </button>
-</div>
+                        <!-- MENSAGEM ADICIONADA -->
+                        <small class="cat-aviso" style="display:block; margin-top:6px; font-size:11px; opacity:0.85; color:#ffebee;">
+                            Entre em contato com o administrador para ter acesso
+                        </small>
+                    </div>
+                </button>
+            </div>
 
         </main>
 
@@ -552,8 +552,8 @@
 
         </footer>
 
-<!-- =================================================
-             MODAL DE ACESSO RESTRITO (SENHA)
+        <!-- =================================================
+             MODAL DE ACESSO RESTRITO (SENHA + EMAIL)
         ================================================== -->
         <div id="modal-senha" class="modal-overlay" style="display: none;">
             <div class="modal-caixa">
@@ -561,9 +561,17 @@
                 <p>Esta seção contém documentação de baixo calão e linguagem de rua para fins de pesquisa e registro.</p>
                 <p><strong>Digite a senha de autorização:</strong></p>
                 <input type="password" id="senha-input" placeholder="Digite a senha">
-                <div class="modal-botoes">
+                
+                <div class="modal-botoes" style="margin-bottom: 12px;">
                     <button type="button" class="btn-confirmar" onclick="validarSenha()">Confirmar</button>
                     <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+                </div>
+
+                <!-- SOLICITAÇÃO POR EMAIL ADICIONADA -->
+                <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; margin-top: 10px; text-align: center;">
+                    <button type="button" onclick="solicitarSenhaEmail()" style="background:none; border:none; color:#5be0ac; text-decoration:underline; font-size:13px; cursor:pointer;">
+                        📧 Não tem a senha? Solicite ao administrador por e-mail
+                    </button>
                 </div>
             </div>
         </div>
