@@ -474,3 +474,105 @@ body {
     width: auto !important;
     max-width: 110px !important; 
 }
+
+/* =====================================================
+   MODAL DE SENHA DE ACESSO (ADICIONADO NO FINAL)
+===================================================== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(8, 26, 20, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: rgba(25, 59, 48, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 24px;
+    padding: 30px 24px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.50);
+}
+
+.modal-titulo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.modal-descricao {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.modal-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease;
+}
+
+.modal-input:focus {
+    border-color: #5be0ac;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.modal-botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-modal-confirmar {
+    flex: 1;
+    height: 44px;
+    border-radius: 22px;
+    border: none;
+    background: #4cd9a4;
+    color: #12352a;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-modal-confirmar:hover {
+    background: #5be0ac;
+}
+
+.btn-modal-cancelar {
+    flex: 1;
+    height: 44px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.10);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-modal-cancelar:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
