@@ -1,5 +1,57 @@
 const DICIONARIO = [
     {
+        palavra: "Ne wikwa",
+        tipo: "expressão / baixo calão escatológico",
+        categoria: "Linguagem de rua",
+        significado: "Insulto escatológico direto (literalmente: 'Seu c# / Teu c#'); usado para desafiar, mandar passear ou insultar alguém diretamente.",
+        audio: "assets/audios/nde_wikwa.mp3",
+        imagem: "assets/svg/restrito.jpg",
+        sentido_de: "Uso anatômico direto do orifício anal (raiz 'kwa') como resposta debochada ou agressão verbal de rua.",
+        falante: "Jovens / Uso de rua / Ofensa direta",
+        exemplos: [
+            "Ne wikwa! otsẽ woi!",
+            "Ma'erã reiko eredjapo kowa'e, ne wikwa guasu ?",
+            "Ha'e-kuery odjawu iwikwa rewe orewe.",
+            "Kiririn katu ne wikwa guasu, embyai mba'e porã!",,
+            "Kowa'e awa odjekwaa iwikwa rami.",
+            "Ereiko oporombondo-wa'e iwikwa-pe edjambojaru haguã!"
+        ],
+        traducao: [
+            "Seu c#! Sai daqui logo!",
+            "Por que você fica fazendo isso, seu c#?",
+            "Eles mandaram a gente tomar no c# (falaram do c# deles para nós).",
+            "Cala a boca, seu c#, você está estragando a coisa boa!",
+            "Esse homem age como um c# (um babaca).",
+            "Você só vive mandando os outros tomar no c# e debochando!"
+        ]
+    },
+    {
+        palavra: "Kambá",
+        tipo: "substantivo / pejorativo",
+        categoria: "Linguagem de rua",
+        significado: "Originalmente referente a pessoa negra/escura; na linguagem de rua degradou-se para xingamento pejorativo, ofensivo ou debochado.",
+        audio: "assets/audios/kamba.mp3",
+        imagem: "assets/svg/restrito.jpg",
+        sentido_de: "Deslocamento semântico de um etnônimo/termo descritivo para afronta interpessoal e insulto de rua.",
+        falante: "Linguagem de rua / Pejorativo",
+        exemplos: [
+            "Emboty ne djuru, kambá!",
+            "Ma'erã eredjapo kowa'e, kambá?",
+            "Ha'e-kuery onhe'ẽ kambá rewe edjembotawy haguã.",
+            "Nda'ewei djanhe'ẽ kambá oporai-py.",
+            "Kowa'e awa odjekwaa kambá rami edjeroreko-pe.",
+            "Ereiko oporombodjero'a-wa'e kambá rewe edjambodjaru haguã!"
+        ],
+        traducao: [
+            "Fecha a tua boca, seu preto!",
+            "Por que você fez isso, seu preto?",
+            "Eles usaram a palavra preto para debochar da gente.",
+            "Não é correto falarmos preto em tom de xingamento na cantoria.",
+            "Esse homem se comporta como um preto no jeito de agir.",
+            "Você só vive zombando dos outros usando 'preto' para debochar!"
+        ]
+    },
+    {
         palavra: "ko'ẽ porã",
         tipo: "expressão",
         categoria: "Expressões",
