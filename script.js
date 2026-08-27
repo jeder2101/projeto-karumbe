@@ -373,10 +373,72 @@ function mostrarCategoria(nome) {
 
 
 /* =====================================================
-   9. EVENTOS GLOBAIS (Exposição para o Escopo da Window)
+   9. MODAL DE ACESSO RESTRITO (SENHA)
+===================================================== */
+
+const SENHA_TABU = "1234"; // Defina a senha desejada aqui
+
+function solicitarAcessoTabu() {
+    const modal = document.getElementById("modal-senha");
+    const input = document.getElementById("senha-input");
+
+    if (!modal) {
+        alert("Erro: O elemento #modal-senha não foi encontrado no HTML.");
+        return;
+    }
+
+    modal.style.setProperty("display", "flex", "important");
+
+    if (input) {
+        input.value = "";
+        setTimeout(() => input.focus(), 100);
+    }
+}
+
+function fecharModal() {
+    const modal = document.getElementById("modal-senha");
+    if (modal) {
+        modal.style.setProperty("display", "none", "important");
+    }
+}
+
+function validarSenha() {
+    const input = document.getElementById("senha-input");
+    const senhaDigitada = input ? input.value.trim() : "";
+
+    if (senhaDigitada === SENHA_TABU) {
+        fecharModal();
+        mostrarCategoria("Linguagem de rua");
+    } else {
+        alert("Senha incorreta! Acesso restrito.");
+        if (input) {
+            input.value = "";
+            input.focus();
+        }
+    }
+}
+
+// Suporte para acionar o botão de confirmar apertando Enter no campo de senha
+document.addEventListener("DOMContentLoaded", () => {
+    const inputSenha = document.getElementById("senha-input");
+    if (inputSenha) {
+        inputSenha.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                validarSenha();
+            }
+        });
+    }
+});
+
+
+/* =====================================================
+   10. EVENTOS GLOBAIS (Exposição para o Escopo da Window)
 ===================================================== */
 
 window.tocarAudio = tocarAudio;
 window.mostrarCategoria = mostrarCategoria;
 window.executarBusca = executarBusca;
 window.voltarAoInicio = voltarAoInicio;
+window.solicitarAcessoTabu = solicitarAcessoTabu;
+window.fecharModal = fecharModal;
+window.validarSenha = validarSenha;
