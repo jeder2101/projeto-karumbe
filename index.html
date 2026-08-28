@@ -102,7 +102,25 @@
 
 
         <!-- =================================================
-             CATEGORIAS E RESULTADOS
+             CONTAINER DE RESULTADOS E AVISO DA LINGUAGEM DE RUA
+        ================================================== -->
+        <div id="resultado-busca" class="container-resultados" style="display: none;">
+            
+            <!-- AVISO DA SEÇÃO DE LINGUAGEM DE RUA (ADICIONADO) -->
+            <div id="aviso-rua" style="display: none; background: rgba(0,0,0,0.25); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; border: 1px solid rgba(255,255,255,0.15); text-align: center;">
+                <p style="margin: 0; font-size: 14px; line-height: 1.5;">
+                    <strong>Aviso Importante:</strong> Termos de pesquisa linguística e tabu verbal que refletem o atrito cultural com o <strong>djuruá</strong> (não-indígena). Expressões originalmente descritivas foram historicamente estigmatizadas ou rebaixadas a insultos pela imposição de valores externos, levando falantes a evitar seu uso público para se protegerem da maledicência.
+                </p>
+            </div>
+
+            <!-- Onde as palavras filtradas/buscadas serão injetadas -->
+            <div id="lista-palavras-rua"></div>
+        </div>
+
+
+
+        <!-- =================================================
+             CATEGORIAS
         ================================================== -->
 
         <main
@@ -110,13 +128,6 @@
             class="lista-vertical"
         >
 
-            <!-- AVISO DA SEÇÃO DE LINGUAGEM DE RUA (OCULTO POR PADRÃO) -->
-            <div id="aviso-rua" style="display: none; background: rgba(0,0,0,0.25); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; border: 1px solid rgba(255,255,255,0.15); text-align: center; width: 100%;">
-                <p style="margin: 0;"><strong>Aviso Importante:</strong> Termos de pesquisa linguística e tabu verbal que refletem o atrito cultural com o <strong>djuruá</strong> (não-indígena). Expressões originalmente descritivas foram historicamente estigmatizadas ou rebaixadas a insultos pela imposição de valores externos, levando falantes a evitar seu uso público para se protegerem da maledicência.</p>
-            </div>
-
-            <!-- CONTAINER ONDE OS CARDS DE PALAVRAS APARECEM -->
-            <div id="lista-palavras-rua" style="width: 100%;"></div>
 
 
             <!-- EXPRESSÕES -->
@@ -588,12 +599,10 @@
     <!-- =================================================
          SCRIPTS DO PROJETO
     ================================================== -->
-<script src="dicionario.js"></script>
-<script src="dicionario-rua.js"></script>
-<script src="mapa.js"></script>
-<script src="script.js"></script>
-
-
+    <script src="dicionario.js"></script>
+    <script src="dicionario-rua.js"></script>
+    <script src="mapa.js"></script>
+    <script src="script.js"></script>
 
     <!-- =================================================
          REGISTRO DO APLICATIVO
@@ -619,5 +628,4 @@
     </script>
 
 </body>
-
 </html>
