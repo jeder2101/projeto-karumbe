@@ -268,342 +268,182 @@ location.reload();
 
 }
 
-
-
-
-
 /* =====================================================
-
-6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
-
+   6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
 ===================================================== */
 
-
-
 /**
-
-* Renderiza os cards de palavras na tela
-
-* @param {Array} palavras - Subconjunto de itens do dicionário
-
-*/
-
+ * Renderiza os cards de palavras na tela
+ * @param {Array} palavras - Subconjunto de itens do dicionário
+ */
 function mostrarPalavras(palavras) {
+    if (!lista) return;
 
-if (!lista) return;
+    lista.innerHTML = "";
 
+    /* BOTÃO VOLTAR */
+    const voltar = document.createElement("button");
+    voltar.className = "voltar";
+    voltar.innerHTML = "⬅️ Voltar ao início";
+    voltar.onclick = voltarAoInicio;
+    lista.appendChild(voltar);
 
+    // =========================================================================
+    // INSERÇÃO DO TEXTO EXPLICATIVO (Exclusivo para a Categoria de Linguagem de Rua)
+    // =========================================================================
+    if (palavras && palavras.length > 0) {
+        const ehLinguagemDeRua = palavras.some(item => item.categoria && normalizar(item.categoria) === "linguagem de rua");
+        
+        if (ehLinguagemDeRua) {
+            const divExplicacao = document.createElement("div");
+            divExplicacao.className = "explicacao-tabu-wrapper";
+            divExplicacao.style.cssText = "background: rgba(255,255,255,0.95); border-left: 4px solid #9c3c32; padding: 15px; margin: 15px auto; max-width: 700px; border-radius: 6px; font-size: 0.95rem; color: #2c3e2d; text-align: left; box-shadow: 0 2px 5px rgba(0,0,0,0.2);";
+            divExplicacao.innerHTML = `
+                <strong style="display: block; color: #9c3c32; margin-bottom: 6px; font-size: 1.05rem;">Da descrição à ofensa: A transformação de termos tradicionais</strong>
+                Muitas palavras que hoje carregam um peso de tabu ou são evitadas no dia a dia nasceram de descrições perfeitamente neutras do corpo, da natureza ou do espaço. Originalmente, termos como <em>wikwa</em> (orifício ou cavidade) cumpriam uma função puramente anatômica ou descritiva na comunicação cotidiana da comunidade. No entanto, com a intensificação do contato cultural e linguístico com o não-indígena (<em>djurua</em>), o olhar externo sobre o corpo e a vergonha moral imposta de fora começaram a tensionar essas expressões. O que era uma palavra descritiva foi rebaixado e reaproveitado nas bordas da aldeia e na rua como insulto vulgar, espelhando a violência simbólica do preconceito. Esse processo de desgaste e estigmatização fez com que os falantes mais velhos passassem a evitar o uso de vários termos tradicionais no convívio comum, alterando a dinâmica viva da língua para se protegerem da maledicência externa.
+            `;
+            lista.appendChild(divExplicacao);
+        }
+    }
 
-lista.innerHTML = "";
+    /* CASO NENHUM RESULTADO SEJA ENCONTRADO */
+    if (!palavras || palavras.length === 0) {
+        const inputBusca = document.getElementById("busca");
+        const termoPesquisado = inputBusca ? inputBusca.value : "";
+        const sugestoes = buscaAproximada(termoPesquisado);
 
+        let html = `
+            <div class="card-pronuncia">
+                <h3 style="font-size:22px; margin-bottom:12px;">
+                    Nenhum resultado encontrado.
+                </h3>
+        `;
 
+        if (sugestoes.length > 0) {
+            html += `
+                <div style="margin-top:15px; font-size:18px;">
+                    🔎 Você quis dizer:
+                    <strong>${sugestoes[0].palavra}</strong> 
+                    (${sugestoes[0].significado})
+                </div>
+            `;
+        }
 
-/* BOTÃO VOLTAR */
+        html += "</div>";
+        lista.innerHTML += html;
+        return;
+    }
 
-const voltar = document.createElement("button");
+    /* CONSTRUÇÃO DOS CARDS DE CADA PALAVRA */
+    palavras.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "card-pronuncia";
 
-voltar.className = "voltar";
+        /* Áudio Path */
+        const audioPath = item.audio || (item.audios && item.audios.nhandewa ? item.audios.nhandewa : "");
 
-voltar.innerHTML = "⬅️ Voltar ao início";
+        /* Sentido e Falante */
+        const sentido = item.sentido_de || item.sentido || "";
+        const falante = item.falante || "";
 
-voltar.onclick = voltarAoInicio;
+        /* BLOCO DE EXEMPLOS PRÁTICOS */
+        let blocoExemplos = "";
+        if (item.exemplos && item.exemplos.length > 0) {
+            blocoExemplos = `
+                <div class="secao-bloco">
+                    <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:10px;">
+                        EXEMPLO(S) PRÁTICO(S)
+                    </h4>
+                    ${item.exemplos.map((ex, idx) => {
+                        const trad = (item.traducao && item.traducao[idx]) ? item.traducao[idx] : "";
+                        return `
+                            <div style="margin-bottom:10px; background:rgba(0,0,0,0.20); padding:12px; border-radius:10px;">
+                                <p style="margin:0; font-size:20px; line-height:1.5; color:#e67e22;">
+                                    ${ex}
+                                </p>
+                                ${trad ? `
+                                    <p style="margin:6px 0 0 0; opacity:0.9; font-size:16px; line-height:1.4;">
+                                        👉 ${trad}
+                                    </p>
+                                ` : ""}
+                            </div>
+                        `;
+                    }).join("")}
+                </div>
+            `;
+        }
 
-lista.appendChild(voltar);
+        /* BLOCO DE IMAGEM */
+        const blocoImagem = item.imagem ? `
+            <div class="card-foto" style="margin-top: 15px;">
+                <img src="${item.imagem}" alt="${item.palavra}" class="foto-acao">
+                ${item.legenda ? `<p>${item.legenda}</p>` : ""}
+            </div>
+        ` : "";
 
+        /* CORPO INTEGRAL DO CARD */
+        card.innerHTML = `
+            <h2 class="palavra-titulo" style="font-size:32px; margin-bottom:6px;">
+                ${item.palavra || "-"}
+            </h2>
 
+            <p style="font-size:15px; opacity:0.75; text-transform:capitalize; margin-bottom:14px;">
+                ${item.tipo || item.categoria || "-"}
+            </p>
 
-/* CASO NENHUM RESULTADO SEJA ENCONTRADO */
+            <div class="secao-bloco">
+                <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
+                    SIGNIFICADO
+                </h4>
+                <p style="font-size:20px; line-height:1.5; font-weight:600;">
+                    ${item.significado || "-"}
+                </p>
+            </div>
 
-if (!palavras || palavras.length === 0) {
+            ${sentido ? `
+                <div class="secao-bloco">
+                    <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
+                        SENTIDO DE
+                    </h4>
+                    <p style="font-size:18px; line-height:1.5;">
+                        ${sentido}
+                    </p>
+                </div>
+            ` : ""}
 
-const inputBusca = document.getElementById("busca");
+            ${falante ? `
+                <div class="secao-bloco">
+                    <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
+                        USO / FALANTE
+                    </h4>
+                    <p style="font-size:18px; line-height:1.5;">
+                        ${falante}
+                    </p>
+                </div>
+            ` : ""}
 
-const termoPesquisado = inputBusca ? inputBusca.value : "";
+            <div class="secao-bloco">
+                <h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:8px;">
+                    PRONÚNCIA NHANDEWA
+                </h4>
+                <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
+                    <button class="btn-play" onclick="tocarAudio('${audioPath}')">
+                        ▶
+                    </button>
+                    <span style="font-size:16px;">
+                        Ouvir áudio nativo
+                    </span>
+                </div>
+            </div>
 
-const sugestoes = buscaAproximada(termoPesquisado);
+            ${blocoExemplos}
 
+            ${blocoImagem}
+        `;
 
-
-let html = `
-
-<div class="card-pronuncia">
-
-<h3 style="font-size:22px; margin-bottom:12px;">
-
-Nenhum resultado encontrado.
-
-</h3>
-
-`;
-
-
-
-if (sugestoes.length > 0) {
-
-html += `
-
-<div style="margin-top:15px; font-size:18px;">
-
-🔎 Você quis dizer:
-
-<strong>${sugestoes[0].palavra}</strong>
-
-(${sugestoes[0].significado})
-
-</div>
-
-`;
-
+        lista.appendChild(card);
+    });
 }
-
-
-
-html += "</div>";
-
-lista.innerHTML += html;
-
-return;
-
-}
-
-
-
-/* CONSTRUÇÃO DOS CARDS DE CADA PALAVRA */
-
-palavras.forEach(item => {
-
-const card = document.createElement("div");
-
-card.className = "card-pronuncia";
-
-
-
-/* Áudio Path */
-
-const audioPath = item.audio || (item.audios && item.audios.nhandewa ? item.audios.nhandewa : "");
-
-
-
-/* Sentido e Falante */
-
-const sentido = item.sentido_de || item.sentido || "";
-
-const falante = item.falante || "";
-
-
-
-/* BLOCO DE EXEMPLOS PRÁTICOS */
-
-let blocoExemplos = "";
-
-if (item.exemplos && item.exemplos.length > 0) {
-
-blocoExemplos = `
-
-<div class="secao-bloco">
-
-<h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:10px;">
-
-EXEMPLO(S) PRÁTICO(S)
-
-</h4>
-
-${item.exemplos.map((ex, idx) => {
-
-const trad = (item.traducao && item.traducao[idx]) ? item.traducao[idx] : "";
-
-return `
-
-<div style="margin-bottom:10px; background:rgba(0,0,0,0.20); padding:12px; border-radius:10px;">
-
-<p style="margin:0; font-size:20px; line-height:1.5; color:#e67e22;">
-
-${ex}
-
-</p>
-
-${trad ? `
-
-<p style="margin:6px 0 0 0; opacity:0.9; font-size:16px; line-height:1.4;">
-
-👉 ${trad}
-
-</p>
-
-` : ""}
-
-</div>
-
-`;
-
-}).join("")}
-
-</div>
-
-`;
-
-}
-
-
-
-/* BLOCO DE IMAGEM */
-
-const blocoImagem = item.imagem ? `
-
-<div class="card-foto" style="margin-top: 15px;">
-
-<img src="${item.imagem}" alt="${item.palavra}" class="foto-acao">
-
-${item.legenda ? `<p>${item.legenda}</p>` : ""}
-
-</div>
-
-` : "";
-
-
-
-/* CORPO INTEGRAL DO CARD */
-
-card.innerHTML = `
-
-<!-- PALAVRA -->
-
-<h2 class="palavra-titulo" style="font-size:32px; margin-bottom:6px;">
-
-${item.palavra || "-"}
-
-</h2>
-
-
-
-<!-- CATEGORIA / TIPO -->
-
-<p style="font-size:15px; opacity:0.75; text-transform:capitalize; margin-bottom:14px;">
-
-${item.tipo || item.categoria || "-"}
-
-</p>
-
-
-
-<!-- SIGNIFICADO -->
-
-<div class="secao-bloco">
-
-<h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
-
-SIGNIFICADO
-
-</h4>
-
-<p style="font-size:20px; line-height:1.5; font-weight:600;">
-
-${item.significado || "-"}
-
-</p>
-
-</div>
-
-
-
-<!-- SENTIDO DE -->
-
-${sentido ? `
-
-<div class="secao-bloco">
-
-<h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
-
-SENTIDO DE
-
-</h4>
-
-<p style="font-size:18px; line-height:1.5;">
-
-${sentido}
-
-</p>
-
-</div>
-
-` : ""}
-
-
-
-<!-- USO / FALANTE -->
-
-${falante ? `
-
-<div class="secao-bloco">
-
-<h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:6px;">
-
-USO / FALANTE
-
-</h4>
-
-<p style="font-size:18px; line-height:1.5;">
-
-${falante}
-
-</p>
-
-</div>
-
-` : ""}
-
-
-
-<!-- PRONÚNCIA NHANDEWA -->
-
-<div class="secao-bloco">
-
-<h4 class="secao-titulo" style="font-size:15px; opacity:0.8; margin-bottom:8px;">
-
-PRONÚNCIA NHANDEWA
-
-</h4>
-
-<div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
-
-<button class="btn-play" onclick="tocarAudio('${audioPath}')">
-
-▶
-
-</button>
-
-<span style="font-size:16px;">
-
-Ouvir áudio nativo
-
-</span>
-
-</div>
-
-</div>
-
-
-
-<!-- EXEMPLOS -->
-
-${blocoExemplos}
-
-
-
-<!-- IMAGEM -->
-
-${blocoImagem}
-
-`;
-
-
-
-lista.appendChild(card);
-
-});
-
-}
-
 
 
 
