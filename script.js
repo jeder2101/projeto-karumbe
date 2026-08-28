@@ -563,7 +563,12 @@ function mostrarCategoria(nome) {
     let baseDados = DICIONARIO;
     
     if (normalizar(nome).includes("rua") && typeof DICIONARIO_RUA !== "undefined") {
-        baseDados = DICIONARIO_RUA;
+        // Cria uma cópia limpa do DICIONARIO_RUA sem os campos de áudio para não exibir o player
+        baseDados = DICIONARIO_RUA.map(item => {
+            const copia = { ...item };
+            delete copia.audio; // remove a propriedade de áudio se existir
+            return copia;
+        });
     }
 
     if (typeof baseDados === "undefined") {
@@ -571,55 +576,29 @@ function mostrarCategoria(nome) {
         return;
     }
 
-    // Se for linguagem de rua, renderizamos de forma personalizada (sem áudio/imagem e com o aviso)
-    const container = document.getElementById("resultado-busca") || document.getElementById("palavras-container");
-    if (!container) return;
+    // Se for o dicionário de rua, exibimos a mensagem de aviso personalizada e chamamos a listagem
+    if (normalizar(nome).includes("rua")) {
+        const container = document.getElementById("resultado") || document.getElementById("resultado-busca");
+        
+        // Renderiza os termos usando a função padrão que já funciona no seu site
+        mostrarPalavras(baseDados);
 
-    if (baseDados === DICIONARIO_RUA) {
-        // 1. Cria o texto explicativo da seção
-        let htmlMensagem = `
-            <div class="aviso-linguagem-rua" style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; text-align: center; border: 1px solid rgba(255,255,255,0.1);">
-                <p><strong>Aviso Importante:</strong> Esta seção reúne termos de pesquisa linguística e tabu verbal para fins de estudo e documentação crítica.</p>
-            </div>
-        `;
-
-        // 2. Monta os cards dos termos SEM a parte de áudio/pronúncia
-        let htmlCards = baseDados.map(item => `
-            <div class="card-palavra" style="background: #133324; border-radius: 12px; padding: 20px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.15);">
-                <h2 style="color: #4ade80; margin-top: 0;">${item.palavra}</h2>
-                <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 15px;">${item.categoria || 'Linguagem de Rua'}</p>
-                
-                <div style="margin-bottom: 12px;">
-                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Significado</strong>
-                    <p style="margin: 4px 0 0 0; font-size: 1.1rem;">${item.significado}</p>
+        // Insere o aviso logo no topo dos resultados, se o container existir
+        if (container) {
+            const avisoHTML = `
+                <div class="aviso-linguagem-rua" style="background: rgba(0,0,0,0.25); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; border: 1px solid rgba(255,255,255,0.15); text-align: center;">
+                    <p style="margin: 0;"><strong>Aviso Importante:</strong> Esta seção reúne termos de pesquisa linguística e tabu verbal para fins de estudo e documentação crítica.</p>
                 </div>
-
-                ${item.sentido_de ? `
-                <div style="margin-bottom: 12px;">
-                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Sentido de / Contexto</strong>
-                    <p style="margin: 4px 0 0 0;">${item.sentido_de}</p>
-                </div>` : ''}
-
-                ${item.falante ? `
-                <div style="margin-bottom: 12px;">
-                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Uso / Falante</strong>
-                    <p style="margin: 4px 0 0 0;">${item.falante}</p>
-                </div>` : ''}
-
-                ${item.exemplos && item.exemplos.length > 0 ? `
-                <div style="margin-top: 15px; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 8px;">
-                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; display: block; margin-bottom: 6px;">Exemplo(s) Prático(s)</strong>
-                    <p style="color: #fb923c; margin: 0 0 4px 0; font-weight: 500;">${item.exemplos[0]}</p>
-                    ${item.traducao && item.traducao[0] ? `<p style="margin: 0; opacity: 0.9;">👉 ${item.traducao[0]}</p>` : ''}
-                </div>` : ''}
-            </div>
-        `).join('');
-
-        container.innerHTML = htmlMensagem + htmlCards;
+            `;
+            // Coloca o aviso bem no começo do container de resultados
+            if (!container.querySelector(".aviso-linguagem-rua")) {
+                container.insertAdjacentHTML("afterbegin", avisoHTML);
+            }
+        }
         return;
     }
 
-    // Comportamento normal para o dicionário principal
+    // Comportamento normal para as outras categorias do dicionário principal
     const categoriaBusca = normalizar(nome);
     const resultado = baseDados.filter(item => {
         if (!item.categoria) return false;
@@ -628,7 +607,6 @@ function mostrarCategoria(nome) {
 
     mostrarPalavras(resultado);
 }
-
 
 
 
