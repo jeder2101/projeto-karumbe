@@ -137,38 +137,65 @@ function voltarAoInicio() {
     6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
 ===================================================== */
 
-/**
- * Renderiza os cards de palavras na tela
- * @param {Array} palavras - Subconjunto de itens do dicionário
- * @param {boolean} ehRua - Indica se estamos renderizando a linguagem de rua
- */
 function mostrarPalavras(palavras, ehRua = false) {
     const containerResultado = document.getElementById("resultado-busca");
     const avisoRua = document.getElementById("aviso-rua");
-    const listaPalavrasRua = document.getElementById("lista-palavras-rua");
 
-    // Se for a seção de rua, usamos o container específico do HTML
+    // Se for a seção de rua, exibe os avisos e usa a mesma lista principal
     if (ehRua) {
-        if (lista) lista.style.display = "none"; // Esconde as categorias normais
-        if (containerResultado) containerResultado.style.display = "block"; // Mostra o container de resultados
-        if (avisoRua) avisoRua.style.display = "block"; // Mostra o aviso importante da rua
-        
-        if (listaPalavrasRua) {
-            listaPalavrasRua.innerHTML = "";
-            
-            // Botão voltar específico para a seção de rua
-            const voltar = document.createElement("button");
-            voltar.className = "voltar";
-            voltar.innerHTML = "⬅️ Voltar ao início";
-            voltar.style.marginBottom = "20px";
-            voltar.onclick = voltarAoInicio;
-            listaPalavrasRua.appendChild(voltar);
-
-            renderizarCardsNoAlvo(palavras, listaPalavrasRua);
-        }
-        return;
+        if (containerResultado) containerResultado.style.display = "block";
+        if (avisoRua) avisoRua.style.display = "block";
+    } else {
+        if (containerResultado) containerResultado.style.display = "none";
+        if (avisoRua) avisoRua.style.display = "none";
     }
 
+    if (lista) {
+        lista.style.display = "flex";
+        lista.innerHTML = "";
+
+        const voltar = document.createElement("button");
+        voltar.className = "voltar";
+        voltar.innerHTML = "⬅️ Voltar ao início";
+        voltar.onclick = voltarAoInicio;
+        lista.appendChild(voltar);
+
+        // Se for rua e tiver um aviso específico, podemos adicioná-lo no topo da lista se ele existir no HTML
+        if (ehRua && avisoRua) {
+            lista.appendChild(avisoRua);
+            avisoRua.style.display = "block";
+        }
+
+        if (!palavras || palavras.length === 0) {
+            const inputBusca = document.getElementById("busca");
+            const termoPesquisado = inputBusca ? inputBusca.value : "";
+            const sugestoes = buscaAproximada(termoPesquisado);
+
+            let html = `
+                <div class="card-pronuncia">
+                    <h3 style="font-size:22px; margin-bottom:12px;">
+                        Nenhum resultado encontrado.
+                    </h3>
+            `;
+
+            if (sugestoes.length > 0) {
+                html += `
+                    <div style="margin-top:15px; font-size:18px;">
+                        🔎 Você quis dizer:
+                        <strong>${sugestoes[0].palavra}</strong> 
+                        (${sugestoes[0].significado})
+                    </div>
+                `;
+            }
+
+            html += "</div>";
+            lista.innerHTML += html;
+            return;
+        }
+
+        renderizarCardsNoAlvo(palavras, lista);
+    }
+}
     // Comportamento padrão para o restante das categorias/busca
     if (containerResultado) containerResultado.style.display = "none";
     if (lista) {
