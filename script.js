@@ -557,51 +557,30 @@ mostrarPalavras(resultado.slice(0, 20));
 
 
 /* =====================================================
-
-8. FILTRO POR CATEGORIA
-
+   8. FILTRO POR CATEGORIA (Atualizado para buscar no DICIONARIO_RUA)
 ===================================================== */
 
-
-
-/**
-
-* Filtra e exibe o conjunto de palavras de uma determinada categoria
-
-* @param {string} nome - Nome da categoria
-
-*/
-
 function mostrarCategoria(nome) {
+    // Se a categoria for linguagem de rua, usamos o dicionário específico de rua
+    let baseDados = DICIONARIO;
+    if (normalizar(nome).includes("linguagem de rua") && typeof DICIONARIO_RUA !== "undefined") {
+        baseDados = DICIONARIO_RUA;
+    }
 
-if (typeof DICIONARIO === "undefined") {
+    if (typeof baseDados === "undefined") {
+        console.error("Nenhuma base de dicionário encontrada.");
+        return;
+    }
 
-console.error("Variável DICIONARIO não encontrada.");
+    const categoriaBusca = normalizar(nome);
 
-return;
+    const resultado = baseDados.filter(item => {
+        if (!item.categoria) return false;
+        return normalizar(item.categoria).includes(categoriaBusca);
+    });
 
+    mostrarPalavras(resultado);
 }
-
-
-
-const categoriaBusca = normalizar(nome);
-
-
-
-const resultado = DICIONARIO.filter(item => {
-
-if (!item.categoria) return false;
-
-return normalizar(item.categoria).includes(categoriaBusca);
-
-});
-
-
-
-mostrarPalavras(resultado);
-
-}
-
 
 
 
@@ -683,42 +662,26 @@ modal.style.setProperty("display", "none", "important");
 
 }
 
-
-
 function validarSenha() {
+    const input = document.getElementById("senha-input");
+    const senhaDigitada = input ? input.value.trim().toUpperCase() : "";
+    
+    const senhaCorreta = obterSenhaDoDia();
 
-const input = document.getElementById("senha-input");
-
-const senhaDigitada = input ? input.value.trim().toUpperCase() : "";
-
-
-// Obtém a senha gerada dinamicamente para o dia de hoje
-
-const senhaCorreta = obterSenhaDoDia();
-
-
-
-if (senhaDigitada === senhaCorreta) {
-
-fecharModal();
-
-mostrarCategoria("Linguagem de rua");
-
-} else {
-
-alert("Senha incorreta! Acesso restrito.");
-
-if (input) {
-
-input.value = "";
-
-input.focus();
-
+    if (senhaDigitada === senhaCorreta) {
+        fecharModal();
+        // Chama a categoria passando o nome exato
+        mostrarCategoria("Linguagem de rua");
+    } else {
+        alert("Senha incorreta! Acesso restrito.");
+        if (input) {
+            input.value = "";
+            input.focus();
+        }
+    }
 }
 
-}
 
-}
 
 
 
