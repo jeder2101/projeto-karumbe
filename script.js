@@ -559,16 +559,22 @@ mostrarPalavras(resultado.slice(0, 20));
 /* =====================================================
    8. FILTRO POR CATEGORIA (Atualizado para buscar no DICIONARIO_RUA)
 ===================================================== */
-
 function mostrarCategoria(nome) {
-    // Se a categoria for linguagem de rua, usamos o dicionário específico de rua
     let baseDados = DICIONARIO;
-    if (normalizar(nome).includes("linguagem de rua") && typeof DICIONARIO_RUA !== "undefined") {
+    
+    // Se o nome da categoria contiver "rua", usamos o DICIONARIO_RUA
+    if (normalizar(nome).includes("rua") && typeof DICIONARIO_RUA !== "undefined") {
         baseDados = DICIONARIO_RUA;
     }
 
     if (typeof baseDados === "undefined") {
         console.error("Nenhuma base de dicionário encontrada.");
+        return;
+    }
+
+    // Se estivermos usando o dicionário de rua, exibe todos os itens dele diretamente
+    if (baseDados === DICIONARIO_RUA) {
+        mostrarPalavras(baseDados);
         return;
     }
 
