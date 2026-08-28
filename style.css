@@ -605,3 +605,45 @@ body {
     background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
     border: 1px solid rgba(255, 82, 82, 0.5) !important;
 }
+/* =====================================================
+   ESTILOS PARA A SEÇÃO DE LINGUAGEM DE RUA / ACESSO RESTRITO
+   ===================================================== */
+
+/* Container principal de resultados restritos */
+.container-resultados {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Caixa de aviso importante da seção */
+#aviso-rua {
+    background: rgba(230, 126, 34, 0.15); /* Fundo com tom suave em laranja/âmbar */
+    border-left: 5px solid #e67e22;      /* Detalhe lateral em destaque */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: inherit;
+}
+
+#aviso-rua h3 {
+    margin-top: 0;
+    color: #e67e22;
+    font-size: 20px;
+}
+
+#aviso-rua p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Sub-container que abriga a lista dinâmica dos termos restritos */
+#lista-palavras-rua {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
