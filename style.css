@@ -559,6 +559,37 @@ body {
     cursor: pointer;
     transition: background 0.2s ease;
 }
+/* =====================================================
+   ESTILOS PARA A SEÇÃO DE LINGUAGEM DE RUA / AVISO ABAIXO DO VOLTAR
+   ===================================================== */
+
+#aviso-rua {
+    width: 100% !important;
+    max-width: 750px !important;
+    margin: 0 auto 20px auto !important;
+    background: rgba(230, 126, 34, 0.20); 
+    border: 1px solid rgba(230, 126, 34, 0.5);
+    border-left: 5px solid #e67e22;     
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+#aviso-rua h3 {
+    margin-top: 0;
+    color: #f39c12;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#aviso-rua p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #ffffff;
+    opacity: 0.9;
+}
 
 .btn-confirmar:hover {
     background: #5be0ac;
