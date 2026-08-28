@@ -1,275 +1,141 @@
 console.log("Script Karumbé Carregado e Atualizado!");
 
-
-
 const lista = document.getElementById("lista");
 
-
-
 /* =====================================================
-
 1. ÁUDIO
-
 ===================================================== */
 
-
-
 /**
-
 * Reproduz o áudio do termo em Nhandewa
-
 * @param {string} caminho - Caminho relativo/absoluto para o arquivo de áudio
-
 */
-
 function tocarAudio(caminho) {
+    if (
+        !caminho ||
+        caminho === "" ||
+        caminho === "undefined" ||
+        caminho === "null"
+    ) {
+        alert("Gravação em Nhandewa indisponível no momento.");
+        return;
+    }
 
-if (
+    const audio = new Audio(caminho);
 
-!caminho ||
-
-caminho === "" ||
-
-caminho === "undefined" ||
-
-caminho === "null"
-
-) {
-
-alert("Gravação em Nhandewa indisponível no momento.");
-
-return;
-
+    audio.play().catch(err => {
+        console.warn("Erro ao tocar áudio:", err);
+        alert("Não foi possível reproduzir o áudio.");
+    });
 }
-
-
-
-const audio = new Audio(caminho);
-
-
-
-audio.play().catch(err => {
-
-console.warn("Erro ao tocar áudio:", err);
-
-alert("Não foi possível reproduzir o áudio.");
-
-});
-
-}
-
-
-
 
 
 /* =====================================================
-
 2. NORMALIZAR TEXTO (Remoção de acentos e diacríticos)
-
 ===================================================== */
 
-
-
 /**
-
 * Normaliza o texto removendo acentos e convertendo para caixa baixa
-
 * @param {string} texto
-
 * @returns {string} Texto limpo
-
 */
-
 function normalizar(texto) {
+    if (!texto) return "";
 
-if (!texto) return "";
-
-
-
-return texto
-
-.toLowerCase()
-
-.normalize("NFD")
-
-.replace(/[\u0300-\u036f]/g, "");
-
+    return texto
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
 }
 
 
-
-
-
 /* =====================================================
-
 3. DISTÂNCIA DE LEVENSHTEIN (Busca Aproximada)
-
 ===================================================== */
 
-
-
 /**
-
 * Calcula a distância de edição entre duas strings
-
 */
-
 function distancia(a, b) {
+    const matriz = [];
 
-const matriz = [];
+    for (let i = 0; i <= b.length; i++) {
+        matriz[i] = [i];
+    }
 
+    for (let j = 0; j <= a.length; j++) {
+        matriz[0][j] = j;
+    }
 
+    for (let i = 1; i <= b.length; i++) {
+        for (let j = 1; j <= a.length; j++) {
+            if (b[i - 1] === a[j - 1]) {
+                matriz[i][j] = matriz[i - 1][j - 1];
+            } else {
+                matriz[i][j] = Math.min(
+                    matriz[i - 1][j - 1] + 1, // substituição
+                    matriz[i][j - 1] + 1, // inserção
+                    matriz[i - 1][j] + 1 // remoção
+                );
+            }
+        }
+    }
 
-for (let i = 0; i <= b.length; i++) {
-
-matriz[i] = [i];
-
+    return matriz[b.length][a.length];
 }
-
-
-
-for (let j = 0; j <= a.length; j++) {
-
-matriz[0][j] = j;
-
-}
-
-
-
-for (let i = 1; i <= b.length; i++) {
-
-for (let j = 1; j <= a.length; j++) {
-
-if (b[i - 1] === a[j - 1]) {
-
-matriz[i][j] = matriz[i - 1][j - 1];
-
-} else {
-
-matriz[i][j] = Math.min(
-
-matriz[i - 1][j - 1] + 1, // substituição
-
-matriz[i][j - 1] + 1, // inserção
-
-matriz[i - 1][j] + 1 // remoção
-
-);
-
-}
-
-}
-
-}
-
-
-
-return matriz[b.length][a.length];
-
-}
-
-
-
 
 
 /* =====================================================
-
 4. BUSCA APROXIMADA / SUGESTÕES
-
 ===================================================== */
-
-
 
 /**
-
 * Encontra termos semelhantes caso a busca exata falhe
-
 * @param {string} texto - Termo digitado pelo usuário
-
 * @returns {Array} Lista de itens sugeridos
-
 */
-
 function buscaAproximada(texto) {
+    const textoNorm = normalizar(texto);
 
-const textoNorm = normalizar(texto);
+    if (textoNorm.length < 3 || typeof DICIONARIO === "undefined") {
+        return [];
+    }
 
+    return DICIONARIO.filter(item => {
+        // Bloqueia termos da "Linguagem de rua" nas sugestões gerais
+        if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
+            return false;
+        }
 
+        const campos = [
+            item.palavra,
+            item.significado,
+            item.categoria,
+            ...(item.exemplos || []),
+            ...(item.traducao || [])
+        ];
 
-if (textoNorm.length < 3 || typeof DICIONARIO === "undefined") {
-
-return [];
-
+        return campos.some(valor =>
+            valor &&
+            distancia(
+                textoNorm,
+                normalizar(valor)
+            ) <= 1
+        );
+    });
 }
-
-
-
-return DICIONARIO.filter(item => {
-
-// Bloqueia termos da "Linguagem de rua" nas sugestões gerais
-
-if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
-
-return false;
-
-}
-
-
-
-const campos = [
-
-item.palavra,
-
-item.significado,
-
-item.categoria,
-
-...(item.exemplos || []),
-
-...(item.traducao || [])
-
-];
-
-
-
-return campos.some(valor =>
-
-valor &&
-
-distancia(
-
-textoNorm,
-
-normalizar(valor)
-
-) <= 1
-
-);
-
-});
-
-}
-
-
-
 
 
 /* =====================================================
-
 5. VOLTAR AO INÍCIO
-
 ===================================================== */
-
-
 
 function voltarAoInicio() {
-
-location.reload();
-
+    location.reload();
 }
 
 /* =====================================================
-   6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
+    6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
 ===================================================== */
 
 /**
@@ -289,7 +155,7 @@ function mostrarPalavras(palavras) {
     lista.appendChild(voltar);
 
     // =========================================================================
-    // INSERÇÃO DO TEXTO EXPLICATIVO (Exclusivo para a Categoria de Linguagem de Rua)
+    // INSERÇÃO DO TEXTO EXPLICATIVO (Mensagem sobre a influência dos djuruá)
     // =========================================================================
     if (palavras && palavras.length > 0) {
         const ehLinguagemDeRua = palavras.some(item => item.categoria && normalizar(item.categoria) === "linguagem de rua");
@@ -297,10 +163,14 @@ function mostrarPalavras(palavras) {
         if (ehLinguagemDeRua) {
             const divExplicacao = document.createElement("div");
             divExplicacao.className = "explicacao-tabu-wrapper";
-            divExplicacao.style.cssText = "background: rgba(255,255,255,0.95); border-left: 4px solid #9c3c32; padding: 15px; margin: 15px auto; max-width: 700px; border-radius: 6px; font-size: 0.95rem; color: #2c3e2d; text-align: left; box-shadow: 0 2px 5px rgba(0,0,0,0.2);";
+            divExplicacao.style.cssText = "background: rgba(0, 0, 0, 0.35); padding: 18px 20px; margin: 15px auto; max-width: 700px; border-radius: 8px; font-size: 0.95rem; color: #fff; text-align: left; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.3);";
             divExplicacao.innerHTML = `
-                <strong style="display: block; color: #9c3c32; margin-bottom: 6px; font-size: 1.05rem;">Da descrição à ofensa: A transformação de termos tradicionais</strong>
-                Muitas palavras que hoje carregam um peso de tabu ou são evitadas no dia a dia nasceram de descrições perfeitamente neutras do corpo, da natureza ou do espaço. Originalmente, termos como <em>wikwa</em> (orifício ou cavidade) cumpriam uma função puramente anatômica ou descritiva na comunicação cotidiana da comunidade. No entanto, com a intensificação do contato cultural e linguístico com o não-indígena (<em>djurua</em>), o olhar externo sobre o corpo e a vergonha moral imposta de fora começaram a tensionar essas expressões. O que era uma palavra descritiva foi rebaixado e reaproveitado nas bordas da aldeia e na rua como insulto vulgar, espelhando a violência simbólica do preconceito. Esse processo de desgaste e estigmatização fez com que os falantes mais velhos passassem a evitar o uso de vários termos tradicionais no convívio comum, alterando a dinâmica viva da língua para se protegerem da maledicência externa.
+                <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #fff;">
+                    <strong>A influência dos djuruá:</strong> O impacto da influência dos <strong>djuruá</strong> (não-indígenas) sobre os povos indígenas envolve um profundo processo de atrito cultural e histórico que afetou diretamente a dinâmica comunitária, os modos de vida e a própria expressão linguística.
+                </p>
+                <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #fff;">
+                    Expressões e termos originalmente descritivos do cotidiano foram rebaixados ou estigmatizados, gerando o <strong>tabu verbal</strong> — onde falantes passaram a evitar o uso público para se protegerem da maledicência e do preconceito externo.
+                </p>
             `;
             lista.appendChild(divExplicacao);
         }
@@ -446,118 +316,62 @@ function mostrarPalavras(palavras) {
 }
 
 
-
-
 /* =====================================================
-
 7. BUSCA EM TEMPO REAL
-
 ===================================================== */
 
-
-
 /**
-
 * Filtra as palavras do dicionário com base na consulta digitada
-
 * @param {string} valor
-
 */
-
 function executarBusca(valor) {
+    const texto = valor.trim();
 
-const texto = valor.trim();
+    if (texto === "") {
+        location.reload();
+        return;
+    }
 
+    if (typeof DICIONARIO === "undefined") {
+        console.error("Variável DICIONARIO não encontrada.");
+        return;
+    }
 
+    const busca = normalizar(texto);
 
-if (texto === "") {
+    const resultado = DICIONARIO.filter(item => {
+        // BLOQUEIO: Não exibe "Linguagem de rua" na barra de busca comum
+        if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
+            return false;
+        }
 
-location.reload();
+        const palavra = normalizar(item.palavra);
+        const significado = normalizar(item.significado);
+        const categoria = normalizar(item.categoria);
 
-return;
+        const exemplos = (item.exemplos || []).some(ex =>
+            normalizar(ex).includes(busca)
+        );
 
+        const trad = (item.traducao || []).some(tr =>
+            normalizar(tr).includes(busca)
+        );
+
+        return (
+            palavra.includes(busca) ||
+            significado.includes(busca) ||
+            categoria.includes(busca) ||
+            exemplos ||
+            trad
+        );
+    });
+
+    mostrarPalavras(resultado.slice(0, 20));
 }
-
-
-
-if (typeof DICIONARIO === "undefined") {
-
-console.error("Variável DICIONARIO não encontrada.");
-
-return;
-
-}
-
-
-
-const busca = normalizar(texto);
-
-
-
-const resultado = DICIONARIO.filter(item => {
-
-// BLOQUEIO: Não exibe "Linguagem de rua" na barra de busca comum
-
-if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
-
-return false;
-
-}
-
-
-
-const palavra = normalizar(item.palavra);
-
-const significado = normalizar(item.significado);
-
-const categoria = normalizar(item.categoria);
-
-
-
-const exemplos = (item.exemplos || []).some(ex =>
-
-normalizar(ex).includes(busca)
-
-);
-
-
-
-const trad = (item.traducao || []).some(tr =>
-
-normalizar(tr).includes(busca)
-
-);
-
-
-
-return (
-
-palavra.includes(busca) ||
-
-significado.includes(busca) ||
-
-categoria.includes(busca) ||
-
-exemplos ||
-
-trad
-
-);
-
-});
-
-
-
-mostrarPalavras(resultado.slice(0, 20));
-
-}
-
-
-
 
 
 /* =====================================================
-   8. FILTRO POR CATEGORIA (Atualizado para buscar no DICIONARIO_RUA)
+    8. FILTRO POR CATEGORIA (Atualizado para buscar no DICIONARIO_RUA)
 ===================================================== */
 function mostrarCategoria(nome) {
     let baseDados = DICIONARIO;
@@ -576,25 +390,9 @@ function mostrarCategoria(nome) {
         return;
     }
 
-    // Se for o dicionário de rua, exibimos a mensagem de aviso personalizada e chamamos a listagem
+    // Se for o dicionário de rua, chama diretamente a função que exibe os cards (o aviso já é injetado lá dentro)
     if (normalizar(nome).includes("rua")) {
-        const container = document.getElementById("resultado") || document.getElementById("resultado-busca");
-        
-        // Renderiza os termos usando a função padrão que já funciona no seu site
         mostrarPalavras(baseDados);
-
-        // Insere o aviso logo no topo dos resultados, se o container existir
-        if (container) {
-            const avisoHTML = `
-                <div class="aviso-linguagem-rua" style="background: rgba(0,0,0,0.25); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; border: 1px solid rgba(255,255,255,0.15); text-align: center;">
-                    <p style="margin: 0;"><strong>Aviso Importante:</strong> Esta seção reúne termos de pesquisa linguística e tabu verbal para fins de estudo e documentação crítica.</p>
-                </div>
-            `;
-            // Coloca o aviso bem no começo do container de resultados
-            if (!container.querySelector(".aviso-linguagem-rua")) {
-                container.insertAdjacentHTML("afterbegin", avisoHTML);
-            }
-        }
         return;
     }
 
@@ -609,82 +407,44 @@ function mostrarCategoria(nome) {
 }
 
 
-
 /* =====================================================
-
 9. MODAL DE ACESSO RESTRITO (GERAÇÃO E VALIDAÇÃO DE SENHA)
-
 ===================================================== */
 
-
-
 /**
-
 * Gera a senha do dia automaticamente com base no calendário (Ex: KRM-2708)
-
 * Muda diariamente à meia-noite sem precisar alterar código.
-
 */
-
 function obterSenhaDoDia() {
+    const hoje = new Date();
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
 
-const hoje = new Date();
-
-const dia = String(hoje.getDate()).padStart(2, '0');
-
-const mes = String(hoje.getMonth() + 1).padStart(2, '0');
-
-
-return `KRM-${dia}${mes}`;
-
+    return `KRM-${dia}${mes}`;
 }
-
-
 
 function solicitarAcessoTabu() {
+    const modal = document.getElementById("modal-senha");
+    const input = document.getElementById("senha-input");
 
-const modal = document.getElementById("modal-senha");
+    if (!modal) {
+        alert("Erro: O elemento #modal-senha não foi encontrado no HTML.");
+        return;
+    }
 
-const input = document.getElementById("senha-input");
+    modal.style.setProperty("display", "flex", "important");
 
-
-
-if (!modal) {
-
-alert("Erro: O elemento #modal-senha não foi encontrado no HTML.");
-
-return;
-
+    if (input) {
+        input.value = "";
+        setTimeout(() => input.focus(), 100);
+    }
 }
-
-
-
-modal.style.setProperty("display", "flex", "important");
-
-
-
-if (input) {
-
-input.value = "";
-
-setTimeout(() => input.focus(), 100);
-
-}
-
-}
-
-
 
 function fecharModal() {
-
-const modal = document.getElementById("modal-senha");
-
-if (modal) {
-
-modal.style.setProperty("display", "none", "important");
-
-}
-
+    const modal = document.getElementById("modal-senha");
+    if (modal) {
+        modal.style.setProperty("display", "none", "important");
+    }
 }
 
 function validarSenha() {
@@ -707,85 +467,44 @@ function validarSenha() {
 }
 
 
-
-
-
 /**
-
 * Abre o cliente de e-mail pré-preenchendo o pedido de acesso para o administrador
-
 */
-
 function solicitarSenhaEmail() {
+    const emailAdmin = "projeto.karumbe.org@gmail.com";
+    const assunto = encodeURIComponent("Solicitação de Acesso - Linguagem de Rua (Projeto Karumbé)");
+    const corpo = encodeURIComponent(
+        "Olá,\n\nGostaria de solicitar a senha de acesso para a seção de pesquisa linguística 'Linguagem de Rua / Tabu Verbal' do Projeto Karumbé.\n\nMotivo/Instituição:\n\nAtenciosamente,"
+    );
 
-const emailAdmin = "projeto.karumbe.org@gmail.com";
-
-const assunto = encodeURIComponent("Solicitação de Acesso - Linguagem de Rua (Projeto Karumbé)");
-
-const corpo = encodeURIComponent(
-
-"Olá,\n\nGostaria de solicitar a senha de acesso para a seção de pesquisa linguística 'Linguagem de Rua / Tabu Verbal' do Projeto Karumbé.\n\nMotivo/Instituição:\n\nAtenciosamente,"
-
-);
-
-
-
-window.location.href = `mailto:${emailAdmin}?subject=${assunto}&body=${corpo}`;
-
+    window.location.href = `mailto:${emailAdmin}?subject=${assunto}&body=${corpo}`;
 }
-
-
 
 // Suporte para acionar o botão de confirmar apertando Enter no campo de senha
-
 document.addEventListener("DOMContentLoaded", () => {
-
-const inputSenha = document.getElementById("senha-input");
-
-if (inputSenha) {
-
-inputSenha.addEventListener("keydown", (e) => {
-
-if (e.key === "Enter") {
-
-validarSenha();
-
-}
-
+    const inputSenha = document.getElementById("senha-input");
+    if (inputSenha) {
+        inputSenha.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                validarSenha();
+            }
+        });
+    }
 });
-
-}
-
-});
-
-
-
 
 
 /* =====================================================
-
 10. EVENTOS GLOBAIS (Exposição para o Escopo da Window)
-
 ===================================================== */
 
-
-
 window.tocarAudio = tocarAudio;
-
 window.mostrarCategoria = mostrarCategoria;
-
 window.executarBusca = executarBusca;
-
 window.voltarAoInicio = voltarAoInicio;
-
 window.solicitarAcessoTabu = solicitarAcessoTabu;
-
 window.fecharModal = fecharModal;
-
 window.validarSenha = validarSenha;
-
 window.solicitarSenhaEmail = solicitarSenhaEmail;
-
-window.obterSenhaDoDia = obterSenhaDoDia; 
+window.obterSenhaDoDia = obterSenhaDoDia;
 
 
