@@ -155,9 +155,29 @@ function mostrarPalavras(palavras) {
     voltar.onclick = voltarAoInicio;
     lista.appendChild(voltar);
 
+    // ==========================================
+    // EXIBE O TEXTO APENAS SE FOR A CATEGORIA DE LINGUAGEM DE RUA
+    // ==========================================
+    const inputBusca = document.getElementById("busca");
+    const termoPesquisado = inputBusca ? inputBusca.value.trim() : "";
+
+    if (termoPesquisado === "" && palavras && palavras.length > 0) {
+        const primeiraCategoria = palavras[0].categoria ? normalizar(palavras[0].categoria) : "";
+        if (primeiraCategoria.includes("linguagem de rua")) {
+            const divExplicacao = document.createElement("div");
+            divExplicacao.className = "explicacao-tabu-wrapper";
+            divExplicacao.style.cssText = "background: rgba(255,255,255,0.95); border-left: 4px solid #9c3c32; padding: 15px; margin: 15px auto; max-width: 700px; border-radius: 6px; font-size: 0.95rem; color: #2c3e2d; text-align: left; box-shadow: 0 2px 5px rgba(0,0,0,0.2);";
+            divExplicacao.innerHTML = `
+                <strong style="display: block; color: #9c3c32; margin-bottom: 6px; font-size: 1.05rem;">Da descrição à ofensa: A transformação de termos tradicionais</strong>
+                Muitas palavras que hoje carregam um peso de tabu ou são evitadas no dia a dia nasceram de descrições perfeitamente neutras do corpo, da natureza ou do espaço. Originalmente, termos como <em>wikwa</em> (orifício ou cavidade) cumpriam uma função puramente anatômica ou descritiva na comunicação cotidiana da comunidade. No entanto, com a intensificação do contato cultural e linguístico com o não-indígena (<em>djurua</em>), o olhar externo sobre o corpo e a vergonha moral imposta de fora começaram a tensionar essas expressões. O que era uma palavra descritiva foi rebaixado e reaproveitado nas bordas da aldeia e na rua como insulto vulgar, espelhando a violência simbólica do preconceito. Esse processo de desgaste e estigmatização fez com que os falantes mais velhos passassem a evitar o uso de vários termos tradicionais no convívio comum, alterando a dinâmica viva da língua para se protegerem da maledicência externa.
+            `;
+            lista.appendChild(divExplicacao);
+        }
+    }
+
     /* CASO NENHUM RESULTADO SEJA ENCONTRADO */
     if (!palavras || palavras.length === 0) {
-        // ... restante do código original ...
+        // ... (continua o restante do código original)
 No seu index.html: Mantenha o texto explicativo onde ele estava originalmente posicionado (logo acima do botão vermelho de acesso restrito da categoria), sem apagá-lo.
 
 Dessa forma, o código e a estrutura da página voltam a ficar exatamente no estado anterior.
