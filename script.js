@@ -8,7 +8,7 @@ const lista = document.getElementById("lista");
 
 /**
 * Reproduz o áudio do termo em Nhandewa
-* @param {string} caminho - Caminho relativo/absoluto para o arquivo de áudio
+* @param {string} caminho - Caminho relativo/alvo para o arquivo de áudio
 */
 function tocarAudio(caminho) {
     if (
@@ -102,7 +102,6 @@ function buscaAproximada(texto) {
     }
 
     return DICIONARIO.filter(item => {
-        // Bloqueia termos da "Linguagem de rua" nas sugestões gerais
         if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
             return false;
         }
@@ -141,82 +140,90 @@ function voltarAoInicio() {
 /**
  * Renderiza os cards de palavras na tela
  * @param {Array} palavras - Subconjunto de itens do dicionário
+ * @param {boolean} ehRua - Indica se estamos renderizando a linguagem de rua
  */
-function mostrarPalavras(palavras) {
-    if (!lista) return;
+function mostrarPalavras(palavras, ehRua = false) {
+    const containerResultado = document.getElementById("resultado-busca");
+    const avisoRua = document.getElementById("aviso-rua");
+    const listaPalavrasRua = document.getElementById("lista-palavras-rua");
 
-    lista.innerHTML = "";
-
-    /* BOTÃO VOLTAR */
-    const voltar = document.createElement("button");
-    voltar.className = "voltar";
-    voltar.innerHTML = "⬅️ Voltar ao início";
-    voltar.onclick = voltarAoInicio;
-    lista.appendChild(voltar);
-
-    // =========================================================================
-    // INSERÇÃO DO TEXTO EXPLICATIVO (Mensagem sobre a influência dos djuruá)
-    // =========================================================================
-    if (palavras && palavras.length > 0) {
-        const ehLinguagemDeRua = palavras.some(item => item.categoria && normalizar(item.categoria) === "linguagem de rua");
+    // Se for a seção de rua, usamos o container específico do HTML
+    if (ehRua) {
+        if (lista) lista.style.display = "none"; // Esconde as categorias normais
+        if (containerResultado) containerResultado.style.display = "block"; // Mostra o container de resultados
+        if (avisoRua) avisoRua.style.display = "block"; // Mostra o aviso importante da rua
         
-        if (ehLinguagemDeRua) {
-            const divExplicacao = document.createElement("div");
-            divExplicacao.className = "explicacao-tabu-wrapper";
-            divExplicacao.style.cssText = "background: rgba(0, 0, 0, 0.35); padding: 18px 20px; margin: 15px auto; max-width: 700px; border-radius: 8px; font-size: 0.95rem; color: #fff; text-align: left; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 4px 6px rgba(0,0,0,0.3);";
-            divExplicacao.innerHTML = `
-                <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #fff;">
-                    <strong>A influência dos djuruá:</strong> O impacto da influência dos <strong>djuruá</strong> (não-indígenas) sobre os povos indígenas envolve um profundo processo de atrito cultural e histórico que afetou diretamente a dinâmica comunitária, os modos de vida e a própria expressão linguística.
-                </p>
-                <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #fff;">
-                    Expressões e termos originalmente descritivos do cotidiano foram rebaixados ou estigmatizados, gerando o <strong>tabu verbal</strong> — onde falantes passaram a evitar o uso público para se protegerem da maledicência e do preconceito externo.
-                </p>
-            `;
-            lista.appendChild(divExplicacao);
+        if (listaPalavrasRua) {
+            listaPalavrasRua.innerHTML = "";
+            
+            // Botão voltar específico para a seção de rua
+            const voltar = document.createElement("button");
+            voltar.className = "voltar";
+            voltar.innerHTML = "⬅️ Voltar ao início";
+            voltar.style.marginBottom = "20px";
+            voltar.onclick = voltarAoInicio;
+            listaPalavrasRua.appendChild(voltar);
+
+            renderizarCardsNoAlvo(palavras, listaPalavrasRua);
         }
-    }
-
-    /* CASO NENHUM RESULTADO SEJA ENCONTRADO */
-    if (!palavras || palavras.length === 0) {
-        const inputBusca = document.getElementById("busca");
-        const termoPesquisado = inputBusca ? inputBusca.value : "";
-        const sugestoes = buscaAproximada(termoPesquisado);
-
-        let html = `
-            <div class="card-pronuncia">
-                <h3 style="font-size:22px; margin-bottom:12px;">
-                    Nenhum resultado encontrado.
-                </h3>
-        `;
-
-        if (sugestoes.length > 0) {
-            html += `
-                <div style="margin-top:15px; font-size:18px;">
-                    🔎 Você quis dizer:
-                    <strong>${sugestoes[0].palavra}</strong> 
-                    (${sugestoes[0].significado})
-                </div>
-            `;
-        }
-
-        html += "</div>";
-        lista.innerHTML += html;
         return;
     }
 
-    /* CONSTRUÇÃO DOS CARDS DE CADA PALAVRA */
+    // Comportamento padrão para o restante das categorias/busca
+    if (containerResultado) containerResultado.style.display = "none";
+    if (lista) {
+        lista.style.display = "flex";
+        lista.innerHTML = "";
+
+        const voltar = document.createElement("button");
+        voltar.className = "voltar";
+        voltar.innerHTML = "⬅️ Voltar ao início";
+        voltar.onclick = voltarAoInicio;
+        lista.appendChild(voltar);
+
+        if (!palavras || palavras.length === 0) {
+            const inputBusca = document.getElementById("busca");
+            const termoPesquisado = inputBusca ? inputBusca.value : "";
+            const sugestoes = buscaAproximada(termoPesquisado);
+
+            let html = `
+                <div class="card-pronuncia">
+                    <h3 style="font-size:22px; margin-bottom:12px;">
+                        Nenhum resultado encontrado.
+                    </h3>
+            `;
+
+            if (sugestoes.length > 0) {
+                html += `
+                    <div style="margin-top:15px; font-size:18px;">
+                        🔎 Você quis dizer:
+                        <strong>${sugestoes[0].palavra}</strong> 
+                        (${sugestoes[0].significado})
+                    </div>
+                `;
+            }
+
+            html += "</div>";
+            lista.innerHTML += html;
+            return;
+        }
+
+        renderizarCardsNoAlvo(palavras, lista);
+    }
+}
+
+/**
+* Função auxiliar para injetar os cards de termos dentro de um elemento alvo
+*/
+function renderizarCardsNoAlvo(palavras, elementoAlvo) {
     palavras.forEach(item => {
         const card = document.createElement("div");
         card.className = "card-pronuncia";
 
-        /* Áudio Path */
         const audioPath = item.audio || (item.audios && item.audios.nhandewa ? item.audios.nhandewa : "");
-
-        /* Sentido e Falante */
         const sentido = item.sentido_de || item.sentido || "";
         const falante = item.falante || "";
 
-        /* BLOCO DE EXEMPLOS PRÁTICOS */
         let blocoExemplos = "";
         if (item.exemplos && item.exemplos.length > 0) {
             blocoExemplos = `
@@ -243,7 +250,6 @@ function mostrarPalavras(palavras) {
             `;
         }
 
-        /* BLOCO DE IMAGEM */
         const blocoImagem = item.imagem ? `
             <div class="card-foto" style="margin-top: 15px;">
                 <img src="${item.imagem}" alt="${item.palavra}" class="foto-acao">
@@ -251,7 +257,6 @@ function mostrarPalavras(palavras) {
             </div>
         ` : "";
 
-        /* CORPO INTEGRAL DO CARD */
         card.innerHTML = `
             <h2 class="palavra-titulo" style="font-size:32px; margin-bottom:6px;">
                 ${item.palavra || "-"}
@@ -311,7 +316,7 @@ function mostrarPalavras(palavras) {
             ${blocoImagem}
         `;
 
-        lista.appendChild(card);
+        elementoAlvo.appendChild(card);
     });
 }
 
@@ -340,7 +345,6 @@ function executarBusca(valor) {
     const busca = normalizar(texto);
 
     const resultado = DICIONARIO.filter(item => {
-        // BLOQUEIO: Não exibe "Linguagem de rua" na barra de busca comum
         if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
             return false;
         }
@@ -366,23 +370,24 @@ function executarBusca(valor) {
         );
     });
 
-    mostrarPalavras(resultado.slice(0, 20));
+    mostrarPalavras(resultado.slice(0, 20), false);
 }
 
 
 /* =====================================================
-    8. FILTRO POR CATEGORIA (Atualizado para buscar no DICIONARIO_RUA)
+    8. FILTRO POR CATEGORIA
 ===================================================== */
 function mostrarCategoria(nome) {
     let baseDados = DICIONARIO;
+    let ehRua = false;
     
     if (normalizar(nome).includes("rua") && typeof DICIONARIO_RUA !== "undefined") {
-        // Cria uma cópia limpa do DICIONARIO_RUA sem os campos de áudio para não exibir o player
         baseDados = DICIONARIO_RUA.map(item => {
             const copia = { ...item };
-            delete copia.audio; // remove a propriedade de áudio se existir
+            delete copia.audio; 
             return copia;
         });
+        ehRua = true;
     }
 
     if (typeof baseDados === "undefined") {
@@ -390,20 +395,18 @@ function mostrarCategoria(nome) {
         return;
     }
 
-    // Se for o dicionário de rua, chama diretamente a função que exibe os cards (o aviso já é injetado lá dentro)
-    if (normalizar(nome).includes("rua")) {
-        mostrarPalavras(baseDados);
+    if (ehRua) {
+        mostrarPalavras(baseDados, true);
         return;
     }
 
-    // Comportamento normal para as outras categorias do dicionário principal
     const categoriaBusca = normalizar(nome);
     const resultado = baseDados.filter(item => {
         if (!item.categoria) return false;
         return normalizar(item.categoria).includes(categoriaBusca);
     });
 
-    mostrarPalavras(resultado);
+    mostrarPalavras(resultado, false);
 }
 
 
@@ -411,10 +414,6 @@ function mostrarCategoria(nome) {
 9. MODAL DE ACESSO RESTRITO (GERAÇÃO E VALIDAÇÃO DE SENHA)
 ===================================================== */
 
-/**
-* Gera a senha do dia automaticamente com base no calendário (Ex: KRM-2708)
-* Muda diariamente à meia-noite sem precisar alterar código.
-*/
 function obterSenhaDoDia() {
     const hoje = new Date();
     const dia = String(hoje.getDate()).padStart(2, '0');
@@ -455,7 +454,6 @@ function validarSenha() {
 
     if (senhaDigitada === senhaCorreta) {
         fecharModal();
-        // Chama a categoria passando o nome exato
         mostrarCategoria("Linguagem de rua");
     } else {
         alert("Senha incorreta! Acesso restrito.");
@@ -466,10 +464,6 @@ function validarSenha() {
     }
 }
 
-
-/**
-* Abre o cliente de e-mail pré-preenchendo o pedido de acesso para o administrador
-*/
 function solicitarSenhaEmail() {
     const emailAdmin = "projeto.karumbe.org@gmail.com";
     const assunto = encodeURIComponent("Solicitação de Acesso - Linguagem de Rua (Projeto Karumbé)");
@@ -480,7 +474,6 @@ function solicitarSenhaEmail() {
     window.location.href = `mailto:${emailAdmin}?subject=${assunto}&body=${corpo}`;
 }
 
-// Suporte para acionar o botão de confirmar apertando Enter no campo de senha
 document.addEventListener("DOMContentLoaded", () => {
     const inputSenha = document.getElementById("senha-input");
     if (inputSenha) {
@@ -494,7 +487,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* =====================================================
-10. EVENTOS GLOBAIS (Exposição para o Escopo da Window)
+10. EVENTOS GLOBAIS
 ===================================================== */
 
 window.tocarAudio = tocarAudio;
@@ -506,5 +499,3 @@ window.fecharModal = fecharModal;
 window.validarSenha = validarSenha;
 window.solicitarSenhaEmail = solicitarSenhaEmail;
 window.obterSenhaDoDia = obterSenhaDoDia;
-
-
