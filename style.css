@@ -426,7 +426,6 @@ body {
     gap: 8px;
 }
 
-/* Logos em geral maiores (altura máxima aumentada para 95px proporcionalmente) */
 .logo-apoio-item img {
     max-width: 110px;
     height: auto;
@@ -436,7 +435,6 @@ body {
     transition: transform 0.2s ease;
 }
 
-/* Efeito de zoom sutil ao passar o mouse para indicar que são clicáveis */
 .logo-apoio-item a:hover img {
     transform: scale(1.06);
 }
@@ -448,7 +446,7 @@ body {
 }
 
 /* =====================================================
-   AJUSTE AUTOMÁTICO PARA CELULAR (MOBILE)
+   AJUSTE AUTOMÁTICO PARA CELULAR (MOBILE) + CARD RESTRITO
 ===================================================== */
 @media (max-width: 768px) {
     .lista-vertical {
@@ -463,6 +461,18 @@ body {
     .cat-nome {
         font-size: 15px !important;
     }
+
+    /* Faz o card de Linguagem de Rua ocupar a largura total (as 2 colunas) no celular */
+    .container-card-restrito {
+        grid-column: 1 / -1 !important;
+        width: 100% !important;
+    }
+
+    .container-card-restrito .card-categoria {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 140px !important; /* Altura um pouco melhor para acomodar os textos no mobile */
+    }
 }
 
 /* =====================================================
@@ -470,7 +480,7 @@ body {
 ===================================================== */
 .logo-apoio-item:nth-child(3) img {
     height: auto !important;     
-    max-height: 95px !important; /* Aumentado proporcionalmente para equiparar aos outros */
+    max-height: 95px !important; 
     width: auto !important;
     max-width: 110px !important; 
 }
@@ -492,7 +502,6 @@ body {
     padding: 20px;
 }
 
-/* Ajustado para .modal-caixa */
 .modal-caixa {
     background: rgba(25, 59, 48, 0.98);
     border: 1px solid rgba(255, 255, 255, 0.20);
@@ -518,7 +527,6 @@ body {
     line-height: 1.4;
 }
 
-/* Estilização do id="senha-input" */
 #senha-input {
     width: 100%;
     height: 48px;
@@ -546,7 +554,6 @@ body {
     justify-content: center;
 }
 
-/* Ajustado para .btn-confirmar */
 .btn-confirmar {
     flex: 1;
     height: 44px;
@@ -559,6 +566,7 @@ body {
     cursor: pointer;
     transition: background 0.2s ease;
 }
+
 /* =====================================================
    ESTILOS PARA A SEÇÃO DE LINGUAGEM DE RUA / AVISO ABAIXO DO VOLTAR
    ===================================================== */
@@ -569,7 +577,7 @@ body {
     margin: 0 auto 20px auto !important;
     background: rgba(230, 126, 34, 0.20); 
     border: 1px solid rgba(230, 126, 34, 0.5);
-    border-left: 5px solid #e67e22;     
+    border-left: 5px solid #e67e22;      
     padding: 20px;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -595,7 +603,6 @@ body {
     background: #5be0ac;
 }
 
-/* Ajustado para .btn-cancelar */
 .btn-cancelar {
     flex: 1;
     height: 44px;
@@ -612,12 +619,13 @@ body {
 .btn-cancelar:hover {
     background: rgba(255, 255, 255, 0.20);
 }
+
 /* =====================================================
-   CENTRALIZAR CATEGORIA RESTREITA NO COMPUTADOR (TAMANHO NORMAL)
+   CENTRALIZAR CATEGORIA RESTRITA NO COMPUTADOR (TAMANHO NORMAL)
 ===================================================== */
 @media (min-width: 768px) {
     .container-card-restrito {
-        grid-column: 1 / -1; /* Ocupa a linha inteira */
+        grid-column: 1 / -1; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -625,22 +633,22 @@ body {
         margin-top: 20px;
     }
 
-    /* Impede que o card estique e mantém a largura padronizada dos outros */
     .container-card-restrito .card-categoria {
-        width: 200px; /* Largura padrão dos cards acima */
+        width: 200px; 
         max-width: 100%;
     }
 }
+
 /* Força a cor vermelha apenas no card restrito */
 .container-card-restrito .card-categoria {
     background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
     border: 1px solid rgba(255, 82, 82, 0.5) !important;
 }
+
 /* =====================================================
    ESTILOS PARA A SEÇÃO DE LINGUAGEM DE RUA / ACESSO RESTRITO
    ===================================================== */
 
-/* Container principal de resultados restritos */
 .container-resultados {
     width: 100%;
     max-width: 800px;
@@ -649,29 +657,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Caixa de aviso importante da seção */
-#aviso-rua {
-    background: rgba(230, 126, 34, 0.15); /* Fundo com tom suave em laranja/âmbar */
-    border-left: 5px solid #e67e22;      /* Detalhe lateral em destaque */
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-    color: inherit;
-}
-
-#aviso-rua h3 {
-    margin-top: 0;
-    color: #e67e22;
-    font-size: 20px;
-}
-
-#aviso-rua p {
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 16px;
-}
-
-/* Sub-container que abriga a lista dinâmica dos termos restritos */
 #lista-palavras-rua {
     display: flex;
     flex-direction: column;
