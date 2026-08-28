@@ -1,157 +1,631 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Karumbé - Dicionário Nhandewa</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Projeto Karumbé - Dicionário Guarani Nhandewa
+    </title>
+
+    <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- COR DA BARRA DO APLICATIVO -->
+    <meta name="theme-color" content="#112822">
+
+    <!-- COR PARA NAVEGADORES IOS -->
+    <meta name="apple-mobile-web-app-capable"
+          content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent">
+
+    <meta name="apple-mobile-web-app-title"
+          content="Karumbé">
+
 </head>
+
+
 <body>
 
     <div class="app-container">
-        
-        <!-- CABEÇALHO -->
+
+
+        <!-- =================================================
+             CABEÇALHO
+        ================================================== -->
+
         <header class="app-header">
+
             <div class="header-info">
-                <img src="img/tartaruga-logo.png" alt="Logo Tartaruga" class="logo-tartaruga">
+
+                <img
+                    src="assets/svg/tartaruga.png"
+                    alt="Karumbé"
+                    class="logo-tartaruga"
+                >
+
                 <div class="header-titulos">
-                    <h1 class="titulo-projeto">PROJETO KARUMBÉ</h1>
-                    <p class="titulo-principal">Dicionário Digital Tupi-Guarani Nhandewa</p>
+
+                    <h1 class="titulo-projeto">
+                        PROJETO KARUMBÉ
+                    </h1>
+
+                    <h2 class="titulo-principal">
+                        DICIONÁRIO GUARANI NHANDEWA
+                    </h2>
+
                 </div>
+
             </div>
-            <!-- Botão de download ou ação no topo -->
-            <button class="btn-download" title="Baixar aplicativo / dados">📥</button>
+
+
+            <button
+                class="btn-download"
+                type="button"
+                title="Baixar App"
+            >
+                📥
+            </button>
+
         </header>
 
-        <!-- BARRA DE BUSCA -->
-        <div class="barra-busca-wrapper">
-            <span class="icone-busca">🔍</span>
-            <input type="text" id="busca" placeholder="Pesquise por palavra, significado ou exemplo..." oninput="executarBusca(this.value)">
+
+
+        <!-- =================================================
+             BUSCA
+        ================================================== -->
+
+        <section class="barra-busca-wrapper">
+
+            <span class="icone-busca">
+                🔍
+            </span>
+
+            <input
+                type="text"
+                id="busca"
+                placeholder="Eheka apy..."
+                autocomplete="off"
+                oninput="executarBusca(this.value)"
+            >
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTAINER DE RESULTADOS E AVISO DA LINGUAGEM DE RUA
+        ================================================== -->
+        <div id="resultado-busca" class="container-resultados" style="display: none;">
+            
+            <!-- AVISO DA SEÇÃO DE LINGUAGEM DE RUA (ADICIONADO) -->
+            <div id="aviso-rua" style="display: none; background: rgba(0,0,0,0.25); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; border: 1px solid rgba(255,255,255,0.15); text-align: center;">
+                <p style="margin: 0; font-size: 14px; line-height: 1.5;">
+                    <strong>Aviso Importante:</strong> Termos de pesquisa linguística e tabu verbal que refletem o atrito cultural com o <strong>djuruá</strong> (não-indígena). Expressões originalmente descritivas foram historicamente estigmatizadas ou rebaixadas a insultos pela imposição de valores externos, levando falantes a evitar seu uso público para se protegerem da maledicência.
+                </p>
+            </div>
+
+            <!-- Onde as palavras filtradas/buscadas serão injetadas -->
+            <div id="lista-palavras-rua"></div>
         </div>
 
-        <!-- ÁREA PRINCIPAL DE CONTEÚDO (LISTA / CATEGORIAS) -->
-        <main id="lista" class="lista-vertical">
+
+
+        <!-- =================================================
+             CATEGORIAS
+        ================================================== -->
+
+        <main
+            id="lista"
+            class="lista-vertical"
+        >
+
+
+
+            <!-- EXPRESSÕES -->
+
+            <button
+                class="card-categoria cat-laranja"
+                type="button"
+                onclick="mostrarCategoria('Expressões')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/expressões.png"
+                        class="icone-cat"
+                        alt="Expressões"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        EXPRESSÕES
+                    </span>
+
+                    <small class="cat-sub">
+                        Nhanderueté
+                    </small>
+
+                </div>
+
+            </button>
             
-            <!-- CARD 1: Categoria Verde -->
-            <div class="card-categoria cat-verde" onclick="mostrarCategoria('natureza')">
-                <div class="icone-wrapper">
-                    <img src="img/cat-natureza.png" alt="Natureza" class="icone-cat">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">Natureza</span>
-                    <span class="cat-sub">Termos da terra e floresta</span>
-                </div>
-            </div>
+            <!-- VERBOS -->
+            
 
-            <!-- CARD 2: Categoria Laranja -->
-            <div class="card-categoria cat-laranja" onclick="mostrarCategoria('cotidiano')">
-                <div class="icone-wrapper">
-                    <img src="img/cat-cotidiano.png" alt="Cotidiano" class="icone-cat">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">Cotidiano</span>
-                    <span class="cat-sub">Vivência e dia a dia</span>
-                </div>
-            </div>
+            <button
+                class="card-categoria cat-verde"
+                type="button"
+                onclick="mostrarCategoria('Verbos')"
+            >
 
-            <!-- CARD 3: Categoria Azul -->
-            <div class="card-categoria cat-azul" onclick="mostrarCategoria('mitologia')">
                 <div class="icone-wrapper">
-                    <img src="img/cat-mitologia.png" alt="Mitologia" class="icone-cat">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">Mitologia</span>
-                    <span class="cat-sub">Lendas e espiritualidade</span>
-                </div>
-            </div>
 
-            <!-- CARD 4: Categoria Verde -->
-            <div class="card-categoria cat-verde" onclick="mostrarCategoria('fauna e flora')">
+                    <img
+                        src="assets/img/verbos.png"
+                        class="icone-cat"
+                        alt="Verbos"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        VERBOS
+                    </span>
+
+                    <small class="cat-sub">
+                        Djapo
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- NATUREZA -->
+
+            <button
+                class="card-categoria cat-azul"
+                type="button"
+                onclick="mostrarCategoria('Natureza')"
+            >
+
                 <div class="icone-wrapper">
-                    <img src="img/cat-fauna.png" alt="Fauna e Flora" class="icone-cat">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">Fauna e Flora</span>
-                    <span class="cat-sub">Animais e plantas</span>
-                </div>
-            </div>
 
-            <!-- CARD 5: Categoria Laranja -->
-            <div class="card-categoria cat-laranja" onclick="mostrarCategoria('tradicoes')">
+                    <img
+                        src="assets/img/natureza.png"
+                        class="icone-cat"
+                        alt="Natureza"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        NATUREZA
+                    </span>
+
+                    <small class="cat-sub">
+                        Ywyrá
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- FAMÍLIA -->
+
+            <button
+                class="card-categoria cat-verde"
+                type="button"
+                onclick="mostrarCategoria('Família')"
+            >
+
                 <div class="icone-wrapper">
-                    <img src="img/cat-tradicoes.png" alt="Tradições" class="icone-cat">
-                </div>
-                <div class="cat-textos">
-                    <span class="cat-nome">Tradições</span>
-                    <span class="cat-sub">Costubres ancestrais</span>
-                </div>
-            </div>
 
-            <!-- CATEGORIA RESTRITA / LINGUAGEM DE RUA -->
+                    <img
+                        src="assets/img/familia.png"
+                        class="icone-cat"
+                        alt="Família"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        FAMÍLIA
+                    </span>
+
+                    <small class="cat-sub">
+                        Txeru
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- PÓS-POSIÇÕES -->
+
+            <button
+                class="card-categoria cat-laranja"
+                type="button"
+                onclick="mostrarCategoria('Pós-posições')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/posposicoes.png"
+                        class="icone-cat"
+                        alt="Pós-posições"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        PÓS-POSIÇÕES
+                    </span>
+
+                    <small class="cat-sub">
+                        Tekoá-py
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- ANIMAIS -->
+
+            <button
+                class="card-categoria cat-azul"
+                type="button"
+                onclick="mostrarCategoria('Animais')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/animais.png"
+                        class="icone-cat"
+                        alt="Animais"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        ANIMAIS
+                    </span>
+
+                    <small class="cat-sub">
+                        Djagwareté
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- CORPO HUMANO -->
+
+            <button
+                class="card-categoria cat-verde"
+                type="button"
+                onclick="mostrarCategoria('Corpo humano')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/corpo humano.png"
+                        class="icone-cat"
+                        alt="Corpo Humano"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        CORPO HUMANO
+                    </span>
+
+                    <small class="cat-sub">
+                        Akã
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- LOCALIZAÇÃO -->
+
+            <button
+                class="card-categoria cat-laranja"
+                type="button"
+                onclick="mostrarCategoria('Localização')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/localizacao.png"
+                        class="icone-cat"
+                        alt="Localização"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        LOCALIZAÇÃO
+                    </span>
+
+                    <small class="cat-sub">
+                        Nhandé Kupé-Regwá
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- OBJETOS -->
+
+            <button
+                class="card-categoria cat-azul"
+                type="button"
+                onclick="mostrarCategoria('Objetos')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/objetos.png"
+                        class="icone-cat"
+                        alt="Objetos"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        OBJETOS
+                    </span>
+
+                    <small class="cat-sub">
+                        Adjaká
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <!-- PRONOMES -->
+
+            <button
+                class="card-categoria cat-verde"
+                type="button"
+                onclick="mostrarCategoria('Pronomes')"
+            >
+
+                <div class="icone-wrapper">
+
+                    <img
+                        src="assets/img/pronomes.png"
+                        class="icone-cat"
+                        alt="Pronomes"
+                    >
+
+                </div>
+
+                <div class="cat-textos">
+
+                    <span class="cat-nome">
+                        PRONOMES
+                    </span>
+
+                    <small class="cat-sub">
+                        Txeé
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+
+
+            <!-- LINGUAGEM DE RUA / TABU VERBAL (NOVA RESTRITA) -->
             <div class="container-card-restrito">
-                <div class="card-categoria" onclick="solicitarAcessoTabu()">
+                <button
+                    class="card-categoria cat-vermelha"
+                    type="button"
+                    onclick="solicitarAcessoTabu()"
+                >
                     <div class="icone-wrapper">
-                        <img src="img/cat-restrito.png" alt="Acesso Restrito" class="icone-cat">
+                        <span style="font-size: 1.5rem;">🔒</span>
                     </div>
+
                     <div class="cat-textos">
-                        <span class="cat-nome">Linguagem de Rua</span>
-                        <span class="cat-sub">Acesso restrito / Pesquisa</span>
+                        <span class="cat-nome">
+                            LINGUAGEM DE RUA
+                        </span>
+
+                        <small class="cat-sub">
+                            Tabu Verbal / Uso de Campo
+                        </small>
+
+                        <!-- MENSAGEM ADICIONADA -->
+                        <small class="cat-aviso" style="display:block; margin-top:6px; font-size:11px; opacity:0.85; color:#ffebee;">
+                            Entre em contato com o administrador para ter acesso
+                        </small>
                     </div>
-                </div>
+                </button>
             </div>
 
         </main>
 
-        <!-- AVISO DE RUA (Oculto inicialmente, inserido via script logo abaixo do botão voltar) -->
-        <div id="aviso-rua" style="display: none;">
-            <h3>⚠️ Pesquisa de Linguagem de Rua / Tabu Verbal</h3>
-            <p>Esta seção contém termos de uso restrito coletados em pesquisas de campo. O acesso exige verificação de senha diária.</p>
-        </div>
+        <!-- =================================================
+             APOIO INSTITUCIONAL
+             ÚNICO RODAPÉ
+        ================================================== -->
 
-        <!-- CONTAINER DE RESULTADO ALTERNATIVO -->
-        <div id="resultado-busca" style="display: none;"></div>
-
-        <!-- RODAPÉ / APOIO INSTITUCIONAL -->
         <footer class="secao-apoio">
-            <span class="titulo-apoio">APOIO INSTITUCIONAL E PARCERIAS</span>
+
+            <span class="titulo-apoio">
+                AS INSTITUIÇÕES APÓIAM ESTA IDEIA:
+            </span>
+
+
             <div class="logos-apoio">
-                <div class="logo-apoio-item">
-                    <a href="#" target="_blank"><img src="img/logo-escola.png" alt="Escola"></a>
-                    <span>E.E.I. Karugwá</span>
-                </div>
-                <div class="logo-apoio-item">
-                    <a href="#" target="_blank"><img src="img/logo-funai.png" alt="FUNAI"></a>
-                    <span>FUNAI</span>
-                </div>
-                <div class="logo-apoio-item">
-                    <a href="#" target="_blank"><img src="img/logo-curucaca.png" alt="Curucaca"></a>
-                    <span>Associação Curucaca</span>
-                </div>
+
+
+                <!-- ESCOLA KARUGWÁ (Agora clicável) -->
+
+                <a href="instituicao.html?id=escola-karugwa" class="logo-apoio-item" id="btn-escola-karugwa">
+
+                    <img
+                        src="assets/logos/escola-karugwa/escola karugwa.png"
+                        alt="Escola Karugwá"
+                    >
+
+                    <span>
+                        E.E.I.ALDEIA KARUGWÁ PEI
+                    </span>
+
+                </a>
+
+
+
+                <!-- TEKOA KARUGWÁ (Agora clicável) -->
+
+                <a href="instituicao.html?id=tekoa-karugwa" class="logo-apoio-item" id="btn-tekoa-karugwa">
+
+                    <img
+                        src="assets/logos//tekoa-karugwa/tekoa-karugwa.png"
+                        alt="Tekoa Karugwa"
+                    >
+
+                    <span>
+                        TEKOÁ KARUGWÁ
+                    </span>
+
+                </a>
+
+
+
+                <!-- ASSOCIAÇÃO CURUCACA (Agora clicável) -->
+
+                <a href="instituicao.html?id=associacao-curucaca" class="logo-apoio-item" id="btn-associacao-curucaca">
+
+                    <img
+                        src="assets/logos/associacao-curucaca/associacao curucaca.png"
+                        alt="Associação Curucaca"
+                    >
+
+                    <span>
+                        ASSOCIAÇÃO CURUCACA
+                    </span>
+
+                </a>
+
+
             </div>
+
         </footer>
 
-    </div>
+        <!-- =================================================
+             MODAL DE ACESSO RESTRITO (SENHA + EMAIL)
+        ================================================== -->
+        <div id="modal-senha" class="modal-overlay" style="display: none;">
+            <div class="modal-caixa">
+                <h3>Acesso Restrito: Pesquisa Linguística</h3>
+                <p>Esta seção contém documentação de baixo calão e linguagem de rua para fins de pesquisa e registro.</p>
+                <p><strong>Digite a senha de autorização:</strong></p>
+                <input type="password" id="senha-input" placeholder="Digite a senha">
+                
+                <div class="modal-botoes" style="margin-bottom: 12px;">
+                    <button type="button" class="btn-confirmar" onclick="validarSenha()">Confirmar</button>
+                    <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+                </div>
 
-    <!-- MODAL DE SENHA DE ACESSO RESTRITO -->
-    <div id="modal-senha" class="modal-overlay" style="display: none;">
-        <div class="modal-caixa">
-            <h3>Área Restrita</h3>
-            <p>Digite a senha diária para acessar a categoria de Linguagem de Rua:</p>
-            <input type="password" id="senha-input" placeholder="Ex: KRM-DDMM">
-            <div class="modal-botoes">
-                <button class="btn-confirmar" onclick="validarSenha()">Entrar</button>
-                <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+                <!-- SOLICITAÇÃO POR EMAIL ADICIONADA -->
+                <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; margin-top: 10px; text-align: center;">
+                    <button type="button" onclick="solicitarSenhaEmail()" style="background:none; border:none; color:#5be0ac; text-decoration:underline; font-size:13px; cursor:pointer;">
+                        📧 Não tem a senha? Solicite ao administrador por e-mail
+                    </button>
+                </div>
             </div>
-            <p style="margin-top: 15px; font-size: 11px;">
-                Não possui a senha? <a href="#" onclick="solicitarSenhaEmail(); return false;" style="color: #5be0ac;">Solicitar por e-mail</a>
-            </p>
         </div>
+
     </div>
 
-    <!-- SCRIPTS DO SISTEMA -->
+    <!-- =================================================
+         SCRIPTS DO PROJETO
+    ================================================== -->
     <script src="dicionario.js"></script>
     <script src="dicionario-rua.js"></script>
     <script src="mapa.js"></script>
     <script src="script.js"></script>
+
+    <!-- =================================================
+         REGISTRO DO APLICATIVO
+    ================================================== -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("./service-worker.js")
+                    .then(function () {
+                        console.log(
+                            "Projeto Karumbé: aplicativo preparado!"
+                        );
+                    })
+                    .catch(function (erro) {
+                        console.error(
+                            "Erro ao registrar o aplicativo:",
+                            erro
+                        );
+                    });
+            });
+        }
+    </script>
+
 </body>
 </html>
