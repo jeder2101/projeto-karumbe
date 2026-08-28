@@ -63,7 +63,7 @@ const DICIONARIO = [
         exemplos: [
             "Ko´ẽ porã! nderá eweri?",
             "Aiko porã! A'e ndee?",
-            "Aiko pkrã awei!"
+            "Aiko porã awei!"
         ],
         traducao: [
             "Bom dia! Como você está?",
