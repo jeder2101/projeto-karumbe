@@ -562,7 +562,6 @@ mostrarPalavras(resultado.slice(0, 20));
 function mostrarCategoria(nome) {
     let baseDados = DICIONARIO;
     
-    // Se o nome da categoria contiver "rua", usamos o DICIONARIO_RUA
     if (normalizar(nome).includes("rua") && typeof DICIONARIO_RUA !== "undefined") {
         baseDados = DICIONARIO_RUA;
     }
@@ -572,14 +571,56 @@ function mostrarCategoria(nome) {
         return;
     }
 
-    // Se estivermos usando o dicionário de rua, exibe todos os itens dele diretamente
+    // Se for linguagem de rua, renderizamos de forma personalizada (sem áudio/imagem e com o aviso)
+    const container = document.getElementById("resultado-busca") || document.getElementById("palavras-container");
+    if (!container) return;
+
     if (baseDados === DICIONARIO_RUA) {
-        mostrarPalavras(baseDados);
+        // 1. Cria o texto explicativo da seção
+        let htmlMensagem = `
+            <div class="aviso-linguagem-rua" style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; text-align: center; border: 1px solid rgba(255,255,255,0.1);">
+                <p><strong>Aviso Importante:</strong> Esta seção reúne termos de pesquisa linguística e tabu verbal para fins de estudo e documentação crítica.</p>
+            </div>
+        `;
+
+        // 2. Monta os cards dos termos SEM a parte de áudio/pronúncia
+        let htmlCards = baseDados.map(item => `
+            <div class="card-palavra" style="background: #133324; border-radius: 12px; padding: 20px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.15);">
+                <h2 style="color: #4ade80; margin-top: 0;">${item.palavra}</h2>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 15px;">${item.categoria || 'Linguagem de Rua'}</p>
+                
+                <div style="margin-bottom: 12px;">
+                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Significado</strong>
+                    <p style="margin: 4px 0 0 0; font-size: 1.1rem;">${item.significado}</p>
+                </div>
+
+                ${item.sentido_de ? `
+                <div style="margin-bottom: 12px;">
+                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Sentido de / Contexto</strong>
+                    <p style="margin: 4px 0 0 0;">${item.sentido_de}</p>
+                </div>` : ''}
+
+                ${item.falante ? `
+                <div style="margin-bottom: 12px;">
+                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7;">Uso / Falante</strong>
+                    <p style="margin: 4px 0 0 0;">${item.falante}</p>
+                </div>` : ''}
+
+                ${item.exemplos && item.exemplos.length > 0 ? `
+                <div style="margin-top: 15px; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 8px;">
+                    <strong style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; display: block; margin-bottom: 6px;">Exemplo(s) Prático(s)</strong>
+                    <p style="color: #fb923c; margin: 0 0 4px 0; font-weight: 500;">${item.exemplos[0]}</p>
+                    ${item.traducao && item.traducao[0] ? `<p style="margin: 0; opacity: 0.9;">👉 ${item.traducao[0]}</p>` : ''}
+                </div>` : ''}
+            </div>
+        `).join('');
+
+        container.innerHTML = htmlMensagem + htmlCards;
         return;
     }
 
+    // Comportamento normal para o dicionário principal
     const categoriaBusca = normalizar(nome);
-
     const resultado = baseDados.filter(item => {
         if (!item.categoria) return false;
         return normalizar(item.categoria).includes(categoriaBusca);
