@@ -1,4 +1,4 @@
-const DICIONARIO_RUA = [
+const DICIONARIO-RUA = [
     {
         palavra: "ka'i",
         tipo: "linguagem de rua",
