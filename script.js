@@ -5,11 +5,6 @@ const lista = document.getElementById("lista");
 /* =====================================================
 1. ÁUDIO
 ===================================================== */
-
-/**
-* Reproduz o áudio do termo em Nhandewa
-* @param {string} caminho - Caminho relativo/alvo para o arquivo de áudio
-*/
 function tocarAudio(caminho) {
     if (
         !caminho ||
@@ -31,14 +26,8 @@ function tocarAudio(caminho) {
 
 
 /* =====================================================
-2. NORMALIZAR TEXTO (Remoção de acentos e diacríticos)
+2. NORMALIZAR TEXTO
 ===================================================== */
-
-/**
-* Normaliza o texto removendo acentos e convertendo para caixa baixa
-* @param {string} texto
-* @returns {string} Texto limpo
-*/
 function normalizar(texto) {
     if (!texto) return "";
 
@@ -52,10 +41,6 @@ function normalizar(texto) {
 /* =====================================================
 3. DISTÂNCIA DE LEVENSHTEIN (Busca Aproximada)
 ===================================================== */
-
-/**
-* Calcula a distância de edição entre duas strings
-*/
 function distancia(a, b) {
     const matriz = [];
 
@@ -73,9 +58,9 @@ function distancia(a, b) {
                 matriz[i][j] = matriz[i - 1][j - 1];
             } else {
                 matriz[i][j] = Math.min(
-                    matriz[i - 1][j - 1] + 1, // substituição
-                    matriz[i][j - 1] + 1, // inserção
-                    matriz[i - 1][j] + 1 // remoção
+                    matriz[i - 1][j - 1] + 1,
+                    matriz[i][j - 1] + 1,
+                    matriz[i - 1][j] + 1
                 );
             }
         }
@@ -88,12 +73,6 @@ function distancia(a, b) {
 /* =====================================================
 4. BUSCA APROXIMADA / SUGESTÕES
 ===================================================== */
-
-/**
-* Encontra termos semelhantes caso a busca exata falhe
-* @param {string} texto - Termo digitado pelo usuário
-* @returns {Array} Lista de itens sugeridos
-*/
 function buscaAproximada(texto) {
     const textoNorm = normalizar(texto);
 
@@ -128,76 +107,24 @@ function buscaAproximada(texto) {
 /* =====================================================
 5. VOLTAR AO INÍCIO
 ===================================================== */
-
 function voltarAoInicio() {
     location.reload();
 }
 
-/* =====================================================
-    6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
-===================================================== */
 
+/* =====================================================
+6. RENDERIZAÇÃO / MOSTRAR PALAVRAS
+===================================================== */
 function mostrarPalavras(palavras, ehRua = false) {
     const containerResultado = document.getElementById("resultado-busca");
     const avisoRua = document.getElementById("aviso-rua");
+    const gridCategorias = document.querySelector(".lista-vertical");
 
-    // Se for a seção de rua, exibe os avisos e usa a mesma lista principal
-    if (ehRua) {
-        if (containerResultado) containerResultado.style.display = "block";
-        if (avisoRua) avisoRua.style.display = "block";
-    } else {
-        if (containerResultado) containerResultado.style.display = "none";
-        if (avisoRua) avisoRua.style.display = "none";
-    }
+    // Esconde a grade de categorias da home
+    if (gridCategorias) gridCategorias.style.display = "none";
 
-    if (lista) {
-        lista.style.display = "flex";
-        lista.innerHTML = "";
-
-        const voltar = document.createElement("button");
-        voltar.className = "voltar";
-        voltar.innerHTML = "⬅️ Voltar ao início";
-        voltar.onclick = voltarAoInicio;
-        lista.appendChild(voltar);
-
-        // Se for rua e tiver um aviso específico, podemos adicioná-lo no topo da lista se ele existir no HTML
-        if (ehRua && avisoRua) {
-            lista.appendChild(avisoRua);
-            avisoRua.style.display = "block";
-        }
-
-        if (!palavras || palavras.length === 0) {
-            const inputBusca = document.getElementById("busca");
-            const termoPesquisado = inputBusca ? inputBusca.value : "";
-            const sugestoes = buscaAproximada(termoPesquisado);
-
-            let html = `
-                <div class="card-pronuncia">
-                    <h3 style="font-size:22px; margin-bottom:12px;">
-                        Nenhum resultado encontrado.
-                    </h3>
-            `;
-
-            if (sugestoes.length > 0) {
-                html += `
-                    <div style="margin-top:15px; font-size:18px;">
-                        🔎 Você quis dizer:
-                        <strong>${sugestoes[0].palavra}</strong> 
-                        (${sugestoes[0].significado})
-                    </div>
-                `;
-            }
-
-            html += "</div>";
-            lista.innerHTML += html;
-            return;
-        }
-
-        renderizarCardsNoAlvo(palavras, lista);
-    }
-}
-    // Comportamento padrão para o restante das categorias/busca
     if (containerResultado) containerResultado.style.display = "none";
+
     if (lista) {
         lista.style.display = "flex";
         lista.innerHTML = "";
@@ -207,6 +134,14 @@ function mostrarPalavras(palavras, ehRua = false) {
         voltar.innerHTML = "⬅️ Voltar ao início";
         voltar.onclick = voltarAoInicio;
         lista.appendChild(voltar);
+
+        // Se for linguagem de rua, insere o aviso logo abaixo do botão voltar
+        if (ehRua && avisoRua) {
+            avisoRua.style.display = "block";
+            lista.appendChild(avisoRua);
+        } else if (avisoRua) {
+            avisoRua.style.display = "none";
+        }
 
         if (!palavras || palavras.length === 0) {
             const inputBusca = document.getElementById("busca");
@@ -238,9 +173,10 @@ function mostrarPalavras(palavras, ehRua = false) {
         renderizarCardsNoAlvo(palavras, lista);
     }
 }
+
 
 /**
-* Função auxiliar para injetar os cards de termos dentro de um elemento alvo
+* Função auxiliar para injetar os cards de termos
 */
 function renderizarCardsNoAlvo(palavras, elementoAlvo) {
     palavras.forEach(item => {
@@ -351,11 +287,6 @@ function renderizarCardsNoAlvo(palavras, elementoAlvo) {
 /* =====================================================
 7. BUSCA EM TEMPO REAL
 ===================================================== */
-
-/**
-* Filtra as palavras do dicionário com base na consulta digitada
-* @param {string} valor
-*/
 function executarBusca(valor) {
     const texto = valor.trim();
 
@@ -402,7 +333,7 @@ function executarBusca(valor) {
 
 
 /* =====================================================
-    8. FILTRO POR CATEGORIA
+8. FILTRO POR CATEGORIA
 ===================================================== */
 function mostrarCategoria(nome) {
     let baseDados = DICIONARIO;
@@ -438,9 +369,8 @@ function mostrarCategoria(nome) {
 
 
 /* =====================================================
-9. MODAL DE ACESSO RESTRITO (GERAÇÃO E VALIDAÇÃO DE SENHA)
+9. MODAL DE ACESSO RESTRITO
 ===================================================== */
-
 function obterSenhaDoDia() {
     const hoje = new Date();
     const dia = String(hoje.getDate()).padStart(2, '0');
@@ -516,7 +446,6 @@ document.addEventListener("DOMContentLoaded", () => {
 /* =====================================================
 10. EVENTOS GLOBAIS
 ===================================================== */
-
 window.tocarAudio = tocarAudio;
 window.mostrarCategoria = mostrarCategoria;
 window.executarBusca = executarBusca;
