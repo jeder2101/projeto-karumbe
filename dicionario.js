@@ -180,7 +180,7 @@ const DICIONARIO = [
             "Já fui.",
             "Já estou indo para a aldeia.",
             "Já estou indo para minha casa.",
-            "Já estou indo com você."
+            "Já fui com você."
         ]
     },
     {
