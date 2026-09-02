@@ -3,10 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Projeto Karumbé - Dicionário Tupi-Guarani Nhandewá
     </title>
@@ -32,16 +29,13 @@
 
 </head>
 
-
 <body>
 
     <div class="app-container">
 
-
         <!-- =================================================
              CABEÇALHO
         ================================================== -->
-
         <header class="app-header">
 
             <div class="header-info">
@@ -66,7 +60,6 @@
 
             </div>
 
-
             <button
                 class="btn-download"
                 type="button"
@@ -77,12 +70,9 @@
 
         </header>
 
-
-
         <!-- =================================================
              BUSCA
         ================================================== -->
-
         <section class="barra-busca-wrapper">
 
             <span class="icone-busca">
@@ -99,14 +89,12 @@
 
         </section>
 
-
-
         <!-- =================================================
              CONTAINER DE RESULTADOS E AVISO DA LINGUAGEM DE RUA
         ================================================== -->
         <div id="resultado-busca" class="container-resultados" style="display: none;">
             
-            <!-- AVISO DA SEÇÃO DE LINGUAGEM DE RUA (ADICIONADO) -->
+            <!-- AVISO DA SEÇÃO DE LINGUAGEM DE RUA -->
             <div id="aviso-rua" style="display: none; background: rgba(0,0,0,0.25); padding: 15px; border-radius: 8px; margin-bottom: 20px; color: #fff; border: 1px solid rgba(255,255,255,0.15); text-align: center;">
                 <p style="margin: 0; font-size: 14px; line-height: 1.5;">
                     <strong>Aviso Importante:</strong> Termos de pesquisa linguística e tabu verbal que refletem o atrito cultural com o <strong>djuruá</strong> (não-indígena). Expressões originalmente descritivas foram historicamente estigmatizadas ou rebaixadas a insultos pela imposição de valores externos, levando falantes a evitar seu uso público para se protegerem da maledicência.
@@ -117,39 +105,29 @@
             <div id="lista-palavras-rua"></div>
         </div>
 
-
-
         <!-- =================================================
              CATEGORIAS
         ================================================== -->
-
         <main
             id="lista"
             class="lista-vertical"
         >
 
-
-
             <!-- EXPRESSÕES -->
-
             <button
                 class="card-categoria cat-laranja"
                 type="button"
                 onclick="mostrarCategoria('Expressões')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/expressões.png"
                         class="icone-cat"
                         alt="Expressões"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         EXPRESSÕES
                     </span>
@@ -157,32 +135,24 @@
                     <small class="cat-sub">
                         Nhanderueté
                     </small>
-
                 </div>
-
             </button>
             
             <!-- VERBOS -->
-            
-
             <button
                 class="card-categoria cat-verde"
                 type="button"
                 onclick="mostrarCategoria('Verbos')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/verbos.png"
                         class="icone-cat"
                         alt="Verbos"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         VERBOS
                     </span>
@@ -190,33 +160,24 @@
                     <small class="cat-sub">
                         Djapo
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- NATUREZA -->
-
             <button
                 class="card-categoria cat-azul"
                 type="button"
                 onclick="mostrarCategoria('Natureza')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/natureza.png"
                         class="icone-cat"
                         alt="Natureza"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         NATUREZA
                     </span>
@@ -224,33 +185,24 @@
                     <small class="cat-sub">
                         Ywyrá
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- FAMÍLIA -->
-
             <button
                 class="card-categoria cat-verde"
                 type="button"
                 onclick="mostrarCategoria('Família')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/familia.png"
                         class="icone-cat"
                         alt="Família"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         FAMÍLIA
                     </span>
@@ -258,33 +210,24 @@
                     <small class="cat-sub">
                         Txeru
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- PÓS-POSIÇÕES -->
-
             <button
                 class="card-categoria cat-laranja"
                 type="button"
                 onclick="mostrarCategoria('Pós-posições')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/posposicoes.png"
                         class="icone-cat"
                         alt="Pós-posições"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         PÓS-POSIÇÕES
                     </span>
@@ -292,33 +235,24 @@
                     <small class="cat-sub">
                         Tekoá-py
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- ANIMAIS -->
-
             <button
                 class="card-categoria cat-azul"
                 type="button"
                 onclick="mostrarCategoria('Animais')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/animais.png"
                         class="icone-cat"
                         alt="Animais"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         ANIMAIS
                     </span>
@@ -326,33 +260,24 @@
                     <small class="cat-sub">
                         Djagwareté
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- CORPO HUMANO -->
-
             <button
                 class="card-categoria cat-verde"
                 type="button"
                 onclick="mostrarCategoria('Corpo humano')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/corpo humano.png"
                         class="icone-cat"
                         alt="Corpo Humano"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         CORPO HUMANO
                     </span>
@@ -360,33 +285,24 @@
                     <small class="cat-sub">
                         Akã
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- LOCALIZAÇÃO -->
-
             <button
                 class="card-categoria cat-laranja"
                 type="button"
                 onclick="mostrarCategoria('Localização')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/localizacao.png"
                         class="icone-cat"
                         alt="Localização"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         LOCALIZAÇÃO
                     </span>
@@ -394,33 +310,24 @@
                     <small class="cat-sub">
                         Nhandé Kupé-Regwá
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- OBJETOS -->
-
             <button
                 class="card-categoria cat-azul"
                 type="button"
                 onclick="mostrarCategoria('Objetos')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/objetos.png"
                         class="icone-cat"
                         alt="Objetos"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         OBJETOS
                     </span>
@@ -428,33 +335,24 @@
                     <small class="cat-sub">
                         Adjaká
                     </small>
-
                 </div>
-
             </button>
 
-
-
             <!-- PRONOMES -->
-
             <button
                 class="card-categoria cat-verde"
                 type="button"
                 onclick="mostrarCategoria('Pronomes')"
             >
-
                 <div class="icone-wrapper">
-
                     <img
                         src="assets/img/pronomes.png"
                         class="icone-cat"
                         alt="Pronomes"
                     >
-
                 </div>
 
                 <div class="cat-textos">
-
                     <span class="cat-nome">
                         PRONOMES
                     </span>
@@ -462,14 +360,8 @@
                     <small class="cat-sub">
                         Txeé
                     </small>
-
                 </div>
-
             </button>
-
-
-
-
 
             <!-- LINGUAGEM DE RUA / TABU VERBAL (NOVA RESTRITA) -->
             <div class="container-card-restrito">
@@ -491,7 +383,6 @@
                             Tabu Verbal / Uso de Campo
                         </small>
 
-                        <!-- MENSAGEM ADICIONADA -->
                         <small class="cat-aviso" style="display:block; margin-top:6px; font-size:11px; opacity:0.85; color:#ffebee;">
                             Entre em contato com o administrador para ter acesso
                         </small>
@@ -503,68 +394,47 @@
 
         <!-- =================================================
              APOIO INSTITUCIONAL
-             ÚNICO RODAPÉ
         ================================================== -->
-
         <footer class="secao-apoio">
 
             <span class="titulo-apoio">
                 AS INSTITUIÇÕES APÓIAM ESTA IDEIA:
             </span>
 
-
             <div class="logos-apoio">
 
-
-                <!-- ESCOLA KARUGWÁ (Agora clicável) -->
-
+                <!-- ESCOLA KARUGWÁ -->
                 <a href="instituicao.html?id=escola-karugwa" class="logo-apoio-item" id="btn-escola-karugwa">
-
                     <img
                         src="assets/logos/escola-karugwa/escola karugwa.png"
                         alt="Escola Karugwá"
                     >
-
                     <span>
                         E.E.I.ALDEIA KARUGWÁ PEI
                     </span>
-
                 </a>
 
-
-
-                <!-- TEKOA KARUGWÁ (Agora clicável) -->
-
+                <!-- TEKOA KARUGWÁ -->
                 <a href="instituicao.html?id=tekoa-karugwa" class="logo-apoio-item" id="btn-tekoa-karugwa">
-
                     <img
-                        src="assets/logos//tekoa-karugwa/tekoa-karugwa.png"
+                        src="assets/logos/tekoa-karugwa/tekoa-karugwa.png"
                         alt="Tekoa Karugwa"
                     >
-
                     <span>
                         TEKOÁ KARUGWÁ
                     </span>
-
                 </a>
 
-
-
-                <!-- ASSOCIAÇÃO CURUCACA (Agora clicável) -->
-
+                <!-- ASSOCIAÇÃO CURUCACA -->
                 <a href="instituicao.html?id=associacao-curucaca" class="logo-apoio-item" id="btn-associacao-curucaca">
-
                     <img
                         src="assets/logos/associacao-curucaca/associacao curucaca.png"
                         alt="Associação Curucaca"
                     >
-
                     <span>
                         ASSOCIAÇÃO CURUCACA
                     </span>
-
                 </a>
-
 
             </div>
 
@@ -585,7 +455,6 @@
                     <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
                 </div>
 
-                <!-- SOLICITAÇÃO POR EMAIL ADICIONADA -->
                 <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; margin-top: 10px; text-align: center;">
                     <button type="button" onclick="solicitarSenhaEmail()" style="background:none; border:none; color:#5be0ac; text-decoration:underline; font-size:13px; cursor:pointer;">
                         📧 Não tem a senha? Solicite ao administrador por e-mail
