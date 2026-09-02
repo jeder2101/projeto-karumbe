@@ -5,7 +5,7 @@ const lista = document.getElementById("lista");
 /* =====================================================
 1. ÁUDIO
 ===================================================== */
-function tocarAudio(caminho, botaoElemento = null) {
+function tocarAudio(caminho) {
     if (
         !caminho ||
         caminho === "" ||
@@ -18,24 +18,9 @@ function tocarAudio(caminho, botaoElemento = null) {
 
     const audio = new Audio(caminho);
 
-    // Se o botão foi passado, tenta ativar a animação da onda sonora correspondente
-    let ondaSonora = null;
-    if (botaoElemento) {
-        const blocoPai = botaoElemento.closest('.secao-bloco');
-        if (blocoPai) {
-            ondaSonora = blocoPai.querySelector('.container-onda-sonora');
-            if (ondaSonora) ondaSonora.classList.add('ativo');
-        }
-    }
-
-    audio.play().then(() => {
-        audio.onended = function() {
-            if (ondaSonora) ondaSonora.classList.remove('ativo');
-        };
-    }).catch(err => {
+    audio.play().catch(err => {
         console.warn("Erro ao tocar áudio:", err);
         alert("Não foi possível reproduzir o áudio.");
-        if (ondaSonora) ondaSonora.classList.remove('ativo');
     });
 }
 
@@ -280,7 +265,7 @@ function renderizarCardsNoAlvo(palavras, elementoAlvo) {
                     PRONÚNCIA NHANDEWA
                 </h4>
                 <div style="display:flex; align-items:center; gap:12px; margin-top:6px;">
-                    <button class="btn-play" onclick="tocarAudio('${audioPath}', this)">
+                    <button class="btn-play" onclick="tocarAudio('${audioPath}')">
                         ▶
                     </button>
                     <span style="font-size:16px;">
