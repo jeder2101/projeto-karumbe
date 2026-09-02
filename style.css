@@ -324,7 +324,7 @@ body {
 
 .palavra-titulo {
     font-size: 26px;
-    color: #5be0ac;
+    color: #ff9f43; /* Alterado para o tom exato do laranja legível dos exemplos */
 }
 
 .secao-bloco {
@@ -334,7 +334,7 @@ body {
 .secao-titulo {
     font-size: 11px;
     letter-spacing: 1px;
-    opacity: 0.65;
+    color: #ff9f43; /* Alterado para o tom legível dos exemplos (substituindo a opacidade escura) */
 }
 
 .btn-play {
@@ -577,7 +577,7 @@ body {
     margin: 0 auto 20px auto !important;
     background: rgba(230, 126, 34, 0.20); 
     border: 1px solid rgba(230, 126, 34, 0.5);
-    border-left: 5px solid #e67e22;      
+    border-left: 5px solid #ff9f43;      
     padding: 20px;
     border-radius: 18px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -586,7 +586,7 @@ body {
 
 #aviso-rua h3 {
     margin-top: 0;
-    color: #f39c12;
+    color: #ff9f43; /* Alterado para o tom exato do laranja dos exemplos em Nhandewa */
     font-size: 20px;
     margin-bottom: 8px;
 }
