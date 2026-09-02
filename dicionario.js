@@ -6,7 +6,6 @@ const DICIONARIO = [
         categoria: "Expressões",
         significado: "Bom dia; amanhecer bonito.",
         audio: "assets/audios/koe_pora.mp3",
-        imagem:"assets/svg/bom dia.jpg",
         sentido_de: "Saudação matinal ou amanhecer agradável",
         falante: "Uso geral",
         exemplos: [
@@ -26,7 +25,6 @@ const DICIONARIO = [
         categoria: "Expressões",
         significado: "Boa tarde.",
         audio: "assets/audios/kaaru_pora.mp3",
-        imagem:"assets/svg/boa tarde.jpg",
         sentido_de: "Saudação para o período da tarde",
         falante: "Uso geral",
         exemplos: [
@@ -48,7 +46,6 @@ const DICIONARIO = [
         categoria: "Expressões",
         significado: "Boa noite.",
         audio: "assets/audios/pytu_pora.mp3",
-        imagem:"assets/svg/boa noite.jpg",
         sentido_de: "Saudação para o período da noite",
         falante: "Uso geral",
         exemplos: [
@@ -70,7 +67,6 @@ const DICIONARIO = [
         categoria: "Natureza",
         significado: "Sombra.",
         audio: "assets/audios/a_ea.mp3",
-        imagem:"assets/svg/sombra.jpg",
         sentido_de: "Sombra projetada por árvores, objetos ou corpo",
         falante: "Uso geral",
         exemplos: [
@@ -86,13 +82,29 @@ const DICIONARIO = [
             "A sombra está na água."
         ]
     },
+   {
+        palavra: "koty",
+        tipo: "pós-posição / direcional",
+        categoria: "Gramática / Pós-posições",
+        significado: "Em direção a, para o lado de, rumo a.",
+        audio: "assets/audios/koty.mp3",
+        sentido_de: "Indica a orientação espacial ou o destino de um movimento ou olhar.",
+        falante: "Uso geral",
+        exemplos: [
+            "Oho y ywy koty.",
+            "Edju ko'apy koty."
+        ],
+        traducao: [
+            "Ele foi em direção à água/baixada.",
+            "Venha para cá."
+        ]
+    },
     {
         palavra: "A'agá",
         tipo: "verbo",
         categoria: "Verbos",
         significado: "Experimentar.",
         audio: "assets/audios/aaga.mp3",
-        imagem: "assets/svg/experimentar.jpg",
         sentido_de: "Provar alimento, testar ou experimentar algo",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -114,7 +126,6 @@ const DICIONARIO = [
         categoria: "Pronomes",
         significado: "Ele; ela.",
         audio: "assets/audios/ae.mp3",
-        imagem: "assets/svg/ele.jpg",
         sentido_de: "Pronome demonstrativo/pessoal de 3ª pessoa",
         falante: "Uso geral",
         exemplos: [
@@ -136,7 +147,6 @@ const DICIONARIO = [
         categoria: "Expressões",
         significado: "Onde fui.",
         audio: "assets/audios/aagwe.mp3",
-        imagem: "assets/svg/onde fui.jpg",
         sentido_de: "Ação de deslocamento no passado / local visitado",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -152,13 +162,12 @@ const DICIONARIO = [
             "Fui com nós."
         ]
     },
-    {
+   {
         palavra: "Áama",
         tipo: "expressão",
         categoria: "Expressões",
         significado: "Já fui; já estou indo.",
         audio: "assets/audios/aama.mp3",
-        imagem:"assets/svg/ja fui.jpg",
         sentido_de: "Despedida rápida ou aviso de saída imediata",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -180,7 +189,6 @@ const DICIONARIO = [
         categoria: "Expressões",
         significado: "Vou embora,tchau.",
         audio: "assets/audios/adiwyma.mp3",
-        imagem:"assets/svg/tchau.jpg",
         sentido_de: "Aviso de partida ou retorno para casa",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -202,7 +210,6 @@ const DICIONARIO = [
         categoria: "Verbos",
         significado: "Cortar.",
         audio: "assets/audios/adjaia.mp3",
-        imagem:"assets/svg/cortar.jpg",
         sentido_de: "Ação de cortar madeira, carne ou objetos",
         falante: "Uso geral",
         exemplos: [
@@ -224,7 +231,6 @@ const DICIONARIO = [
         categoria: "Verbos",
         significado: "Eu faço / eu realizo / eu construo.",
         audio: "assets/audios/adjapo.mp3",
-        imagem:"assets/svg/eu faco.jpg",
         sentido_de: "Ação concluída de fazer, construir ou criar algo",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -246,7 +252,6 @@ const DICIONARIO = [
         categoria: "Verbos",
         significado: "Já fiz ; já realizei; já construí.",
         audio: "assets/audios/adjapoma.mp3",
-        imagem:"assets/svg/terminei.jpg",
         sentido_de: "Trabalho ou tarefa recém-concluída",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -265,10 +270,9 @@ const DICIONARIO = [
     {
         palavra: "Adjú",
         tipo: "verbo",
-        categoria:"Verbos",
-        significado:"Eu venho ; estou vindo ; vim.",
+        categoria: "Verbos",
+        significado: "Eu venho ; estou vindo ; vim.",
         audio: "assets/audios/adju.mp3",
-        imagem:"assets/svg/eu venho.jpg",
         sentido_de: "Chegada de um local até onde se fala",
         falante: "1ª pessoa (Eu)",
         exemplos: [
@@ -326,8 +330,7 @@ const DICIONARIO = [
             "Eu mato o diabo."
         ]
     },
- 
-        {
+    {
         palavra: "Nembawa'ekwe",
         tipo: "expressão",
         categoria: "Expressões",
@@ -346,7 +349,7 @@ const DICIONARIO = [
             "Não quero esta lembrança."
         ]
     },
-        {
+    {
         palavra: "Adjuma",
         tipo: "verbo",
         categoria: "Verbos",
@@ -1603,7 +1606,6 @@ const DICIONARIO = [
         categoria: "Pós-posições",
         significado: "Em cima; sobre.",
         audio: "assets/audios/aro_sufixo.mp3",
-        imagem: "assets/svg/em cima.jpg",
         sentido_de: "Pós-posição de posição",
         falante: "Uso geral",
         exemplos: [
@@ -2623,7 +2625,6 @@ const DICIONARIO = [
         categoria: "Expressões",
         significado: "Comprido, longo, alto (Usado na duração/comprimento do tempo).",
         audio: "assets/audios/puku.mp3",
-        imagem:"assets/svg/puku.jpg",
         sentido_de: "Longo, comprido alto(a)",
         falante: "Uso geral",
         exemplos: [
@@ -4865,7 +4866,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Partículas interrogativas. 'Pa' forma perguntas diretas (frequentemente junta à palavra antecedente: mowa'epa). 'Piko' adiciona ênfase, dúvida ou curiosidade ('será que...?').",
     audio: "assets/audios/pa_piko.mp3",
-    imagem: "assets/svg/.jpg",
     sentido_de: "Partícula de pergunta / Ênfase",
     falante: "uso geral",
     exemplos: [
@@ -4885,7 +4885,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Matar, abater.",
     audio: "assets/audios/djuka.mp3",
-    imagem: "assets/imagens/djuka.jpg",
     sentido_de: "Matar / Abater",
     falante: "uso geral",
     exemplos: [
@@ -4905,7 +4904,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Sal.",
     audio: "assets/audios/djuky.mp3",
-    imagem: "assets/imagens/djuky.jpg",
     sentido_de: "Sal",
     falante: "uso geral",
     exemplos: [
@@ -4925,7 +4923,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Subir, escalar, erguer-se, montar.",
     audio: "assets/audios/djupi.mp3",
-    imagem: "assets/imagens/djupi.jpg",
     sentido_de: "Subir / Escalar",
     falante: "uso geral",
     exemplos: [
@@ -4945,7 +4942,6 @@ const DICIONARIO = [
     categoria: "Corpo humano",
     significado: "Boca.",
     audio: "assets/audios/djuru.mp3",
-    imagem: "assets/imagens/djuru.jpg",
     sentido_de: "Boca",
     falante: "uso geral",
     exemplos: [
@@ -4965,7 +4961,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Ele(a) começou, iniciou (dar o primeiro passo/pisar).",
     audio: "assets/audios/onepyyro.mp3",
-    imagem: "assets/imagens/onepyyro.jpg",
     sentido_de: "Começar / Iniciar",
     falante: "uso geral",
     exemplos: [
@@ -4985,7 +4980,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Mau hálito, boca fedida.",
     audio: "assets/audios/djurune.mp3",
-    imagem: "assets/imagens/djurune.jpg",
     sentido_de: "Mau hálito",
     falante: "uso geral",
     exemplos: [
@@ -5005,7 +4999,6 @@ const DICIONARIO = [
     categoria: "Corpo humano",
     significado: "Braço.",
     audio: "assets/audios/djuwa.mp3",
-    imagem: "assets/imagens/djuwa.jpg",
     sentido_de: "Braço",
     falante: "uso geral",
     exemplos: [
@@ -5025,7 +5018,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Fome, estar com fome, ter necessidade de comer (variante de 'ware'a').",
     audio: "assets/audios/embyai.mp3",
-    imagem: "assets/imagens/embyai.jpg",
     sentido_de: "Fome / Estar com fome",
     falante: "uso geral",
     exemplos: [
@@ -5045,7 +5037,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Estragar, danificar, machucar, quebrar, inutilizar.",
     audio: "assets/audios/mbyai.mp3",
-    imagem: "assets/imagens/mbyai.jpg",
     sentido_de: "Estragar / Machucar",
     falante: "uso geral",
     exemplos: [
@@ -5065,7 +5056,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Calor, mormaço, tempo quente (estado do tempo). Formado sobre a raiz 'aku'.",
     audio: "assets/audios/mbiraku.mp3",
-    imagem: "assets/imagens/mbiraku.jpg",
     sentido_de: "Calor / Mormaço",
     falante: "uso geral",
     exemplos: [
@@ -5085,7 +5075,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Caça, carne de caça, ato de caçar. Grafado também como 'gwa' / 'gua'.",
     audio: "assets/audios/ewa.mp3",
-    imagem: "assets/imagens/ewa.jpg",
     sentido_de: "Caça / Carne de caça",
     falante: "uso geral",
     exemplos: [
@@ -5105,7 +5094,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Caçador (aquele que caça).",
     audio: "assets/audios/ewaa.mp3",
-    imagem: "assets/imagens/ewaa.jpg",
     sentido_de: "Caçador",
     falante: "uso geral",
     exemplos: [
@@ -5125,7 +5113,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "De manhã, pela manhã. Refere-se ao período em que a noite termina e o dia se inicia.",
     audio: "assets/audios/pyhare-we.mp3",
-    imagem: "assets/imagens/pyhare-we.jpg",
     sentido_de: "De manhã / Pela manhã",
     falante: "uso geral",
     exemplos: [
@@ -5145,7 +5132,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Mel (de abelha). Grafado também como 'ei' ou 'eíra'.",
     audio: "assets/audios/ei.mp3",
-    imagem: "assets/imagens/ei.jpg",
     sentido_de: "Mel",
     falante: "uso geral",
     exemplos: [
@@ -5165,7 +5151,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Trazer, buscar e trazer para perto.",
     audio: "assets/audios/eru.mp3",
-    imagem: "assets/imagens/eru.jpg",
     sentido_de: "Trazer",
     falante: "uso geral",
     exemplos: [
@@ -5185,7 +5170,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Fechar, tampar, trancar, encerrar.",
     audio: "assets/audios/mboty.mp3",
-    imagem: "assets/imagens/mboty.jpg",
     sentido_de: "Fechar / Trancar",
     falante: "uso geral",
     exemplos: [
@@ -5205,7 +5189,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Feche! Fecha! Forma imperativa do verbo 'mboty'.",
     audio: "assets/audios/eboty.mp3",
-    imagem: "assets/imagens/eboty.jpg",
     sentido_de: "Feche! / Tranque!",
     falante: "uso geral",
     exemplos: [
@@ -5225,7 +5208,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Não deixe, não abandone, não permita.",
     audio: "assets/audios/edjaeme.mp3",
-    imagem: "assets/imagens/edjaeme.jpg",
     sentido_de: "Não deixe / Não permita",
     falante: "uso geral",
     exemplos: [
@@ -5244,9 +5226,7 @@ const DICIONARIO = [
     tipo: "expressão / verbo (imperativo)",
     categoria: "Expressões",
     significado: "Não faça muito! Não exagere no preparo!",
-    audio: "assets/audios/edjapoea.mp3",
-    imagem: "assets/imagens/edjapoea.jpg",
-    sentido_de: "Não faça muito",
+    audio: "assets/audios/edjapoea.mp3",    sentido_de: "Não faça muito",
     falante: "uso geral",
     exemplos: [
       "Edjapo'eá tembi'u!",
@@ -5269,7 +5249,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Vire! Gire! Rode! Comando imperativo do verbo 'djerê'.",
     audio: "assets/audios/edjere.mp3",
-    imagem: "assets/imagens/edjere.jpg",
     sentido_de: "Vire! / Gire!",
     falante: "uso geral",
     exemplos: [
@@ -5289,7 +5268,6 @@ const DICIONARIO = [
     categoria: "Pronomes",
     significado: "Para mim / Comigo / A mim (pronome 'txe' + posposição '-wy').",
     audio: "assets/audios/txewy.mp3",
-    imagem: "assets/imagens/txewy.jpg",
     sentido_de: "Para mim / A mim",
     falante: "uso geral",
     exemplos: [
@@ -5309,7 +5287,6 @@ const DICIONARIO = [
     categoria: "Pronomes",
     significado: "Comigo (pronome 'txe' + posposição '-rewé'). Indica companhia.",
     audio: "assets/audios/txerewe.mp3",
-    imagem: "assets/imagens/txerewe.jpg",
     sentido_de: "Comigo",
     falante: "uso geral",
     exemplos: [
@@ -5329,7 +5306,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Forte, duro, firme, com intensidade.",
     audio: "assets/audios/ata.mp3",
-    imagem: "assets/imagens/ata.jpg",
     sentido_de: "Forte / Firme",
     falante: "uso geral",
     exemplos: [
@@ -5349,7 +5325,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Destinado a fortalecer, para ficar forte, firme ou resistente.",
     audio: "assets/audios/guara_ata.mp3",
-    imagem: "assets/imagens/guara_ata.jpg",
     sentido_de: "Para fortalecer / Para ficar forte",
     falante: "uso geral",
     exemplos: [
@@ -5369,7 +5344,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Suba! Levante-se! Forma imperativa de 'jeupi' (erguer-se).",
     audio: "assets/audios/edjeupi.mp3",
-    imagem: "assets/imagens/edjeupi.jpg",
     sentido_de: "Suba! / Levante-se!",
     falante: "uso geral",
     exemplos: [
@@ -5389,7 +5363,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Vamos, anda, bora.",
     audio: "assets/audios/neik.mp3",
-    imagem: "assets/imagens/neik.jpg",
     sentido_de: "Vamos / Bora",
     falante: "uso geral",
     exemplos: [
@@ -5409,7 +5382,6 @@ const DICIONARIO = [
     categoria: "Expressões",
     significado: "Rápido, depressa, logo.",
     audio: "assets/audios/woi.mp3",
-    imagem: "assets/imagens/woi.jpg",
     sentido_de: "Rápido / Depressa",
     falante: "uso geral",
     exemplos: [
@@ -5429,7 +5401,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Correr, disparar, fugir.",
     audio: "assets/audios/nhani.mp3",
-    imagem: "assets/imagens/nhani.jpg",
     sentido_de: "Correr / Fugir",
     falante: "uso geral",
     exemplos: [
@@ -5449,7 +5420,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Ordenhar, espremer, extrair líquido com as mãos.",
     audio: "assets/audios/nhamy.mp3",
-    imagem: "assets/imagens/nhamy.jpg",
     sentido_de: "Ordenhar / Espremer",
     falante: "uso geral",
     exemplos: [
@@ -5469,7 +5439,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Nasceu (para pessoas e animais).",
     audio: "assets/audios/oae.mp3",
-    imagem: "assets/imagens/oae.jpg",
     sentido_de: "Nascer (seres vivos)",
     falante: "uso geral",
     exemplos: [
@@ -5489,7 +5458,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Nasceu / brotou (para plantas e sementes).",
     audio: "assets/audios/enhoi.mp3",
-    imagem: "assets/imagens/enhoi.jpg",
     sentido_de: "Brotar / Nascer (plantas)",
     falante: "uso geral",
     exemplos: [
@@ -5509,7 +5477,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Nasceu / saiu (para sol, lua e estrelas).",
     audio: "assets/audios/ose.mp3",
-    imagem: "assets/imagens/ose.jpg",
     sentido_de: "Nascer / Sair (astros)",
     falante: "uso geral",
     exemplos: [
@@ -5529,7 +5496,6 @@ const DICIONARIO = [
     categoria: "Localização",
     significado: "Leste / Nascente (O que fica à nossa frente).",
     audio: "assets/audios/nhande_rowai_regwa.mp3",
-    imagem: "assets/imagens/nhande_rowai_regwa.jpg",
     sentido_de: "Leste / Nascente",
     falante: "uso geral",
     exemplos: [
@@ -5549,7 +5515,6 @@ const DICIONARIO = [
     categoria: "Localização",
     significado: "Oeste / Poente (O que fica às nossas costas).",
     audio: "assets/audios/nhande_kupe_regwa.mp3",
-    imagem: "assets/imagens/nhande_kupe_regwa.jpg",
     sentido_de: "Oeste / Poente",
     falante: "uso geral",
     exemplos: [
@@ -5569,7 +5534,6 @@ const DICIONARIO = [
     categoria: "Localização",
     significado: "Norte (O que fica ao lado esquerdo).",
     audio: "assets/audios/nhande_yke_regwa.mp3",
-    imagem: "assets/imagens/nhande_yke_regwa.jpg",
     sentido_de: "Norte",
     falante: "uso geral",
     exemplos: [
@@ -5589,7 +5553,6 @@ const DICIONARIO = [
     categoria: "Localização",
     significado: "Sul (O que fica ao lado direito).",
     audio: "assets/audios/nhande_djodja_regwa.mp3",
-    imagem: "assets/imagens/nhande_djodja_regwa.jpg",
     sentido_de: "Sul",
     falante: "uso geral",
     exemplos: [
@@ -5609,7 +5572,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Verde. Cor associada às folhas, plantas e à vegetação.",
     audio: "assets/audios/owy.mp3",
-    imagem: "assets/imagens/owy.jpg",
     sentido_de: "Verde",
     falante: "uso geral",
     exemplos: [
@@ -5629,7 +5591,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Amarelo / dourado. Cor de frutos maduros, flores e penas de animais.",
     audio: "assets/audios/idju.mp3",
-    imagem: "assets/imagens/idju.jpg",
     sentido_de: "Amarelo / Dourado",
     falante: "uso geral",
     exemplos: [
@@ -5649,7 +5610,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Vermelho. Cor do urucum, do sangue e de frutos vermelhos.",
     audio: "assets/audios/pyta.mp3",
-    imagem: "assets/imagens/pyta.jpg",
     sentido_de: "Vermelho",
     falante: "uso geral",
     exemplos: [
@@ -5669,7 +5629,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Azul (lit. 'verde puro/liso'). Cor do céu limpo e das águas profundas.",
     audio: "assets/audios/owy_rei.mp3",
-    imagem: "assets/imagens/owy_rei.jpg",
     sentido_de: "Azul",
     falante: "uso geral",
     exemplos: [
@@ -5689,7 +5648,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Branco. Cor do algodão, das nuvens e da garça.",
     audio: "assets/audios/moroti.mp3",
-    imagem: "assets/imagens/moroti.jpg",
     sentido_de: "Branco",
     falante: "uso geral",
     exemplos: [
@@ -5709,7 +5667,6 @@ const DICIONARIO = [
     categoria: "Plantas",
     significado: "Algodão.",
     audio: "assets/audios/mandyju.mp3",
-    imagem: "assets/imagens/mandyju.jpg",
     sentido_de: "Algodão",
     falante: "uso geral",
     exemplos: [
@@ -5731,7 +5688,6 @@ const DICIONARIO = [
     categoria: "Verbos",
     significado: "Eu uso.",
     audio: "assets/audios/aiporu.mp3",
-    imagem: "assets/imagens/aiporu.jpg",
     sentido_de: "Eu uso",
     falante: "uso geral",
     exemplos: [
@@ -5753,7 +5709,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Preto / escuro. Cor do carvão, da noite e da terra escura.",
     audio: "assets/audios/una.mp3",
-    imagem: "assets/imagens/una.jpg",
     sentido_de: "Preto / Escuro",
     falante: "uso geral",
     exemplos: [
@@ -5773,7 +5728,6 @@ const DICIONARIO = [
     categoria: "Natureza",
     significado: "Cor-de-rosa / rosado (lit. 'relativo à flor / tom de flor').",
     audio: "assets/audios/potygwa.mp3",
-    imagem: "assets/imagens/potygwa.jpg",
     sentido_de: "Cor-de-rosa / Rosado",
     falante: "uso geral",
     exemplos: [
@@ -5793,7 +5747,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Cabeça / Minha cabeça.",
         audio: "assets/audios/txeakan.mp3",
-        imagem: "assets/svg/cabeca.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5815,7 +5768,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Cabelo / Meu cabelo.",
         audio: "assets/audios/txeawy.mp3",
-        imagem: "assets/svg/cabelo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5835,7 +5787,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Costas / Minhas costas.",
         audio: "assets/audios/txekupe.mp3",
-        imagem: "assets/svg/costas.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5855,7 +5806,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Pulso / Meu pulso.",
         audio: "assets/audios/texepoapy.mp3",
-        imagem: "assets/svg/pulso.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5875,7 +5825,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Orelha / Minha orelha.",
         audio: "assets/audios/txenambi.mp3",
-        imagem: "assets/svg/orelha.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5895,7 +5844,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Ouvido / Meu ouvido.",
         audio: "assets/audios/txeapytsakwa.mp3",
-        imagem: "assets/svg/ouvido.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5915,7 +5863,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Testa / Minha testa.",
         audio: "assets/audios/txeapyte.mp3",
-        imagem: "assets/svg/testa.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5935,7 +5882,6 @@ const DICIONARIO = [
         categoria: "Expressões / Corpo humano",
         significado: "Espírito / Meu espírito.",
         audio: "assets/audios/txenheen.mp3",
-        imagem: "assets/svg/espirito.jpg",
         sentido_de: "Dimensão espiritual e interna",
         falante: "Uso geral",
         exemplos: [
@@ -5955,7 +5901,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Olho / Meu olho.",
         audio: "assets/audios/txeretsa.mp3",
-        imagem: "assets/svg/olho.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5975,7 +5920,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Rosto / Meu rosto.",
         audio: "assets/audios/txerowa.mp3",
-        imagem: "assets/svg/rosto.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -5995,7 +5939,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Nariz / Meu nariz.",
         audio: "assets/audios/txeapyingwa.mp3",
-        imagem: "assets/svg/nariz.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6015,7 +5958,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Boca / Minha boca.",
         audio: "assets/audios/txedjuru.mp3",
-        imagem: "assets/svg/boca.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6035,7 +5977,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Dente / Meu dente.",
         audio: "assets/audios/txerain.mp3",
-        imagem: "assets/svg/dente.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6055,7 +5996,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Lábio / Meu lábio.",
         audio: "assets/audios/txerembe.mp3",
-        imagem: "assets/svg/labio.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6075,7 +6015,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Queixo / Meu queixo.",
         audio: "assets/audios/txerembeyta.mp3",
-        imagem: "assets/svg/queixo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6097,7 +6036,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Língua / Minha língua.",
         audio: "assets/audios/txeapenkun.mp3",
-        imagem: "assets/svg/lingua.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6117,7 +6055,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Ombro / Meu ombro.",
         audio: "assets/audios/txeatiy.mp3",
-        imagem: "assets/svg/ombro.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6137,7 +6074,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Peito / Meu peito.",
         audio: "assets/audios/txepotia.mp3",
-        imagem: "assets/svg/peito.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6157,7 +6093,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Mão / Minha mão.",
         audio: "assets/audios/txepo.mp3",
-        imagem: "assets/svg/mao.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6177,7 +6112,6 @@ const DICIONARIO = [
         categoria: "Partes do Corpo / Membros Superiores",
         significado: "Dedo da mão / Meu dedo da mão.",
         audio: "assets/audios/txekwan.mp3",
-        imagem: "assets/svg/dedo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6197,7 +6131,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Barriga / Minha barriga.",
         audio: "assets/audios/txerye.mp3",
-        imagem: "assets/svg/barriga.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6217,7 +6150,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Umbigo / Meu umbigo.",
         audio: "assets/audios/txepuruan.mp3",
-        imagem: "assets/svg/umbigo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6237,7 +6169,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Perna / Minha perna.",
         audio: "assets/audios/txetyman.mp3",
-        imagem: "assets/svg/perna.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6257,7 +6188,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Joelho / Meu joelho.",
         audio: "assets/audios/txetakan.mp3",
-        imagem: "assets/svg/joelho.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6281,7 +6211,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Pescoço / Meu pescoço.",
         audio: "assets/audios/txeadjuy.mp3",
-        imagem: "assets/svg/pescoco.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6301,7 +6230,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Braço / Meu braço.",
         audio: "assets/audios/txedjywa.mp3",
-        imagem: "assets/svg/braco.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6321,7 +6249,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Cotovelo / Meu cotovelo.",
         audio: "assets/audios/txedjywatakan.mp3",
-        imagem: "assets/svg/cotovelo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6341,7 +6268,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Axila / Minha axila.",
         audio: "assets/audios/txekae.mp3",
-        imagem: "assets/svg/axila.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6361,7 +6287,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Pé / Meu pé.",
         audio: "assets/audios/txepy.mp3",
-        imagem: "assets/svg/pe.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6381,7 +6306,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Dedo do pé / Meu dedo do pé.",
         audio: "assets/audios/txepytsan.mp3",
-        imagem: "assets/svg/dedopedo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6401,7 +6325,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Lágrima / Minha lágrima.",
         audio: "assets/audios/txeretasay.mp3",
-        imagem: "assets/svg/lagrima.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6421,7 +6344,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Nervo / Meu nervo.",
         audio: "assets/audios/txeradju.mp3",
-        imagem: "assets/svg/nervo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6441,7 +6363,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Cérebro / Meu cérebro.",
         audio: "assets/audios/txepytun.mp3",
-        imagem: "assets/svg/cerebro.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6461,7 +6382,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Osso / Meu osso.",
         audio: "assets/audios/txekangwe.mp3",
-        imagem: "assets/svg/osso.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6481,7 +6401,6 @@ const DICIONARIO = [
         categoria: "Corpo humano",
         significado: "Pelo / Meu pelo.",
         audio: "assets/audios/txeragwe.mp3",
-        imagem: "assets/svg/pelo.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6501,7 +6420,6 @@ const DICIONARIO = [
         categoria: "Verbo de Ação / Modo Imperativo (2ª Pessoa)",
         significado: "Desça / Tire / Retire / Raspe / Remova",
         audio: "assets/audios/edjyro.mp3",
-        imagem: "assets/svg/acao.jpg",
         sentido_de: "Ação de raspar ou remover",
         falante: "Uso geral",
         exemplos: [
@@ -6521,7 +6439,6 @@ const DICIONARIO = [
         categoria: "Partes do Corpo / Revestimento e Anexos",
         significado: "Unha da mão / Minha unha da mão.",
         audio: "assets/audios/txepoapen.mp3",
-        imagem: "assets/svg/unhamao.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6541,7 +6458,6 @@ const DICIONARIO = [
         categoria: "Partes do Corpo / Revestimento e Anexos",
         significado: "Unha do pé / Minha unha do pé.",
         audio: "assets/audios/txepytsapen.mp3",
-        imagem: "assets/svg/unhape.jpg",
         sentido_de: "Parte do corpo humano",
         falante: "Uso geral",
         exemplos: [
@@ -6561,7 +6477,6 @@ const DICIONARIO = [
         categoria: "Partes do Corpo / Anatomia Interna",
         significado: "Veia / Minha veia (Caminho do sangue).",
         audio: "assets/audios/txeygwyrape.mp3",
-        imagem: "assets/svg/veia.jpg",
         sentido_de: "Anatomia interna do corpo humano",
         falante: "Uso geral",
         exemplos: [
