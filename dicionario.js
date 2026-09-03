@@ -6490,7 +6490,6 @@ const DICIONARIO = [
             "Minha veia está boa / Minha circulação está boa."
         ]
     },
-   
     {
         palavra: "Andirá",
         tipo: "substantivo / animal",
@@ -7420,11 +7419,11 @@ const DICIONARIO = [
         sentido_de: "Pequeno inseto voador de picada irritante.",
         falante: "Termo tradicional / Fauna",
         exemplos: [
-            "Nhati'ũ otsapukai koẽ ypy'i ogapy py."
+            "Nhati'ũ otsapukai koẽ ypy'i ogapy py.",
             "Nhati'ũ oheka mbo'y y wao py."
         ],
         traducao: [
-            "O pernilongo zoa bem de manhazinha (ao romper da aurora) dentro de casa."
+            "O pernilongo zoa bem de manhazinha (ao romper da aurora) dentro de casa.",
             "O pernilongo procura sangue perto da água."
         ]
     },
@@ -7458,7 +7457,7 @@ const DICIONARIO = [
             "Pyhare re tarawé onhani ogapy pype."
         ],
         traducao: [
-            "A barata se esconde embaixo da lenha dentro de casa."
+            "A barata se esconde embaixo da lenha dentro de casa.",
             "De noite a barata corre pela casa."
         ]
     },
@@ -7475,7 +7474,7 @@ const DICIONARIO = [
             "Oga-py re tay oheka mbo'y."
         ],
         traducao: [
-            "A formiga arrasta-se em fileira sobre as folhas caídas do chão de maneira firme."
+            "A formiga arrasta-se em fileira sobre as folhas caídas do chão de maneira firme.",
             "Ao redor da casa a formiga procura alimento."
         ]
     },
