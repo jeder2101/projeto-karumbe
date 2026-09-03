@@ -6489,5 +6489,1063 @@ const DICIONARIO = [
             "Na veia tem sangue.",
             "Minha veia está boa / Minha circulação está boa."
         ]
+    },
+   
+    {
+        palavra: "Andirá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Morcego frugívaro (que come frutas).",
+        audio: "assets/audios/andira.mp3",
+        sentido_de: "Designação para morcegos com hábito alimentar frugívoro.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Andirá oandu ywa ro'ytsã pyhare pyahu.",
+            "Pyhare re andirá opyta ywara rakã re."
+        ],
+        traducao: [
+            "O morcego sente o gosto da fruta fresca no início da noite.",
+            "À noite o morcego fica no galho da fruta."
+        ]
+    },
+
+    {
+        palavra: "Djagwareté'ũ",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Puma (onça preta / onça escura).",
+        audio: "assets/audios/djagwarete_u.mp3",
+        sentido_de: "Variedade de felino de pelagem escura ou puma.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Djagwareté'ũ onhẽ´mĩ ka'agwy pytũ re.",
+            "Oetxá djagwareté'ũ ka'agwy rugwiwe."
+        ],
+        traducao: [
+            "O puma se esconde na escuridão da mata.",
+            "Ele viu o puma no fundo da mata."
+        ]
+    },
+    {
+        palavra: "Djagwatiri",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Jaguatirica.",
+        audio: "assets/audios/djagwatiri.mp3",
+        sentido_de: "Pequeno felino pintado nativo.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Djagwatiri opẽ ywyra rakã re.",
+            "Oetxa djagwatiri ka'agwy nte."
+        ],
+        traducao: [
+            "A jaguatirica sobe no galho da árvore.",
+            "Ele avistou apenas a jaguatirica na mata."
+        ]
+    },
+    {
+        palavra: "Djaitxá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Paca.",
+        audio: "assets/audios/djaitxa.mp3",
+        sentido_de: "Roedor silvestre de hábitos noturnos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Djaitxá oho y ywy koty,pyhare re.",
+            "Ka'agwy re onhẽ´mi djaitxá."
+        ],
+        traducao: [
+            "A paca vai em direção à água, de noite.",
+            "A paca se esconde na mata."
+        ]
+    },
+    {
+        palavra: "Gwairaká",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Lontra.",
+        audio: "assets/audios/gwairaka.mp3",
+        sentido_de: "Mamífero aquático agil nas margens dos rios.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Gwairaká ojhague y rupi.",
+            "Y rembe'i re gwairaká opyta."
+        ],
+        traducao: [
+            "A lontra nada pela água.",
+            "A lontra fica na beira do rio."
+        ]
+    },
+    {
+        palavra: "Gwatsu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Veado.",
+        audio: "assets/audios/gwatsu.mp3",
+        sentido_de: "Cervídeo nativo dos campos e capões.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Gwatsu onhẽ´mĩ ka'agwy tĩ re.",
+            "Oetxa gwatsu onhoty ywa rami."
+        ],
+        traducao: [
+            "O veado corre pela ponta da mata.",
+            "Ele viu o veado pastando."
+        ]
+    },
+    {
+        palavra: "Gwatsu'i'y",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Veado galheiro.",
+        audio: "assets/audios/gwatsuiy.mp3",
+        sentido_de: "Espécie de veado caracterizada por galhadas desenvolvidas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Gwatsu'i'y ohasa ka'agwy mbyte re.",
+            "Oetxa gwatsu'i'y ywyty ru'ã re."
+        ],
+        traducao: [
+            "O veado galheiro atravessa o meio da mata.",
+            "Ele avistou veado galheiro sobre o topo da serra."
+        ]
+    },
+    {
+        palavra: "Irara",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Papa-mel (irara).",
+        audio: "assets/audios/irara.mp3",
+        sentido_de: "Mustelídeo conhecido pela busca de mel silvestre.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Irara oheka e'ẽ ka'agwy pype.",
+            "Aetxa irara ywyra rowa re."
+        ],
+        traducao: [
+            "A irara procura mel dentro da mata.",
+            "Eu vejo a irara no tronco da árvore."
+        ]
+    },
+    {
+        palavra: "Kagwaré",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Tamanduá-mirim.",
+        audio: "assets/audios/kagware.mp3",
+        sentido_de: "Pequeno tamanduá arborícola.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kagwaré oheka ta'yĩ ka'agwy re.",
+            "Kagwaré onhẽ´mĩ ywyra rakã mbyte."
+        ],
+        traducao: [
+            "O tamanduá-mirim procura cupim na mata.",
+            "O tamanduá-mirim se esconde entre os galhos."
+        ]
+    },
+    {
+        palavra: "Ka'i",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Macaco.",
+        audio: "assets/audios/kai.mp3",
+        sentido_de: "Primata nativo das matas e florestas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Ka'i osapukái yvyra ru'ã gwiwe.",
+            "Ka'i omono'õ ywa ka'agwy re."
+        ],
+        traducao: [
+            "O macaco grita do alto da árvore.",
+            "O macaco colhe frutas na mata."
+        ]
+    },
+    {
+        palavra: "Kaititu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Cateto.",
+        audio: "assets/audios/kaititu.mp3",
+        sentido_de: "Mamífero ungulado silvestre parecido com o porco do mato.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kaititu oho kwery atã re.",
+            "Kaititu okaru ywa ka'agwy re."
+        ],
+        traducao: [
+            "O cateto anda em bandos.",
+            "O cateto come frutos pela mata."
+        ]
+    },
+    {
+        palavra: "Kapi'i'uwá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Capivara.",
+        audio: "assets/audios/kapiiuwa.mp3",
+        sentido_de: "O maior roedor existente, de hábitos anfíbios.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kapi'i'uwá oĩ y rembe'i re.",
+            "Y rupi kapi'i'uwá oetxa porã."
+        ],
+        traducao: [
+            "A capivara está na beira do rio.",
+            "Na água a capivara é vista facilmente."
+        ]
+    },
+    {
+        palavra: "Karadjá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Bugio (macaco guariba).",
+        audio: "assets/audios/karadja.mp3",
+        sentido_de: "Primata conhecido por seu chamado forte e grave.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Karadjá onhe'ẽ arungue pyhare pyahu.",
+            "Oñandu karadjá sapukái ka'aguy re."
+        ],
+        traducao: [
+            "O bugio ruge logo cedo pela manhã.",
+            "Ouve-se o chamado do bugio na mata."
+        ]
+    },
+{
+        palavra: "ãtĩ",
+        tipo: "substantivo",
+        categoria: "Partes do Corpo / Morfologia",
+        significado: "Nariz, focinho ou a parte frontal/saliente de algo (como a ponta ou o bico).",
+        audio: "assets/audios/ati.mp3",
+        sentido_de: "Designa a saliência frontal do rosto ou de estruturas físicas que avançam.",
+        falante: "Termo tradicional",
+        exemplos: [
+            "Oñembo'y ãtĩ rupi.",
+            "Kaititu ãtĩ aky."
+        ],
+        traducao: [
+            "Ele levantou o nariz / empinou o focinho.",
+            "O focinho do caititu está úmido."
+        ]
+    },
+    {
+        palavra: "Katxuru",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Cachorro.",
+        audio: "assets/audios/katxuru.mp3",
+        sentido_de: "Animal doméstico de companhia e guarda.",
+        falante: "Termo tradicional / Doméstico",
+        exemplos: [
+            "Katxuru oñani ogapy re.",
+            "Katxuru ojapytu'u ogapy vao re."
+        ],
+        traducao: [
+            "O cachorro corre pelo pátio de casa.",
+            "O cachorro descansa perto de casa."
+        ]
+    },
+    {
+        palavra: "Kui'ĩ",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Ouriço / Porco-espinho.",
+        audio: "assets/audios/kuii.mp3",
+        sentido_de: "Mamífero coberto de espinhos protetores.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kui'ĩ onhẽ´mĩ ywyra rowa re.",
+            "Kwa py kui'ĩ oĩ porã."
+        ],
+        traducao: [
+            "O ouriço se esconde no tronco da árvore.",
+            "Na toca o ouriço fica seguro."
+        ]
+    },
+    {
+        palavra: "Kwati-mirim",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Quati-mirim (quati pequeno).",
+        audio: "assets/audios/kwati_mirim.mp3",
+        sentido_de: "Variedade menor de quati silvestre.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kwati-mirim oho ka'agwy mbyte re.",
+            "Oetxa kwati-mirim ywyra rakã re."
+        ],
+        traducao: [
+            "O quati-mirim anda pelo meio da mata.",
+            "Ele viu o quati-mirim no galho da árvore."
+        ]
+    },
+    {
+        palavra: "Kwati-mondé",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Quati-mundéu.",
+        audio: "assets/audios/kwati_monde.mp3",
+        sentido_de: "Termo para designar quatis associados a armadilhas ou características específicas de comportamento.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kwati-mondé ohasa ka'agwy ru'ã re.",
+            "Oetxa kwati-mondé oheka ywa."
+        ],
+        traducao: [
+            "O quati passa pelo limite da mata.",
+            "Ele viu o quati procurando fruta."
+        ]
+    },
+    {
+        palavra: "Kydjá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Rato do bambu.",
+        audio: "assets/audios/kydja.mp3",
+        sentido_de: "Roedor silvestre associado a touceiras de taquara/bambu.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kydjá oiko takwara ru'ã re.",
+            "Kydjá onhẽ´mĩ takwarusu mbyte."
+        ],
+        traducao: [
+            "O rato do bambu vive nas touceiras (no topo/na ponta dos bambus).",
+            "O rato do bambu se esconde entre os bambus."
+        ]
+    },
+    {
+        palavra: "Kydjara",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Ratinho silvestre.",
+        audio: "assets/audios/kydjara.mp3",
+        sentido_de: "Pequeno roedor que habita o chão da floresta.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kydjara onhẽ´mĩ ywy oatywa re.",
+            "Kydjara okaru ywa ra'ỹi re."
+        ],
+        traducao: [
+            "O ratinho silvestre corre pelas folhas caídas.",
+            "O ratinho silvestre come sementes."
+        ]
+    },
+    {
+        palavra: "Mbarakadjá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Gato do mato (ou gato doméstico).",
+        audio: "assets/audios/mbarakadja.mp3",
+        sentido_de: "Felino silvestre ou de pequeno porte associado ao ambiente doméstico/rural.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mbarakadjá opyta ogapy re.",
+            "Mbarakadjá onhẽ´mĩ ogapy rova re."
+        ],
+        traducao: [
+            "O gato fica perto de casa.",
+            "O gato se esconde na beirada da casa."
+        ]
+    },
+    {
+        palavra: "Mbopi",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Morcego hematófago (que toma sangue / vampiro).",
+        audio: "assets/audios/mbopi.mp3",
+        sentido_de: "Designação para morcegos de hábitos hematófagos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mbopi oú pyhare pyahu.",
+            "Oetxa mbopi ogapy ru'ã re."
+        ],
+        traducao: [
+            "O morcego chega no início da noite.",
+            "Ele viu o morcego no teto da casa."
+        ]
+    },
+    {
+        palavra: "Mboré",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Tapir / Anta.",
+        audio: "assets/audios/mbore.mp3",
+        sentido_de: "O maior mamífero terrestre nativo das florestas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mboré oho y rupi ka'agwy pype.",
+            "Mboré okaru ywa rapyre re."
+        ],
+        traducao: [
+            "A anta anda pela água dentro da mata.",
+            "A anta come brotos e frutos caídos."
+        ]
+    },
+    {
+        palavra: "Mbyku",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Gambá.",
+        audio: "assets/audios/mbyku.mp3",
+        sentido_de: "Marsupial nativo de hábitos noturnos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mbyku ohasa ogapy ywyra re.",
+            "Pyhare re mbyku oheka mbo'y."
+        ],
+        traducao: [
+            "O gambá passa pela árvore da casa.",
+            "De noite o gambá procura alimento."
+        ]
+    },
+    {
+        palavra: "Pereá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Preá.",
+        audio: "assets/audios/perea.mp3",
+        sentido_de: "Pequeno roedor silvestre gregário.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Pereá onhani kapi'i mbyte re.",
+            "Pereá oiko kwery atã re."
+        ],
+        traducao: [
+            "O preá corre no meio do mato/capim.",
+            "O preá vive em bandos."
+        ]
+    },
+    {
+        palavra: "Tadjatsu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Queixada.",
+        audio: "assets/audios/tadjatsu.mp3",
+        sentido_de: "Mamífero ungulado silvestre que vive em grandes bandos nas matas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tadjatsu oho ka'agwy pype atã re.",
+            "Oetxa tadjatsu ka'agwy rugwive."
+        ],
+        traducao: [
+            "O queixada anda em bando dentro da mata.",
+            "Ele viu o queixada no fundo da mata."
+        ]
+    },
+    {
+        palavra: "Taĩdjá",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Preguiça.",
+        audio: "assets/audios/taindja.mp3",
+        sentido_de: "Mamífero arborícola de movimentos lentos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Taĩdjá opyta ywyra rakã mbyte.",
+            "Taĩdjá oiko ywyra rowa re."
+        ],
+        traducao: [
+            "A preguiça fica entre os galhos da árvore.",
+            "A preguiça vive no tronco da árvore."
+        ]
+    },
+    {
+        palavra: "Tapiti",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Lebre / Coelho silvestre.",
+        audio: "assets/audios/tapiti.mp3",
+        sentido_de: "Pequeno mamífero saltador nativo dos campos e capões.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tapiti oñani kapi'i mbyte re.",
+            "Tapiti onhẽ´mĩ ka'agwy tĩ re."
+        ],
+        traducao: [
+            "A lebre corre no meio do capim.",
+            "A lebre se esconde na ponta da mata."
+        ]
+    },
+    {
+        palavra: "Tatu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Tatu.",
+        audio: "assets/audios/tatu.mp3",
+        sentido_de: "Mamífero caracterizado por sua armadura óssea e hábitos escavadores.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tatu odjapo kwa ywy pype.",
+            "Ka'agwy re tatu oheka mbo'y ywy igwý."
+        ],
+        traducao: [
+            "O tatu faz toca na terra.",
+            "Na mata o tatu procura alimento debaixo da terra."
+        ]
+    },
+    {
+        palavra: "Tatu-eté",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Tatuité (tatu verdadeiro).",
+        audio: "assets/audios/tatu_ete.mp3",
+        sentido_de: "Espécie específica considerada o tatu genuíno ou principal.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tatu-eté oho ywy oatywa re.",
+            "Oetxa tatu-eté ka'agwy rupi."
+        ],
+        traducao: [
+            "O tatuité anda pelas folhas caídas.",
+            "O tatuité é visto pela mata."
+        ]
+    },
+    {
+        palavra: "Tatu-pewa",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Tatupeba.",
+        audio: "assets/audios/tatu_pewa.mp3",
+        sentido_de: "Espécie de tatu de carapaça mais aplanada.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tatu-pewa oiko ywy oñemiwa re.",
+            "Tatu-pewa oñani pyae ywy rupi."
+        ],
+        traducao: [
+            "O tatupeba vive na terra escondida.",
+            "O tatupeba corre rápido pela terra."
+        ]
+    },
+    {
+        palavra: "Tatu-uru",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Tatu-galinha.",
+        audio: "assets/audios/tatu_uru.mp3",
+        sentido_de: "Variedade comum de tatu silvestre.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tatu-uru oheka ta'yĩ ywy igwý.",
+            "Tatu-uru onhẽ´mĩ kwa py."
+        ],
+        traducao: [
+            "O tatu-galinha procura cupim debaixo da terra.",
+            "O tatu-galinha se esconde na toca."
+        ]
+    },
+    {
+        palavra: "Tsugwai",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Porco doméstico.",
+        audio: "assets/audios/tsugwai.mp3",
+        sentido_de: "Suíno criado no ambiente doméstico ou rural.",
+        falante: "Termo tradicional / Doméstico",
+        exemplos: [
+            "Tsugwai okaru ogapy re.",
+            "Tsugwai oiko y ywy wao re."
+        ],
+        traducao: [
+            "O porco come perto de casa.",
+            "O porco vive perto da lama/água."
+        ]
+    },
+    {
+        palavra: "Tsutsuarã",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Suçuarana / Onça parda.",
+        audio: "assets/audios/tsutsuara.mp3",
+        sentido_de: "O felino de pelagem parda nativo das florestas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tsutsuarã oho ka'agwy pype mombyry.",
+            "Oetxa tsutsuarã ywyty ru'ã re."
+        ],
+        traducao: [
+            "A suçuarana anda longe dentro da mata.",
+            "Ele viu a suçuarana no alto do morro."
+        ]
+    },
+    {
+        palavra: "Tugwaipe'i",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Caxingelê / Serelepe (esquilo).",
+        audio: "assets/audios/tugwaipei.mp3",
+        sentido_de: "Pequeno roedor arborícola ágil e de cauda longa.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tugwaipe'i osorotĩ ywyra rakã re.",
+            "Tugwaipe'i onhani pyae ywyra rowa re."
+        ],
+        traducao: [
+            "O caxingelê pula de galho em galho na árvore.",
+            "O caxingelê corre rápido pelo tronco."
+        ]
+    },
+    {
+        palavra: "Txiwi",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Gato.",
+        audio: "assets/audios/txiwi.mp3",
+        sentido_de: "Felino doméstico de companhia.",
+        falante: "Termo tradicional / Doméstico",
+        exemplos: [
+            "Txiwi opyta ogapy ru'ã re.",
+            "Txiwi odjapytu'u kowa'e py."
+        ],
+        traducao: [
+            "O gato fica no teto/cobertura da casa.",
+            "O gato descansa aqui."
+        ]
+    },
+    {
+        palavra: "Amberé",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Lagartixa.",
+        audio: "assets/audios/ambere.mp3",
+        sentido_de: "Pequeno réptil de hábitos domésticos e noturnos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Amberé opyta ogapy rowa re.",
+            "Pyhare re amberé oheka ta'yĩ ogapy py."
+        ],
+        traducao: [
+            "A lagartixa fica na parede da casa.",
+            "De noite a lagartixa procura insetos dentro de casa."
+        ]
+    },
+    {
+        palavra: "Pa'i",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Jacaré (variação regional/alternativa).",
+        audio: "assets/audios/pai.mp3",
+        sentido_de: "Termo tradicional alternativo para designar o jacaré.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Pa'i oho y rupi mombyry.",
+            "Oetxa pa'i y rembe'i re."
+        ],
+        traducao: [
+            "O jacaré vai longe pela água.",
+            "Ele viu o jacaré na beira do rio."
+        ]
+    },
+  
+    {
+        palavra: "Jabuti",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Jabuti.",
+        audio: "assets/audios/jabuti.mp3",
+        sentido_de: "Tartaruga terrestre nativa das matas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Jabuti oho mbeguekatui ka'agwy rupi.",
+            "Jabuti okaru ywa rapyre re."
+        ],
+        traducao: [
+            "O jabuti anda bem devagar pela mata.",
+            "O jabuti come frutas caídas."
+        ]
+    },
+    {
+        palavra: "Karumbé",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Cágado / Tartaruga d'água.",
+        audio: "assets/audios/karumbe.mp3",
+        sentido_de: "Réptil aquático de carapaça, símbolo que dá nome ao projeto.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Karumbé onhẽ´mĩ y pype ywy oatywa re.",
+            "Y rembe'i re karumbé opyta."
+        ],
+        traducao: [
+            "O cágado se esconde na água entre as folhas caídas.",
+            "O cágado fica na beira da água."
+        ]
+    },
+    {
+        palavra: "Kururu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Sapo cururu.",
+        audio: "assets/audios/kururu.mp3",
+        sentido_de: "Grande anfíbio anuro de pele rugosa.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kururu oiko ogapy ywy wao re.",
+            "Pyhare pyahu kururu onhe'ẽ ywy igwý."
+        ],
+        traducao: [
+            "O sapo vive perto da terra úmida da casa.",
+            "No início da noite o sapo coaxa no chão."
+        ]
+    },
+    {
+        palavra: "Mboí",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Cobra / Serpente.",
+        audio: "assets/audios/mboi.mp3",
+        sentido_de: "Réptil sem patas, figura de grande respeito e presença na tradição.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mboí ohasa ywy oatywa re ka'agwy pype.",
+            "Ekyrỹi, mboí oñemi ywyra rowa py."
+        ],
+        traducao: [
+            "A cobra passa pelas folhas caídas dentro da mata.",
+            "Fique quieto, a cobra está escondida no tronco."
+        ]
+    },
+    {
+        palavra: "Mboiky",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Centopéia / Lacraia.",
+        audio: "assets/audios/mboiky.mp3",
+        sentido_de: "Artrópode mirápode peçonhento de corpo segmentado.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mboiky onhẽ´mĩ ywyra rowa igwý.",
+            "Etxakeke mboiky re ywy oatyva re."
+        ],
+        traducao: [
+            "A centopéia se esconde debaixo do tronco.",
+            "Cuidado com a centopéia nas folhas caídas."
+        ]
+    },
+    {
+        palavra: "Tedju",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Lagarto (teiú).",
+        audio: "assets/audios/tedju.mp3",
+        sentido_de: "Grande lagarto terrícola nativo.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tedju oñani ywy okyty re.",
+            "Tedju okaru ywa rapyre re ogapy wao re."
+        ],
+        traducao: [
+            "O lagarto corre pelo sol da terra.",
+            "O lagarto come restos de fruta perto de casa."
+        ]
+    },
+    {
+        palavra: "Kawy",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Vespa / Marimbondo.",
+        audio: "assets/audios/kawy.mp3",
+        sentido_de: "Inseto voador dotado de ferrão e construtor de ninhos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kawy ojapo ipepo yvyra rakã re.",
+            "Etxakeke kawy re ogapy ru'ã re."
+        ],
+        traducao: [
+            "A vespa faz o seu ninho no galho da árvore.",
+            "Cuidado com a vespa na cobertura da casa."
+        ]
+    },
+    {
+        palavra: "Ky",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Piolho.",
+        audio: "assets/audios/ky.mp3",
+        sentido_de: "Inseto parasita externo.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Ky oĩ avakue akã re.",
+            "Oheka ky akã pyte."
+        ],
+        traducao: [
+            "O piolho está na cabeça da pessoa.",
+            "Ele procura piolho entre os cabelos."
+        ]
+    },
+    {
+        palavra: "Kydju",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Grilo.",
+        audio: "assets/audios/kydju.mp3",
+        sentido_de: "Inseto saltador conhecido por seu canto noturno.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kydju onhe'ẽ pyhare pyahu ogapy ywy wao re.",
+            "Oetxa kydju kapi'i mbyte re."
+        ],
+        traducao: [
+            "O grilo canta no início da noite perto de casa.",
+            "Ele viu o grilo no meio do capim."
+        ]
+    },
+    {
+        palavra: "Kyi-kyi",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Besouro.",
+        audio: "assets/audios/kyi_kyi.mp3",
+        sentido_de: "Inseto coleóptero de corpo rígido.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Kyi-kyi ohasa ywy oatywa re.",
+            "Ywyra rowa re kyi-kyi opyta."
+        ],
+        traducao: [
+            "O besouro passa pelas folhas caídas.",
+            "O besouro fica no tronco da árvore."
+        ]
+    },
+    {
+        palavra: "Mbarigwi",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Mosquito.",
+        audio: "assets/audios/mbarigwi.mp3",
+        sentido_de: "Pequeno inseto voador picador.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mbarigwi oú pyhare pyahu y wao py.",
+            "Etxakeke mbarigwi re ogapy py."
+        ],
+        traducao: [
+            "O mosquito chega no início da noite perto da água.",
+            "Cuidado com o mosquito dentro de casa."
+        ]
+    },
+    {
+        palavra: "Mberu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Mosca.",
+        audio: "assets/audios/mberu.mp3",
+        sentido_de: "Inseto voador comum atraído por alimentos.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mberu oha'ã tembi'u re ogapy py.",
+            "Mberu otyryry mesa rowa re."
+        ],
+        traducao: [
+            "A mosca pousa na comida dentro de casa.",
+            "A mosca anda sobre a mesa."
+        ]
+    },
+    {
+        palavra: "Mbutu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Mutuca.",
+        audio: "assets/audios/mbutu.mp3",
+        sentido_de: "Grande mosca picadora de sangue.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Mbutu opyta ywyra re oky-ty py.",
+            "Mbutu owewe katxuru re."
+        ],
+        traducao: [
+            "A mutuca fica na árvore durante a chuva.",
+            "A mutuca voa sobre o cachorro."
+        ]
+    },
+    {
+        palavra: "Muã",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Vagalume.",
+        audio: "assets/audios/mua.mp3",
+        sentido_de: "Inseto voador bioluminescente.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Muã omimbi pyhare pyahu ka'agwy re.",
+            "Pyhare re muã odjaetxa porã."
+        ],
+        traducao: [
+            "O vagalume brilha no início da noite na mata.",
+            "De noite o vagalume é visto facilmente."
+        ]
+    },
+    {
+        palavra: "Nhakyrã",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Cigarra.",
+        audio: "assets/audios/nhakyra.mp3",
+        sentido_de: "Inseto conhecido pelo som forte nos dias quentes.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Nhakyrã oporai ywyra rakã re okyty py.",
+            "Ywyra rowa re nhakyrã oĩ."
+        ],
+        traducao: [
+            "A cigarra canta no galho da árvore no calor.",
+            "A cigarra está no tronco da árvore."
+        ]
+    },
+    {
+        palavra: "Nhandu",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Aranha.",
+        audio: "assets/audios/nhandu.mp3",
+        sentido_de: "Aracnídeo tecelão.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Nhandu odjapo nhandutsã inhepyũ ogapy rowa re.",
+            "Etxakeke nhandu re ywyra mbyte"
+        ],
+        traducao: [
+            "A aranha faz sua teia na parede da casa.",
+            "Cuidado com a aranha entre as árvores."
+        ]
+    },
+    {
+        palavra: "Nhati'ũ",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Pernilongo.",
+        audio: "assets/audios/nhatiu.mp3",
+        sentido_de: "Pequeno inseto voador de picada irritante.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Nhati'ũ otsapukai koẽ ypy'i ogapy py."
+            "Nhati'ũ oheka mbo'y y wao py."
+        ],
+        traducao: [
+            "O pernilongo zoa bem de manhazinha (ao romper da aurora) dentro de casa."
+            "O pernilongo procura sangue perto da água."
+        ]
+    },
+    {
+        palavra: "Tanambi",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Borboleta.",
+        audio: "assets/audios/popoi.mp3",
+        sentido_de: "Inseto voador de asas coloridas.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tanambi owewe ywa rogue re ywa rogue re.",
+            "Ka'agwy re tanambi odjaetxa porã."
+        ],
+        traducao: [
+            "A borboleta voa de folha em folha.",
+            "A borboleta aparece bem bonita na mata."
+        ]
+    },
+    {
+        palavra: "Tarawé",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Barata.",
+        audio: "assets/audios/tarawe.mp3",
+        sentido_de: "Inseto ortóptero sinantrópico.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tarawé oñemi djape´a igwý-py ogapy py.",
+            "Pyhare re tarawé onhani ogapy pype."
+        ],
+        traducao: [
+            "A barata se esconde embaixo da lenha dentro de casa."
+            "De noite a barata corre pela casa."
+        ]
+    },
+    {
+        palavra: "Tay",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Formiga.",
+        audio: "assets/audios/tay.mp3",
+        sentido_de: "Inseto social que vive em colônias.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tay otyryry ywy oatywa re atã re.",
+            "Oga-py re tay oheka mbo'y."
+        ],
+        traducao: [
+            "A formiga arrasta-se em fileira sobre as folhas caídas do chão de maneira firme."
+            "Ao redor da casa a formiga procura alimento."
+        ]
+    },
+    {
+        palavra: "Tsapi-tsapi",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Vagalume (variação).",
+        audio: "assets/audios/tsapi_tsapi.mp3",
+        sentido_de: "Inseto luminescente de jardim.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tsapi-tsapi omimbi kapi'i mbyte re.",
+            "Pyhare pyahu tsapi-tsapi oho ywyra rakã rupi."
+        ],
+        traducao: [
+            "O vagalume brilha no meio do capim.",
+            "No início da noite o vagalume anda pelos galhos."
+        ]
+    },
+    {
+        palavra: "Tuku",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Gafanhoto.",
+        audio: "assets/audios/tuku.mp3",
+        sentido_de: "Inseto saltador herbívoros.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tuku osorotĩ kapi'i rova re.",
+            "Tuku okaru kapi'i okyty re."
+        ],
+        traducao: [
+            "O gafanhoto pula nas folhas de capim.",
+            "O gafanhoto come o capim ao sol."
+        ]
+    },
+    {
+        palavra: "Ytsoendy",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Inseto reluzente (vagalume / bicho-da-luz).",
+        audio: "assets/audios/ytsoendy.mp3",
+        sentido_de: "Designação para insetos que emitem luz própria.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Ytsoendy omimbi ka'agwy rugwaive.",
+            "Pyhare  ytsoendy oetxa ywyra rowa re."
+        ],
+        traducao: [
+            "O inseto reluzente brilha no fundo da mata.",
+            "De noite o bicho-da-luz é visto no tronco da árvore."
+        ]
+    },
+    {
+        palavra: "Tsewoí",
+        tipo: "substantivo / animal",
+        categoria: "Animais",
+        significado: "Minhoca.",
+        audio: "assets/audios/tsewoi.mp3",
+        sentido_de: "Anelídeo subterrâneo que habita a terra úmida.",
+        falante: "Termo tradicional / Fauna",
+        exemplos: [
+            "Tsewoí oĩ ywy wao pype.",
+            "Y oky rire tsewoí ou ywy igwý."  
+        ],
+        traducao: [
+            "A minhoca está na terra úmida.",
+            "Depois da chuva a minhoca sai debaixo da terra."
+        ]
     }
+    
 ];
