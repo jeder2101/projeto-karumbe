@@ -7980,12 +7980,12 @@ audio: "assets/audios/tia.mp3",
 sentido_de: "Tia",
 falante: "Ambos",
 exemplos: [
-"Txetsy'y ojapo ao guaraní.",
+"Txetsy'y odjapo ao tupi-guaraní.",
 "Ndetsy'y omono'õ yva hyakuã.",
 "Itsy'y opurahéi mbo'eha rupi."
 ],
 traducao: [
-"Minha tia faz roupa guarani.",
+"Minha tia faz roupa tupi-guarani.",
 "Sua tia colhe frutas cheirosas.",
 "A tia dele/dela canta pela escola."
 ]
@@ -8001,7 +8001,7 @@ falante: "Ambos",
 exemplos: [
 "Txerywy waí-waí oñembosarái katu.",
 "Ndirywy waí-waí oho ysyry ykére.",
-"Irywy waí-waí ojapo ta'anga."
+"Irywy waí-waí odjapo ta'anga."
 ],
 traducao: [
 "Meu primo brinca bastante.",
@@ -8018,8 +8018,8 @@ audio: "assets/audios/prima.mp3",
 sentido_de: "Prima",
 falante: "Ambos",
 exemplos: [
-"Txendy waíwaí oñemu tãvape.",
-"Ndendy waíwaí ombo'e ijoyke'y.",
+"Txendy waíwaí oñemu tẽtã-py.",
+"Ndendy waíwaí ombo'e iryke’y.",
 "Indy waíwaí oho ka'aguýre."
 ],
 traducao: [
@@ -8038,7 +8038,7 @@ sentido_de: "Cunhado",
 falante: "Homem",
 exemplos: [
 "Txerowadjá odjapo yvyra rupa.",
-"Nderowadjá omba'apo mbo'eha ape.",
+"Nderowadjá omba'apo nhanhembo'eaty'py.",
 "Irowadjá ogueru yva pyahu."
 ],
 traducao: [
@@ -8056,14 +8056,14 @@ audio: "assets/audios/cunhada.mp3",
 sentido_de: "Cunhada",
 falante: "Ambos",
 exemplos: [
-"Txerowadjá kunhã omichĩ tembi'u.",
+"Txerowadjá kunhã odjapo tembi'u.",
 "Nderowadjá kunhã omopotĩ oga.",
-"Irowadjá kunhã oñe'ẽ guaraníme."
+"Irowadjá kunhã oñe'ẽ tupi."
 ],
 traducao: [
 "Minha cunhada prepara a comida.",
 "Sua cunhada limpa a casa.",
-"A cunhada dele/dela fala em guarani."
+"A cunhada dele/dela fala em tupi."
 ]
 }
     
