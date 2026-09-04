@@ -3531,7 +3531,7 @@ audio: "assets/audios/oka.mp3",
 sentido_de: "Quintal / Lado de fora",
 falante: "uso geral",
 exemplos: [
-"Yvytu mbarete oipeju oká-pe.",
+"Ywytu mbarete oipeju oká-pe.",
 "Mitã oñepoñy oká-pe.",
 "Añesẽ-ta oká-pe."
 ],
@@ -4367,7 +4367,7 @@ audio: "assets/audios/oka.mp3",
 sentido_de: "Quintal / Lado de fora",
 falante: "uso geral",
 exemplos: [
-"Yvytu mbarete oipeju oká-pe.",
+"Ywytu mbarete oipeju oká-pe.",
 "Mitã oñepoñy oká-pe.",
 "Añesẽ-ta oká-pe."
 ],
@@ -6773,7 +6773,7 @@ traducao: [
         falante: "Termo tradicional / Fauna",
         exemplos: [
             "Karadjá onhe'ẽ arungue pyhare pyahu.",
-            "Oñandu karadjá sapukái ka'aguy re."
+            "Oñandu karadjá sapukái ka'agwy re."
         ],
         traducao: [
             "O bugio ruge logo cedo pela manhã.",
@@ -6909,7 +6909,7 @@ traducao: [
         falante: "Termo tradicional / Fauna",
         exemplos: [
             "Mbarakadjá opyta ogapy re.",
-            "Mbarakadjá onhẽ´mĩ ogapy rova re."
+            "Mbarakadjá onhẽ´mĩ ogapy rowa re."
         ],
         traducao: [
             "O gato fica perto de casa.",
@@ -7590,8 +7590,8 @@ audio: "assets/audios/tuku.mp3",
 sentido_de: "Inseto saltador herbívoros.",
 falante: "Termo tradicional / Fauna",
 exemplos: [
-"Tuku osorotĩ kapi'i rova re.",
-"Tuku okaru kapi'i okyty re."
+"Tuku osorotĩ kapi'i rowa re.",
+"Tuku okaru kapi'i okuty re."
 ],
 traducao: [
 "O gafanhoto pula nas folhas de capim.",
@@ -7641,7 +7641,7 @@ audio: "assets/audios/enteada.mp3",
 sentido_de: "Enteada",
 falante: "Homem",
 exemplos: [
-"Txerembirekó radjy oho ka'aguy-pe.",
+"Txerembirekó radjy oho ka'agwy-pe.",
 "Nderembirekó radjy omopotĩ ta'anga.",
 "Irembirekó radjy oñe'ẽ porã."
 ],
@@ -7661,7 +7661,7 @@ sentido_de: "Enteado",
 falante: "Mulher",
 exemplos: [
 "Txemẽ ra'y odjapo tembi'u.",
-"Ndemẽ ra'y oguatá tape rupi.",
+"Ndemẽ ra'y ogwatá tape rupi.",
 "Imẽ ra'y oñeno katu."
 ],
 traducao: [
@@ -7774,7 +7774,7 @@ audio: "assets/audios/filhos_todos.mp3",
 sentido_de: "Filhos (geral)",
 falante: "Ambos",
 exemplos: [
-"Txemembykwéry oho ka'aguýre.",
+"Txemembykwéry oho ka'agwýre.",
 "Ndemembykwéry oñembosarái katu.",
 "Imembykwéry ohendu mombe'u."
 ],
@@ -7946,7 +7946,7 @@ sentido_de: "Irmão do meio",
 falante: "Homem",
 exemplos: [
 "Txerewy mbyté ojapi ywyra.",
-"Nderewy mbyté oñemyatyrõ ka'aguy.",
+"Nderewy mbyté oñemyatyrõ ka'agwy.",
 "Irewy mbyté ogueru yvoty."
 ],
 traducao: [
@@ -7984,7 +7984,7 @@ sentido_de: "Tio",
 falante: "Ambos",
 exemplos: [
 "Txetuty ogueru pirá guasu.",
-"Ndetuty oho ka'aguy mbyte.",
+"Ndetuty oho ka'agwy mbyte.",
 "Ituty omombe'u yma guare."
 ],
 traducao: [
@@ -8042,7 +8042,7 @@ falante: "Ambos",
 exemplos: [
 "Txendy waíwaí oñemu tẽtã-py.",
 "Ndendy waíwaí ombo'e iryke’y.",
-"Indy waíwaí oho ka'aguýre."
+"Indy waíwaí oho ka'agwýre."
 ],
 traducao: [
 "Minha prima vende na cidade.",
