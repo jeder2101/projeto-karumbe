@@ -1,5 +1,4 @@
 const DICIONARIO = [
-   
     {
         palavra: "ko'ẽ porã",
         tipo: "expressão",
@@ -56,7 +55,7 @@ const DICIONARIO = [
         ],
         traducao: [
             "Boa noite!",
-            "Boa noite!vocês estão bem?",
+            "Boa noite! vocês estão bem?",
             "Estamos bem! E vocês?",
             "Estamos bem também!"
         ]
@@ -82,7 +81,7 @@ const DICIONARIO = [
             "A sombra está na água."
         ]
     },
-   {
+    {
         palavra: "koty",
         tipo: "pós-posição / direcional",
         categoria: "Gramática / Pós-posições",
@@ -162,7 +161,7 @@ const DICIONARIO = [
             "Fui com nós."
         ]
     },
-   {
+    {
         palavra: "Áama",
         tipo: "expressão",
         categoria: "Expressões",
@@ -187,7 +186,7 @@ const DICIONARIO = [
         palavra: "Adiwyma",
         tipo: "expressão",
         categoria: "Expressões",
-        significado: "Vou embora,tchau.",
+        significado: "Vou embora, tchau.",
         audio: "assets/audios/adiwyma.mp3",
         sentido_de: "Aviso de partida ou retorno para casa",
         falante: "1ª pessoa (Eu)",
@@ -250,7 +249,7 @@ const DICIONARIO = [
         palavra: "Adjapomá",
         tipo: "verbo",
         categoria: "Verbos",
-        significado: "Já fiz ; já realizei; já construí.",
+        significado: "Já fiz; já realizei; já construí.",
         audio: "assets/audios/adjapoma.mp3",
         sentido_de: "Trabalho ou tarefa recém-concluída",
         falante: "1ª pessoa (Eu)",
@@ -271,7 +270,7 @@ const DICIONARIO = [
         palavra: "Adjú",
         tipo: "verbo",
         categoria: "Verbos",
-        significado: "Eu venho ; estou vindo ; vim.",
+        significado: "Eu venho; estou vindo; vim.",
         audio: "assets/audios/adju.mp3",
         sentido_de: "Chegada de um local até onde se fala",
         falante: "1ª pessoa (Eu)",
@@ -551,7 +550,23 @@ const DICIONARIO = [
             "Fui com você."
         ]
     },
-    {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   {
         palavra: "Ai",
         tipo: "adjetivo",
         categoria: "Expressões",
@@ -563,7 +578,7 @@ const DICIONARIO = [
             "Ai ywyra'á'.",
             "Ko narã ai.",
             "Aetxa ywyra'á'ai.",
-            "Ywyra´a ndaekoi ai."
+            "Ywyra'á ndaekoi ai."
         ],
         traducao: [
             "A fruta é azeda.",
@@ -583,7 +598,7 @@ const DICIONARIO = [
         exemplos: [
             "Areko raĩ.",
             "Aetxa txeraĩ.",
-            "txeru reko raĩ.",
+            "Txeru reko raĩ.",
             "Raĩ iporã."
         ],
         traducao: [
@@ -786,7 +801,7 @@ const DICIONARIO = [
         palavra: "Aku",
         tipo: "adjetivo",
         categoria: "Expressões",
-        significado: "Quente",
+        significado: "Quente.",
         audio: "assets/audios/aku.mp3",
         sentido_de: "Temperatura elevada de alimentos, água, fogo ou clima",
         falante: "Uso geral",
@@ -894,11 +909,11 @@ const DICIONARIO = [
         significado: "Eu prego; eu fixo.",
         audio: "assets/audios/ambota.mp3",
         sentido_de: "Ação de fixar, pregar ou pregar algo em uma superfície",
-        falante: "Uso geral (1ª pessoa)",
+        falante: "1ª pessoa (Eu)",
         exemplos: [
             "Ambota óga-py.",
             "Ambota ywyra-re.",
-            "Ambota õké-re.",
+            "Ambota okẽ-re.",
             "Adjapo rire, ambota."
         ],
         traducao: [
@@ -915,7 +930,7 @@ const DICIONARIO = [
         significado: "Eu dou brilho; eu lustro.",
         audio: "assets/audios/ambowera.mp3",
         sentido_de: "Ação de polir, lustrar ou fazer algo brilhar",
-        falante: "Uso geral (1ª pessoa)",
+        falante: "1ª pessoa (Eu)",
         exemplos: [
             "Ambowera adjaka.",
             "Ambowera okẽ.",
@@ -951,7 +966,7 @@ const DICIONARIO = [
         ]
     },
     {
-        palavra: "Angapy yiry",
+        palavra: "Angapy'yiry",
         tipo: "verbo",
         categoria: "Verbos",
         significado: "Preocupar-se; ficar preocupado.",
@@ -1020,7 +1035,7 @@ const DICIONARIO = [
         significado: "Eu aprendo.",
         audio: "assets/audios/animboe.mp3",
         sentido_de: "Processo de aprendizado ou estudo",
-        falante: "Uso geral (1ª pessoa)",
+        falante: "1ª pessoa (Eu)",
         exemplos: [
             "Animbo'é Nhandewa nhe'ẽ.",
             "Animbo'é txesy-rewé.",
@@ -1043,9 +1058,9 @@ const DICIONARIO = [
         sentido_de: "Órgão anatômico da boca ou idioma/fala",
         falante: "Uso geral",
         exemplos: [
-            "Pekũ oĩ txedjuru-py.",
+            "Pẽkũ oĩ txedjuru-py.",
             "Animbo'é Nhandewa pẽkũ.",
-            "Aiywú djuru-re, pẽkũ-rewé awei..",
+            "Aiywú djuru-re, pẽkũ-rewé awei.",
             "Pẽkũ porã."
         ],
         traducao: [
@@ -1055,7 +1070,26 @@ const DICIONARIO = [
             "Língua bonita."
         ]
     },
-    {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   {
         palavra: "Apitxa",
         tipo: "substantivo",
         categoria: "Expressões",
@@ -1269,7 +1303,7 @@ const DICIONARIO = [
         palavra: "Araĩ ete",
         tipo: "expressão",
         categoria: "Expressões",
-        significao: "Assim mesmo; exatamente assim.",
+        significado: "Assim mesmo; exatamente assim.",
         audio: "assets/audios/arai_ete.mp3",
         sentido_de: "Confirmação e afirmação exata ou precisa",
         falante: "Uso geral",
@@ -1286,7 +1320,6 @@ const DICIONARIO = [
             "Assim mesmo está bom."
         ]
     },
-    
     {
         palavra: "Arãigwé",
         tipo: "verbo",
@@ -1599,7 +1632,22 @@ const DICIONARIO = [
             "Eu caminho pela terra.",
             "Eu falo pela boca."
         ]
-    },
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
     {
         palavra: "-arõ / ári dependendo da aldeia.",
         tipo: "sufixo",
@@ -2271,7 +2319,33 @@ const DICIONARIO = [
             "Homem bonito.",
             "O homem faz a casa."
         ]
-    },
+    }, 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       mude aqui!!!!!
+
+
+
+       
     {
         palavra: "Awakwe'i",
         tipo: "substantivo",
@@ -7544,6 +7618,472 @@ const DICIONARIO = [
         traducao: [
             "A minhoca está na terra úmida.",
             "Depois da chuva a minhoca sai debaixo da terra."
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+   {
+        palavra: "Txerembirekó radjy",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filha da minha esposa / enteada",
+        audio: "assets/audios/enteada.mp3",
+        sentido_de: "Enteada",
+        falante: "Homem",
+        exemplos: [
+            "Txerembirekó radjy oho ka'aguy-pe.",
+            "Nderembirekó radjy omopotĩ ta'anga.",
+            "Irembirekó radjy oñe'ẽ porã."
+        ],
+        traducao: [
+            "A filha da minha esposa foi para a mata.",
+            "Sua enteada limpa a casa.",
+            "A enteada dele/dela fala bem."
+        ]
+    },
+    {
+        palavra: "Txemẽ ra’y / memby",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filho do meu marido / enteado",
+        audio: "assets/audios/enteado.mp3",
+        sentido_de: "Enteado",
+        falante: "Mulher",
+        exemplos: [
+            "Txemẽ ra'y ojapo tembi'u.",
+            "Ndemẽ ra'y oguatá tape rupi.",
+            "Imẽ ra'y oñeno katu."
+        ],
+        traducao: [
+            "O enteado do meu marido faz a comida.",
+            "Seu enteado caminha pelo caminho.",
+            "O enteado dele/dela dorme bem."
+        ]
+    },
+    {
+        palavra: "Txememby",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filho ou filha (referindo-se à mãe)",
+        audio: "assets/audios/filho_mae.mp3",
+        sentido_de: "Filho / Filha (da mãe)",
+        falante: "Mãe",
+        exemplos: [
+            "Txememby ojeroky vy'a-pe.",
+            "Ndememby oñepytyvõ mbo'eha-pe.",
+            "Imemby ogueru y."
+        ],
+        traducao: [
+            "Meu filho / Minha filha dança na festa.",
+            "Seu filho / Sua filha ajuda na escola.",
+            "O filho / A filha dele/dela traz água."
+        ]
+    },
+    {
+        palavra: "Txera’y",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filho (referindo-se ao pai)",
+        audio: "assets/audios/filho_pai.mp3",
+        sentido_de: "Filho (do pai)",
+        falante: "Pai",
+        exemplos: [
+            "Txera'y oikuaa pirá mbyky.",
+            "Ndera'y ojapo yvyra.",
+            "Ira'y oñemoñarã."
+        ],
+        traducao: [
+            "Meu filho conhece os peixes pequenos.",
+            "Seu filho mexe na madeira.",
+            "O filho dele/dela está crescendo."
+        ]
+    },
+    {
+        palavra: "Txeradjy",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filha (referindo-se ao pai)",
+        audio: "assets/audios/filha_pai.mp3",
+        sentido_de: "Filha (do pai)",
+        falante: "Pai",
+        exemplos: [
+            "Txeradjy omoirũ imba'e.",
+            "Nderadjy oikuatia karai ñe'ẽ.",
+            "Iradjy omonde ao pyahu."
+        ],
+        traducao: [
+            "Minha filha acompanha sua mãe.",
+            "Sua filha escreve na língua.",
+            "A filha dele/dela veste roupa nova."
+        ]
+    },
+    {
+        palavra: "Txera’y rami",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filho de criação / como um filho",
+        audio: "assets/audios/filho_criacao.mp3",
+        sentido_de: "Filho de criação",
+        falante: "Ambos",
+        exemplos: [
+            "Txera'y rami ojogapo.",
+            "Ndera'y rami ohasa tape rupi.",
+            "Ira'y rami oñe'ẽ guaraníme."
+        ],
+        traducao: [
+            "Meu filho de criação constrói casa.",
+            "Seu filho de criação passa pelo caminho.",
+            "O filho de criação dele/dela fala em guarani."
+        ]
+    },
+    {
+        palavra: "Txeradjy rami",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Filha de criação / como uma filha",
+        audio: "assets/audios/filha_criacao.mp3",
+        sentido_de: "Filha de criação",
+        falante: "Ambos",
+        exemplos: [
+            "Txeradjy rami oñera'ã mbo'eha-pe.",
+            "Nderadjy rami ojapo ao.",
+            "Iradjy rami opurahéi porã."
+        ],
+        traducao: [
+            "Minha filha de criação estuda na escola.",
+            "Sua filha de criação faz roupa.",
+            "A filha de criação dele/dela canta bonito."
+        ]
+    },
+    {
+        palavra: "Txemembykwéry / Txera’ykwery / Txeradjykwery",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Todos os filhos (filho e filha)",
+        audio: "assets/audios/filhos_todos.mp3",
+        sentido_de: "Filhos (geral)",
+        falante: "Ambos",
+        exemplos: [
+            "Txemembykwéry oho ka'aguýre.",
+            "Ndemembykwéry oñembosarái katu.",
+            "Imembykwéry ohendu mombe'u."
+        ],
+        traducao: [
+            "Meus filhos vão para o meio da mata.",
+            "Seus filhos brincam bastante.",
+            "Os filhos dele/dela escutam a história."
+        ]
+    },
+    {
+        palavra: "Txemẽ",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Marido",
+        audio: "assets/audios/marido.mp3",
+        sentido_de: "Marido",
+        falante: "Mulher",
+        exemplos: [
+            "Txemẽ omba'apo yvy ro'ysã-pe.",
+            "Ndemẽ ojogua yvyra.",
+            "Imẽ ohecha guyra."
+        ],
+        traducao: [
+            "Meu marido trabalha na roça fria.",
+            "Seu marido compra madeira.",
+            "O marido dele/dela vê o pássaro."
+        ]
+    },
+    {
+        palavra: "Txemẽ-kwé",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Ex-marido",
+        audio: "assets/audios/ex_marido.mp3",
+        sentido_de: "Ex-marido",
+        falante: "Mulher",
+        exemplos: [
+            "Txemẽ-kwé oho mombyry.",
+            "Ndemẽ-kwé ojogua peteĩ teta.",
+            "Imẽ-kwé oñemoirũ ijoyke'ýpe."
+        ],
+        traducao: [
+            "Meu ex-marido foi para longe.",
+            "Seu ex-marido comprou uma casa.",
+            "O ex-marido dele/dela acompanha seu irmão."
+        ]
+    },
+    {
+        palavra: "Txerembirekó / Txeraytsy",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Esposa / Esposa (quando tem filhos)",
+        audio: "assets/audios/esposa.mp3",
+        sentido_de: "Esposa",
+        falante: "Homem",
+        exemplos: [
+            "Txerembirekó oñono tembi'u mesa ári.",
+            "Nderembirekó omityty yva.",
+            "Irembirekó oñe'ẽ karia'y ndive."
+        ],
+        traducao: [
+            "Minha esposa coloca a comida sobre a mesa.",
+            "Sua esposa colhe frutas.",
+            "A esposa dele/dela conversa com o rapaz."
+        ]
+    },
+    {
+        palavra: "Txerembirekó-kwé",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Ex-esposa",
+        audio: "assets/audios/ex_esposa.mp3",
+        sentido_de: "Ex-esposa",
+        falante: "Homem",
+        exemplos: [
+            "Txerembirekó-kwé oiko tape ambue-py.",
+            "Nderembirekó-kwé ojogua ao pyahu.",
+            "Irembirekó-kwé oñemoñe'ẽ."
+        ],
+        traducao: [
+            "Minha ex-esposa mora em outro caminho.",
+            "Sua ex-esposa comprou roupa nova.",
+            "A ex-esposa dele/dela está estudando."
+        ]
+    },
+    {
+        palavra: "Txerywy / Txekywyi",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Irmão mais novo / Irmãozinho",
+        audio: "assets/audios/irmao_mais_novo.mp3",
+        sentido_de: "Irmão mais novo",
+        falante: "Homem",
+        exemplos: [
+            "Txerywy oñembosarái y ykére.",
+            "Ndirywy ogueru yva.",
+            "Irywy oñeno tape ykére."
+        ],
+        traducao: [
+            "Meu irmão mais novo brinca perto da água.",
+            "Seu irmão mais novo traz frutas.",
+            "O irmão mais novo dele/dela deita perto do caminho."
+        ]
+    },
+    {
+        palavra: "Txeryke’y",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Irmão mais velho",
+        audio: "assets/audios/irmao_mais_velho.mp3",
+        sentido_de: "Irmão mais velho",
+        falante: "Homem",
+        exemplos: [
+            "Txeryke'y omba'apo yvy apére.",
+            "Ndiryke'y omoñepyrũ mbo'epy.",
+            "Iryke'y oho tãva guasu-pe."
+        ],
+        traducao: [
+            "Meu irmão mais velho trabalha na lavoura.",
+            "Seu irmão mais velho inicia o estudo.",
+            "O irmão mais velho dele/dela vai para a cidade grande."
+        ]
+    },
+    {
+        palavra: "Txindy / Txereindy",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Irmã mais nova",
+        audio: "assets/audios/irma_mais_nova.mp3",
+        sentido_de: "Irmã mais nova",
+        falante: "Homem",
+        exemplos: [
+            "Txindy omonde ao potĩ.",
+            "Ndindy ojapo avati.",
+            "Indy opurahéi ka'aru."
+        ],
+        traducao: [
+            "Minha irmã mais nova veste roupa limpa.",
+            "Sua irmã mais nova cultiva milho.",
+            "A irmã mais nova dele/dela canta à tarde."
+        ]
+    },
+    {
+        palavra: "Txekypy’y",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Irmã mais velha",
+        audio: "assets/audios/irma_mais_velha.mp3",
+        sentido_de: "Irmã mais velha",
+        falante: "Homem",
+        exemplos: [
+            "Txekypy'y ombo'e mitãkuña.",
+            "Ndekypy'y ojapo chipa.",
+            "Ikypy'y oiko peteĩ teta pyahu-pe."
+        ],
+        traducao: [
+            "Minha irmã mais velha ensina a menina.",
+            "Sua irmã mais velha faz chipa.",
+            "A irmã mais velha dele/dela mora em uma aldeia nova."
+        ]
+    },
+    {
+        palavra: "Txerewy mbyté",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Irmão do meio",
+        audio: "assets/audios/irmao_do_meio.mp3",
+        sentido_de: "Irmão do meio",
+        falante: "Homem",
+        exemplos: [
+            "Txerewy mbyté ojapi ywyra.",
+            "Nderewy mbyté oñemyatyrõ ka'aguy.",
+            "Irewy mbyté ogueru yvoty."
+        ],
+        traducao: [
+            "Meu irmão do meio corta a madeira.",
+            "Seu irmão do meio limpa a mata.",
+            "O irmão do meio dele/dela traz flor."
+        ]
+    },
+    {
+        palavra: "Txe txindy mbyté / Txereindy mbyté",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Irmã do meio",
+        audio: "assets/audios/irma_do_meio.mp3",
+        sentido_de: "Irmã do meio",
+        falante: "Homem",
+        exemplos: [
+            "Txereindy mbyté ojogapo yvy ári.",
+            "Ndereindy mbyté ombo'e ra'y.",
+            "Ireindy mbyté oñe'ẽ katu."
+        ],
+        traducao: [
+            "Minha irmã do meio constrói casa na terra.",
+            "Sua irmã do meio ensina o filho.",
+            "A irmã do meio dele/dela conversa bem."
+        ]
+    },
+    {
+        palavra: "Txetuty",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Tio (irmão do pai ou da mãe)",
+        audio: "assets/audios/tio.mp3",
+        sentido_de: "Tio",
+        falante: "Ambos",
+        exemplos: [
+            "Txetuty ogueru pirá guasu.",
+            "Ndetuty oho ka'aguy mbyte.",
+            "Ituty omombe'u yma guare."
+        ],
+        traducao: [
+            "Meu tio traz peixe grande.",
+            "Seu tio vai para o fundo da mata.",
+            "O tio dele/dela conta coisas antigas."
+        ]
+    },
+    {
+        palavra: "Txetsy’y",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Tia (irmã da mãe ou do pai)",
+        audio: "assets/audios/tia.mp3",
+        sentido_de: "Tia",
+        falante: "Ambos",
+        exemplos: [
+            "Txetsy'y ojapo ao guaraní.",
+            "Ndetsy'y omono'õ yva hyakuã.",
+            "Itsy'y opurahéi mbo'eha rupi."
+        ],
+        traducao: [
+            "Minha tia faz roupa guarani.",
+            "Sua tia colhe frutas cheirosas.",
+            "A tia dele/dela canta pela escola."
+        ]
+    },
+    {
+        palavra: "Txerywy waí-waí",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Primo (filho do tio/tia)",
+        audio: "assets/audios/primo.mp3",
+        sentido_de: "Primo",
+        falante: "Ambos",
+        exemplos: [
+            "Txerywy waí-waí oñembosarái katu.",
+            "Ndirywy waí-waí oho ysyry ykére.",
+            "Irywy waí-waí ojapo ta'anga."
+        ],
+        traducao: [
+            "Meu primo brinca bastante.",
+            "Seu primo vai perto do rio.",
+            "O primo dele/dela desenha."
+        ]
+    },
+    {
+        palavra: "Txendy waíwaí",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Prima (filha do tio/tia)",
+        audio: "assets/audios/prima.mp3",
+        sentido_de: "Prima",
+        falante: "Ambos",
+        exemplos: [
+            "Txendy waíwaí oñemu tãvape.",
+            "Ndendy waíwaí ombo'e ijoyke'y.",
+            "Indy waíwaí oho ka'aguýre."
+        ],
+        traducao: [
+            "Minha prima vende na cidade.",
+            "Sua prima ensina seu irmão.",
+            "A prima dele/dela vai para a mata."
+        ]
+    },
+    {
+        palavra: "Towadjá / Txerowadjá",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Cunhado",
+        audio: "assets/audios/cunhado.mp3",
+        sentido_de: "Cunhado",
+        falante: "Homem",
+        exemplos: [
+            "Txerowadjá ojapo yvyra rupa.",
+            "Nderowadjá omba'apo mbo'eha ape.",
+            "Irowadjá ogueru yva pyahu."
+        ],
+        traducao: [
+            "Meu cunhado faz cama de pau.",
+            "Seu cunhado trabalha na escola.",
+            "O cunhado dele/dela traz fruta nova."
+        ]
+    },
+    {
+        palavra: "Towadjá / Towatsá / Txerowadjá kunhã",
+        tipo: "substantivo",
+        categoria: "Família",
+        significado: "Cunhada",
+        audio: "assets/audios/cunhada.mp3",
+        sentido_de: "Cunhada",
+        falante: "Ambos",
+        exemplos: [
+            "Txerowadjá kunhã omichĩ tembi'u.",
+            "Nderowadjá kunhã omopotĩ teta.",
+            "Irowadjá kunhã oñe'ẽ guaraníme."
+        ],
+        traducao: [
+            "Minha cunhada prepara a comida.",
+            "Sua cunhada limpa a casa.",
+            "A cunhada dele/dela fala em guarani."
         ]
     }
     
