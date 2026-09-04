@@ -7375,7 +7375,7 @@ traducao: [
             "O gato fica no teto/cobertura da casa.",
             "O gato descansa aqui."
         ]
-    }
+    },
 
 
 
@@ -7744,7 +7744,7 @@ audio: "assets/audios/tarawe.mp3",
 sentido_de: "Inseto ortóptero sinantrópico.",
 falante: "Termo tradicional / Fauna",
 exemplos: [
-"Tarawé oñemi djape´a igwý-py ogapy py.",
+"Tarawé oñemi djape´a igwý-py ogapy pype.",
 "Pyhare re tarawé onhani ogapy pype."
 ],
 traducao: [
