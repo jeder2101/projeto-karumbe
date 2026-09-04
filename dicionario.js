@@ -4026,7 +4026,7 @@ traducao: [
 "Vem se esquentar aqui!",
 "É bom se esquentar no fogo de manhã."
 ]
-}
+},
 
 
 
@@ -4079,7 +4079,7 @@ traducao: [
 
 
 
-[
+
 {
 palavra: "djewy",
 tipo: "verbo",
@@ -7376,25 +7376,6 @@ traducao: [
             "O gato descansa aqui."
         ]
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[
 {
 palavra: "Amberé",
 tipo: "substantivo / animal",
