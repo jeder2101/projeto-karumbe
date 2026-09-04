@@ -5623,6 +5623,28 @@ traducao: [
 "Flor amarela."
 ]
 },
+
+{
+    palavra: "yby ramigwá",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Terra marrom.",
+    audio: "assets/audios/yby_ramigwa_marrom.mp3",
+    sentido_de: "Solo ou terra de coloração marrom",
+    falante: "Uso geral",
+    exemplos: [
+      "Oĩ yby ramigwá ka'agwy-pe.",
+      "Aetxa yby ramigwá.",
+      "Yby ramigwá iporã djaty-py."
+    ],
+    traducao: [
+      "Tem terra marrom na mata.",
+      "Eu vejo a terra marrom.",
+      "A terra marrom é boa para o plantio."
+    ]
+
+},
+
 {
 palavra: "Pytã",
 tipo: "adjetivo",
@@ -7331,7 +7353,7 @@ sentido_de: "Inseto parasita externo.",
 falante: "Termo tradicional / Fauna",
 exemplos: [
 "Ky oĩ avakue akã re.",
-"Oheka ky akã pyte."
+"Oheka ky akã mbyte."
 ],
 traducao: [
 "O piolho está na cabeça da pessoa.",
