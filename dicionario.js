@@ -1,4 +1,5 @@
 const DICIONARIO = [
+    
     {
         palavra: "ko'ẽ porã",
         tipo: "expressão",
@@ -119,6 +120,210 @@ const DICIONARIO = [
             "Experimente bem."
         ]
     },
+    {
+    palavra: "Djatsyteĩ",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Primeiro mês do ano.",
+    audio: "assets/audios/djatsytei.mp3",
+    sentido_de: "Designação temporal para o mês de janeiro",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsyteĩ oú koẽramo.",
+      "Amba'apo djatsyteĩ-py."
+    ],
+    traducao: [
+      "Janeiro chega logo.",
+      "Trabalho em janeiro."
+    ]
+  },
+  {
+    palavra: "Djatsykõe",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Segundo mês do ano.",
+    audio: "assets/audios/djatsykoe.mp3",
+    sentido_de: "Designação temporal para o mês de fevereiro",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsykõe oĩ oky.",
+      "Oetxa djatsykõe."
+    ],
+    traducao: [
+      "Fevereiro tem chuva.",
+      "Ele vê fevereiro."
+    ]
+  },
+  {
+    palavra: "Djatsyapy",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Terceiro mês do ano.",
+    audio: "assets/audios/djatsyapy.mp3",
+    sentido_de: "Designação temporal para o mês de março",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsyapy omoñepyrũ nhanhembo´eaty.",
+      "Oho djatsyapy-py."
+    ],
+    traducao: [
+      "Março inicia a escola.",
+      "Vai em março."
+    ]
+  },
+  {
+    palavra: "Djatsyrundy",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Quarto mês do ano.",
+    audio: "assets/audios/djatsyrundy.mp3",
+    sentido_de: "Designação temporal para o mês de abril",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsyrundy iporã.",
+      "Amba'apo djatsyrundy-py."
+    ],
+    traducao: [
+      "Abril é bom.",
+      "Trabalho em abril."
+    ]
+  },
+  {
+    palavra: "Djatsypó",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Quinto mês do ano.",
+    audio: "assets/audios/djatsypo.mp3",
+    sentido_de: "Designação temporal para o mês de maio",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypó ro'ysã oú.",
+      "Aho djatsypó-py."
+    ],
+    traducao: [
+      "Maio o frio chega.",
+      "Vou em maio."
+    ]
+  },
+  {
+    palavra: "Djatsypoteĩ",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Sexto mês do ano.",
+    audio: "assets/audios/djatsypotei.mp3",
+    sentido_de: "Designação temporal para o mês de junho",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypoteĩ oĩ vy'a.",
+      "Oñeno djatsypoteĩ-py."
+    ],
+    traducao: [
+      "Junho tem festa.",
+      "Dorme em junho."
+    ]
+  },
+  {
+    palavra: "Djatsypokõe",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Sétimo mês do ano.",
+    audio: "assets/audios/djatsypokoe.mp3",
+    sentido_de: "Designação temporal para o mês de julho",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypokõe ro'y etei.",
+      "Oetxa djatsypokõe."
+    ],
+    traducao: [
+      "Julho é muito frio.",
+      "Ele vê julho."
+    ]
+  },
+  {
+    palavra: "Djatsypoapy",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Oitavo mês do ano.",
+    audio: "assets/audios/djatsypoapy.mp3",
+    sentido_de: "Designação temporal para o mês de agosto",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypoapy ywytu owewe.",
+      "Amba'apo djatsypoapy-py."
+    ],
+    traducao: [
+      "Agosto o vento sopra.",
+      "Trabalho em agosto."
+    ]
+  },
+  {
+    palavra: "Djatsyporundy",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Nono mês do ano.",
+    audio: "assets/audios/djatsyporundy.mp3",
+    sentido_de: "Designação temporal para o mês de setembro",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsyporundy ywoty opẽ.",
+      "Oho djatsyporundy-py."
+    ],
+    traducao: [
+      "Setembro a flor desabrocha.",
+      "Vai em setembro."
+    ]
+  },
+  {
+    palavra: "Djatsypá",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Décimo mês do ano.",
+    audio: "assets/audios/djatsypa.mp3",
+    sentido_de: "Designação temporal para o mês de outubro",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypá oipytywõ awati.",
+      "Aetxa djatsypá."
+    ],
+    traducao: [
+      "Outubro ajuda o milho.",
+      "Eu vejo outubro."
+    ]
+  },
+  {
+    palavra: "Djatsypateĩ",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Décimo primeiro mês do ano.",
+    audio: "assets/audios/djatsypatei.mp3",
+    sentido_de: "Designação temporal para o mês de novembro",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypateĩ oĩ ywa pyahu.",
+      "Amba'apo djatsypateĩ-py."
+    ],
+    traducao: [
+      "Novembro tem fruta nova.",
+      "Trabalho em novembro."
+    ]
+  },
+  {
+    palavra: "Djatsypakõe",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Décimo segundo mês do ano.",
+    audio: "assets/audios/djatsypakoe.mp3",
+    sentido_de: "Designação temporal para o mês de dezembro",
+    falante: "Uso geral",
+    exemplos: [
+      "Djatsypakõe ogwahẽ ary pyahu.",
+      "Oñemoĩ djatsypakõe."
+    ],
+    traducao: [
+      "Dezembro chega o ano novo.",
+      "Organiza-se em dezembro."
+    ]
+  },
     {
         palavra: "A'e",
         tipo: "pronome",
