@@ -214,7 +214,7 @@ const DICIONARIO = [
     sentido_de: "Designação temporal para o mês de junho",
     falante: "Uso geral",
     exemplos: [
-      "Djatsypoteĩ oĩ vy'a.",
+      "Djatsypoteĩ oĩ wy'a.",
       "Oñeno djatsypoteĩ-py."
     ],
     traducao: [
