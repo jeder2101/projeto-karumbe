@@ -4311,7 +4311,7 @@ sentido_de: "Mentira / Mentiroso",
 falante: "uso geral",
 exemplos: [
 "E'ĩ djauwutse!",
-"Heta ava ojapo djauwutse.",
+"Heta ava odjapo djauwutse.",
 "Ha'e pe-wa djauwutse."
 ],
 traducao: [
@@ -7313,7 +7313,7 @@ audio: "assets/audios/kawy.mp3",
 sentido_de: "Inseto voador dotado de ferrão e construtor de ninhos.",
 falante: "Termo tradicional / Fauna",
 exemplos: [
-"Kawy ojapo ipepo yvyra rakã re.",
+"Kawy odjapo ipepo yvyra rakã re.",
 "Etxakeke kawy re ogapy ru'ã re."
 ],
 traducao: [
@@ -7638,7 +7638,7 @@ audio: "assets/audios/enteado.mp3",
 sentido_de: "Enteado",
 falante: "Mulher",
 exemplos: [
-"Txemẽ ra'y ojapo tembi'u.",
+"Txemẽ ra'y odjapo tembi'u.",
 "Ndemẽ ra'y oguatá tape rupi.",
 "Imẽ ra'y oñeno katu."
 ],
@@ -7677,7 +7677,7 @@ sentido_de: "Filho (do pai)",
 falante: "Pai",
 exemplos: [
 "Txera'y oikuaa pirá mbyky.",
-"Ndera'y ojapo yvyra.",
+"Ndera'y odjapo yvyra.",
 "Ira'y oñemoñarã."
 ],
 traducao: [
@@ -7734,7 +7734,7 @@ sentido_de: "Filha de criação",
 falante: "Ambos",
 exemplos: [
 "Txeradjy rami oñera'ã mbo'eha-pe.",
-"Nderadjy rami ojapo ao.",
+"Nderadjy rami odjapo ao.",
 "Iradjy rami opurahéi porã."
 ],
 traducao: [
@@ -7886,7 +7886,7 @@ sentido_de: "Irmã mais nova",
 falante: "Homem",
 exemplos: [
 "Txindy omonde ao potĩ.",
-"Ndindy ojapo avati.",
+"Ndindy odjapo avati.",
 "Indy opurahéi ka'aru."
 ],
 traducao: [
@@ -7905,7 +7905,7 @@ sentido_de: "Irmã mais velha",
 falante: "Homem",
 exemplos: [
 "Txekypy'y ombo'e mitãkuña.",
-"Ndekypy'y ojapo chipa.",
+"Ndekypy'y odjapo chipa.",
 "Ikypy'y oiko peteĩ teta pyahu-pe."
 ],
 traducao: [
