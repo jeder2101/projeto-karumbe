@@ -773,3 +773,18 @@ body {
 .botao-voltar:hover {
     background: #a66a35;
 }
+/* CARTÃO HISTÓRIA - MARROM */
+.grupo-cartoes-especiais .cat-laranja {
+    background: #7b4b1f !important;
+    border: 1px solid #5d3518 !important;
+}
+
+/* LINGUAGEM DE RUA - VERMELHO */
+.grupo-cartoes-especiais .cat-vermelha {
+    background: linear-gradient(
+        135deg,
+        #b71c1c,
+        #d32f2f
+    ) !important;
+    border: 1px solid #8b0000 !important;
+}
