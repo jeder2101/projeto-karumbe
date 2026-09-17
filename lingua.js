@@ -5,45 +5,56 @@
 
 const HISTORIAS_LINGUA = [
 
-  {
+ 
+{
     id: 1,
     categoria: "Apresentação",
     periodo: "Introdução",
     titulo: "A língua é memória, identidade e transformação",
 
     resumo:
-      "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
+        "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
 
     conteudo: `
-A língua Guarani Nhandewa faz parte da história, da memória e da identidade de seu povo.
+A língua Nhandewa-Guarani não é apenas um conjunto de palavras.
+Ela carrega conhecimentos, histórias, relações familiares,
+espiritualidade, modos de viver e formas de compreender o mundo.
 
-Ela não é apenas um conjunto de palavras. Por meio da língua são transmitidos conhecimentos, histórias, formas de compreender o mundo, relações familiares, conhecimentos sobre a natureza e ensinamentos recebidos das gerações anteriores.
+A língua é transmitida entre gerações e pode apresentar
+variações de pronúncia, grafia, estrutura e significado.
 
-A língua também está em transformação. As palavras, os sons e algumas formas de expressão podem mudar ao longo do tempo, especialmente quando diferentes gerações entram em contato com novas situações históricas, sociais e culturais.
+Os registros históricos e os estudos linguísticos ajudam
+a compreender aspectos da língua, mas devem ser analisados
+considerando a comunidade, o período e o contexto em que
+foram produzidos.
 
-Estudar essas transformações não significa considerar uma forma da língua melhor ou pior que outra. Significa compreender a trajetória da língua e reconhecer os conhecimentos preservados pelos seus falantes.
+O trabalho de Consuelo de Paiva Godinho Costa contribui
+para o estudo da fonologia do Nhandewa-Guarani, incluindo
+a análise dos sons e de fenômenos relacionados à nasalidade.
 
-No caso do Guarani Nhandewa, a oralidade possui grande importância. Os registros escritos, as pesquisas linguísticas e os materiais produzidos pelas próprias comunidades também podem contribuir para o fortalecimento da língua.
+O Projeto Karumbé reúne materiais, referências e reflexões
+com o objetivo de apoiar a pesquisa, o ensino e a continuidade
+da língua Guarani Nhandewa.
 
-Conhecer a história da língua é, portanto, uma maneira de valorizar a memória e contribuir para sua continuidade.
-    `,
+A língua permanece viva por meio dos seus falantes,
+dos conhecimentos dos mais velhos, dos professores,
+das crianças e das novas gerações.
+`,
 
     tipo: "documentado",
-
-    fonte:
-      "Registros linguísticos, estudos acadêmicos e conhecimentos transmitidos pelos falantes da língua Guarani Nhandewa.",
+    fonte: "Projeto Karumbé e estudos linguísticos do Nhandewa-Guarani",
 
     links: [
-      {
-        titulo: "Museu Nacional dos Povos Indígenas",
-        url: "https://museudoindio.gov.br/"
-      },
-      {
-        titulo: "LIAMES – Línguas Indígenas Americanas",
-        url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames"
-      }
+        {
+            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        }
     ]
-  },
+},
 
   {
     id: 2,
