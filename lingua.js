@@ -478,71 +478,99 @@ function abrirHistoria(id) {
   }
 
   const modal = document.getElementById("modal-historia");
+  const conteudo = document.getElementById("conteudo-historia");
 
-  if (!modal) {
-    console.warn("Elemento #modal-historia não encontrado.");
+  if (!modal || !conteudo) {
+    console.warn("Elementos do modal não encontrados.");
     return;
   }
 
-  const titulo = document.getElementById("titulo-modal-historia");
-  const categoria = document.getElementById("categoria-modal-historia");
-  const periodo = document.getElementById("periodo-modal-historia");
-  const tipo = document.getElementById("tipo-modal-historia");
-  const conteudo = document.getElementById("conteudo-modal-historia");
-  const fonte = document.getElementById("fonte-modal-historia");
-  const links = document.getElementById("links-modal-historia");
+  const linksHTML =
+    item.links && item.links.length
+      ? `
+        <div class="historia-fonte">
 
-  if (titulo) {
-    titulo.textContent = item.titulo;
-  }
+          <strong>Links e referências:</strong>
 
-  if (categoria) {
-    categoria.textContent = item.categoria;
-  }
+          <div style="margin-top: 10px;">
 
-  if (periodo) {
-    periodo.textContent = item.periodo;
-  }
+            ${item.links.map(link => `
+              <p>
+                <a
+                  href="${escaparHTML(link.url)}"
+                  target="_blank"
+                  rel="noopener noreferrer">
 
-  if (tipo) {
-    tipo.textContent = item.tipo;
-  }
+                  ${escaparHTML(link.titulo)}
 
-  if (conteudo) {
-    conteudo.innerHTML = formatarConteudo(item.conteudo);
-  }
+                </a>
+              </p>
+            `).join("")}
 
-  if (fonte) {
-    fonte.textContent = item.fonte || "";
-  }
+          </div>
 
-  if (links) {
+        </div>
+      `
+      : "";
 
-    if (item.links && item.links.length) {
+  conteudo.innerHTML = `
 
-      links.innerHTML = item.links.map(link => `
-        <a
-          href="${escaparHTML(link.url)}"
-          target="_blank"
-          rel="noopener noreferrer">
+    <span class="historia-categoria">
+      ${escaparHTML(item.categoria)}
+    </span>
 
-          ${escaparHTML(link.titulo)}
+    <h2>
+      ${escaparHTML(item.titulo)}
+    </h2>
 
-        </a>
-      `).join("");
+    <div class="historia-meta">
 
-    } else {
+      <span>
+        ${escaparHTML(item.periodo)}
+      </span>
 
-      links.innerHTML = "";
+      <span>
+        ${escaparHTML(item.tipo)}
+      </span>
 
-    }
-  }
+    </div>
+
+    <p class="historia-resumo">
+
+      <strong>Resumo:</strong><br>
+
+      ${escaparHTML(item.resumo)}
+
+    </p>
+
+    <div class="texto-historia">
+
+      ${formatarConteudo(item.conteudo)}
+
+    </div>
+
+    <div class="historia-fonte">
+
+      <strong>Fonte:</strong>
+
+      <p>
+        ${escaparHTML(
+          item.fonte || "Fonte em estudo."
+        )}
+      </p>
+
+    </div>
+
+    ${linksHTML}
+
+  `;
 
   modal.classList.add("ativo");
 
+  modal.setAttribute("aria-hidden", "false");
+
   document.body.classList.add("modal-aberto");
 }
-
 
 /* =========================================================
    FECHAR HISTÓRIA
