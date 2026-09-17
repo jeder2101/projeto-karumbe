@@ -672,42 +672,61 @@ body {
 
 
 
-/* CARTÕES ESPECIAIS: LINGUAGEM DE RUA + HISTÓRIA */
+/* =====================================================
+   CARTÕES ESPECIAIS: LINGUAGEM DE RUA + HISTÓRIA
+===================================================== */
 
 .grupo-cartoes-especiais {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
     justify-content: center !important;
-    align-items: stretch;
-    gap: 10px;
+    align-items: stretch !important;
+    gap: 16px !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 20px auto !important;
     box-sizing: border-box;
 }
 
+/* CORRIGE O GRID-COLUMN QUE ESTAVA EMPILHANDO OS CARTÕES */
 .grupo-cartoes-especiais .container-card-restrito {
     display: block !important;
-    flex: 0 1 280px !important;
+    grid-column: auto !important;
     width: 280px !important;
-    min-height: 120px;
+    flex: 0 1 280px !important;
+    min-height: 120px !important;
     margin: 0 !important;
 }
 
+/* FORMATO DOS CARTÕES */
 .grupo-cartoes-especiais .card-categoria {
     display: flex !important;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
     width: 100% !important;
+    max-width: none !important;
     min-height: 120px !important;
     height: 120px !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
-/* ADAPTAÇÃO PARA TELAS PEQUENAS */
+/* COR DO CARTÃO HISTÓRIA */
+.grupo-cartoes-especiais .cat-laranja {
+    background: #a95527 !important;
+}
 
+/* COR DO CARTÃO LINGUAGEM DE RUA */
+.grupo-cartoes-especiais .cat-vermelha {
+    background: linear-gradient(
+        135deg,
+        #b71c1c,
+        #d32f2f
+    ) !important;
+}
+
+/* CELULAR */
 @media (max-width: 600px) {
 
     .grupo-cartoes-especiais {
@@ -716,12 +735,12 @@ body {
     }
 
     .grupo-cartoes-especiais .container-card-restrito {
+        grid-column: auto !important;
         width: 280px !important;
         flex: 0 0 auto !important;
     }
 
 }
-
 
 
 
