@@ -813,3 +813,17 @@ body {
 .historia-links a:hover {
     text-decoration: underline;
 }
+/* CORRIGIR TEXTO DOS CARTÕES DE HISTÓRIA */
+.card-historia p,
+.historia-card p,
+.historia-resumo,
+.resumo-historia {
+    color: #3b2a20 !important;
+}
+
+/* Resumo com melhor leitura */
+.card-historia .resumo,
+.historia-card .resumo {
+    color: #3b2a20 !important;
+    line-height: 1.6;
+}
