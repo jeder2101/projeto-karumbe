@@ -44,16 +44,20 @@ das crianças e das novas gerações.
     tipo: "documentado",
     fonte: "Projeto Karumbé e estudos linguísticos do Nhandewa-Guarani",
 
-    links: [
-        {
-            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
-        },
-        {
-            titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
-            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
-        }
-    ]
+  links: [
+    {
+        titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
+        url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+    },
+    {
+        titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
+        url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+    },
+    {
+        titulo: "Deslocamento dos nativos brasileiros – Mapa histórico dos deslocamentos Guarani",
+        url: "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/demarcacao-de-terras-indigenas/contestacoes-administrativas/RCID_Ygua_Pora___FINAL___abril_2023_compressed.pdf"
+    }
+]
 },
   {
     id: 2,
