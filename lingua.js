@@ -63,31 +63,71 @@ das crianças e das novas gerações.
     id: 2,
     categoria: "História da língua",
     periodo: "História",
-    titulo: "Do Guarani Antigo ao Nhandewa contemporâneo",
+    titulo: "A trajetória histórica da língua Guarani Nhandewa",
 
     resumo:
-      "A língua Guarani possui uma longa história e diferentes variedades foram desenvolvidas em diferentes territórios e comunidades.",
+        "A língua Guarani Nhandewa possui uma história relacionada aos povos Tupi-Guarani, aos territórios, às migrações e à transmissão de conhecimentos entre gerações.",
 
     conteudo: `
-As línguas da família Tupi-Guarani possuem uma história linguística muito antiga.
+A língua Guarani Nhandewa faz parte da história linguística
+dos povos Tupi-Guarani.
 
-Ao longo do tempo, diferentes povos e comunidades desenvolveram formas próprias de falar, preservando características comuns e também criando diferenças relacionadas às suas histórias e aos seus territórios.
+Sua trajetória deve ser compreendida considerando os
+territórios, as comunidades, os deslocamentos históricos
+e as relações estabelecidas entre diferentes povos.
 
-O Guarani Nhandewa contemporâneo deve ser compreendido dentro dessa história mais ampla, considerando também as experiências específicas dos povos que o mantiveram vivo.
+Os registros históricos e linguísticos permitem estudar
+aspectos da língua Guarani desde documentos antigos
+até as formas utilizadas pelas comunidades atualmente.
 
-As diferenças existentes entre variedades do Guarani não significam que uma seja uma forma "correta" e outra "errada". Elas fazem parte da diversidade linguística e das histórias de cada comunidade.
+Entre os registros importantes para os estudos históricos
+do Guarani está a obra de Antonio Ruiz de Montoya,
+incluindo o Tesoro de la lengua guarani, publicado em 1639.
 
-O estudo dessas diferenças permite compreender melhor as relações históricas entre as línguas e, ao mesmo tempo, valorizar as características próprias do Nhandewa.
-    `,
+Também existem pesquisas sobre os Guarani e os Apapocúva-Guarani,
+como os estudos de Curt Nimuendaju, publicados inicialmente
+em 1914.
+
+Esses documentos não devem ser interpretados isoladamente.
+É necessário considerar o período em que foram produzidos,
+os pesquisadores envolvidos e as comunidades descritas.
+
+Estudos contemporâneos investigam possíveis relações
+históricas e linguísticas entre os Guarani registrados
+no século XVII e as comunidades Nhandewa atuais.
+
+Essas relações fazem parte da pesquisa acadêmica e devem
+ser analisadas com atenção às evidências disponíveis.
+
+A língua Nhandewa-Guarani continua sendo transmitida
+por seus falantes e permanece relacionada à memória,
+à cultura, ao território e à identidade de seu povo.
+
+Conhecer a história da língua é também reconhecer
+a importância dos conhecimentos preservados pelas
+gerações anteriores e pelas comunidades atuais.
+`,
 
     tipo: "documentado",
 
     fonte:
-      "Estudos linguísticos sobre as línguas da família Tupi-Guarani e registros do Guarani Nhandewa.",
+        "Estudos históricos e linguísticos sobre o Guarani e o Nhandewa-Guarani, incluindo Montoya, Nimuendaju e pesquisas contemporâneas.",
 
-    links: []
-  },
-
+    links: [
+    {
+        titulo: "A língua apapokúva-guarani registrada por Nimuendajú – Revista Tellus",
+        url: "https://www.tellus.ucdb.br/tellus/article/view/34"
+    },
+    {
+        titulo: "Nhandewa-Guarani – Enciclopédia das Línguas no Brasil",
+        url: "https://labeurb.unicamp.br/elb/ler/272"
+    },
+    {
+        titulo: "Nimongaraí – O batismo ritual de Nimuendajú",
+        url: "https://periodicos.unb.br/index.php/ling/article/view/16219"
+    }
+]
+},
   {
     id: 3,
     categoria: "Transformações",
