@@ -611,37 +611,188 @@ Nhandewa-Guarani.
         }
     ]
 },
-  {
+  
+{
     id: 7,
     categoria: "Transformações",
-    periodo: "Morfologia",
+    periodo: "Morfologia histórica",
     titulo: "Desaparecimento ou redução de morfemas",
 
     resumo:
-      "Alguns elementos presentes em registros antigos podem apresentar redução, alteração ou menor frequência em formas contemporâneas.",
+        "Registros históricos do Guarani e do Nhandewa apresentam casos de redução de elementos finais ou internos das palavras. Essas mudanças devem ser analisadas considerando a estrutura morfológica e a variação entre falantes.",
 
     conteudo: `
-As palavras podem ser formadas por diferentes partes que possuem funções específicas.
+As palavras podem ser formadas por diferentes elementos
+chamados morfemas.
 
-Essas partes são chamadas de morfemas.
+Um morfema é uma unidade que participa da formação
+de uma palavra e pode contribuir para seu significado
+ou para sua função gramatical.
 
-Ao longo da história de uma língua, alguns morfemas podem sofrer alterações. Eles podem apresentar redução, mudança de forma ou passar a aparecer com menor frequência.
+Ao comparar registros históricos com formas
+contemporâneas, os pesquisadores podem observar
+a redução ou o desaparecimento de determinados
+elementos.
 
-A comparação entre registros antigos e atuais pode revelar essas transformações.
+Esse processo não deve ser interpretado
+automaticamente como perda de toda a palavra
+ou desaparecimento da língua.
 
-No Guarani Nhandewa, esse tipo de análise é importante para compreender como determinadas estruturas linguísticas foram modificadas ao longo do tempo.
+EXEMPLO 1 — REDUÇÃO DE ELEMENTOS FINAIS
 
-É necessário, entretanto, analisar cada caso individualmente antes de afirmar que determinado morfema desapareceu completamente.
-    `,
+Guarani antigo:
+mocañỹhara
+Significado: aquele que mata.
 
-    tipo: "em estudo",
+Forma registrada em outra variedade:
+mocañỹá.
+
+A comparação mostra uma diferença na parte final
+da palavra. É necessário observar quais elementos
+foram reduzidos e qual função desempenhavam
+na forma original.
+
+EXEMPLO 2 — OUTRA FORMA COM ELEMENTO FINAL
+
+Guarani antigo:
+mocañỹharera
+Significado: aquele que matava.
+
+Forma comparada:
+mocañỹaté.
+
+Esse exemplo é apresentado em estudo histórico
+como uma comparação entre formas e registros
+diferentes.
+
+A análise deve considerar o tempo verbal,
+a formação da palavra e o contexto da fonte.
+
+EXEMPLO 3 — REDUÇÃO NA FORMA DE NEGAÇÃO
+
+Forma registrada:
+eỹma ou ỹma
+Significado: negação ou sem.
+
+Forma comparada:
+eỹ.
+
+A comparação apresenta uma redução de elementos
+na forma registrada.
+
+No Nhandewa contemporâneo, a pesquisa também
+registra a forma eỹwa em determinados contextos.
+
+Essa diferença demonstra que a análise deve
+considerar a variedade linguística e o período
+do registro.
+
+EXEMPLO 4 — FORMAS RELACIONADAS À POSSE
+
+Guarani antigo:
+cherembireco
+Significado: minha mulher.
+
+Forma comparada:
+chimbirécó.
+
+A pesquisa discute a redução do elemento relacional
+-re- em determinados registros.
+
+Entretanto, no Nhandewa contemporâneo, foram
+registradas tanto uma forma quanto outra.
+
+Isso demonstra que uma forma reduzida não significa
+necessariamente que a forma mais longa deixou
+de existir entre todos os falantes.
+
+EXEMPLO 5 — OUTRA FORMA DE POSSE
+
+Guarani antigo:
+cheremỹmba
+Significado: meu animal doméstico.
+
+Forma comparada:
+chimỹmbá.
+
+A comparação permite observar mudanças
+na estrutura interna da palavra.
+
+Para estudar o processo, é importante identificar
+os elementos que formam a palavra e compreender
+a função de cada um.
+
+EXEMPLO 6 — RELAÇÃO COM O MORFEMA RELACIONAL
+
+O morfema relacional pode aparecer na estrutura
+de palavras que apresentam relações de posse
+ou dependência entre seus elementos.
+
+Em alguns registros, o elemento -re- não aparece
+na mesma posição ou forma.
+
+A análise histórica deve observar a composição
+da palavra e não apenas comparar letras isoladas.
+
+EXEMPLO 7 — REDUÇÃO NÃO É UMA REGRA ABSOLUTA
+
+Quando uma forma antiga apresenta menos elementos
+em um registro posterior, devemos investigar
+diferentes possibilidades:
+
+1. Redução ou apagamento de um morfema.
+2. Mudança na pronúncia.
+3. Diferença de escrita.
+4. Variação entre comunidades.
+5. Diferença na análise do pesquisador.
+6. Coexistência de formas longas e reduzidas.
+
+A existência de uma forma reduzida não significa
+que todos os falantes utilizem somente essa forma.
+
+EXEMPLO 8 — A LÍNGUA EM CONTINUIDADE
+
+As transformações morfológicas fazem parte
+da história das línguas.
+
+O Nhandewa-Guarani pode ser estudado por meio
+de registros antigos, pesquisas linguísticas
+e conhecimentos dos falantes atuais.
+
+A documentação é importante para compreender
+as mudanças, mas deve respeitar a diversidade
+de formas existentes na comunidade.
+
+O estudo dos morfemas ajuda a compreender
+a formação das palavras, a gramática e a história
+da língua Guarani Nhandewa.
+
+Os exemplos apresentados nesta seção são
+comparações documentadas em estudos linguísticos.
+A interpretação de cada forma deve ser conferida
+na fonte original e junto aos falantes da comunidade.
+`,
+
+    tipo: "documentado",
 
     fonte:
-      "Análise comparativa de registros históricos e contemporâneos do Guarani Nhandewa.",
+        "Consuelo de Paiva Godinho Costa, estudos sobre a fonologia e a morfologia histórica do Nhandewa-Guarani; exemplos de desaparecimento de morfemas átonos finais e intramorfemas registrados em tese consultada na Biblioteca da FUNAI.",
 
-    links: []
-  },
-
+    links: [
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Tese sobre fonologia e transformações do Nhandewa-Guarani – Biblioteca FUNAI",
+            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
+        },
+        {
+            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+        }
+    ]
+},
   {
     id: 8,
     categoria: "Transformações",
