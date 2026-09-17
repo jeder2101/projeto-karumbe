@@ -5,8 +5,7 @@
 
 const HISTORIAS_LINGUA = [
 
- 
-
+  
 {
     id: 1,
     categoria: "Apresentação",
@@ -56,9 +55,6 @@ das crianças e das novas gerações.
         }
     ]
 },
-
-
-
   {
     id: 2,
     categoria: "História da língua",
@@ -482,82 +478,67 @@ function abrirHistoria(id) {
   }
 
   const modal = document.getElementById("modal-historia");
-  const conteudo = document.getElementById("conteudo-historia");
 
-  if (!modal || !conteudo) {
-    console.warn("Elementos do modal não encontrados.");
+  if (!modal) {
+    console.warn("Elemento #modal-historia não encontrado.");
     return;
   }
 
-  const linksHTML =
-    item.links && item.links.length
-      ? `
-        <div class="historia-fonte">
-          <strong>Links e referências:</strong>
+  const titulo = document.getElementById("titulo-modal-historia");
+  const categoria = document.getElementById("categoria-modal-historia");
+  const periodo = document.getElementById("periodo-modal-historia");
+  const tipo = document.getElementById("tipo-modal-historia");
+  const conteudo = document.getElementById("conteudo-modal-historia");
+  const fonte = document.getElementById("fonte-modal-historia");
+  const links = document.getElementById("links-modal-historia");
 
-          <div style="margin-top:10px;">
-            ${item.links.map(link => `
-              <p>
-                <a
-                  href="${escaparHTML(link.url)}"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  ${escaparHTML(link.titulo)}
-                </a>
-              </p>
-            `).join("")}
-          </div>
-        </div>
-      `
-      : "";
+  if (titulo) {
+    titulo.textContent = item.titulo;
+  }
 
-  conteudo.innerHTML = `
+  if (categoria) {
+    categoria.textContent = item.categoria;
+  }
 
-    <span class="historia-categoria">
-      ${escaparHTML(item.categoria)}
-    </span>
+  if (periodo) {
+    periodo.textContent = item.periodo;
+  }
 
-    <h2>
-      ${escaparHTML(item.titulo)}
-    </h2>
+  if (tipo) {
+    tipo.textContent = item.tipo;
+  }
 
-    <div class="historia-meta">
+  if (conteudo) {
+    conteudo.innerHTML = formatarConteudo(item.conteudo);
+  }
 
-      <span>
-        ${escaparHTML(item.periodo)}
-      </span>
+  if (fonte) {
+    fonte.textContent = item.fonte || "";
+  }
 
-      <span>
-        ${escaparHTML(item.tipo)}
-      </span>
+  if (links) {
 
-    </div>
+    if (item.links && item.links.length) {
 
-    <p class="historia-resumo">
-      <strong>Resumo:</strong><br>
-      ${escaparHTML(item.resumo)}
-    </p>
+      links.innerHTML = item.links.map(link => `
+        <a
+          href="${escaparHTML(link.url)}"
+          target="_blank"
+          rel="noopener noreferrer">
 
-    <div class="texto-historia">
-      ${formatarConteudo(item.conteudo)}
-    </div>
+          ${escaparHTML(link.titulo)}
 
-    <div class="historia-fonte">
+        </a>
+      `).join("");
 
-      <strong>Fonte:</strong>
+    } else {
 
-      <p>
-        ${escaparHTML(item.fonte || "Fonte em estudo.")}
-      </p>
+      links.innerHTML = "";
 
-    </div>
-
-    ${linksHTML}
-
-  `;
+    }
+  }
 
   modal.classList.add("ativo");
-  modal.setAttribute("aria-hidden", "false");
 
   document.body.classList.add("modal-aberto");
 }
@@ -626,70 +607,16 @@ function filtrarHistorias(termo = "") {
 
 function filtrarCategoriaHistoria(categoria) {
 
-  if (
-    !categoria ||
-    categoria === "todas" ||
-    categoria === "Todas"
-  ) {
+  if (!categoria || categoria === "Todas") {
+
     mostrarHistorias(HISTORIAS_LINGUA);
+
     return;
   }
 
-  const resultado = HISTORIAS_LINGUA.filter(item => {
-
-    if (categoria === "História") {
-      return (
-        item.categoria === "História" ||
-        item.categoria === "História da língua"
-      );
-    }
-
-    if (categoria === "Sons") {
-      return (
-        item.categoria === "Sons" ||
-        (
-          item.categoria === "Transformações" &&
-          item.periodo === "Fonologia"
-        )
-      );
-    }
-
-    if (categoria === "Comparação") {
-      return (
-        item.categoria === "Comparação" ||
-        (
-          item.categoria === "Transformações" &&
-          item.periodo === "Fonologia"
-        )
-      );
-    }
-
-    if (categoria === "Gramática") {
-      return (
-        item.categoria === "Gramática" ||
-        (
-          item.categoria === "Transformações" &&
-          item.periodo === "Morfologia"
-        )
-      );
-    }
-
-    if (categoria === "Vocabulário") {
-      return (
-        item.categoria === "Vocabulário" ||
-        item.periodo === "Semântica"
-      );
-    }
-
-    if (categoria === "Futuro") {
-      return (
-        item.categoria === "Futuro" ||
-        item.categoria === "Continuidade"
-      );
-    }
-
-    return item.categoria === categoria;
-  });
+  const resultado = HISTORIAS_LINGUA.filter(
+    item => item.categoria === categoria
+  );
 
   mostrarHistorias(resultado);
 }
