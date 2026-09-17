@@ -354,34 +354,108 @@ da pesquisa linguística junto à comunidade.
     ]
 },
 
-  {
+
+{
     id: 5,
-    categoria: "Transformações",
-    periodo: "Fonologia",
+    categoria: "Sons",
+    periodo: "Nasalidade e escrita",
     titulo: "Mõ, mü e mu",
 
     resumo:
-      "As formas relacionadas a vogais e sons nasais podem apresentar variações nos registros históricos e contemporâneos.",
+        "As formas mõ, mü e mu permitem estudar as diferenças entre vogais nasais, vogais orais e as formas de representação dos sons na escrita Nhandewa-Guarani.",
 
     conteudo: `
-A nasalidade é uma característica importante nas línguas Guarani.
+A escrita de uma língua procura representar os sons
+utilizados pelos seus falantes.
 
-Ao comparar diferentes registros, podem aparecer formas como mõ, mü e mu relacionadas a diferentes momentos ou registros da língua.
+No Nhandewa-Guarani, a nasalidade é um aspecto
+importante da fonologia. Ela pode estar relacionada
+às vogais e às consoantes e deve ser analisada
+considerando a palavra e o contexto de pronúncia.
 
-Essas diferenças precisam ser observadas considerando a pronúncia, a escrita utilizada pelo pesquisador ou pela comunidade e o contexto em que a palavra aparece.
+As formas mõ, mü e mu podem ser utilizadas como
+ponto de partida para estudar diferenças de escrita,
+pronúncia e nasalidade.
 
-A escrita não representa necessariamente todos os detalhes da pronúncia.
+É necessário verificar, em cada registro, se a forma
+apresenta uma vogal nasal, uma vogal oral ou uma
+variação de representação.
 
-Por isso, o estudo da língua deve considerar tanto os registros escritos quanto a fala dos próprios falantes.
-    `,
+EXEMPLO 1 — A FORMA MÕ
+
+A letra ã, ẽ, ĩ, õ ou ũ pode representar uma vogal
+nasalizada, conforme o sistema de escrita utilizado.
+
+Na forma mõ, o sinal sobre a vogal õ indica que
+ela deve ser estudada como uma vogal nasal.
+
+A pronúncia deve ser conferida com falantes
+Nhandewa e com a fonte linguística correspondente.
+
+EXEMPLO 2 — A FORMA MÜ
+
+A forma mü deve ser analisada de acordo com
+o sistema ortográfico e a fonte em que aparece.
+
+O sinal utilizado sobre a vogal pode representar
+uma característica específica da escrita ou da
+pronúncia.
+
+Não devemos afirmar seu significado ou sua
+pronúncia exata sem consultar o registro original.
+
+EXEMPLO 3 — A FORMA MU
+
+A forma mu deve ser comparada com mõ e mü
+observando a escrita, a pronúncia e o significado.
+
+A ausência de um sinal de nasalidade na escrita
+não deve ser interpretada automaticamente como
+prova de que todas as realizações são iguais.
+
+É necessário verificar como a palavra é pronunciada
+na comunidade e como foi registrada na gramática
+ou no vocabulário.
+
+EXEMPLO 4 — A IMPORTÂNCIA DA NASALIDADE
+
+Os estudos de Consuelo de Paiva Godinho Costa
+descrevem fenômenos de nasalidade no
+Nhandewa-Guarani.
+
+A nasalidade pode espalhar-se entre segmentos
+em determinados contextos. Por isso, a análise
+de uma palavra deve considerar os sons vizinhos,
+a sílaba, o acento e a estrutura da palavra.
+
+A escrita é uma ferramenta importante para
+preservar e ensinar a língua, mas deve estar
+relacionada ao conhecimento dos falantes
+e às pesquisas linguísticas.
+
+As formas mõ, mü e mu devem ser confirmadas
+com a fonte específica utilizada pela comunidade.
+Este registro é apresentado como material
+de pesquisa e não como uma regra definitiva
+de pronúncia ou significado.
+`,
 
     tipo: "em estudo",
 
     fonte:
-      "Registros linguísticos e estudos sobre nasalidade e variação fonológica no Guarani Nhandewa.",
+        "Consuelo de Paiva Godinho Costa, Apyngwa rupigwa: nasalização em Nhandewa-Guarani (2007), e Fonologia do Nhandewa-Guarani Paulista-Paranaense.",
 
-    links: []
-  },
+    links: [
+        {
+            titulo: "Apyngwa rupigwa — Nasalização em Nhandewa-Guarani",
+            url: "https://repositorio.unicamp.br/acervo/detalhe/402302"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense — LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        }
+    ]
+},
 
   {
     id: 6,
