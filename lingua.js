@@ -943,35 +943,185 @@ confirmados na fonte Nhandewa consultada.
         }
     ]
 },
-  {
+ 
+{
     id: 9,
-    categoria: "Transformações",
-    periodo: "Morfologia",
+    categoria: "Gramática",
+    periodo: "Supino e orações subordinadas",
     titulo: "O uso do supino vy",
 
     resumo:
-      "A forma vy possui importância na descrição de determinadas construções verbais e pode ser observada em diferentes registros.",
+        "O supino vy aparece em registros do Nhandewa-Guarani associado aos verbos ó, ir, e u, vir. As construções foram traduzidas como quando ou enquanto, sendo importantes para o estudo das relações entre ações.",
 
     conteudo: `
-O elemento vy aparece em determinadas construções relacionadas aos verbos.
+O estudo das formas verbais permite compreender
+como a língua expressa ações, tempo e relações
+entre diferentes acontecimentos.
 
-O estudo de formas como essa permite compreender como a língua organiza suas ações, estados e relações entre palavras.
+O supino vy aparece em registros analisados
+por Consuelo de Paiva Godinho Costa.
 
-A comparação entre diferentes registros também pode revelar mudanças na frequência ou nas construções em que determinado elemento aparece.
+Nesses registros, a forma vy é associada
+principalmente aos verbos ó, ir, e u, vir.
 
-O conhecimento dessas estruturas contribui para o ensino da língua e para a documentação de suas características gramaticais.
+As construções foram traduzidas como
+"quando" ou "enquanto", introduzindo
+orações subordinadas.
 
-A descrição deve sempre considerar os dados registrados e o uso efetivo realizado pelos falantes.
-    `,
+EXEMPLO 1 — ENQUANTO ELE IA
+
+Forma registrada:
+
+Ojapó ma oóvy.
+
+Tradução apresentada:
+
+Enquanto ele ia e a fazia.
+
+A construção apresenta o verbo relacionado
+à ação de ir e a forma vy.
+
+O sentido da oração deve ser compreendido
+a partir do contexto completo da narrativa.
+
+EXEMPLO 2 — ENQUANTO ELA VINHA
+
+Forma registrada:
+
+Opó yvy áno oúvy.
+
+Tradução apresentada:
+
+Enquanto ela vinha pulando para a terra.
+
+Nesse exemplo, o verbo u, vir, aparece
+relacionado à forma vy.
+
+A tradução demonstra uma relação entre
+a ação de vir e outra ação descrita na frase.
+
+EXEMPLO 3 — QUANDO ELE ATRAVESSOU
+
+Forma registrada:
+
+Oaqá oóvy.
+
+Tradução apresentada:
+
+Quando ele atravessou.
+
+O exemplo mostra a forma oóvy associada
+ao verbo de movimento.
+
+A tradução como "quando" indica uma relação
+temporal entre acontecimentos.
+
+EXEMPLO 4 — QUANDO ELE VINHA DESCENDO
+
+Forma registrada:
+
+Oguejý oúvy.
+
+Tradução apresentada:
+
+Quando ele vinha descendo.
+
+A forma oúvy aparece relacionada ao verbo
+u, vir, em uma construção que descreve
+o movimento da personagem.
+
+EXEMPLO 5 — O VERBO Ó
+
+Ó significa "ir" no registro citado.
+
+A forma oóvy é analisada dentro de uma
+construção verbal relacionada à ação de ir.
+
+Para compreender sua função, é necessário
+observar o verbo, a forma vy e a oração
+completa.
+
+EXEMPLO 6 — O VERBO U
+
+U significa "vir" no registro citado.
+
+A forma oúvy aparece em construções
+relacionadas à ação de vir.
+
+A análise deve considerar a relação
+entre o verbo e o acontecimento descrito
+na oração.
+
+EXEMPLO 7 — QUANDO E ENQUANTO
+
+As traduções "quando" e "enquanto"
+ajudam a compreender a relação temporal
+apresentada nos exemplos.
+
+Entretanto, a tradução para o português
+não deve ser confundida automaticamente
+com a classificação gramatical original.
+
+A forma vy pode ser analisada como supino
+e também pode receber interpretação
+relacionada ao gerúndio, conforme o contexto.
+
+EXEMPLO 8 — A IMPORTÂNCIA DO CONTEXTO
+
+Para estudar o supino vy, devemos observar:
+
+1. O verbo ao qual a forma está associada.
+2. A estrutura completa da oração.
+3. A relação temporal entre as ações.
+4. A tradução utilizada pelo pesquisador.
+5. A narrativa de origem do exemplo.
+6. As interpretações gramaticais possíveis.
+
+Os exemplos citados foram registrados
+em uma narrativa escrita por Nimuendaju,
+com base em relatos de indígenas.
+
+Por isso, é importante considerar que
+a grafia e a tradução refletem o registro
+e a análise da fonte consultada.
+
+EXEMPLO 9 — PESQUISA E CONTINUIDADE
+
+O estudo do supino vy contribui para
+compreender as formas verbais e as relações
+entre ações na língua Nhandewa-Guarani.
+
+A pesquisa deve ser ampliada com a consulta
+às gramáticas, aos registros históricos
+e aos falantes da comunidade.
+
+Este conteúdo apresenta exemplos documentados
+para estudo linguístico. A função exata de vy
+deve ser analisada de acordo com cada contexto
+e não aplicada como regra absoluta a todas
+as construções da língua.
+`,
 
     tipo: "documentado",
 
     fonte:
-      "Registros gramaticais e estudos linguísticos sobre o Guarani Nhandewa.",
+        "Consuelo de Paiva Godinho Costa, estudo sobre a fonologia e a gramática do Nhandewa-Guarani, com análise de exemplos de Nimuendaju (1987:23).",
 
-    links: []
-  },
-
+    links: [
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani – Volume I",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
+        },
+        {
+            titulo: "Materiais de Gramática Nhandewa – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
+        }
+    ]
+},
   {
     id: 10,
     categoria: "Transformações",
@@ -1003,39 +1153,397 @@ O significado de uma palavra deve ser observado dentro do contexto em que ela é
     links: []
   },
 
-  {
+{
+    id: 10,
+    categoria: "Transformações",
+    periodo: "Semântica",
+    titulo: "As palavras podem adquirir novos significados",
+
+    resumo:
+        "As palavras podem ampliar, modificar ou apresentar diferentes significados ao longo do tempo e entre comunidades. O estudo semântico ajuda a compreender essas transformações na língua Nhandewa-Guarani.",
+
+    conteudo: `
+As palavras de uma língua estão relacionadas
+à história, à cultura e às experiências
+dos seus falantes.
+
+Com o passar do tempo, uma palavra pode
+adquirir novos significados, ampliar seu uso
+ou apresentar sentidos diferentes conforme
+a comunidade e o contexto.
+
+Esse processo é chamado de mudança semântica.
+
+A mudança semântica deve ser estudada
+com atenção, pois uma mesma palavra pode
+apresentar mais de um significado.
+
+EXEMPLO 1 — A PALAVRA NHE’Ẽ
+
+A palavra nhe’ẽ é utilizada em diferentes
+contextos nas línguas Guarani.
+
+Em registros sobre os Guarani, ela pode
+ser relacionada a sentidos como espírito,
+ser, vida, palavra, fala ou som.
+
+Esses significados não devem ser tratados
+como uma única tradução obrigatória.
+
+É necessário observar a comunidade,
+a situação de uso e a interpretação
+dos falantes.
+
+EXEMPLO 2 — A PALAVRA AYWU
+
+A palavra aywu também aparece em descrições
+relacionadas aos sentidos de fala, palavra
+e expressão.
+
+Em diferentes contextos Guarani, a palavra
+pode apresentar sentidos específicos.
+
+A comparação entre os usos ajuda a estudar
+a relação entre língua, pensamento e cultura.
+
+EXEMPLO 3 — UMA PALAVRA E VÁRIOS SENTIDOS
+
+Uma palavra pode apresentar:
+
+1. Um significado relacionado à vida cotidiana.
+2. Um significado relacionado à espiritualidade.
+3. Um sentido utilizado em narrativas.
+4. Um uso específico em uma comunidade.
+5. Um significado ampliado ao longo do tempo.
+
+A existência de vários sentidos não significa
+que a palavra esteja sendo utilizada
+incorretamente.
+
+EXEMPLO 4 — MUDANÇA DE SIGNIFICADO
+
+Uma palavra pode começar sendo utilizada
+em uma situação específica e, posteriormente,
+passar a ser utilizada em outros contextos.
+
+Por exemplo, uma palavra relacionada
+à fala pode também ser estudada em contextos
+relacionados à palavra, ao conhecimento
+ou à espiritualidade.
+
+A relação exata entre esses sentidos deve
+ser confirmada por registros linguísticos
+e pelos conhecimentos da comunidade.
+
+EXEMPLO 5 — DIFERENÇAS ENTRE COMUNIDADES
+
+Duas comunidades podem utilizar uma palavra
+semelhante, mas atribuir-lhe sentidos
+diferentes.
+
+Essas diferenças podem estar relacionadas
+à história, à cultura, à pronúncia,
+à gramática e às experiências dos falantes.
+
+Por isso, não devemos substituir
+automaticamente o significado de uma palavra
+de uma variedade por outra.
+
+EXEMPLO 6 — AMPLIAÇÃO DO SIGNIFICADO
+
+Uma palavra pode apresentar um significado
+mais amplo do que aquele encontrado
+em registros antigos.
+
+Esse processo pode ocorrer quando novos
+contextos de uso são incorporados à língua.
+
+Para confirmar uma ampliação semântica,
+é necessário comparar documentos de períodos
+diferentes e verificar os usos atuais.
+
+EXEMPLO 7 — A IMPORTÂNCIA DO CONTEXTO
+
+Para compreender o significado de uma palavra,
+devemos observar:
+
+1. A frase completa.
+2. A situação em que foi utilizada.
+3. A comunidade e a variedade linguística.
+4. O período do registro.
+5. A pronúncia.
+6. A explicação dos falantes.
+7. A fonte consultada.
+
+Uma tradução isolada pode não apresentar
+todos os sentidos possíveis de uma palavra.
+
+EXEMPLO 8 — A LÍNGUA EM TRANSFORMAÇÃO
+
+As mudanças de significado fazem parte
+da história das línguas.
+
+O Nhandewa-Guarani continua sendo transmitido
+por meio da oralidade, dos conhecimentos
+dos mais velhos, dos professores e das novas
+gerações.
+
+Registrar os diferentes significados contribui
+para fortalecer o ensino, a pesquisa
+e a continuidade da língua.
+
+Este conteúdo apresenta possibilidades
+de estudo da mudança semântica.
+As alterações específicas de significado
+devem ser confirmadas por meio de fontes
+históricas e da pesquisa com os falantes
+Nhandewa.
+`,
+
+    tipo: "em estudo",
+
+    fonte:
+        "Sandra Benites, Nhe’ẽ para os Guarani (Nhandewa e Mbya), e estudos linguísticos sobre variação semântica e diversidade de sentidos nas línguas Guarani.",
+
+    links: [
+        {
+            titulo: "Nhe’ẽ para os Guarani (Nhandewa e Mbya)",
+            url: "https://35.bienal.org.br/nhee-para-os-guarani-nhandewa-e-mbya/"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        }
+    ]
+},
+  
+{
     id: 11,
     categoria: "Continuidade",
-    periodo: "Atualidade",
+    periodo: "Revitalização linguística",
     titulo: "A revitalização e a continuidade da língua",
 
     resumo:
-      "A continuidade da língua depende da transmissão entre gerações, do uso cotidiano, da educação, da documentação e das iniciativas das próprias comunidades.",
+        "A revitalização da língua Nhandewa-Guarani envolve o trabalho das comunidades, dos professores, dos mais velhos e das novas gerações. A produção de materiais didáticos fortalece o ensino, a escrita e a continuidade dos conhecimentos tradicionais.",
 
     conteudo: `
-Uma língua permanece viva quando continua sendo utilizada e transmitida.
+A língua Nhandewa-Guarani é parte da história,
+da identidade, dos conhecimentos e da vida
+das comunidades.
 
-A transmissão entre gerações é fundamental para que crianças e jovens possam aprender a língua e utilizá-la em diferentes situações.
+A revitalização linguística é um processo
+que busca fortalecer o uso, o ensino,
+a transmissão e a continuidade da língua
+entre as gerações.
 
-A escola também pode contribuir para esse processo quando valoriza os conhecimentos da comunidade, promove o uso da língua e trabalha com materiais produzidos a partir da realidade dos próprios estudantes.
+Esse trabalho acontece por meio da participação
+dos falantes, dos mais velhos, dos professores,
+das crianças, dos jovens e das famílias.
 
-A documentação linguística, os registros escritos, os materiais didáticos, os dicionários, as gravações e os projetos comunitários também podem contribuir para a continuidade.
+A língua não deve ser compreendida apenas
+como uma disciplina escolar. Ela também
+está presente nas relações familiares,
+nas histórias, nos cantos, na espiritualidade
+e nas atividades cotidianas.
 
-No entanto, a revitalização não depende somente de livros ou documentos.
+EXEMPLO 1 — A TRANSMISSÃO ENTRE GERAÇÕES
 
-Ela acontece principalmente quando a língua continua sendo falada, ensinada, aprendida e utilizada pelos próprios falantes.
+Os mais velhos possuem conhecimentos
+importantes sobre a língua, a história
+e os costumes da comunidade.
 
-A continuidade do Guarani Nhandewa está relacionada à memória, à identidade, ao território, à educação e às novas gerações.
-    `,
+Quando compartilham seus conhecimentos
+com as crianças e os jovens, contribuem
+para a continuidade da língua.
+
+A transmissão pode acontecer por meio
+de conversas, narrativas, cantos,
+atividades culturais e convivência familiar.
+
+EXEMPLO 2 — A LÍNGUA NA ESCOLA
+
+A escola indígena pode contribuir
+para o fortalecimento da língua Nhandewa
+por meio de aulas, pesquisas e atividades
+relacionadas à cultura da comunidade.
+
+O ensino da língua deve valorizar
+os conhecimentos dos falantes e considerar
+as formas de falar e escrever utilizadas
+pela comunidade.
+
+Os materiais didáticos podem auxiliar
+os professores na organização das aulas
+e no desenvolvimento da escrita.
+
+EXEMPLO 3 — AS OFICINAS DE GRAMÁTICA
+
+O Projeto Gramática Pedagógica
+do Nhandewa-Guarani reuniu falantes,
+professores, pesquisadores e instituições
+em atividades de estudo da língua.
+
+As oficinas realizadas na Aldeia Nimuendajú
+contribuíram para a produção de materiais
+de gramática e para a reflexão sobre
+a escrita e o funcionamento da língua.
+
+Esse trabalho demonstra a importância
+da participação das comunidades
+na produção de conhecimentos linguísticos.
+
+EXEMPLO 4 — O VOLUME 1 DA GRAMÁTICA
+
+O livro Lições de Gramática Nhandewa-Guarani
+- volume 1 - foi publicado em 2016.
+
+A obra está relacionada ao Projeto
+Gramática Pedagógica do Nhandewa-Guarani
+e às oficinas realizadas na Aldeia Nimuendajú,
+na Terra Indígena Araribá, em São Paulo.
+
+O material foi desenvolvido para apoiar
+o ensino e a pesquisa da língua Nhandewa.
+
+EXEMPLO 5 — O VOLUME 2 DA GRAMÁTICA
+
+O livro Lições de Gramática
+Nhandewa-Tupi-Guarani - volume 2 -
+dá continuidade ao projeto de gramática
+pedagógica.
+
+O volume 2 tem como base oficinas
+realizadas no litoral paulista,
+com contribuições de oficinas
+da Aldeia Nimuendajú.
+
+Os dois volumes fazem parte de um trabalho
+de investigação, reflexão sobre a língua
+e produção escrita desenvolvido
+nas comunidades com assessoria linguística.
+
+EXEMPLO 6 — O USO DOS MATERIAIS DIDÁTICOS
+
+As gramáticas podem ser utilizadas
+para apoiar o planejamento de aulas,
+a pesquisa de palavras, o estudo
+da ortografia e a compreensão
+das estruturas gramaticais.
+
+O professor deve relacionar o conteúdo
+dos livros com os conhecimentos
+e as formas de uso da língua
+presentes em sua comunidade.
+
+Os materiais escritos não substituem
+a oralidade nem os conhecimentos
+dos falantes.
+
+EXEMPLO 7 — A LÍNGUA E A IDENTIDADE
+
+A língua está relacionada à identidade
+e à história dos povos.
+
+Aprender e ensinar Nhandewa-Guarani
+pode contribuir para fortalecer
+a relação das novas gerações
+com seus conhecimentos ancestrais.
+
+A valorização da língua também envolve
+respeitar as diferentes formas de falar,
+as memórias e os ensinamentos
+transmitidos pelas famílias.
+
+EXEMPLO 8 — A TECNOLOGIA A FAVOR DA LÍNGUA
+
+Os recursos digitais podem apoiar
+a revitalização linguística.
+
+Dicionários digitais, arquivos de áudio,
+materiais escolares, histórias e registros
+podem facilitar o acesso aos conhecimentos.
+
+O Projeto Karumbé tem como objetivo
+reunir palavras, significados, exemplos
+e referências para apoiar o estudo
+da língua Guarani Nhandewa.
+
+A tecnologia deve ser utilizada
+com responsabilidade e em diálogo
+com a comunidade.
+
+EXEMPLO 9 — A PARTICIPAÇÃO DA COMUNIDADE
+
+A revitalização linguística depende
+da participação dos falantes
+e das decisões da própria comunidade.
+
+É importante registrar os conhecimentos
+com autorização, respeito e cuidado.
+
+As palavras, histórias, cantos
+e ensinamentos tradicionais devem
+ser tratados considerando seus contextos
+culturais e os direitos da comunidade.
+
+EXEMPLO 10 — A CONTINUIDADE DA LÍNGUA
+
+A continuidade da língua acontece
+quando ela permanece presente
+nas relações entre as pessoas,
+na educação, na cultura e no cotidiano.
+
+O trabalho dos professores,
+dos mais velhos, das famílias
+e das novas gerações contribui
+para manter os conhecimentos vivos.
+
+A revitalização não é apenas
+a recuperação de palavras antigas.
+Ela também envolve fortalecer
+o uso da língua no presente
+e criar condições para seu futuro.
+
+O Projeto Karumbé faz parte
+de um esforço de registro,
+pesquisa e valorização da língua
+Guarani Nhandewa.
+
+A continuidade da língua deve ser
+construída com a participação
+da comunidade, respeitando seus
+conhecimentos, suas decisões
+e suas formas de transmissão.
+`,
 
     tipo: "projeto",
 
     fonte:
-      "Experiências de revitalização linguística, educação indígena, documentação e iniciativas das comunidades Guarani Nhandewa.",
+        "Projeto Gramática Pedagógica do Nhandewa-Guarani, desenvolvido com participação comunitária, FUNAI, KAMURI, UNICAMP e assessoria linguística.",
 
-    links: []
-  }
-
+    links: [
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
+        },
+        {
+            titulo: "Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
+        },
+        {
+            titulo: "Página de downloads da KAMURI — Gramáticas Nhandewa",
+            url: "https://kamuri.org.br/kamuri/materiais/"
+        },
+        {
+            titulo: "FUNAI — Livros didáticos Nhandewa-Guarani lançados na Aldeia Nimuendaju",
+            url: "https://www.gov.br/funai/pt-br/assuntos/noticias/2017/com-apoio-da-funai-livros-didaticos-nhandewa-guarani-sao-lancados-em-aldeia-de-sao-paulo"
+        },
+        {
+            titulo: "FUNAI — Revitalização Linguística dos Indígenas de São Paulo",
+            url: "https://www.gov.br/funai/pt-br/assuntos/noticias/2013/revitalizacao-linguistica-dos-indigenas-de-sao-paulo"
+        }
+    ]
+},
 ];
 
 
