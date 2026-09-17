@@ -378,7 +378,7 @@ function classeTipo(tipo) {
 
   return classes[tipo] || "historia-estudo";
 }
-
+function mostrarHistorias(lista = HISTORIAS_LINGUA) {
 
 const HISTORIAS_LINGUA = [
 
