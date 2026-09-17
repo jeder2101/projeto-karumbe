@@ -1545,232 +1545,331 @@ e suas formas de transmissão.
     ]
 },
    
+
 {
     id: 12,
     categoria: "Continuidade",
-    periodo: "Formação de professores indígenas",
-    titulo: "A nova formação e o fortalecimento de cada língua",
+    periodo: "Formação, pesquisa e revitalização",
+    titulo: "Formação de professores e fortalecimento das línguas indígenas",
 
     resumo:
-        "A formação intercultural de professores indígenas em São Paulo busca fortalecer a educação específica, as línguas e os conhecimentos de cada povo. Esse trabalho contribui para o estudo, a valorização e a continuidade das línguas indígenas.",
+        "Um espaço para reunir pesquisas acadêmicas, formações de professores indígenas, materiais produzidos por universidades e organizações, além de iniciativas comunitárias como o Projeto Karumbé. O objetivo é facilitar o acesso dos professores aos conhecimentos e às referências de cada língua indígena.",
 
     conteudo: `
-A formação de professores indígenas é importante
-para fortalecer a educação escolar indígena
-e os conhecimentos tradicionais de cada povo.
+A formação de professores indígenas,
+as pesquisas acadêmicas e os trabalhos
+realizados pelas comunidades fazem parte
+da história da educação escolar indígena
+no estado de São Paulo.
 
-No estado de São Paulo, a Licenciatura
-Intercultural Indígena (LINDI), oferecida
+Ao longo dos anos, universidades,
+instituições públicas, organizações
+e comunidades indígenas participaram
+da criação de cursos, pesquisas,
+materiais didáticos e projetos
+de fortalecimento das línguas.
+
+Essas iniciativas formam um conjunto
+de conhecimentos que pode ser reunido
+em um único espaço de pesquisa,
+facilitando o trabalho dos professores
+indígenas e de suas comunidades.
+
+O objetivo não é substituir os conhecimentos
+tradicionais por modelos externos,
+mas aproximar diferentes fontes
+e colocá-las em diálogo com os falantes.
+
+EXEMPLO 1 — O MAGISTÉRIO INDÍGENA NOVO MUNDO
+
+O Magistério Indígena Novo Mundo,
+conhecido como MagIND, foi realizado
+em 2002 e 2003.
+
+O curso foi desenvolvido pela Faculdade
+de Educação da Universidade de São Paulo
+(USP), em parceria com a Secretaria
+da Educação do Estado de São Paulo.
+
+A formação fazia parte das primeiras
+iniciativas de formação de professores
+indígenas para atuação na Educação Infantil
+e no Ensino Fundamental.
+
+EXEMPLO 2 — A FORMAÇÃO INTERCULTURAL
+SUPERIOR DO PROFESSOR INDÍGENA
+
+A Formação Intercultural Superior
+do Professor Indígena, conhecida como FISPI,
+foi oferecida entre 2005 e 2008.
+
+A iniciativa esteve vinculada à Faculdade
+de Educação da USP e à Secretaria
+da Educação do Estado de São Paulo.
+
+A história desses cursos demonstra
+a importância da formação específica
+de professores indígenas e da participação
+dos povos na construção da educação escolar.
+
+EXEMPLO 3 — AS PESQUISAS DA USP
+
+A Universidade de São Paulo também reúne
+pesquisas acadêmicas sobre educação,
+línguas indígenas e formação de professores.
+
+Entre esses trabalhos está a pesquisa
+de Tiago Nhandewa sobre a perspectiva
+Guarani Nhandewa na formação intercultural
+de professores indígenas no estado
+de São Paulo.
+
+A pesquisa aborda a ancestralidade,
+a espiritualidade, as cosmologias,
+as línguas indígenas e os conhecimentos
+tradicionais na formação docente.
+
+EXEMPLO 4 — OS ESTUDOS LINGUÍSTICOS
+
+As universidades também contribuem
+para a documentação e o estudo
+das línguas indígenas.
+
+Os trabalhos de Consuelo de Paiva
+Godinho Costa sobre o Nhandewa-Guarani
+contribuem para a investigação
+da fonologia, da nasalidade,
+da pronúncia e de aspectos gramaticais.
+
+Essas pesquisas devem ser utilizadas
+com atenção à fonte, ao contexto
+e à variedade linguística estudada.
+
+O estudo acadêmico pode apoiar
+a documentação da língua,
+mas não substitui os conhecimentos
+dos falantes e das comunidades.
+
+EXEMPLO 5 — A FORMAÇÃO LINDI
+
+A Licenciatura Intercultural Indígena,
+conhecida como LINDI, é oferecida
 pela Universidade Federal de São Paulo
-(Unifesp), representa uma iniciativa
-de formação superior para professores
-indígenas da rede estadual.
+(Unifesp), em parceria com a Secretaria
+da Educação do Estado de São Paulo.
 
-A formação intercultural permite relacionar
-os conhecimentos acadêmicos com os saberes
-das comunidades, suas línguas, suas histórias
-e suas formas próprias de ensinar e aprender.
+A proposta é voltada à formação
+de professores indígenas que atuam
+ou venham a atuar nas escolas
+das Terras Indígenas do estado.
 
-EXEMPLO 1 — A FORMAÇÃO DOS PROFESSORES INDÍGENAS
-
-A formação dos professores indígenas
-deve considerar as especificidades
-de cada comunidade.
-
-O professor indígena participa
-do processo educativo como profissional
-e como integrante de seu povo.
-
-Sua formação deve contribuir para
-o fortalecimento da língua, da cultura
-e dos conhecimentos tradicionais
-presentes na comunidade.
-
-EXEMPLO 2 — A LÍNGUA DE CADA POVO
-
-Cada povo indígena possui sua própria
-história linguística e suas formas
-de transmitir conhecimentos.
-
-No estado de São Paulo, existem povos
-como os Guarani Nhandewa, Guarani Mbyá,
-Terena, Krenak e Kaingang.
-
-Cada língua deve ser estudada
-considerando sua história, sua estrutura,
-sua pronúncia e seus falantes.
-
-Não devemos tratar todas as línguas
-indígenas como se fossem uma única língua.
-
-EXEMPLO 3 — O RESPEITO ÀS ESPECIFICIDADES LINGUÍSTICAS
-
-O estudo das línguas indígenas deve
-respeitar as diferenças entre povos,
-comunidades e variedades linguísticas.
-
-Uma palavra, uma pronúncia ou uma regra
-gramatical registrada em uma língua
-não deve ser transferida automaticamente
-para outra língua.
-
-A comparação pode contribuir para
-a pesquisa, mas não deve apagar
-as características próprias de cada povo.
-
-EXEMPLO 4 — O FORTALECIMENTO DA LÍNGUA NHANDEWA
-
-Para o povo Guarani Nhandewa,
-a formação de professores pode contribuir
-para o fortalecimento do ensino
-e da transmissão da língua.
-
-Esse trabalho pode envolver:
-
-1. Pesquisa com os falantes.
-2. Registro de palavras e expressões.
-3. Estudo da gramática.
-4. Produção de materiais didáticos.
-5. Valorização da oralidade.
-6. Formação de novas gerações.
-7. Participação dos mais velhos
-   e das lideranças comunitárias.
-
-EXEMPLO 5 — NÃO MISTURAR AS LÍNGUAS
-
-O trabalho de revitalização deve buscar
-registrar cada língua com atenção
-às suas características próprias.
-
-Isso significa observar a origem
-das palavras, a pronúncia, a gramática,
-o significado e a comunidade
-em que a forma é utilizada.
-
-Palavras semelhantes entre línguas
-podem ter histórias relacionadas,
-mas também podem apresentar
-diferenças de significado ou de uso.
-
-A comparação linguística deve servir
-ao conhecimento e não à substituição
-das características de uma língua
-por elementos de outra.
-
-EXEMPLO 6 — A PESQUISA COM A COMUNIDADE
-
-Os professores indígenas são fundamentais
-para a pesquisa e a produção de materiais
-de ensino.
-
-O conhecimento dos falantes,
-dos mais velhos e das famílias
-deve ser considerado no processo
-de documentação e revitalização.
-
-As decisões sobre a escrita,
-a publicação e o uso dos materiais
-devem respeitar a participação
-e as orientações da comunidade.
-
-EXEMPLO 7 — A LINDI E A EDUCAÇÃO INTERCULTURAL
-
-A Licenciatura Intercultural Indígena
-(LINDI) é uma formação superior
-voltada aos professores indígenas.
-
-O curso é desenvolvido pela Unifesp
-em parceria com a Secretaria
-da Educação de São Paulo.
-
-A proposta envolve períodos
-de estudos na universidade
-e atividades relacionadas
-às comunidades indígenas.
+O curso considera povos como
+Guarani Mbya, Tupi-Guarani/Nhandewa,
+Kaingang, Krenak e Terena.
 
 A formação intercultural relaciona
 os conhecimentos acadêmicos
-com os conhecimentos e as realidades
-dos povos indígenas.
+com os conhecimentos tradicionais,
+as realidades das comunidades
+e as especificidades da educação
+escolar indígena.
 
-EXEMPLO 8 — A PRODUÇÃO DE MATERIAIS DIDÁTICOS
+EXEMPLO 6 — A LÍNGUA DE CADA POVO
 
-A formação de professores pode contribuir
-para a elaboração de livros,
-gramáticas, dicionários, narrativas
-e outros materiais pedagógicos.
+A formação de professores indígenas
+deve valorizar as características
+de cada língua.
 
-Esses materiais devem apresentar
-as línguas de acordo com as pesquisas,
-os registros e os conhecimentos
-dos seus falantes.
+As línguas não devem ser tratadas
+como se fossem todas iguais.
 
-O Projeto Karumbé tem como objetivo
-contribuir para esse trabalho
-por meio do registro e da organização
-de conteúdos da língua Guarani Nhandewa.
+Uma palavra, uma pronúncia,
+uma estrutura gramatical ou uma forma
+de escrita precisa ser analisada
+de acordo com a língua, a comunidade
+e a fonte de registro.
 
-EXEMPLO 9 — A CONTINUIDADE DAS LÍNGUAS
+A comparação entre línguas pode
+contribuir para a pesquisa,
+mas não deve apagar as características
+próprias de cada povo.
 
-A continuidade de uma língua depende
-de sua transmissão e de seu uso
-nas comunidades.
+EXEMPLO 7 — O PAPEL DAS ORGANIZAÇÕES
+E DAS COMUNIDADES
 
-A escola, a família, os professores
-e as novas gerações podem participar
-desse processo.
+Universidades, organizações,
+associações e comunidades podem
+participar da produção de materiais
+e do fortalecimento da educação
+escolar indígena.
 
-A formação intercultural deve contribuir
-para que cada povo tenha espaço
-para fortalecer sua própria língua,
-sua cultura e seus conhecimentos.
+Esses trabalhos podem envolver:
 
-EXEMPLO 10 — UM COMPROMISSO COM CADA POVO
+1. Formação de professores.
+2. Pesquisas linguísticas.
+3. Produção de gramáticas.
+4. Elaboração de dicionários.
+5. Registro de histórias e narrativas.
+6. Produção de materiais didáticos.
+7. Valorização dos conhecimentos tradicionais.
+8. Apoio à revitalização das línguas.
 
-O fortalecimento das línguas indígenas
-exige respeito à diversidade linguística.
+Cada iniciativa deve ser consultada
+considerando sua autoria, seus objetivos
+e a participação das comunidades.
 
-Cada língua deve ser estudada
-em sua especificidade, sem presumir
-que todas possuem a mesma estrutura
-ou os mesmos processos históricos.
+EXEMPLO 8 — AS GRAMÁTICAS NHANDEWA
 
-O diálogo entre professores,
-pesquisadores, lideranças e falantes
-pode contribuir para uma formação
-mais próxima das necessidades
-de cada comunidade.
+As publicações de gramática Nhandewa
+constituem referências importantes
+para o estudo da língua.
 
-A revitalização linguística é um processo
-contínuo, construído com participação,
-pesquisa, ensino e transmissão
-entre as gerações.
+Os volumes 1 e 2 das Lições de Gramática
+Nhandewa-Guarani estão relacionados
+ao trabalho de formação, pesquisa
+e produção de materiais pedagógicos.
 
-O Projeto Karumbé registra
-a importância da formação dos professores
-indígenas e do fortalecimento
-da língua Guarani Nhandewa,
-respeitando sua identidade,
-sua história e suas características próprias.
+Esses materiais podem auxiliar
+o professor no estudo da ortografia,
+da gramática, da formação das palavras
+e das estruturas linguísticas.
+
+A consulta deve ser acompanhada
+do diálogo com os falantes
+e dos conhecimentos da comunidade.
+
+EXEMPLO 9 — O PROJETO KARAMBÉ
+
+O Projeto Karumbé — Dicionário
+Guarani Nhandewa — busca reunir
+palavras, significados, exemplos,
+categorias, referências e materiais
+de pesquisa em um único espaço digital.
+
+O projeto pode facilitar o trabalho
+dos professores que procuram
+informações sobre a língua
+e desejam organizar materiais
+para uso pedagógico.
+
+A proposta inclui reunir referências
+acadêmicas, gramáticas, vocabulários,
+registros históricos e conhecimentos
+produzidos pelas comunidades.
+
+O dicionário deve continuar sendo
+desenvolvido com atenção à revisão
+linguística, à autoria das fontes
+e à participação dos falantes.
+
+EXEMPLO 10 — UM ESPAÇO ÚNICO DE PESQUISA
+
+Reunir os materiais em um único espaço
+pode facilitar a pesquisa de professores,
+estudantes e membros das comunidades.
+
+O espaço pode incluir:
+
+- Gramáticas e vocabulários.
+- Pesquisas universitárias.
+- Registros históricos.
+- Materiais de formação docente.
+- Estudos de fonologia e morfologia.
+- Histórias e narrativas.
+- Referências de organizações.
+- Produções das comunidades.
+- Materiais do Projeto Karumbé.
+
+A organização deve permitir identificar
+a origem de cada informação,
+a língua estudada, a comunidade
+e o período do registro.
+
+EXEMPLO 11 — PESQUISA COM RESPONSABILIDADE
+
+Reunir materiais não significa
+misturar automaticamente suas formas
+linguísticas.
+
+Cada registro deve apresentar
+sua fonte e seu contexto.
+
+Quando houver diferenças entre
+as descrições acadêmicas e o uso
+dos falantes, essas diferenças
+devem ser investigadas e documentadas
+com respeito.
+
+O conhecimento dos mais velhos,
+dos professores e dos falantes
+deve fazer parte do processo
+de pesquisa e revisão.
+
+EXEMPLO 12 — A CONTINUIDADE DAS LÍNGUAS
+
+A formação de professores,
+as pesquisas acadêmicas,
+as organizações e os projetos
+comunitários contribuem para
+a documentação e a continuidade
+das línguas indígenas.
+
+O fortalecimento de cada língua
+depende do respeito à sua história,
+às suas características próprias
+e à participação de seus falantes.
+
+O Projeto Karumbé pretende contribuir
+para esse processo reunindo referências
+e materiais de pesquisa em um único lugar.
+
+Esse espaço deve estar em constante
+revisão, ampliação e diálogo
+com a comunidade Guarani Nhandewa.
+
+A pesquisa, a educação e a tecnologia
+podem trabalhar juntas para fortalecer
+a transmissão dos conhecimentos
+às novas gerações.
 `,
 
     tipo: "projeto",
 
     fonte:
-        "Licenciatura Intercultural Indígena (LINDI), Unifesp, Secretaria da Educação de São Paulo e documentos sobre formação intercultural de professores indígenas.",
+        "Pesquisas e iniciativas de formação de professores indígenas da USP, estudos linguísticos, Licenciatura Intercultural Indígena da Unifesp, materiais de gramática Nhandewa e Projeto Karumbé.",
 
     links: [
         {
-            titulo: "Educação de SP — Diretrizes para escolas indígenas e formação de professores",
-            url: "https://www.educacao.sp.gov.br/educacao/noticias/diretrizes-para-escolas-indigenas"
+            titulo: "Magistério Indígena Novo Mundo (MagIND) — Pesquisa histórica na Unesp",
+            url: "https://repositorio.unesp.br/entities/publication/9dc3eba3-7265-40f3-8143-aa9bd7f0a3a0/full"
         },
         {
-            titulo: "FUNAI e Unifesp — Acordo de Cooperação Técnica",
-            url: "https://www.gov.br/funai/pt-br/acesso-a-informacao/acordos-e-parcerias/acordo-de-cooperacao-tecnica-funai-e-unifesp"
+            titulo: "Formação Intercultural Superior do Professor Indígena (FISPI) — USP",
+            url: "https://teses.usp.br/teses/disponiveis/8/8134/tde-04022022-223649/publico/2021_TiagoNhandewa_VCorr.pdf"
         },
         {
-            titulo: "Perspectiva Guarani Nhandewa sobre formação intercultural de professores indígenas",
+            titulo: "Pesquisa de Tiago Nhandewa — USP",
             url: "https://teses.usp.br/teses/disponiveis/8/8134/tde-04022022-223649/pt-br.html"
+        },
+        {
+            titulo: "Licenciatura Intercultural Indígena (LINDI) — Unifesp",
+            url: "https://www.unifesp.br/campus/san7/images/lindi/PPC_LINDI_corrigido_compressed.pdf"
+        },
+        {
+            titulo: "Curso de Licenciatura Intercultural Indígena — Unifesp",
+            url: "https://cursos.siiu.unifesp.br/graduacao/curso/2347/detalhes"
+        },
+        {
+            titulo: "Estudo da fonologia Nhandewa-Guarani — LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
+        },
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
         }
     ]
 },
