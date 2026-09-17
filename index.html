@@ -362,35 +362,88 @@
                     </small>
                 </div>
             </button>
+            
 
-            <!-- LINGUAGEM DE RUA / TABU VERBAL (NOVA RESTRITA) -->
-            <div class="container-card-restrito">
-                <button
-                    class="card-categoria cat-vermelha"
-                    type="button"
-                    onclick="solicitarAcessoTabu()"
-                >
-                    <div class="icone-wrapper">
-                        <span style="font-size: 1.5rem;">🔒</span>
-                    </div>
+   <!-- LINGUAGEM DE RUA + HISTÓRIA -->
+<div
+    class="grupo-cartoes-especiais"
+    style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    "
+>
 
-                    <div class="cat-textos">
-                        <span class="cat-nome">
-                            LINGUAGEM DE RUA
-                        </span>
+    <!-- LINGUAGEM DE RUA / TABU VERBAL -->
+    <div class="container-card-restrito">
 
-                        <small class="cat-sub">
-                            Tabu Verbal / Uso de Campo
-                        </small>
-
-                        <small class="cat-aviso" style="display:block; margin-top:6px; font-size:11px; opacity:0.85; color:#ffebee;">
-                            Entre em contato com o administrador para ter acesso
-                        </small>
-                    </div>
-                </button>
+        <button
+            class="card-categoria cat-vermelha"
+            type="button"
+            onclick="solicitarAcessoTabu()"
+        >
+            <div class="icone-wrapper">
+                <span style="font-size: 1.5rem;">🔒</span>
             </div>
 
-        </main>
+            <div class="cat-textos">
+                <span class="cat-nome">
+                    LINGUAGEM DE RUA
+                </span>
+
+                <small class="cat-sub">
+                    Tabu Verbal / Uso de Campo
+                </small>
+
+                <small
+                    class="cat-aviso"
+                    style="
+                        display: block;
+                        margin-top: 6px;
+                        font-size: 11px;
+                        opacity: 0.85;
+                        color: #ffebee;
+                    "
+                >
+                    Entre em contato com o administrador
+                    para ter acesso
+                </small>
+            </div>
+        </button>
+
+    </div>
+
+
+    <!-- HISTÓRIA DA LÍNGUA -->
+    <div class="container-card-restrito">
+
+        <button
+            class="card-categoria cat-laranja"
+            type="button"
+            onclick="window.location.href='historia.html'"
+        >
+            <div class="icone-wrapper">
+                <span style="font-size: 1.5rem;">📜</span>
+            </div>
+
+            <div class="cat-textos">
+                <span class="cat-nome">
+                    HISTÓRIA
+                </span>
+
+                <small class="cat-sub">
+                    História e evolução da língua
+                </small>
+            </div>
+        </button>
+
+    </div>
+
+</div>
+
+</main>
 
         <!-- =================================================
              APOIO INSTITUCIONAL
