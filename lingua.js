@@ -6,7 +6,7 @@
 const HISTORIAS_LINGUA = [
 
  
-```javascript
+
 {
     id: 1,
     categoria: "Apresentação",
@@ -56,7 +56,7 @@ das crianças e das novas gerações.
         }
     ]
 },
-```
+
 
 
   {
