@@ -672,76 +672,87 @@ body {
 
 
 
+
+
 /* =====================================================
-   CARTÕES ESPECIAIS: LINGUAGEM DE RUA + HISTÓRIA
+   CORREÇÃO DEFINITIVA - CARTÕES ESPECIAIS
 ===================================================== */
 
-.grupo-cartoes-especiais {
+/* O GRUPO OCUPA TODAS AS COLUNAS DO MAIN */
+.lista-vertical > .grupo-cartoes-especiais {
+    grid-column: 1 / -1 !important;
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
     justify-content: center !important;
     align-items: stretch !important;
-    gap: 16px !important;
+    gap: 20px !important;
     width: 100% !important;
-    max-width: 100% !important;
-    margin: 20px auto !important;
-    box-sizing: border-box;
+    min-width: 0 !important;
+    margin: 25px 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
 }
 
-/* CORRIGE O GRID-COLUMN QUE ESTAVA EMPILHANDO OS CARTÕES */
-.grupo-cartoes-especiais .container-card-restrito {
+/* CADA ENVOLTÓRIO */
+.grupo-cartoes-especiais > .container-card-restrito {
     display: block !important;
+    position: relative !important;
     grid-column: auto !important;
     width: 280px !important;
-    flex: 0 1 280px !important;
-    min-height: 120px !important;
+    min-width: 0 !important;
+    max-width: 280px !important;
+    height: auto !important;
     margin: 0 !important;
+    padding: 0 !important;
+    flex: 0 1 280px !important;
 }
 
-/* FORMATO DOS CARTÕES */
-.grupo-cartoes-especiais .card-categoria {
+/* BOTÕES DOS CARTÕES */
+.grupo-cartoes-especiais > .container-card-restrito > .card-categoria {
+    position: relative !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: center !important;
-    width: 100% !important;
-    max-width: none !important;
-    min-height: 120px !important;
-    height: 120px !important;
+    width: 280px !important;
+    max-width: 280px !important;
+    height: 140px !important;
+    min-height: 140px !important;
+    margin: 0 !important;
+    padding: 20px !important;
     box-sizing: border-box !important;
 }
 
-/* COR DO CARTÃO HISTÓRIA */
-.grupo-cartoes-especiais .cat-laranja {
-    background: #a95527 !important;
+/* DESATIVA POSICIONAMENTO QUE PODE ESTAR INTERFERINDO */
+.grupo-cartoes-especiais .icone-wrapper {
+    position: absolute !important;
 }
 
-/* COR DO CARTÃO LINGUAGEM DE RUA */
-.grupo-cartoes-especiais .cat-vermelha {
-    background: linear-gradient(
-        135deg,
-        #b71c1c,
-        #d32f2f
-    ) !important;
+.grupo-cartoes-especiais .cat-textos {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    z-index: 5 !important;
+    width: 100% !important;
 }
 
 /* CELULAR */
 @media (max-width: 600px) {
 
-    .grupo-cartoes-especiais {
+    .lista-vertical > .grupo-cartoes-especiais {
         flex-direction: column !important;
+        flex-wrap: nowrap !important;
         align-items: center !important;
     }
 
-    .grupo-cartoes-especiais .container-card-restrito {
-        grid-column: auto !important;
+    .grupo-cartoes-especiais > .container-card-restrito {
         width: 280px !important;
+        max-width: 280px !important;
         flex: 0 0 auto !important;
     }
-
 }
-
 
 
 
