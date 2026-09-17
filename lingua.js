@@ -453,13 +453,32 @@ function abrirHistoria(id) {
   ${formatarConteudo(item.conteudo)}
 </div>
 
-    <div class="historia-fonte">
-      <strong>Classificação:</strong>
-      ${escaparHTML(item.tipo)}
-      <br>
-      <strong>Fonte:</strong>
-      ${escaparHTML(item.fonte)}
-    </div>
+  <div class="historia-fonte ${classeTipo(item.tipo)}">
+  <strong>Classificação:</strong>
+  ${escaparHTML(item.tipo)}
+  <br>
+  <strong>Fonte:</strong>
+  ${escaparHTML(item.fonte)}
+
+  ${
+    item.links && item.links.length
+      ? `
+        <div class="historia-links">
+          <strong>Fontes e leituras:</strong>
+          ${item.links.map(link => `
+            <a
+              href="${link.url}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🔗 ${escaparHTML(link.titulo)}
+            </a>
+          `).join("")}
+        </div>
+      `
+      : ""
+  }
+</div>
   `;
 
   modal.classList.add("ativo");
