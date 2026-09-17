@@ -457,35 +457,160 @@ de pronúncia ou significado.
     ]
 },
 
-  {
+
+{
     id: 6,
-    categoria: "Transformações",
-    periodo: "Fonologia",
-    titulo: "A relação entre r e n em ambiente nasal",
+    categoria: "Sons",
+    periodo: "Nasalidade",
+    titulo: "A relação entre R e N em ambiente nasal",
 
     resumo:
-      "A relação entre determinados sons pode mudar conforme o ambiente fonológico em que aparecem.",
+        "No Nhandewa-Guarani, o som representado por R pode apresentar nasalização em determinados contextos. Em fala rápida, essa realização pode ser confundida com N, fenômeno descrito em estudos fonológicos.",
 
     conteudo: `
-Os sons de uma língua não funcionam isoladamente.
+A relação entre R e N em ambiente nasal é um tema
+importante para o estudo da fonologia Nhandewa-Guarani.
 
-Um determinado som pode apresentar características diferentes quando aparece próximo de outros sons, especialmente em ambientes nasais.
+Consuelo de Paiva Godinho Costa descreve o segmento
+/r/ como parte do sistema fonológico do Nhandewa.
 
-No Guarani Nhandewa, a comparação entre registros pode mostrar relações entre r e n em determinados contextos.
+Esse segmento pode aparecer no início ou no meio
+das palavras, em posição de início de sílaba.
 
-Essas ocorrências fazem parte dos processos fonológicos que podem ser estudados para compreender a estrutura e a história da língua.
+EXEMPLO 1 — R EM PALAVRAS ORAIS
 
-A análise precisa considerar os exemplos concretos e a forma como são produzidos pelos falantes.
-    `,
+rery
+Significado: nome.
 
-    tipo: "em estudo",
+rowai
+Significado: o outro lado, além.
+
+piri
+Significado: taboa ou junco.
+
+ywyra
+Significado: árvore.
+
+Esses exemplos apresentam o segmento /r/ em
+contextos descritos como orais.
+
+EXEMPLO 2 — O R EM AMBIENTE NASAL
+
+A pesquisa registra uma forma nasalizada do segmento
+/r/, representada foneticamente como /R̃/.
+
+Essa realização ocorre em palavras que apresentam
+contexto nasal.
+
+Exemplo:
+
+põrã
+Significado: bom bonito.
+
+A nasalização deve ser observada na pronúncia
+e não apenas na representação escrita.
+
+EXEMPLO 3 — OUTRA FORMA COM R NASALIZADO
+
+nãporairỹ
+Significado: não esta bom, ruim.
+
+A forma é apresentada em estudo fonológico
+como exemplo de realização nasalizada do /r/.
+
+O registro deve ser analisado considerando
+a palavra completa e seus elementos gramaticais.
+
+EXEMPLO 4 — FORMA RELACIONADA AO FUTURO
+
+wa’ẽrã
+Significado: futuro.
+
+Esse exemplo apresenta o segmento /r/
+em contexto nasalizado, conforme a descrição
+fonológica consultada.
+
+A análise deve considerar o contexto em que
+a palavra aparece e sua estrutura gramatical.
+
+EXEMPLO 5 — R E N NA FALA RÁPIDA
+
+Em contexto de fala rápida, o /r/ nasalizado
+pode ser confundido com o som representado
+por /n/.
+
+A pesquisa informa que Nimuendaju registrou
+a letra n em algumas realizações de /r/
+nasalizado.
+
+Isso não significa que R e N sejam sempre
+o mesmo som ou que possam ser trocados
+livremente em todas as palavras.
+
+A pronúncia pode variar conforme o falante,
+a velocidade da fala e o contexto linguístico.
+
+EXEMPLO 6 — A RELAÇÃO COM REGISTROS HISTÓRICOS
+
+A documentação histórica apresenta observações
+sobre a relação entre r e n no Nhandewa-Guarani.
+
+Esses registros devem ser estudados com atenção,
+pois uma grafia com n pode representar uma
+determinada realização sonora ou uma interpretação
+do pesquisador.
+
+É necessário comparar a transcrição original,
+a pronúncia e o contexto em que a palavra
+foi registrada.
+
+EXEMPLO 7 — A IMPORTÂNCIA DOS FALANTES
+
+A pesquisa linguística contribui para compreender
+os sons e suas variações, mas o conhecimento
+dos falantes Nhandewa é essencial para conferir
+a pronúncia e o uso atual das palavras.
+
+Ao registrar uma forma, devemos observar:
+
+1. A palavra completa.
+2. O contexto oral ou nasal.
+3. A pronúncia do falante.
+4. A velocidade da fala.
+5. A fonte do registro.
+6. A variação entre falantes.
+
+A relação entre R e N em ambiente nasal demonstra
+a importância de estudar a língua considerando
+seus sons, sua história e sua diversidade.
+
+Os exemplos desta seção são materiais de estudo
+baseados em descrições linguísticas. Eles não
+devem ser utilizados como regra absoluta para
+todos os falantes ou todas as variedades
+Nhandewa-Guarani.
+`,
+
+    tipo: "documentado",
 
     fonte:
-      "Estudos fonológicos e registros linguísticos do Guarani Nhandewa.",
+        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES, especialmente a descrição do tap /R/ e de sua realização nasalizada.",
 
-    links: []
-  },
-
+    links: [
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Tese sobre nasalização em Nhandewa-Guarani – Biblioteca FUNAI",
+            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
+        },
+        {
+            titulo: "O fenômeno de nasalidade nas línguas – LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/download/8658655/22261/68955"
+        }
+    ]
+},
   {
     id: 7,
     categoria: "Transformações",
