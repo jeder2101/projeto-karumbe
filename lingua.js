@@ -380,6 +380,73 @@ function classeTipo(tipo) {
 }
 
 
+const HISTORIAS_LINGUA = [
+
+  {
+    id: 1,
+    categoria: "Apresentação",
+    periodo: "Introdução",
+    tipo: "Língua e identidade",
+
+    titulo: "A língua é memória, identidade e transformação",
+
+    resumo:
+      "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
+
+    conteudo: `
+A língua Nhandewa é parte fundamental da memória, da identidade e da continuidade do povo.
+
+Por meio da língua são transmitidos conhecimentos, histórias, ensinamentos, nomes, relações com a natureza e formas próprias de compreender o mundo.
+
+A língua não é apenas um conjunto de palavras. Ela carrega conhecimentos transmitidos entre gerações e permite que os ensinamentos dos mais velhos continuem presentes na vida das comunidades.
+
+O estudo da língua Nhandewa pode reunir a oralidade, os registros escritos e as pesquisas linguísticas, valorizando os conhecimentos produzidos e transmitidos pelo próprio povo.
+
+Preservar e fortalecer a língua significa também fortalecer a memória, a identidade e a continuidade cultural.
+`,
+
+    fonte:
+      "Registros linguísticos, conhecimentos da comunidade e materiais de estudo da língua Nhandewa.",
+
+    links: []
+  }
+
+];
+
+
+function escaparHTML(texto = "") {
+  return String(texto)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+
+function classeTipo(tipo = "") {
+  return String(tipo)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+
+function formatarConteudo(texto = "") {
+  return escaparHTML(texto)
+    .replace(/\r\n/g, "\n")
+    .replace(/\r/g, "\n")
+    .split(/\n{2,}/)
+    .filter(paragrafo => paragrafo.trim())
+    .map(paragrafo => `
+      <p>${paragrafo.replace(/\n/g, "<br>")}</p>
+    `)
+    .join("");
+}
+
+
 function mostrarHistorias(lista = HISTORIAS_LINGUA) {
   const container = document.getElementById("lista-historias");
 
