@@ -249,34 +249,110 @@ para todos os falantes Nhandewa.
         }
     ]
 },
-  {
+{
     id: 4,
     categoria: "Transformações",
-    periodo: "Fonologia",
+    periodo: "Gramática histórica",
     titulo: "De pe, be e bo para py e wy",
 
     resumo:
-      "Algumas correspondências entre registros antigos e formas atuais permitem observar mudanças na realização de determinados sons.",
+        "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar possíveis transformações nas posposições e nas estruturas gramaticais.",
 
     conteudo: `
-A comparação entre diferentes registros linguísticos pode revelar transformações na pronúncia das palavras.
+As línguas da família Tupi-Guarani apresentam relações
+históricas entre palavras, sons e estruturas gramaticais.
 
-Em determinados casos, formas registradas anteriormente podem apresentar correspondências com formas utilizadas atualmente pelos falantes Nhandewa.
+Durante o estudo dessas relações, podemos encontrar
+formas como pe, be e bo em registros antigos ou em
+outras variedades linguísticas.
 
-Exemplos como pe, be e bo em registros anteriores podem ser comparados com formas contendo py e wy em registros mais recentes.
+No Nhandewa-Guarani, aparecem formas como py e wy,
+que devem ser analisadas considerando sua função,
+seu significado e o contexto em que são utilizadas.
 
-Essas correspondências precisam ser analisadas dentro do contexto de cada palavra e de cada registro.
+É importante compreender que essas formas não devem
+ser consideradas simplesmente como substituições
+automáticas umas das outras.
 
-Por isso, os exemplos devem ser tratados como parte de uma investigação linguística e não como uma regra absoluta para todas as palavras.
-    `,
+EXEMPLO 1 — A FORMA WY
+
+Em registros do Nhandewa-Guarani estudados por
+Consuelo de Paiva Godinho Costa, encontramos a forma
+wy relacionada à ideia de direção ou destino.
+
+Exemplo registrado:
+
+Txeé + wy = txewy
+Significado apresentado: para mim.
+
+Esse exemplo mostra que a forma wy pode participar
+da construção de uma expressão gramatical.
+
+EXEMPLO 2 — A FORMA PY
+
+A forma py também aparece em descrições e materiais
+gramaticais relacionados ao Nhandewa-Guarani.
+
+Sua análise deve considerar a palavra completa,
+a função da posposição e o significado produzido
+na frase.
+
+Não devemos afirmar que py possui sempre o mesmo
+significado de pe, be ou bo sem consultar o registro
+linguístico específico.
+
+EXEMPLO 3 — COMPARAÇÃO HISTÓRICA
+
+Pe, be e bo:
+formas que podem ser encontradas em registros
+históricos ou em outras variedades linguísticas.
+
+Py e wy:
+formas encontradas em descrições do Nhandewa-Guarani
+e que precisam ser estudadas dentro de suas funções
+gramaticais e de seus contextos de uso.
+
+A comparação histórica ajuda a investigar como
+determinadas formas podem se modificar ao longo
+do tempo, mas não significa que todas as palavras
+tenham seguido o mesmo processo.
+
+A IMPORTÂNCIA DA PESQUISA
+
+Para compreender essas relações, é necessário
+consultar documentos antigos, estudos linguísticos,
+gramáticas, vocabulários e os conhecimentos dos
+falantes Nhandewa.
+
+As formas devem ser registradas com sua grafia,
+pronúncia, significado, função gramatical e fonte.
+
+O conhecimento dos mais velhos e dos falantes da
+comunidade é fundamental para verificar como essas
+formas são utilizadas atualmente.
+
+Este conteúdo é apresentado como material de estudo.
+As correspondências entre pe, be, bo, py e wy devem
+ser confirmadas por meio de fontes específicas e
+da pesquisa linguística junto à comunidade.
+`,
 
     tipo: "em estudo",
 
     fonte:
-      "Comparação entre registros linguísticos históricos e dados contemporâneos do Guarani Nhandewa.",
+        "Estudos de fonologia e gramática histórica do Nhandewa-Guarani, especialmente os trabalhos de Consuelo de Paiva Godinho Costa.",
 
-    links: []
-  },
+    links: [
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+        }
+    ]
+},
 
   {
     id: 5,
