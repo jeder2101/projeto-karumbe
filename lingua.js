@@ -128,37 +128,127 @@ gerações anteriores e pelas comunidades atuais.
     }
 ]
 },
-  {
+  
+{
     id: 3,
     categoria: "Transformações",
     periodo: "Fonologia",
     titulo: "Mudanças nos sons da língua",
 
     resumo:
-      "Os sons de uma língua podem sofrer transformações ao longo das gerações, especialmente em determinados ambientes fonéticos.",
+        "Os sons de uma língua podem apresentar transformações ao longo da história. No Nhandewa-Guarani, estudos registram correspondências entre formas antigas e atuais, além de processos relacionados à nasalidade.",
 
     conteudo: `
-As línguas estão sempre em movimento.
+As línguas podem apresentar mudanças nos sons ao longo
+de sua história.
 
-Uma das formas de perceber essa transformação é observar os sons das palavras. Determinados sons podem mudar, desaparecer ou assumir novas formas dependendo da posição que ocupam na palavra e dos sons que aparecem próximos a eles.
+Essas transformações podem ocorrer na pronúncia,
+na estrutura das palavras e na maneira como determinados
+sons são realizados em diferentes contextos.
 
-No Guarani Nhandewa, estudos linguísticos registram diferentes processos de transformação sonora.
+O estudo da fonologia do Nhandewa-Guarani permite
+observar relações entre registros históricos e formas
+encontradas em comunidades contemporâneas.
 
-Essas mudanças podem ser percebidas quando comparamos registros antigos, materiais escritos, formas utilizadas por diferentes gerações e a maneira como os falantes utilizam a língua atualmente.
+Consuelo de Paiva Godinho Costa apresenta exemplos
+de correspondências históricas entre formas do Tupi,
+do Guarani e do Nhandewa-Guarani.
 
-Observar essas mudanças ajuda a compreender a história da língua sem considerar a transformação como perda automática.
+EXEMPLO 1 — MUDANÇA EM FORMAS RELACIONADAS AO SOL
 
-Uma língua viva pode conservar elementos antigos e, ao mesmo tempo, desenvolver novas formas.
-    `,
+Tupi: kwarasy
+Guarani: kwarahy
+Nhandewa-Guarani: kwaray
+Significado: sol.
 
-    tipo: "em estudo",
+Esse exemplo é apresentado em estudos linguísticos
+como uma comparação entre formas registradas em
+diferentes variedades e períodos.
+
+EXEMPLO 2 — MUDANÇA EM FORMAS RELACIONADAS À AÇÃO DE IR
+
+Tupi: asab
+Guarani: aha
+Nhandewa-Guarani: aa
+Significado: eu vou.
+
+A comparação mostra alterações na realização de
+determinados sons. É necessário considerar o registro
+e a análise linguística de cada forma.
+
+EXEMPLO 3 — FORMAS RELACIONADAS À FOME
+
+Tupi: ambyasy
+Guarani: ambyahy
+Nhandewa-Guarani: ambyay
+Significado: fome.
+
+Esse exemplo permite observar correspondências
+entre sons presentes em registros diferentes.
+
+EXEMPLO 4 — FORMAS RELACIONADAS AO TEMPO
+
+Tupi: kwese
+Guarani: kwehe
+Nhandewa-Guarani: kweé
+Significado: ontem.
+
+A comparação entre essas formas ajuda a estudar
+transformações sonoras ao longo da história.
+
+A NASALIDADE NA LÍNGUA
+
+A nasalidade é uma característica importante
+na fonologia do Nhandewa-Guarani.
+
+Estudos descrevem consoantes pré-nasalizadas,
+como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
+
+Em determinados ambientes, consoantes pré-nasalizadas
+podem apresentar realizações nasais.
+
+Exemplos descritos na pesquisa incluem relações
+entre formas como mb e m, e nd e n, dependendo
+do ambiente nasal ou oral.
+
+Esses processos devem ser analisados considerando
+a palavra completa, os sons vizinhos e o contexto
+em que a forma é utilizada.
+
+A mudança sonora não significa necessariamente
+perda da língua. Ela pode fazer parte da trajetória
+histórica e da diversidade linguística dos povos.
+
+O estudo das transformações fonológicas contribui
+para compreender os registros antigos, as formas
+contemporâneas e a continuidade do Nhandewa-Guarani.
+
+Os exemplos apresentados nesta seção são referências
+para estudo e comparação. Não devem ser utilizados
+como regras absolutas para todas as palavras ou
+para todos os falantes Nhandewa.
+`,
+
+    tipo: "documentado",
 
     fonte:
-      "Estudos linguísticos e comparação entre registros históricos e formas contemporâneas do Guarani Nhandewa.",
+        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES; e Seara, Quadros e Martins, estudo acústico da nasalidade consonantal no Nhandewa-Guarani.",
 
-    links: []
-  },
-
+    links: [
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Consonantal nasality in the variety of Nhandewa-Guarani – Journal of Experimental Phonetics",
+            url: "https://revistes.ub.edu/index.php/experimentalphonetics/article/view/43969"
+        },
+        {
+            titulo: "Tese sobre fonologia e nasalidade do Nhandewa-Guarani – Biblioteca FUNAI",
+            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
+        }
+    ]
+},
   {
     id: 4,
     categoria: "Transformações",
