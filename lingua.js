@@ -468,67 +468,82 @@ function abrirHistoria(id) {
   }
 
   const modal = document.getElementById("modal-historia");
+  const conteudo = document.getElementById("conteudo-historia");
 
-  if (!modal) {
-    console.warn("Elemento #modal-historia não encontrado.");
+  if (!modal || !conteudo) {
+    console.warn("Elementos do modal não encontrados.");
     return;
   }
 
-  const titulo = document.getElementById("titulo-modal-historia");
-  const categoria = document.getElementById("categoria-modal-historia");
-  const periodo = document.getElementById("periodo-modal-historia");
-  const tipo = document.getElementById("tipo-modal-historia");
-  const conteudo = document.getElementById("conteudo-modal-historia");
-  const fonte = document.getElementById("fonte-modal-historia");
-  const links = document.getElementById("links-modal-historia");
+  const linksHTML =
+    item.links && item.links.length
+      ? `
+        <div class="historia-fonte">
+          <strong>Links e referências:</strong>
 
-  if (titulo) {
-    titulo.textContent = item.titulo;
-  }
+          <div style="margin-top:10px;">
+            ${item.links.map(link => `
+              <p>
+                <a
+                  href="${escaparHTML(link.url)}"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  ${escaparHTML(link.titulo)}
+                </a>
+              </p>
+            `).join("")}
+          </div>
+        </div>
+      `
+      : "";
 
-  if (categoria) {
-    categoria.textContent = item.categoria;
-  }
+  conteudo.innerHTML = `
 
-  if (periodo) {
-    periodo.textContent = item.periodo;
-  }
+    <span class="historia-categoria">
+      ${escaparHTML(item.categoria)}
+    </span>
 
-  if (tipo) {
-    tipo.textContent = item.tipo;
-  }
+    <h2>
+      ${escaparHTML(item.titulo)}
+    </h2>
 
-  if (conteudo) {
-    conteudo.innerHTML = formatarConteudo(item.conteudo);
-  }
+    <div class="historia-meta">
 
-  if (fonte) {
-    fonte.textContent = item.fonte || "";
-  }
+      <span>
+        ${escaparHTML(item.periodo)}
+      </span>
 
-  if (links) {
+      <span>
+        ${escaparHTML(item.tipo)}
+      </span>
 
-    if (item.links && item.links.length) {
+    </div>
 
-      links.innerHTML = item.links.map(link => `
-        <a
-          href="${escaparHTML(link.url)}"
-          target="_blank"
-          rel="noopener noreferrer">
+    <p class="historia-resumo">
+      <strong>Resumo:</strong><br>
+      ${escaparHTML(item.resumo)}
+    </p>
 
-          ${escaparHTML(link.titulo)}
+    <div class="texto-historia">
+      ${formatarConteudo(item.conteudo)}
+    </div>
 
-        </a>
-      `).join("");
+    <div class="historia-fonte">
 
-    } else {
+      <strong>Fonte:</strong>
 
-      links.innerHTML = "";
+      <p>
+        ${escaparHTML(item.fonte || "Fonte em estudo.")}
+      </p>
 
-    }
-  }
+    </div>
+
+    ${linksHTML}
+
+  `;
 
   modal.classList.add("ativo");
+  modal.setAttribute("aria-hidden", "false");
 
   document.body.classList.add("modal-aberto");
 }
