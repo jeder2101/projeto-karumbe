@@ -337,8 +337,11 @@ function escaparHTML(texto) {
 function formatarConteudo(texto) {
   return escaparHTML(texto)
     .trim()
-    .replace(/\n{2,}/g, "</p><p>")
-    .replace(/\n/g, "<br>");
+    .split(/\n{2,}/)
+    .map(paragrafo => {
+      return `<p>${paragrafo.replace(/\n/g, "<br>")}</p>`;
+    })
+    .join("");
 }
 
 
@@ -424,8 +427,8 @@ function abrirHistoria(id) {
     </p>
 
     <div class="texto-historia">
-      <p>${formatarConteudo(item.conteudo)}</p>
-    </div>
+  ${formatarConteudo(item.conteudo)}
+</div>
 
     <div class="historia-fonte">
       <strong>Classificação:</strong>
