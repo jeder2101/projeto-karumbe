@@ -15,33 +15,56 @@ Orientação:
 
 const HISTORIAS_LINGUA = [
 
-  {
+
+{
     id: 1,
     categoria: "Apresentação",
     periodo: "Introdução",
     titulo: "A língua é memória, identidade e transformação",
 
     resumo:
-      "A língua Nhandewa é transmitida entre gerações e se transforma conforme as experiências históricas, sociais e culturais de seus falantes.",
+        "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
 
     conteudo: `
-      A língua não é apenas um conjunto de palavras.
-      Ela carrega conhecimentos, histórias, relações familiares,
-      espiritualidade, modos de viver e formas de compreender o mundo.
+A língua Nhandewa-Guarani não é apenas um conjunto de palavras.
+Ela carrega conhecimentos, histórias, relações familiares,
+espiritualidade, modos de viver e formas de compreender o mundo.
 
-      Ao comparar registros antigos com a língua Nhandewa
-      contemporânea, encontramos continuidades, variações,
-      mudanças de pronúncia, grafia, estrutura e significado.
+A língua é transmitida entre gerações e pode apresentar
+variações de pronúncia, grafia, estrutura e significado.
 
-      Uma forma que não aparece em determinado registro
-      não deve ser considerada automaticamente desaparecida.
-      É necessário investigar a oralidade, as variantes
-      e as diferentes comunidades.
-    `,
+Os registros históricos e os estudos linguísticos ajudam
+a compreender aspectos da língua, mas devem ser analisados
+considerando a comunidade, o período e o contexto em que
+foram produzidos.
+
+O trabalho de Consuelo de Paiva Godinho Costa contribui
+para o estudo da fonologia do Nhandewa-Guarani, incluindo
+a análise dos sons e de fenômenos relacionados à nasalidade.
+
+O Projeto Karumbé reúne materiais, referências e reflexões
+com o objetivo de apoiar a pesquisa, o ensino e a continuidade
+da língua Guarani Nhandewa.
+
+A língua permanece viva por meio dos seus falantes,
+dos conhecimentos dos mais velhos, dos professores,
+das crianças e das novas gerações.
+`,
 
     tipo: "documentado",
-    fonte: "Introdução de pesquisa do Projeto Karumbé"
-  },
+    fonte: "Projeto Karumbé e estudos linguísticos do Nhandewa-Guarani",
+
+    links: [
+        {
+            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        }
+    ]
+},
 
   {
     id: 2,
