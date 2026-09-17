@@ -612,16 +612,70 @@ function filtrarHistorias(termo = "") {
 
 function filtrarCategoriaHistoria(categoria) {
 
-  if (!categoria || categoria === "Todas") {
-
+  if (
+    !categoria ||
+    categoria === "todas" ||
+    categoria === "Todas"
+  ) {
     mostrarHistorias(HISTORIAS_LINGUA);
-
     return;
   }
 
-  const resultado = HISTORIAS_LINGUA.filter(
-    item => item.categoria === categoria
-  );
+  const resultado = HISTORIAS_LINGUA.filter(item => {
+
+    if (categoria === "História") {
+      return (
+        item.categoria === "História" ||
+        item.categoria === "História da língua"
+      );
+    }
+
+    if (categoria === "Sons") {
+      return (
+        item.categoria === "Sons" ||
+        (
+          item.categoria === "Transformações" &&
+          item.periodo === "Fonologia"
+        )
+      );
+    }
+
+    if (categoria === "Comparação") {
+      return (
+        item.categoria === "Comparação" ||
+        (
+          item.categoria === "Transformações" &&
+          item.periodo === "Fonologia"
+        )
+      );
+    }
+
+    if (categoria === "Gramática") {
+      return (
+        item.categoria === "Gramática" ||
+        (
+          item.categoria === "Transformações" &&
+          item.periodo === "Morfologia"
+        )
+      );
+    }
+
+    if (categoria === "Vocabulário") {
+      return (
+        item.categoria === "Vocabulário" ||
+        item.periodo === "Semântica"
+      );
+    }
+
+    if (categoria === "Futuro") {
+      return (
+        item.categoria === "Futuro" ||
+        item.categoria === "Continuidade"
+      );
+    }
+
+    return item.categoria === categoria;
+  });
 
   mostrarHistorias(resultado);
 }
