@@ -507,13 +507,32 @@ function escaparHTML(texto) {
 
 
 function formatarConteudo(texto) {
-  return escaparHTML(texto)
-    .trim()
-    .split(/\n{2,}/)
-    .map(paragrafo => {
-      return `<p>${paragrafo.replace(/\n/g, "<br>")}</p>`;
-    })
-    .join("");
+
+    return escaparHTML(texto)
+        .trim()
+        .split(/\n{2,}/)
+        .map(paragrafo => {
+
+            const linhas = paragrafo
+                .split("\n")
+                .map(linha => {
+
+                    if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+
+                        return `<span class="destaque-exemplo">${linha}</span>`;
+
+                    }
+
+                    return linha;
+
+                })
+                .join("<br>");
+
+            return `<p>${linhas}</p>`;
+
+        })
+        .join("");
+
 }
 
 
