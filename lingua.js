@@ -793,35 +793,156 @@ na fonte original e junto aos falantes da comunidade.
         }
     ]
 },
-  {
+  
+{
     id: 8,
-    categoria: "Transformações",
-    periodo: "Morfologia",
+    categoria: "Gramática",
+    periodo: "Partículas",
     titulo: "As partículas ma e pa",
 
     resumo:
-      "Partículas podem modificar o sentido ou a função de uma construção e também podem apresentar mudanças ao longo do tempo.",
+        "As partículas ma e pa podem ser estudadas por meio de suas funções gramaticais, posição na palavra e relação com o contexto. A forma ma possui exemplos registrados na gramática Nhandewa-Guarani.",
 
     conteudo: `
-As partículas ma e pa aparecem em determinados registros da língua e podem desempenhar funções relacionadas à construção das frases.
+As partículas são elementos que participam
+da construção das palavras e das frases.
 
-Quando comparamos diferentes períodos da língua, podemos observar mudanças na frequência, na posição ou no uso dessas partículas.
+Seu significado e sua função podem depender
+da posição em que aparecem, do verbo associado
+e do contexto da oração.
 
-O estudo dessas formas ajuda a compreender como a gramática pode se transformar ao longo das gerações.
+No Nhandewa-Guarani, a partícula ma é descrita
+em diferentes situações de uso.
 
-Para interpretar corretamente cada ocorrência, é necessário observar a frase completa e o contexto em que a partícula aparece.
+EXEMPLO 1 — MA LIGADA AO VERBO
 
-Por isso, os exemplos devem ser analisados juntamente com os registros linguísticos correspondentes.
-    `,
+Forma registrada:
 
-    tipo: "em estudo",
+aáma
+
+A gramática apresenta a forma aáma entre
+os exemplos de flexões verbais e partículas
+escritas junto à raiz.
+
+Nesse caso, a partícula aparece articulada
+à forma verbal.
+
+A análise deve considerar o verbo completo
+e a função que ma desempenha na construção.
+
+EXEMPLO 2 — MA COMO PALAVRA AUTÔNOMA
+
+Forma registrada:
+
+Ko kwatiá-re ma.
+
+A gramática explica que, nesse contexto,
+ma não funciona articulada a um verbo.
+
+Por isso, é escrita como uma palavra
+autônoma, separada dos demais elementos.
+
+Esse exemplo mostra que a escrita da partícula
+depende de sua função e de seu contexto.
+
+EXEMPLO 3 — A POSIÇÃO DA PARTÍCULA MA
+
+A partícula ma pode aparecer em construções
+diferentes.
+
+Para analisar seu uso, devemos observar:
+
+1. Se está ligada a um verbo.
+2. Se aparece como palavra independente.
+3. Qual é o significado da frase.
+4. Qual é a função gramatical.
+5. Como a comunidade utiliza a forma.
+
+A posição na escrita não deve ser analisada
+sem considerar a estrutura da oração.
+
+EXEMPLO 4 — ESTUDO DA PARTÍCULA PA
+
+A forma pa deve ser analisada a partir
+do registro específico da gramática Nhandewa.
+
+Em outras línguas Guarani, partículas com
+a mesma forma gráfica podem apresentar
+funções gramaticais diferentes.
+
+Por isso, não devemos transferir
+automaticamente uma explicação de outra
+variedade para o Nhandewa-Guarani.
+
+Para registrar pa com segurança, é necessário
+consultar exemplos completos, identificar
+seu significado e verificar sua função
+na frase.
+
+EXEMPLO 5 — COMPARAÇÃO ENTRE MA E PA
+
+Ma e pa devem ser comparadas observando:
+
+- A forma escrita.
+- A pronúncia.
+- A posição na palavra.
+- A função gramatical.
+- O contexto da frase.
+- A variedade linguística.
+- A fonte consultada.
+
+Uma semelhança na escrita não comprova
+que duas partículas tenham a mesma função.
+
+EXEMPLO 6 — A IMPORTÂNCIA DA ESCRITA
+
+A gramática Nhandewa-Guarani estabelece
+regras para escrever as partículas.
+
+Algumas formas são escritas junto à raiz,
+enquanto outras aparecem separadas.
+
+Essas regras ajudam a representar a estrutura
+da língua e a organizar os materiais de ensino.
+
+A escrita deve ser estudada junto com
+a pronúncia e os conhecimentos dos falantes.
+
+EXEMPLO 7 — PESQUISA E CONTINUIDADE
+
+O estudo das partículas ma e pa contribui
+para compreender a gramática Nhandewa-Guarani.
+
+Os registros escritos devem ser comparados
+com a fala e com os conhecimentos dos
+professores, anciãos e demais falantes.
+
+Este conteúdo apresenta exemplos documentados
+para ma e mantém pa como tema de investigação
+até que seus exemplos específicos sejam
+confirmados na fonte Nhandewa consultada.
+`,
+
+    tipo: "documentado",
 
     fonte:
-      "Registros gramaticais e estudos sobre a morfologia e a sintaxe do Guarani Nhandewa.",
+        "Lições de Gramática Nhandewa-Guarani, volume I, seção sobre composições sintáticas e lexicais e uso da partícula ma.",
 
-    links: []
-  },
-
+    links: [
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani – Volume I",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Materiais de Gramática Nhandewa – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
+        }
+    ]
+},
   {
     id: 9,
     categoria: "Transformações",
