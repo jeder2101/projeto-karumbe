@@ -1,351 +1,356 @@
-
-/*
-========================================================
-PROJETO KARUMBÉ
-NOSSAS HISTÓRIAS E TRANSFORMAÇÕES DA LÍNGUA
-Guarani Nhandewa
-========================================================
-
-Orientação:
-- "documentado": baseado em registro ou fonte identificada.
-- "hipótese": interpretação que precisa de investigação.
-- "em estudo": informação ainda não concluída.
-========================================================
-*/
+/* =========================================================
+   PROJETO KARUMBÉ
+   NOSSAS HISTÓRIAS E TRANSFORMAÇÕES DA LÍNGUA
+   ========================================================= */
 
 const HISTORIAS_LINGUA = [
 
-
-{
+  {
     id: 1,
     categoria: "Apresentação",
     periodo: "Introdução",
     titulo: "A língua é memória, identidade e transformação",
 
     resumo:
-        "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
+      "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
 
     conteudo: `
-A língua Nhandewa-Guarani não é apenas um conjunto de palavras.
-Ela carrega conhecimentos, histórias, relações familiares,
-espiritualidade, modos de viver e formas de compreender o mundo.
+A língua Guarani Nhandewa faz parte da história, da memória e da identidade de seu povo.
 
-A língua é transmitida entre gerações e pode apresentar
-variações de pronúncia, grafia, estrutura e significado.
+Ela não é apenas um conjunto de palavras. Por meio da língua são transmitidos conhecimentos, histórias, formas de compreender o mundo, relações familiares, conhecimentos sobre a natureza e ensinamentos recebidos das gerações anteriores.
 
-Os registros históricos e os estudos linguísticos ajudam
-a compreender aspectos da língua, mas devem ser analisados
-considerando a comunidade, o período e o contexto em que
-foram produzidos.
+A língua também está em transformação. As palavras, os sons e algumas formas de expressão podem mudar ao longo do tempo, especialmente quando diferentes gerações entram em contato com novas situações históricas, sociais e culturais.
 
-O trabalho de Consuelo de Paiva Godinho Costa contribui
-para o estudo da fonologia do Nhandewa-Guarani, incluindo
-a análise dos sons e de fenômenos relacionados à nasalidade.
+Estudar essas transformações não significa considerar uma forma da língua melhor ou pior que outra. Significa compreender a trajetória da língua e reconhecer os conhecimentos preservados pelos seus falantes.
 
-O Projeto Karumbé reúne materiais, referências e reflexões
-com o objetivo de apoiar a pesquisa, o ensino e a continuidade
-da língua Guarani Nhandewa.
+No caso do Guarani Nhandewa, a oralidade possui grande importância. Os registros escritos, as pesquisas linguísticas e os materiais produzidos pelas próprias comunidades também podem contribuir para o fortalecimento da língua.
 
-A língua permanece viva por meio dos seus falantes,
-dos conhecimentos dos mais velhos, dos professores,
-das crianças e das novas gerações.
-`,
+Conhecer a história da língua é, portanto, uma maneira de valorizar a memória e contribuir para sua continuidade.
+    `,
 
     tipo: "documentado",
-    fonte: "Projeto Karumbé e estudos linguísticos do Nhandewa-Guarani",
+
+    fonte:
+      "Registros linguísticos, estudos acadêmicos e conhecimentos transmitidos pelos falantes da língua Guarani Nhandewa.",
 
     links: [
-        {
-            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
-        },
-        {
-            titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
-            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
-        }
+      {
+        titulo: "Museu Nacional dos Povos Indígenas",
+        url: "https://museudoindio.gov.br/"
+      },
+      {
+        titulo: "LIAMES – Línguas Indígenas Americanas",
+        url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames"
+      }
     ]
-},
+  },
 
   {
     id: 2,
-    categoria: "História",
-    periodo: "Registros históricos",
+    categoria: "História da língua",
+    periodo: "História",
     titulo: "Do Guarani Antigo ao Nhandewa contemporâneo",
 
     resumo:
-      "A comparação entre documentos antigos, registros Apapocuva e a língua contemporânea permite investigar continuidades e transformações.",
+      "A língua Guarani possui uma longa história e diferentes variedades foram desenvolvidas em diferentes territórios e comunidades.",
 
     conteudo: `
-      Os registros históricos apresentam formas linguísticas
-      que podem ser comparadas com o Apapocuva e com o Nhandewa
-      falado atualmente.
+As línguas da família Tupi-Guarani possuem uma história linguística muito antiga.
 
-      Essa comparação não representa necessariamente uma
-      evolução linear ou uniforme. Diferentes comunidades,
-      contatos, deslocamentos e trajetórias históricas podem
-      contribuir para a diversidade linguística.
+Ao longo do tempo, diferentes povos e comunidades desenvolveram formas próprias de falar, preservando características comuns e também criando diferenças relacionadas às suas histórias e aos seus territórios.
 
-      Cada comparação deve indicar a fonte, a data e o contexto
-      em que a forma foi registrada.
+O Guarani Nhandewa contemporâneo deve ser compreendido dentro dessa história mais ampla, considerando também as experiências específicas dos povos que o mantiveram vivo.
+
+As diferenças existentes entre variedades do Guarani não significam que uma seja uma forma "correta" e outra "errada". Elas fazem parte da diversidade linguística e das histórias de cada comunidade.
+
+O estudo dessas diferenças permite compreender melhor as relações históricas entre as línguas e, ao mesmo tempo, valorizar as características próprias do Nhandewa.
     `,
 
-    tipo: "em estudo",
-    fonte: "Documentos históricos e estudos linguísticos"
+    tipo: "documentado",
+
+    fonte:
+      "Estudos linguísticos sobre as línguas da família Tupi-Guarani e registros do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 3,
-    categoria: "Sons",
-    periodo: "Transformações fonológicas",
+    categoria: "Transformações",
+    periodo: "Fonologia",
     titulo: "Mudanças nos sons da língua",
 
     resumo:
-      "Os registros permitem investigar alterações na pronúncia e na representação escrita de determinados sons.",
+      "Os sons de uma língua podem sofrer transformações ao longo das gerações, especialmente em determinados ambientes fonéticos.",
 
     conteudo: `
-      Entre os fenômenos que precisam ser comparados estão:
+As línguas estão sempre em movimento.
 
-      - Mudanças ou variações entre /e/ e [i].
-      - Mudanças ou variações entre /o/ e [u].
-      - Registros de /s/ e africadas.
-      - Ausência ou presença de /h/.
-      - Variações relacionadas à nasalidade.
-      - Diferenças entre grafia e pronúncia.
+Uma das formas de perceber essa transformação é observar os sons das palavras. Determinados sons podem mudar, desaparecer ou assumir novas formas dependendo da posição que ocupam na palavra e dos sons que aparecem próximos a eles.
 
-      A grafia utilizada em materiais pedagógicos não deve ser
-      confundida automaticamente com a pronúncia de todos os falantes.
+No Guarani Nhandewa, estudos linguísticos registram diferentes processos de transformação sonora.
+
+Essas mudanças podem ser percebidas quando comparamos registros antigos, materiais escritos, formas utilizadas por diferentes gerações e a maneira como os falantes utilizam a língua atualmente.
+
+Observar essas mudanças ajuda a compreender a história da língua sem considerar a transformação como perda automática.
+
+Uma língua viva pode conservar elementos antigos e, ao mesmo tempo, desenvolver novas formas.
     `,
 
     tipo: "em estudo",
-    fonte: "Estudos linguísticos e registros de falantes"
+
+    fonte:
+      "Estudos linguísticos e comparação entre registros históricos e formas contemporâneas do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 4,
-    categoria: "Comparação",
-    periodo: "Mudanças de posposição",
+    categoria: "Transformações",
+    periodo: "Fonologia",
     titulo: "De pe, be e bo para py e wy",
 
     resumo:
-      "Registros históricos apresentam formas de posposição que podem ser comparadas com formas registradas no Nhandewa contemporâneo.",
+      "Algumas correspondências entre registros antigos e formas atuais permitem observar mudanças na realização de determinados sons.",
 
     conteudo: `
-      Exemplos de comparação:
+A comparação entre diferentes registros linguísticos pode revelar transformações na pronúncia das palavras.
 
-      Guarani Antigo:
-      tatápe — ao fogo
-      chebe — para mim
-      ohubo — vindo ou para vir
+Em determinados casos, formas registradas anteriormente podem apresentar correspondências com formas utilizadas atualmente pelos falantes Nhandewa.
 
-      Apapocuva:
-      tatápy
-      chéwy
-      oúwy
+Exemplos como pe, be e bo em registros anteriores podem ser comparados com formas contendo py e wy em registros mais recentes.
 
-      No Nhandewa contemporâneo, formas como -py e -wy
-      aparecem em diferentes construções.
+Essas correspondências precisam ser analisadas dentro do contexto de cada palavra e de cada registro.
 
-      A análise deve considerar a tonicidade, a grafia,
-      a pronúncia e o contexto da construção.
+Por isso, os exemplos devem ser tratados como parte de uma investigação linguística e não como uma regra absoluta para todas as palavras.
     `,
 
     tipo: "em estudo",
-    fonte: "Comparação de registros históricos e gramática pedagógica"
+
+    fonte:
+      "Comparação entre registros linguísticos históricos e dados contemporâneos do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 5,
-    categoria: "Comparação",
-    periodo: "Causatividade",
+    categoria: "Transformações",
+    periodo: "Fonologia",
     titulo: "Mõ, mü e mu",
 
     resumo:
-      "Os registros apresentam formas relacionadas à construção causativa, cuja análise precisa considerar cada contexto.",
+      "As formas relacionadas a vogais e sons nasais podem apresentar variações nos registros históricos e contemporâneos.",
 
     conteudo: `
-      Exemplo registrado:
+A nasalidade é uma característica importante nas línguas Guarani.
 
-      mohendy — atiçar ou fazer arder o fogo
-      muendy — forma encontrada em registro Apapocuva
+Ao comparar diferentes registros, podem aparecer formas como mõ, mü e mu relacionadas a diferentes momentos ou registros da língua.
 
-      No Nhandewa contemporâneo, também aparecem construções
-      causativas com mbo-, mo- e outras formações.
+Essas diferenças precisam ser observadas considerando a pronúncia, a escrita utilizada pelo pesquisador ou pela comunidade e o contexto em que a palavra aparece.
 
-      Não devemos considerar todas essas formas como uma única
-      regra sem analisar suas estruturas e suas fontes.
+A escrita não representa necessariamente todos os detalhes da pronúncia.
+
+Por isso, o estudo da língua deve considerar tanto os registros escritos quanto a fala dos próprios falantes.
     `,
 
     tipo: "em estudo",
-    fonte: "Registros históricos e Lições de Gramática Nhandewa-Guarani"
+
+    fonte:
+      "Registros linguísticos e estudos sobre nasalidade e variação fonológica no Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 6,
-    categoria: "Comparação",
-    periodo: "Nasalidade",
+    categoria: "Transformações",
+    periodo: "Fonologia",
     titulo: "A relação entre r e n em ambiente nasal",
 
     resumo:
-      "Alguns registros apresentam formas com n onde outros registros apresentam r, levantando questões sobre nasalização e percepção dos sons.",
+      "A relação entre determinados sons pode mudar conforme o ambiente fonológico em que aparecem.",
 
     conteudo: `
-      Exemplos de comparação:
+Os sons de uma língua não funcionam isoladamente.
 
-      porã — bom ou bonito
-      ponã — forma registrada em determinado contexto
+Um determinado som pode apresentar características diferentes quando aparece próximo de outros sons, especialmente em ambientes nasais.
 
-      A interpretação de que o som seria um r nasalizado
-      deve ser tratada como hipótese, e não como conclusão
-      definitiva para todas as ocorrências.
+No Guarani Nhandewa, a comparação entre registros pode mostrar relações entre r e n em determinados contextos.
 
-      É importante comparar a pronúncia de diferentes falantes,
-      a posição do som na palavra e o contexto fonológico.
+Essas ocorrências fazem parte dos processos fonológicos que podem ser estudados para compreender a estrutura e a história da língua.
+
+A análise precisa considerar os exemplos concretos e a forma como são produzidos pelos falantes.
     `,
 
-    tipo: "hipótese",
-    fonte: "Análise comparativa de registros linguísticos"
+    tipo: "em estudo",
+
+    fonte:
+      "Estudos fonológicos e registros linguísticos do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 7,
-    categoria: "Comparação",
+    categoria: "Transformações",
     periodo: "Morfologia",
     titulo: "Desaparecimento ou redução de morfemas",
 
     resumo:
-      "Alguns registros apresentam diferenças na presença de morfemas finais ou internos.",
+      "Alguns elementos presentes em registros antigos podem apresentar redução, alteração ou menor frequência em formas contemporâneas.",
 
     conteudo: `
-      Exemplos que merecem investigação:
+As palavras podem ser formadas por diferentes partes que possuem funções específicas.
 
-      eyma / yma — formas relacionadas à negação
-      ey — forma registrada em comparação
+Essas partes são chamadas de morfemas.
 
-      cherembireco e formas reduzidas
-      cheremymba e formas reduzidas
+Ao longo da história de uma língua, alguns morfemas podem sofrer alterações. Eles podem apresentar redução, mudança de forma ou passar a aparecer com menor frequência.
 
-      A redução de uma forma em determinado registro não prova
-      que o morfema tenha desaparecido de toda a língua.
+A comparação entre registros antigos e atuais pode revelar essas transformações.
 
-      É necessário consultar outros falantes, textos e contextos.
+No Guarani Nhandewa, esse tipo de análise é importante para compreender como determinadas estruturas linguísticas foram modificadas ao longo do tempo.
+
+É necessário, entretanto, analisar cada caso individualmente antes de afirmar que determinado morfema desapareceu completamente.
     `,
 
     tipo: "em estudo",
-    fonte: "Registros históricos e documentação contemporânea"
+
+    fonte:
+      "Análise comparativa de registros históricos e contemporâneos do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 8,
-    categoria: "Gramática",
-    periodo: "Partículas",
+    categoria: "Transformações",
+    periodo: "Morfologia",
     titulo: "As partículas ma e pa",
 
     resumo:
-      "Partículas afirmativas e interrogativas aparecem em registros históricos e em materiais contemporâneos.",
+      "Partículas podem modificar o sentido ou a função de uma construção e também podem apresentar mudanças ao longo do tempo.",
 
     conteudo: `
-      A partícula ma aparece em construções afirmativas
-      e pode ocorrer mais de uma vez em uma mesma sentença.
+As partículas ma e pa aparecem em determinados registros da língua e podem desempenhar funções relacionadas à construção das frases.
 
-      A partícula pa é associada a construções interrogativas.
+Quando comparamos diferentes períodos da língua, podemos observar mudanças na frequência, na posição ou no uso dessas partículas.
 
-      O uso das partículas deve ser estudado em frases completas,
-      considerando a posição, o contexto e a função discursiva.
+O estudo dessas formas ajuda a compreender como a gramática pode se transformar ao longo das gerações.
+
+Para interpretar corretamente cada ocorrência, é necessário observar a frase completa e o contexto em que a partícula aparece.
+
+Por isso, os exemplos devem ser analisados juntamente com os registros linguísticos correspondentes.
     `,
 
-    tipo: "documentado",
-    fonte: "Registros linguísticos e material gramatical"
+    tipo: "em estudo",
+
+    fonte:
+      "Registros gramaticais e estudos sobre a morfologia e a sintaxe do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 9,
-    categoria: "Gramática",
-    periodo: "Construções verbais",
+    categoria: "Transformações",
+    periodo: "Morfologia",
     titulo: "O uso do supino vy",
 
     resumo:
-      "A forma vy aparece em construções relacionadas aos verbos de movimento e deve ser analisada junto com o verbo.",
+      "A forma vy possui importância na descrição de determinadas construções verbais e pode ser observada em diferentes registros.",
 
     conteudo: `
-      Exemplos de construções registradas:
+O elemento vy aparece em determinadas construções relacionadas aos verbos.
 
-      Ojapó ma oóvy
-      — enquanto ele ia e a fazia
+O estudo de formas como essa permite compreender como a língua organiza suas ações, estados e relações entre palavras.
 
-      oaçá oóvy
-      — quando ela atravessou
+A comparação entre diferentes registros também pode revelar mudanças na frequência ou nas construções em que determinado elemento aparece.
 
-      oguejy oúvy
-      — quando ele vinha descendo
+O conhecimento dessas estruturas contribui para o ensino da língua e para a documentação de suas características gramaticais.
 
-      O elemento vy não deve ser traduzido isoladamente
-      sem considerar a construção verbal completa.
+A descrição deve sempre considerar os dados registrados e o uso efetivo realizado pelos falantes.
     `,
 
     tipo: "documentado",
-    fonte: "Registros narrativos e análise gramatical"
+
+    fonte:
+      "Registros gramaticais e estudos linguísticos sobre o Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 10,
-    categoria: "Vocabulário",
-    periodo: "Significado e uso",
+    categoria: "Transformações",
+    periodo: "Semântica",
     titulo: "As palavras podem adquirir novos significados",
 
     resumo:
-      "Uma palavra pode manter sua forma e desenvolver novos usos ou sentidos em diferentes contextos.",
+      "Os significados das palavras podem se ampliar, mudar ou adquirir novos sentidos conforme as experiências históricas e culturais de seus falantes.",
 
     conteudo: `
-      As mudanças linguísticas podem ocorrer na pronúncia,
-      na grafia, na estrutura e também no significado.
+A transformação de uma língua não acontece somente nos sons e na gramática.
 
-      Uma palavra pode:
-      - ampliar seu significado;
-      - adquirir um uso mais específico;
-      - apresentar sentidos diferentes em contextos distintos;
-      - permanecer na oralidade mesmo sem aparecer em um livro;
-      - ser substituída por outra forma em determinado grupo.
+As palavras também podem adquirir novos significados.
 
-      O registro de variantes é importante para compreender
-      a diversidade e a continuidade da língua.
+Uma palavra que originalmente estava relacionada a determinado objeto, ação ou situação pode passar a ser utilizada em novos contextos.
+
+Essas mudanças acontecem porque os falantes utilizam a língua para falar sobre novas experiências, objetos, relações sociais e acontecimentos.
+
+No Guarani Nhandewa, estudar essas mudanças de significado é importante para compreender a relação entre língua, cultura e história.
+
+O significado de uma palavra deve ser observado dentro do contexto em que ela é utilizada.
     `,
 
     tipo: "em estudo",
-    fonte: "Reflexão linguística do Projeto Karumbé"
+
+    fonte:
+      "Estudos semânticos e registros de uso do Guarani Nhandewa.",
+
+    links: []
   },
 
   {
     id: 11,
-    categoria: "Futuro",
-    periodo: "Projeto Karumbé",
+    categoria: "Continuidade",
+    periodo: "Atualidade",
     titulo: "A revitalização e a continuidade da língua",
 
     resumo:
-      "O registro digital pode ajudar a conectar materiais históricos, conhecimentos atuais e práticas de ensino.",
+      "A continuidade da língua depende da transmissão entre gerações, do uso cotidiano, da educação, da documentação e das iniciativas das próprias comunidades.",
 
     conteudo: `
-      O Projeto Karumbé pretende reunir referências,
-      palavras, exemplos, histórias e análises linguísticas.
+Uma língua permanece viva quando continua sendo utilizada e transmitida.
 
-      A documentação deve respeitar os conhecimentos da comunidade,
-      a autoria dos materiais e a participação dos falantes.
+A transmissão entre gerações é fundamental para que crianças e jovens possam aprender a língua e utilizá-la em diferentes situações.
 
-      O objetivo não é congelar a língua, mas contribuir para
-      sua transmissão, valorização, estudo e continuidade.
+A escola também pode contribuir para esse processo quando valoriza os conhecimentos da comunidade, promove o uso da língua e trabalha com materiais produzidos a partir da realidade dos próprios estudantes.
+
+A documentação linguística, os registros escritos, os materiais didáticos, os dicionários, as gravações e os projetos comunitários também podem contribuir para a continuidade.
+
+No entanto, a revitalização não depende somente de livros ou documentos.
+
+Ela acontece principalmente quando a língua continua sendo falada, ensinada, aprendida e utilizada pelos próprios falantes.
+
+A continuidade do Guarani Nhandewa está relacionada à memória, à identidade, ao território, à educação e às novas gerações.
     `,
 
     tipo: "projeto",
-    fonte: "Projeto Karumbé"
+
+    fonte:
+      "Experiências de revitalização linguística, educação indígena, documentação e iniciativas das comunidades Guarani Nhandewa.",
+
+    links: []
   }
 
 ];
 
 
-/*
-========================================================
-FUNÇÕES DA SEÇÃO HISTÓRIA
-========================================================
-*/
+/* =========================================================
+   FUNÇÕES AUXILIARES
+   ========================================================= */
 
 function escaparHTML(texto) {
   return String(texto ?? "")
@@ -378,76 +383,14 @@ function classeTipo(tipo) {
 
   return classes[tipo] || "historia-estudo";
 }
-function mostrarHistorias(lista = HISTORIAS_LINGUA) {
-
-const HISTORIAS_LINGUA = [
-
-  {
-    id: 1,
-    categoria: "Apresentação",
-    periodo: "Introdução",
-    tipo: "Língua e identidade",
-
-    titulo: "A língua é memória, identidade e transformação",
-
-    resumo:
-      "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
-
-    conteudo: `
-A língua Nhandewa é parte fundamental da memória, da identidade e da continuidade do povo.
-
-Por meio da língua são transmitidos conhecimentos, histórias, ensinamentos, nomes, relações com a natureza e formas próprias de compreender o mundo.
-
-A língua não é apenas um conjunto de palavras. Ela carrega conhecimentos transmitidos entre gerações e permite que os ensinamentos dos mais velhos continuem presentes na vida das comunidades.
-
-O estudo da língua Nhandewa pode reunir a oralidade, os registros escritos e as pesquisas linguísticas, valorizando os conhecimentos produzidos e transmitidos pelo próprio povo.
-
-Preservar e fortalecer a língua significa também fortalecer a memória, a identidade e a continuidade cultural.
-`,
-
-    fonte:
-      "Registros linguísticos, conhecimentos da comunidade e materiais de estudo da língua Nhandewa.",
-
-    links: []
-  }
-
-];
 
 
-function escaparHTML(texto = "") {
-  return String(texto)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-
-function classeTipo(tipo = "") {
-  return String(tipo)
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-}
-
-
-function formatarConteudo(texto = "") {
-  return escaparHTML(texto)
-    .replace(/\r\n/g, "\n")
-    .replace(/\r/g, "\n")
-    .split(/\n{2,}/)
-    .filter(paragrafo => paragrafo.trim())
-    .map(paragrafo => `
-      <p>${paragrafo.replace(/\n/g, "<br>")}</p>
-    `)
-    .join("");
-}
-
+/* =========================================================
+   MOSTRAR HISTÓRIAS
+   ========================================================= */
 
 function mostrarHistorias(lista = HISTORIAS_LINGUA) {
+
   const container = document.getElementById("lista-historias");
 
   if (!container) {
@@ -456,176 +399,269 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
   }
 
   if (!lista.length) {
+
     container.innerHTML = `
       <div class="historia-vazia">
         Nenhum conteúdo encontrado.
       </div>
     `;
+
     return;
   }
 
   container.innerHTML = lista.map(item => `
+
     <article class="card-historia ${classeTipo(item.tipo)}">
+
       <span class="historia-categoria">
         ${escaparHTML(item.categoria)}
       </span>
 
-      <h3>${escaparHTML(item.titulo)}</h3>
+      <h3>
+        ${escaparHTML(item.titulo)}
+      </h3>
 
       <p class="historia-resumo">
         ${escaparHTML(item.resumo)}
       </p>
 
       <div class="historia-meta">
-        <span>${escaparHTML(item.periodo)}</span>
-        <span>${escaparHTML(item.tipo)}</span>
+
+        <span>
+          ${escaparHTML(item.periodo)}
+        </span>
+
+        <span>
+          ${escaparHTML(item.tipo)}
+        </span>
+
       </div>
 
       <button
         class="botao-historia"
         type="button"
         onclick="abrirHistoria(${item.id})">
+
         Ler conteúdo
+
       </button>
+
     </article>
+
   `).join("");
 }
 
 
+/* =========================================================
+   ABRIR HISTÓRIA
+   ========================================================= */
+
 function abrirHistoria(id) {
-  const item = HISTORIAS_LINGUA.find(historia => historia.id === id);
 
-  if (!item) return;
+  const item = HISTORIAS_LINGUA.find(
+    historia => historia.id === id
+  );
 
-  const modal = document.getElementById("modal-historia");
-  const conteudo = document.getElementById("conteudo-historia");
-
-  if (!modal || !conteudo) {
-    console.warn("Modal da história não encontrado.");
+  if (!item) {
+    console.warn("História não encontrada:", id);
     return;
   }
 
-  conteudo.innerHTML = `
-    <span class="historia-categoria">
-      ${escaparHTML(item.categoria)}
-    </span>
+  const modal = document.getElementById("modal-historia");
 
-    <h2>${escaparHTML(item.titulo)}</h2>
-
-    <p class="historia-periodo">
-      ${escaparHTML(item.periodo)}
-    </p>
-
-    <div class="texto-historia">
-  ${formatarConteudo(item.conteudo)}
-</div>
-
-  <div class="historia-fonte ${classeTipo(item.tipo)}">
-  <strong>Classificação:</strong>
-  ${escaparHTML(item.tipo)}
-  <br>
-  <strong>Fonte:</strong>
-  ${escaparHTML(item.fonte)}
-
-  ${
-    item.links && item.links.length
-      ? `
-        <div class="historia-links">
-          <strong>Fontes e leituras:</strong>
-          ${item.links.map(link => `
-            <a
-              href="${link.url}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              🔗 ${escaparHTML(link.titulo)}
-            </a>
-          `).join("")}
-        </div>
-      `
-      : ""
+  if (!modal) {
+    console.warn("Elemento #modal-historia não encontrado.");
+    return;
   }
-</div>
-  `;
+
+  const titulo = document.getElementById("titulo-modal-historia");
+  const categoria = document.getElementById("categoria-modal-historia");
+  const periodo = document.getElementById("periodo-modal-historia");
+  const tipo = document.getElementById("tipo-modal-historia");
+  const conteudo = document.getElementById("conteudo-modal-historia");
+  const fonte = document.getElementById("fonte-modal-historia");
+  const links = document.getElementById("links-modal-historia");
+
+  if (titulo) {
+    titulo.textContent = item.titulo;
+  }
+
+  if (categoria) {
+    categoria.textContent = item.categoria;
+  }
+
+  if (periodo) {
+    periodo.textContent = item.periodo;
+  }
+
+  if (tipo) {
+    tipo.textContent = item.tipo;
+  }
+
+  if (conteudo) {
+    conteudo.innerHTML = formatarConteudo(item.conteudo);
+  }
+
+  if (fonte) {
+    fonte.textContent = item.fonte || "";
+  }
+
+  if (links) {
+
+    if (item.links && item.links.length) {
+
+      links.innerHTML = item.links.map(link => `
+        <a
+          href="${escaparHTML(link.url)}"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          ${escaparHTML(link.titulo)}
+
+        </a>
+      `).join("");
+
+    } else {
+
+      links.innerHTML = "";
+
+    }
+  }
 
   modal.classList.add("ativo");
-  modal.setAttribute("aria-hidden", "false");
+
+  document.body.classList.add("modal-aberto");
 }
 
+
+/* =========================================================
+   FECHAR HISTÓRIA
+   ========================================================= */
 
 function fecharHistoria() {
+
   const modal = document.getElementById("modal-historia");
 
-  if (!modal) return;
-
-  modal.classList.remove("ativo");
-  modal.setAttribute("aria-hidden", "true");
-}
-
-
-function filtrarHistorias(termo = "") {
-  const pesquisa = termo.trim().toLocaleLowerCase("pt-BR");
-
-  const resultados = HISTORIAS_LINGUA.filter(item => {
-    const texto = [
-      item.titulo,
-      item.resumo,
-      item.conteudo,
-      item.categoria,
-      item.periodo
-    ].join(" ").toLocaleLowerCase("pt-BR");
-
-    return texto.includes(pesquisa);
-  });
-
-  mostrarHistorias(resultados);
-}
-
-
-function filtrarCategoriaHistoria(categoria) {
-  if (!categoria || categoria === "todas") {
-    mostrarHistorias();
+  if (!modal) {
     return;
   }
 
-  const resultados = HISTORIAS_LINGUA.filter(
+  modal.classList.remove("ativo");
+
+  document.body.classList.remove("modal-aberto");
+}
+
+
+/* =========================================================
+   FILTRO DE PESQUISA
+   ========================================================= */
+
+function filtrarHistorias(termo = "") {
+
+  const busca = String(termo)
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+  if (!busca) {
+
+    mostrarHistorias(HISTORIAS_LINGUA);
+
+    return;
+  }
+
+  const resultado = HISTORIAS_LINGUA.filter(item => {
+
+    const texto = `
+      ${item.titulo}
+      ${item.resumo}
+      ${item.conteudo}
+      ${item.categoria}
+      ${item.periodo}
+      ${item.tipo}
+    `
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+
+    return texto.includes(busca);
+  });
+
+  mostrarHistorias(resultado);
+}
+
+
+/* =========================================================
+   FILTRO POR CATEGORIA
+   ========================================================= */
+
+function filtrarCategoriaHistoria(categoria) {
+
+  if (!categoria || categoria === "Todas") {
+
+    mostrarHistorias(HISTORIAS_LINGUA);
+
+    return;
+  }
+
+  const resultado = HISTORIAS_LINGUA.filter(
     item => item.categoria === categoria
   );
 
-  mostrarHistorias(resultados);
+  mostrarHistorias(resultado);
 }
 
 
-/*
-========================================================
-INICIALIZAÇÃO
-========================================================
-*/
+/* =========================================================
+   INICIALIZAÇÃO
+   ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
+
   mostrarHistorias();
 
-  const campoPesquisa = document.getElementById("pesquisa-historias");
+  const campoPesquisa =
+    document.getElementById("pesquisa-historias");
 
   if (campoPesquisa) {
+
     campoPesquisa.addEventListener("input", event => {
+
       filtrarHistorias(event.target.value);
+
     });
+
   }
 
-  const botaoFechar = document.getElementById("fechar-modal-historia");
+
+  const botaoFechar =
+    document.getElementById("fechar-modal-historia");
 
   if (botaoFechar) {
-    botaoFechar.addEventListener("click", fecharHistoria);
+
+    botaoFechar.addEventListener(
+      "click",
+      fecharHistoria
+    );
+
   }
 
-  const modal = document.getElementById("modal-historia");
+
+  const modal =
+    document.getElementById("modal-historia");
 
   if (modal) {
+
     modal.addEventListener("click", event => {
+
       if (event.target === modal) {
+
         fecharHistoria();
+
       }
+
     });
+
   }
+
 });
