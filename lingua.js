@@ -1846,6 +1846,7 @@ a transmissão dos conhecimentos
 ];
 
 
+
 /* =========================================================
    FUNÇÕES AUXILIARES
    ========================================================= */
@@ -1862,35 +1863,34 @@ function escaparHTML(texto) {
 
 function formatarConteudo(texto) {
 
-    return escaparHTML(texto)
-        .trim()
-        .split(/\n{2,}/)
-        .map(paragrafo => {
+  return escaparHTML(texto)
+    .trim()
+    .split(/\n{2,}/)
+    .map(paragrafo => {
 
-            const linhas = paragrafo
-                .split("\n")
-                .map(linha => {
+      const linhas = paragrafo
+        .split("\n")
+        .map(linha => {
 
-                    if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+          if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+            return `<span class="destaque-exemplo">${linha}</span>`;
+          }
 
-                        return `<span class="destaque-exemplo">${linha}</span>`;
-
-                    }
-
-                    return linha;
-
-                })
-                .join("<br>");
-
-            return `<p>${linhas}</p>`;
+          return linha;
 
         })
-        .join("");
+        .join("<br>");
+
+      return `<p>${linhas}</p>`;
+
+    })
+    .join("");
 
 }
 
 
 function classeTipo(tipo) {
+
   const classes = {
     "documentado": "historia-documentado",
     "hipótese": "historia-hipotese",
@@ -1899,6 +1899,7 @@ function classeTipo(tipo) {
   };
 
   return classes[tipo] || "historia-estudo";
+
 }
 
 
@@ -1928,7 +1929,13 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
 
   container.innerHTML = lista.map(item => `
 
-    <article class="card-historia ${classeTipo(item.tipo)}">
+    <article
+      class="card-historia ${classeTipo(item.tipo)}"
+      role="button"
+      tabindex="0"
+      aria-label="Abrir: ${escaparHTML(item.titulo)}"
+      onclick="abrirHistoria(${item.id})"
+      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); abrirHistoria(${item.id}); }">
 
       <span class="historia-categoria">
         ${escaparHTML(item.categoria)}
@@ -1957,7 +1964,7 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
       <button
         class="botao-historia"
         type="button"
-        onclick="abrirHistoria(${item.id})">
+        onclick="event.stopPropagation(); abrirHistoria(${item.id})">
 
         Ler conteúdo
 
@@ -1966,6 +1973,7 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
     </article>
 
   `).join("");
+
 }
 
 
@@ -1995,6 +2003,7 @@ function abrirHistoria(id) {
   const linksHTML =
     item.links && item.links.length
       ? `
+
         <div class="historia-fonte">
 
           <strong>Links e referências:</strong>
@@ -2002,7 +2011,9 @@ function abrirHistoria(id) {
           <div style="margin-top: 10px;">
 
             ${item.links.map(link => `
+
               <p>
+
                 <a
                   href="${escaparHTML(link.url)}"
                   target="_blank"
@@ -2011,12 +2022,15 @@ function abrirHistoria(id) {
                   ${escaparHTML(link.titulo)}
 
                 </a>
+
               </p>
+
             `).join("")}
 
           </div>
 
         </div>
+
       `
       : "";
 
@@ -2061,9 +2075,11 @@ function abrirHistoria(id) {
       <strong>Fonte:</strong>
 
       <p>
+
         ${escaparHTML(
           item.fonte || "Fonte em estudo."
         )}
+
       </p>
 
     </div>
@@ -2073,11 +2089,12 @@ function abrirHistoria(id) {
   `;
 
   modal.classList.add("ativo");
-
   modal.setAttribute("aria-hidden", "false");
 
   document.body.classList.add("modal-aberto");
+
 }
+
 
 /* =========================================================
    FECHAR HISTÓRIA
@@ -2092,8 +2109,10 @@ function fecharHistoria() {
   }
 
   modal.classList.remove("ativo");
+  modal.setAttribute("aria-hidden", "true");
 
   document.body.classList.remove("modal-aberto");
+
 }
 
 
@@ -2111,28 +2130,32 @@ function filtrarHistorias(termo = "") {
   if (!busca) {
 
     mostrarHistorias(HISTORIAS_LINGUA);
-
     return;
+
   }
 
   const resultado = HISTORIAS_LINGUA.filter(item => {
 
     const texto = `
+
       ${item.titulo}
       ${item.resumo}
       ${item.conteudo}
       ${item.categoria}
       ${item.periodo}
       ${item.tipo}
+
     `
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
 
     return texto.includes(busca);
+
   });
 
   mostrarHistorias(resultado);
+
 }
 
 
@@ -2142,11 +2165,14 @@ function filtrarHistorias(termo = "") {
 
 function filtrarCategoriaHistoria(categoria) {
 
-  if (!categoria || categoria === "Todas") {
+  if (
+    !categoria ||
+    categoria.toLowerCase() === "todas"
+  ) {
 
     mostrarHistorias(HISTORIAS_LINGUA);
-
     return;
+
   }
 
   const resultado = HISTORIAS_LINGUA.filter(
@@ -2154,6 +2180,7 @@ function filtrarCategoriaHistoria(categoria) {
   );
 
   mostrarHistorias(resultado);
+
 }
 
 
@@ -2178,7 +2205,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
-
   const botaoFechar =
     document.getElementById("fechar-modal-historia");
 
@@ -2191,7 +2217,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }
 
-
   const modal =
     document.getElementById("modal-historia");
 
@@ -2200,13 +2225,19 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.addEventListener("click", event => {
 
       if (event.target === modal) {
-
         fecharHistoria();
-
       }
 
     });
 
   }
+
+  document.addEventListener("keydown", event => {
+
+    if (event.key === "Escape") {
+      fecharHistoria();
+    }
+
+  });
 
 });
