@@ -16,36 +16,87 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
+
     /*
     ================================================
     ESTILOS DA SEÇÃO HISTÓRIA
+    PROJETO KARUMBÉ
     ================================================
     */
 
-    .pagina-historia {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
+    /* =========================================
+       CABEÇALHO PRINCIPAL CENTRALIZADO
+    ========================================= */
+
+    header {
+      width: 100%;
+      background: #06251d;
+      color: white;
+      text-align: center;
+      padding: 22px 10px;
+      box-sizing: border-box;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 0.85rem;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+
+
+    /* =========================================
+       PÁGINA PRINCIPAL
+    ========================================= */
+
+    .pagina-historia {
+      max-width: 1550px;
+      width: 94%;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+
+    /* =========================================
+       CABEÇALHO DA HISTÓRIA
+    ========================================= */
 
     .cabecalho-historia {
       text-align: center;
-      padding: 25px 10px;
+      padding: 10px 10px 25px;
     }
 
-    .cabecalho-historia h1 {
-      margin-bottom: 10px;
+    .cabecalho-historia h2 {
+      margin: 0 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
 
     .cabecalho-historia p {
       line-height: 1.6;
+      color: white;
+      margin: 5px 0;
     }
+
+
+    /* =========================================
+       CONTROLES DE PESQUISA
+    ========================================= */
 
     .controles-historia {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 25px;
+      margin: 0 auto 25px;
+      max-width: 950px;
     }
 
     .controles-historia input,
@@ -56,74 +107,159 @@
       border: 1px solid #b7a58d;
       border-radius: 8px;
       font-size: 16px;
+      background: #fffaf3;
+      box-sizing: border-box;
     }
+
+
+    /* =========================================
+       GRADE DOS CARDS - 4 COLUNAS
+    ========================================= */
 
     .lista-historias {
       display: grid;
+
       grid-template-columns:
-        repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+        repeat(4, minmax(0, 1fr));
+
+      gap: 22px;
+      align-items: stretch;
     }
 
+
+    /* =========================================
+       CARDS
+    ========================================= */
+
     .card-historia {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      min-height: 145px;
+      padding: 20px;
+
       background: #fffaf3;
       border: 1px solid #d8c3a5;
       border-radius: 12px;
-      padding: 20px;
+
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+      box-sizing: border-box;
+      overflow: hidden;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
-    .card-historia h3 {
-      color: #62401f;
-      line-height: 1.4;
+    .card-historia:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
     }
+
+
+    /* =========================================
+       CATEGORIA
+    ========================================= */
 
     .historia-categoria {
       display: inline-block;
+      width: fit-content;
+
       background: #d8c3a5;
       color: #4e321b;
+
       padding: 5px 10px;
+      margin-bottom: 12px;
+
       border-radius: 20px;
       font-size: 13px;
+      font-weight: normal;
     }
 
-    .historia-resumo {
-      line-height: 1.6;
+
+    /* =========================================
+       TÍTULO - SOMENTE ELE EM NEGRITO
+    ========================================= */
+
+    .card-historia h3 {
+      margin: 0;
+      padding: 0;
+
+      color: #17372f;
+      font-size: 1.05rem;
+      line-height: 1.45;
+      font-weight: bold;
     }
 
-    .historia-meta {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 15px 0;
-      color: #76644e;
-      font-size: 13px;
+
+    /* =========================================
+       OCULTAR INFORMAÇÕES DO CARD
+       O CONTEÚDO APARECE NO MODAL
+    ========================================= */
+
+    .card-historia .historia-resumo,
+    .card-historia .historia-meta {
+      display: none;
     }
 
- 
-/* =========================================
-   BOTÃO DO CARD OCULTO
-   O CARD INTEIRO SERÁ CLICÁVEL
-========================================= */
 
-.card-historia .botao-historia {
-  display: none;
-}
+    /* =========================================
+       BOTÃO INVISÍVEL SOBRE TODO O CARD
+       PRESERVA A FUNCIONALIDADE EXISTENTE
+    ========================================= */
 
-.card-historia {
-  cursor: pointer;
-}
+    .card-historia .botao-historia {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
 
-.card-historia:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
-}
+      width: 100%;
+      height: 100%;
 
-.card-historia:focus {
-  outline: 3px solid #d8c3a5;
-  outline-offset: 3px;
-}
+      padding: 0;
+      margin: 0;
+
+      background: transparent;
+      border: none;
+      border-radius: 12px;
+
+      color: transparent;
+      font-size: 0;
+
+      cursor: pointer;
+    }
+
+    .card-historia .botao-historia:hover {
+      background: transparent;
+    }
+
+
+    /* =========================================
+       SETA NO CANTO DO CARD
+    ========================================= */
+
+    .card-historia::after {
+      content: "›";
+
+      position: absolute;
+      right: 18px;
+      bottom: 12px;
+
+      color: #17372f;
+      font-size: 2rem;
+      font-weight: normal;
+
+      pointer-events: none;
+    }
+
+
+    /* =========================================
+       CORES DE IDENTIFICAÇÃO
+    ========================================= */
 
     .historia-documentado {
       border-left: 5px solid #36865a;
@@ -141,42 +277,87 @@
       border-left: 5px solid #805a9b;
     }
 
+
+    /* =========================================
+       MODAL / BALÃO DE CONTEÚDO
+    ========================================= */
+
     .modal-historia {
       display: none;
+
       position: fixed;
       inset: 0;
       z-index: 1000;
-      background: rgba(0, 0, 0, 0.65);
+
+      background: rgba(0, 0, 0, 0.70);
+
       padding: 20px;
       overflow-y: auto;
+      box-sizing: border-box;
     }
 
     .modal-historia.ativo {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
     }
 
     .caixa-historia {
       background: #fffaf3;
       color: #33291f;
-      max-width: 750px;
+
+      max-width: 850px;
       width: 100%;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 14px;
+      max-height: 85vh;
+
+      margin: auto;
+      padding: 30px;
+
+      border-radius: 16px;
+      border: 2px solid #d8c3a5;
+
       position: relative;
+      overflow-y: auto;
+      box-sizing: border-box;
+
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
     }
+
+
+    /* =========================================
+       BOTÃO FECHAR
+    ========================================= */
 
     .fechar-modal-historia {
       position: absolute;
       right: 15px;
       top: 10px;
+
       border: none;
       background: transparent;
-      font-size: 28px;
+
+      font-size: 30px;
       cursor: pointer;
       color: #62401f;
+    }
+
+    .fechar-modal-historia:hover {
+      color: #a33a26;
+    }
+
+
+    /* =========================================
+       CONTEÚDO DO MODAL
+    ========================================= */
+
+    #conteudo-historia h2 {
+      margin-top: 0;
+      padding-right: 25px;
+
+      color: #174c3d;
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 1.4;
     }
 
     .texto-historia {
@@ -184,38 +365,195 @@
       margin-top: 20px;
     }
 
+    #conteudo-historia p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    #conteudo-historia a {
+      color: #1769aa;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
     .historia-fonte {
       margin-top: 25px;
       padding: 15px;
+
       background: #eee2d2;
       border-radius: 8px;
+
       line-height: 1.7;
       font-size: 14px;
     }
 
+
+    /* =========================================
+       DESTAQUE DOS EXEMPLOS
+    ========================================= */
+
+    .destaque-exemplo {
+      display: block;
+      color: #1769aa;
+      font-weight: bold;
+      font-size: 1.05rem;
+
+      margin-top: 22px;
+      margin-bottom: 10px;
+
+      border-left: 5px solid #1769aa;
+      padding-left: 10px;
+    }
+
+
+    /* =========================================
+       HISTÓRIA VAZIA
+    ========================================= */
+
     .historia-vazia {
       text-align: center;
       padding: 30px;
+      color: white;
     }
 
-    @media (max-width: 600px) {
+
+    /* =========================================
+       BOTÃO VOLTAR CENTRALIZADO
+    ========================================= */
+
+    .area-voltar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%;
+      margin: 35px 0 40px;
+    }
+
+    .botao-voltar {
+      display: inline-block;
+
+      padding: 13px 35px;
+
+      background: #73502d;
+      color: white;
+
+      border: none;
+      border-radius: 8px;
+
+      text-decoration: none;
+      text-align: center;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .botao-voltar:hover {
+      background: #4f351e;
+    }
+
+
+    /* =========================================
+       TABLETS - 3 COLUNAS
+    ========================================= */
+
+    @media (max-width: 1150px) {
+
+      .lista-historias {
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr));
+      }
+
+    }
+
+
+    /* =========================================
+       TABLETS PEQUENOS - 2 COLUNAS
+    ========================================= */
+
+    @media (max-width: 800px) {
+
       .pagina-historia {
-        padding: 12px;
+        width: 92%;
+      }
+
+      .lista-historias {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+
+        gap: 15px;
+      }
+
+      .card-historia {
+        padding: 17px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+    }
+
+
+    /* =========================================
+       CELULARES - 1 COLUNA
+    ========================================= */
+
+    @media (max-width: 500px) {
+
+      .pagina-historia {
+        width: 92%;
+        padding: 12px 0;
+      }
+
+      header h1 {
+        font-size: 1.35rem;
+      }
+
+      header p {
+        font-size: 0.75rem;
+      }
+
+      .cabecalho-historia h2 {
+        font-size: 1.2rem;
+      }
+
+      .lista-historias {
+        grid-template-columns: 1fr;
+      }
+
+      .card-historia {
+        min-height: 125px;
       }
 
       .caixa-historia {
-        padding: 20px 15px;
+        padding: 25px 18px;
       }
+
+      #conteudo-historia h2 {
+        font-size: 1.3rem;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
+  <!-- CABEÇALHO PRINCIPAL -->
 
   <header>
     <h1>PROJETO KARUMBÉ</h1>
     <p>DICIONÁRIO GUARANI NHANDEWA</p>
   </header>
+
+
+  <!-- CONTEÚDO PRINCIPAL -->
 
   <main class="pagina-historia">
 
@@ -238,6 +576,9 @@
       </p>
 
     </section>
+
+
+    <!-- PESQUISA E FILTROS -->
 
     <section class="controles-historia">
 
@@ -287,6 +628,9 @@
 
     </section>
 
+
+    <!-- LISTA AUTOMÁTICA DE HISTÓRIAS -->
+
     <section
       id="lista-historias"
       class="lista-historias"
@@ -296,7 +640,21 @@
 
     </section>
 
+
+    <!-- BOTÃO VOLTAR CENTRALIZADO -->
+
+    <div class="area-voltar">
+
+      <a href="index.html" class="botao-voltar">
+        ← Voltar ao início
+      </a>
+
+    </div>
+
   </main>
+
+
+  <!-- MODAL DE CONTEÚDO -->
 
   <div
     id="modal-historia"
@@ -321,27 +679,35 @@
 
   </div>
 
- <script src="./lingua.js"></script>
+
+  <!-- JAVASCRIPT EXISTENTE -->
+
+  <script src="./lingua.js"></script>
+
+
+  <!-- FILTRO DE CATEGORIA -->
 
   <script>
+
     document.addEventListener("DOMContentLoaded", () => {
 
       const categoria =
         document.getElementById("categoria-historia");
 
       if (categoria) {
+
         categoria.addEventListener("change", event => {
+
           filtrarCategoriaHistoria(event.target.value);
+
         });
+
       }
 
     });
+
   </script>
 
-
-     <!-- BOTÃO VOLTAR -->
-<a href="index.html" class="botao-voltar">
-    ← Voltar ao início
-</a>
 </body>
+
 </html>
