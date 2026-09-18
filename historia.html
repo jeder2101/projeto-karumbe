@@ -101,19 +101,29 @@
       font-size: 13px;
     }
 
-    .botao-historia {
-      background: #73502d;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 11px 16px;
-      cursor: pointer;
-      font-size: 15px;
-    }
+ 
+/* =========================================
+   BOTÃO DO CARD OCULTO
+   O CARD INTEIRO SERÁ CLICÁVEL
+========================================= */
 
-    .botao-historia:hover {
-      background: #4f351e;
-    }
+.card-historia .botao-historia {
+  display: none;
+}
+
+.card-historia {
+  cursor: pointer;
+}
+
+.card-historia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+.card-historia:focus {
+  outline: 3px solid #d8c3a5;
+  outline-offset: 3px;
+}
 
     .historia-documentado {
       border-left: 5px solid #36865a;
