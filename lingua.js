@@ -2067,6 +2067,288 @@ function abrirHistoria(id) {
     <div class="texto-historia">
 
       ${formatarConteudo(item.conteudo)}
+      
+${item.id === 2 ? `
+
+  <section class="mapa-nhandewa">
+
+    <h3>
+      Mapa histórico da trajetória Guarani Nhandewa
+    </h3>
+
+    <p>
+      Representação esquemática de deslocamentos
+      históricos associados a grupos Guarani
+      Nhandewa, incluindo trajetórias em direção
+      ao interior e ao litoral de São Paulo.
+    </p>
+
+    <svg
+      viewBox="0 0 700 650"
+      role="img"
+      aria-label="Mapa esquemático da trajetória histórica Guarani Nhandewa">
+
+      <defs>
+
+        <marker
+          id="seta-migracao"
+          markerWidth="8"
+          markerHeight="8"
+          refX="6"
+          refY="3"
+          orient="auto">
+
+          <path
+            d="M0,0 L0,6 L6,3 z"
+            fill="#805a9b"/>
+
+        </marker>
+
+      </defs>
+
+      <!-- ÁREA ESQUEMÁTICA DO MAPA -->
+
+      <rect
+        x="35"
+        y="25"
+        width="630"
+        height="570"
+        rx="20"
+        fill="#e4d8c4"
+        stroke="#b7a58d"
+        stroke-width="2"/>
+
+      <text
+        x="350"
+        y="55"
+        text-anchor="middle"
+        font-size="19"
+        font-weight="bold"
+        fill="#62401f">
+
+        Trajetórias históricas
+
+      </text>
+
+      <!-- REGIÃO DE ORIGEM DOCUMENTADA -->
+
+      <circle
+        cx="175"
+        cy="150"
+        r="9"
+        fill="#36865a"/>
+
+      <text
+        x="195"
+        y="145"
+        font-size="14"
+        fill="#33291f">
+
+        Região do Iguatemi
+
+      </text>
+
+      <text
+        x="195"
+        y="163"
+        font-size="11"
+        fill="#62401f">
+
+        MS / fronteira com Paraguai
+
+      </text>
+
+      <!-- BARÃO DE ANTONINA / ITAPORANGA -->
+
+      <circle
+        cx="335"
+        cy="275"
+        r="9"
+        fill="#36865a"/>
+
+      <text
+        x="350"
+        y="270"
+        font-size="14"
+        fill="#33291f">
+
+        Itaporanga
+
+      </text>
+
+      <text
+        x="350"
+        y="288"
+        font-size="11"
+        fill="#62401f">
+
+        Região do Barão de Antonina
+
+      </text>
+
+      <!-- ARARIBÁ / NIMUENDAJU -->
+
+      <circle
+        cx="390"
+        cy="385"
+        r="9"
+        fill="#36865a"/>
+
+      <text
+        x="405"
+        y="380"
+        font-size="14"
+        fill="#33291f">
+
+        Araribá
+
+      </text>
+
+      <text
+        x="405"
+        y="398"
+        font-size="11"
+        fill="#62401f">
+
+        Atual área Nimuendaju
+
+      </text>
+
+      <!-- LITORAL -->
+
+      <circle
+        cx="555"
+        cy="310"
+        r="9"
+        fill="#36865a"/>
+
+      <text
+        x="470"
+        y="295"
+        font-size="14"
+        fill="#33291f">
+
+        Litoral paulista
+
+      </text>
+
+      <text
+        x="470"
+        y="328"
+        font-size="11"
+        fill="#62401f">
+
+        Itariri / Bananal
+
+      </text>
+
+      <!-- NORTE DO PARANÁ -->
+
+      <circle
+        cx="270"
+        cy="455"
+        r="9"
+        fill="#36865a"/>
+
+      <text
+        x="285"
+        y="450"
+        font-size="14"
+        fill="#33291f">
+
+        Norte do Paraná
+
+      </text>
+
+      <text
+        x="285"
+        y="468"
+        font-size="11"
+        fill="#62401f">
+
+        Laranjinha / Pinhalzinho
+
+      </text>
+
+      <!-- TRAJETÓRIAS ESQUEMÁTICAS -->
+
+      <path
+        d="M180 160 Q240 210 330 270"
+        fill="none"
+        stroke="#805a9b"
+        stroke-width="4"
+        stroke-dasharray="9 6"
+        marker-end="url(#seta-migracao)"/>
+
+      <path
+        d="M340 290 Q380 340 390 375"
+        fill="none"
+        stroke="#805a9b"
+        stroke-width="4"
+        stroke-dasharray="9 6"
+        marker-end="url(#seta-migracao)"/>
+
+      <path
+        d="M350 270 Q470 230 550 300"
+        fill="none"
+        stroke="#805a9b"
+        stroke-width="4"
+        stroke-dasharray="9 6"
+        marker-end="url(#seta-migracao)"/>
+
+      <path
+        d="M330 290 Q290 375 275 445"
+        fill="none"
+        stroke="#805a9b"
+        stroke-width="4"
+        stroke-dasharray="9 6"
+        marker-end="url(#seta-migracao)"/>
+
+      <!-- AVISO DO MAPA -->
+
+      <text
+        x="350"
+        y="540"
+        text-anchor="middle"
+        font-size="12"
+        fill="#62401f">
+
+        Representação ilustrativa, não cartografia exata
+
+      </text>
+
+    </svg>
+
+    <div class="mapa-legenda">
+
+      <span>
+        ● Localidade ou região documentada
+      </span>
+
+      <span>
+        ⇢ Trajetória histórica esquemática
+      </span>
+
+    </div>
+
+    <div class="mapa-observacao">
+
+      <strong>Observação histórica:</strong>
+
+      <p>
+        Os deslocamentos Guarani ocorreram em
+        diferentes períodos e envolveram grupos
+        e trajetórias distintas. O mapa não deve
+        ser interpretado como uma única rota linear
+        ou como representação de todos os grupos
+        Nhandewa.
+      </p>
+
+    </div>
+
+  </section>
+
+` : ""}
 
     </div>
 
