@@ -1122,36 +1122,6 @@ as construções da língua.
         }
     ]
 },
-  {
-    id: 10,
-    categoria: "Transformações",
-    periodo: "Semântica",
-    titulo: "As palavras podem adquirir novos significados",
-
-    resumo:
-      "Os significados das palavras podem se ampliar, mudar ou adquirir novos sentidos conforme as experiências históricas e culturais de seus falantes.",
-
-    conteudo: `
-A transformação de uma língua não acontece somente nos sons e na gramática.
-
-As palavras também podem adquirir novos significados.
-
-Uma palavra que originalmente estava relacionada a determinado objeto, ação ou situação pode passar a ser utilizada em novos contextos.
-
-Essas mudanças acontecem porque os falantes utilizam a língua para falar sobre novas experiências, objetos, relações sociais e acontecimentos.
-
-No Guarani Nhandewa, estudar essas mudanças de significado é importante para compreender a relação entre língua, cultura e história.
-
-O significado de uma palavra deve ser observado dentro do contexto em que ela é utilizada.
-    `,
-
-    tipo: "em estudo",
-
-    fonte:
-      "Estudos semânticos e registros de uso do Guarani Nhandewa.",
-
-    links: []
-  },
 
 {
     id: 10,
