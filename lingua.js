@@ -2045,7 +2045,7 @@ function abrirHistoria(id) {
       ${item.id === 2 ? `
         <section class="mapa-nhandewa" style="text-align: center; margin-top: 20px;">
           <h3>
-            Mapa histórico da trajetória Guarani Nhandewa
+            Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá
           </h3>
           <p>
             Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
@@ -2058,7 +2058,7 @@ function abrirHistoria(id) {
           <div class="mapa-observacao" style="margin-top: 15px; font-size: 0.9rem; color: #62401f;">
             <strong>Observação histórica:</strong>
             <p style="margin-top: 5px;">
-              Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas.
+              Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas, este trata do deslocamento de um pequeno grupo de famílias nhandewa.
             </p>
           </div>
         </section>
