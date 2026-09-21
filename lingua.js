@@ -2104,6 +2104,22 @@ ${item.id === 2 ? `
 
         </marker>
 
+        <!-- SETA AZUL PARA A RETOMADA 2005 -->
+        <marker
+          id="seta-azul"
+          markerWidth="10"
+          markerHeight="10"
+          refX="6"
+          refY="3"
+          orient="auto"
+          markerUnits="strokeWidth">
+
+          <path
+            d="M0,0 L0,6 L9,3 z"
+            fill="#0056b3"/>
+
+        </marker>
+
       </defs>
 
       <!-- ÁREA ESQUEMÁTICA DO MAPA -->
@@ -2304,6 +2320,26 @@ ${item.id === 2 ? `
         stroke-dasharray="9 6"
         marker-end="url(#seta-migracao)"/>
 
+      <!-- NOVA TRAJETÓRIA E TÍTULO: RETOMADA TERRITÓRIO 2005 -->
+      <path
+        d="M 390 385 Q 470 340 555 310"
+        fill="none"
+        stroke="#0056b3"
+        stroke-width="3"
+        stroke-dasharray="6,6"
+        marker-end="url(#seta-azul)"/>
+
+      <text
+        x="470"
+        y="350"
+        fill="#0056b3"
+        font-size="13"
+        font-weight="bold"
+        text-anchor="middle"
+        font-family="sans-serif">
+        Retomada Território 2005
+      </text>
+
       <!-- AVISO DO MAPA -->
 
       <text
@@ -2327,6 +2363,10 @@ ${item.id === 2 ? `
 
       <span>
         ⇢ Trajetória histórica esquemática
+      </span>
+
+      <span style="color: #0056b3; font-weight: bold;">
+        ⇢ Retomada Território 2005
       </span>
 
     </div>
@@ -2376,7 +2416,6 @@ ${item.id === 2 ? `
   document.body.classList.add("modal-aberto");
 
 }
-
 
 /* =========================================================
    FECHAR HISTÓRIA
