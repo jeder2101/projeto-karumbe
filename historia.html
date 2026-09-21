@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -457,6 +456,46 @@
 
 
     /* =========================================
+       MAPA HISTÓRICO GUARANI NHANDEWA (ESTILO)
+    ========================================= */
+    .mapa-nhandewa {
+        margin: 30px auto;
+        padding: 20px;
+        max-width: 850px;
+        background: #f5efe6;
+        border: 2px solid #7b4b1f;
+        border-radius: 15px;
+        text-align: center;
+        overflow-x: auto;
+    }
+
+    .mapa-nhandewa h3 {
+        color: #7b4b1f;
+        margin-bottom: 10px;
+    }
+
+    .mapa-nhandewa p {
+        color: #5a4635;
+        font-size: 0.95rem;
+    }
+
+    .mapa-nhandewa svg {
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .mapa-legenda {
+        font-size: 0.85rem;
+        font-style: italic;
+        color: #6b5a48;
+        margin-top: 15px;
+    }
+
+
+    /* =========================================
        TABLETS - 3 COLUNAS
     ========================================= */
 
@@ -635,6 +674,47 @@
       <p>Carregando conteúdos...</p>
 
     </section>
+
+
+    <!-- MAPA HISTÓRICO GUARANI NHANDEWA (COM A SETA E O TÍTULO) -->
+    <div class="mapa-nhandewa">
+        <h3>Mapa Histórico Guarani Ñandewa</h3>
+        <p>Trajetória e expansão territorial tradicional.</p>
+        
+        <svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Fundo do mapa -->
+            <rect width="700" height="400" fill="#ede4d4" rx="10" />
+            
+            <!-- LINHA PONTILHADA EM AZUL COM SETA -->
+            <path d="M 150 250 Q 350 100 550 220" 
+                  fill="none" 
+                  stroke="#0056b3" 
+                  stroke-width="3" 
+                  stroke-dasharray="6,6" 
+                  marker-end="url(#seta-azul)" />
+
+            <!-- TÍTULO DA SETA EM AZUL -->
+            <text x="350" y="150" 
+                  fill="#0056b3" 
+                  font-size="14" 
+                  font-weight="bold" 
+                  text-anchor="middle" 
+                  font-family="sans-serif">
+                Retomada Território 2005
+            </text>
+
+            <!-- Definição da ponta da seta azul -->
+            <defs>
+                <marker id="seta-azul" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#0056b3" />
+                </marker>
+            </defs>
+        </svg>
+
+        <div class="mapa-legenda">
+            Indicação da rota histórica e caminhos percorridos.
+        </div>
+    </div>
 
 
     <!-- BOTÃO VOLTAR CENTRALIZADO -->
