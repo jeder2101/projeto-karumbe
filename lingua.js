@@ -2080,9 +2080,9 @@ ${item.id === 2 ? `
       Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
     </p>
 
-    <!-- IMAGEM DO MAPA SUBSTITUINDO O SVG -->
+    <!-- IMAGEM DO MAPA APONTANDO PARA A PASTA assets/img -->
     <div style="margin: 20px 0;">
-      <img src="Iguatemi (Área de origem).jpg" 
+      <img src="assets/img/Iguatemi (Área de origem).jpg" 
            alt="Mapa histórico da trajetória Guarani Nhandewa" 
            style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #b7a58d; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
     </div>
