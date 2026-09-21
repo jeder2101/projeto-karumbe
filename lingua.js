@@ -1846,6 +1846,27 @@ a transmissão dos conhecimentos
 ];
 
 
+/* =========================================================
+   FECHAR HISTÓRIA (CORREÇÃO ESSENCIAL)
+   ========================================================= */
+
+function fecharHistoria(event) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  const modal = document.getElementById("modal-historia");
+
+  if (!modal) {
+    return;
+  }
+
+  modal.classList.remove("ativo");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-aberto");
+}
+
 
 /* =========================================================
    FUNÇÕES AUXILIARES
@@ -1860,46 +1881,33 @@ function escaparHTML(texto) {
     .replaceAll("'", "&#039;");
 }
 
-
 function formatarConteudo(texto) {
-
   return escaparHTML(texto)
     .trim()
     .split(/\n{2,}/)
     .map(paragrafo => {
-
       const linhas = paragrafo
         .split("\n")
         .map(linha => {
-
           if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
             return `<span class="destaque-exemplo">${linha}</span>`;
           }
-
           return linha;
-
         })
         .join("<br>");
-
       return `<p>${linhas}</p>`;
-
     })
     .join("");
-
 }
 
-
 function classeTipo(tipo) {
-
   const classes = {
     "documentado": "historia-documentado",
     "hipótese": "historia-hipotese",
     "em estudo": "historia-estudo",
     "projeto": "historia-projeto"
   };
-
   return classes[tipo] || "historia-estudo";
-
 }
 
 
@@ -1908,7 +1916,6 @@ function classeTipo(tipo) {
    ========================================================= */
 
 function mostrarHistorias(lista = HISTORIAS_LINGUA) {
-
   const container = document.getElementById("lista-historias");
 
   if (!container) {
@@ -1917,18 +1924,15 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
   }
 
   if (!lista.length) {
-
     container.innerHTML = `
       <div class="historia-vazia">
         Nenhum conteúdo encontrado.
       </div>
     `;
-
     return;
   }
 
   container.innerHTML = lista.map(item => `
-
     <article
       class="card-historia ${classeTipo(item.tipo)}"
       role="button"
@@ -1950,30 +1954,22 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
       </p>
 
       <div class="historia-meta">
-
         <span>
           ${escaparHTML(item.periodo)}
         </span>
-
         <span>
           ${escaparHTML(item.tipo)}
         </span>
-
       </div>
 
       <button
         class="botao-historia"
         type="button"
         onclick="event.stopPropagation(); abrirHistoria(${item.id})">
-
         Ler conteúdo
-
       </button>
-
     </article>
-
   `).join("");
-
 }
 
 
@@ -1982,7 +1978,6 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
    ========================================================= */
 
 function abrirHistoria(id) {
-
   const item = HISTORIAS_LINGUA.find(
     historia => historia.id === id
   );
@@ -2003,39 +1998,25 @@ function abrirHistoria(id) {
   const linksHTML =
     item.links && item.links.length
       ? `
-
         <div class="historia-fonte">
-
           <strong>Links e referências:</strong>
-
           <div style="margin-top: 10px;">
-
             ${item.links.map(link => `
-
               <p>
-
                 <a
                   href="${escaparHTML(link.url)}"
                   target="_blank"
                   rel="noopener noreferrer">
-
                   ${escaparHTML(link.titulo)}
-
                 </a>
-
               </p>
-
             `).join("")}
-
           </div>
-
         </div>
-
       `
       : "";
 
   conteudo.innerHTML = `
-
     <span class="historia-categoria">
       ${escaparHTML(item.categoria)}
     </span>
@@ -2045,84 +2026,58 @@ function abrirHistoria(id) {
     </h2>
 
     <div class="historia-meta">
-
       <span>
         ${escaparHTML(item.periodo)}
       </span>
-
       <span>
         ${escaparHTML(item.tipo)}
       </span>
-
     </div>
 
     <p class="historia-resumo">
-
       <strong>Resumo:</strong><br>
-
       ${escaparHTML(item.resumo)}
-
     </p>
 
     <div class="texto-historia">
-
       ${formatarConteudo(item.conteudo)}
       
-${item.id === 2 ? `
-
-  <section class="mapa-nhandewa" style="text-align: center; margin-top: 20px;">
-
-    <h3>
-      Mapa histórico da trajetória Guarani Nhandewa
-    </h3>
-
-    <p>
-      Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
-    </p>
-
-    <!-- IMAGEM DO MAPA APONTANDO PARA A PASTA assets/img -->
-    <div style="margin: 20px 0;">
-      <img src="assets/img/Iguatemi (Área de origem).jpg" 
-           alt="Mapa histórico da trajetória Guarani Nhandewa" 
-           style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #b7a58d; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-    </div>
-
-    <div class="mapa-observacao" style="margin-top: 15px; font-size: 0.9rem; color: #62401f;">
-      <strong>Observação histórica:</strong>
-      <p style="margin-top: 5px;">
-        Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas.
-      </p>
-    </div>
-
-  </section>
-
-` : ""}
-
+      ${item.id === 2 ? `
+        <section class="mapa-nhandewa" style="text-align: center; margin-top: 20px;">
+          <h3>
+            Mapa histórico da trajetória Guarani Nhandewa
+          </h3>
+          <p>
+            Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
+          </p>
+          <div style="margin: 20px 0;">
+            <img src="assets/img/Iguatemi (Área de origem).jpg" 
+                 alt="Mapa histórico da trajetória Guarani Nhandewa" 
+                 style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #b7a58d; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+          </div>
+          <div class="mapa-observacao" style="margin-top: 15px; font-size: 0.9rem; color: #62401f;">
+            <strong>Observação histórica:</strong>
+            <p style="margin-top: 5px;">
+              Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas.
+            </p>
+          </div>
+        </section>
+      ` : ""}
     </div>
 
     <div class="historia-fonte">
-
       <strong>Fonte:</strong>
-
       <p>
-
-        ${escaparHTML(
-          item.fonte || "Fonte em estudo."
-        )}
-
+        ${escaparHTML(item.fonte || "Fonte em estudo.")}
       </p>
-
     </div>
 
     ${linksHTML}
-
   `;
 
   modal.classList.add("ativo");
   modal.setAttribute("aria-hidden", "false");
-
   document.body.classList.add("modal-aberto");
-
 }
 
 
@@ -2131,41 +2086,33 @@ ${item.id === 2 ? `
    ========================================================= */
 
 function filtrarHistorias(termo = "") {
-
   const busca = String(termo)
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
 
   if (!busca) {
-
     mostrarHistorias(HISTORIAS_LINGUA);
     return;
-
   }
 
   const resultado = HISTORIAS_LINGUA.filter(item => {
-
     const texto = `
-
       ${item.titulo}
       ${item.resumo}
       ${item.conteudo}
       ${item.categoria}
       ${item.periodo}
       ${item.tipo}
-
     `
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
 
     return texto.includes(busca);
-
   });
 
   mostrarHistorias(resultado);
-
 }
 
 
@@ -2174,15 +2121,9 @@ function filtrarHistorias(termo = "") {
    ========================================================= */
 
 function filtrarCategoriaHistoria(categoria) {
-
-  if (
-    !categoria ||
-    categoria.toLowerCase() === "todas"
-  ) {
-
+  if (!categoria || categoria.toLowerCase() === "todas") {
     mostrarHistorias(HISTORIAS_LINGUA);
     return;
-
   }
 
   const resultado = HISTORIAS_LINGUA.filter(
@@ -2190,7 +2131,6 @@ function filtrarCategoriaHistoria(categoria) {
   );
 
   mostrarHistorias(resultado);
-
 }
 
 
@@ -2199,55 +2139,34 @@ function filtrarCategoriaHistoria(categoria) {
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-
   mostrarHistorias();
 
-  const campoPesquisa =
-    document.getElementById("pesquisa-historias");
-
+  const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
-
     campoPesquisa.addEventListener("input", event => {
-
       filtrarHistorias(event.target.value);
-
     });
-
   }
 
-  const botaoFechar =
-    document.getElementById("fechar-modal-historia");
-
+  const botaoFechar = document.getElementById("fechar-modal-historia");
   if (botaoFechar) {
-
-    botaoFechar.addEventListener(
-      "click",
-      fecharHistoria
-    );
-
+    botaoFechar.addEventListener("click", event => {
+      fecharHistoria(event);
+    });
   }
 
-  const modal =
-    document.getElementById("modal-historia");
-
+  const modal = document.getElementById("modal-historia");
   if (modal) {
-
     modal.addEventListener("click", event => {
-
       if (event.target === modal) {
-        fecharHistoria();
+        fecharHistoria(event);
       }
-
     });
-
   }
 
   document.addEventListener("keydown", event => {
-
     if (event.key === "Escape") {
       fecharHistoria();
     }
-
   });
-
 });
