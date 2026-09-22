@@ -59,74 +59,268 @@ das crianças e das novas gerações.
     }
 ]
 },
-  {
+ {
     id: 2,
     categoria: "História da língua",
     periodo: "História",
     titulo: "A trajetória histórica da língua Guarani Nhandewa",
 
     resumo:
-        "A língua Guarani Nhandewa possui uma história relacionada aos povos Tupi-Guarani, aos territórios, às migrações e à transmissão de conhecimentos entre gerações.",
+        "A língua Guarani Nhandewa possui uma história relacionada aos povos Tupi-Guarani, aos territórios, às migrações, aos contatos entre comunidades e à transmissão de conhecimentos entre gerações.",
 
     conteudo: `
 A língua Guarani Nhandewa faz parte da história linguística
 dos povos Tupi-Guarani.
 
 Sua trajetória deve ser compreendida considerando os
-territórios, as comunidades, os deslocamentos históricos
-e as relações estabelecidas entre diferentes povos.
+territórios, as comunidades, os deslocamentos históricos,
+as migrações e as relações estabelecidas entre diferentes
+povos e comunidades Guarani.
+
+A história de uma língua não acontece de forma isolada.
+Ela acompanha seus falantes e é transmitida entre gerações.
+Por isso, para compreender o Nhandewa-Guarani contemporâneo,
+é necessário observar tanto as continuidades históricas quanto
+as transformações ocorridas ao longo do tempo.
 
 Os registros históricos e linguísticos permitem estudar
-aspectos da língua Guarani desde documentos antigos
-até as formas utilizadas pelas comunidades atualmente.
+aspectos da língua Guarani desde documentos antigos até
+as formas utilizadas pelas comunidades atualmente.
 
-Entre os registros importantes para os estudos históricos
+Entre os registros mais importantes para os estudos históricos
 do Guarani está a obra de Antonio Ruiz de Montoya,
-incluindo o Tesoro de la lengua guarani, publicado em 1639.
+especialmente o "Tesoro de la lengua guarani", publicado
+em 1639, e a "Arte, y bocabulario de la lengua guarani",
+publicada em 1640.
 
-Também existem pesquisas sobre os Guarani e os Apapocúva-Guarani,
-como os estudos de Curt Nimuendaju, publicados inicialmente
-em 1914.
+Essas obras constituem registros históricos importantes
+de uma variedade do Guarani registrada no período colonial.
+Entretanto, não devem ser consideradas como uma descrição
+direta do Nhandewa contemporâneo.
 
-Esses documentos não devem ser interpretados isoladamente.
-É necessário considerar o período em que foram produzidos,
-os pesquisadores envolvidos e as comunidades descritas.
+Também existem pesquisas fundamentais sobre os Guarani
+e os Apapocúva-Guarani, entre elas os estudos de
+Curt Nimuendaju, publicados inicialmente em 1914.
 
-Estudos contemporâneos investigam possíveis relações
-históricas e linguísticas entre os Guarani registrados
-no século XVII e as comunidades Nhandewa atuais.
+Nimuendaju registrou trajetórias de grupos como os
+Apapocúva, Tañyguá e Oguauíva e descreveu migrações
+associadas à cosmologia Guarani e à busca da
+Yvy Marã e'ỹ, frequentemente traduzida como
+"Terra sem Mal".
 
-Essas relações fazem parte da pesquisa acadêmica e devem
-ser analisadas com atenção às evidências disponíveis.
+Esses registros são importantes para compreender parte
+das trajetórias históricas dos grupos Guarani, mas precisam
+ser analisados considerando o período em que foram produzidos,
+os grupos estudados e as categorias utilizadas pelos próprios
+pesquisadores.
+
+Pesquisas contemporâneas mostram que determinadas
+comunidades Nhandewa-Guarani no Brasil estão relacionadas
+a processos históricos de migração e deslocamento de grupos
+Tañyguá, Oguauíva e Apapokuva.
+
+Essas trajetórias contribuíram para a formação de redes
+de relações entre comunidades e para a constituição de
+características linguísticas e culturais próprias.
+
+A Enciclopédia das Línguas no Brasil, da UNICAMP,
+destaca que comunidades Nhandewa-Guarani no Brasil
+mantiveram relações entre si e que diferentes grupos
+migratórios contribuíram historicamente para a formação
+de uma unidade linguística e cultural própria.
+
+Isso ajuda a compreender por que o Nhandewa não deve
+ser visto simplesmente como uma língua "misturada".
+
+Uma língua pode conservar elementos antigos e, ao mesmo
+tempo, desenvolver características próprias ao longo das
+gerações.
+
+O contato entre comunidades pode contribuir para mudanças
+na pronúncia, no vocabulário, nos significados das palavras
+e em determinados usos linguísticos.
+
+Entretanto, cada mudança precisa ser estudada com base
+em evidências linguísticas e históricas.
+
+Não é correto atribuir automaticamente uma determinada
+palavra ou característica a outro povo sem que existam
+dados que sustentem essa relação.
+
+Por isso, a formação histórica do Nhandewa deve ser
+compreendida como um processo de continuidade,
+transformação e transmissão entre gerações.
+
+A história familiar também pode contribuir para essa
+pesquisa.
+
+Na memória familiar registrada neste projeto aparece a
+linhagem de Firmino Pedro da Silva, identificado pela
+memória familiar como Nhandewa.
+
+Entre seus descendentes estão Clarice Pedro da Silva,
+posteriormente Clarice Pedro Mendes, e Jovelina.
+
+Segundo a memória familiar registrada neste projeto,
+Jovelina foi mãe de Juraci, e essa linhagem chegou
+posteriormente à mãe do autor deste registro.
+
+Pelo outro ramo familiar, Clarice Pedro da Silva foi
+mãe do pai do autor.
+
+Dessa maneira, a memória familiar registra a presença
+de Firmino Pedro da Silva como ancestral comum de
+dois ramos da família.
+
+Essa história familiar deve ser apresentada como
+memória familiar e pesquisa em andamento, sendo
+comparada progressivamente com documentos históricos,
+registros genealógicos e pesquisas acadêmicas.
+
+A pesquisa de Juracilda Veiga é particularmente importante
+para essa investigação porque estuda as migrações históricas
+Guarani, a prática do oguatá — o caminhar — e a trajetória
+da família de Juraci, incluindo movimentos de retorno
+às terras do antigo Aldeamento do Rio Verde.
+
+Essas informações permitem aproximar a história geral
+das migrações Guarani das trajetórias específicas de
+famílias e comunidades.
+
+Assim, a história da língua também pode ser observada
+por meio da história de seus falantes.
+
+Os deslocamentos entre territórios, as relações entre
+comunidades, os casamentos entre famílias, a convivência
+em diferentes aldeias e a transmissão dos conhecimentos
+pelos mais velhos podem participar dos processos de
+continuidade e transformação linguística.
+
+Podemos representar esse processo da seguinte maneira:
+
+Heranças históricas Tupi-Guarani
+↓
+Diversificação dos povos e comunidades Guarani
+↓
+Migrações e deslocamentos
+↓
+Encontros e relações entre comunidades
+↓
+Transmissão familiar e comunitária
+↓
+Conservação de formas antigas
+↓
+Mudanças linguísticas ao longo das gerações
+↓
+Desenvolvimento de características próprias
+↓
+Nhandewa-Guarani contemporâneo
+
+Essa representação não significa que o Nhandewa seja
+simplesmente resultado da mistura de diferentes línguas.
+
+Significa que uma língua viva pode atravessar diferentes
+territórios e gerações, mantendo estruturas e conhecimentos
+antigos enquanto também passa por transformações.
+
+Por isso, o Nhandewa contemporâneo deve ser estudado
+considerando sua própria história linguística, cultural
+e comunitária.
+
+Os documentos antigos ajudam a compreender as formas
+registradas do Guarani.
+
+Os estudos de Nimuendaju ajudam a compreender parte
+das trajetórias históricas dos grupos Guarani.
+
+As pesquisas contemporâneas permitem investigar as
+relações entre essas trajetórias e as comunidades
+Nhandewa atuais.
+
+E a memória das famílias e das comunidades preserva
+informações que muitas vezes não aparecem nos documentos
+escritos.
+
+Por isso, neste projeto são diferenciados três tipos
+de conhecimento:
+
+DOCUMENTADO
+Informações sustentadas por documentos históricos,
+pesquisas acadêmicas ou outras fontes verificáveis.
+
+MEMÓRIA FAMILIAR
+Informações transmitidas oralmente entre gerações
+e preservadas pelas famílias e comunidades.
+
+EM PESQUISA
+Informações que estão sendo comparadas com documentos,
+pesquisas linguísticas, registros históricos e genealogias.
+
+HIPÓTESE
+Possíveis interpretações que ainda precisam de evidências
+para serem confirmadas.
 
 A língua Nhandewa-Guarani continua sendo transmitida
 por seus falantes e permanece relacionada à memória,
-à cultura, ao território e à identidade de seu povo.
+à cultura, ao território, às relações familiares e à
+identidade de seu povo.
 
 Conhecer a história da língua é também reconhecer
 a importância dos conhecimentos preservados pelas
 gerações anteriores e pelas comunidades atuais.
+
+O Nhandewa não pertence apenas aos registros do passado.
+
+É uma língua viva.
+
+Uma língua que caminhou com seu povo.
+
+Uma língua que atravessou territórios.
+
+Uma língua que foi transmitida entre gerações.
+
+Uma língua que conserva memórias e, ao mesmo tempo,
+continua se transformando.
+
+Estudar sua história é estudar também a história
+das pessoas que a falam.
 `,
 
     tipo: "documentado",
 
     fonte:
-        "Estudos históricos e linguísticos sobre o Guarani e o Nhandewa-Guarani, incluindo Montoya, Nimuendaju e pesquisas contemporâneas.",
+        "Antonio Ruiz de Montoya; Curt Nimuendaju; Wilmar D'Angelis; Consuelo de Paiva Godinho Costa; Juracilda Veiga; pesquisas históricas e linguísticas sobre o Guarani e o Nhandewa-Guarani.",
 
     links: [
-    {
-        titulo: "A língua apapokúva-guarani registrada por Nimuendajú – Revista Tellus",
-        url: "https://www.tellus.ucdb.br/tellus/article/view/34"
-    },
-    {
-        titulo: "Nhandewa-Guarani – Enciclopédia das Línguas no Brasil",
-        url: "https://labeurb.unicamp.br/elb/ler/272"
-    },
-    {
-        titulo: "Nimongaraí – O batismo ritual de Nimuendajú",
-        url: "https://periodicos.unb.br/index.php/ling/article/view/16219"
-    }
-]
+        {
+            titulo: "A língua apapokúva-guarani registrada por Nimuendajú – Revista Tellus",
+            url: "https://www.tellus.ucdb.br/tellus/article/view/34"
+        },
+        {
+            titulo: "Nhandewa-Guarani – Enciclopédia das Línguas no Brasil – UNICAMP",
+            url: "https://labeurb.unicamp.br/elb/ler/272"
+        },
+        {
+            titulo: "Nimongaraí – O batismo ritual de Nimuendajú",
+            url: "https://periodicos.unb.br/index.php/ling/article/view/16219"
+        },
+        {
+            titulo: "Guarani – Enciclopédia das Línguas no Brasil – UNICAMP",
+            url: "https://labeurb.unicamp.br/elb/ler/252"
+        },
+        {
+            titulo: "Migrações históricas e cosmologia Guarani – Juracilda Veiga",
+            url: "https://www.rau2.ufscar.br/index.php/rau/article/view/87"
+        },
+        {
+            titulo: "Cartografias dos deslocamentos Guarani: séculos XVI e XVII – Revista Mana",
+            url: "https://www.scielo.br/j/mana/a/V6jQBdTrFbQh54qgTWN4xxb/?lang=pt"
+        },
+        {
+            titulo: "Bibliografia do verbete Nhandewa-Guarani – UNICAMP",
+            url: "https://www.labeurb.unicamp.br/elb/ler/273"
+        }
+    ]
 },
   
 {
