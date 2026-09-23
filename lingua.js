@@ -2338,7 +2338,8 @@ function filtrarCategoriaHistoria(categoria) {
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarHistorias();
+  // Removido o mostrarHistorias() para que o HTML estático 
+  // do seu ficheiro mantenha os cartões e as cores corretas.
 
   const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
