@@ -2129,9 +2129,9 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
     return;
   }
 
-  container.innerHTML = lista.map(item => `
+container.innerHTML = lista.map(item => `
     <article
-      class="card-historia ${classeTipo(item.tipo)}"
+      class="card-historia ${classeTipo(item.tipo, item.categoria)}"
       role="button"
       tabindex="0"
       aria-label="Abrir: ${escaparHTML(item.titulo)}"
