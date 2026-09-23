@@ -992,73 +992,37 @@ body {
         max-width: 100%;
     }
 /* =====================================================
-   CORES PERSONALIZADAS POR CATEGORIA DE HISTÓRIA
+   CORES DIRETAS E INFALÍVEIS PARA OS CARTÕES
 ===================================================== */
 
-/* Apresentação = Laranja */
-body .pagina-historia .card-historia.cartao-apresentacao {
+article.card-historia.cartao-apresentacao {
     background: linear-gradient(145deg, #3d1c0b, #210e04) !important;
-    border: 1px solid rgba(255, 110, 64, 0.5) !important;
     border-left: 6px solid #ff6e40 !important;
 }
-body .pagina-historia .card-historia.cartao-apresentacao .historia-categoria {
-    background: rgba(255, 110, 64, 0.25) !important;
-    color: #ffab91 !important;
-}
 
-/* História da língua = Marrom */
-body .pagina-historia .card-historia.cartao-historia-lingua {
+article.card-historia.cartao-historia-lingua {
     background: linear-gradient(145deg, #2c221e, #1a1311) !important;
-    border: 1px solid rgba(161, 102, 74, 0.5) !important;
     border-left: 6px solid #a1664a !important;
 }
-body .pagina-historia .card-historia.cartao-historia-lingua .historia-categoria {
-    background: rgba(161, 102, 74, 0.25) !important;
-    color: #d7b09e !important;
-}
 
-/* Transformações = Laranja */
-body .pagina-historia .card-historia.cartao-transformacoes {
+article.card-historia.cartao-transformacoes {
     background: linear-gradient(145deg, #3d1c0b, #210e04) !important;
-    border: 1px solid rgba(255, 110, 64, 0.5) !important;
     border-left: 6px solid #ff6e40 !important;
 }
-body .pagina-historia .card-historia.cartao-transformacoes .historia-categoria {
-    background: rgba(255, 110, 64, 0.25) !important;
-    color: #ffab91 !important;
-}
 
-/* Sons = Roxo */
-body .pagina-historia .card-historia.cartao-sons {
+article.card-historia.cartao-sons {
     background: linear-gradient(145deg, #280b38, #180422) !important;
-    border: 1px solid rgba(179, 136, 255, 0.5) !important;
     border-left: 6px solid #b388ff !important;
 }
-body .pagina-historia .card-historia.cartao-sons .historia-categoria {
-    background: rgba(179, 136, 255, 0.25) !important;
-    color: #d1c4e9 !important;
-}
 
-/* Gramática = Azul claro */
-body .pagina-historia .card-historia.cartao-gramatica {
+article.card-historia.cartao-gramatica {
     background: linear-gradient(145deg, #0b2938, #041822) !important;
-    border: 1px solid rgba(0, 176, 255, 0.5) !important;
     border-left: 6px solid #00b0ff !important;
 }
-body .pagina-historia .card-historia.cartao-gramatica .historia-categoria {
-    background: rgba(0, 176, 255, 0.25) !important;
-    color: #80d8ff !important;
-}
 
-/* Continuidade = Verde */
-body .pagina-historia .card-historia.cartao-continuidade {
+article.card-historia.cartao-continuidade {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
-    border: 1px solid rgba(0, 200, 83, 0.5) !important;
     border-left: 6px solid #00c853 !important;
-}
-body .pagina-historia .card-historia.cartao-continuidade .historia-categoria {
-    background: rgba(0, 200, 83, 0.25) !important;
-    color: #69f0ae !important;
 }
 /* 2. Modal com Fundo Claro/Branco para Conforto Visual Extremo */
 
