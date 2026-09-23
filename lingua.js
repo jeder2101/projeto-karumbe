@@ -2097,16 +2097,15 @@ function classeTipo(tipo, categoria) {
   const cat = (categoria || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   const t = (tipo || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   
-  // Combina a categoria e o tipo para análise segura
   const textoCombinado = `${cat} ${t}`;
   
-  if (textoCombinado.includes('apresentac') || textoCombinado.includes('introduc')) return 'cartao-apresentacao';
-  if (textoCombinado.includes('historia') || textoCombinado.includes('trajetoria')) return 'cartao-historia-lingua';
-  if (textoCombinado.includes('transformac') || textoCombinado.includes('mudanca')) return 'cartao-transformacoes';
-  if (textoCombinado.includes('som') || textoCombinado.includes('fonet') || textoCombinado.includes('fonologia')) return 'cartao-sons';
-  if (textoCombinado.includes('gramatic') || textoCombinado.includes('vocabular') || textoCombinado.includes('termo')) return 'cartao-gramatica';
+  if (textoCombinado.includes('apresentac') || textoCombinado.includes('introduc')) return 'historia-apresentacao';
+  if (textoCombinado.includes('historia') || textoCombinado.includes('trajetoria')) return 'historia-historia';
+  if (textoCombinado.includes('transformac') || textoCombinado.includes('mudanca')) return 'historia-transformacoes';
+  if (textoCombinado.includes('som') || textoCombinado.includes('fonet') || textoCombinado.includes('fonologia')) return 'historia-sons';
+  if (textoCombinado.includes('gramatic') || textoCombinado.includes('vocabular') || textoCombinado.includes('termo')) return 'historia-gramatica';
   
-  return 'cartao-continuidade';
+  return 'historia-continuidade';
 }
 
 
@@ -2338,8 +2337,7 @@ function filtrarCategoriaHistoria(categoria) {
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Removido o mostrarHistorias() para que o HTML estático 
-  // do seu ficheiro mantenha os cartões e as cores corretas.
+  mostrarHistorias(); // <-- Devolva esta linha aqui
 
   const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
