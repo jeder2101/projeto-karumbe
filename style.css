@@ -991,6 +991,8 @@ body {
         width: 200px; 
         max-width: 100%;
     }
+} /* <--- CHAVETA FECHADA AQUI CORRETAMENTE */
+
 /* =====================================================
    CORES DIRETAS E INFALÍVEIS PARA OS CARTÕES
 ===================================================== */
@@ -1024,62 +1026,43 @@ article.card-historia.cartao-continuidade {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
     border-left: 6px solid #00c853 !important;
 }
-/* 2. Modal com Fundo Claro/Branco para Conforto Visual Extremo */
+
+/* =====================================================
+   MODAL COM FUNDO CLARO/CREME
+===================================================== */
 
 div#modal-historia.modal-historia div.caixa-historia {
-
-    background-color: #fbf9f4 !important; /* Creme super suave e legível */
-
+    background-color: #fbf9f4 !important;
     color: #12261f !important;
-
     border: 3px solid #234c3e !important;
-
     box-shadow: 0 20px 50px rgba(0,0,0,0.7) !important;
-
 }
+
 div#modal-historia.modal-historia div.caixa-historia h2,
-
 div#modal-historia.modal-historia div.caixa-historia #conteudo-historia h2 {
-
     color: #0b3522 !important;
-
     border-bottom: 2px solid rgba(11, 53, 34, 0.1);
-
     padding-bottom: 8px;
-
 }
-/* Textos estruturais limpos e seguros */
 
 div#modal-historia.modal-historia div.caixa-historia h1,
-
 div#modal-historia.modal-historia div.caixa-historia h2,
-
 div#modal-historia.modal-historia div.caixa-historia h3,
-
 div#modal-historia.modal-historia div.caixa-historia h4,
-
 div#modal-historia.modal-historia div.caixa-historia p,
-
 div#modal-historia.modal-historia div.caixa-historia li {
-
     color: #1a332a !important;
-
 }
+
 div#modal-historia.modal-historia button#fechar-modal-historia {
-
     color: #234c3e !important;
-
     background: rgba(35, 76, 62, 0.1) !important;
-
     border-radius: 50%;
-
     width: 36px;
-
     height: 36px;
 }
+
 div#modal-historia.modal-historia button#fechar-modal-historia:hover {
-
     color: #ffffff !important;
-
     background: #b71c1c !important;
-} 
+}
