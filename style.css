@@ -994,35 +994,35 @@ body {
 } /* <--- CHAVETA FECHADA AQUI CORRETAMENTE */
 
 /* =====================================================
-   CORES DIRETAS E INFALÍVEIS PARA OS CARTÕES
+   CORES CERTAS PARA OS CARTÕES DO HISTORIA.HTML
 ===================================================== */
 
-article.card-historia.cartao-apresentacao {
+article.card-historia.historia-apresentacao {
     background: linear-gradient(145deg, #3d1c0b, #210e04) !important;
     border-left: 6px solid #ff6e40 !important;
 }
 
-article.card-historia.cartao-historia-lingua {
+article.card-historia.historia-historia {
     background: linear-gradient(145deg, #2c221e, #1a1311) !important;
     border-left: 6px solid #a1664a !important;
 }
 
-article.card-historia.cartao-transformacoes {
+article.card-historia.historia-transformacoes {
     background: linear-gradient(145deg, #3d1c0b, #210e04) !important;
     border-left: 6px solid #ff6e40 !important;
 }
 
-article.card-historia.cartao-sons {
+article.card-historia.historia-sons {
     background: linear-gradient(145deg, #280b38, #180422) !important;
     border-left: 6px solid #b388ff !important;
 }
 
-article.card-historia.cartao-gramatica {
+article.card-historia.historia-gramatica {
     background: linear-gradient(145deg, #0b2938, #041822) !important;
     border-left: 6px solid #00b0ff !important;
 }
 
-article.card-historia.cartao-continuidade {
+article.card-historia.historia-continuidade {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
     border-left: 6px solid #00c853 !important;
 }
