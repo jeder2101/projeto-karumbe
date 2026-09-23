@@ -40,7 +40,7 @@ dos conhecimentos dos mais velhos, dos professores,
 das crianças e das novas gerações.
 `,
 
-    tipo: "documentado",
+    
     fonte: "Projeto Karumbé e estudos linguísticos do Nhandewa-Guarani",
 
   links: [
