@@ -992,3 +992,107 @@ body {
         max-width: 100%;
     }
 }
+/* =====================================================
+   CORREÇÃO: CORES DINÂMICAS PARA OS CARDS DE HISTÓRIA
+===================================================== */
+
+/* Cores de fundo e detalhes para cada categoria de card */
+.card-historia.historia-apresentacao {
+    background: linear-gradient(145deg, #0b3522, #072215) !important;
+    border: 1px solid rgba(0, 200, 83, 0.3) !important;
+    border-left: 6px solid #00c853 !important;
+}
+.card-historia.historia-apresentacao .historia-categoria {
+    background: rgba(0, 200, 83, 0.15) !important;
+    color: #69f0ae !important;
+    border-color: rgba(0, 200, 83, 0.4) !important;
+}
+
+.card-historia.historia-historia {
+    background: linear-gradient(145deg, #382c0b, #221a04) !important;
+    border: 1px solid rgba(255, 171, 0, 0.3) !important;
+    border-left: 6px solid #ffab00 !important;
+}
+.card-historia.historia-historia .historia-categoria {
+    background: rgba(255, 171, 0, 0.15) !important;
+    color: #ffe57f !important;
+    border-color: rgba(255, 171, 0, 0.4) !important;
+}
+
+.card-historia.historia-transformacoes {
+    background: linear-gradient(145deg, #381d0b, #211004) !important;
+    border: 1px solid rgba(255, 110, 64, 0.3) !important;
+    border-left: 6px solid #ff6e40 !important;
+}
+.card-historia.historia-transformacoes .historia-categoria {
+    background: rgba(255, 110, 64, 0.15) !important;
+    color: #ffab91 !important;
+    border-color: rgba(255, 110, 64, 0.4) !important;
+}
+
+.card-historia.historia-sons {
+    background: linear-gradient(145deg, #0b2938, #041822) !important;
+    border: 1px solid rgba(0, 176, 255, 0.3) !important;
+    border-left: 6px solid #00b0ff !important;
+}
+.card-historia.historia-sons .historia-categoria {
+    background: rgba(0, 176, 255, 0.15) !important;
+    color: #80d8ff !important;
+    border-color: rgba(0, 176, 255, 0.4) !important;
+}
+
+.card-historia.historia-gramatica {
+    background: linear-gradient(145deg, #280b38, #180422) !important;
+    border: 1px solid rgba(179, 136, 255, 0.3) !important;
+    border-left: 6px solid #b388ff !important;
+}
+.card-historia.historia-gramatica .historia-categoria {
+    background: rgba(179, 136, 255, 0.15) !important;
+    color: #d1c4e9 !important;
+    border-color: rgba(179, 136, 255, 0.4) !important;
+}
+
+.card-historia.historia-continuidade {
+    background: linear-gradient(145deg, #380b18, #22040b) !important;
+    border: 1px solid rgba(255, 82, 82, 0.3) !important;
+    border-left: 6px solid #ff5252 !important;
+}
+.card-historia.historia-continuidade .historia-categoria {
+    background: rgba(255, 82, 82, 0.15) !important;
+    color: #ff8a80 !important;
+    border-color: rgba(255, 82, 82, 0.4) !important;
+}
+/* =====================================================
+   CORREÇÃO: MODAL COM FUNDO CLARO PARA FACILITAR A LEITURA
+===================================================== */
+
+.caixa-historia {
+    background: #fdfcf7 !important; /* Fundo claro/creme suave */
+    color: #1a2e26 !important;     /* Texto em verde escuro de alta leitura */
+    border: 2px solid #325a4d !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.caixa-historia h2 {
+    color: #17382d !important;     /* Título escuro destacado */
+}
+
+.caixa-historia .texto-historia,
+#conteudo-historia p {
+    color: #2c423a !important;     /* Texto dos parágrafos com excelente contraste */
+}
+
+.caixa-historia .fechar-modal-historia {
+    color: #325a4d !important;     /* Botão de fechar visível no fundo claro */
+}
+
+.caixa-historia .fechar-modal-historia:hover {
+    color: #b71c1c !important;     /* Vermelho ao passar o rato */
+}
+
+/* Ajuste opcional para a tag de categoria dentro do modal se houver */
+.caixa-historia .historia-categoria {
+    background: rgba(40, 88, 62, 0.1) !important;
+    color: #28583e !important;
+    border-color: rgba(40, 88, 62, 0.3) !important;
+}
