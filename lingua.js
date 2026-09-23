@@ -2094,6 +2094,8 @@ function formatarConteudo(texto) {
 }
 
 function classeTipo(tipo) {
+  console.log("Tipo recebido:", tipo); // <--- Adicione esta linha aqui
+  
   if (!tipo) return 'historia-estudo';
   
   const t = tipo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
