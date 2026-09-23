@@ -995,102 +995,43 @@ body {
    CORREÇÃO BLINDADA: CARDS COM CORES E MODAL BRANCO/CREME
 ===================================================== */
 
-/* 1. Cores dos Cartões na Grade (Forçado) */
-body .pagina-historia .card-historia.historia-apresentacao {
+/* 1. Cores dos Cartões na Grade baseadas nos tipos reais */
+body .pagina-historia .card-historia.historia-documentado {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
     border: 1px solid rgba(0, 200, 83, 0.5) !important;
     border-left: 6px solid #00c853 !important;
 }
-body .pagina-historia .card-historia.historia-apresentacao .historia-categoria {
+body .pagina-historia .card-historia.historia-documentado .historia-categoria {
     background: rgba(0, 200, 83, 0.25) !important;
     color: #69f0ae !important;
 }
 
-body .pagina-historia .card-historia.historia-historia {
+body .pagina-historia .card-historia.historia-hipotese {
     background: linear-gradient(145deg, #382c0b, #221a04) !important;
     border: 1px solid rgba(255, 171, 0, 0.5) !important;
     border-left: 6px solid #ffab00 !important;
 }
-body .pagina-historia .card-historia.historia-historia .historia-categoria {
+body .pagina-historia .card-historia.historia-hipotese .historia-categoria {
     background: rgba(255, 171, 0, 0.25) !important;
     color: #ffe57f !important;
 }
 
-body .pagina-historia .card-historia.historia-transformacoes {
-    background: linear-gradient(145deg, #381d0b, #211004) !important;
-    border: 1px solid rgba(255, 110, 64, 0.5) !important;
-    border-left: 6px solid #ff6e40 !important;
-}
-body .pagina-historia .card-historia.historia-transformacoes .historia-categoria {
-    background: rgba(255, 110, 64, 0.25) !important;
-    color: #ffab91 !important;
-}
-
-body .pagina-historia .card-historia.historia-sons {
+body .pagina-historia .card-historia.historia-estudo {
     background: linear-gradient(145deg, #0b2938, #041822) !important;
     border: 1px solid rgba(0, 176, 255, 0.5) !important;
     border-left: 6px solid #00b0ff !important;
 }
-body .pagina-historia .card-historia.historia-sons .historia-categoria {
+body .pagina-historia .card-historia.historia-estudo .historia-categoria {
     background: rgba(0, 176, 255, 0.25) !important;
     color: #80d8ff !important;
 }
 
-body .pagina-historia .card-historia.historia-gramatica {
+body .pagina-historia .card-historia.historia-projeto {
     background: linear-gradient(145deg, #280b38, #180422) !important;
     border: 1px solid rgba(179, 136, 255, 0.5) !important;
     border-left: 6px solid #b388ff !important;
 }
-body .pagina-historia .card-historia.historia-gramatica .historia-categoria {
+body .pagina-historia .card-historia.historia-projeto .historia-categoria {
     background: rgba(179, 136, 255, 0.25) !important;
     color: #d1c4e9 !important;
-}
-
-body .pagina-historia .card-historia.historia-continuidade {
-    background: linear-gradient(145deg, #380b18, #22040b) !important;
-    border: 1px solid rgba(255, 82, 82, 0.5) !important;
-    border-left: 6px solid #ff5252 !important;
-}
-body .pagina-historia .card-historia.historia-continuidade .historia-categoria {
-    background: rgba(255, 82, 82, 0.25) !important;
-    color: #ff8a80 !important;
-}
-
-
-/* 2. Modal com Fundo Claro/Branco para Conforto Visual Extremo */
-div#modal-historia.modal-historia div.caixa-historia {
-    background-color: #fbf9f4 !important; /* Creme super suave e legível */
-    color: #12261f !important;
-    border: 3px solid #234c3e !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.7) !important;
-}
-
-div#modal-historia.modal-historia div.caixa-historia h2,
-div#modal-historia.modal-historia div.caixa-historia #conteudo-historia h2 {
-    color: #0b3522 !important;
-    border-bottom: 2px solid rgba(11, 53, 34, 0.1);
-    padding-bottom: 8px;
-}
-
-/* Textos estruturais limpos e seguros */
-div#modal-historia.modal-historia div.caixa-historia h1,
-div#modal-historia.modal-historia div.caixa-historia h2,
-div#modal-historia.modal-historia div.caixa-historia h3,
-div#modal-historia.modal-historia div.caixa-historia h4,
-div#modal-historia.modal-historia div.caixa-historia p,
-div#modal-historia.modal-historia div.caixa-historia li {
-    color: #1a332a !important;
-}
-
-div#modal-historia.modal-historia button#fechar-modal-historia {
-    color: #234c3e !important;
-    background: rgba(35, 76, 62, 0.1) !important;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-}
-
-div#modal-historia.modal-historia button#fechar-modal-historia:hover {
-    color: #ffffff !important;
-    background: #b71c1c !important;
 }
