@@ -2094,15 +2094,17 @@ function formatarConteudo(texto) {
 }
 
 function classeTipo(tipo, categoria) {
-  // Vamos verificar prioritariamente a categoria do item
   const cat = (categoria || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  const t = (tipo || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   
-  if (cat.includes('apresentacao')) return 'cartao-apresentacao';
-  if (cat.includes('historia')) return 'cartao-historia-lingua';
-  if (cat.includes('transformacao')) return 'cartao-transformacoes';
-  if (cat.includes('som')) return 'cartao-sons';
-  if (cat.includes('gramatica')) return 'cartao-gramatica';
-  if (cat.includes('continuidade')) return 'cartao-continuidade';
+  // Combina a categoria e o tipo para análise segura
+  const textoCombinado = `${cat} ${t}`;
+  
+  if (textoCombinado.includes('apresentac') || textoCombinado.includes('introduc')) return 'cartao-apresentacao';
+  if (textoCombinado.includes('historia') || textoCombinado.includes('trajetoria')) return 'cartao-historia-lingua';
+  if (textoCombinado.includes('transformac') || textoCombinado.includes('mudanca')) return 'cartao-transformacoes';
+  if (textoCombinado.includes('som') || textoCombinado.includes('fonet') || textoCombinado.includes('fonologia')) return 'cartao-sons';
+  if (textoCombinado.includes('gramatic') || textoCombinado.includes('vocabular') || textoCombinado.includes('termo')) return 'cartao-gramatica';
   
   return 'cartao-continuidade';
 }
