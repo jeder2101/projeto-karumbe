@@ -439,7 +439,6 @@ body {
     color: #28583e;
 }
 
-/* Correção específica para a Associação Curucaca */
 .logo-apoio-item:nth-child(3) img {
     height: auto !important;      
     max-height: 95px !important; 
@@ -654,7 +653,6 @@ body {
     width: 100% !important;
 }
 
-/* Cores específicas dos cartões especiais */
 .grupo-cartoes-especiais .cat-laranja {
     background: #7b4b1f !important;
     border: 1px solid #5d3518 !important;
@@ -671,73 +669,265 @@ body {
 }
 
 /* =====================================================
-   12. ELEMENTOS DE HISTÓRIA E LINKS DE APOIO
+   12. ELEMENTOS DE HISTÓRIA / PROJETO KARUMBÉ
 ===================================================== */
+.pagina-historia {
+    max-width: 1450px;
+    width: 92%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.cabecalho-historia {
+    text-align: center;
+    padding: 10px 10px 30px;
+}
+
+.cabecalho-historia h2 {
+    margin: 0 0 12px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.cabecalho-historia p {
+    line-height: 1.7;
+    color: #dcd6cd;
+    margin: 6px 0;
+    font-size: 1.05rem;
+}
+
+.controles-historia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 auto 35px;
+    max-width: 900px;
+}
+
+.controles-historia input,
+.controles-historia select {
+    flex: 1;
+    min-width: 220px;
+    padding: 14px 18px;
+    border: 2px solid #325a4d;
+    border-radius: 12px;
+    font-size: 16px;
+    background: #112d25;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.controles-historia input:focus,
+.controles-historia select:focus {
+    border-color: #52a388;
+}
+
+.lista-historias {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* CARDS MODERNOS DA HISTÓRIA COM BORDAS COLORIDAS */
+.card-historia {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 160px;
+    padding: 22px;
+    background: linear-gradient(145deg, #13382d, #0f2e25);
+    border: 1px solid #235847;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-historia:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border-color: #4da688;
+}
+
+.historia-categoria {
+    display: inline-block;
+    width: fit-content;
+    background: rgba(216, 195, 165, 0.15);
+    color: #ebd6b7;
+    padding: 5px 12px;
+    margin-bottom: 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(216, 195, 165, 0.3);
+}
+
+.card-historia h3 {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.45;
+    font-weight: 700;
+}
+
+.card-historia .historia-resumo,
+.card-historia .historia-meta {
+    display: none;
+}
+
+.card-historia .botao-historia {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+}
+
+.card-historia::after {
+    content: "›";
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+    color: #52a388;
+    font-size: 2.2rem;
+    font-weight: 300;
+    transition: transform 0.2s;
+}
+
+.card-historia:hover::after {
+    transform: translateX(4px);
+    color: #79d4b5;
+}
+
+/* Bordas temáticas */
+.historia-apresentacao { border-left: 6px solid #2ecc71; }
+.historia-historia { border-left: 6px solid #f1c40f; }
+.historia-transformacoes { border-left: 6px solid #e67e22; }
+.historia-sons { border-left: 6px solid #3498db; }
+.historia-gramatica { border-left: 6px solid #9b59b6; }
+.historia-continuidade { border-left: 6px solid #e74c3c; }
+
+/* MODAL DE HISTÓRIA */
+.modal-historia {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(4, 15, 12, 0.85);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal-historia.ativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-historia {
+    background: #11362b;
+    color: #f4efe6;
+    max-width: 800px;
+    width: 100%;
+    max-height: 85vh;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    border: 2px solid #2c6352;
+    position: relative;
+    overflow-y: auto;
+    box-sizing: border-box;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.fechar-modal-historia {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    cursor: pointer;
+    color: #a3c1b6;
+    transition: color 0.2s;
+}
+
+.fechar-modal-historia:hover {
+    color: #ff6b6b;
+}
+
+#conteudo-historia h2 {
+    margin-top: 0;
+    padding-right: 30px;
+    color: #79d4b5;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.texto-historia {
+    line-height: 1.8;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    color: #e2dcd4;
+}
+
+#conteudo-historia p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.area-voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 45px 0 20px;
+}
+
 .botao-voltar {
     display: inline-block;
-    margin: 20px;
-    padding: 10px 18px;
-    background: #7b4b1f;
+    padding: 14px 38px;
+    background: #235847;
     color: white;
+    border: none;
+    border-radius: 10px;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.3s;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .botao-voltar:hover {
-    background: #a66a35;
-}
-
-.historia-links {
-    margin-top: 18px;
-    padding-top: 12px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.historia-links strong {
-    display: block;
-    margin-bottom: 12px;
-}
-
-.historia-links a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 8px 10px;
-    line-height: 1.5;
-    text-decoration: none;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.historia-links a:hover {
-    text-decoration: underline;
-}
-
-.card-historia p,
-.historia-card p,
-.historia-resumo,
-.resumo-historia,
-.card-historia .resumo,
-.historia-card .resumo {
-    color: #3b2a20 !important;
-    line-height: 1.6;
-}
-
-.destaque-exemplo {
-    display: block;
-    color: #1769aa;
-    font-weight: bold;
-    font-size: 1.05rem;
-    margin-top: 22px;
-    margin-bottom: 10px;
-    border-left: 5px solid #1769aa;
-    padding-left: 10px;
+    background: #327a64;
+    transform: translateY(-2px);
 }
 
 /* =====================================================
-   13. MEDIA QUERIES (RESPONSIVIDADE MOBILE / DESKTOP)
+   13. MEDIA QUERIES (RESPONSIVIDADE)
 ===================================================== */
+@media (max-width: 1150px) {
+    .lista-historias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     .lista-vertical {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -778,6 +968,15 @@ body {
     }
 }
 
+@media (max-width: 700px) {
+    .pagina-historia { width: 94%; }
+    .lista-historias {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .caixa-historia { padding: 25px 20px; }
+}
+
 @media (min-width: 768px) {
     .container-card-restrito {
         grid-column: 1 / -1; 
@@ -792,317 +991,4 @@ body {
         width: 200px; 
         max-width: 100%;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ================================================
-    ESTILOS MODERNOS - HISTÓRIA / PROJETO KARUMBÉ
-   ================================================ */
-body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0b1f1a;
-  color: #f4efe6;
-}
-
-header {
-  width: 100%;
-  background: linear-gradient(135deg, #051c16, #0e3b2f);
-  color: white;
-  text-align: center;
-  padding: 28px 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  box-sizing: border-box;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-}
-
-header p {
-  margin: 8px 0 0;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  color: #d8c3a5;
-}
-
-.pagina-historia {
-  max-width: 1450px;
-  width: 92%;
-  margin: auto;
-  padding: 30px 0;
-}
-
-.cabecalho-historia {
-  text-align: center;
-  padding: 10px 10px 30px;
-}
-
-.cabecalho-historia h2 {
-  margin: 0 0 12px;
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.cabecalho-historia p {
-  line-height: 1.7;
-  color: #dcd6cd;
-  margin: 6px 0;
-  font-size: 1.05rem;
-}
-
-.controles-historia {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 0 auto 35px;
-  max-width: 900px;
-}
-
-.controles-historia input,
-.controles-historia select {
-  flex: 1;
-  min-width: 220px;
-  padding: 14px 18px;
-  border: 2px solid #325a4d;
-  border-radius: 12px;
-  font-size: 16px;
-  background: #112d25;
-  color: #fff;
-  outline: none;
-  transition: border-color 0.3s;
-}
-
-.controles-historia input:focus,
-.controles-historia select:focus {
-  border-color: #52a388;
-}
-
-.lista-historias {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-  align-items: stretch;
-}
-
-/* CARDS MODERNOS COM DETALHES COLORIDOS */
-.card-historia {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  min-height: 160px;
-  padding: 22px;
-  background: linear-gradient(145deg, #13382d, #0f2e25);
-  border: 1px solid #235847;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.card-historia:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-  border-color: #4da688;
-}
-
-.historia-categoria {
-  display: inline-block;
-  width: fit-content;
-  background: rgba(216, 195, 165, 0.15);
-  color: #ebd6b7;
-  padding: 5px 12px;
-  margin-bottom: 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  border: 1px solid rgba(216, 195, 165, 0.3);
-}
-
-.card-historia h3 {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-  font-size: 1.1rem;
-  line-height: 1.45;
-  font-weight: 700;
-}
-
-.card-historia .historia-resumo,
-.card-historia .historia-meta {
-  display: none;
-}
-
-.card-historia .botao-historia {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: transparent;
-}
-
-.card-historia::after {
-  content: "›";
-  position: absolute;
-  right: 18px;
-  bottom: 14px;
-  color: #52a388;
-  font-size: 2.2rem;
-  font-weight: 300;
-  transition: transform 0.2s;
-}
-
-.card-historia:hover::after {
-  transform: translateX(4px);
-  color: #79d4b5;
-}
-
-/* Bordas coloridas temáticas para cada tipo de categoria */
-.historia-apresentacao { border-left: 6px solid #2ecc71; }
-.historia-historia { border-left: 6px solid #f1c40f; }
-.historia-transformacoes { border-left: 6px solid #e67e22; }
-.historia-sons { border-left: 6px solid #3498db; }
-.historia-gramatica { border-left: 6px solid #9b59b6; }
-.historia-continuidade { border-left: 6px solid #e74c3c; }
-
-/* MODAL MODAL */
-.modal-historia {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(4, 15, 12, 0.85);
-  backdrop-filter: blur(5px);
-  padding: 20px;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-.modal-historia.ativo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.caixa-historia {
-  background: #11362b;
-  color: #f4efe6;
-  max-width: 800px;
-  width: 100%;
-  max-height: 85vh;
-  margin: auto;
-  padding: 35px;
-  border-radius: 20px;
-  border: 2px solid #2c6352;
-  position: relative;
-  overflow-y: auto;
-  box-sizing: border-box;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-}
-
-.fechar-modal-historia {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  border: none;
-  background: transparent;
-  font-size: 32px;
-  cursor: pointer;
-  color: #a3c1b6;
-  transition: color 0.2s;
-}
-
-.fechar-modal-historia:hover {
-  color: #ff6b6b;
-}
-
-#conteudo-historia h2 {
-  margin-top: 0;
-  padding-right: 30px;
-  color: #79d4b5;
-  font-size: 1.7rem;
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-.texto-historia {
-  line-height: 1.8;
-  margin-top: 20px;
-  font-size: 1.05rem;
-  color: #e2dcd4;
-}
-
-#conteudo-historia p {
-  line-height: 1.8;
-  margin-bottom: 18px;
-}
-
-.area-voltar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 45px 0 20px;
-}
-
-.botao-voltar {
-  display: inline-block;
-  padding: 14px 38px;
-  background: #235847;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.botao-voltar:hover {
-  background: #327a64;
-  transform: translateY(-2px);
-}
-
-/* Responsividade */
-@media (max-width: 1150px) {
-  .lista-historias {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 700px) {
-  .pagina-historia { width: 94%; }
-  .lista-historias {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  header h1 { font-size: 1.7rem; }
-  .caixa-historia { padding: 25px 20px; }
 }
