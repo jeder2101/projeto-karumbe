@@ -2094,22 +2094,16 @@ function formatarConteudo(texto) {
 }
 
 function classeTipo(tipo) {
-  console.log("Tipo recebido:", tipo); // <--- Adicione esta linha aqui
-  
   if (!tipo) return 'historia-estudo';
   
   const t = tipo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   
-  if (t.includes('apresenta')) return 'historia-apresentacao';
-  if (t.includes('historia')) return 'historia-historia';
-  if (t.includes('transforma')) return 'historia-transformacoes';
-  if (t.includes('som')) return 'historia-sons';
-  if (t.includes('gramat')) return 'historia-gramatica';
-  if (t.includes('documentado')) return 'historia-documentado';
-  if (t.includes('hipotes')) return 'historia-hipotese';
-  if (t.includes('projeto')) return 'historia-projeto';
+  if (t.includes('doc')) return 'historia-documentado';
+  if (t.includes('hipot')) return 'historia-hipotese';
+  if (t.includes('estud')) return 'historia-estudo';
+  if (t.includes('proj')) return 'historia-projeto';
   
-  return 'historia-continuidade';
+  return 'historia-estudo';
 }
 
 
