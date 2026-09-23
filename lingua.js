@@ -2093,17 +2093,18 @@ function formatarConteudo(texto) {
     .join("");
 }
 
-function classeTipo(tipo) {
-  if (!tipo) return 'historia-estudo';
+function classeTipo(tipo, categoria) {
+  // Vamos verificar prioritariamente a categoria do item
+  const cat = (categoria || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
   
-  const t = tipo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  if (cat.includes('apresentacao')) return 'cartao-apresentacao';
+  if (cat.includes('historia')) return 'cartao-historia-lingua';
+  if (cat.includes('transformacao')) return 'cartao-transformacoes';
+  if (cat.includes('som')) return 'cartao-sons';
+  if (cat.includes('gramatica')) return 'cartao-gramatica';
+  if (cat.includes('continuidade')) return 'cartao-continuidade';
   
-  if (t.includes('doc')) return 'historia-documentado';
-  if (t.includes('hipot')) return 'historia-hipotese';
-  if (t.includes('estud')) return 'historia-estudo';
-  if (t.includes('proj')) return 'historia-projeto';
-  
-  return 'historia-estudo';
+  return 'cartao-continuidade';
 }
 
 
