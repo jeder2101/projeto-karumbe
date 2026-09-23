@@ -2094,13 +2094,20 @@ function formatarConteudo(texto) {
 }
 
 function classeTipo(tipo) {
-  const classes = {
-    "documentado": "historia-documentado",
-    "hipótese": "historia-hipotese",
-    "em estudo": "historia-estudo",
-    "projeto": "historia-projeto"
-  };
-  return classes[tipo] || "historia-estudo";
+  if (!tipo) return 'historia-estudo';
+  
+  const t = tipo.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  
+  if (t.includes('apresenta')) return 'historia-apresentacao';
+  if (t.includes('historia')) return 'historia-historia';
+  if (t.includes('transforma')) return 'historia-transformacoes';
+  if (t.includes('som')) return 'historia-sons';
+  if (t.includes('gramat')) return 'historia-gramatica';
+  if (t.includes('documentado')) return 'historia-documentado';
+  if (t.includes('hipotes')) return 'historia-hipotese';
+  if (t.includes('projeto')) return 'historia-projeto';
+  
+  return 'historia-continuidade';
 }
 
 
