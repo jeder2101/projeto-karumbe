@@ -1068,12 +1068,18 @@ div#modal-historia.modal-historia div.caixa-historia {
 div#modal-historia.modal-historia div.caixa-historia h2,
 div#modal-historia.modal-historia div.caixa-historia #conteudo-historia h2 {
     color: #0b3522 !important;
+    border-bottom: 2px solid rgba(11, 53, 34, 0.1);
+    padding-bottom: 8px;
 }
 
+/* Textos estruturais limpos e seguros */
+div#modal-historia.modal-historia div.caixa-historia h1,
+div#modal-historia.modal-historia div.caixa-historia h2,
+div#modal-historia.modal-historia div.caixa-historia h3,
+div#modal-historia.modal-historia div.caixa-historia h4,
 div#modal-historia.modal-historia div.caixa-historia p,
-div#modal-historia.modal-historia div.caixa-historia span,
-div#modal-historia.modal-historia div.caixa-historia div {
-    color: #1a332a !important; /* Texto escuro definido para todos os elementos internos do modal */
+div#modal-historia.modal-historia div.caixa-historia li {
+    color: #1a332a !important;
 }
 
 div#modal-historia.modal-historia button#fechar-modal-historia {
