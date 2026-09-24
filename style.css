@@ -663,8 +663,9 @@ body {
     border: 1px solid #8b0000 !important;
 }
 
-/* Deixa o card de História com o degradê marrom */
-.container-card-restrito .card-categoria {
+/* Deixa especificamente o card de História com o degradê marrom */
+#aviso-rua + .lista-vertical .grupo-cartoes-especiais .container-card-restrito:last-child .card-categoria,
+.grupo-cartoes-especiais .container-card-restrito:nth-child(2) .card-categoria {
     background: linear-gradient(135deg, #5c3a21, #7c4d29) !important;
     border: 1px solid rgba(124, 77, 41, 0.5) !important;
 }
