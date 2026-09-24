@@ -993,7 +993,6 @@ body {
     }
 } /* <--- CHAVETA FECHADA AQUI CORRETAMENTE */
 
-```css
 /* =====================================================
    CORES DOS CARDS - HISTORIA.HTML
 ===================================================== */
@@ -1022,10 +1021,10 @@ body {
     border-left: 6px solid #9c27b0 !important;
 }
 
-/* GRAMÁTICA — VERDE */
+/* GRAMÁTICA — AZUL */
 .card-historia.historia-gramatica {
-    background: linear-gradient(145deg, #0b3828, #061f17) !important;
-    border-left: 6px solid #26a269 !important;
+    background: linear-gradient(145deg, #0b2938, #041822) !important;
+    border-left: 6px solid #00b0ff !important;
 }
 
 /* CONTINUIDADE — VERDE */
@@ -1033,7 +1032,6 @@ body {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
     border-left: 6px solid #00c853 !important;
 }
-```
 
 
 /* =====================================================
@@ -1076,43 +1074,3 @@ div#modal-historia.modal-historia button#fechar-modal-historia:hover {
     background: #b71c1c !important;
 }
 
-/* =====================================================
-   CORES DEFINITIVAS DOS CARDS - HISTORIA.HTML
-   DEIXAR ESTE BLOCO NO FINAL DO CSS
-===================================================== */
-
-/* 🟡 APRESENTAÇÃO */
-#lista-historias > article.card-historia.historia-apresentacao {
-    background: #4a3b0a !important;
-    border-left: 8px solid #f1c40f !important;
-}
-
-/* 🟤 HISTÓRIA */
-#lista-historias > article.card-historia.historia-historia {
-    background: #3b281c !important;
-    border-left: 8px solid #8d6e63 !important;
-}
-
-/* 🟠 TRANSFORMAÇÕES */
-#lista-historias > article.card-historia.historia-transformacoes {
-    background: #4a260b !important;
-    border-left: 8px solid #ff9800 !important;
-}
-
-/* 🟣 SONS */
-#lista-historias > article.card-historia.historia-sons {
-    background: #301448 !important;
-    border-left: 8px solid #9c27b0 !important;
-}
-
-/* 🟢 GRAMÁTICA */
-#lista-historias > article.card-historia.historia-gramatica {
-    background: #0b3828 !important;
-    border-left: 8px solid #26a269 !important;
-}
-
-/* 🟢 CONTINUIDADE */
-#lista-historias > article.card-historia.historia-continuidade {
-    background: #0b3522 !important;
-    border-left: 8px solid #00c853 !important;
-}
