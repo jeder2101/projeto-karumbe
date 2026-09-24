@@ -814,22 +814,40 @@ body {
     text-decoration: underline;
 } /* <--- Faltava fechar esta chave aqui! */
 /* =====================================================
-   CORREÇÃO APENAS DO TEXTO (MANTÉM AS CORES DOS CARTÕES)
+   CORREÇÃO DEFINITIVA DE TEXTO (MANTÉM AS CORES DE FUNDO)
 ===================================================== */
 
-/* Altera apenas a cor dos textos e títulos para branco, sem mexer no fundo */
-.grupo-cartoes-especiais .card-categoria *,
-.card-historia *,
-.historia-card * {
+/* Força apenas os textos de dentro dos cartões a ficarem brancos */
+.grupo-cartoes-especiais .card-categoria p,
+.grupo-cartoes-especiais .card-categoria h3,
+.grupo-cartoes-especiais .card-categoria span,
+.grupo-cartoes-especiais .cat-textos p,
+.grupo-cartoes-especiais .cat-textos h3 {
     color: #ffffff !important;
 }
 
-/* Garante que os links da história fiquem brancos */
+/* Garante as cores de fundo dos cartões específicos caso tenham sido limpas */
+.grupo-cartoes-especiais .cat-laranja {
+    background: #7b4b1f !important;
+    border: 1px solid #5d3518 !important;
+}
+
+.grupo-cartoes-especiais .cat-vermelha {
+    background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
+    border: 1px solid #8b0000 !important;
+}
+
+/* Links da história legíveis */
 .historia-links a {
     color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.15) !important;
 }
 
-/* Destaque de exemplo com azul claro */
+.historia-links a:hover {
+    text-decoration: underline;
+}
+
+/* Destaque de exemplo */
 .destaque-exemplo {
     display: block;
     color: #e0f7ff !important; 
