@@ -2106,29 +2106,34 @@ function classeTipo(tipo, categoria) {
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
 
-    // A categoria é a referência principal para definir a cor.
-    if (cat.includes("apresentacao")) {
+    const textoCombinado = `${cat} ${t}`;
+
+    if (textoCombinado.includes("apresentac") ||
+        textoCombinado.includes("introduc")) {
         return "historia-apresentacao";
     }
 
-    if (cat.includes("historia")) {
+    if (textoCombinado.includes("historia") ||
+        textoCombinado.includes("trajetoria")) {
         return "historia-historia";
     }
 
-    if (cat.includes("transformacoes")) {
+    if (textoCombinado.includes("transformac") ||
+        textoCombinado.includes("mudanca")) {
         return "historia-transformacoes";
     }
 
-    if (cat.includes("sons")) {
+    // Sons deve ser identificado antes de qualquer outra regra.
+    if (cat.includes("sons") ||
+        textoCombinado.includes("fonet") ||
+        textoCombinado.includes("fonologia")) {
         return "historia-sons";
     }
 
-    if (cat.includes("gramatica")) {
+    if (textoCombinado.includes("gramatic") ||
+        textoCombinado.includes("vocabular") ||
+        textoCombinado.includes("termo")) {
         return "historia-gramatica";
-    }
-
-    if (cat.includes("continuidade")) {
-        return "historia-continuidade";
     }
 
     return "historia-continuidade";
