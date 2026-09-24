@@ -813,29 +813,28 @@ body {
 .historia-links a:hover {
     text-decoration: underline;
 }
-
-/* CORRIGIR TEXTO DOS CARTÕES DE HISTÓRIA - ALTERADO PARA BRANCO */
+/* CORRIGIR TEXTO DOS CARTÕES DE HISTÓRIA */
 .card-historia p,
 .historia-card p,
 .historia-resumo,
 .resumo-historia {
-    color: #ffffff !important;
+    color: #3b2a20 !important;
 }
 
-/* Resumo com melhor leitura - ALTERADO PARA BRANCO */
+/* Resumo com melhor leitura */
 .card-historia .resumo,
 .historia-card .resumo {
-    color: #ffffff !important;
+    color: #3b2a20 !important;
     line-height: 1.6;
 }
 
 .destaque-exemplo {
     display: block;
-    color: #e0f7ff !important; /* Azul bem claro para destacar perfeitamente */
+    color: #1769aa;
     font-weight: bold;
     font-size: 1.05rem;
     margin-top: 22px;
     margin-bottom: 10px;
-    border-left: 5px solid #4fc3f7;
+    border-left: 5px solid #1769aa;
     padding-left: 10px;
 }
