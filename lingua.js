@@ -2094,51 +2094,19 @@ function formatarConteudo(texto) {
 }
 
 function classeTipo(tipo, categoria) {
-    const cat = (categoria || "")
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim();
-
-    const t = (tipo || "")
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim();
-
-    const textoCombinado = `${cat} ${t}`;
-
-    if (textoCombinado.includes("apresentac") ||
-        textoCombinado.includes("introduc")) {
-        return "historia-apresentacao";
-    }
-
-    if (textoCombinado.includes("historia") ||
-        textoCombinado.includes("trajetoria")) {
-        return "historia-historia";
-    }
-
-    if (textoCombinado.includes("transformac") ||
-        textoCombinado.includes("mudanca")) {
-        return "historia-transformacoes";
-    }
-
-    // Sons deve ser identificado antes de qualquer outra regra.
-    if (cat.includes("sons") ||
-        textoCombinado.includes("fonet") ||
-        textoCombinado.includes("fonologia")) {
-        return "historia-sons";
-    }
-
-    if (textoCombinado.includes("gramatic") ||
-        textoCombinado.includes("vocabular") ||
-        textoCombinado.includes("termo")) {
-        return "historia-gramatica";
-    }
-
-    return "historia-continuidade";
+  const cat = (categoria || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  const t = (tipo || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  
+  const textoCombinado = `${cat} ${t}`;
+  
+  if (textoCombinado.includes('apresentac') || textoCombinado.includes('introduc')) return 'historia-apresentacao';
+  if (textoCombinado.includes('historia') || textoCombinado.includes('trajetoria')) return 'historia-historia';
+  if (textoCombinado.includes('transformac') || textoCombinado.includes('mudanca')) return 'historia-transformacoes';
+  if (textoCombinado.includes('som') || textoCombinado.includes('fonet') || textoCombinado.includes('fonologia')) return 'historia-sons';
+  if (textoCombinado.includes('gramatic') || textoCombinado.includes('vocabular') || textoCombinado.includes('termo')) return 'historia-gramatica';
+  
+  return 'historia-continuidade';
 }
-
 
 /* =========================================================
    MOSTRAR HISTÓRIAS
