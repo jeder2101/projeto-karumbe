@@ -5,6 +5,286 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nossas Histórias e Transformações | Projeto Karumbé</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* ================================================
+       ESTILOS DA SEÇÃO HISTÓRIA - PROJETO KARUMBÉ
+       ================================================ */
+    header {
+      width: 100%;
+      background: #06251d;
+      color: white;
+      text-align: center;
+      padding: 22px 10px;
+      box-sizing: border-box;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 0.85rem;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+    .pagina-historia {
+      max-width: 1550px;
+      width: 94%;
+      margin: auto;
+      padding: 20px 0;
+    }
+    .cabecalho-historia {
+      text-align: center;
+      padding: 10px 10px 25px;
+    }
+    .cabecalho-historia h2 {
+      margin: 0 0 10px;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .cabecalho-historia p {
+      line-height: 1.6;
+      color: white;
+      margin: 5px 0;
+    }
+    .controles-historia {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0 auto 25px;
+      max-width: 950px;
+    }
+    .controles-historia input,
+    .controles-historia select {
+      flex: 1;
+      min-width: 200px;
+      padding: 12px;
+      border: 1px solid #b7a58d;
+      border-radius: 8px;
+      font-size: 16px;
+      background: #fffaf3;
+      box-sizing: border-box;
+    }
+    .lista-historias {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+    .card-historia {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 145px;
+      padding: 20px;
+      background: #fffaf3;
+      border: 1px solid #d8c3a5;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-historia:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+    }
+    .historia-categoria {
+      display: inline-block;
+      width: fit-content;
+      background: #d8c3a5;
+      color: #4e321b;
+      padding: 5px 10px;
+      margin-bottom: 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .card-historia h3 {
+      margin: 0;
+      padding: 0;
+      color: #17372f;
+      font-size: 1.05rem;
+      line-height: 1.45;
+      font-weight: bold;
+    }
+    .card-historia .historia-resumo,
+    .card-historia .historia-meta {
+      display: none;
+    }
+    .card-historia .botao-historia {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: none;
+      border-radius: 12px;
+      color: transparent;
+      font-size: 0;
+      cursor: pointer;
+    }
+    .card-historia .botao-historia:hover {
+      background: transparent;
+    }
+    .card-historia::after {
+      content: "›";
+      position: absolute;
+      right: 18px;
+      bottom: 12px;
+      color: #17372f;
+      font-size: 2rem;
+      font-weight: normal;
+      pointer-events: none;
+    }
+    .historia-documentado { border-left: 5px solid #36865a; }
+    .historia-hipotese { border-left: 5px solid #c18a25; }
+    .historia-estudo { border-left: 5px solid #557da8; }
+    .historia-projeto { border-left: 5px solid #805a9b; }
+
+    .modal-historia {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.70);
+      padding: 20px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+    .modal-historia.ativo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .caixa-historia {
+      background: #fffaf3;
+      color: #33291f;
+      max-width: 850px;
+      width: 100%;
+      max-height: 85vh;
+      margin: auto;
+      padding: 30px;
+      border-radius: 16px;
+      border: 2px solid #d8c3a5;
+      position: relative;
+      overflow-y: auto;
+      box-sizing: border-box;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    }
+    .fechar-modal-historia {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      border: none;
+      background: transparent;
+      font-size: 30px;
+      cursor: pointer;
+      color: #62401f;
+    }
+    .fechar-modal-historia:hover {
+      color: #a33a26;
+    }
+    #conteudo-historia h2 {
+      margin-top: 0;
+      padding-right: 25px;
+      color: #174c3d;
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+    .texto-historia {
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+    #conteudo-historia p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+    #conteudo-historia a {
+      color: #1769aa;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+    .historia-fonte {
+      margin-top: 25px;
+      padding: 15px;
+      background: #eee2d2;
+      border-radius: 8px;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    .destaque-exemplo {
+      display: block;
+      color: #1769aa;
+      font-weight: bold;
+      font-size: 1.05rem;
+      margin-top: 22px;
+      margin-bottom: 10px;
+      border-left: 5px solid #1769aa;
+      padding-left: 10px;
+    }
+    .historia-vazia {
+      text-align: center;
+      padding: 30px;
+      color: white;
+    }
+    .area-voltar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 35px 0 40px;
+    }
+    .botao-voltar {
+      display: inline-block;
+      padding: 13px 35px;
+      background: #73502d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .botao-voltar:hover {
+      background: #4f351e;
+    }
+    @media (max-width: 1150px) {
+      .lista-historias {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 800px) {
+      .pagina-historia { width: 92%; }
+      .lista-historias {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+      }
+      .card-historia { padding: 17px; }
+      header h1 { font-size: 1.6rem; }
+    }
+    @media (max-width: 500px) {
+      .pagina-historia { width: 92%; padding: 12px 0; }
+      header h1 { font-size: 1.35rem; }
+      header p { font-size: 0.75rem; }
+      .cabecalho-historia h2 { font-size: 1.2rem; }
+      .lista-historias { grid-template-columns: 1fr; }
+      .card-historia { min-height: 125px; }
+      .caixa-historia { padding: 25px 18px; }
+      #conteudo-historia h2 { font-size: 1.3rem; }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -24,149 +304,16 @@
       <select id="categoria-historia" aria-label="Filtrar por categoria">
         <option value="todas">Todas as categorias</option>
         <option value="Apresentação">Apresentação</option>
-        <option value="História da língua">História da língua</option>
-        <option value="Transformações">Transformações</option>
+        <option value="História da língua">História</option>
         <option value="Sons">Sons</option>
+        <option value="Transformações">Transformações</option>
         <option value="Gramática">Gramática</option>
         <option value="Continuidade">Continuidade</option>
       </select>
     </section>
 
-    <!-- OS 12 CARDS COM OS SEUS IDS EXATOS -->
     <section id="lista-historias" class="lista-historias" aria-live="polite">
-      
-      <!-- Card 1 -->
-      <article class="card-historia historia-apresentacao" data-id="1">
-        <span class="historia-categoria">Apresentação</span>
-        <h3>A língua é memória, identidade e transformação</h3>
-        <p class="historia-resumo">Apresentação geral sobre a importância da língua Nhandewa como patrimônio vivo, cultural e histórico.</p>
-        <div class="historia-meta">
-          <p>A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="card-historia historia-historia" data-id="2">
-        <span class="historia-categoria">História da língua</span>
-        <h3>A trajetória histórica da língua Guarani Nhandewa</h3>
-        <p class="historia-resumo">Compreendendo a evolução histórica e a ancestralidade do povo Nhandewa.</p>
-        <div class="historia-meta">
-          <p>A trajetória histórica do povo e da língua Guarani Nhandewa reflete séculos de resistência, adaptação e profunda conexão com os territórios tradicionais.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="card-historia historia-transformacoes" data-id="3">
-        <span class="historia-categoria">Transformações</span>
-        <h3>Mudanças nos sons da língua</h3>
-        <p class="historia-resumo">Análise das transformações fonéticas ao longo do tempo na fala tradicional.</p>
-        <div class="historia-meta">
-          <p>As mudanças nos sons da língua demonstram como a comunicação se adapta e se reconfigura nas diferentes regiões e gerações de falantes.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="card-historia historia-transformacoes" data-id="4">
-        <span class="historia-categoria">Transformações</span>
-        <h3>De pe, be e bo para py e wy</h3>
-        <p class="historia-resumo">Estudo das variações estruturais e sonoras específicas da fonética Nhandewa.</p>
-        <div class="historia-meta">
-          <p>A transição de sons como pe, be e bo para py e wy revela especificidades marcantes da fonologia e da variação dialetal Nhandewa.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="card-historia historia-sons" data-id="5">
-        <span class="historia-categoria">Sons</span>
-        <h3>Mõ, mũ e mu</h3>
-        <p class="historia-resumo">Diferenciação e importância dasais e orais na estrutura das palavras.</p>
-        <div class="historia-meta">
-          <p>A oposição entre sons nasais e orais (como mõ, mũ e mu) altera completamente o significado dos termos na língua Guarani Nhandewa.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 6 -->
-      <article class="card-historia historia-sons" data-id="6">
-        <span class="historia-categoria">Sons</span>
-        <h3>A relação entre R e N em ambiente nasal</h3>
-        <p class="historia-resumo">Como os sons nasais influenciam a pronunciação de consoantes vizinhas.</p>
-        <div class="historia-meta">
-          <p>Em ambiente nasal, consoantes como o R sofrem modulações sonoras características que revelam a harmonia nasal intrínseca da gramática.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 7 -->
-      <article class="card-historia historia-transformacoes" data-id="7">
-        <span class="historia-categoria">Transformações</span>
-        <h3>Desaparecimento ou redução de morfemas</h3>
-        <p class="historia-resumo">Processos de simplificação e evolução morfológica na língua falada.</p>
-        <div class="historia-meta">
-          <p>O estudo morfológico aponta casos em que determinados morfemas passam por processos de redução ou desaparecimento na estrutura cotidiana.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 8 -->
-      <article class="card-historia historia-gramatica" data-id="8">
-        <span class="historia-categoria">Gramática</span>
-        <h3>As partículas ma e pa</h3>
-        <p class="historia-resumo">Uso e significado das partículas modais na construção das frases.</p>
-        <div class="historia-meta">
-          <p>As partículas ma e pa exercem papéis fundamentais na coesão do discurso, indicando ênfase, tempo ou modalidade nas orações Nhandewa.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 9 -->
-      <article class="card-historia historia-gramatica" data-id="9">
-        <span class="historia-categoria">Gramática</span>
-        <h3>O uso do supino vy</h3>
-        <p class="historia-resumo">Explicação gramatical sobre a estrutura de finalidade e ação no Nhandewa.</p>
-        <div class="historia-meta">
-          <p>O sufixo ou partícula de supino vy expressa finalidade e conexão entre verbos de movimento e ação principal na sintaxe da língua.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 10 -->
-      <article class="card-historia historia-transformacoes" data-id="10">
-        <span class="historia-categoria">Transformações</span>
-        <h3>As palavras podem adquirir novos significados</h3>
-        <p class="historia-resumo">A dinamicidade do vocabulário frente às novas realidades e contextos.</p>
-        <div class="historia-meta">
-          <p>A língua é viva e dinâmica; termos tradicionais expandem seus horizontes semânticos para abranger novos objetos e realidades modernas.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 11 -->
-      <article class="card-historia historia-continuidade" data-id="11">
-        <span class="historia-categoria">Continuidade</span>
-        <h3>A revitalização e a continuidade da língua</h3>
-        <p class="historia-resumo">Iniciativas comunitárias voltadas à transmissão intergeracional e ao fortalecimento cultural.</p>
-        <div class="historia-meta">
-          <p>Esforços coletivos de revitalização garantem que a língua continue pulsante nas conversas diárias, nas escolas e nas festividades tradicionais.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
-      <!-- Card 12 -->
-      <article class="card-historia historia-continuidade" data-id="12">
-        <span class="historia-categoria">Continuidade</span>
-        <h3>Formação de professores e fortalecimento das línguas indígenas</h3>
-        <p class="historia-resumo">O papel essencial da educação escolar indígena na preservação da herança linguística.</p>
-        <div class="historia-meta">
-          <p>A capacitação e protagonismo dos professores indígenas fortalecem o ensino bilíngue e asseguram a transmissão legítima dos saberes ancestrais.</p>
-        </div>
-        <button class="botao-historia" type="button">Ver detalhes</button>
-      </article>
-
+      <p>Carregando conteúdos...</p>
     </section>
 
     <div class="area-voltar">
@@ -182,5 +329,15 @@
   </div>
 
   <script src="./lingua.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const categoria = document.getElementById("categoria-historia");
+      if (categoria) {
+        categoria.addEventListener("change", event => {
+          filtrarCategoriaHistoria(event.target.value);
+        });
+      }
+    });
+  </script>
 </body>
 </html>
