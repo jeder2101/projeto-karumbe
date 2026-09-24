@@ -1073,4 +1073,11 @@ div#modal-historia.modal-historia button#fechar-modal-historia:hover {
     color: #ffffff !important;
     background: #b71c1c !important;
 }
+/* =====================================================
+   COR DEFINITIVA — SONS = ROXO
+===================================================== */
 
+.card-historia.historia-sons {
+    background: linear-gradient(145deg, #301448, #1b0929) !important;
+    border-left: 6px solid #9c27b0 !important;
+}
