@@ -812,29 +812,36 @@ body {
 
 .historia-links a:hover {
     text-decoration: underline;
-}
-/* CORRIGIR TEXTO DOS CARTÕES DE HISTÓRIA */
+} /* <--- Faltava fechar esta chave aqui! */
+/* =====================================================
+   CORREÇÃO DEFINITIVA - TEXTO CLARO NOS CARTÕES
+===================================================== */
+.grupo-cartoes-especiais .card-categoria,
+.grupo-cartoes-especiais .cat-textos,
+.grupo-cartoes-especiais p,
+.grupo-cartoes-especiais h3,
+.grupo-cartoes-especiais span,
 .card-historia p,
 .historia-card p,
 .historia-resumo,
-.resumo-historia {
-    color: #3b2a20 !important;
-}
-
-/* Resumo com melhor leitura */
+.resumo-historia,
 .card-historia .resumo,
 .historia-card .resumo {
-    color: #3b2a20 !important;
-    line-height: 1.6;
+    color: #ffffff !important;
+}
+
+/* Garante que os links e textos dentro de histórico também fiquem visíveis e legíveis */
+.historia-links a {
+    color: #ffffff !important;
 }
 
 .destaque-exemplo {
     display: block;
-    color: #1769aa;
+    color: #e0f7ff !important; /* Um tom azul bem claro para destacar sem sumir no fundo */
     font-weight: bold;
     font-size: 1.05rem;
     margin-top: 22px;
     margin-bottom: 10px;
-    border-left: 5px solid #1769aa;
+    border-left: 5px solid #4fc3f7;
     padding-left: 10px;
 }
