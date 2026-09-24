@@ -147,11 +147,11 @@ const dicionario2 = [
     falante: "Uso geral",
     exemplos: [
       "Ko'ẽro tirapitxa edjúta ko'ápe.",
-     "Amoite txe adjú tape pukú rupi.",
+     "Amoite txe adjú tape pukú rupi."
     ],
     traducao: [
       "Amanhã o meu amigo virá aqui.",
-     "Eu vim lá de longe pelo caminho longo.",
+     "Eu vim lá de longe pelo caminho longo."
     ]
   },
 {
@@ -435,7 +435,7 @@ const dicionario2 = [
     sentido_de: "Aquilo que resta de algo que foi consumido, usado ou cortado",
     falante: "Uso geral",
     exemplos: [
-      "Opyta tembi'u'rã pyre, txe ikatu karu.,
+      "Opyta tembi'u'rã pyre, txe ikatu karu.",
       "Eka mbudjape pyre karu agwã."
     ],
     traducao: [
