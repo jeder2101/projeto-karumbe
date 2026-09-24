@@ -1361,7 +1361,17 @@ body {
         max-width: 100%;
     }
 }
+/* Garante que o texto de dentro do card de história seja visível e branco */
+.card-historia h3,
+.card-historia p,
+.card-historia span {
+    color: #ffffff !important;
+}
 
+/* Mantém o botão invisível apenas para cliques, sem afetar o texto */
+.card-historia .botao-historia {
+    color: transparent !important;
+}
 
 /* =====================================================
    FIM DO BLOCO DOS CARDS E MODAL
