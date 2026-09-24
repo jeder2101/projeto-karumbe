@@ -993,39 +993,48 @@ body {
     }
 } /* <--- CHAVETA FECHADA AQUI CORRETAMENTE */
 
+```css
 /* =====================================================
    CORES DOS CARDS - HISTORIA.HTML
-   ===================================================== */
+===================================================== */
 
+/* APRESENTAÇÃO — AMARELO */
 .card-historia.historia-apresentacao {
-    background: linear-gradient(145deg, #3d1c0b, #210e04) !important;
-    border-left: 6px solid #ff6e40 !important;
+    background: linear-gradient(145deg, #4a3b0a, #2a2105) !important;
+    border-left: 6px solid #f1c40f !important;
 }
 
+/* HISTÓRIA — MARROM */
 .card-historia.historia-historia {
-    background: linear-gradient(145deg, #2c221e, #1a1311) !important;
-    border-left: 6px solid #a1664a !important;
+    background: linear-gradient(145deg, #3b281c, #21150e) !important;
+    border-left: 6px solid #8d6e63 !important;
 }
 
+/* TRANSFORMAÇÕES — LARANJA */
 .card-historia.historia-transformacoes {
-    background: linear-gradient(145deg, #3d1c0b, #210e04) !important;
-    border-left: 6px solid #ff6e40 !important;
+    background: linear-gradient(145deg, #4a260b, #291304) !important;
+    border-left: 6px solid #ff9800 !important;
 }
 
+/* SONS — ROXO */
 .card-historia.historia-sons {
-    background: linear-gradient(145deg, #280b38, #180422) !important;
-    border-left: 6px solid #b388ff !important;
+    background: linear-gradient(145deg, #301448, #1b0929) !important;
+    border-left: 6px solid #9c27b0 !important;
 }
 
+/* GRAMÁTICA — VERDE */
 .card-historia.historia-gramatica {
-    background: linear-gradient(145deg, #0b2938, #041822) !important;
-    border-left: 6px solid #00b0ff !important;
+    background: linear-gradient(145deg, #0b3828, #061f17) !important;
+    border-left: 6px solid #26a269 !important;
 }
 
+/* CONTINUIDADE — VERDE */
 .card-historia.historia-continuidade {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
     border-left: 6px solid #00c853 !important;
 }
+```
+
 
 /* =====================================================
    MODAL COM FUNDO CLARO/CREME
