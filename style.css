@@ -814,26 +814,22 @@ body {
     text-decoration: underline;
 } /* <--- Faltava fechar esta chave aqui! */
 /* =====================================================
-   CORREÇÃO DEFINITIVA - APENAS O TEXTO DOS CARTÕES (MANTÉM O FUNDO)
+   CORREÇÃO APENAS DO TEXTO (MANTÉM AS CORES DOS CARTÕES)
 ===================================================== */
-.grupo-cartoes-especiais .card-categoria p,
-.grupo-cartoes-especiais .card-categoria h3,
-.grupo-cartoes-especiais .card-categoria span,
-.grupo-cartoes-especiais .cat-textos,
-.card-historia p,
-.historia-card p,
-.historia-resumo,
-.resumo-historia,
-.card-historia .resumo,
-.historia-card .resumo {
+
+/* Altera apenas a cor dos textos e títulos para branco, sem mexer no fundo */
+.grupo-cartoes-especiais .card-categoria *,
+.card-historia *,
+.historia-card * {
     color: #ffffff !important;
 }
 
-/* Garante que os links e textos dentro de histórico também fiquem visíveis e legíveis */
+/* Garante que os links da história fiquem brancos */
 .historia-links a {
     color: #ffffff !important;
 }
 
+/* Destaque de exemplo com azul claro */
 .destaque-exemplo {
     display: block;
     color: #e0f7ff !important; 
