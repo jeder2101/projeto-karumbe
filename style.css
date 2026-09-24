@@ -1372,7 +1372,21 @@ body {
 .card-historia .botao-historia {
     color: transparent !important;
 }
+/* Estilo para o botão/card de História na página inicial com degradê marrom */
+.card-historia, 
+.card.historia, 
+[data-categoria="historia"] {
+  background: linear-gradient(135deg, #5c3a21 0%, #3b2313 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid #7c4d29 !important;
+}
 
+/* Garante que o texto e os detalhes dentro dele fiquem visíveis */
+.card-historia h3, 
+.card-historia p,
+.card-historia span {
+  color: #ffffff !important;
+}
 /* =====================================================
    FIM DO BLOCO DOS CARDS E MODAL
 ===================================================== */
