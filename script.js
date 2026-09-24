@@ -2,15 +2,6 @@ console.log("Script Karumbé Carregado e Atualizado!");
 
 const lista = document.getElementById("lista");
 
-// Unificação segura dos dicionários tradicionais (Volume 1 e Volume 2)
-let DICIONARIO = [];
-if (typeof dicionario !== 'undefined' && Array.isArray(dicionario)) {
-    DICIONARIO = DICIONARIO.concat(dicionario);
-}
-if (typeof DICIONARIO2 !== 'undefined' && Array.isArray(dicionario2)) {
-    DICIONARIO = DICIONARIO.concat(dicionario2);
-}
-
 /* =====================================================
 1. ÁUDIO
 ===================================================== */
