@@ -812,45 +812,26 @@ body {
 
 .historia-links a:hover {
     text-decoration: underline;
-} /* <--- Faltava fechar esta chave aqui! */
-/* =====================================================
-   CORREÇÃO DEFINITIVA DE TEXTO (MANTÉM AS CORES DE FUNDO)
-===================================================== */
+}
 
-/* Força apenas os textos de dentro dos cartões a ficarem brancos */
-.grupo-cartoes-especiais .card-categoria p,
-.grupo-cartoes-especiais .card-categoria h3,
-.grupo-cartoes-especiais .card-categoria span,
-.grupo-cartoes-especiais .cat-textos p,
-.grupo-cartoes-especiais .cat-textos h3 {
+/* CORRIGIR TEXTO DOS CARTÕES DE HISTÓRIA - ALTERADO PARA BRANCO */
+.card-historia p,
+.historia-card p,
+.historia-resumo,
+.resumo-historia {
     color: #ffffff !important;
 }
 
-/* Garante as cores de fundo dos cartões específicos caso tenham sido limpas */
-.grupo-cartoes-especiais .cat-laranja {
-    background: #7b4b1f !important;
-    border: 1px solid #5d3518 !important;
-}
-
-.grupo-cartoes-especiais .cat-vermelha {
-    background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
-    border: 1px solid #8b0000 !important;
-}
-
-/* Links da história legíveis */
-.historia-links a {
+/* Resumo com melhor leitura - ALTERADO PARA BRANCO */
+.card-historia .resumo,
+.historia-card .resumo {
     color: #ffffff !important;
-    background: rgba(255, 255, 255, 0.15) !important;
+    line-height: 1.6;
 }
 
-.historia-links a:hover {
-    text-decoration: underline;
-}
-
-/* Destaque de exemplo */
 .destaque-exemplo {
     display: block;
-    color: #e0f7ff !important; 
+    color: #e0f7ff !important; /* Azul bem claro para destacar perfeitamente */
     font-weight: bold;
     font-size: 1.05rem;
     margin-top: 22px;
