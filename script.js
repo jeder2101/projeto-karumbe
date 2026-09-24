@@ -1,6 +1,5 @@
-console.log("Script Karumbé Carregado!");
+console.log("Script Karumbé Carregado e Atualizado!");
 
-let DICIONARIO = [...dicionario, ...dicionario2];
 const lista = document.getElementById("lista");
 
 /* =====================================================
