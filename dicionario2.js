@@ -147,11 +147,11 @@ const dicionario2 = [
     falante: "Uso geral",
     exemplos: [
       "Ko'ẽro tirapitxa edjúta ko'ápe.",
-     "Amoite txe adjú tape pukú rupi."
+      "Amoite txe adjú tape pukú rupi."
     ],
     traducao: [
       "Amanhã o meu amigo virá aqui.",
-     "Eu vim lá de longe pelo caminho longo."
+      "Eu vim lá de longe pelo caminho longo."
     ]
   },
 {
@@ -271,6 +271,7 @@ const dicionario2 = [
     traducao: [
       "A abelha voa procurando flor.",
       "Tem abelha na pedra / Há abelhas sobre a rocha."
+    ]
   },
 {
     palavra: "Eitsy",
@@ -423,8 +424,7 @@ const dicionario2 = [
     traducao: [
       "Seja forte para você viver bem.",
       "Não se preocupe, fortaleça sua mente."
-    ],
-
+    ]
   },
 {
     palavra: "Pyre",
@@ -491,7 +491,7 @@ const dicionario2 = [
     ],
     traducao: [
       "Acenda o fogo para sentar-se.",
-     "Eles acenderam o fogo da mata à noite ( Eles acenderam o fogo na mata durante a noite)"
+      "Eles acenderam o fogo da mata à noite ( Eles acenderam o fogo na mata durante a noite)"
     ]
   },
 {
@@ -542,7 +542,7 @@ const dicionario2 = [
     ],
     traducao: [
       "Eles já foram embora da nossa casa e caminharam pela mata à noite.",
-      "Vocês virão na minha casa hoje.",
+      "Vocês virão na minha casa hoje."
     ]
   }
-      ];
+];
