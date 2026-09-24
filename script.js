@@ -1,18 +1,6 @@
-console.log("Script Karumbé Carregado e Atualizado!");
+console.log("Script Karumbé Carregado!");
 
-// Unificação segura de todos os dicionários disponíveis
-let DICIONARIO = [];
-
-if (typeof dicionario !== 'undefined' && Array.isArray(dicionario)) {
-    DICIONARIO = DICIONARIO.concat(dicionario);
-}
-if (typeof dicionariorua !== 'undefined' && Array.isArray(dicionariorua)) {
-    DICIONARIO = DICIONARIO.concat(dicionariorua);
-}
-if (typeof dicionario2 !== 'undefined' && Array.isArray(dicionario2)) {
-    DICIONARIO = DICIONARIO.concat(dicionario2);
-}
-
+let DICIONARIO = [...dicionario, ...dicionario2];
 const lista = document.getElementById("lista");
 
 /* =====================================================
