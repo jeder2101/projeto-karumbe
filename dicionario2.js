@@ -1,6 +1,5 @@
-// dicionario2.js - Projeto Karumbé (Volume 2)
-
-const dicionario2 = [
+const DICIONARIO2 = [
+  
 {
   palavra: "Mbirakuwé",
   tipo: "substantivo / adjetivo",
