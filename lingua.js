@@ -2094,18 +2094,44 @@ function formatarConteudo(texto) {
 }
 
 function classeTipo(tipo, categoria) {
-  const cat = (categoria || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-  const t = (tipo || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-  
-  const textoCombinado = `${cat} ${t}`;
-  
-  if (textoCombinado.includes('apresentac') || textoCombinado.includes('introduc')) return 'historia-apresentacao';
-  if (textoCombinado.includes('historia') || textoCombinado.includes('trajetoria')) return 'historia-historia';
-  if (textoCombinado.includes('transformac') || textoCombinado.includes('mudanca')) return 'historia-transformacoes';
-  if (textoCombinado.includes('som') || textoCombinado.includes('fonet') || textoCombinado.includes('fonologia')) return 'historia-sons';
-  if (textoCombinado.includes('gramatic') || textoCombinado.includes('vocabular') || textoCombinado.includes('termo')) return 'historia-gramatica';
-  
-  return 'historia-continuidade';
+    const cat = (categoria || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+
+    const t = (tipo || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+
+    // A categoria é a referência principal para definir a cor.
+    if (cat.includes("apresentacao")) {
+        return "historia-apresentacao";
+    }
+
+    if (cat.includes("historia")) {
+        return "historia-historia";
+    }
+
+    if (cat.includes("transformacoes")) {
+        return "historia-transformacoes";
+    }
+
+    if (cat.includes("sons")) {
+        return "historia-sons";
+    }
+
+    if (cat.includes("gramatica")) {
+        return "historia-gramatica";
+    }
+
+    if (cat.includes("continuidade")) {
+        return "historia-continuidade";
+    }
+
+    return "historia-continuidade";
 }
 
 /* =========================================================
