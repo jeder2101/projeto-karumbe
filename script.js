@@ -1,5 +1,11 @@
 console.log("Script Karumbé Carregado e Atualizado!");
 
+// Junta o dicionário principal com o dicionario2 em uma única constante DICIONARIO
+const DICIONARIO = [
+    ...(typeof dicionario !== 'undefined' ? dicionario : []),
+    ...(typeof dicionario2 !== 'undefined' ? dicionario2 : [])
+];
+
 const lista = document.getElementById("lista");
 
 /* =====================================================
