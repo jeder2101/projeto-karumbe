@@ -1,10 +1,15 @@
-console.log("Script Karumbé Carregado e Atualizado!");
+console.log("Script Karumbé Carregado and Atualizado!");
 
-// Junta o dicionário principal com o dicionario2 em uma única constante DICIONARIO
-const DICIONARIO = [
-    ...(typeof dicionario !== 'undefined' ? dicionario : []),
-    ...(typeof dicionario2 !== 'undefined' ? dicionario2 : [])
-];
+// Usa 'let' e verifica se já existe, evitando erros de redeclaração
+let DICIONARIO = [];
+
+if (typeof dicionario !== 'undefined') {
+    DICIONARIO = DICIONARIO.concat(dicionario);
+}
+
+if (typeof dicionario2 !== 'undefined') {
+    DICIONARIO = DICIONARIO.concat(dicionario2);
+}
 
 const lista = document.getElementById("lista");
 
