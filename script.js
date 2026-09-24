@@ -1,13 +1,15 @@
-console.log("Script Karumbé Carregado and Atualizado!");
+console.log("Script Karumbé Carregado e Atualizado!");
 
-// Usa 'let' e verifica se já existe, evitando erros de redeclaração
+// Unificação segura de todos os dicionários disponíveis
 let DICIONARIO = [];
 
-if (typeof dicionario !== 'undefined') {
+if (typeof dicionario !== 'undefined' && Array.isArray(dicionario)) {
     DICIONARIO = DICIONARIO.concat(dicionario);
 }
-
-if (typeof dicionario2 !== 'undefined') {
+if (typeof dicionariorua !== 'undefined' && Array.isArray(dicionariorua)) {
+    DICIONARIO = DICIONARIO.concat(dicionariorua);
+}
+if (typeof dicionario2 !== 'undefined' && Array.isArray(dicionario2)) {
     DICIONARIO = DICIONARIO.concat(dicionario2);
 }
 
