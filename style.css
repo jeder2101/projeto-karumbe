@@ -994,57 +994,77 @@ body {
 } /* <--- CHAVETA FECHADA AQUI CORRETAMENTE */
 
 /* =====================================================
-   CORES DOS CARDS - HISTORIA.HTML
+   CORES DOS CARDS — HISTORIA.HTML
+   PALETA DEFINITIVA
 ===================================================== */
 
-/* APRESENTAÇÃO — AMARELO */
-.card-historia.historia-apresentacao {
+/* -----------------------------------------------------
+   1 — APRESENTAÇÃO = AMARELO
+----------------------------------------------------- */
+#lista-historias .card-historia.historia-apresentacao {
     background: linear-gradient(145deg, #4a3b0a, #2a2105) !important;
     border-left: 6px solid #f1c40f !important;
 }
 
-/* HISTÓRIA — MARROM */
-.card-historia.historia-historia {
+
+/* -----------------------------------------------------
+   2 — HISTÓRIA = MARROM
+----------------------------------------------------- */
+#lista-historias .card-historia.historia-historia {
     background: linear-gradient(145deg, #3b281c, #21150e) !important;
     border-left: 6px solid #8d6e63 !important;
 }
 
-/* TRANSFORMAÇÕES — LARANJA */
-.card-historia.historia-transformacoes {
+
+/* -----------------------------------------------------
+   3, 4, 7 e 10 — TRANSFORMAÇÕES = LARANJA
+----------------------------------------------------- */
+#lista-historias .card-historia.historia-transformacoes {
     background: linear-gradient(145deg, #4a260b, #291304) !important;
     border-left: 6px solid #ff9800 !important;
 }
 
-/* SONS — ROXO */
-.card-historia.historia-sons {
+
+/* -----------------------------------------------------
+   5 e 6 — SONS = ROXO
+----------------------------------------------------- */
+#lista-historias .card-historia.historia-sons {
     background: linear-gradient(145deg, #301448, #1b0929) !important;
     border-left: 6px solid #9c27b0 !important;
 }
 
-/* GRAMÁTICA — AZUL */
-.card-historia.historia-gramatica {
+
+/* -----------------------------------------------------
+   8 e 9 — GRAMÁTICA = AZUL
+----------------------------------------------------- */
+#lista-historias .card-historia.historia-gramatica {
     background: linear-gradient(145deg, #0b2938, #041822) !important;
     border-left: 6px solid #00b0ff !important;
 }
 
-/* CONTINUIDADE — VERDE */
-.card-historia.historia-continuidade {
+
+/* -----------------------------------------------------
+   11 e 12 — CONTINUIDADE = VERDE
+----------------------------------------------------- */
+#lista-historias .card-historia.historia-continuidade {
     background: linear-gradient(145deg, #0b3522, #072215) !important;
     border-left: 6px solid #00c853 !important;
 }
 
 
 /* =====================================================
-   MODAL COM FUNDO CLARO/CREME
+   MODAL — FUNDO CLARO / CREME
 ===================================================== */
 
 div#modal-historia.modal-historia div.caixa-historia {
     background-color: #fbf9f4 !important;
     color: #12261f !important;
     border: 3px solid #234c3e !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.7) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7) !important;
 }
 
+
+/* TÍTULOS DO MODAL */
 div#modal-historia.modal-historia div.caixa-historia h2,
 div#modal-historia.modal-historia div.caixa-historia #conteudo-historia h2 {
     color: #0b3522 !important;
@@ -1052,6 +1072,8 @@ div#modal-historia.modal-historia div.caixa-historia #conteudo-historia h2 {
     padding-bottom: 8px;
 }
 
+
+/* TEXTOS DO MODAL */
 div#modal-historia.modal-historia div.caixa-historia h1,
 div#modal-historia.modal-historia div.caixa-historia h2,
 div#modal-historia.modal-historia div.caixa-historia h3,
@@ -1061,6 +1083,8 @@ div#modal-historia.modal-historia div.caixa-historia li {
     color: #1a332a !important;
 }
 
+
+/* BOTÃO FECHAR */
 div#modal-historia.modal-historia button#fechar-modal-historia {
     color: #234c3e !important;
     background: rgba(35, 76, 62, 0.1) !important;
@@ -1069,55 +1093,9 @@ div#modal-historia.modal-historia button#fechar-modal-historia {
     height: 36px;
 }
 
+
+/* HOVER DO BOTÃO FECHAR */
 div#modal-historia.modal-historia button#fechar-modal-historia:hover {
     color: #ffffff !important;
     background: #b71c1c !important;
-}
-/* =====================================================
-   PALETA FINAL — CARDS DA HISTORIA.HTML
-===================================================== */
-
-/* 1 — APRESENTAÇÃO: AMARELO */
-#lista-historias .card-historia.historia-apresentacao {
-    background: linear-gradient(145deg, #4a3b0a, #2a2105) !important;
-    border-left: 6px solid #f1c40f !important;
-}
-
-/* 2 — HISTÓRIA: MARROM */
-#lista-historias .card-historia.historia-historia {
-    background: linear-gradient(145deg, #3b281c, #21150e) !important;
-    border-left: 6px solid #8d6e63 !important;
-}
-
-/* 3 e 4 — TRANSFORMAÇÕES: LARANJA */
-#lista-historias .card-historia.historia-transformacoes {
-    background: linear-gradient(145deg, #4a260b, #291304) !important;
-    border-left: 6px solid #ff9800 !important;
-}
-
-/* 5 e 6 — SONS: ROXO */
-#lista-historias .card-historia.historia-sons {
-    background: linear-gradient(145deg, #301448, #1b0929) !important;
-    border-left: 6px solid #9c27b0 !important;
-}
-
-/* 8 e 9 — GRAMÁTICA: AZUL */
-#lista-historias .card-historia.historia-gramatica {
-    background: linear-gradient(145deg, #0b2938, #041822) !important;
-    border-left: 6px solid #00b0ff !important;
-}
-
-/* 11 e 12 — CONTINUIDADE: VERDE */
-#lista-historias .card-historia.historia-continuidade {
-    background: linear-gradient(145deg, #0b3522, #072215) !important;
-    border-left: 6px solid #00c853 !important;
-}
-
-/* =====================================================
-   COR DEFINITIVA — SONS = ROXO
-===================================================== */
-
-.card-historia.historia-sons {
-    background: linear-gradient(145deg, #301448, #1b0929) !important;
-    border-left: 6px solid #9c27b0 !important;
 }
