@@ -89,6 +89,27 @@
       overflow: hidden;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    /* CORES DE FUNDO PARA OS CARDS COLORIDOS */
+    .card-historia.historia-apresentacao {
+      background: #1e4d3b !important;
+    }
+    .card-historia.historia-historia {
+      background: #5c3a21 !important;
+    }
+    .card-historia.historia-transformacoes {
+      background: #8c5821 !important;
+    }
+    .card-historia.historia-sons {
+      background: #3b2857 !important;
+    }
+    .card-historia.historia-gramatica {
+      background: #1d4358 !important;
+    }
+    .card-historia.historia-continuidade {
+      background: #234833 !important;
+    }
+
     .card-historia:hover {
       transform: translateY(-4px);
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
@@ -96,8 +117,8 @@
     .historia-categoria {
       display: inline-block;
       width: fit-content;
-      background: #d8c3a5;
-      color: #4e321b;
+      background: rgba(255, 255, 255, 0.25) !important;
+      color: #ffffff !important;
       padding: 5px 10px;
       margin-bottom: 12px;
       border-radius: 20px;
@@ -107,7 +128,7 @@
     .card-historia h3 {
       margin: 0;
       padding: 0;
-      color: #17372f;
+      color: #ffffff !important;
       font-size: 1.05rem;
       line-height: 1.45;
       font-weight: bold;
@@ -139,7 +160,7 @@
       position: absolute;
       right: 18px;
       bottom: 12px;
-      color: #17372f;
+      color: #ffffff !important;
       font-size: 2rem;
       font-weight: normal;
       pointer-events: none;
