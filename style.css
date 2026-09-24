@@ -814,13 +814,12 @@ body {
     text-decoration: underline;
 } /* <--- Faltava fechar esta chave aqui! */
 /* =====================================================
-   CORREÇÃO DEFINITIVA - TEXTO CLARO NOS CARTÕES
+   CORREÇÃO DEFINITIVA - APENAS O TEXTO DOS CARTÕES (MANTÉM O FUNDO)
 ===================================================== */
-.grupo-cartoes-especiais .card-categoria,
+.grupo-cartoes-especiais .card-categoria p,
+.grupo-cartoes-especiais .card-categoria h3,
+.grupo-cartoes-especiais .card-categoria span,
 .grupo-cartoes-especiais .cat-textos,
-.grupo-cartoes-especiais p,
-.grupo-cartoes-especiais h3,
-.grupo-cartoes-especiais span,
 .card-historia p,
 .historia-card p,
 .historia-resumo,
@@ -837,7 +836,7 @@ body {
 
 .destaque-exemplo {
     display: block;
-    color: #e0f7ff !important; /* Um tom azul bem claro para destacar sem sumir no fundo */
+    color: #e0f7ff !important; 
     font-weight: bold;
     font-size: 1.05rem;
     margin-top: 22px;
