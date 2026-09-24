@@ -731,371 +731,642 @@ body {
     align-items: stretch;
 }
 
-/* CARDS MODERNOS DA HISTÓRIA COM BORDAS COLORIDAS */
+```css
+/* =====================================================
+   CARDS DA HISTÓRIA — PROJETO KARUMBÉ
+   PALETA TEMÁTICA DEFINITIVA
+===================================================== */
+
 .card-historia {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
     min-height: 160px;
     padding: 22px;
+
     background: linear-gradient(145deg, #13382d, #0f2e25);
+
     border: 1px solid #235847;
     border-radius: 16px;
+
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+
     box-sizing: border-box;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
+
+
+/* =====================================================
+   HOVER DOS CARDS
+===================================================== */
 
 .card-historia:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-    border-color: #4da688;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.4);
 }
+
+
+/* =====================================================
+   CATEGORIA DO CARD
+===================================================== */
 
 .historia-categoria {
     display: inline-block;
     width: fit-content;
-    background: rgba(216, 195, 165, 0.15);
-    color: #ebd6b7;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    color: #f5eadc;
+
     padding: 5px 12px;
     margin-bottom: 14px;
+
     border-radius: 20px;
+
     font-size: 12px;
     font-weight: 600;
+
     letter-spacing: 0.5px;
-    border: 1px solid rgba(216, 195, 165, 0.3);
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    box-sizing: border-box;
 }
+
+
+/* =====================================================
+   TÍTULO DOS CARDS
+===================================================== */
 
 .card-historia h3 {
     margin: 0;
     padding: 0;
+
     color: #ffffff;
+
     font-size: 1.1rem;
     line-height: 1.45;
     font-weight: 700;
 }
+
+
+/* =====================================================
+   RESUMO E METADADOS
+   Ficam ocultos nos cards
+===================================================== */
 
 .card-historia .historia-resumo,
 .card-historia .historia-meta {
     display: none;
 }
 
+
+/* =====================================================
+   BOTÃO INVISÍVEL QUE COBRE TODO O CARD
+===================================================== */
+
 .card-historia .botao-historia {
     position: absolute;
     inset: 0;
+
     z-index: 2;
+
     width: 100%;
     height: 100%;
+
     background: transparent;
     border: none;
+
     cursor: pointer;
+
     color: transparent;
 }
 
+
+/* =====================================================
+   SETA DOS CARDS
+===================================================== */
+
 .card-historia::after {
     content: "›";
+
     position: absolute;
+
     right: 18px;
     bottom: 14px;
-    color: #52a388;
+
+    color: #ffffff;
+
     font-size: 2.2rem;
     font-weight: 300;
-    transition: transform 0.2s;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+
+    pointer-events: none;
 }
+
 
 .card-historia:hover::after {
     transform: translateX(4px);
-    color: #79d4b5;
 }
 
-/* Bordas temáticas */
-.historia-apresentacao { border-left: 6px solid #2ecc71; }
-.historia-historia { border-left: 6px solid #f1c40f; }
-.historia-transformacoes { border-left: 6px solid #e67e22; }
-.historia-sons { border-left: 6px solid #3498db; }
-.historia-gramatica { border-left: 6px solid #9b59b6; }
-.historia-continuidade { border-left: 6px solid #e74c3c; }
-
-/* MODAL DE HISTÓRIA */
-.modal-historia {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 1000;
-    background: rgba(4, 15, 12, 0.85);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    overflow-y: auto;
-    box-sizing: border-box;
-}
-
-.modal-historia.ativo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.caixa-historia {
-    background: #11362b;
-    color: #f4efe6;
-    max-width: 800px;
-    width: 100%;
-    max-height: 85vh;
-    margin: auto;
-    padding: 35px;
-    border-radius: 20px;
-    border: 2px solid #2c6352;
-    position: relative;
-    overflow-y: auto;
-    box-sizing: border-box;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-}
-
-.fechar-modal-historia {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    border: none;
-    background: transparent;
-    font-size: 32px;
-    cursor: pointer;
-    color: #a3c1b6;
-    transition: color 0.2s;
-}
-
-.fechar-modal-historia:hover {
-    color: #ff6b6b;
-}
-
-#conteudo-historia h2 {
-    margin-top: 0;
-    padding-right: 30px;
-    color: #79d4b5;
-    font-size: 1.7rem;
-    font-weight: 700;
-    line-height: 1.4;
-}
-
-.texto-historia {
-    line-height: 1.8;
-    margin-top: 20px;
-    font-size: 1.05rem;
-    color: #e2dcd4;
-}
-
-#conteudo-historia p {
-    line-height: 1.8;
-    margin-bottom: 18px;
-}
-
-.area-voltar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 45px 0 20px;
-}
-
-.botao-voltar {
-    display: inline-block;
-    padding: 14px 38px;
-    background: #235847;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.botao-voltar:hover {
-    background: #327a64;
-    transform: translateY(-2px);
-}
 
 /* =====================================================
-   13. MEDIA QUERIES (RESPONSIVIDADE)
+   CORES TEMÁTICAS DOS CARDS
+   IMPORTANTE:
+   Cada categoria possui UMA única regra.
 ===================================================== */
-@media (max-width: 1150px) {
-    .lista-historias {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
 
-@media (max-width: 768px) {
-    .lista-vertical {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-    }
-    
-    .card-categoria {
-        height: 130px !important;
-    }
-    
-    .cat-nome {
-        font-size: 15px !important;
-    }
-
-    .container-card-restrito {
-        grid-column: 1 / -1 !important;
-        width: 100% !important;
-    }
-
-    .container-card-restrito .card-categoria {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 140px !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .lista-vertical > .grupo-cartoes-especiais {
-        flex-direction: column !important;
-        flex-wrap: nowrap !important;
-        align-items: center !important;
-    }
-
-    .grupo-cartoes-especiais > .container-card-restrito {
-        width: 280px !important;
-        max-width: 280px !important;
-        flex: 0 0 auto !important;
-    }
-}
-
-@media (max-width: 700px) {
-    .pagina-historia { width: 94%; }
-    .lista-historias {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-    .caixa-historia { padding: 25px 20px; }
-}
-
-@media (min-width: 768px) {
-    .container-card-restrito {
-        grid-column: 1 / -1; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .container-card-restrito .card-categoria {
-        width: 200px; 
-        max-width: 100%;
-    }
-} /* <--- CHAVETA FECHADA AQUI CORRETAMENTE */
-
-/* =====================================================
-   CORES DOS CARDS — HISTORIA.HTML
-   PALETA DEFINITIVA
-===================================================== */
 
 /* -----------------------------------------------------
-   1 — APRESENTAÇÃO = AMARELO
+   1 — APRESENTAÇÃO
+   AMARELO
 ----------------------------------------------------- */
+
 #lista-historias .card-historia.historia-apresentacao {
-    background: linear-gradient(145deg, #4a3b0a, #2a2105) !important;
+    background: linear-gradient(
+        145deg,
+        #4a3b0a,
+        #2a2105
+    ) !important;
+
     border-left: 6px solid #f1c40f !important;
 }
 
+#lista-historias .card-historia.historia-apresentacao:hover {
+    border-left-color: #ffe066 !important;
+}
+
 
 /* -----------------------------------------------------
-   2 — HISTÓRIA = MARROM
+   2 — HISTÓRIA
+   MARROM
 ----------------------------------------------------- */
+
 #lista-historias .card-historia.historia-historia {
-    background: linear-gradient(145deg, #3b281c, #21150e) !important;
+    background: linear-gradient(
+        145deg,
+        #3b281c,
+        #21150e
+    ) !important;
+
     border-left: 6px solid #8d6e63 !important;
 }
 
+#lista-historias .card-historia.historia-historia:hover {
+    border-left-color: #bcaaa4 !important;
+}
+
 
 /* -----------------------------------------------------
-   3, 4, 7 e 10 — TRANSFORMAÇÕES = LARANJA
+   3, 4, 7 e 10 — TRANSFORMAÇÕES
+   LARANJA
 ----------------------------------------------------- */
+
 #lista-historias .card-historia.historia-transformacoes {
-    background: linear-gradient(145deg, #4a260b, #291304) !important;
+    background: linear-gradient(
+        145deg,
+        #4a260b,
+        #291304
+    ) !important;
+
     border-left: 6px solid #ff9800 !important;
 }
 
+#lista-historias .card-historia.historia-transformacoes:hover {
+    border-left-color: #ffb74d !important;
+}
+
 
 /* -----------------------------------------------------
-   5 e 6 — SONS = ROXO
+   5 e 6 — SONS
+   ROXO
 ----------------------------------------------------- */
+
 #lista-historias .card-historia.historia-sons {
-    background: linear-gradient(145deg, #301448, #1b0929) !important;
+    background: linear-gradient(
+        145deg,
+        #301448,
+        #1b0929
+    ) !important;
+
     border-left: 6px solid #9c27b0 !important;
 }
 
-
-/* -----------------------------------------------------
-   8 e 9 — GRAMÁTICA = AZUL
------------------------------------------------------ */
-#lista-historias .card-historia.historia-gramatica {
-    background: linear-gradient(145deg, #0b2938, #041822) !important;
-    border-left: 6px solid #00b0ff !important;
+#lista-historias .card-historia.historia-sons:hover {
+    border-left-color: #ce63dc !important;
 }
 
 
 /* -----------------------------------------------------
-   11 e 12 — CONTINUIDADE = VERDE
+   8 e 9 — GRAMÁTICA
+   AZUL
 ----------------------------------------------------- */
+
+#lista-historias .card-historia.historia-gramatica {
+    background: linear-gradient(
+        145deg,
+        #0b2938,
+        #041822
+    ) !important;
+
+    border-left: 6px solid #00b0ff !important;
+}
+
+#lista-historias .card-historia.historia-gramatica:hover {
+    border-left-color: #40c4ff !important;
+}
+
+
+/* -----------------------------------------------------
+   11 e 12 — CONTINUIDADE
+   VERDE
+----------------------------------------------------- */
+
 #lista-historias .card-historia.historia-continuidade {
-    background: linear-gradient(145deg, #0b3522, #072215) !important;
+    background: linear-gradient(
+        145deg,
+        #0b3522,
+        #072215
+    ) !important;
+
     border-left: 6px solid #00c853 !important;
+}
+
+#lista-historias .card-historia.historia-continuidade:hover {
+    border-left-color: #69f0ae !important;
 }
 
 
 /* =====================================================
-   MODAL — FUNDO CLARO / CREME
+   MODAL DE HISTÓRIA
 ===================================================== */
 
-div#modal-historia.modal-historia div.caixa-historia {
-    background-color: #fbf9f4 !important;
+.modal-historia {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    background: rgba(4, 15, 12, 0.85);
+
+    backdrop-filter: blur(5px);
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   MODAL ATIVO
+===================================================== */
+
+.modal-historia.ativo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =====================================================
+   CAIXA DO MODAL
+===================================================== */
+
+.caixa-historia {
+    max-width: 800px;
+    width: 100%;
+    max-height: 85vh;
+
+    margin: auto;
+    padding: 35px;
+
+    background: #fbf9f4 !important;
+
     color: #12261f !important;
+
     border: 3px solid #234c3e !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7) !important;
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.7);
 }
 
 
-/* TÍTULOS DO MODAL */
-div#modal-historia.modal-historia div.caixa-historia h2,
-div#modal-historia.modal-historia div.caixa-historia #conteudo-historia h2 {
-    color: #0b3522 !important;
-    border-bottom: 2px solid rgba(11, 53, 34, 0.1);
+/* =====================================================
+   BOTÃO FECHAR DO MODAL
+===================================================== */
+
+.fechar-modal-historia,
+#fechar-modal-historia {
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(35, 76, 62, 0.10) !important;
+
+    color: #234c3e !important;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.fechar-modal-historia:hover,
+#fechar-modal-historia:hover {
+    color: #ffffff !important;
+
+    background: #b71c1c !important;
+
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   TÍTULO DO MODAL
+===================================================== */
+
+#conteudo-historia h2,
+.caixa-historia h2 {
+    margin-top: 0;
+
+    padding-right: 40px;
     padding-bottom: 8px;
+
+    color: #0b3522 !important;
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    border-bottom: 2px solid rgba(11, 53, 34, 0.10);
 }
 
 
-/* TEXTOS DO MODAL */
-div#modal-historia.modal-historia div.caixa-historia h1,
-div#modal-historia.modal-historia div.caixa-historia h2,
-div#modal-historia.modal-historia div.caixa-historia h3,
-div#modal-historia.modal-historia div.caixa-historia h4,
-div#modal-historia.modal-historia div.caixa-historia p,
-div#modal-historia.modal-historia div.caixa-historia li {
+/* =====================================================
+   TEXTOS DO MODAL
+===================================================== */
+
+.texto-historia {
+    margin-top: 20px;
+
+    color: #1a332a !important;
+
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+}
+
+
+#conteudo-historia p {
+    margin-bottom: 18px;
+
+    color: #1a332a !important;
+
+    line-height: 1.8;
+}
+
+
+.caixa-historia h1,
+.caixa-historia h2,
+.caixa-historia h3,
+.caixa-historia h4,
+.caixa-historia p,
+.caixa-historia li {
     color: #1a332a !important;
 }
 
 
-/* BOTÃO FECHAR */
-div#modal-historia.modal-historia button#fechar-modal-historia {
-    color: #234c3e !important;
-    background: rgba(35, 76, 62, 0.1) !important;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
+/* =====================================================
+   ÁREA DO BOTÃO VOLTAR
+===================================================== */
+
+.area-voltar {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 45px 0 20px;
 }
 
 
-/* HOVER DO BOTÃO FECHAR */
-div#modal-historia.modal-historia button#fechar-modal-historia:hover {
-    color: #ffffff !important;
-    background: #b71c1c !important;
+/* =====================================================
+   BOTÃO VOLTAR
+===================================================== */
+
+.botao-voltar {
+    display: inline-block;
+
+    padding: 14px 38px;
+
+    background: #235847;
+
+    color: #ffffff;
+
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+
+.botao-voltar:hover {
+    background: #327a64;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+
+/* -----------------------------------------------------
+   TELAS ATÉ 1150px
+----------------------------------------------------- */
+
+@media (max-width: 1150px) {
+
+    .lista-historias {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* -----------------------------------------------------
+   TELAS ATÉ 768px
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .lista-vertical {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 12px !important;
+    }
+
+
+    .card-categoria {
+        height: 130px !important;
+    }
+
+
+    .cat-nome {
+        font-size: 15px !important;
+    }
+
+
+    .container-card-restrito {
+        grid-column: 1 / -1 !important;
+
+        width: 100% !important;
+    }
+
+
+    .container-card-restrito .card-categoria {
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        height: 140px !important;
+    }
+}
+
+
+/* -----------------------------------------------------
+   TELAS ATÉ 700px
+----------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .pagina-historia {
+        width: 94%;
+    }
+
+
+    .lista-historias {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .caixa-historia {
+        padding: 25px 20px;
+    }
+}
+
+
+/* -----------------------------------------------------
+   TELAS ATÉ 600px
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .lista-vertical > .grupo-cartoes-especiais {
+        flex-direction: column !important;
+
+        flex-wrap: nowrap !important;
+
+        align-items: center !important;
+    }
+
+
+    .grupo-cartoes-especiais > .container-card-restrito {
+        width: 280px !important;
+
+        max-width: 280px !important;
+
+        flex: 0 0 auto !important;
+    }
+}
+
+
+/* -----------------------------------------------------
+   TELAS A PARTIR DE 768px
+----------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    .container-card-restrito {
+        grid-column: 1 / -1;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+
+    .container-card-restrito .card-categoria {
+        width: 200px;
+
+        max-width: 100%;
+    }
+}
+
+
+/* =====================================================
+   FIM DO BLOCO DOS CARDS E MODAL
+===================================================== */
+```
