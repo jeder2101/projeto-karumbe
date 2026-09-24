@@ -652,20 +652,19 @@ body {
     z-index: 5 !important;
     width: 100% !important;
 }
-
 .grupo-cartoes-especiais .cat-laranja {
     background: #7b4b1f !important;
     border: 1px solid #5d3518 !important;
 }
 
 .grupo-cartoes-especiais .cat-vermelha {
-    background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
-    border: 1px solid #8b0000 !important;
+    background: linear-gradient(135deg, #5c3a21, #7c4d29) !important;
+    border: 1px solid #3b2313 !important;
 }
 
 .container-card-restrito .card-categoria {
-    background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
-    border: 1px solid rgba(255, 82, 82, 0.5) !important;
+    background: linear-gradient(135deg, #5c3a21, #7c4d29) !important;
+    border: 1px solid rgba(124, 77, 41, 0.5) !important;
 }
 
 /* =====================================================
