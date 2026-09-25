@@ -1,27 +1,20 @@
-function alternarEtapa(idEtapa) {
-    const conteudo = document.getElementById(idEtapa);
-    const seta = document.getElementById(`seta-${idEtapa}`);
-    
-    if (conteudo.style.maxHeight && conteudo.style.maxHeight !== "0px") {
-        conteudo.style.maxHeight = "0px";
-        conteudo.style.paddingTop = "0";
-        conteudo.style.paddingBottom = "0";
-        if (seta) seta.style.transform = "rotate(0deg)";
-    } else {
-        conteudo.style.maxHeight = conteudo.scrollHeight + "px";
-        conteudo.style.paddingTop = "15px";
-        conteudo.style.paddingBottom = "15px";
-        if (seta) seta.style.transform = "rotate(180deg)";
+function abrirModal(idModal) {
+    const modal = document.getElementById(idModal);
+    if (modal) {
+        modal.style.display = "flex";
     }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const conteudos = document.querySelectorAll('.etapa-conteudo, .etapa-conteudo-interno');
-    conteudos.forEach(el => {
-        el.style.maxHeight = "0px";
-        el.style.overflow = "hidden";
-        el.style.transition = "max-height 0.3s ease, padding 0.3s ease";
-        el.style.paddingTop = "0";
-        el.style.paddingBottom = "0";
-    });
-});
+function fecharModal(idModal) {
+    const modal = document.getElementById(idModal);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Fecha o modal ao clicar fora da caixa branca
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal-overlay')) {
+        event.target.style.display = "none";
+    }
+}
