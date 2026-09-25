@@ -283,10 +283,10 @@ function renderizarCardsNoAlvo(palavras, elementoAlvo) {
     });
 }
 
-
 /* =====================================================
-7. BUSCA EM TEMPO REAL
+   7. BUSCA EM TEMPO REAL — BUSCA POR RELEVÂNCIA
 ===================================================== */
+
 function executarBusca(valor) {
     const texto = valor.trim();
 
@@ -302,35 +302,140 @@ function executarBusca(valor) {
 
     const busca = normalizar(texto);
 
-    const resultado = DICIONARIO.filter(item => {
-        if (item.categoria && normalizar(item.categoria) === "linguagem de rua") {
-            return false;
+    const resultados = [];
+
+    DICIONARIO.forEach(item => {
+
+        // Não mostrar Linguagem de Rua na busca normal
+        if (
+            item.categoria &&
+            normalizar(item.categoria) === "linguagem de rua"
+        ) {
+            return;
         }
 
-        const palavra = normalizar(item.palavra);
-        const significado = normalizar(item.significado);
-        const categoria = normalizar(item.categoria);
+        const palavra = normalizar(item.palavra || "");
+        const significado = normalizar(item.significado || "");
+        const categoria = normalizar(item.categoria || "");
 
-        const exemplos = (item.exemplos || []).some(ex =>
-            normalizar(ex).includes(busca)
+        const exemplos = (item.exemplos || []).map(ex =>
+            normalizar(ex)
         );
 
-        const trad = (item.traducao || []).some(tr =>
-            normalizar(tr).includes(busca)
+        const traducoes = (item.traducao || []).map(tr =>
+            normalizar(tr)
         );
 
-        return (
-            palavra.includes(busca) ||
-            significado.includes(busca) ||
-            categoria.includes(busca) ||
-            exemplos ||
-            trad
-        );
+        let relevancia = 0;
+
+        /* =================================================
+           1. PALAVRA EXATAMENTE IGUAL
+           Ex.: pesquisar "rogwe" → Rogwé
+        ================================================== */
+
+        if (palavra === busca) {
+            relevancia = 1000;
+        }
+
+        /* =================================================
+           2. SIGNIFICADO EXATAMENTE IGUAL
+           Ex.: pesquisar "folha" → Rogwé
+        ================================================== */
+
+        else if (
+            significado === busca ||
+            significado.replace(/[.,;:!?]$/g, "").trim() === busca
+        ) {
+            relevancia = 900;
+        }
+
+        /* =================================================
+           3. PALAVRA COMEÇA COM O TERMO
+        ================================================== */
+
+        else if (palavra.startsWith(busca)) {
+            relevancia = 800;
+        }
+
+        /* =================================================
+           4. SIGNIFICADO COMEÇA COM O TERMO
+        ================================================== */
+
+        else if (significado.startsWith(busca)) {
+            relevancia = 700;
+        }
+
+        /* =================================================
+           5. PALAVRA CONTÉM O TERMO
+        ================================================== */
+
+        else if (palavra.includes(busca)) {
+            relevancia = 600;
+        }
+
+        /* =================================================
+           6. SIGNIFICADO CONTÉM O TERMO
+        ================================================== */
+
+        else if (significado.includes(busca)) {
+            relevancia = 500;
+        }
+
+        /* =================================================
+           7. CATEGORIA
+        ================================================== */
+
+        else if (categoria.includes(busca)) {
+            relevancia = 300;
+        }
+
+        /* =================================================
+           8. EXEMPLOS
+        ================================================== */
+
+        else if (
+            exemplos.some(ex => ex.includes(busca))
+        ) {
+            relevancia = 200;
+        }
+
+        /* =================================================
+           9. TRADUÇÕES
+        ================================================== */
+
+        else if (
+            traducoes.some(tr => tr.includes(busca))
+        ) {
+            relevancia = 100;
+        }
+
+        // Só adiciona aquilo que realmente encontrou
+        if (relevancia > 0) {
+            resultados.push({
+                item,
+                relevancia
+            });
+        }
     });
 
-    mostrarPalavras(resultado.slice(0, 20), false);
-}
+    /* =====================================================
+       ORDENA OS RESULTADOS DO MAIS RELEVANTE PARA O MENOS
+    ===================================================== */
 
+    resultados.sort((a, b) => {
+        return b.relevancia - a.relevancia;
+    });
+
+    /* =====================================================
+       MOSTRA OS 20 PRIMEIROS RESULTADOS
+    ===================================================== */
+
+    const resultadoFinal = resultados
+        .slice(0, 20)
+        .map(resultado => resultado.item);
+
+    mostrarPalavras(resultadoFinal, false);
+}
 
 /* =====================================================
 8. FILTRO POR CATEGORIA
