@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Religião e Cosmovisão - Projeto Karumbé</title>
-    <!-- Substitua pelos mesmos caminhos de CSS que você usa no historia.html -->
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome ou ícones caso utilize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO (Padrão do Projeto Karumbé) -->
+    <!-- CABEÇALHO -->
     <header class="header-projeto">
         <div class="header-content">
             <a href="index.html" class="btn-voltar" aria-label="Voltar para a página inicial">
@@ -22,43 +20,87 @@
         </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- CONTEÚDO PRINCIPAL EM ETAPAS / CARDS CLICÁVEIS -->
     <main class="container-conteudo-pagina">
         
-        <section class="secao-artigo">
-            <h2>Nhandereko e a Espiritualidade Ñandeva</h2>
-            <p>
-                A religiosidade e a cosmovisão do povo indígena <strong>Ñandeva</strong> (subgrupo do tronco Guarani) estão profundamente enraizadas no <strong>Nhandereko</strong> (o modo de ser guarani). Nela, o sagrado e o cotidiano não se dissociam: a espiritualidade orienta a relação com a terra, o plantio, a música, a palavra e a identidade de cada indivíduo.
-            </p>
-        </section>
+        <div class="intro-religiao">
+            <h2>Cosmovisão e Rituais Sagrados</h2>
+            <p>Explore abaixo as etapas e pilares da espiritualidade Ñandeva em ordem cronológica de vivência na comunidade:</p>
+        </div>
 
-        <section class="secao-artigo">
-            <h2>O Mongarai: O Grande Ritual Sagrado</h2>
-            <p>
-                Dentre as expressões espirituais mais importantes desse povo, destaca-se o <strong>Mongarai</strong> (ou <em>Ñemongarai</em>), frequentemente traduzido como o batismo tradicional. Ele cumpre duas funções fundamentais e indissociáveis para a comunidade:
-            </p>
-            
-            <div class="card-detalhe">
-                <h3>1. O Batismo do Milho e das Colheitas</h3>
-                <p>
-                    Para os Ñandeva, a agricultura é uma atividade sagrada dada pelas divindades. O milho tradicional (<em>avatí</em>) carrega uma dimensão divina e, antes que a comunidade possa consumir a nova colheita, os grãos precisam ser consagrados no ritual do Mongarai. Isso purifica os frutos da terra para que possam ser ingeridos sem mal ao corpo ou ao espírito.
-                </p>
+        <div class="cards-etapas-container">
+
+            <!-- ETAPA 1: Nhandereko -->
+            <div class="card-etapa" onclick="alternarEtapa('etapa-1')">
+                <div class="etapa-header">
+                    <span class="numero-etapa">01</span>
+                    <h3>Nhandereko e a Espiritualidade Ñandeva</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-1"></i>
+                </div>
+                <div class="etapa-conteudo" id="etapa-1">
+                    <p>
+                        O <strong>Nhandereko</strong> é o pilar de tudo: o modo de ser, viver e caminhar guarani. Nele, o sagrado e o cotidiano não se dissociam. A espiritualidade orienta a relação com a terra, o plantio, a música, a palavra e a identidade de cada indivíduo desde o seu nascimento.
+                    </p>
+                </div>
             </div>
 
-            <div class="card-detalhe">
-                <h3>2. A Atribuição do Nome Verdadeiro</h3>
-                <p>
-                    O momento mais marcante para as pessoas é a revelação do nome. Na tradição Ñandeva, o nome não é escolhido por estética; ele é <strong>recebido do mundo espiritual</strong> por meio dos rezadores ou anciãos (<em>Tamõi</em>) durante os cânticos no <em>O'guasu</em> (casa de reza). É por meio desse nome verdadeiro que a pessoa ganha sua essência espiritual e sua cidadania cósmica na comunidade.
-                </p>
+            <!-- ETAPA 2: O Mongarai (Introdução) -->
+            <div class="card-etapa" onclick="alternarEtapa('etapa-2')">
+                <div class="etapa-header">
+                    <span class="numero-etapa">02</span>
+                    <h3>O Mongarai: O Grande Ritual Sagrado</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2"></i>
+                </div>
+                <div class="etapa-conteudo" id="etapa-2">
+                    <p>
+                        O <strong>Mongarai</strong> (ou <em>Ñemongarai</em>) é o grande ritual de comunhão, renovação espiritual e agradecimento. Ele marca o momento em que a comunidade se une na casa de reza para abençoar os frutos da terra e renovar os laços espirituais através das próximas duas etapas fundamentais.
+                    </p>
+                </div>
             </div>
-        </section>
 
-        <section class="secao-artigo">
-            <h2>A Dinâmica do Ritual (Jeroky)</h2>
-            <p>
-                O Mongarai acontece na casa de reza ao som de instrumentos sagrados, como o <em>mbaraka</em> (chocalho) e o <em>takuapu</em> (bastão rítmico), acompanhados de cantos e danças circulares (<em>Jeroky ñembo'e</em>). Através da música e da fumaça do tabaco sagrado (<em>petỹ</em>), os líderes espirituais conectam-se com as instâncias celestes, abençoando sementes e participantes.
-            </p>
-        </section>
+            <!-- ETAPA 3: O Batismo do Milho (Subgrupo do Mongarai) -->
+            <div class="card-etapa sub-etapa" onclick="alternarEtapa('etapa-3')">
+                <div class="etapa-header">
+                    <span class="numero-etapa">2.1</span>
+                    <h3>O Batismo do Milho e das Colheitas</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-3"></i>
+                </div>
+                <div class="etapa-conteudo" id="etapa-3">
+                    <p>
+                        Antes que a comunidade possa consumir a nova colheita, os grãos — especialmente o milho tradicional (<em>avatí</em>) — precisam ser consagrados. O ritual purifica os frutos da terra dados pelas divindades para que possam ser ingeridos sem causar mal ao corpo ou ao espírito.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ETAPA 4: A Atribuição do Nome Verdadeiro (Subgrupo do Mongarai) -->
+            <div class="card-etapa sub-etapa" onclick="alternarEtapa('etapa-4')">
+                <div class="etapa-header">
+                    <span class="numero-etapa">2.2</span>
+                    <h3>A Atribuição do Nome Verdadeiro</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-4"></i>
+                </div>
+                <div class="etapa-conteudo" id="etapa-4">
+                    <p>
+                        Momento ápice do ritual. Na tradição Ñandeva, o nome não é escolhido por estética: ele é <strong>recebido do mundo espiritual</strong> pelos rezadores ou anciãos (<em>Tamõi</em>) durante os transes e cânticos na casa de reza (<em>O'guasu</em>), garantindo a cidadania cósmica e a proteção espiritual da criança.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ETAPA 5: Dinâmica do Ritual (Jeroky) -->
+            <div class="card-etapa" onclick="alternarEtapa('etapa-5')">
+                <div class="etapa-header">
+                    <span class="numero-etapa">03</span>
+                    <h3>A Dinâmica do Ritual (Jeroky)</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-5"></i>
+                </div>
+                <div class="etapa-conteudo" id="etapa-5">
+                    <p>
+                        O ciclo se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) que duram horas na casa de reza, embalados pelo <em>mbaraka</em> (chocalho) e pelo <em>takuapu</em> (bastão rítmico). Através da música e da fumaça do tabaco sagrado (<em>petỹ</em>), sementes e participantes são abençoados, selando o ritual.
+                    </p>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
@@ -67,7 +109,6 @@
         <p>&copy; 2026 Projeto Karumbé - Resgate e Preservação da Língua e Cultura Ñandeva.</p>
     </footer>
 
-    <!-- Script específico da página, caso utilize -->
     <script src="religiao.js"></script>
 </body>
 </html>
