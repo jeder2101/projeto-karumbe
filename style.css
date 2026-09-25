@@ -657,17 +657,22 @@ body {
     border: 1px solid #5d3518 !important;
 }
 
-/* Mantém a Linguagem de Rua vermelha */
-.grupo-cartoes-especiais .cat-vermelha {
+/* 1º Card: Linguagem de Rua (Vermelho) */
+.grupo-cartoes-especiais .container-card-restrito:nth-child(1) .card-categoria {
     background: linear-gradient(135deg, #b71c1c, #d32f2f) !important;
     border: 1px solid #8b0000 !important;
 }
 
-/* Deixa especificamente o card de História com o degradê marrom */
-#aviso-rua + .lista-vertical .grupo-cartoes-especiais .container-card-restrito:last-child .card-categoria,
+/* 2º Card: História (Marrom) */
 .grupo-cartoes-especiais .container-card-restrito:nth-child(2) .card-categoria {
     background: linear-gradient(135deg, #5c3a21, #7c4d29) !important;
     border: 1px solid rgba(124, 77, 41, 0.5) !important;
+}
+
+/* 3º Card: Religião (Azul) */
+.grupo-cartoes-especiais .container-card-restrito:nth-child(3) .card-categoria {
+    background: linear-gradient(135deg, #1d3557, #457b9d) !important;
+    border: 1px solid rgba(69, 123, 157, 0.5) !important;
 }
 
 /* =====================================================
