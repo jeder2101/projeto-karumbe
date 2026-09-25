@@ -1505,15 +1505,15 @@ body {
     transition: transform 0.3s ease;
 }
 /* ==========================================
-   ESTILO DOS MODAIS (BALÕES DE CONTEÚDO)
+   ESTILO CORRETO DOS MODALS (BALÕES DE CONTEÚDO)
    ========================================== */
 .modal-overlay {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 9999;
     justify-content: center;
@@ -1523,28 +1523,24 @@ body {
 .modal-conteudo-box {
     background: #ffffff;
     width: 90%;
-    max-width: 600px;
-    padding: 35px;
+    max-width: 550px;
+    padding: 30px 30px 25px 30px;
     border-radius: 12px;
     position: relative;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    animation: escalaModal 0.25s ease-out;
-}
-
-@keyframes escalaModal {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    box-sizing: border-box;
 }
 
 .btn-fechar-modal {
     position: absolute;
-    top: 15px;
-    right: 20px;
-    background: none;
+    top: 12px;
+    right: 18px;
+    background: transparent;
     border: none;
     font-size: 1.8rem;
     cursor: pointer;
     color: #495057;
+    line-height: 1;
     transition: color 0.2s;
 }
 
