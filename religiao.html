@@ -9,28 +9,28 @@
 </head>
 <body>
 
-    <!-- CABEÇALHO -->
+    <!-- CABEÇALHO COM BOTÃO DE VOLTAR FUNCIONAL -->
     <header class="header-projeto">
-        <div class="header-content">
-            <a href="index.html" class="btn-voltar" aria-label="Voltar para a página inicial">
+        <div class="header-content" style="text-align: center; position: relative;">
+            <a href="index.html" class="btn-voltar" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); text-decoration: none; color: #fff; background: rgba(0,0,0,0.2); padding: 8px 15px; border-radius: 6px;">
                 <i class="fas fa-arrow-left"></i> Voltar
             </a>
-            <h1>Projeto Karumbé</h1>
-            <span class="sub-header">Religião e Cosmovisão Ñandeva</span>
+            <h1 style="margin: 0; display: inline-block;">Projeto Karumbé</h1>
+            <div class="sub-header" style="margin-top: 5px;">Religião e Cosmovisão Ñandeva</div>
         </div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL EM ETAPAS / CARDS CLICÁVEIS -->
+    <!-- CONTEÚDO PRINCIPAL ORGANIZADO EM 3 CARDS PRINCIPAIS -->
     <main class="container-conteudo-pagina">
         
-        <div class="intro-religiao">
+        <div class="intro-religiao" style="text-align: center; margin-bottom: 25px;">
             <h2>Cosmovisão e Rituais Sagrados</h2>
-            <p>Explore abaixo as etapas e pilares da espiritualidade Ñandeva em ordem cronológica de vivência na comunidade:</p>
+            <p>Explore abaixo os pilares da espiritualidade Ñandeva em ordem cronológica:</p>
         </div>
 
         <div class="cards-etapas-container">
 
-            <!-- ETAPA 1: Nhandereko -->
+            <!-- CARD PRINCIPAL 1: Nhandereko -->
             <div class="card-etapa" onclick="alternarEtapa('etapa-1')">
                 <div class="etapa-header">
                     <span class="numero-etapa">01</span>
@@ -44,56 +44,57 @@
                 </div>
             </div>
 
-            <!-- ETAPA 2: O Mongarai (Introdução) -->
+            <!-- CARD PRINCIPAL 2: O Mongarai (Com os subgrupos 2.1 e 2.2 dentro) -->
             <div class="card-etapa" onclick="alternarEtapa('etapa-2')">
                 <div class="etapa-header">
                     <span class="numero-etapa">02</span>
-                    <h3>O Mongarai: O Grande Ritual Sagrado</h3>
+                    <h3 style="text-align: center; width: 100%;">O Mongarai: O Grande Ritual Sagrado</h3>
                     <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2"></i>
                 </div>
                 <div class="etapa-conteudo" id="etapa-2">
                     <p>
-                        O <strong>Mongarai</strong> (ou <em>Ñemongarai</em>) é o grande ritual de comunhão, renovação espiritual e agradecimento. Ele marca o momento em que a comunidade se une na casa de reza para abençoar os frutos da terra e renovar os laços espirituais através das próximas duas etapas fundamentais.
+                        O <strong>Mongarai</strong> (ou <em>Ñemongarai</em>) é o grande ritual de comunhão, renovação espiritual e agradecimento. Ele marca o momento em que a comunidade se une na casa de reza para abençoar os frutos da terra e renovar os laços espirituais através das seguintes etapas:
                     </p>
+
+                    <!-- Subgrupo 2.1 (Dentro do Card 2) -->
+                    <div class="sub-card-interno" onclick="event.stopPropagation(); alternarEtapa('etapa-2-1')">
+                        <div class="sub-header-interno">
+                            <span class="numero-etapa" style="background: #fdf0ed; color: #e76f51;">2.1</span>
+                            <h4>O Batismo do Milho e das Colheitas</h4>
+                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-1"></i>
+                        </div>
+                        <div class="etapa-conteudo-interno" id="etapa-2-1">
+                            <p>
+                                Antes que a comunidade possa consumir a nova colheita, os grãos — especialmente o milho tradicional (<em>avatí</em>) — precisam ser consagrados. O ritual purifica os frutos da terra dados pelas divindades para que possam ser ingeridos sem causar mal ao corpo ou ao espírito.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Subgrupo 2.2 (Dentro do Card 2) -->
+                    <div class="sub-card-interno" onclick="event.stopPropagation(); alternarEtapa('etapa-2-2')">
+                        <div class="sub-header-interno">
+                            <span class="numero-etapa" style="background: #f3eef8; color: #6a4c93;">2.2</span>
+                            <h4>A Atribuição do Nome Verdadeiro</h4>
+                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-2"></i>
+                        </div>
+                        <div class="etapa-conteudo-interno" id="etapa-2-2">
+                            <p>
+                                Momento ápice do ritual. Na tradição Ñandeva, o nome não é escolhido por estética: ele é <strong>recebido do mundo espiritual</strong> pelos rezadores ou anciãos (<em>Tamõi</em>) durante os transes e cânticos na casa de reza (<em>O'guasu</em>), garantindo a cidadania cósmica e a proteção espiritual da criança.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- ETAPA 3: O Batismo do Milho (Subgrupo do Mongarai) -->
-            <div class="card-etapa sub-etapa" onclick="alternarEtapa('etapa-3')">
-                <div class="etapa-header">
-                    <span class="numero-etapa">2.1</span>
-                    <h3>O Batismo do Milho e das Colheitas</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-3"></i>
-                </div>
-                <div class="etapa-conteudo" id="etapa-3">
-                    <p>
-                        Antes que a comunidade possa consumir a nova colheita, os grãos — especialmente o milho tradicional (<em>avatí</em>) — precisam ser consagrados. O ritual purifica os frutos da terra dados pelas divindades para que possam ser ingeridos sem causar mal ao corpo ou ao espírito.
-                    </p>
-                </div>
-            </div>
-
-            <!-- ETAPA 4: A Atribuição do Nome Verdadeiro (Subgrupo do Mongarai) -->
-            <div class="card-etapa sub-etapa" onclick="alternarEtapa('etapa-4')">
-                <div class="etapa-header">
-                    <span class="numero-etapa">2.2</span>
-                    <h3>A Atribuição do Nome Verdadeiro</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-4"></i>
-                </div>
-                <div class="etapa-conteudo" id="etapa-4">
-                    <p>
-                        Momento ápice do ritual. Na tradição Ñandeva, o nome não é escolhido por estética: ele é <strong>recebido do mundo espiritual</strong> pelos rezadores ou anciãos (<em>Tamõi</em>) durante os transes e cânticos na casa de reza (<em>O'guasu</em>), garantindo a cidadania cósmica e a proteção espiritual da criança.
-                    </p>
-                </div>
-            </div>
-
-            <!-- ETAPA 5: Dinâmica do Ritual (Jeroky) -->
-            <div class="card-etapa" onclick="alternarEtapa('etapa-5')">
+            <!-- CARD PRINCIPAL 3: Dinâmica do Ritual (Jeroky) -->
+            <div class="card-etapa" onclick="alternarEtapa('etapa-3')">
                 <div class="etapa-header">
                     <span class="numero-etapa">03</span>
                     <h3>A Dinâmica do Ritual (Jeroky)</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-5"></i>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-3"></i>
                 </div>
-                <div class="etapa-conteudo" id="etapa-5">
+                <div class="etapa-conteudo" id="etapa-3">
                     <p>
                         O ciclo se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) que duram horas na casa de reza, embalados pelo <em>mbaraka</em> (chocalho) e pelo <em>takuapu</em> (bastão rítmico). Através da música e da fumaça do tabaco sagrado (<em>petỹ</em>), sementes e participantes são abençoados, selando o ritual.
                     </p>
@@ -105,7 +106,7 @@
     </main>
 
     <!-- RODAPÉ -->
-    <footer class="footer-projeto">
+    <footer class="footer-projeto" style="text-align: center; margin-top: 40px; padding: 20px;">
         <p>&copy; 2026 Projeto Karumbé - Resgate e Preservação da Língua e Cultura Ñandeva.</p>
     </footer>
 
