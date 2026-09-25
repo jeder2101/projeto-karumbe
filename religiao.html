@@ -9,23 +9,18 @@
 </head>
 <body>
 
-    <!-- CABEÇALHO COM BOTÃO DE VOLTAR FUNCIONAL -->
-    <header class="header-projeto">
-        <div class="header-content" style="text-align: center; position: relative;">
-            <a href="index.html" class="btn-voltar" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); text-decoration: none; color: #fff; background: rgba(0,0,0,0.2); padding: 8px 15px; border-radius: 6px;">
-                <i class="fas fa-arrow-left"></i> Voltar
-            </a>
-            <h1 style="margin: 0; display: inline-block;">Projeto Karumbé</h1>
-            <div class="sub-header" style="margin-top: 5px;">Religião e Cosmovisão Ñandeva</div>
-        </div>
+    <!-- CABEÇALHO PADRÃO DO PROJETO -->
+    <header class="header-projeto" style="text-align: center; padding: 30px 20px;">
+        <h1 style="color: #fff; margin: 0; font-size: 2rem;">PROJETO KARUMBÉ</h1>
+        <div class="sub-header" style="color: #d8f3dc; font-size: 0.95rem; margin-top: 5px; text-transform: uppercase; letter-spacing: 1px;">Dicionário Tupi Guarani Nhandewa</div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL ORGANIZADO EM 3 CARDS PRINCIPAIS -->
-    <main class="container-conteudo-pagina">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container-conteudo-pagina" style="max-width: 900px; margin: 30px auto; padding: 0 20px;">
         
-        <div class="intro-religiao" style="text-align: center; margin-bottom: 25px;">
-            <h2>Cosmovisão e Rituais Sagrados</h2>
-            <p>Explore abaixo os pilares da espiritualidade Ñandeva em ordem cronológica:</p>
+        <div class="intro-religiao" style="text-align: center; margin-bottom: 30px;">
+            <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 8px;">Nossas Histórias e Transformações da Língua</h2> <!-- Mantendo a harmonia visual -->
+            <p style="color: #e0e0e0; font-size: 0.95rem;">Cosmovisão e Rituais Sagrados: Explore abaixo os pilares da espiritualidade Ñandeva em ordem cronológica.</p>
         </div>
 
         <div class="cards-etapas-container">
@@ -33,9 +28,9 @@
             <!-- CARD PRINCIPAL 1: Nhandereko -->
             <div class="card-etapa" onclick="alternarEtapa('etapa-1')">
                 <div class="etapa-header">
-                    <span class="numero-etapa">01</span>
-                    <h3>Nhandereko e a Espiritualidade Ñandeva</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-1"></i>
+                    <span class="tag-categoria" style="background-color: #2d6a4f; color: #fff; font-size: 0.75rem; padding: 4px 10px; border-radius: 4px; font-weight: bold;">Espiritualidade</span>
+                    <h3 style="flex: 1; margin: 0; font-size: 1.05rem; color: #fff;">Nhandereko e a Espiritualidade Ñandeva</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-1" style="color: #fff;"></i>
                 </div>
                 <div class="etapa-conteudo" id="etapa-1">
                     <p>
@@ -44,24 +39,24 @@
                 </div>
             </div>
 
-            <!-- CARD PRINCIPAL 2: O Mongarai (Com os subgrupos 2.1 e 2.2 dentro) -->
+            <!-- CARD PRINCIPAL 2: O Mongarai (Com 2.1 e 2.2 internos) -->
             <div class="card-etapa" onclick="alternarEtapa('etapa-2')">
                 <div class="etapa-header">
-                    <span class="numero-etapa">02</span>
-                    <h3 style="text-align: center; width: 100%;">O Mongarai: O Grande Ritual Sagrado</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2"></i>
+                    <span class="tag-categoria" style="background-color: #1d3557; color: #fff; font-size: 0.75rem; padding: 4px 10px; border-radius: 4px; font-weight: bold;">Ritual Sagrado</span>
+                    <h3 style="flex: 1; margin: 0; font-size: 1.05rem; color: #fff; text-align: center;">O Mongarai: O Grande Ritual Sagrado</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2" style="color: #fff;"></i>
                 </div>
                 <div class="etapa-conteudo" id="etapa-2">
                     <p>
-                        O <strong>Mongarai</strong> (ou <em>Ñemongarai</em>) é o grande ritual de comunhão, renovação espiritual e agradecimento. Ele marca o momento em que a comunidade se une na casa de reza para abençoar os frutos da terra e renovar os laços espirituais através das seguintes etapas:
+                        O <strong>Mongarai</strong> (ou <em>Ñemongarai</em>) é o grande ritual de comunhão, renovação espiritual e agradecimento. Ele marca o momento em que a comunidade se une na casa de reza para abençoar os frutos da terra e renovar os laços espirituais:
                     </p>
 
                     <!-- Subgrupo 2.1 (Dentro do Card 2) -->
                     <div class="sub-card-interno" onclick="event.stopPropagation(); alternarEtapa('etapa-2-1')">
                         <div class="sub-header-interno">
-                            <span class="numero-etapa" style="background: #fdf0ed; color: #e76f51;">2.1</span>
-                            <h4>O Batismo do Milho e das Colheitas</h4>
-                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-1"></i>
+                            <span class="tag-categoria" style="background-color: #e76f51; color: #fff; font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; font-weight: bold;">2.1 Colheita</span>
+                            <h4 style="flex: 1; margin: 0; font-size: 0.95rem; color: #fff;">O Batismo do Milho e das Colheitas</h4>
+                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-1" style="color: #fff;"></i>
                         </div>
                         <div class="etapa-conteudo-interno" id="etapa-2-1">
                             <p>
@@ -73,9 +68,9 @@
                     <!-- Subgrupo 2.2 (Dentro do Card 2) -->
                     <div class="sub-card-interno" onclick="event.stopPropagation(); alternarEtapa('etapa-2-2')">
                         <div class="sub-header-interno">
-                            <span class="numero-etapa" style="background: #f3eef8; color: #6a4c93;">2.2</span>
-                            <h4>A Atribuição do Nome Verdadeiro</h4>
-                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-2"></i>
+                            <span class="tag-categoria" style="background-color: #6a4c93; color: #fff; font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; font-weight: bold;">2.2 Identidade</span>
+                            <h4 style="flex: 1; margin: 0; font-size: 0.95rem; color: #fff;">A Atribuição do Nome Verdadeiro</h4>
+                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-2" style="color: #fff;"></i>
                         </div>
                         <div class="etapa-conteudo-interno" id="etapa-2-2">
                             <p>
@@ -90,9 +85,9 @@
             <!-- CARD PRINCIPAL 3: Dinâmica do Ritual (Jeroky) -->
             <div class="card-etapa" onclick="alternarEtapa('etapa-3')">
                 <div class="etapa-header">
-                    <span class="numero-etapa">03</span>
-                    <h3>A Dinâmica do Ritual (Jeroky)</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-3"></i>
+                    <span class="tag-categoria" style="background-color: #7c4d29; color: #fff; font-size: 0.75rem; padding: 4px 10px; border-radius: 4px; font-weight: bold;">Tradição</span>
+                    <h3 style="flex: 1; margin: 0; font-size: 1.05rem; color: #fff;">A Dinâmica do Ritual (Jeroky)</h3>
+                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-3" style="color: #fff;"></i>
                 </div>
                 <div class="etapa-conteudo" id="etapa-3">
                     <p>
@@ -103,10 +98,17 @@
 
         </div>
 
+        <!-- BOTÃO DE VOLTAR AO INÍCIO (Estilo igual ao da página de história) -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html" class="btn-voltar-inicio" style="display: inline-block; background-color: #c08552; color: #fff; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.2s;">
+                ← Voltar ao início
+            </a>
+        </div>
+
     </main>
 
     <!-- RODAPÉ -->
-    <footer class="footer-projeto" style="text-align: center; margin-top: 40px; padding: 20px;">
+    <footer class="footer-projeto" style="text-align: center; margin-top: 50px; padding: 20px; color: #aaa; font-size: 0.85rem;">
         <p>&copy; 2026 Projeto Karumbé - Resgate e Preservação da Língua e Cultura Ñandeva.</p>
     </footer>
 
