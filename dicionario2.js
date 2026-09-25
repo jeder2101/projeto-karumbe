@@ -545,3 +545,20 @@ const DICIONARIO2 = [
     ]
   }
 ];
+// =====================================================
+// INTEGRAÇÃO DO DICIONÁRIO 2 AO DICIONÁRIO PRINCIPAL
+// =====================================================
+
+if (
+    typeof DICIONARIO !== "undefined" &&
+    Array.isArray(DICIONARIO) &&
+    Array.isArray(DICIONARIO2)
+) {
+    DICIONARIO.push(...DICIONARIO2);
+
+    console.log(
+        "Dicionário 2 integrado com sucesso:",
+        DICIONARIO2.length,
+        "novos termos adicionados."
+    );
+}
