@@ -9,8 +9,8 @@ function alternarEtapa(idEtapa) {
         if (seta) seta.style.transform = "rotate(0deg)";
     } else {
         conteudo.style.maxHeight = conteudo.scrollHeight + "px";
-        conteudo.style.paddingTop = "12px";
-        conteudo.style.paddingBottom = "12px";
+        conteudo.style.paddingTop = "15px";
+        conteudo.style.paddingBottom = "15px";
         if (seta) seta.style.transform = "rotate(180deg)";
     }
 }
