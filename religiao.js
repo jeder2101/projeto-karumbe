@@ -9,14 +9,13 @@ function alternarEtapa(idEtapa) {
         if (seta) seta.style.transform = "rotate(0deg)";
     } else {
         conteudo.style.maxHeight = conteudo.scrollHeight + "px";
-        conteudo.style.paddingTop = "10px";
-        conteudo.style.paddingBottom = "10px";
+        conteudo.style.paddingTop = "12px";
+        conteudo.style.paddingBottom = "12px";
         if (seta) seta.style.transform = "rotate(180deg)";
     }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Fecha todos os conteúdos principais e internos ao carregar
     const conteudos = document.querySelectorAll('.etapa-conteudo, .etapa-conteudo-interno');
     conteudos.forEach(el => {
         el.style.maxHeight = "0px";
