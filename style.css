@@ -1418,73 +1418,132 @@ body {
 }
 
 /* ==========================================
-   CORES DIVERSIFICADAS POR ETAPA
+   CORES DIVERSIFICADAS POR ETAPA (3 CARDS PRINCIPAIS)
    ========================================== */
 
 /* 1. Nhandereko (Tom Verde - Natureza e Raiz) */
 .card-etapa:nth-child(1) {
     border-left: 5px solid #2d6a4f;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-etapa:nth-child(1) .numero-etapa {
     background-color: #e8f5e9;
     color: #2d6a4f;
 }
-.card-etapa:nth-child(1) h3, .card-etapa:nth-child(1) .icone-seta {
+.card-etapa:nth-child(1) h3, 
+.card-etapa:nth-child(1) .icone-seta {
     color: #2d6a4f;
 }
 
 /* 2. O Mongarai - Introdução (Tom Azul - Espiritualidade/Céu) */
 .card-etapa:nth-child(2) {
     border-left: 5px solid #1d3557;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-etapa:nth-child(2) .numero-etapa {
     background-color: #f1faee;
     color: #1d3557;
 }
-.card-etapa:nth-child(2) h3, .card-etapa:nth-child(2) .icone-seta {
+/* Centraliza o título do Card 2 especificamente, conforme solicitado */
+.card-etapa:nth-child(2) .etapa-header h3 {
+    text-align: center;
+    width: 100%;
+    color: #1d3557;
+}
+.card-etapa:nth-child(2) .icone-seta {
     color: #1d3557;
 }
 
-/* 2.1 O Batismo do Milho (Tom Laranja - Colheita e Terra) */
-.card-etapa.sub-etapa:nth-child(3) {
-    margin-left: 25px;
-    border-left: 5px solid #e76f51;
+/* 3. Dinâmica do Ritual - Jeroky (Tom Marrom/Terracota - Ancestralidade) */
+.card-etapa:nth-child(3) {
+    border-left: 5px solid #7c4d29;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-etapa:nth-child(3) .numero-etapa {
-    background-color: #fdf0ed;
-    color: #e76f51;
-}
-.card-etapa:nth-child(3) h3, .card-etapa:nth-child(3) .icone-seta {
-    color: #e76f51;
-}
-
-/* 2.2 A Atribuição do Nome (Tom Roxo/Violeta - Mistério e Sagrado) */
-.card-etapa.sub-etapa:nth-child(4) {
-    margin-left: 25px;
-    border-left: 5px solid #6a4c93;
-}
-.card-etapa:nth-child(4) .numero-etapa {
-    background-color: #f3eef8;
-    color: #6a4c93;
-}
-.card-etapa:nth-child(4) h3, .card-etapa:nth-child(4) .icone-seta {
-    color: #6a4c93;
-}
-
-/* 3. Dinâmica do Ritual - Jeroky (Tom Marrom/Terracota - Ancestralidade) */
-.card-etapa:nth-child(5) {
-    border-left: 5px solid #7c4d29;
-}
-.card-etapa:nth-child(5) .numero-etapa {
     background-color: #fcf6f0;
     color: #7c4d29;
 }
-.card-etapa:nth-child(5) h3, .card-etapa:nth-child(5) .icone-seta {
+.card-etapa:nth-child(3) h3, 
+.card-etapa:nth-child(3) .icone-seta {
     color: #7c4d29;
 }
 
+/* Efeito Hover global para os cards principais */
+.card-etapa:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 /* ==========================================
-   ESTRUTURA INTERNA DOS CARDS
+   SUB-CARDS INTERNOS (2.1 e 2.2 DENTRO DO CARD 2)
+   ========================================== */
+
+.sub-card-interno {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 12px 0;
+    border: 1px solid #e9ecef;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.2s ease;
+}
+
+.sub-card-interno:hover {
+    background-color: #f1f3f5;
+}
+
+/* 2.1 O Batismo do Milho (Tom Laranja interno) */
+.sub-card-interno:nth-of-type(1) {
+    border-left: 4px solid #e76f51;
+}
+
+/* 2.2 A Atribuição do Nome (Tom Roxo/Violeta interno) */
+.sub-card-interno:nth-of-type(2) {
+    border-left: 4px solid #6a4c93;
+}
+
+.sub-header-interno {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    gap: 12px;
+}
+
+.sub-header-interno h4 {
+    flex: 1;
+    font-size: 0.95rem;
+    margin: 0;
+    color: #333;
+}
+
+.etapa-conteudo-interno {
+    padding: 0 15px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    border-top: 1px solid #e9ecef;
+}
+
+/* ==========================================
+   ESTRUTURA GERAL DOS CABEÇALHOS E CONTEÚDOS
    ========================================== */
 
 .etapa-header {
@@ -1492,6 +1551,14 @@ body {
     align-items: center;
     padding: 18px 20px;
     gap: 15px;
+}
+
+.cards-etapas-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
 }
 
 .numero-etapa {
@@ -1519,6 +1586,5 @@ body {
     border-top: 1px solid #f1f1f1;
 }
 /* =====================================================
-   FIM DO BLOCO DOS CARDS E MODAL
+   FIM DO BLOCO DOS CARDS DE RELIGIÃO
 ===================================================== */
-```
