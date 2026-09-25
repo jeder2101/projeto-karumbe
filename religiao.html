@@ -15,102 +15,72 @@
         <div class="sub-header" style="color: #d8f3dc; font-size: 0.95rem; margin-top: 5px; text-transform: uppercase; letter-spacing: 1px;">Dicionário Tupi Guarani Nhandewa</div>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="container-conteudo-pagina" style="max-width: 800px; margin: 30px auto; padding: 0 20px;">
+    <!-- CONTEÚDO PRINCIPAL (Layout 3x1 Horizontal) -->
+    <main class="container-conteudo-pagina" style="max-width: 1100px; margin: 30px auto; padding: 0 20px;">
         
         <div class="intro-religiao" style="text-align: center; margin-bottom: 30px;">
             <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 8px;">Cosmovisão e Rituais Sagrados</h2>
-            <p style="color: #e0e0e0; font-size: 0.95px;">Explore abaixo os pilares da espiritualidade Ñandeva em ordem cronológica de vivência na comunidade.</p>
+            <p style="color: #e0e0e0; font-size: 0.95rem;">Explore abaixo os pilares da espiritualidade Ñandeva:</p>
         </div>
 
-        <div class="cards-etapas-container">
+        <div class="cards-etapas-container" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
 
-            <!-- CARD 1: Nhandereko -->
-            <div class="card-etapa" onclick="alternarEtapa('etapa-1')">
-                <div class="etapa-header">
-                    <span class="numero-etapa" style="background-color: #e8f5e9; color: #2d6a4f; font-weight: bold; font-size: 0.85rem; padding: 6px 10px; border-radius: 6px;">01</span>
-                    <h3 style="flex: 1; margin: 0; font-size: 1.05rem; color: #2d6a4f;">Nhandereko e a Espiritualidade Ñandeva</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-1" style="color: #2d6a4f;"></i>
-                </div>
-                <div class="etapa-conteudo" id="etapa-1">
-                    <p>
-                        O <strong>Nhandereko</strong> é o pilar de tudo: o modo de ser, viver e caminhar guarani. Nele, o sagrado e o cotidiano não se dissociam. A espiritualidade orienta a relação com a terra, o plantio, a música, a palavra e a identidade de cada indivíduo desde o seu nascimento.
-                    </p>
-                </div>
+            <!-- CARD 1: Nhandereko (Abre Modal) -->
+            <div class="card-etapa" onclick="abrirModal('modal-1')" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #2d6a4f; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;">
+                <span style="background: #e8f5e9; color: #2d6a4f; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Espiritualidade</span>
+                <h3 style="color: #2d6a4f; margin: 15px 0 10px 0; font-size: 1.1rem;">Nhandereko e a Espiritualidade Ñandeva</h3>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O modo de ser, viver e caminhar guarani. O sagrado e o cotidiano não se dissociam...</p>
+                <div style="text-align: right; margin-top: 15px; color: #2d6a4f; font-weight: bold; font-size: 0.85rem;">Ler mais →</div>
             </div>
 
-            <!-- CARD 2: O Mongarai (Com 2.1 e 2.2 internos) -->
-            <div class="card-etapa" onclick="alternarEtapa('etapa-2')">
-                <div class="etapa-header">
-                    <span class="numero-etapa" style="background-color: #f1faee; color: #1d3557; font-weight: bold; font-size: 0.85rem; padding: 6px 10px; border-radius: 6px;">02</span>
-                    <h3 style="flex: 1; margin: 0; font-size: 1.05rem; color: #1d3557; text-align: center;">O Mongarai: O Grande Ritual Sagrado</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2" style="color: #1d3557;"></i>
-                </div>
-                <div class="etapa-conteudo" id="etapa-2">
-                    <p>
-                        O <strong>Mongarai</strong> (ou <em>Ñemongarai</em>) é o grande ritual de comunhão, renovação espiritual e agradecimento. Ele marca o momento em que a comunidade se une na casa de reza para abençoar os frutos da terra e renovar os laços espirituais através das seguintes etapas:
-                    </p>
-
-                    <!-- Subgrupo 2.1 -->
-                    <div class="sub-card-interno" onclick="event.stopPropagation(); alternarEtapa('etapa-2-1')">
-                        <div class="sub-header-interno">
-                            <span class="numero-etapa" style="background: #fdf0ed; color: #e76f51; font-weight: bold; font-size: 0.8rem; padding: 4px 8px; border-radius: 4px;">2.1</span>
-                            <h4 style="flex: 1; margin: 0; font-size: 0.95rem; color: #e76f51;">O Batismo do Milho e das Colheitas</h4>
-                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-1" style="color: #e76f51;"></i>
-                        </div>
-                        <div class="etapa-conteudo-interno" id="etapa-2-1">
-                            <p>
-                                Antes que a comunidade possa consumir a nova colheita, os grãos — especialmente o milho tradicional (<em>avatí</em>) — precisam ser consagrados. O ritual purifica os frutos da terra dados pelas divindades para que possam ser ingeridos sem causar mal ao corpo ou ao espírito.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Subgrupo 2.2 -->
-                    <div class="sub-card-interno" onclick="event.stopPropagation(); alternarEtapa('etapa-2-2')">
-                        <div class="sub-header-interno">
-                            <span class="numero-etapa" style="background: #f3eef8; color: #6a4c93; font-weight: bold; font-size: 0.8rem; padding: 4px 8px; border-radius: 4px;">2.2</span>
-                            <h4 style="flex: 1; margin: 0; font-size: 0.95rem; color: #6a4c93;">A Atribuição do Nome Verdadeiro</h4>
-                            <i class="fas fa-chevron-down icone-seta" id="seta-etapa-2-2" style="color: #6a4c93;"></i>
-                        </div>
-                        <div class="etapa-conteudo-interno" id="etapa-2-2">
-                            <p>
-                                Momento ápice do ritual. Na tradição Ñandeva, o nome não é escolhido por estética: ele é <strong>recebido do mundo espiritual</strong> pelos rezadores ou anciãos (<em>Tamõi</em>) durante os transes e cânticos na casa de reza (<em>O'guasu</em>), garantindo a cidadania cósmica e a proteção espiritual da criança.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
+            <!-- CARD 2: O Mongarai (Abre Nova Página) -->
+            <div class="card-etapa" onclick="window.location.href='mongarai.html'" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #1d3557; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;">
+                <span style="background: #f1faee; color: #1d3557; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Ritual Sagrado</span>
+                <h3 style="color: #1d3557; margin: 15px 0 10px 0; font-size: 1.1rem; text-align: center;">O Mongarai: O Grande Ritual Sagrado</h3>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O grande ritual de comunhão, renovação espiritual e agradecimento da comunidade...</p>
+                <div style="text-align: right; margin-top: 15px; color: #1d3557; font-weight: bold; font-size: 0.85rem;">Ver etapas →</div>
             </div>
 
-            <!-- CARD 3: Dinâmica do Ritual (Jeroky) -->
-            <div class="card-etapa" onclick="alternarEtapa('etapa-3')">
-                <div class="etapa-header">
-                    <span class="numero-etapa" style="background-color: #fcf6f0; color: #7c4d29; font-weight: bold; font-size: 0.85rem; padding: 6px 10px; border-radius: 6px;">03</span>
-                    <h3 style="flex: 1; margin: 0; font-size: 1.05rem; color: #7c4d29;">A Dinâmica do Ritual (Jeroky)</h3>
-                    <i class="fas fa-chevron-down icone-seta" id="seta-etapa-3" style="color: #7c4d29;"></i>
-                </div>
-                <div class="etapa-conteudo" id="etapa-3">
-                    <p>
-                        O ciclo se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) que duram horas na casa de reza, embalados pelo <em>mbaraka</em> (chocalho) e pelo <em>takuapu</em> (bastão rítmico). Através da música e da fumaça do tabaco sagrado (<em>petỹ</em>), sementes e participantes são abençoados, selando o ritual.
-                    </p>
-                </div>
+            <!-- CARD 3: Dinâmica do Ritual - Jeroky (Abre Modal) -->
+            <div class="card-etapa" onclick="abrirModal('modal-3')" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #7c4d29; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;">
+                <span style="background: #fcf6f0; color: #7c4d29; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Tradição</span>
+                <h3 style="color: #7c4d29; margin: 15px 0 10px 0; font-size: 1.1rem;">A Dinâmica do Ritual (Jeroky)</h3>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O ciclo se encerra com danças e cantos circulares que duram horas na casa de reza...</p>
+                <div style="text-align: right; margin-top: 15px; color: #7c4d29; font-weight: bold; font-size: 0.85rem;">Ler mais →</div>
             </div>
 
         </div>
 
         <!-- BOTÃO DE VOLTAR AO INÍCIO -->
         <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html" class="btn-voltar-inicio" style="display: inline-block; background-color: #c08552; color: #fff; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.2s;">
+            <a href="index.html" style="display: inline-block; background-color: #c08552; color: #fff; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: bold;">
                 ← Voltar ao início
             </a>
         </div>
 
     </main>
 
-    <!-- RODAPÉ -->
-    <footer class="footer-projeto" style="text-align: center; margin-top: 50px; padding: 20px; color: #aaa; font-size: 0.85rem;">
-        <p>&copy; 2026 Projeto Karumbé - Resgate e Preservação da Língua e Cultura Ñandeva.</p>
-    </footer>
+    <!-- MODAL DO CARD 1 -->
+    <div id="modal-1" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+        <div style="background:#fff; width:90%; max-width:600px; padding:30px; border-radius:10px; position:relative; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+            <button onclick="fecharModal('modal-1')" style="position:absolute; top:15px; right:15px; background:none; border:none; font-size:1.5rem; cursor:pointer; color:#333;">&times;</button>
+            <h2 style="color:#2d6a4f; margin-top:0;">Nhandereko e a Espiritualidade Ñandeva</h2>
+            <p style="color:#495057; line-height:1.6; margin-top:15px;">
+                O <strong>Nhandereko</strong> é o pilar de tudo: o modo de ser, viver e caminhar guarani. Nele, o sagrado e o cotidiano não se dissociam. A espiritualidade orienta a relação com a terra, o plantio, a música, a palavra e a identidade de cada indivíduo desde o seu nascimento, estruturando toda a harmonia da comunidade.
+            </p>
+        </div>
+    </div>
+
+    <!-- MODAL DO CARD 3 -->
+    <div id="modal-3" class="modal-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+        <div style="background:#fff; width:90%; max-width:600px; padding:30px; border-radius:10px; position:relative; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+            <button onclick="fecharModal('modal-3')" style="position:absolute; top:15px; right:15px; background:none; border:none; font-size:1.5rem; cursor:pointer; color:#333;">&times;</button>
+            <h2 style="color:#7c4d29; margin-top:0;">A Dinâmica do Ritual (Jeroky)</h2>
+            <p style="color:#495057; line-height:1.6; margin-top:15px;">
+                O ciclo se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) que duram horas na casa de reza, embalados pelo <em>mbaraka</em> (chocalho) e pelo <em>takuapu</em> (bastão rítmico). Através da música e da fumaça do tabaco sagrado (<em>petỹ</em>), sementes e participantes são abençoados, selando o ritual e fortalecendo a união coletiva.
+            </p>
+        </div>
+    </div>
 
     <script src="religiao.js"></script>
 </body>
