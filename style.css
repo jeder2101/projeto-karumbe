@@ -1504,3 +1504,50 @@ body {
 .icone-seta {
     transition: transform 0.3s ease;
 }
+/* ==========================================
+   ESTILO DOS MODAIS (BALÕES DE CONTEÚDO)
+   ========================================== */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo-box {
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    animation: escalaModal 0.25s ease-out;
+}
+
+@keyframes escalaModal {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.btn-fechar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #495057;
+    transition: color 0.2s;
+}
+
+.btn-fechar-modal:hover {
+    color: #e63946;
+}
