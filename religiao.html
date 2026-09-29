@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <!-- MODAL DO CARD 2: Batismo na Colheita (Mongarai / Yy Karaí Oupi) -->
+  <!-- MODAL DO CARD 2: Batismo na Colheita (Mongarai / Yy Karaí Oupi) -->
     <div id="modal-2" class="modal-overlay">
         <div class="modal-conteudo-box" style="max-width: 750px; max-height: 85vh; overflow-y: auto;">
             <button class="btn-fechar-modal" onclick="fecharModal('modal-2')">&times;</button>
@@ -117,23 +117,22 @@
             </p>
 
             <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">
-                Mais do que uma designação, o nome indígena atua como um amuleto e um eixo de ancoragem para a palavra-alma (<em>ñe'ẽ</em>). Caso a criança manifeste morbidade persistente, compreende-se que a causa pode estar na inadequação do nome, exigindo sua substituição para restabelecer a harmonia vital. Unindo a colheita, o oniricidade e a flexibilidade dos rituais, o povo Ñandeva reafirma dinamicamente o seu <em>Nhandereko</em>, garantindo a proteção e a continuidade coletiva.
+                Mais do que uma designação, o nome indígena atua como um amuleto e um eixo de ancoragem para a palavra-alma (<em>ñe'ẽ</em>). Caso a criança manifeste morbidade persistente, compreende-se que a causa pode estar na inadequação do nome, exigindo sua substituição para restabelecer a harmonia vital. Unindo a colheita, a oniricidade e a flexibilidade dos rituais, o povo Ñandeva reafirma dinamicamente o seu <em>Nhandereko</em>, garantindo a proteção e a continuidade coletiva.
             </p>
             
             <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
                 <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📖 Fundamentação Etnológica e Intercultural</h4>
-                <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
+                <p style="color:#495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
                     Estudos clássicos e produções do Programa "Formação Intercultural Superior do Professor Indígena" (FISPI/USP) apontam o batismo como salvaguarda ontológica do povo Tupi-Guarani.
                 </p>
             </div>
 
-            <!-- CARROSSEL DO LIVRO MONGARAI (Estrutura Segura e Isolada) -->
+            <!-- 1º CARROSSEL: LIVRO MONGARAI -->
             <div style="margin: 25px 0; padding: 15px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
               <h4 style="color: #2d6a4f; font-size: 1.05rem; margin-bottom: 15px; text-align: center;">📖 Leitura do Livro: Mongarai - Batizado na Colheita</h4>
               
               <div id="livroCarrossel" style="position: relative; background: #f8f9fa; border-radius: 6px; padding: 15px; text-align: center;">
                 
-                <!-- Container das Páginas -->
                 <div class="pagina-item" style="display: block;">
                   <img src="assets/mongarai/capa.01.jpeg" alt="Capa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
                   <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa: Mongarai - Batizado na colheita</p>
@@ -199,49 +198,133 @@
                   <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa Final - Informações do Programa</p>
                 </div>
 
-                <!-- Botões de Navegação Customizados e Perfeitamente Posicionados -->
-                <button onclick="mudarPagina(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
-                <button onclick="mudarPagina(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
-              
+                <button onclick="mudarPaginaMongarai(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
+                <button onclick="mudarPaginaMongarai(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
               </div>
             </div>
 
-            <!-- SCRIPT DE CONTROLE DO CARROSSEL DO LIVRO -->
-            <script>
-                let paginaAtual = 0;
-                const paginas = document.getElementsByClassName("pagina-item");
+            <!-- 2º CARROSSEL: LIVRO YY KARAÍ OUPI (BATIZADO) -->
+            <div style="margin: 25px 0; padding: 15px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+              <h4 style="color: #2d6a4f; font-size: 1.05rem; margin-bottom: 15px; text-align: center;">📖 Leitura do Livro: Yy Karaí Oupi - Batizado</h4>
+              
+              <div id="batizadoCarrossel" style="position: relative; background: #f8f9fa; border-radius: 6px; padding: 15px; text-align: center;">
+                
+                <div class="pagina-batizado-item" style="display: block;">
+                  <img src="assets/batizado/capa.01.jpeg" alt="Capa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa: Yy Karaí Oupi - Batizado[cite: 29]</p>
+                </div>
 
-                function mudarPagina(direcao) {
-                    paginas[paginaAtual].style.display = "none";
-                    paginaAtual += direcao;
-                    
-                    if (paginaAtual >= paginas.length) {
-                        paginaAtual = 0;
-                    } else if (paginaAtual < 0) {
-                        paginaAtual = paginas.length - 1;
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/contra-capa.02.jpeg" alt="Contracapa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Ficha Técnica[cite: 27]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.01.jpeg" alt="Página 1" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 1 - Créditos e Título[cite: 26]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.02.jpeg" alt="Página 2" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 2 - Ilustração da Mãe e Criança[cite: 25]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.03.jpeg" alt="Página 3" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 3 - O Batizado Anual[cite: 24]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.04.jpeg" alt="Página 4" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 4 - Ilustração da Roda[cite: 23]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.05.jpeg" alt="Página 5" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 5 - A Casa de Reza e o Sonho[cite: 22]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.06.jpeg" alt="Página 6" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 6 - Concentração ao Amanhecer[cite: 21]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/pagina.07.jpeg" alt="Página 7" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 7 - A Importância do Nome[cite: 20]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/contra-capa final.01.jpeg" alt="Contracapa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Títulos do Projeto ARTE-IN[cite: 28]</p>
+                </div>
+
+                <div class="pagina-batizado-item" style="display: none;">
+                  <img src="assets/batizado/capa-final.01.jpeg" alt="Capa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa Final - Informações do Programa[cite: 30]</p>
+                </div>
+
+                <button onclick="mudarPaginaBatizado(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
+                <button onclick="mudarPaginaBatizado(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
+              </div>
+            </div>
+
+            <!-- SCRIPTS DOS CARROSSEIS -->
+            <script>
+                // Carrossel Mongarai
+                let paginaAtualMongarai = 0;
+                const paginasMongarai = document.getElementsByClassName("pagina-item");
+
+                function mudarPaginaMongarai(direcao) {
+                    if(paginasMongarai.length > 0) {
+                        paginasMongarai[paginaAtualMongarai].style.display = "none";
+                        paginaAtualMongarai += direcao;
+                        
+                        if (paginaAtualMongarai >= paginasMongarai.length) {
+                            paginaAtualMongarai = 0;
+                        } else if (paginaAtualMongarai < 0) {
+                            paginaAtualMongarai = paginasMongarai.length - 1;
+                        }
+                        
+                        paginasMongarai[paginaAtualMongarai].style.display = "block";
                     }
-                    
-                    paginas[paginaAtual].style.display = "block";
+                }
+
+                // Carrossel Batizado (Yy Karaí Oupi)
+                let idxBatizado = 0;
+                const itemsBatizado = document.getElementsByClassName("pagina-batizado-item");
+
+                function mudarPaginaBatizado(direcao) {
+                    if(itemsBatizado.length > 0) {
+                        itemsBatizado[idxBatizado].style.display = "none";
+                        idxBatizado += direcao;
+                        
+                        if (idxBatizado >= itemsBatizado.length) {
+                            idxBatizado = 0;
+                        } else if (idxBatizado < 0) {
+                            idxBatizado = itemsBatizado.length - 1;
+                        }
+                        
+                        itemsBatizado[idxBatizado].style.display = "block";
+                    }
                 }
             </script>
 
-           <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->
+            <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->
             <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
                 <h3 style="color: #2d6a4f; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Documentação:</h3>
                 <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
-<li style="margin-bottom: 8px;">
-    <em>Mongarai = Batizado na colheita</em>.<br>
-    Texto: Jaciara de Souza Gomes, Creiles Marcolino da Silva Nunes e Catarina Delfina dos Santos.<br>
-    Ilustrações: Abilio S. Martins e Odair Euzébio.<br>
-    São Paulo: SEE, FEUSP, 2010.
-</li>
-                   
+                    <li style="margin-bottom: 8px;">
+                        <strong>OLIVEIRA, Lenira Dina de et al.</strong> <em>Yy karaí oupi = Batizado</em>. São Paulo: SEE, FEUSP, 2010[cite: 27].
+                    </li>
                     <li style="margin-bottom: 5px;">
                         <strong>NIMUENDAJÚ, Curt.</strong> <em>Os Índios Apapocúva-Guarani</em> (Análise histórica da oniricidade e dos nomes sagrados). 
                         <a href="https://www.portalguarani.com/649_curt_nimuendaju.html" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Acervo Portal Guaraní)</a>
                     </li>
                 </ul>
             </div>
+        </div>
+    </div>
 
     <!-- MODAL DO CARD 3: A Dinâmica do Ritual (Jeroky) -->  
     <div id="modal-3" class="modal-overlay">  
