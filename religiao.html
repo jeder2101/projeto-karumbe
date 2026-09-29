@@ -33,8 +33,8 @@
                 <div style="text-align: right; margin-top: 15px; color: #2d6a4f; font-weight: bold; font-size: 0.85rem;">Ler mais →</div>
             </div>
 
-            <!-- CARD 2 (Abre nova página do Mongarai) -->
-            <div class="card-etapa" onclick="window.location.href='mongarai.html'" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #1d3557; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+            <!-- CARD 2 (Corrigido para abrir o modal-2 na mesma tela) -->
+            <div class="card-etapa" onclick="abrirModal('modal-2')" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #1d3557; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
                 <span style="background: #f1faee; color: #1d3557; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Ritual Sagrado</span>
                 <h3 style="color: #1d3557; margin: 15px 0 10px 0; font-size: 1.1rem; text-align: center;">O Mongarai: O Grande Ritual Sagrado</h3>
                 <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O grande ritual de comunhão, renovação espiritual e agradecimento da comunidade...</p>
@@ -60,136 +60,140 @@
 
     </main>
 
-<!-- MODAL DO CARD 1: Nhandereko -->
-<div id="modal-1" class="modal-overlay">
-    <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">
-        <button class="btn-fechar-modal" onclick="fecharModal('modal-1')">&times;</button>
-        <h2 style="color:#2d6a4f; margin-top:0; font-size: 1.3rem;">Nhandereko e a Espiritualidade Ñandeva</h2>
-        
-        <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">
-            O <strong>Nhandereko</strong> traduz o conjunto de pautas, valores e referências que informam ao <em>Ava</em> (o povo Ñandeva) como compreender o cosmos e conduzir a vida social. Mas por que o sagrado e o cotidiano não podem ser separados na nossa tradição? Porque a terra (<em>Tekoha</em>), o manejo tradicional, a palavra e a organização comunitária estruturam-se organicamente em torno da Casa de Reza (<em>O'guasu</em> ou <em>Opy</em>), fazendo com que cada ato diário reflita o respeito direto às divindades criadoras.
-        </p>
-
-    
-
-        <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">
-            Por que este modo de ser é vital? Porque ele garante o equilíbrio inquebrável entre o corpo físico e a palavra-alma (<em>ñe'ẽ</em>). Viver o Nhandereko é a chave para fundamentar a relação de respeito profundo com as divindades, assegurando a coesão social e a continuidade histórica do nosso subgrupo frente a todos os desafios territoriais e culturais externos.
-        </p>
-        
-        <!-- IMAGEM INSERIDA NO MEIO DO TEXTO COM O CAMINHO CORRETO -->
-        <div style="margin: 20px 0; text-align: center;">
-            <img src="assets/img/nhandereko.JPG" alt="Vivência e território tradicional - Nhandereko" style="width:100%; max-height:320px; object-fit:cover; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <p style="font-size: 0.82rem; color: #6c757d; margin-top: 6px; font-style: italic;">Registro do território e do modo de vida tradicional Ñandeva Tekoa Karugwá.</p>
-        </div>
-        
-          <!-- NOVO BLOCO TÉCNICO: ARQUITETURA DA OPY -->
-        <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
-            <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📐 A Arquitetura e o Projeto Construtivo da Opy</h4>
-            <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                A estrutura física da Casa de Reza ergue-se seguindo uma planta ortocircular rigorosa, onde cada eixo materializa a centralidade espiritual do cosmos para o grupo.
+    <!-- MODAL DO CARD 1: Nhandereko -->
+    <div id="modal-1" class="modal-overlay">
+        <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">
+            <button class="btn-fechar-modal" onclick="fecharModal('modal-1')">&times;</button>
+            <h2 style="color:#2d6a4f; margin-top:0; font-size: 1.3rem;">Nhandereko e a Espiritualidade Ñandeva</h2>
+            
+            <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">
+                O <strong>Nhandereko</strong> traduz o conjunto de pautas, valores e referências que informam ao <em>Ava</em> (o povo Ñandeva) como compreender o cosmos e conduzir a vida social. Mas por que o sagrado e o cotidiano não podem ser separados na nossa tradição? Porque a terra (<em>Tekoha</em>), o manejo tradicional, a palavra e a organização comunitária estruturam-se organicamente em torno da Casa de Reza (<em>O'guasu</em> ou <em>Opy</em>), fazendo com que cada ato diário reflita o respeito direto às divindades criadoras.
             </p>
-            <p style="font-size: 0.82rem; color: #6c757d; margin-top: 8px; margin-bottom: 0;">
-                <em>Origem:</em> Desenho técnico e croqui de levantamento arquitetônico de Carlos Zibel Costa e Rui Alão. 
-                <a href="https://revistas.usp.br/posfau/article/download/137037/132826/264403" target="_blank" style="color: #2d6a4f; text-decoration: underline;">(Ver Estudo Arquitetônico na USP)</a>
+
+            <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">
+                Por que este modo de ser é vital? Porque ele garante o equilíbrio inquebrável entre o corpo físico e a palavra-alma (<em>ñe'ẽ</em>). Viver o Nhandereko é a chave para fundamentar a relação de respeito profundo com as divindades, assegurando a coesão social e a continuidade histórica do nosso subgrupo frente a todos os desafios territoriais e culturais externos.
             </p>
-        </div>
-        <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->
-        <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
-            <h3 style="color: #2d6a4f; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Estudos Especializados:</h3>
-            <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
-                <li style="margin-bottom: 8px;">
-                    <strong>NIMUENDAJÚ, Curt.</strong> <em>Os Índios Apapocúva-Guarani</em> (O registro histórico e antropológico fundamental focado diretamente na base mítica e espiritual do subgrupo Ñandeva). 
-                    <a href="https://www.portalguarani.com/649_curt_nimuendaju.html" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Acervo Portal Guaraní)</a>
-                </li>
-                <li style="margin-bottom: 5px;">
-                    <strong>SCHADEN, Egon.</strong> <em>A Religião e a Mitologia Guarani</em> (Estudo clássico sobre a autodenominação Ñandeva e as pautas de conduta do Ava). 
-                    <a href="https://www.portalguarani.com/" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Consultar Acervo)</a>
-                </li>
-            </ul>
+            
+            <!-- IMAGEM INSERIDA NO MEIO DO TEXTO COM O CAMINHO CORRETO -->
+            <div style="margin: 20px 0; text-align: center;">
+                <img src="assets/img/nhandereko.JPG" alt="Vivência e território tradicional - Nhandereko" style="width:100%; max-height:320px; object-fit:cover; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.82rem; color: #6c757d; margin-top: 6px; font-style: italic;">Registro do território e do modo de vida tradicional Ñandeva Tekoa Karugwá.</p>
+            </div>
+            
+            <!-- NOVO BLOCO TÉCNICO: ARQUITETURA DA OPY -->
+            <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
+                <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📐 A Arquitetura e o Projeto Construtivo da Opy</h4>
+                <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
+                    A estrutura física da Casa de Reza ergue-se seguindo uma planta ortocircular rigorosa, onde cada eixo materializa a centralidade espiritual do cosmos para o grupo.
+                </p>
+                <p style="font-size: 0.82rem; color: #6c757d; margin-top: 8px; margin-bottom: 0;">
+                    <em>Origem:</em> Desenho técnico e croqui de levantamento arquitetônico de Carlos Zibel Costa e Rui Alão. 
+                    <a href="https://revistas.usp.br/posfau/article/download/137037/132826/264403" target="_blank" style="color: #2d6a4f; text-decoration: underline;">(Ver Estudo Arquitetônico na USP)</a>
+                </p>
+            </div>
+
+            <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
+                <h3 style="color: #2d6a4f; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Estudos Especializados:</h3>
+                <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
+                    <li style="margin-bottom: 8px;">
+                        <strong>NIMUENDAJÚ, Curt.</strong> <em>Os Índios Apapocúva-Guarani</em> (O registro histórico e antropológico fundamental focado diretamente na base mítica e espiritual do subgrupo Ñandeva). 
+                        <a href="https://www.portalguarani.com/649_curt_nimuendaju.html" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Acervo Portal Guaraní)</a>
+                    </li>
+                    <li style="margin-bottom: 5px;">
+                        <strong>SCHADEN, Egon.</strong> <em>A Religião e a Mitologia Guarani</em> (Estudo clássico sobre a autodenominação Ñandeva e as pautas de conduta do Ava). 
+                        <a href="https://www.portalguarani.com/" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Consultar Acervo)</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+
     <!-- MODAL DO CARD 2: Batismo na Colheita (Mongarai) -->
-<div id="modal-2" class="modal-overlay">
-    <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">
-        <button class="btn-fechar-modal" onclick="fecharModal('modal-2')">&times;</button>
-        <h2 style="color:#2d6a4f; margin-top:0; font-size: 1.3rem;">Batismo na Colheita (Mongarai)</h2>
-        
-        <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">
-            O <strong>Mongarai</strong> é a cerimônia de batismo realizada na época da colheita entre o povo Tupi-Guarani[cite: 7]. Nessa ocasião, o líder espiritual concentra-se por vários dias para receber, em sonho, o nome de cada uma das crianças[cite: 5]. Na falta de um líder espiritual, a mãe pode sonhar outro nome, cantando a música de nome "Owe Owe"[cite: 1].
-        </p>
-
-        <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">
-            Caso a criança fique doente, acredita-se que a causa possa ser o nome, que não está certo para aquela criança[cite: 3], devendo ser trocado. Este ritual sagrado fortalece os laços comunitários e sela a união do povo com a espiritualidade.
-        </p>
-        
-        <!-- BLOCO TÉCNICO / BALÃO DE INFORMAÇÃO -->
-        <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
-            <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📖 Publicação Intercultural e Educacional</h4>
-            <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                Obra integrante do Programa "Formação Intercultural Superior do Professor Indígena" (FISPI) em parceria com a Secretaria de Educação do Estado de São Paulo e USP[cite: 10].
+    <div id="modal-2" class="modal-overlay">
+        <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">
+            <button class="btn-fechar-modal" onclick="fecharModal('modal-2')">&times;</button>
+            <h2 style="color:#2d6a4f; margin-top:0; font-size: 1.3rem;">Batismo na Colheita (Mongarai)</h2>
+            
+            <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">
+                O <strong>Mongarai</strong> é a cerimônia de batismo realizada na época da colheita entre o povo Tupi-Guarani[cite: 7]. Nessa ocasião, o líder espiritual concentra-se por vários dias para receber, em sonho, o nome de cada uma das crianças[cite: 5]. Na falta de um líder espiritual, a mãe pode sonhar outro nome, cantando a música de nome "Owe Owe"[cite: 1].
             </p>
-        </div>
 
-        <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->
-        <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
-            <h3 style="color: #2d6a4f; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Documentação:</h3>
-            <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
-                <li style="margin-bottom: 8px;">
-                    <strong>MENEZES, Jaciara S. G. de; NUNES, Creiles M. da S.; SANTOS, Catarina D. dos.</strong> <em>Mongarai = Batizado na colheita</em>. São Paulo: SEE, FEUSP, 2010[cite: 10].
-                </li>
-            </ul>
+            <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">
+                Caso a criança fique doente, acredita-se que a causa possa ser o nome, que não está certo para aquela criança[cite: 3], devendo ser trocado. Este ritual sagrado fortalece os laços comunitários e sela a união do povo com a espiritualidade.
+            </p>
+            
+            <!-- BLOCO TÉCNICO / BALÃO DE INFORMAÇÃO -->
+            <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
+                <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📖 Publicação Intercultural e Educacional</h4>
+                <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
+                    Obra integrante do Programa "Formação Intercultural Superior do Professor Indígena" (FISPI) em parceria com a Secretaria de Educação do Estado de São Paulo e USP[cite: 10].
+                </p>
+            </div>
+
+            <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
+                <h3 style="color: #2d6a4f; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Documentação:</h3>
+                <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
+                    <li style="margin-bottom: 8px;">
+                        <strong>MENEZES, Jaciara S. G. de; NUNES, Creiles M. da S.; SANTOS, Catarina D. dos.</strong> <em>Mongarai = Batizado na colheita</em>. São Paulo: SEE, FEUSP, 2010[cite: 10].
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-  <!-- MODAL DO CARD 3: A Dinâmica do Ritual (Jeroky) --> 
-<div id="modal-3" class="modal-overlay"> 
-    <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;"> 
-        <button class="btn-fechar-modal" onclick="fecharModal('modal-3')">&times;</button> 
-        <h2 style="color:#7c4d29; margin-top:0; font-size: 1.3rem;">A Dinâmica do Ritual (Jeroky)</h2> 
-        
-        <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;"> 
-            O ciclo ritualístico se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) na Casa de Reza, embalados pelo som cadenciado do <em>mbaraka</em> (chocalho) e do <em>takuapu</em> (bastão rítmico). 
-        </p> 
 
-        <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;"> 
-            Por meio da música, dos passos em círculo e da fumaça do tabaco sagrado (petỹ) soprada pelos rezadores, sementes e participantes são abençoados, selando o ritual e fortalecendo a união coletiva do povo Ñandeva. 
-        </p>
-             
-<!-- IMAGEM DO INTERIOR DA OPY -->
-<div style="margin: 20px 0; text-align: center; background-color: #f8f9fa; padding: 10px; border-radius: 8px;">
-    <img src="assets/img/interior-opy.png" alt="Interior da opy principal mostrando o altar yvyra'i e instrumentos rituais" style="width:100%; max-height:450px; object-fit:contain; border-radius:4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <p style="font-size: 0.82rem; color: #6c757d; margin-top: 8px; font-style: italic; text-align: left;">
-        Interior da opy principal do cacique José Fernandes: altar (yvyra'i), bastão de reza, maracá e taquara ritualística[cite: 3]. Foto: Candida Maria Vuolo (LRAV-FAUUSP)[cite: 3].
-    </p>
-</div>
-    <!-- NOVO BLOCO: CASA DE REZA -->
-<div style="background-color: #fbf6f0; border-left: 4px solid #7c4d29; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
-    <h4 style="color: #7c4d29; margin: 0 0 5px 0; font-size: 0.95rem;">🏛️ Casa de Reza e Arquitetura Tradicional</h4>
-    <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
-        Casa de reza disponível em: documentação detalhada sobre a estrutura e o uso ritualístico da <em>opy</em> no contexto do <em>Tekoha</em>.
-    </p>
-    <p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">
-        <a href="https://revistas.usp.br/posfau/article/download/137037/132826/264403" target="_blank" style="color: #7c4d29; text-decoration: underline; font-weight: bold;">🔗 Acessar Documento Completo na USP</a>
-    </p>
-</div>
+    <!-- MODAL DO CARD 3: A Dinâmica do Ritual (Jeroky) -->  
+    <div id="modal-3" class="modal-overlay">  
+        <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">  
+            <button class="btn-fechar-modal" onclick="fecharModal('modal-3')">&times;</button>  
+            <h2 style="color:#7c4d29; margin-top:0; font-size: 1.3rem;">A Dinâmica do Ritual (Jeroky)</h2>  
+            
+            <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">  
+                O ciclo ritualístico se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) na Casa de Reza, embalados pelo som cadenciado do <em>mbaraka</em> (chocalho) e do <em>takuapu</em> (bastão rítmico).  
+            </p>  
 
-        <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS --> 
-        <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;"> 
-            <h3 style="color: #7c4d29; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Autores de Aprofundamento:</h3> 
-            <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;"> 
-                <li style="margin-bottom: 8px;"> 
-                    <strong>CLASTRES, Pierre.</strong> <em>A Fala Sagrada: Mitos e Cantos Sagrados dos Índios Guaraní</em> (Análise aprofundada da palavra, dos cantos coletivos e da dinâmica do ritual). 
-                    <a href="https://www.portalguarani.com/" target="_blank" style="color: #7c4d29; text-decoration: underline; margin-left: 5px;">(Consultar Acervo)</a> 
-                </li> 
-                <li style="margin-bottom: 5px;"> 
-                    <strong>PEREIRA, Maria Aparecida da Costa.</strong> <em>Investigação sobre os Guarani (Nhandeva e Kaiowá)</em> (Documentação sobre a resistência cultural, a religiosidade e a coesão comunitária). 
-                    <a href="https://www.portalguarani.com/" target="_blank" style="color: #7c4d29; text-decoration: underline; margin-left: 5px;">(Portal Guaraní)</a> 
-                </li> 
-            </ul> 
-        </div> 
-    </div> 
-</div>
+            <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">  
+                Por meio da música, dos passos em círculo e da fumaça do tabaco sagrado (petỹ) soprada pelos rezadores, sementes e participantes são abençoados, selando o ritual e fortalecendo a união coletiva do povo Ñandeva.  
+            </p>
+                 
+            <!-- IMAGEM DO INTERIOR DA OPY -->
+            <div style="margin: 20px 0; text-align: center; background-color: #f8f9fa; padding: 10px; border-radius: 8px;">
+                <img src="assets/img/interior-opy.png" alt="Interior da opy principal mostrando o altar yvyra'i e instrumentos rituais" style="width:100%; max-height:450px; object-fit:contain; border-radius:4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <p style="font-size: 0.82rem; color: #6c757d; margin-top: 8px; font-style: italic; text-align: left;">
+                    Interior da opy principal do cacique José Fernandes: altar (yvyra'i), bastão de reza, maracá e taquara ritualística[cite: 3]. Foto: Candida Maria Vuolo (LRAV-FAUUSP)[cite: 3].
+                </p>
+            </div>
+
+            <!-- NOVO BLOCO: CASA DE REZA -->
+            <div style="background-color: #fbf6f0; border-left: 4px solid #7c4d29; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
+                <h4 style="color: #7c4d29; margin: 0 0 5px 0; font-size: 0.95rem;">🏛️ Casa de Reza e Arquitetura Tradicional</h4>
+                <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
+                    Casa de reza disponível em: documentação detalhada sobre a estrutura e o uso ritualístico da <em>opy</em> no contexto do <em>Tekoha</em>.
+                </p>
+                <p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">
+                    <a href="https://revistas.usp.br/posfau/article/download/137037/132826/264403" target="_blank" style="color: #7c4d29; text-decoration: underline; font-weight: bold;">🔗 Acessar Documento Completo na USP</a>
+                </p>
+            </div>
+
+            <!-- SEÇÃO DE REFERÊNCIAS ESPECÍFICAS -->  
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">  
+                <h3 style="color: #7c4d29; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Autores de Aprofundamento:</h3>  
+                <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">  
+                    <li style="margin-bottom: 8px;">  
+                        <strong>CLASTRES, Pierre.</strong> <em>A Fala Sagrada: Mitos e Cantos Sagrados dos Índios Guaraní</em> (Análise aprofundada da palavra, dos cantos coletivos e da dinâmica do ritual).  
+                        <a href="https://www.portalguarani.com/" target="_blank" style="color: #7c4d29; text-decoration: underline; margin-left: 5px;">(Consultar Acervo)</a>  
+                    </li>  
+                    <li style="margin-bottom: 5px;">  
+                        <strong>PEREIRA, Maria Aparecida da Costa.</strong> <em>Investigação sobre os Guarani (Nhandeva e Kaiowá)</em> (Documentação sobre a resistência cultural, a religiosidade e a coesão comunitária).  
+                        <a href="https://www.portalguarani.com/" target="_blank" style="color: #7c4d29; text-decoration: underline; margin-left: 5px;">(Portal Guaraní)</a>  
+                    </li>  
+                </ul>  
+            </div>  
+        </div>  
+    </div>
+
+    <!-- SCRIPT DE CONTROLE DOS MODAIS -->
     <script src="religiao.js"></script>
 </body>
 </html>
