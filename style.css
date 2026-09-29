@@ -1469,41 +1469,7 @@ body {
     border-top: 1px solid #f1f1f1;
 }
 
-/* SUB-CARDS INTERNOS (2.1 e 2.2 que abrem dentro do card 2) */
-.sub-card-interno {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    margin: 15px 0;
-    border: 1px solid #e9ecef;
-    overflow: hidden;
-    transition: background 0.2s ease;
-}
 
-.sub-card-interno:hover {
-    background-color: #f1f3f5;
-}
-
-.sub-card-interno:nth-of-type(1) { border-left: 5px solid #e76f51; }
-.sub-card-interno:nth-of-type(2) { border-left: 5px solid #6a4c93; }
-
-.sub-header-interno {
-    display: flex;
-    align-items: center;
-    padding: 12px 12px;
-    gap: 10px;
-}
-
-.etapa-conteudo-interno {
-    padding: 0 12px 12px 12px;
-    color: #495057;
-    font-size: 0.85rem;
-    line-height: 1.5;
-    border-top: 1px solid #e9ecef;
-}
-
-.icone-seta {
-    transition: transform 0.3s ease;
-}
 /* ==========================================
    ESTILO CORRETO DOS MODALS (BALÕES DE CONTEÚDO)
    ========================================== */
