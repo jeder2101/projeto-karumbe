@@ -1,112 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Religião e Cosmovisão - Projeto Karumbé</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-
-    <!-- CABEÇALHO DO PROJETO -->
-    <header class="header-projeto" style="text-align: center; padding: 30px 20px;">
-        <h1 style="color: #fff; margin: 0; font-size: 2rem;">PROJETO KARUMBÉ</h1>
-        <div class="sub-header" style="color: #d8f3dc; font-size: 0.95rem; margin-top: 5px; text-transform: uppercase; letter-spacing: 1px;">Dicionário Tupi Guarani Nhandewa</div>
-    </header>
-
-    <!-- CONTEÚDO PRINCIPAL (Layout 3x1 Horizontal) -->
-    <main class="container-conteudo-pagina" style="max-width: 1100px; margin: 30px auto; padding: 0 20px;">
-        
-        <div class="intro-religiao" style="text-align: center; margin-bottom: 30px;">
-            <h2 style="color: #fff; font-size: 1.5rem; margin-bottom: 8px;">Cosmovisão e Rituais Sagrados</h2>
-            <p style="color: #e0e0e0; font-size: 0.95rem;">Explore abaixo os pilares da espiritualidade Ñandeva:</p>
-        </div>
-
-        <div class="cards-etapas-container" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-
-            <!-- CARD 1 -->
-            <div class="card-etapa" onclick="abrirModal('modal-1')" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #2d6a4f; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-                <span style="background: #e8f5e9; color: #2d6a4f; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Espiritualidade</span>
-                <h3 style="color: #2d6a4f; margin: 15px 0 10px 0; font-size: 1.1rem;">Nhandereko e a Espiritualidade Ñandeva</h3>
-                <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O modo de ser, viver e caminhar guarani. O sagrado e o cotidiano não se dissociam...</p>
-                <div style="text-align: right; margin-top: 15px; color: #2d6a4f; font-weight: bold; font-size: 0.85rem;">Ler mais →</div>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="card-etapa" onclick="abrirModal('modal-2')" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #1d3557; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-                <span style="background: #f1faee; color: #1d3557; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Ritual Sagrado</span>
-                <h3 style="color: #1d3557; margin: 15px 0 10px 0; font-size: 1.1rem; text-align: center;">O Mongarai: O Grande Ritual Sagrado</h3>
-                <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O grande ritual de comunhão, renovação espiritual e agradecimento da comunidade...</p>
-                <div style="text-align: right; margin-top: 15px; color: #1d3557; font-weight: bold; font-size: 0.85rem;">Ver etapas →</div>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="card-etapa" onclick="abrirModal('modal-3')" style="flex: 1; min-width: 300px; max-width: 350px; background: #fff; border-radius: 10px; border-top: 6px solid #7c4d29; cursor: pointer; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-                <span style="background: #fcf6f0; color: #7c4d29; padding: 4px 10px; border-radius: 4px; font-weight: bold; font-size: 0.8rem;">Tradição</span>
-                <h3 style="color: #7c4d29; margin: 15px 0 10px 0; font-size: 1.1rem;">A Dinâmica do Ritual (Jeroky)</h3>
-                <p style="color: #666; font-size: 0.9rem; line-height: 1.5;">O ciclo se encerra com danças e cantos circulares que duram horas na casa de reza...</p>
-                <div style="text-align: right; margin-top: 15px; color: #7c4d29; font-weight: bold; font-size: 0.85rem;">Ler mais →</div>
-            </div>
-
-        </div>
-
-        <!-- BOTÃO DE VOLTAR AO INÍCIO -->
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html" style="display: inline-block; background-color: #c08552; color: #fff; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: bold;">
-                ← Voltar ao início
-            </a>
-        </div>
-
-    </main>
-
-    <!-- MODAL DO CARD 1: Nhandereko -->
-    <div id="modal-1" class="modal-overlay">
-        <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">
-            <button class="btn-fechar-modal" onclick="fecharModal('modal-1')">&times;</button>
-            <h2 style="color:#2d6a4f; margin-top:0; font-size: 1.3rem;">Nhandereko e a Espiritualidade Ñandeva</h2>
-            
-            <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">
-                O <strong>Nhandereko</strong> traduz o conjunto de pautas, valores e referências que informam ao <em>Ava</em> (o povo Ñandeva) como compreender o cosmos e conduzir a vida social. Mas por que o sagrado e o cotidiano não podem ser separados na nossa tradição? Porque a terra (<em>Tekoha</em>), o manejo tradicional, a palavra e a organização comunitária estruturam-se organicamente em torno da Casa de Reza (<em>O'guasu</em> ou <em>Opy</em>), fazendo com que cada ato diário reflita o respeito direto às divindades criadoras.
-            </p>
-
-            <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">
-                Por que este modo de ser é vital? Porque ele garante o equilíbrio inquebrável entre o corpo físico e a palavra-alma (<em>ñe'ẽ</em>). Viver o Nhandereko é a chave para fundamentar a relação de respeito profundo com as divindades, assegurando a coesão social e a continuidade histórica do nosso subgrupo frente a todos os desafios territoriais e culturais externos.
-            </p>
-            
-            <div style="margin: 20px 0; text-align: center;">
-                <img src="assets/img/nhandereko.JPG" alt="Vivência e território tradicional - Nhandereko" style="width:100%; max-height:320px; object-fit:cover; border-radius:8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <p style="font-size: 0.82rem; color: #6c757d; margin-top: 6px; font-style: italic;">Registro do território e do modo de vida tradicional Ñandeva Tekoa Karugwá.</p>
-            </div>
-            
-            <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
-                <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📐 A Arquitetura e o Projeto Construtivo da Opy</h4>
-                <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                    A estrutura física da Casa de Reza ergue-se seguindo uma planta ortocircular rigorosa, onde cada eixo materializa a centralidade espiritual do cosmos para o grupo.
-                </p>
-                <p style="font-size: 0.82rem; color: #6c757d; margin-top: 8px; margin-bottom: 0;">
-                    <em>Origem:</em> Desenho técnico e croqui de levantamento arquitetônico de Carlos Zibel Costa e Rui Alão. 
-                    <a href="https://revistas.usp.br/posfau/article/download/137037/132826/264403" target="_blank" style="color: #2d6a4f; text-decoration: underline;">(Ver Estudo Arquitetônico na USP)</a>
-                </p>
-            </div>
-
-            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
-                <h3 style="color: #2d6a4f; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Estudos Especializados:</h3>
-                <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
-                    <li style="margin-bottom: 8px;">
-                        <strong>NIMUENDAJÚ, Curt.</strong> <em>Os Índios Apapocúva-Guarani</em> (O registro histórico e antropológico fundamental focado diretamente na base mítica e espiritual do subgrupo Ñandeva). 
-                        <a href="https://www.portalguarani.com/649_curt_nimuendaju.html" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Acervo Portal Guaraní)</a>
-                    </li>
-                    <li style="margin-bottom: 5px;">
-                        <strong>SCHADEN, Egon.</strong> <em>A Religião e a Mitologia Guarani</em> (Estudo clássico sobre a autodenominação Ñandeva e as pautas de conduta do Ava). 
-                        <a href="https://www.portalguarani.com/" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Consultar Acervo)</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-  <!-- MODAL DO CARD 2: Batismo na Colheita (Mongarai / Yy Karaí Oupi) -->
+<!-- MODAL DO CARD 2: Batismo na Colheita (Mongarai / Yy Karaí Oupi) -->
     <div id="modal-2" class="modal-overlay">
         <div class="modal-conteudo-box" style="max-width: 750px; max-height: 85vh; overflow-y: auto;">
             <button class="btn-fechar-modal" onclick="fecharModal('modal-2')">&times;</button>
@@ -120,157 +12,224 @@
                 Mais do que uma designação, o nome indígena atua como um amuleto e um eixo de ancoragem para a palavra-alma (<em>ñe'ẽ</em>). Caso a criança manifeste morbidade persistente, compreende-se que a causa pode estar na inadequação do nome, exigindo sua substituição para restabelecer a harmonia vital. Unindo a colheita, a oniricidade e a flexibilidade dos rituais, o povo Ñandeva reafirma dinamicamente o seu <em>Nhandereko</em>, garantindo a proteção e a continuidade coletiva.
             </p>
             
-            <div style="background-color: #f4f9f4; border-left: 4px solid #2d6a4f; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
-                <h4 style="color: #2d6a4f; margin: 0 0 5px 0; font-size: 0.95rem;">📖 Fundamentação Etnológica e Intercultural</h4>
-                <p style="color:#495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                    Estudos clássicos e produções do Programa "Formação Intercultural Superior do Professor Indígena" (FISPI/USP) apontam o batismo como salvaguarda ontológica do povo Tupi-Guarani.
-                </p>
+            <!-- ABAS DE SELEÇÃO DE LIVROS -->
+            <div style="display: flex; justify-content: center; gap: 10px; margin: 25px 0 15px 0; border-bottom: 2px solid #dee2e6; padding-bottom: 10px;">
+                <button onclick="alternarLivro('mongarai')" id="btn-tab-mongarai" style="background-color: #2d6a4f; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 0.95rem; transition: background 0.2s;">
+                    📖 Mongarai - Batizado na Colheita
+                </button>
+                <button onclick="alternarLivro('batizado')" id="btn-tab-batizado" style="background-color: #e9ecef; color: #495057; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 0.95rem; transition: background 0.2s;">
+                    📖 Yy Karaí Oupi - Batizado
+                </button>
             </div>
 
-            <!-- 1º CARROSSEL: LIVRO MONGARAI -->
-            <div style="margin: 25px 0; padding: 15px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-              <h4 style="color: #2d6a4f; font-size: 1.05rem; margin-bottom: 15px; text-align: center;">📖 Leitura do Livro: Mongarai - Batizado na Colheita</h4>
-              
-              <div id="livroCarrossel" style="position: relative; background: #f8f9fa; border-radius: 6px; padding: 15px; text-align: center;">
-                
-                <div class="pagina-item" style="display: block;">
-                  <img src="assets/mongarai/capa.01.jpeg" alt="Capa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa: Mongarai - Batizado na colheita</p>
+            <!-- CONTAINER DO LIVRO 1: MONGARAI -->
+            <div id="secao-mongarai" style="display: block;">
+                <!-- Carrossel Mongarai -->
+                <div style="margin: 15px 0; padding: 15px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                  <div id="livroCarrossel" style="position: relative; background: #f8f9fa; border-radius: 6px; padding: 15px; text-align: center;">
+                    
+                    <div class="pagina-item" style="display: block;">
+                      <img src="assets/mongarai/capa.01.jpeg" alt="Capa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa: Mongarai - Batizado na colheita</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/contra_capa.02.jpeg" alt="Contracapa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Ficha Técnica</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.01.jpeg" alt="Página 1" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 1 - Créditos e Título</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.02.jpeg" alt="Página 2" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 2 - Ilustração da Fogueira</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.03.jpeg" alt="Página 3" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 3 - Tradição do Povo Tupi-Guarani</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.04.jpeg" alt="Página 4" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 4 - Início da Cerimônia</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.05.jpeg" alt="Página 5" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 5 - O Sonho do Líder Espiritual</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.06.jpeg" alt="Página 6" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 6 - A Roda da Aldeia</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.07.jpeg" alt="Página 7" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 7 - O Primeiro Nome</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.08..jpeg" alt="Página 8" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 8 - Detalhe da Cena</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/pagina.09.jpeg" alt="Página 9" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 9 - A Música "Owe Owe"</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/contra_capa final.01.jpeg" alt="Contracapa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Títulos do Projeto ARTE-IN</p>
+                    </div>
+
+                    <div class="pagina-item" style="display: none;">
+                      <img src="assets/mongarai/capa_final.01.jpeg" alt="Capa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa Final - Informações do Programa</p>
+                    </div>
+
+                    <button onclick="mudarPaginaMongarai(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
+                    <button onclick="mudarPaginaMongarai(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
+                  </div>
                 </div>
 
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/contra_capa.02.jpeg" alt="Contracapa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Ficha Técnica</p>
+                <!-- Créditos Mongarai -->
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #2d6a4f;">
+                    <h4 style="color: #2d6a4f; font-size: 0.95rem; margin: 0 0 8px 0;">📖 Mongarai - Batizado na Colheita</h4>
+                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
+                        <strong>Professores / Autores:</strong> Jaciara de Souza Gomes, Creiles Marcelino da Silva Nunes e Catarina Delfina dos Santos.
+                    </p>
+                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
+                        <strong>Ilustrações e Participantes:</strong> Abílio S. Martins e Odair Possídio.
+                    </p>
+                    <p style="color: #555; font-size: 0.82rem; margin: 0;">
+                        <em>Data de publicação / Produção:</em> Programa ARTE-IN / Formação Intercultural.
+                    </p>
                 </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.01.jpeg" alt="Página 1" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 1 - Créditos e Título</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.02.jpeg" alt="Página 2" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 2 - Ilustração da Fogueira</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.03.jpeg" alt="Página 3" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 3 - Tradição do Povo Tupi-Guarani</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.04.jpeg" alt="Página 4" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 4 - Início da Cerimônia</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.05.jpeg" alt="Página 5" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 5 - O Sonho do Líder Espiritual</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.06.jpeg" alt="Página 6" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 6 - A Roda da Aldeia</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.07.jpeg" alt="Página 7" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 7 - O Primeiro Nome</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.08..jpeg" alt="Página 8" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 8 - Detalhe da Cena</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/pagina.09.jpeg" alt="Página 9" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 9 - A Música "Owe Owe"</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/contra_capa final.01.jpeg" alt="Contracapa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Títulos do Projeto ARTE-IN</p>
-                </div>
-
-                <div class="pagina-item" style="display: none;">
-                  <img src="assets/mongarai/capa_final.01.jpeg" alt="Capa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa Final - Informações do Programa</p>
-                </div>
-
-                <button onclick="mudarPaginaMongarai(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
-                <button onclick="mudarPaginaMongarai(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
-              </div>
             </div>
 
-            <!-- 2º CARROSSEL: LIVRO YY KARAÍ OUPI (BATIZADO) -->
-            <div style="margin: 25px 0; padding: 15px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
-              <h4 style="color: #2d6a4f; font-size: 1.05rem; margin-bottom: 15px; text-align: center;">📖 Leitura do Livro: Yy Karaí Oupi - Batizado</h4>
-              
-              <div id="batizadoCarrossel" style="position: relative; background: #f8f9fa; border-radius: 6px; padding: 15px; text-align: center;">
-                
-                <div class="pagina-batizado-item" style="display: block;">
-                  <img src="assets/batizado/capa.01.jpeg" alt="Capa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa: Yy Karaí Oupi - Batizado</p>
+            <!-- CONTAINER DO LIVRO 2: YY KARAÍ OUPI (BATIZADO) -->
+            <div id="secao-batizado" style="display: none;">
+                <!-- Carrossel Batizado -->
+                <div style="margin: 15px 0; padding: 15px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                  <div id="batizadoCarrossel" style="position: relative; background: #f8f9fa; border-radius: 6px; padding: 15px; text-align: center;">
+                    
+                    <div class="pagina-batizado-item" style="display: block;">
+                      <img src="assets/batizado/capa.01.jpeg" alt="Capa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa: Yy Karaí Oupi - Batizado</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/contra-capa.02.jpeg" alt="Contracapa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Ficha Técnica</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.01.jpeg" alt="Página 1" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 1 - Créditos e Título</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.02.jpeg" alt="Página 2" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 2 - Ilustração da Mãe e Criança</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.03.jpeg" alt="Página 3" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 3 - O Batizado Anual</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.04.jpeg" alt="Página 4" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 4 - Ilustração da Roda</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.05.jpeg" alt="Página 5" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 5 - A Casa de Reza e o Sonho</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.06.jpeg" alt="Página 6" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 6 - Concentração ao Amanhecer</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/pagina.07.jpeg" alt="Página 7" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 7 - A Importância do Nome</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/contra-capa final.01.jpeg" alt="Contracapa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Títulos do Projeto ARTE-IN</p>
+                    </div>
+
+                    <div class="pagina-batizado-item" style="display: none;">
+                      <img src="assets/batizado/capa-final.01.jpeg" alt="Capa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
+                      <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa Final - Informações do Programa</p>
+                    </div>
+
+                    <button onclick="mudarPaginaBatizado(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
+                    <button onclick="mudarPaginaBatizado(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
+                  </div>
                 </div>
 
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/contra-capa.02.jpeg" alt="Contracapa" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Ficha Técnica</p>
+                <!-- Créditos Batizado -->
+                <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 4px solid #2d6a4f;">
+                    <h4 style="color: #2d6a4f; font-size: 0.95rem; margin: 0 0 8px 0;">📖 Yy Karaí Oupi - Batizado</h4>
+                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
+                        <strong>Professores / Autores:</strong> Lenira Dina de Oliveira, Tiago de Oliveira, Richard Caetano e Fabíola dos Santos Cirino.
+                    </p>
+                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
+                        <strong>Ilustrações e Participantes:</strong> Sérgio M. da Silva, João Lino da Silva e José Roberto da Silva Santos.
+                    </p>
+                    <p style="color: #555; font-size: 0.82rem; margin: 0;">
+                        <em>Data de publicação / Produção:</em> São Paulo: SEE, FEUSP, 2010.
+                    </p>
                 </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.01.jpeg" alt="Página 1" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 1 - Créditos e Título</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.02.jpeg" alt="Página 2" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 2 - Ilustração da Mãe e Criança</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.03.jpeg" alt="Página 3" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 3 - O Batizado Anual</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.04.jpeg" alt="Página 4" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 4 - Ilustração da Roda</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.05.jpeg" alt="Página 5" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 5 - A Casa de Reza e o Sonho</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.06.jpeg" alt="Página 6" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 6 - Concentração ao Amanhecer</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/pagina.07.jpeg" alt="Página 7" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Página 7 - A Importância do Nome/p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/contra-capa final.01.jpeg" alt="Contracapa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Títulos do Projeto ARTE-IN</p>
-                </div>
-
-                <div class="pagina-batizado-item" style="display: none;">
-                  <img src="assets/batizado/capa-final.01.jpeg" alt="Capa Final" style="max-width: 100%; height: 380px; object-fit: contain; border-radius: 6px;">
-                  <p style="font-size: 0.85rem; color: #555; margin-top: 8px; font-weight: 600;">Capa Final - Informações do Programa</p>
-                </div>
-
-                <button onclick="mudarPaginaBatizado(-1)" style="position: absolute; top: 50%; transform: translateY(-50%); left: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❮</button>
-                <button onclick="mudarPaginaBatizado(1)" style="position: absolute; top: 50%; transform: translateY(-50%); right: 15px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.1rem;">❯</button>
-              </div>
             </div>
 
-            <!-- SCRIPTS DOS CARROSSEIS -->
+            <!-- REFERÊNCIA EXTERNA GERAL -->
+            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
+                <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
+                    <li>
+                        <strong>NIMUENDAJÚ, Curt.</strong> <em>Os Índios Apapocúva-Guarani</em> (Análise histórica da oniricidade e dos nomes sagrados). 
+                        <a href="https://www.portalguarani.com/649_curt_nimuendaju.html" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Acervo Portal Guaraní)</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SCRIPTS DOS CARROSSEIS E ABAS -->
             <script>
+                // Função para alternar entre os livros por abas
+                function alternarLivro(livro) {
+                    const secaoMongarai = document.getElementById("secao-mongarai");
+                    const secaoBatizado = document.getElementById("secao-batizado");
+                    const btnMongarai = document.getElementById("btn-tab-mongarai");
+                    const btnBatizado = document.getElementById("btn-tab-batizado");
+
+                    if (livro === 'mongarai') {
+                        secaoMongarai.style.display = "block";
+                        secaoBatizado.style.display = "none";
+                        btnMongarai.style.backgroundColor = "#2d6a4f";
+                        btnMongarai.style.color = "white";
+                        btnBatizado.style.backgroundColor = "#e9ecef";
+                        btnBatizado.style.color = "#495057";
+                    } else {
+                        secaoMongarai.style.display = "none";
+                        secaoBatizado.style.display = "block";
+                        btnBatizado.style.backgroundColor = "#2d6a4f";
+                        btnBatizado.style.color = "white";
+                        btnMongarai.style.backgroundColor = "#e9ecef";
+                        btnMongarai.style.color = "#495057";
+                    }
+                }
+
                 // Carrossel Mongarai
                 let paginaAtualMongarai = 0;
                 const paginasMongarai = document.getElementsByClassName("pagina-item");
@@ -309,98 +268,5 @@
                     }
                 }
             </script>
-
-    <!-- SEÇÃO DE REFERÊNCIAS E CRÉDITOS DOS PROFESSORES -->
-            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">
-                <h3 style="color: #2d6a4f; font-size: 1.1rem; margin-bottom: 15px;">📚 Referências, Autores e Educadores Participantes:</h3>
-
-                <!-- LIVRO 1: MONGARAI -->
-                <div style="margin-bottom: 20px; background: #f8f9fa; padding: 12px; border-radius: 6px;">
-                    <h4 style="color: #2d6a4f; font-size: 0.95rem; margin: 0 0 8px 0;">📖 Mongarai - Batizado na Colheita</h4>
-                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
-                        <strong>Professores / Autores:</strong> Jaciara de Souza Gomes, Creiles Marcolino da Silva Nunes e Catarina Delfina dos Santos.
-                    </p>
-                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
-                        <strong>Ilustrações e Participantes:</strong> Abílio S. Martins e Odair Euzébio.
-                    </p>
-                    <p style="color: #555; font-size: 0.82rem; margin: 0;">
-                        <em>Data de publicação / Produção:</em> Acervo pedagógico e cultural do Programa ARTE-IN / FISPI.
-                    </p>
-                </div>
-
-                <!-- LIVRO 2: YY KARAÍ OUPI (BATIZADO) -->
-                <div style="background: #f8f9fa; padding: 12px; border-radius: 6px;">
-                    <h4 style="color: #2d6a4f; font-size: 0.95rem; margin: 0 0 8px 0;">📖 Yy Karaí Oupi - Batizado</h4>
-                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
-                        <strong>Professores / Autores:</strong> Lenira Dina de Oliveira, Tiago de Oliveira, Richard Caetano e Fabiola dos Santos Cirino. (Em articulação com os professores indígenas formados pelo programa SEE/FEUSP).
-                    </p>
-                    <p style="color: #495057; font-size: 0.88rem; line-height: 1.5; margin: 0 0 6px 0;">
-                        <strong>Ilustrações e Participantes:</strong> Sérgio M. da Silva, João Lira da Silva e José Roberto da Silva Santos.
-                    </p>
-                    <p style="color: #555; font-size: 0.82rem; margin: 0;">
-                        <em>Data de publicação / Produção:</em> São Paulo: SEE, FEUSP, 2010.
-                    </p>
-                </div>
-
-                <!-- LINK EXTERNO GERAL -->
-                <div style="margin-top: 15px;">
-                    <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">
-                        <li>
-                            <strong>NIMUENDAJÚ, Curt.</strong> <em>Os Índios Apapocúva-Guarani</em> (Análise histórica da oniricidade e dos nomes sagrados). 
-                            <a href="https://www.portalguarani.com/649_curt_nimuendaju.html" target="_blank" style="color: #2d6a4f; text-decoration: underline; margin-left: 5px;">(Acervo Portal Guaraní)</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-    <!-- MODAL DO CARD 3: A Dinâmica do Ritual (Jeroky) -->  
-    <div id="modal-3" class="modal-overlay">  
-        <div class="modal-conteudo-box" style="max-width: 700px; max-height: 85vh; overflow-y: auto;">  
-            <button class="btn-fechar-modal" onclick="fecharModal('modal-3')">&times;</button>  
-            <h2 style="color:#7c4d29; margin-top:0; font-size: 1.3rem;">A Dinâmica do Ritual (Jeroky)</h2>  
-            
-            <p style="color:#495057; line-height:1.6; margin-top:15px; font-size: 0.95rem;">  
-                O ciclo ritualístico se encerra com o <em>Jeroky ñembo'e</em> (danças e cantos circulares) na Casa de Reza, embalados pelo som cadenciado do <em>mbaraka</em> (chocalho) e do <em>takuapu</em> (bastão rítmico).  
-            </p>  
-
-            <p style="color:#495057; line-height:1.6; margin-top:10px; font-size: 0.95rem;">  
-                Por meio da música, dos passos em círculo e da fumaça do tabaco sagrado (petỹ) soprada pelos rezadores, sementes e participantes são abençoados, selando o ritual e fortalecendo a união coletiva do povo Ñandeva.  
-            </p>
-                 
-            <div style="margin: 20px 0; text-align: center; background-color: #f8f9fa; padding: 10px; border-radius: 8px;">
-                <img src="assets/img/interior-opy.png" alt="Interior da opy principal mostrando o altar yvyra'i e instrumentos rituais" style="width:100%; max-height:450px; object-fit:contain; border-radius:4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                <p style="font-size: 0.82rem; color: #6c757d; margin-top: 8px; font-style: italic; text-align: left;">
-                    Interior da opy principal do cacique José Fernandes: altar (yvyra'i), bastão de reza, maracá e taquara ritualística. Foto: Candida Maria Vuolo (LRAV-FAUUSP).
-                </p>
-            </div>
-
-            <div style="background-color: #fbf6f0; border-left: 4px solid #7c4d29; padding: 12px 15px; margin: 15px 0; border-radius: 4px;">
-                <h4 style="color: #7c4d29; margin: 0 0 5px 0; font-size: 0.95rem;">🏛️ Casa de Reza e Arquitetura Tradicional</h4>
-                <p style="color: #495057; font-size: 0.9rem; line-height: 1.5; margin: 0;">
-                    Casa de reza disponível em: documentação detalhada sobre a estrutura e o uso ritualístico da <em>opy</em> no contexto do <em>Tekoha</em>.
-                </p>
-                <p style="font-size: 0.85rem; margin-top: 8px; margin-bottom: 0;">
-                    <a href="https://revistas.usp.br/posfau/article/download/137037/132826/264403" target="_blank" style="color: #7c4d29; text-decoration: underline; font-weight: bold;">🔗 Acessar Documento Completo na USP</a>
-                </p>
-            </div>
-
-            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid #dee2e6;">  
-                <h3 style="color: #7c4d29; font-size: 1rem; margin-bottom: 10px;">📚 Referências e Autores de Aprofundamento:</h3>  
-                <ul style="color: #495057; font-size: 0.88rem; line-height: 1.6; padding-left: 20px; margin: 0;">  
-                    <li style="margin-bottom: 8px;">  
-                        <strong>CLASTRES, Pierre.</strong> <em>A Fala Sagrada: Mitos e Cantos Sagrados dos Índios Guaraní</em> (Análise aprofundada da palavra, dos cantos coletivos e da dinâmica do ritual).  
-                        <a href="https://www.portalguarani.com/" target="_blank" style="color: #7c4d29; text-decoration: underline; margin-left: 5px;">(Consultar Acervo)</a>  
-                    </li>  
-                    <li style="margin-bottom: 5px;">  
-                        <strong>PEREIRA, Maria Aparecida da Costa.</strong> <em>Investigação sobre os Guarani (Nhandeva e Kaiowá)</em> (Documentação sobre a resistência cultural, a religiosidade e a coesão comunitária).  
-                        <a href="https://www.portalguarani.com/" target="_blank" style="color: #7c4d29; text-decoration: underline; margin-left: 5px;">(Portal Guaraní)</a>  
-                    </li>  
-                </ul>  
-            </div>  
-        </div>  
+        </div>
     </div>
-
-    <!-- SCRIPT DE CONTROLE DOS MODAIS -->
-    <script src="religiao.js"></script>
-</body>
-</html>
