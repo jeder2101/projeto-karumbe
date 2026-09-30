@@ -31,10 +31,10 @@
 
 <body>
 
-    <div class="app-container" id="topo">
+    <div class="app-container">
 
         <!-- =================================================
-            CABEÇALHO
+             CABEÇALHO
         ================================================== -->
         <header class="app-header">
 
@@ -71,7 +71,7 @@
         </header>
 
         <!-- =================================================
-            BUSCA
+             BUSCA
         ================================================== -->
         <section class="barra-busca-wrapper">
 
@@ -90,7 +90,7 @@
         </section>
 
         <!-- =================================================
-            CONTAINER DE RESULTADOS E AVISO DA LINGUAGEM DE RUA
+             CONTAINER DE RESULTADOS E AVISO DA LINGUAGEM DE RUA
         ================================================== -->
         <div id="resultado-busca" class="container-resultados" style="display: none;">
             
@@ -106,7 +106,7 @@
         </div>
 
         <!-- =================================================
-            CATEGORIAS
+             CATEGORIAS
         ================================================== -->
         <main
             id="lista"
@@ -362,98 +362,104 @@
                     </small>
                 </div>
             </button>
-
-            <!-- LINGUAGEM DE RUA (NOVO BOTÃO DE CATEGORIA) -->
-            <button
-                class="card-categoria cat-vermelha"
-                type="button"
-                onclick="solicitarAcessoTabu()"
-            >
-                <div class="icone-wrapper">
-                    <span style="font-size: 1.5rem;">🔒</span>
-                </div>
-
-                <div class="cat-textos">
-                    <span class="cat-nome">
-                        LINGUAGEM DE RUA
-                    </span>
-
-                    <small class="cat-sub">
-                        Tabu Verbal / Uso de Campo
-                    </small>
-
-                    <small
-                        class="cat-aviso"
-                        style="
-                            display: block;
-                            margin-top: 6px;
-                            font-size: 11px;
-                            opacity: 0.85;
-                            color: #ffebee;
-                        "
-                    >
-                        Acesso restrito por senha
-                    </small>
-                </div>
-            </button>
             
-        </main>
 
-        <!-- =================================================
-            HISTÓRIA E RELIGIÃO (CARTÕES ESPECIAIS RESTANTES)
-        ================================================== -->
-        <div class="grupo-cartoes-especiais">
+   <!-- LINGUAGEM DE RUA + HISTÓRIA -->
+<div class="grupo-cartoes-especiais">
 
-            <!-- HISTÓRIA DA LÍNGUA -->
-            <div class="container-card-restrito">
-                <button
-                    class="card-categoria cat-laranja"
-                    type="button"
-                    onclick="window.location.href='historia.html'"
-                >
-                    <div class="icone-wrapper">
-                        <span style="font-size: 1.5rem;">📜</span>
-                    </div>
+    <!-- LINGUAGEM DE RUA / TABU VERBAL -->
+    <div class="container-card-restrito">
 
-                    <div class="cat-textos">
-                        <span class="cat-nome">
-                            HISTÓRIA
-                        </span>
-
-                        <small class="cat-sub">
-                            História e evolução da língua
-                        </small>
-                    </div>
-                </button>
+        <button
+            class="card-categoria cat-vermelha"
+            type="button"
+            onclick="solicitarAcessoTabu()"
+        >
+            <div class="icone-wrapper">
+                <span style="font-size: 1.5rem;">🔒</span>
             </div>
 
-            <!-- RELIGIÃO E COSMOVISÃO -->
-            <div class="container-card-restrito">
-                <button
-                    class="card-categoria cat-verde"
-                    type="button"
-                    onclick="window.location.href='religiao.html'"
+            <div class="cat-textos">
+                <span class="cat-nome">
+                    LINGUAGEM DE RUA
+                </span>
+
+                <small class="cat-sub">
+                    Tabu Verbal / Uso de Campo
+                </small>
+
+                <small
+                    class="cat-aviso"
+                    style="
+                        display: block;
+                        margin-top: 6px;
+                        font-size: 11px;
+                        opacity: 0.85;
+                        color: #ffebee;
+                    "
                 >
-                    <div class="icone-wrapper">
-                        <span style="font-size: 1.5rem;">🔥</span>
-                    </div>
+                    Entre em contato com o administrador
+                    para ter acesso
+                </small>
+            </div>
+        </button>
 
-                    <div class="cat-textos">
-                        <span class="cat-nome">
-                            RELIGIÃO
-                        </span>
+    </div>
 
-                        <small class="cat-sub">
-                            Nhandereko e o Mongarai
-                        </small>
-                    </div>
-                </button>
+
+<!-- HISTÓRIA DA LÍNGUA -->
+    <div class="container-card-restrito">
+        <button
+            class="card-categoria cat-laranja"
+            type="button"
+            onclick="window.location.href='historia.html'"
+        >
+            <div class="icone-wrapper">
+                <span style="font-size: 1.5rem;">📜</span>
             </div>
 
-        </div>
+            <div class="cat-textos">
+                <span class="cat-nome">
+                    HISTÓRIA
+                </span>
+
+                <small class="cat-sub">
+                    História e evolução da língua
+                </small>
+            </div>
+        </button>
+    </div>
+
+
+    <!-- RELIGIÃO E COSMOVISÃO -->
+    <div class="container-card-restrito">
+        <button
+            class="card-categoria cat-verde"
+            type="button"
+            onclick="window.location.href='religiao.html'"
+        >
+            <div class="icone-wrapper">
+                <span style="font-size: 1.5rem;">🔥</span>
+            </div>
+
+            <div class="cat-textos">
+                <span class="cat-nome">
+                    RELIGIÃO
+                </span>
+
+                <small class="cat-sub">
+                    Nhandereko e o Mongarai
+                </small>
+            </div>
+        </button>
+    </div>
+
+</div>
+
+</main>
 
         <!-- =================================================
-            APOIO INSTITUCIONAL
+             APOIO INSTITUCIONAL
         ================================================== -->
         <footer class="secao-apoio">
 
@@ -501,7 +507,7 @@
         </footer>
 
         <!-- =================================================
-            MODAL DE ACESSO RESTRITO (SENHA + EMAIL)
+             MODAL DE ACESSO RESTRITO (SENHA + EMAIL)
         ================================================== -->
         <div id="modal-senha" class="modal-overlay" style="display: none;">
             <div class="modal-caixa">
@@ -528,11 +534,11 @@
     <!-- =================================================
          SCRIPTS DO PROJETO
     ================================================== -->
-    <script src="dicionario.js"></script>
-    <script src="dicionario2.js"></script>
-    <script src="dicionario-rua.js"></script>
-    <script src="mapa.js"></script>
-    <script src="script.js"></script>
+<script src="dicionario.js"></script>
+<script src="dicionario2.js"></script>
+<script src="dicionario-rua.js"></script>
+<script src="mapa.js"></script>
+<script src="script.js"></script>
 
     <!-- =================================================
          REGISTRO DO APLICATIVO
@@ -558,4 +564,4 @@
     </script>
 
 </body>
-</htm
+</html>
