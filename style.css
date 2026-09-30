@@ -2077,3 +2077,26 @@ body {
         font-size: 13px !important;
     }
 }
+/* =====================================================
+   BOTÃO VOLTAR — HISTORIA.HTML
+   Centralizado como anteriormente
+   ===================================================== */
+
+.pagina-historia .area-voltar {
+    position: static !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 30px 0 !important;
+    padding: 0 !important;
+}
+
+.pagina-historia .botao-voltar {
+    position: static !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+}
