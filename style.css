@@ -1184,17 +1184,20 @@ body {
 
 .area-voltar {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-end !important;
+    align-items: center !important;
     
-    /* Propriedades para fixar na tela */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999; /* Garante que fique acima de outros elementos */
-    margin: 0;
-    padding-right: 20px;
+    /* Fixa na tela */
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+    top: auto !important;
+    
+    width: auto !important; /* Deixa o tamanho ajustado ao conteúdo */
+    z-index: 9999 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 
