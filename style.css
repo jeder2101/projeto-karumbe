@@ -306,7 +306,7 @@ body {
     margin: 10px auto;
 }
 
-.voltar {
+. {
     width: fit-content;
     padding: 10px 18px;
     border-radius: 20px;
@@ -1179,18 +1179,22 @@ body {
 
 
 /* =====================================================
-   ÁREA DO BOTÃO VOLTAR
+   ÁREA DO BOTÃO 
 ===================================================== */
 
 .area-voltar {
     display: flex;
-
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
     width: 100%;
-
-    margin: 45px 0 20px;
+    
+    /* Propriedades para fixar na tela */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Garante que fique acima de outros elementos */
+    margin: 0;
+    padding-right: 20px;
 }
 
 
