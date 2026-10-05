@@ -4,7 +4,7 @@
    ========================================================= */
 const HISTORIAS_LINGUA = [
   {
-  
+
      id: 1,
     categoria: "Apresentação",
     titulo: "A língua é memória, identidade e transformação",
