@@ -172,10 +172,10 @@ As pesquisas atuais aprofundam as relações entre
 passado e presente. E a memória das famílias preserva
 o que nem sempre aparece nos livros.
 Neste projeto, distinguimos:
-📜 DOCUMENTADO — Fontes verificáveis e pesquisas acadêmicas
-💬 MEMÓRIA FAMILIAR — Saberes transmitidos oralmente
-🔍 EM PESQUISA — Dados em fase de comparação
-💡 HIPÓTESE — Interpretações a serem confirmadas
+DOCUMENTADO — Fontes verificáveis e pesquisas acadêmicas
+MEMÓRIA FAMILIAR — Saberes transmitidos oralmente
+EM PESQUISA — Dados em fase de comparação
+HIPÓTESE — Interpretações a serem confirmadas
 O Nhandewa não pertence apenas aos registros do passado.
 É uma língua que caminhou com seu povo, atravessou
 rios e gerações, conserva memórias e continua se
