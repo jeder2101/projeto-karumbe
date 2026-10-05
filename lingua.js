@@ -1357,82 +1357,45 @@ function escaparHTML(texto) {
 }
 
 function formatarConteudo(texto) {
-  if (!texto) return "";
-
-  let resultado = texto;
-
-  // =========================================================
-  // PASSO 1 — Isolar TODOS os blocos iniciados com 📌
-  // Aplica do id 1 até o id 12 e qualquer id futuro
-  // =========================================================
-  const blocosEspeciais = [];
-
-  // Padrão: captura qualquer bloco começando com 📌,
-  // para quando encontrar nova seção, novo 📌, separador ou fim
-  const padraoBlocoEspecial = /^📌[^\n]*[\s\S]*?(?=\n{2,}[A-ZÁ-Ú][A-ZÁ-Ú0-9 .]{4,}:|\n{2,}(?=📌|---+$)|$)/gm;
-
-  resultado = resultado.replace(padraoBlocoEspecial, (blocoCompleto) => {
-    const chave = `__BLOCO_ESPECIAL_${blocosEspeciais.length}__`;
-    blocosEspeciais.push(blocoCompleto);
-    return chave;
-  });
-
-  // =========================================================
-  // PASSO 2 — Escapar TODO o conteúdo restante
-  // =========================================================
-  resultado = escaparHTML(resultado);
-
-  // =========================================================
-  // PASSO 3 — Reinserir blocos formatados em <pre>
-  // =========================================================
-  blocosEspeciais.forEach((bloco, indice) => {
-    const chave = `__BLOCO_ESPECIAL_${indice}__`;
-    const conteudoSeguro = escaparHTML(bloco);
-    const blocoHTML = `<pre style="
-      font-family: 'Courier New', Courier, monospace;
-      line-height: 1.8;
-      margin: 1em 0;
-      padding: 12px 16px;
-      background: rgba(0,0,0,0.04);
-      border-radius: 8px;
-      overflow-x: auto;
-      white-space: pre;
-    ">${conteudoSeguro}</pre>`;
-    resultado = resultado.replaceAll(chave, blocoHTML);
-  });
-
-  // =========================================================
-  // PASSO 4 — Formatar parágrafos, linhas e destaques
-  // Funciona igualmente para todos os registros
-  // =========================================================
-  resultado = resultado
-    .trim()
-    .split(/\n{2,}/)
-    .map(paragrafo => {
-      // Bloco já formatado → retorna como está
-      if (paragrafo.startsWith("<pre")) {
-        return paragrafo;
-      }
-
-      // Linhas normais com quebra e destaque
-      const linhas = paragrafo
-        .split("\n")
-        .map(linha => {
-          const limpa = linha.trim();
-          if (/^(EXEMPLO|📌)\s*/i.test(limpa)) {
-            return `<span class="destaque-exemplo" style="font-weight:bold;display:block;margin:0.5em 0;">${linha}</span>`;
-          }
-          return linha;
-        })
-        .join("<br>");
-
-      return `<p>${linhas}</p>`;
-    })
-    .join("");
-
-  return resultado;
+  // Captura QUALQUER bloco que comece com 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
+  // e vai até encontrar 2 quebras de linha ou o fim do texto
+  const trechos = texto.split(/(📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n{2,}|\n[A-Z0-9]|$|$))/);
+  
+  return trechos.map(trecho => {
+    // Verifica se este trecho é uma tabela de correspondência
+    if (/📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(trecho)) {
+      const seguro = escaparHTML(trecho);
+      return `<pre style="
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.8;
+        margin: 1em 0;
+        padding: 12px 16px;
+        background: rgba(0,0,0,0.04);
+        border-radius: 8px;
+        overflow-x: auto;
+        white-space: pre;
+      ">${seguro}</pre>`;
+    }
+    
+    // Texto normal — formata como antes
+    return escaparHTML(trecho)
+      .trim()
+      .split(/\n{2,}/)
+      .map(paragrafo => {
+        const linhas = paragrafo
+          .split("\n")
+          .map(linha => {
+            if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+              return `<span class="destaque-exemplo">${linha}</span>`;
+            }
+            return linha;
+          })
+          .join("<br>");
+        return `<p>${linhas}</p>`;
+      })
+      .join("");
+  }).join("");
 }
-
 
 
 
