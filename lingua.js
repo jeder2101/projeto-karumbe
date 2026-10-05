@@ -1642,45 +1642,58 @@ function escaparHTML(texto) {
 }
 
 function formatarConteudo(texto) {
-  // Captura QUALQUER bloco que comece com 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
-  // e vai até encontrar 2 quebras de linha ou o fim do texto
-  const trechos = texto.split(/(📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n{2,}|\n[A-Z0-9]|$|$))/);
-  
-  return trechos.map(trecho => {
-    // Verifica se este trecho é uma tabela de correspondência
-    if (/📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(trecho)) {
-      const seguro = escaparHTML(trecho);
-      return `<pre style="
-        font-family: 'Courier New', Courier, monospace;
-        line-height: 1.8;
-        margin: 1em 0;
-        padding: 12px 16px;
-        background: rgba(0,0,0,0.04);
-        border-radius: 8px;
-        overflow-x: auto;
-        white-space: pre;
-      ">${seguro}</pre>`;
-    }
-    
-    // Texto normal — formata como antes
-    return escaparHTML(trecho)
-      .trim()
-      .split(/\n{2,}/)
-      .map(paragrafo => {
-        const linhas = paragrafo
-          .split("\n")
-          .map(linha => {
-            if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
-              return `<span class="destaque-exemplo">${linha}</span>`;
-            }
-            return linha;
-          })
-          .join("<br>");
-        return `<p>${linhas}</p>`;
-      })
-      .join("");
-  }).join("");
+  // Primeiro: protege TODAS as tabelas antes de qualquer formatação
+  let resultado = texto;
+
+  // Expressão que encontra QUALQUER bloco de correspondência
+  const padraoTabela = /📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n\n\n|\n[A-Z][A-Z0-9 .]{5,}:|$)/g;
+
+  // Substitui cada tabela pela versão formatada corretamente
+  resultado = resultado.replace(padraoTabela, function(blocoCompleto) {
+    // Escapa e envolve com <pre> — PRESERVA espaços e alinhamento
+    const seguro = escaparHTML(blocoCompleto);
+    return `\n<PRE-TABELA>${seguro}</PRE-TABELA>\n`;
+  });
+
+  // Agora formata o resto do texto normalmente
+  resultado = resultado
+    .trim()
+    .split(/\n{2,}/)
+    .map(paragrafo => {
+      // Se for uma tabela protegida, converte para o HTML final
+      if (paragrafo.startsWith("<PRE-TABELA>")) {
+        const conteudo = paragrafo
+          .replace("<PRE-TABELA>", "")
+          .replace("</PRE-TABELA>", "");
+        return `<pre style="
+          font-family: 'Courier New', Courier, monospace;
+          line-height: 1.8;
+          margin: 1em 0;
+          padding: 12px 16px;
+          background: rgba(0,0,0,0.04);
+          border-radius: 8px;
+          overflow-x: auto;
+          white-space: pre;
+        ">${conteudo}</pre>`;
+      }
+
+      // Parágrafo normal
+      const linhas = paragrafo
+        .split("\n")
+        .map(linha => {
+          if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+            return `<span class="destaque-exemplo">${linha}</span>`;
+          }
+          return escaparHTML(linha);
+        })
+        .join("<br>");
+      return `<p>${linhas}</p>`;
+    })
+    .join("");
+
+  return resultado;
 }
+
 
 
 
