@@ -519,11 +519,11 @@ direta letra por letra:
 
 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
 
-  Tupi       Guarani      Nhandewa-Guarani    Significado
-  kwarasy →  kwarahy   →  kwaray       =     sol
-  asab    →  aha       →  aa           =     eu vou
-  ambyasy →  ambyahy   →  ambyay       =     fome
-  kwese   →  kwehe     →  kweé         =     ontem
+Tupi      Guarani      Nhandewa-Guarani    Significado
+kwarasy → kwarahy     → kwaray             = sol
+asab    → aha         → aa                 = eu vou
+ambyasy → ambyahy     → ambyay             = fome
+kwese   → kwehe       → kweé               = ontem
 
 A mudança de hy → y, de he → é e de b → zero em
 ambiente final segue lógica semelhante: perda de
