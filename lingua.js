@@ -1320,33 +1320,25 @@ nas mãos de quem a ensina e de quem a aprende.
 ];
 
 
-
 /* =========================================================
    FECHAR HISTÓRIA (CORREÇÃO ESSENCIAL)
    ========================================================= */
-
 function fecharHistoria(event) {
   if (event) {
     event.preventDefault();
     event.stopPropagation();
   }
-
   const modal = document.getElementById("modal-historia");
-
   if (!modal) {
     return;
   }
-
   modal.classList.remove("ativo");
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-aberto");
 }
-
-
 /* =========================================================
    FUNÇÕES AUXILIARES
    ========================================================= */
-
 function escaparHTML(texto) {
   return String(texto ?? "")
     .replaceAll("&", "&amp;")
@@ -1355,50 +1347,24 @@ function escaparHTML(texto) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
-
 function formatarConteudo(texto) {
-  // Captura QUALQUER bloco que comece com 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
-  // e vai até encontrar 2 quebras de linha ou o fim do texto
-  const trechos = texto.split(/(📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n{2,}|\n[A-Z0-9]|$|$))/);
-  
-  return trechos.map(trecho => {
-    // Verifica se este trecho é uma tabela de correspondência
-    if (/📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(trecho)) {
-      const seguro = escaparHTML(trecho);
-      return `<pre style="
-        font-family: 'Courier New', Courier, monospace;
-        line-height: 1.8;
-        margin: 1em 0;
-        padding: 12px 16px;
-        background: rgba(0,0,0,0.04);
-        border-radius: 8px;
-        overflow-x: auto;
-        white-space: pre;
-      ">${seguro}</pre>`;
-    }
-    
-    // Texto normal — formata como antes
-    return escaparHTML(trecho)
-      .trim()
-      .split(/\n{2,}/)
-      .map(paragrafo => {
-        const linhas = paragrafo
-          .split("\n")
-          .map(linha => {
-            if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
-              return `<span class="destaque-exemplo">${linha}</span>`;
-            }
-            return linha;
-          })
-          .join("<br>");
-        return `<p>${linhas}</p>`;
-      })
-      .join("");
-  }).join("");
+  return escaparHTML(texto)
+    .trim()
+    .split(/\n{2,}/)
+    .map(paragrafo => {
+      const linhas = paragrafo
+        .split("\n")
+        .map(linha => {
+          if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+            return `<span class="destaque-exemplo">${linha}</span>`;
+          }
+          return linha;
+        })
+        .join("<br>");
+      return `<p>${linhas}</p>`;
+    })
+    .join("");
 }
-
-
-
 
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
@@ -1406,53 +1372,41 @@ function classeTipo(tipo, categoria) {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
-
     const t = (tipo || "")
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
-
     // A categoria é a referência principal para definir a cor.
     if (cat.includes("apresentacao")) {
         return "historia-apresentacao";
     }
-
     if (cat.includes("historia")) {
         return "historia-historia";
     }
-
     if (cat.includes("transformacoes")) {
         return "historia-transformacoes";
     }
-
     if (cat.includes("sons")) {
         return "historia-sons";
     }
-
     if (cat.includes("gramatica")) {
         return "historia-gramatica";
     }
-
     if (cat.includes("continuidade")) {
         return "historia-continuidade";
     }
-
     return "historia-continuidade";
 }
-
 /* =========================================================
    MOSTRAR HISTÓRIAS
    ========================================================= */
-
 function mostrarHistorias(lista = HISTORIAS_LINGUA) {
   const container = document.getElementById("lista-historias");
-
   if (!container) {
     console.warn("Elemento #lista-historias não encontrado.");
     return;
   }
-
   if (!lista.length) {
     container.innerHTML = `
       <div class="historia-vazia">
@@ -1461,7 +1415,6 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
     `;
     return;
   }
-
 container.innerHTML = lista.map(item => `
     <article
       class="card-historia ${classeTipo(item.tipo, item.categoria)}"
@@ -1470,19 +1423,15 @@ container.innerHTML = lista.map(item => `
       aria-label="Abrir: ${escaparHTML(item.titulo)}"
       onclick="abrirHistoria(${item.id})"
       onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); abrirHistoria(${item.id}); }">
-
       <span class="historia-categoria">
         ${escaparHTML(item.categoria)}
       </span>
-
       <h3>
         ${escaparHTML(item.titulo)}
       </h3>
-
       <p class="historia-resumo">
         ${escaparHTML(item.resumo)}
       </p>
-
       <div class="historia-meta">
         <span>
           ${escaparHTML(item.periodo)}
@@ -1491,7 +1440,6 @@ container.innerHTML = lista.map(item => `
           ${escaparHTML(item.tipo)}
         </span>
       </div>
-
       <button
         class="botao-historia"
         type="button"
@@ -1501,30 +1449,23 @@ container.innerHTML = lista.map(item => `
     </article>
   `).join("");
 }
-
-
 /* =========================================================
    ABRIR HISTÓRIA
    ========================================================= */
-
 function abrirHistoria(id) {
   const item = HISTORIAS_LINGUA.find(
     historia => historia.id === id
   );
-
   if (!item) {
     console.warn("História não encontrada:", id);
     return;
   }
-
   const modal = document.getElementById("modal-historia");
   const conteudo = document.getElementById("conteudo-historia");
-
   if (!modal || !conteudo) {
     console.warn("Elementos do modal não encontrados.");
     return;
   }
-
   const linksHTML =
     item.links && item.links.length
       ? `
@@ -1545,16 +1486,13 @@ function abrirHistoria(id) {
         </div>
       `
       : "";
-
   conteudo.innerHTML = `
     <span class="historia-categoria">
       ${escaparHTML(item.categoria)}
     </span>
-
     <h2>
       ${escaparHTML(item.titulo)}
     </h2>
-
     <div class="historia-meta">
       <span>
         ${escaparHTML(item.periodo)}
@@ -1563,12 +1501,10 @@ function abrirHistoria(id) {
         ${escaparHTML(item.tipo)}
       </span>
     </div>
-
     <p class="historia-resumo">
       <strong>Resumo:</strong><br>
       ${escaparHTML(item.resumo)}
     </p>
-
     <div class="texto-historia">
       ${formatarConteudo(item.conteudo)}
       
@@ -1594,38 +1530,30 @@ function abrirHistoria(id) {
         </section>
       ` : ""}
     </div>
-
     <div class="historia-fonte">
       <strong>Fonte:</strong>
       <p>
         ${escaparHTML(item.fonte || "Fonte em estudo.")}
       </p>
     </div>
-
     ${linksHTML}
   `;
-
   modal.classList.add("ativo");
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-aberto");
 }
-
-
 /* =========================================================
    FILTRO DE PESQUISA
    ========================================================= */
-
 function filtrarHistorias(termo = "") {
   const busca = String(termo)
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
-
   if (!busca) {
     mostrarHistorias(HISTORIAS_LINGUA);
     return;
   }
-
   const resultado = HISTORIAS_LINGUA.filter(item => {
     const texto = `
       ${item.titulo}
@@ -1638,53 +1566,40 @@ function filtrarHistorias(termo = "") {
       .toLowerCase()
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
-
     return texto.includes(busca);
   });
-
   mostrarHistorias(resultado);
 }
-
-
 /* =========================================================
    FILTRO POR CATEGORIA
    ========================================================= */
-
 function filtrarCategoriaHistoria(categoria) {
   if (!categoria || categoria.toLowerCase() === "todas") {
     mostrarHistorias(HISTORIAS_LINGUA);
     return;
   }
-
   const resultado = HISTORIAS_LINGUA.filter(
     item => item.categoria === categoria
   );
-
   mostrarHistorias(resultado);
 }
-
-
 /* =========================================================
    INICIALIZAÇÃO
    ========================================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
   mostrarHistorias(); // <-- Devolva esta linha aqui
-
   const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
     campoPesquisa.addEventListener("input", event => {
       filtrarHistorias(event.target.value);
     });
   }
-
   const botaoFechar = document.getElementById("fechar-modal-historia");
   if (botaoFechar) {
     botaoFechar.addEventListener("click", event => {
       fecharHistoria(event);
     });
   }
-
   const modal = document.getElementById("modal-historia");
   if (modal) {
     modal.addEventListener("click", event => {
@@ -1693,7 +1608,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
   document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
       fecharHistoria();
