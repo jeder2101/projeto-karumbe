@@ -10,54 +10,124 @@ const HISTORIAS_LINGUA = [
     id: 1,
     categoria: "Apresentação",
     titulo: "A língua é memória, identidade e transformação",
-
     resumo:
-        "A língua Nhandewa é memória, identidade, conhecimento e continuidade. Sua história pode ser estudada por meio da oralidade, dos registros escritos e das pesquisas linguísticas.",
-
+        "A língua Nhandewa-Guarani é memória, identidade, conhecimento e continuidade. Sua história se manifesta na oralidade, nos registros escritos e nas pesquisas, mantendo-se viva entre gerações.",
     conteudo: `
-A língua Nhandewa-Guarani não é apenas um conjunto de palavras.
-Ela carrega conhecimentos, histórias, relações familiares,
-espiritualidade, modos de viver e formas de compreender o mundo.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. MAIS DO QUE PALAVRAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A língua é transmitida entre gerações e pode apresentar
-variações de pronúncia, grafia, estrutura e significado.
+A língua Nhandewa-Guarani não é apenas um conjunto de sons
+e palavras. Ela carrega consigo a memória dos povos, as
+relações entre famílias, a espiritualidade, os saberes
+tradicionais e as formas próprias de compreender e habitar
+o mundo.
+
+É por meio da língua que se transmite o que significa
+pertencer, compartilhar, lembrar e recriar. Por isso,
+dizemos: a língua é memória, é identidade, é relação.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. UMA LÍNGUA EM MOVIMENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A língua é viva. Ela é transmitida entre gerações e,
+ao longo do caminho, pode apresentar variações — na
+pronúncia, na grafia, nas estruturas e nos sentidos
+que as palavras adquirem.
+
+Isso não significa perda ou desvio: faz parte da
+natureza de toda língua falada. O que permanece é
+a continuidade — o fio que une as gerações, mesmo
+quando as formas se transformam.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. CONHECIMENTO E PESQUISA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Os registros históricos e os estudos linguísticos ajudam
-a compreender aspectos da língua, mas devem ser analisados
-considerando a comunidade, o período e o contexto em que
-foram produzidos.
+a compreender as camadas da língua, mas devem ser sempre
+analisados considerando a comunidade, o tempo e o contexto
+em que foram produzidos.
 
-O trabalho de Consuelo de Paiva Godinho Costa contribui
-para o estudo da fonologia do Nhandewa-Guarani, incluindo
-a análise dos sons e de fenômenos relacionados à nasalidade.
+O trabalho de **Consuelo de Paiva Godinho Costa** é uma
+referência central:
+  • "Nhandewa Aywu: fonologia do Nhandewa-Guarani" (2003/2010)
+    — primeira sistematização completa da fonologia do dialeto
+  • Artigo na revista LIAMES (2012)
+    — análise dos sons, da nasalidade e das estruturas próprias
+    do Nhandewa falado em comunidades de São Paulo e do Paraná
 
-O Projeto Karumbé reúne materiais, referências e reflexões
-com o objetivo de apoiar a pesquisa, o ensino e a continuidade
-da língua Guarani Nhandewa.
+Esses estudos mostram como a língua organiza seus sons,
+seu ritmo e sua harmonia — em especial a nasalidade,
+característica marcante que distingue o Nhandewa.
 
-A língua permanece viva por meio dos seus falantes,
-dos conhecimentos dos mais velhos, dos professores,
-das crianças e das novas gerações.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. O PROJETO KARUMBÉ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Este espaço — o Projeto Karumbé — reúne materiais,
+referências, mapas e reflexões com um objetivo:
+  ✅ apoiar a pesquisa
+  ✅ fortalecer o ensino
+  ✅ contribuir para a continuidade da língua
+  ✅ dar visibilidade ao conhecimento dos falantes
+
+Não se trata apenas de guardar o passado, mas de
+manter a língua presente, acessível e viva.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. QUEM FAZ A LÍNGUA VIVA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A língua não está nos livros — está nas pessoas:
+
+  👴 Os mais velhos que guardam as histórias,
+     as palavras antigas e os saberes profundos
+
+  👩‍🏫 Os professores que levam a língua às escolas
+     e às aldeias com dedicação
+
+  👧 As crianças que aprendem, falam e recriam
+     a língua todos os dias
+
+  👨‍👩‍👧‍👦 As famílias que transmitem o Nhandewa
+     no dia a dia, em casa, nas reuniões,
+     nas caminhadas e nas festas
+
+A língua permanece enquanto houver quem a fale,
+a escute e a passe adiante. Ela não pertence
+aos registros — pertence ao caminhar.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PALAVRA FINAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Estudar a língua Nhandewa-Guarani é reconhecer
+que ela é memória que se renova, identidade que
+se afirma e transformação que continua. Cada
+palavra falada hoje é também a voz de quem
+caminhou antes e de quem caminhará depois.
 `,
-
-    
-    fonte: "Projeto Karumbé e estudos linguísticos do Nhandewa-Guarani",
-
-  links: [
-    {
-        titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
-        url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
-    },
-    {
-        titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
-        url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
-    },
-    {
-        titulo: "Deslocamento dos nativos brasileiros – Mapa histórico dos deslocamentos Guarani",
-        url: "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/demarcacao-de-terras-indigenas/contestacoes-administrativas/RCID_Ygua_Pora___FINAL___abril_2023_compressed.pdf"
-    }
-]
+    tipo: "documentado",
+    fonte:
+        "Projeto Karumbé; Consuelo de Paiva Godinho Costa — Nhandewa Aywu (2003/2010) e Fonologia do Nhandewa-Guarani Paulista-Paranaense (2012); Museu Nacional dos Povos Indígenas; Revista LIAMES/UNICAMP.",
+    links: [
+        {
+            titulo: "Nhandewa Aywu – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani – Revista LIAMES/Unicamp",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Mapa dos deslocamentos – RCID Ygua Pora / FUNAI",
+            url: "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/demarcacao-de-terras-indigenas/contestacoes-administrativas/RCID_Ygua_Pora___FINAL___abril_2023_compressed.pdf"
+        }
+    ]
 },
+
 {
     id: 2,
     categoria: "História da língua",
