@@ -82,16 +82,16 @@ manter a língua presente, acessível e viva.
 
 A língua não está nos livros — está nas pessoas:
 
-  👴 Os mais velhos que guardam as histórias,
+   Os mais velhos que guardam as histórias,
      as palavras antigas e os saberes profundos
 
-  👩‍🏫 Os professores que levam a língua às escolas
+   Os professores que levam a língua às escolas
      e às aldeias com dedicação
 
-  👧 As crianças que aprendem, falam e recriam
+   As crianças que aprendem, falam e recriam
      a língua todos os dias
 
-  👨‍👩‍👧‍👦 As famílias que transmitem o Nhandewa
+   As famílias que transmitem o Nhandewa
      no dia a dia, em casa, nas reuniões,
      nas caminhadas e nas festas
 
@@ -520,10 +520,10 @@ direta letra por letra:
 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
 
   Tupi       Guarani      Nhandewa-Guarani    Significado
-  kwarasy    kwarahy      kwaray              sol
-  asab       aha          aa                  eu vou
-  ambyasy    ambyahy      ambyay              fome
-  kwese      kwehe        kweé                ontem
+  kwarasy →  kwarahy   →  kwaray       =     sol
+  asab    →  aha       →  aa           =     eu vou
+  ambyasy →  ambyahy   →  ambyay       =     fome
+  kwese   →  kwehe     →  kweé         =     ontem
 
 A mudança de hy → y, de he → é e de b → zero em
 ambiente final segue lógica semelhante: perda de
@@ -603,11 +603,11 @@ Isso não é apenas detalhe de escrita: muda o sentido.
 
 📌 EXEMPLOS DE VOGAL NASAL:
 
-  pytã      vermelho / rosa / roxo
-  kwã       dedo
-  tupã      trovão / divindade
-  puru'ã    umbigo
-  mã'e      olhar
+  pytã   →   vermelho / rosa / roxo
+  kwã    →   dedo
+  tupã   →   trovão / divindade
+  puru'ã →   umbigo
+  mã'e   →   olhar
 
 A vogal nasal pode também influenciar as consoantes
 vizinhas: /mb/ realiza-se como [m] e /nd/ como [n]
@@ -632,11 +632,11 @@ oral ou nasal. A grafia varia conforme a convenção:
 
 📌 EXEMPLOS DA VOGAL CENTRAL:
 
-  txe       eu (homem fala)
-  txi       eu (mulher fala) — vogal central alta
-  ky'y      pimenta
-  pytü      ficar
-  pytũ      vermelho / rosa — nasalizada
+  txe    →   eu (homem fala)
+  txi    →   eu (mulher fala) — vogal central alta
+  ky'y   →   pimenta
+  pytü   →   ficar
+  pytũ   →   vermelho / rosa — nasalizada
 
 A mesma vogal central pode aparecer nasalizada:
   [tʃẽʔɨ]   eu (oral)
