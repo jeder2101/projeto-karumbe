@@ -576,92 +576,160 @@ sua história — ela a recria em cada geração.
     id: 5,
     categoria: "Sons",
     periodo: "Nasalidade e escrita",
-    titulo: "Mõ, mü e mu",
-
+    titulo: "Mõ, mü e mu — vogais nasais, orais e representação",
     resumo:
-        "As formas mõ, mü e mu permitem estudar as diferenças entre vogais nasais, vogais orais e as formas de representação dos sons na escrita Nhandewa-Guarani.",
-
+        "As formas mõ, mü e mu ilustram como a nasalidade e a posição da vogal se refletem na escrita e na fala; no Nhandewa-Guarani, a oposição oral/nasal é fundamental e pode alterar o sentido da palavra.",
     conteudo: `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. ESCREVER O QUE SE FALA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 A escrita de uma língua procura representar os sons
-utilizados pelos seus falantes.
+utilizados pelos seus falantes. No Nhandewa-Guarani,
+a nasalidade é um traço fonológico fundamental:
+ela distingue palavras com sentidos diferentes e
+se espalha ao longo das sílabas.
 
-No Nhandewa-Guarani, a nasalidade é um aspecto
-importante da fonologia. Ela pode estar relacionada
-às vogais e às consoantes e deve ser analisada
-considerando a palavra e o contexto de pronúncia.
+A oposição **oral × nasal** é a principal distinção
+entre vogais nesta língua — mais do que altura ou
+ponto de articulação.
 
-As formas mõ, mü e mu podem ser utilizadas como
-ponto de partida para estudar diferenças de escrita,
-pronúncia e nasalidade.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. MÕ — VOGAL NASAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-É necessário verificar, em cada registro, se a forma
-apresenta uma vogal nasal, uma vogal oral ou uma
-variação de representação.
+O til (~) sobre a vogal õ indica que ela é **nasal**.
+Isso não é apenas detalhe de escrita: muda o sentido.
 
-EXEMPLO 1 — A FORMA MÕ
+📌 EXEMPLOS DE VOGAL NASAL:
 
-A letra ã, ẽ, ĩ, õ ou ũ pode representar uma vogal
-nasalizada, conforme o sistema de escrita utilizado.
+  pytã      vermelho / rosa / roxo
+  kwã       dedo
+  tupã      trovão / divindade
+  puru'ã    umbigo
+  mã'e      olhar
 
-Na forma mõ, o sinal sobre a vogal õ indica que
-ela deve ser estudada como uma vogal nasal.
+A vogal nasal pode também influenciar as consoantes
+vizinhas: /mb/ realiza-se como [m] e /nd/ como [n]
+quando seguida de vogal nasal.
 
-A pronúncia deve ser conferida com falantes
-Nhandewa e com a fonte linguística correspondente.
+  [mba'e]   coisa, o que     → oral → mb
+  [mã'e]    olhar            → nasal → m
 
-EXEMPLO 2 — A FORMA MÜ
+  [nde]     tua, seu          → oral → nd
+  [nẽ]      teu(s)            → nasal → n
 
-A forma mü deve ser analisada de acordo com
-o sistema ortográfico e a fonte em que aparece.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. MÜ — A VOGAL CENTRAL ALTA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O sinal utilizado sobre a vogal pode representar
-uma característica específica da escrita ou da
-pronúncia.
+A forma **mü** envolve a vogal **central alta /ɨ/** —
+chamada "sexta vogal" do Guarani — que pode ser
+oral ou nasal. A grafia varia conforme a convenção:
 
-Não devemos afirmar seu significado ou sua
-pronúncia exata sem consultar o registro original.
+  • ü ou ˆ → vogal central alta **oral**
+  • ũ ou  ̃ˆ → vogal central alta **nasal**
 
-EXEMPLO 3 — A FORMA MU
+📌 EXEMPLOS DA VOGAL CENTRAL:
 
-A forma mu deve ser comparada com mõ e mü
-observando a escrita, a pronúncia e o significado.
+  txe       eu (homem fala)
+  txi       eu (mulher fala) — vogal central alta
+  ky'y      pimenta
+  pytü      ficar
+  pytũ      vermelho / rosa — nasalizada
 
-A ausência de um sinal de nasalidade na escrita
-não deve ser interpretada automaticamente como
-prova de que todas as realizações são iguais.
+A mesma vogal central pode aparecer nasalizada:
+  [tʃẽʔɨ]   eu (oral)
+  [tʃẽʔĩ]   — em contexto nasal, sofre influência
 
-É necessário verificar como a palavra é pronunciada
-na comunidade e como foi registrada na gramática
-ou no vocabulário.
+⚠️ O sinal sobre a vogal não é sempre o mesmo:
+  • Nimuendajú usava y para a vogal central
+  • Em convenções recentes, pode aparecer como ɨ, ü, ĩ, ũ
+  • A grafia depende da decisão de cada comunidade
 
-EXEMPLO 4 — A IMPORTÂNCIA DA NASALIDADE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. MU — VOGAL ORAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Os estudos de Consuelo de Paiva Godinho Costa
-descrevem fenômenos de nasalidade no
-Nhandewa-Guarani.
+A ausência de til indica vogal **oral**. Comparando:
 
-A nasalidade pode espalhar-se entre segmentos
-em determinados contextos. Por isso, a análise
-de uma palavra deve considerar os sons vizinhos,
-a sílaba, o acento e a estrutura da palavra.
+  mu        (vogal u oral)
+  mõ        (vogal o nasal)
+  mü / mũ   (vogal central alta, oral ou nasal)
 
-A escrita é uma ferramenta importante para
-preservar e ensinar a língua, mas deve estar
-relacionada ao conhecimento dos falantes
-e às pesquisas linguísticas.
+📌 COMPARAÇÃO — oral × nasal:
 
-As formas mõ, mü e mu devem ser confirmadas
-com a fonte específica utilizada pela comunidade.
-Este registro é apresentado como material
-de pesquisa e não como uma regra definitiva
-de pronúncia ou significado.
+  pyta      ficar             → oral
+  pytã      vermelho          → nasal ✅ sentido diferente
+
+  tupa      cama              → oral
+  tupã      trovão / Deus     → nasal ✅ sentido diferente
+
+  kunha     — (variação)
+  kunhã     mulher            → nasal
+
+  pora      —
+  porã      bom, belo         → nasal ✅ muito comum
+
+A escrita sem til **não significa** que nunca sofre
+influência nasal: a harmonia nasal pode espalhar
+a nasalidade de uma sílaba para outra, mesmo sem
+sinal gráfico visível em todas as vogais.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. NASALIDADE QUE SE ESPALHA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O Nhandewa-Guarani tem **harmonia nasal**: a nasalidade
+se transmite de sílaba em sílaba, atravessando consoantes.
+
+📌 EXEMPLO DE ESPALHAMENTO:
+
+  kuñã + kwé → kuñãngwé
+  "mulher" + "coletivo" → "mulherada"
+
+A nasalidade de ã influencia o k seguinte, que
+passa a ser pronunciado como ng.
+
+📌 ALTERNÂNCIA CONSOANTAL:
+
+  [mba'e]   coisa      → oral → mb
+  [mã'e]    olhar      → nasal → m
+
+  [ndé]     teu        → oral → nd
+  [nẽ]      teu        → nasal → n
+
+  [j-]      (início)   → oral → dj-
+  [ʲ̃-]      (início)   → nasal → ñ-
+
+A mesma raiz muda de forma conforme o ambiente
+nasal ou oral. Por isso, a escrita isolada de uma
+letra não conta toda a história.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. ESCREVER É DECIDIR JUNTOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Não existe uma única "forma certa" de escrever:
+  • Nimuendajú: usava y para a vogal central
+  • Montoya (século XVII): grafias próprias da época
+  • Convenções atuais: decididas pelas comunidades
+    com seus professores e lideranças
+
+O importante não é copiar um registro antigo,
+mas compreender **por que** a forma muda:
+  ✅ posição da vogal
+  ✅ ambiente nasal ou oral
+  ✅ decisão ortográfica da comunidade
+  ✅ tradição de cada família e aldeia
+
+As formas mõ, mü e mu são caminhos de estudo,
+não regras fixas. A pronúncia viva está sempre
+nas vozes de quem fala.
 `,
-
     tipo: "em estudo",
-
     fonte:
-        "Consuelo de Paiva Godinho Costa, Apyngwa rupigwa: nasalização em Nhandewa-Guarani (2007), e Fonologia do Nhandewa-Guarani Paulista-Paranaense.",
-
+        "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, p.75–97, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, 2003/2010.",
     links: [
         {
             titulo: "Apyngwa rupigwa — Nasalização em Nhandewa-Guarani",
@@ -675,144 +743,118 @@ de pronúncia ou significado.
 },
 
 
+
 {
     id: 6,
     categoria: "Sons",
     periodo: "Nasalidade",
     titulo: "A relação entre R e N em ambiente nasal",
-
     resumo:
-        "No Nhandewa-Guarani, o som representado por R pode apresentar nasalização em determinados contextos. Em fala rápida, essa realização pode ser confundida com N, fenômeno descrito em estudos fonológicos.",
-
+        "No Nhandewa-Guarani, o segmento /r/ pode ser nasalizado em contexto de harmonia nasal. Em fala rápida, essa realização pode confundir-se com [n], mas não são fonemas idênticos — trata-se de um tap nasalizado, não de uma mudança definitiva de R para N.",
     conteudo: `
-A relação entre R e N em ambiente nasal é um tema
-importante para o estudo da fonologia Nhandewa-Guarani.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Consuelo de Paiva Godinho Costa descreve o segmento
-/r/ como parte do sistema fonológico do Nhandewa.
+O /r/ no Nhandewa-Guarani é um **tap alveolar**,
+não uma vibrante múltipla. Aparece em posição de
+início de sílaba, no começo ou no meio da palavra.
+Não ocorre no final de sílaba ou de palavra.
 
-Esse segmento pode aparecer no início ou no meio
-das palavras, em posição de início de sílaba.
+Em ambiente **oral**, pronuncia-se [r].
+Em ambiente **nasal**, sofre influência da nasalidade
+e realiza-se como [r̃] — um tap **nasalizado**, não
+uma consoante nasal plena [n].
 
-EXEMPLO 1 — R EM PALAVRAS ORAIS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. R EM CONTEXTO ORAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-rery
-Significado: nome.
+📌 Exemplos — sem influência de nasalidade:
 
-rowai
-Significado: o outro lado, além.
+  rery        nome                  → [r] oral
+  rowai       o outro lado, além     → [r] oral
+  piri        taboa / junco          → [r] oral
+  ywyra       árvore                 → [r] oral
 
-piri
-Significado: taboa ou junco.
+Nessas palavras, não há vogal nasal próxima,
+e o /r/ mantém sua pronúncia oral.
 
-ywyra
-Significado: árvore.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. R NASALIZADO — NÃO É N
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Esses exemplos apresentam o segmento /r/ em
-contextos descritos como orais.
+📌 Exemplos com /r/ sob influência nasal:
 
-EXEMPLO 2 — O R EM AMBIENTE NASAL
+  põrã        bom, bonito
+  → o til em ã espalha nasalidade também sobre o r
+  → pronúncia: [põr̃ã] — não [põnã]
 
-A pesquisa registra uma forma nasalizada do segmento
-/r/, representada foneticamente como /R̃/.
+  wa'ẽrã      futuro
+  → o ã nasaliza também o r
+  → [wa'ẽr̃ã] — não [wa'ẽnã]
 
-Essa realização ocorre em palavras que apresentam
-contexto nasal.
+  nãporairỹ   não está bom, ruim
+  → nasalidade se estende por toda a palavra
+  → o r é pronunciado com ressonância nasal
 
-Exemplo:
+⚠️ Nimuendaju registrou **n** em alguns desses casos
+ex.: *ponã* em vez de *põrã*. Isso reflete a **impressão
+fonética** de quem ouve em fala rápida — não significa
+que R se transformou em N. O som continua sendo um
+tap, só que com ressonância nasal: [r̃], não [n].
 
-põrã
-Significado: bom bonito.
+A própria pesquisadora relata que um falante **corrigiu**
+a grafia *ponã* pronunciando com ênfase o r: *porã*.
+Isso demonstra que para os falantes **não é o mesmo som**.
 
-A nasalização deve ser observada na pronúncia
-e não apenas na representação escrita.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. POR QUE NÃO É TROCA SIMPLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 3 — OUTRA FORMA COM R NASALIZADO
+  ✅ /r/ e /n/ continuam sendo fonemas distintos
+  ✅ A nasalização é **condicionada pelo ambiente**
+     — só acontece quando há vogal nasal próxima
+  ✅ Em fala lenta, a diferença é clara
+  ✅ A grafia com n em registros antigos é transcrição,
+     não prova de mudança na língua
 
-nãporairỹ
-Significado: não esta bom, ruim.
+📌 Comparação:
+  porã / ponã  → mesma palavra, transcrição diferente
+  pará / paná  → não são intercambiáveis
 
-A forma é apresentada em estudo fonológico
-como exemplo de realização nasalizada do /r/.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. HARMONIA NASAL E ESPALHAMENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O registro deve ser analisado considerando
-a palavra completa e seus elementos gramaticais.
+A nasalidade no Nhandewa **se espalha** de sílaba
+em sílaba. Uma vogal nasal pode influenciar sons
+em sílabas vizinhas, incluindo o /r/. Por isso:
 
-EXEMPLO 4 — FORMA RELACIONADA AO FUTURO
+  põrã → a nasalidade de ã atinge o r → [põr̃ã]
 
-wa’ẽrã
-Significado: futuro.
+O processo é:
+  Vogal nasal → espalha nasalidade → /r/ fica nasalizado
+  Mas continua sendo /r/, não vira /n/.
 
-Esse exemplo apresenta o segmento /r/
-em contexto nasalizado, conforme a descrição
-fonológica consultada.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. O QUE OUVIMOS E O QUE ESCREVEMOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A análise deve considerar o contexto em que
-a palavra aparece e sua estrutura gramatical.
+Ao registrar uma palavra:
+  1. Ouvir a pronúncia em fala lenta e clara
+  2. Conferir com o falante: "é r ou é n?"
+  3. Observar se há vogal nasal próxima
+  4. Comparar grafitas antigas com a fala atual
+  5. Lembrar: a impressão auditiva não é sempre a estrutura
 
-EXEMPLO 5 — R E N NA FALA RÁPIDA
-
-Em contexto de fala rápida, o /r/ nasalizado
-pode ser confundido com o som representado
-por /n/.
-
-A pesquisa informa que Nimuendaju registrou
-a letra n em algumas realizações de /r/
-nasalizado.
-
-Isso não significa que R e N sejam sempre
-o mesmo som ou que possam ser trocados
-livremente em todas as palavras.
-
-A pronúncia pode variar conforme o falante,
-a velocidade da fala e o contexto linguístico.
-
-EXEMPLO 6 — A RELAÇÃO COM REGISTROS HISTÓRICOS
-
-A documentação histórica apresenta observações
-sobre a relação entre r e n no Nhandewa-Guarani.
-
-Esses registros devem ser estudados com atenção,
-pois uma grafia com n pode representar uma
-determinada realização sonora ou uma interpretação
-do pesquisador.
-
-É necessário comparar a transcrição original,
-a pronúncia e o contexto em que a palavra
-foi registrada.
-
-EXEMPLO 7 — A IMPORTÂNCIA DOS FALANTES
-
-A pesquisa linguística contribui para compreender
-os sons e suas variações, mas o conhecimento
-dos falantes Nhandewa é essencial para conferir
-a pronúncia e o uso atual das palavras.
-
-Ao registrar uma forma, devemos observar:
-
-1. A palavra completa.
-2. O contexto oral ou nasal.
-3. A pronúncia do falante.
-4. A velocidade da fala.
-5. A fonte do registro.
-6. A variação entre falantes.
-
-A relação entre R e N em ambiente nasal demonstra
-a importância de estudar a língua considerando
-seus sons, sua história e sua diversidade.
-
-Os exemplos desta seção são materiais de estudo
-baseados em descrições linguísticas. Eles não
-devem ser utilizados como regra absoluta para
-todos os falantes ou todas as variedades
-Nhandewa-Guarani.
+Os registros de Nimuendaju são preciosos, mas
+descrevem a **impressão sonora**, não necessariamente
+a distinção que os próprios falantes fazem.
 `,
-
     tipo: "documentado",
-
     fonte:
-        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES, especialmente a descrição do tap /R/ e de sua realização nasalizada.",
-
+        "Consuelo de Paiva Godinho Costa — Nhandewa Aywu (2003), p.77–79; Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, p.82–84; especialmente a análise do tap /r/ nasalizado e sua distinção de /n/.",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
@@ -828,173 +870,111 @@ Nhandewa-Guarani.
         }
     ]
 },
-  
+
 {
     id: 7,
     categoria: "Transformações",
     periodo: "Morfologia histórica",
     titulo: "Desaparecimento ou redução de morfemas",
-
     resumo:
-        "Registros históricos do Guarani e do Nhandewa apresentam casos de redução de elementos finais ou internos das palavras. Essas mudanças devem ser analisadas considerando a estrutura morfológica e a variação entre falantes.",
-
+        "Comparando o Guarani Antigo com o Nhandewa contemporâneo, observa-se redução de sílabas finais átonas e de elementos internos. Isso não é perda, mas transformação — formas longas e reduzidas podem coexistir na fala das comunidades.",
     conteudo: `
-As palavras podem ser formadas por diferentes elementos
-chamados morfemas.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. O QUE MUDA E O QUE PERMANECE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Um morfema é uma unidade que participa da formação
-de uma palavra e pode contribuir para seu significado
-ou para sua função gramatical.
+As línguas do ramo Guarani tendem a perder
+sílabas finais átonas — um traço que as distingue
+do ramo Tupi. Em Nhandewa, esse processo continua,
+mas de forma viva: não é só o passado que se reduz,
+é a língua que se renova a cada geração.
 
-Ao comparar registros históricos com formas
-contemporâneas, os pesquisadores podem observar
-a redução ou o desaparecimento de determinados
-elementos.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. EXEMPLOS DE REDUÇÃO — Guarani Antigo → Nhandewa
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Esse processo não deve ser interpretado
-automaticamente como perda de toda a palavra
-ou desaparecimento da língua.
+📌 Palavras que perderam sílaba final átona:
 
-EXEMPLO 1 — REDUÇÃO DE ELEMENTOS FINAIS
+  oga        → óy          casa
+  coang      → cóy         roça
+  añang      → añãy        diabo
+  porang(a)  → porã        bom, bonito
 
-Guarani antigo:
-mocañỹhara
-Significado: aquele que mata.
+📌 Formas de negação:
 
-Forma registrada em outra variedade:
-mocañỹá.
+  eỹma / ỹma → eỹ          sem / não
+  → Atualmente: eỹwa em alguns contextos
+  A partícula final -ma evoluiu para -wa,
+  com valor de generalização ou pluralidade
 
-A comparação mostra uma diferença na parte final
-da palavra. É necessário observar quais elementos
-foram reduzidos e qual função desempenhavam
-na forma original.
+📌 Posse — redução do elemento -re-:
 
-EXEMPLO 2 — OUTRA FORMA COM ELEMENTO FINAL
+  cherembireco  → chimbirécó    minha mulher
+  cheremỹmba    → chimỹmbá      meu animal doméstico
 
-Guarani antigo:
-mocañỹharera
-Significado: aquele que matava.
+  O elemento inicial *che-* (meu/minha) passa a *chi-*
+  O elemento *-re-* (relacional) pode desaparecer
+  Mas a forma longa **não desapareceu completamente** —
+  ainda é ouvida em falas de pessoas mais velhas
 
-Forma comparada:
-mocañỹaté.
+📌 Outros casos registrados:
 
-Esse exemplo é apresentado em estudo histórico
-como uma comparação entre formas e registros
-diferentes.
+  mocafíyhara    → mocafíyá       aquele que mata
+  mocafíyharera  → mocafíyaté     aquele que matava
+  cherembireco   → chimbirécó     minha mulher
+  fianderequei   → fíanderyquey   nosso irmão maior
 
-A análise deve considerar o tempo verbal,
-a formação da palavra e o contexto da fonte.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. NÃO É APAGAMENTO — É TRANSFORMAÇÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 3 — REDUÇÃO NA FORMA DE NEGAÇÃO
+Quando uma sílaba parece desaparecer, pode ser que:
 
-Forma registrada:
-eỹma ou ỹma
-Significado: negação ou sem.
+  ✅ Seja apenas **redução na fala rápida**
+  ✅ A vogal átona se **junta à sílaba anterior**
+  ✅ Mude a **grafia**, mas a pronúncia conserve traços
+  ✅ Coexistam **duas formas** — uma mais longa,
+     outra mais curta — faladas por pessoas diferentes
+  ✅ O elemento mude de **função** e não só de forma
 
-Forma comparada:
-eỹ.
+Exemplo: *eỹma* → *eỹwa* — não é simples perda
+de -ma, é **substituição** por -wa com valor próprio.
 
-A comparação apresenta uma redução de elementos
-na forma registrada.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. O ELEMENTO RELACIONAL -RE-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-No Nhandewa contemporâneo, a pesquisa também
-registra a forma eỹwa em determinados contextos.
+O morfema **-re-** marca relação de posse.
+Pode aparecer ou desaparecer conforme:
+  • a velocidade da fala
+  • a idade do falante
+  • a ênfase que se quer dar
+  • a região/aldeia
 
-Essa diferença demonstra que a análise deve
-considerar a variedade linguística e o período
-do registro.
+Isso significa que **não há uma "forma certa" única**:
+  cherembireco  e  chimbirécó  podem ser ouvidas
+  de pessoas diferentes na mesma comunidade.
 
-EXEMPLO 4 — FORMAS RELACIONADAS À POSSE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. COMO ESTUDAR AS MUDANÇAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Guarani antigo:
-cherembireco
-Significado: minha mulher.
+Ao comparar formas antigas e atuais:
 
-Forma comparada:
-chimbirécó.
+  1. Identificar cada elemento da palavra
+  2. Verificar se a mudança é geral ou só de alguns falantes
+  3. Ouvir a palavra isolada e dentro de frases
+  4. Perguntar: "as duas formas são usadas?"
+  5. Conferir se a grafia antiga refletia a fala real
+  6. Lembrar: a língua viva tem variação
 
-A pesquisa discute a redução do elemento relacional
--re- em determinados registros.
-
-Entretanto, no Nhandewa contemporâneo, foram
-registradas tanto uma forma quanto outra.
-
-Isso demonstra que uma forma reduzida não significa
-necessariamente que a forma mais longa deixou
-de existir entre todos os falantes.
-
-EXEMPLO 5 — OUTRA FORMA DE POSSE
-
-Guarani antigo:
-cheremỹmba
-Significado: meu animal doméstico.
-
-Forma comparada:
-chimỹmbá.
-
-A comparação permite observar mudanças
-na estrutura interna da palavra.
-
-Para estudar o processo, é importante identificar
-os elementos que formam a palavra e compreender
-a função de cada um.
-
-EXEMPLO 6 — RELAÇÃO COM O MORFEMA RELACIONAL
-
-O morfema relacional pode aparecer na estrutura
-de palavras que apresentam relações de posse
-ou dependência entre seus elementos.
-
-Em alguns registros, o elemento -re- não aparece
-na mesma posição ou forma.
-
-A análise histórica deve observar a composição
-da palavra e não apenas comparar letras isoladas.
-
-EXEMPLO 7 — REDUÇÃO NÃO É UMA REGRA ABSOLUTA
-
-Quando uma forma antiga apresenta menos elementos
-em um registro posterior, devemos investigar
-diferentes possibilidades:
-
-1. Redução ou apagamento de um morfema.
-2. Mudança na pronúncia.
-3. Diferença de escrita.
-4. Variação entre comunidades.
-5. Diferença na análise do pesquisador.
-6. Coexistência de formas longas e reduzidas.
-
-A existência de uma forma reduzida não significa
-que todos os falantes utilizem somente essa forma.
-
-EXEMPLO 8 — A LÍNGUA EM CONTINUIDADE
-
-As transformações morfológicas fazem parte
-da história das línguas.
-
-O Nhandewa-Guarani pode ser estudado por meio
-de registros antigos, pesquisas linguísticas
-e conhecimentos dos falantes atuais.
-
-A documentação é importante para compreender
-as mudanças, mas deve respeitar a diversidade
-de formas existentes na comunidade.
-
-O estudo dos morfemas ajuda a compreender
-a formação das palavras, a gramática e a história
-da língua Guarani Nhandewa.
-
-Os exemplos apresentados nesta seção são
-comparações documentadas em estudos linguísticos.
-A interpretação de cada forma deve ser conferida
-na fonte original e junto aos falantes da comunidade.
+⚠️ Uma forma reduzida não significa que a língua
+está "se perdendo". É como o rio: a água muda,
+mas o rio continua correndo.
 `,
-
     tipo: "documentado",
-
     fonte:
-        "Consuelo de Paiva Godinho Costa, estudos sobre a fonologia e a morfologia histórica do Nhandewa-Guarani; exemplos de desaparecimento de morfemas átonos finais e intramorfemas registrados em tese consultada na Biblioteca da FUNAI.",
-
+        "Consuelo de Paiva Godinho Costa — Nhandewa Aywu (2003), p.28–32; Fonologia do Nhandewa-Guarani, LIAMES v.3 n.1, p.85–87; exemplos de Nimuendaju (1987:21–22).",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
@@ -1010,141 +990,104 @@ na fonte original e junto aos falantes da comunidade.
         }
     ]
 },
-  
+
 {
     id: 8,
     categoria: "Gramática",
     periodo: "Partículas",
-    titulo: "As partículas ma e pa",
-
+    titulo: "As partículas ma e pa — presença e investigação",
     resumo:
-        "As partículas ma e pa podem ser estudadas por meio de suas funções gramaticais, posição na palavra e relação com o contexto. A forma ma possui exemplos registrados na gramática Nhandewa-Guarani.",
-
+        "A partícula ma aparece em construções verbais e como elemento independente. Pa é tema de investigação — não se deve transferir automaticamente seu significado de outras variedades do Guarani para o Nhandewa.",
     conteudo: `
-As partículas são elementos que participam
-da construção das palavras e das frases.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. O QUE SÃO AS PARTÍCULAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Seu significado e sua função podem depender
-da posição em que aparecem, do verbo associado
-e do contexto da oração.
+São pequenas palavras ou elementos que dão
+sentido, modo, tempo ou relação à frase.
+Não têm significado sozinhas — adquirem
+função no contato com o verbo, o nome
+e o contexto da fala.
 
-No Nhandewa-Guarani, a partícula ma é descrita
-em diferentes situações de uso.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. A PARTÍCULA MA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 1 — MA LIGADA AO VERBO
+📌 Junto ao verbo — indica ação em curso:
 
-Forma registrada:
+  aáma        está indo / ia
+  oúma        está vindo / vinha
+  ojapóma     está fazendo / fazia
 
-aáma
+  A partícula se liga à raiz verbal e
+  indica que a ação acontece ou acontecia
+  ao longo de um tempo.
 
-A gramática apresenta a forma aáma entre
-os exemplos de flexões verbais e partículas
-escritas junto à raiz.
+📌 Como palavra separada — confirmação/ênfase:
 
-Nesse caso, a partícula aparece articulada
-à forma verbal.
+  Ko kwatiá-re ma.
+  "É mesmo aqui, nesta terra."
 
-A análise deve considerar o verbo completo
-e a função que ma desempenha na construção.
+  Aqui, ma não se junta ao verbo — aparece
+  sozinha, dando peso, confirmação ou
+  certeza ao que se diz.
 
-EXEMPLO 2 — MA COMO PALAVRA AUTÔNOMA
+📌 Em negação e finalização:
 
-Forma registrada:
+  eỹma        não / sem (registro histórico)
+  eỹwa        não / sem (uso atual)
 
-Ko kwatiá-re ma.
+  -ma pode evoluir para -wa com valor de
+  generalização ou pluralidade.
 
-A gramática explica que, nesse contexto,
-ma não funciona articulada a um verbo.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. ESCRIVER JUNTO OU SEPARADO?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Por isso, é escrita como uma palavra
-autônoma, separada dos demais elementos.
+Os professores Nhandewa, nas Convenções
+Lingüísticas, decidiram:
 
-Esse exemplo mostra que a escrita da partícula
-depende de sua função e de seu contexto.
+  ✅ Junto → quando forma uma só pronúncia
+             com o verbo (aáma, oúma)
+  ✅ Separado → quando tem pronúncia própria
+                e destaque na frase
 
-EXEMPLO 3 — A POSIÇÃO DA PARTÍCULA MA
+Não é regra fixa para sempre — a escrita
+se ajusta conforme a fala da comunidade.
 
-A partícula ma pode aparecer em construções
-diferentes.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. A PARTÍCULA PA — EM INVESTIGAÇÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Para analisar seu uso, devemos observar:
+Em outras variedades do Guarani, pa existe
+com funções específicas. **No Nhandewa, ainda
+está sendo estudada.** Por isso:
 
-1. Se está ligada a um verbo.
-2. Se aparece como palavra independente.
-3. Qual é o significado da frase.
-4. Qual é a função gramatical.
-5. Como a comunidade utiliza a forma.
+  ⚠️ Não se copia explicação de outra língua
+  ⚠️ Cada ocorrência é conferida com falantes
+  ⚠️ O contexto completo da frase é observado
+  ⚠️ A grafia pode variar conforme a fonte
 
-A posição na escrita não deve ser analisada
-sem considerar a estrutura da oração.
+Mesma forma gráfica ≠ mesma função gramatical.
+A palavra escrita igual pode ter significado
+diferente em cada povo.
 
-EXEMPLO 4 — ESTUDO DA PARTÍCULA PA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. COMO ESTUDAR COM RESPEITO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma pa deve ser analisada a partir
-do registro específico da gramática Nhandewa.
-
-Em outras línguas Guarani, partículas com
-a mesma forma gráfica podem apresentar
-funções gramaticais diferentes.
-
-Por isso, não devemos transferir
-automaticamente uma explicação de outra
-variedade para o Nhandewa-Guarani.
-
-Para registrar pa com segurança, é necessário
-consultar exemplos completos, identificar
-seu significado e verificar sua função
-na frase.
-
-EXEMPLO 5 — COMPARAÇÃO ENTRE MA E PA
-
-Ma e pa devem ser comparadas observando:
-
-- A forma escrita.
-- A pronúncia.
-- A posição na palavra.
-- A função gramatical.
-- O contexto da frase.
-- A variedade linguística.
-- A fonte consultada.
-
-Uma semelhança na escrita não comprova
-que duas partículas tenham a mesma função.
-
-EXEMPLO 6 — A IMPORTÂNCIA DA ESCRITA
-
-A gramática Nhandewa-Guarani estabelece
-regras para escrever as partículas.
-
-Algumas formas são escritas junto à raiz,
-enquanto outras aparecem separadas.
-
-Essas regras ajudam a representar a estrutura
-da língua e a organizar os materiais de ensino.
-
-A escrita deve ser estudada junto com
-a pronúncia e os conhecimentos dos falantes.
-
-EXEMPLO 7 — PESQUISA E CONTINUIDADE
-
-O estudo das partículas ma e pa contribui
-para compreender a gramática Nhandewa-Guarani.
-
-Os registros escritos devem ser comparados
-com a fala e com os conhecimentos dos
-professores, anciãos e demais falantes.
-
-Este conteúdo apresenta exemplos documentados
-para ma e mantém pa como tema de investigação
-até que seus exemplos específicos sejam
-confirmados na fonte Nhandewa consultada.
+Para ma e pa:
+  1. Anotar a frase completa, não só a partícula
+  2. Ouvir a pronúncia: tem acento próprio?
+  3. Perguntar: "o que muda com e sem ela?"
+  4. Comparar com outras aldeias
+  5. Conferir nas Lições de Gramática
+  6. Respeitar: o que ainda não se sabe,
+     não se inventa — se anota "em estudo"
 `,
-
     tipo: "documentado",
-
     fonte:
-        "Lições de Gramática Nhandewa-Guarani, volume I, seção sobre composições sintáticas e lexicais e uso da partícula ma.",
-
+        "Lições de Gramática Nhandewa-Guarani, volume I, seção sobre composições verbais e partículas; Consuelo de Paiva Godinho Costa (2003), p.62–65 sobre elementos de ligação e aspectuais.",
     links: [
         {
             titulo: "Lições de Gramática Nhandewa-Guarani – Volume I",
@@ -1160,170 +1103,101 @@ confirmados na fonte Nhandewa consultada.
         }
     ]
 },
- 
+
 {
     id: 9,
     categoria: "Gramática",
     periodo: "Supino e orações subordinadas",
-    titulo: "O uso do supino vy",
-
+    titulo: "O supino vy — quando, enquanto, caminhando",
     resumo:
-        "O supino vy aparece em registros do Nhandewa-Guarani associado aos verbos ó, ir, e u, vir. As construções foram traduzidas como quando ou enquanto, sendo importantes para o estudo das relações entre ações.",
-
+        "A forma vy, ligada aos verbos de movimento ó (ir) e u (vir), introduz orações que expressam tempo e acompanhamento. Vem de registros de Nimuendaju e é chave para compreender a relação entre caminhar e falar no Nhandewa.",
     conteudo: `
-O estudo das formas verbais permite compreender
-como a língua expressa ações, tempo e relações
-entre diferentes acontecimentos.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. O QUE É O SUPINO VY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O supino vy aparece em registros analisados
-por Consuelo de Paiva Godinho Costa.
+Vy aparece **junto a verbos de movimento**
+e indica que uma ação acontece **ao mesmo
+tempo que outra**, ou **no caminho de/para**.
+Não é exatamente "quando" — é o movimento
+que acompanha a ação principal.
 
-Nesses registros, a forma vy é associada
-principalmente aos verbos ó, ir, e u, vir.
+  ó    = ir          → oóvy    = indo / quando ia
+  u    = vir         → oúvy    = vindo / quando vinha
 
-As construções foram traduzidas como
-"quando" ou "enquanto", introduzindo
-orações subordinadas.
+A terminação vy liga a ação de ir/vir ao
+contexto em que outra coisa acontece.
 
-EXEMPLO 1 — ENQUANTO ELE IA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. EXEMPLOS REGISTRADOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Forma registrada:
+📌 Enquanto ele ia e fazia:
+  Ojapó ma oóvy.
+  "Fazia, enquanto ia."
+  → oóvy = indo / no caminho
 
-Ojapó ma oóvy.
+📌 Enquanto ela vinha pulando:
+  Opó yvy áno oúvy.
+  "Pulando, vinha para a terra."
+  → oúvy = vindo / no caminho de volta
 
-Tradução apresentada:
+📌 Quando ele atravessou:
+  Oaqá oóvy.
+  "Atravessou, indo."
+  → oóvy = indo / na travessia
 
-Enquanto ele ia e a fazia.
+📌 Quando ele vinha descendo:
+  Oguejý oúvy.
+  "Descia, vindo."
+  → oúvy = vindo / descendo
 
-A construção apresenta o verbo relacionado
-à ação de ir e a forma vy.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. NÃO É SÓ "QUANDO"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O sentido da oração deve ser compreendido
-a partir do contexto completo da narrativa.
+Traduzir por "quando" ou "enquanto" ajuda,
+mas a língua carrega mais:
 
-EXEMPLO 2 — ENQUANTO ELA VINHA
+  oóvy ≠ só "quando ele foi"
+  ✅ "indo" — o movimento está na palavra
 
-Forma registrada:
+  oúvy ≠ só "quando ele veio"
+  ✅ "vindo" — o deslocamento é o sentido
 
-Opó yvy áno oúvy.
+Isso liga diretamente à ideia de **oguatá** —
+o caminhar como forma de existir, de buscar,
+de conhecer. A língua carrega o movimento
+em suas próprias estruturas gramaticais.
 
-Tradução apresentada:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. FONTE E CONTEXTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Enquanto ela vinha pulando para a terra.
+Esses exemplos vêm de narrativas registradas
+por **Curt Nimuendajú** entre os Apapocúva,
+publicadas em 1914/1987. Consuelo de Paiva
+Godinho Costa analisa que a estrutura se
+mantém no Nhandewa falado, embora com
+pequenas variações de pronúncia e grafia.
 
-Nesse exemplo, o verbo u, vir, aparece
-relacionado à forma vy.
+  ⚠️ A grafia reflete a época do registro.
+  ⚠️ A tradução é interpretação do pesquisador.
+  ⚠️ O uso atual deve ser confirmado com falantes.
 
-A tradução demonstra uma relação entre
-a ação de vir e outra ação descrita na frase.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. PARA ESTUDAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 3 — QUANDO ELE ATRAVESSOU
-
-Forma registrada:
-
-Oaqá oóvy.
-
-Tradução apresentada:
-
-Quando ele atravessou.
-
-O exemplo mostra a forma oóvy associada
-ao verbo de movimento.
-
-A tradução como "quando" indica uma relação
-temporal entre acontecimentos.
-
-EXEMPLO 4 — QUANDO ELE VINHA DESCENDO
-
-Forma registrada:
-
-Oguejý oúvy.
-
-Tradução apresentada:
-
-Quando ele vinha descendo.
-
-A forma oúvy aparece relacionada ao verbo
-u, vir, em uma construção que descreve
-o movimento da personagem.
-
-EXEMPLO 5 — O VERBO Ó
-
-Ó significa "ir" no registro citado.
-
-A forma oóvy é analisada dentro de uma
-construção verbal relacionada à ação de ir.
-
-Para compreender sua função, é necessário
-observar o verbo, a forma vy e a oração
-completa.
-
-EXEMPLO 6 — O VERBO U
-
-U significa "vir" no registro citado.
-
-A forma oúvy aparece em construções
-relacionadas à ação de vir.
-
-A análise deve considerar a relação
-entre o verbo e o acontecimento descrito
-na oração.
-
-EXEMPLO 7 — QUANDO E ENQUANTO
-
-As traduções "quando" e "enquanto"
-ajudam a compreender a relação temporal
-apresentada nos exemplos.
-
-Entretanto, a tradução para o português
-não deve ser confundida automaticamente
-com a classificação gramatical original.
-
-A forma vy pode ser analisada como supino
-e também pode receber interpretação
-relacionada ao gerúndio, conforme o contexto.
-
-EXEMPLO 8 — A IMPORTÂNCIA DO CONTEXTO
-
-Para estudar o supino vy, devemos observar:
-
-1. O verbo ao qual a forma está associada.
-2. A estrutura completa da oração.
-3. A relação temporal entre as ações.
-4. A tradução utilizada pelo pesquisador.
-5. A narrativa de origem do exemplo.
-6. As interpretações gramaticais possíveis.
-
-Os exemplos citados foram registrados
-em uma narrativa escrita por Nimuendaju,
-com base em relatos de indígenas.
-
-Por isso, é importante considerar que
-a grafia e a tradução refletem o registro
-e a análise da fonte consultada.
-
-EXEMPLO 9 — PESQUISA E CONTINUIDADE
-
-O estudo do supino vy contribui para
-compreender as formas verbais e as relações
-entre ações na língua Nhandewa-Guarani.
-
-A pesquisa deve ser ampliada com a consulta
-às gramáticas, aos registros históricos
-e aos falantes da comunidade.
-
-Este conteúdo apresenta exemplos documentados
-para estudo linguístico. A função exata de vy
-deve ser analisada de acordo com cada contexto
-e não aplicada como regra absoluta a todas
-as construções da língua.
+  1. Identificar o verbo: ó = ir / u = vir
+  2. Observar: vy só aparece com movimento?
+  3. Perguntar: "há diferença entre oó e oóvy?"
+  4. Ouvir em histórias contadas pelos mais velhos
+  5. Lembrar: cada povo pode usar de forma própria
 `,
-
     tipo: "documentado",
-
     fonte:
-        "Consuelo de Paiva Godinho Costa, estudo sobre a fonologia e a gramática do Nhandewa-Guarani, com análise de exemplos de Nimuendaju (1987:23).",
-
+        "Consuelo de Paiva Godinho Costa — Nhandewa Aywu (2003), p.30–31; análise de exemplos de Nimuendajú (1987:23); Lições de Gramática Nhandewa-Guarani, vol.1.",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
@@ -1344,157 +1218,102 @@ as construções da língua.
     id: 10,
     categoria: "Transformações",
     periodo: "Semântica",
-    titulo: "As palavras podem adquirir novos significados",
-
+    titulo: "As palavras abrem caminhos de sentido",
     resumo:
-        "As palavras podem ampliar, modificar ou apresentar diferentes significados ao longo do tempo e entre comunidades. O estudo semântico ajuda a compreender essas transformações na língua Nhandewa-Guarani.",
-
+        "Uma palavra não tem sempre um só significado. Pode crescer, se ampliar, ganhar caminhos novos. Nhe'ẽ e aywu mostram como sentido e cultura se tecem juntos nas línguas Guarani.",
     conteudo: `
-As palavras de uma língua estão relacionadas
-à história, à cultura e às experiências
-dos seus falantes.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. UMA PALAVRA, MUITOS CAMINHOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Com o passar do tempo, uma palavra pode
-adquirir novos significados, ampliar seu uso
-ou apresentar sentidos diferentes conforme
-a comunidade e o contexto.
+Quando dizemos uma palavra, não dizemos só
+uma coisa. Dizemos o que ela foi, o que é,
+e o que pode vir a ser. O sentido cresce
+com quem fala, com onde se fala, com quando.
 
-Esse processo é chamado de mudança semântica.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. NHE'Ẽ — vida, espírito, fala, presença
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A mudança semântica deve ser estudada
-com atenção, pois uma mesma palavra pode
-apresentar mais de um significado.
+📌 Em diferentes contextos, nhe'ẽ pode significar:
 
-EXEMPLO 1 — A PALAVRA NHE’Ẽ
+  • sopro, respiração, vida
+  • espírito, essência
+  • palavra verdadeira
+  • fala que vem do coração
+  • presença ancestral
 
-A palavra nhe’ẽ é utilizada em diferentes
-contextos nas línguas Guarani.
+Não se reduz a uma só tradução. Em Nhandewa,
+em Mbyá, em Kaiowá — a mesma raiz abre
+caminhos próprios em cada comunidade.
 
-Em registros sobre os Guarani, ela pode
-ser relacionada a sentidos como espírito,
-ser, vida, palavra, fala ou som.
+Sandra Benites destaca: nhe'ẽ não é "espírito"
+no sentido de algo separado e abstrato. É o que
+faz viver, o que conecta, o que permanece.
 
-Esses significados não devem ser tratados
-como uma única tradução obrigatória.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. AYWU — fala, palavra, caminho
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-É necessário observar a comunidade,
-a situação de uso e a interpretação
-dos falantes.
+📌 aywu:
+  • fala, conversa
+  • palavra dita
+  • modo de dizer
+  • em Nhandewa: "nossa fala" = Nhandeaywu
 
-EXEMPLO 2 — A PALAVRA AYWU
+⚠️ Em outras variedades do Guarani, a mesma
+palavra tem sentido diferente: em Avanheém
+significa "ruído, barulho". O que é fala
+em um lugar pode ser som em outro — cada
+comunidade tece seu próprio sentido.
 
-A palavra aywu também aparece em descrições
-relacionadas aos sentidos de fala, palavra
-e expressão.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. COMO O SENTIDO SE AMPLIA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Em diferentes contextos Guarani, a palavra
-pode apresentar sentidos específicos.
+Uma palavra pode começar num uso e depois
+alcançar outros:
 
-A comparação entre os usos ajuda a estudar
-a relação entre língua, pensamento e cultura.
+  Sopro → vida → força → presença → ancestralidade
+  Fala → palavra → ensinamento → caminho → identidade
 
-EXEMPLO 3 — UMA PALAVRA E VÁRIOS SENTIDOS
+Isso não é "erro" nem "confusão". É como a língua
+respira: cresce junto com o povo que a fala.
 
-Uma palavra pode apresentar:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. NÃO COMPARAR PARA IGUALAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-1. Um significado relacionado à vida cotidiana.
-2. Um significado relacionado à espiritualidade.
-3. Um sentido utilizado em narrativas.
-4. Um uso específico em uma comunidade.
-5. Um significado ampliado ao longo do tempo.
+  ✅ Mesma raiz ≠ mesmo significado
+  ✅ Mesma grafia ≠ mesma função
+  ✅ O que significa aqui pode significar lá
+     de maneira diferente
+  ✅ A tradução ajuda, mas não substitui a
+     explicação dos próprios falantes
 
-A existência de vários sentidos não significa
-que a palavra esteja sendo utilizada
-incorretamente.
+Não se deve dizer: "em Mbyá significa X,
+então em Nhandewa é igual". É olhar o rio
+em margens diferentes — a água é a mesma,
+mas o curso muda.
 
-EXEMPLO 4 — MUDANÇA DE SIGNIFICADO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. O SENTIDO ESTÁ NAS PESSOAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Uma palavra pode começar sendo utilizada
-em uma situação específica e, posteriormente,
-passar a ser utilizada em outros contextos.
-
-Por exemplo, uma palavra relacionada
-à fala pode também ser estudada em contextos
-relacionados à palavra, ao conhecimento
-ou à espiritualidade.
-
-A relação exata entre esses sentidos deve
-ser confirmada por registros linguísticos
-e pelos conhecimentos da comunidade.
-
-EXEMPLO 5 — DIFERENÇAS ENTRE COMUNIDADES
-
-Duas comunidades podem utilizar uma palavra
-semelhante, mas atribuir-lhe sentidos
-diferentes.
-
-Essas diferenças podem estar relacionadas
-à história, à cultura, à pronúncia,
-à gramática e às experiências dos falantes.
-
-Por isso, não devemos substituir
-automaticamente o significado de uma palavra
-de uma variedade por outra.
-
-EXEMPLO 6 — AMPLIAÇÃO DO SIGNIFICADO
-
-Uma palavra pode apresentar um significado
-mais amplo do que aquele encontrado
-em registros antigos.
-
-Esse processo pode ocorrer quando novos
-contextos de uso são incorporados à língua.
-
-Para confirmar uma ampliação semântica,
-é necessário comparar documentos de períodos
-diferentes e verificar os usos atuais.
-
-EXEMPLO 7 — A IMPORTÂNCIA DO CONTEXTO
-
-Para compreender o significado de uma palavra,
-devemos observar:
-
-1. A frase completa.
-2. A situação em que foi utilizada.
-3. A comunidade e a variedade linguística.
-4. O período do registro.
-5. A pronúncia.
-6. A explicação dos falantes.
-7. A fonte consultada.
-
-Uma tradução isolada pode não apresentar
-todos os sentidos possíveis de uma palavra.
-
-EXEMPLO 8 — A LÍNGUA EM TRANSFORMAÇÃO
-
-As mudanças de significado fazem parte
-da história das línguas.
-
-O Nhandewa-Guarani continua sendo transmitido
-por meio da oralidade, dos conhecimentos
-dos mais velhos, dos professores e das novas
-gerações.
-
-Registrar os diferentes significados contribui
-para fortalecer o ensino, a pesquisa
-e a continuidade da língua.
-
-Este conteúdo apresenta possibilidades
-de estudo da mudança semântica.
-As alterações específicas de significado
-devem ser confirmadas por meio de fontes
-históricas e da pesquisa com os falantes
-Nhandewa.
+Para saber o que uma palavra significa:
+  1. Ouvir a frase inteira
+  2. Perguntar ao falante: "o que quis dizer?"
+  3. Anotar o contexto: onde, quando, com quem
+  4. Respeitar: pode haver mais de um sentido
+  5. Lembrar: o significado não está no dicionário,
+     está na boca de quem fala
 `,
-
     tipo: "em estudo",
-
     fonte:
-        "Sandra Benites, Nhe’ẽ para os Guarani (Nhandewa e Mbya), e estudos linguísticos sobre variação semântica e diversidade de sentidos nas línguas Guarani.",
-
+        "Sandra Benites — Nhe'ẽ para os Guarani (Nhandewa e Mbyá); Consuelo de Paiva Godinho Costa (2003) sobre Nhandeaywu e diferenças entre variedades; estudos de semântica e etnolingüística Tupi-Guarani.",
     links: [
         {
-            titulo: "Nhe’ẽ para os Guarani (Nhandewa e Mbya)",
+            titulo: "Nhe'ẽ para os Guarani (Nhandewa e Mbya)",
             url: "https://35.bienal.org.br/nhee-para-os-guarani-nhandewa-e-mbya/"
         },
         {
@@ -1503,211 +1322,110 @@ Nhandewa.
         }
     ]
 },
-  
+
 {
     id: 11,
     categoria: "Continuidade",
     periodo: "Revitalização linguística",
-    titulo: "A revitalização e a continuidade da língua",
-
+    titulo: "A língua caminha com seu povo",
     resumo:
-        "A revitalização da língua Nhandewa-Guarani envolve o trabalho das comunidades, dos professores, dos mais velhos e das novas gerações. A produção de materiais didáticos fortalece o ensino, a escrita e a continuidade dos conhecimentos tradicionais.",
-
+        "Revitalizar não é só recuperar palavras antigas — é fazer a língua viver no dia a dia. Professores, anciãos, famílias e crianças tecem juntos a continuidade do Nhandewa-Guarani, com gramáticas, escolas e memória viva.",
     conteudo: `
-A língua Nhandewa-Guarani é parte da história,
-da identidade, dos conhecimentos e da vida
-das comunidades.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. REVITALIZAR É FAZER VIVER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A revitalização linguística é um processo
-que busca fortalecer o uso, o ensino,
-a transmissão e a continuidade da língua
-entre as gerações.
+A língua não vive em livro. Vive na boca,
+no encontro, na história contada, na criança
+que responde em Nhandewa. Revitalizar é:
 
-Esse trabalho acontece por meio da participação
-dos falantes, dos mais velhos, dos professores,
-das crianças, dos jovens e das famílias.
+  ✅ Transmitir entre gerações
+  ✅ Ensinar na escola e na família
+  ✅ Ouvir os mais velhos
+  ✅ Escrever sem perder a fala
+  ✅ Criar com a língua hoje
 
-A língua não deve ser compreendida apenas
-como uma disciplina escolar. Ela também
-está presente nas relações familiares,
-nas histórias, nos cantos, na espiritualidade
-e nas atividades cotidianas.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. OS MAIS VELHOS GUARDAM A FONTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 1 — A TRANSMISSÃO ENTRE GERAÇÕES
+Foram os falantes idosos das aldeias Nimuendaju,
+Piaçaguera, Itariri, Laranjinha e Pinhalzinho
+que compartilharam a língua para que fosse
+registrada e estudada. Suas vozes permanecem
+em cada página, em cada exemplo.
 
-Os mais velhos possuem conhecimentos
-importantes sobre a língua, a história
-e os costumes da comunidade.
+  "A língua não se perde enquanto houver
+   quem a fale e queira ensinar."
+  — Memória das comunidades
 
-Quando compartilham seus conhecimentos
-com as crianças e os jovens, contribuem
-para a continuidade da língua.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. OS PROFESSORES FAZEM O CAMINHO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A transmissão pode acontecer por meio
-de conversas, narrativas, cantos,
-atividades culturais e convivência familiar.
+Nas Convenções Lingüísticas, professores de
+cinco aldeias reuniram-se para **decidir juntos**
+como escrever — cada um tinha sua grafia,
+e acordaram uma para todos. Isso é fortalecimento:
+não receber de fora, construir junto.
 
-EXEMPLO 2 — A LÍNGUA NA ESCOLA
+📌 O Projeto Gramática Pedagógica:
+  • Oficinas na Aldeia Nimuendaju
+  • Reuniões com falantes e pesquisadores
+  • Produção coletiva dos livros
+  • Lançamento dos materiais com a comunidade
 
-A escola indígena pode contribuir
-para o fortalecimento da língua Nhandewa
-por meio de aulas, pesquisas e atividades
-relacionadas à cultura da comunidade.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. AS GRAMÁTICAS — FERRAMENTAS, NÃO SUBSTITUTAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O ensino da língua deve valorizar
-os conhecimentos dos falantes e considerar
-as formas de falar e escrever utilizadas
-pela comunidade.
+📌 Lições de Gramática Nhandewa-Guarani — Volume 1 (2016)
+  • Apresenta sons, palavras, frases e estruturas
+  • Desenvolvido por e com professores indígenas
+  • Para ensinar e aprender
 
-Os materiais didáticos podem auxiliar
-os professores na organização das aulas
-e no desenvolvimento da escrita.
+📌 Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2
+  • Dá continuidade, com contribuições do litoral
+  • Aprofunda a escrita e os usos
 
-EXEMPLO 3 — AS OFICINAS DE GRAMÁTICA
+⚠️ O livro não substitui a fala. É mapa, não caminho.
+Quem caminha é quem fala.
 
-O Projeto Gramática Pedagógica
-do Nhandewa-Guarani reuniu falantes,
-professores, pesquisadores e instituições
-em atividades de estudo da língua.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. A TECNOLOGIA AO SERVIÇO DA LÍNGUA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-As oficinas realizadas na Aldeia Nimuendajú
-contribuíram para a produção de materiais
-de gramática e para a reflexão sobre
-a escrita e o funcionamento da língua.
+O Projeto Karumbé reúne:
+  • Palavras e seus sentidos
+  • Exemplos de uso
+  • Referências e fontes
+  • Ligações entre materiais
 
-Esse trabalho demonstra a importância
-da participação das comunidades
-na produção de conhecimentos linguísticos.
+A tecnologia aproxima, mas não substitui.
+O dicionário digital é para a língua o que
+o livro é — um apoio. A vida da língua está
+no encontro entre as pessoas.
 
-EXEMPLO 4 — O VOLUME 1 DA GRAMÁTICA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. CONTINUIDADE — NÃO É SÓ RECUPERAR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O livro Lições de Gramática Nhandewa-Guarani
-- volume 1 - foi publicado em 2016.
+Revitalizar não é voltar ao passado. É:
 
-A obra está relacionada ao Projeto
-Gramática Pedagógica do Nhandewa-Guarani
-e às oficinas realizadas na Aldeia Nimuendajú,
-na Terra Indígena Araribá, em São Paulo.
+  🌱 Manter o que ainda é falado
+  🌱 Ensinar o que está sendo esquecido
+  🌱 Criar palavras novas para coisas novas
+  🌱 Respeitar quem fala diferente
+  🌱 Deixar a língua crescer
 
-O material foi desenvolvido para apoiar
-o ensino e a pesquisa da língua Nhandewa.
-
-EXEMPLO 5 — O VOLUME 2 DA GRAMÁTICA
-
-O livro Lições de Gramática
-Nhandewa-Tupi-Guarani - volume 2 -
-dá continuidade ao projeto de gramática
-pedagógica.
-
-O volume 2 tem como base oficinas
-realizadas no litoral paulista,
-com contribuições de oficinas
-da Aldeia Nimuendajú.
-
-Os dois volumes fazem parte de um trabalho
-de investigação, reflexão sobre a língua
-e produção escrita desenvolvido
-nas comunidades com assessoria linguística.
-
-EXEMPLO 6 — O USO DOS MATERIAIS DIDÁTICOS
-
-As gramáticas podem ser utilizadas
-para apoiar o planejamento de aulas,
-a pesquisa de palavras, o estudo
-da ortografia e a compreensão
-das estruturas gramaticais.
-
-O professor deve relacionar o conteúdo
-dos livros com os conhecimentos
-e as formas de uso da língua
-presentes em sua comunidade.
-
-Os materiais escritos não substituem
-a oralidade nem os conhecimentos
-dos falantes.
-
-EXEMPLO 7 — A LÍNGUA E A IDENTIDADE
-
-A língua está relacionada à identidade
-e à história dos povos.
-
-Aprender e ensinar Nhandewa-Guarani
-pode contribuir para fortalecer
-a relação das novas gerações
-com seus conhecimentos ancestrais.
-
-A valorização da língua também envolve
-respeitar as diferentes formas de falar,
-as memórias e os ensinamentos
-transmitidos pelas famílias.
-
-EXEMPLO 8 — A TECNOLOGIA A FAVOR DA LÍNGUA
-
-Os recursos digitais podem apoiar
-a revitalização linguística.
-
-Dicionários digitais, arquivos de áudio,
-materiais escolares, histórias e registros
-podem facilitar o acesso aos conhecimentos.
-
-O Projeto Karumbé tem como objetivo
-reunir palavras, significados, exemplos
-e referências para apoiar o estudo
-da língua Guarani Nhandewa.
-
-A tecnologia deve ser utilizada
-com responsabilidade e em diálogo
-com a comunidade.
-
-EXEMPLO 9 — A PARTICIPAÇÃO DA COMUNIDADE
-
-A revitalização linguística depende
-da participação dos falantes
-e das decisões da própria comunidade.
-
-É importante registrar os conhecimentos
-com autorização, respeito e cuidado.
-
-As palavras, histórias, cantos
-e ensinamentos tradicionais devem
-ser tratados considerando seus contextos
-culturais e os direitos da comunidade.
-
-EXEMPLO 10 — A CONTINUIDADE DA LÍNGUA
-
-A continuidade da língua acontece
-quando ela permanece presente
-nas relações entre as pessoas,
-na educação, na cultura e no cotidiano.
-
-O trabalho dos professores,
-dos mais velhos, das famílias
-e das novas gerações contribui
-para manter os conhecimentos vivos.
-
-A revitalização não é apenas
-a recuperação de palavras antigas.
-Ela também envolve fortalecer
-o uso da língua no presente
-e criar condições para seu futuro.
-
-O Projeto Karumbé faz parte
-de um esforço de registro,
-pesquisa e valorização da língua
-Guarani Nhandewa.
-
-A continuidade da língua deve ser
-construída com a participação
-da comunidade, respeitando seus
-conhecimentos, suas decisões
-e suas formas de transmissão.
+A língua que atravessou séculos e caminhou
+por milhares de quilômetros não pára agora.
+Caminha com cada geração que a recebe e
+a passa adiante.
 `,
-
     tipo: "projeto",
-
     fonte:
-        "Projeto Gramática Pedagógica do Nhandewa-Guarani, desenvolvido com participação comunitária, FUNAI, KAMURI, UNICAMP e assessoria linguística.",
-
+        "Projeto Gramática Pedagógica do Nhandewa-Guarani — FUNAI, KAMURI, comunidades Nhandewa; Lições de Gramática vols.1 e 2; Projeto Karumbé.",
     links: [
         {
             titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
@@ -1731,300 +1449,123 @@ e suas formas de transmissão.
         }
     ]
 },
-   
 
 {
     id: 12,
     categoria: "Continuidade",
     periodo: "Formação, pesquisa e revitalização",
-    titulo: "Formação de professores e fortalecimento das línguas indígenas",
-
+    titulo: "Reunir, aproximar, fortalecer",
     resumo:
-        "Um espaço para reunir pesquisas acadêmicas, formações de professores indígenas, materiais produzidos por universidades e organizações, além de iniciativas comunitárias como o Projeto Karumbé. O objetivo é facilitar o acesso dos professores aos conhecimentos e às referências de cada língua indígena.",
-
+        "Pesquisas, formações de professores, materiais didáticos e projetos comunitários — um espaço que reúne o que já foi feito para fortalecer o que está sendo construído. O conhecimento cresce quando compartilhado com respeito.",
     conteudo: `
-A formação de professores indígenas,
-as pesquisas acadêmicas e os trabalhos
-realizados pelas comunidades fazem parte
-da história da educação escolar indígena
-no estado de São Paulo.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. UNIR O QUE ESTÁ ESPALHADO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Ao longo dos anos, universidades,
-instituições públicas, organizações
-e comunidades indígenas participaram
-da criação de cursos, pesquisas,
-materiais didáticos e projetos
-de fortalecimento das línguas.
+Há décadas, universidades, comunidades,
+professores e organizações produzem conhecimento
+sobre as línguas indígenas. Reunir esses materiais
+em um só lugar é facilitar o acesso de quem
+ensina, de quem pesquisa e de quem quer aprender.
 
-Essas iniciativas formam um conjunto
-de conhecimentos que pode ser reunido
-em um único espaço de pesquisa,
-facilitando o trabalho dos professores
-indígenas e de suas comunidades.
+O objetivo **não é substituir** — é aproximar:
+  academia ←→ comunidade
+  pesquisa ←→ fala
+  passado ←→ presente
 
-O objetivo não é substituir os conhecimentos
-tradicionais por modelos externos,
-mas aproximar diferentes fontes
-e colocá-las em diálogo com os falantes.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. FORMAÇÃO DE PROFESSORES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 1 — O MAGISTÉRIO INDÍGENA NOVO MUNDO
+📌 MagIND — Magistério Indígena Novo Mundo (2002–2003)
+  • Primeira formação específica no estado de SP
+  • Parceria USP / Secretaria de Educação SP
 
-O Magistério Indígena Novo Mundo,
-conhecido como MagIND, foi realizado
-em 2002 e 2003.
+📌 FISPI — Formação Intercultural Superior (2005–2008)
+  • Licenciatura voltada a professores indígenas
+  • Vinculada à Faculdade de Educação da USP
 
-O curso foi desenvolvido pela Faculdade
-de Educação da Universidade de São Paulo
-(USP), em parceria com a Secretaria
-da Educação do Estado de São Paulo.
+📌 LINDI — Licenciatura Intercultural Indígena
+  • Em andamento pela UNIFESP
+  • Atende Guarani Nhandewa, Mbyá, Kaingang, Terena, Krenak
+  • Conhecimentos acadêmicos + saberes tradicionais
 
-A formação fazia parte das primeiras
-iniciativas de formação de professores
-indígenas para atuação na Educação Infantil
-e no Ensino Fundamental.
+📌 Pesquisa de Tiago Nhandewa (USP)
+  • A perspectiva Guarani na formação docente
+  • Ancestralidade, espiritualidade e língua na educação
 
-EXEMPLO 2 — A FORMAÇÃO INTERCULTURAL
-SUPERIOR DO PROFESSOR INDÍGENA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. PESQUISA LINGUÍSTICA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A Formação Intercultural Superior
-do Professor Indígena, conhecida como FISPI,
-foi oferecida entre 2005 e 2008.
+📌 Consuelo de Paiva Godinho Costa — UNICAMP
+  • Nhandewa Aywu (2003) — fonologia completa
+  • Artigo LIAMES (2012) — sons, nasalidade, harmonia
+  • Base científica para as gramáticas comunitárias
 
-A iniciativa esteve vinculada à Faculdade
-de Educação da USP e à Secretaria
-da Educação do Estado de São Paulo.
+📌 Outros trabalhos em andamento:
+  • Fonologia histórica comparada
+  • Variação entre aldeias
+  • Gramática pedagógica em atualização
 
-A história desses cursos demonstra
-a importância da formação específica
-de professores indígenas e da participação
-dos povos na construção da educação escolar.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. MATERIAIS PRODUZIDOS PELA COMUNIDADE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-EXEMPLO 3 — AS PESQUISAS DA USP
+📌 Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2
+  • Feito por professores, com assessoria linguística
+  • Escrito para ensinar na própria língua
+  • Disponível livremente para todos
 
-A Universidade de São Paulo também reúne
-pesquisas acadêmicas sobre educação,
-línguas indígenas e formação de professores.
+📌 Cadernos de atividades multidisciplinares
+  • Ligam língua, cultura, território e história
+  • Para uso nas escolas indígenas
 
-Entre esses trabalhos está a pesquisa
-de Tiago Nhandewa sobre a perspectiva
-Guarani Nhandewa na formação intercultural
-de professores indígenas no estado
-de São Paulo.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. O PROJETO KARAMBÉ
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A pesquisa aborda a ancestralidade,
-a espiritualidade, as cosmologias,
-as línguas indígenas e os conhecimentos
-tradicionais na formação docente.
+Este espaço reúne:
+  ✅ Gramáticas e vocabulários
+  ✅ Artigos e teses
+  ✅ Materiais de formação
+  ✅ Registros históricos
+  ✅ Narrativas e referências
+  ✅ Produções das comunidades
 
-EXEMPLO 4 — OS ESTUDOS LINGUÍSTICOS
+Não é para substituir ninguém. É para que
+quem busca encontre: fonte, contexto,
+autoria, data, comunidade. E que, ao
+encontrar, possa voltar à fonte original.
 
-As universidades também contribuem
-para a documentação e o estudo
-das línguas indígenas.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. PESQUISAR COM RESPEITO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Os trabalhos de Consuelo de Paiva
-Godinho Costa sobre o Nhandewa-Guarani
-contribuem para a investigação
-da fonologia, da nasalidade,
-da pronúncia e de aspectos gramaticais.
+  ⚠️ Não misturar variedades diferentes
+  ⚠️ Sempre indicar: de onde vem, quem escreveu, quando
+  ⚠️ Se houver diferença entre fonte e fala atual,
+     registrar ambas — não apagar nenhuma
+  ⚠️ O conhecimento dos mais velhos é a fonte primeira
+  ⚠️ Pedir permissão, reconhecer autoria, cuidar do que
+     é compartilhado
 
-Essas pesquisas devem ser utilizadas
-com atenção à fonte, ao contexto
-e à variedade linguística estudada.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. O FUTURO SE CONSTRÓI JUNTOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O estudo acadêmico pode apoiar
-a documentação da língua,
-mas não substitui os conhecimentos
-dos falantes e das comunidades.
+Universidades, escolas, famílias, organizações,
+poder público — nenhum substitui o outro.
+Cada um tem seu lugar. O mais forte não é
+quem sabe mais, é quem melhor compartilha.
 
-EXEMPLO 5 — A FORMAÇÃO LINDI
-
-A Licenciatura Intercultural Indígena,
-conhecida como LINDI, é oferecida
-pela Universidade Federal de São Paulo
-(Unifesp), em parceria com a Secretaria
-da Educação do Estado de São Paulo.
-
-A proposta é voltada à formação
-de professores indígenas que atuam
-ou venham a atuar nas escolas
-das Terras Indígenas do estado.
-
-O curso considera povos como
-Guarani Mbya, Tupi-Guarani/Nhandewa,
-Kaingang, Krenak e Terena.
-
-A formação intercultural relaciona
-os conhecimentos acadêmicos
-com os conhecimentos tradicionais,
-as realidades das comunidades
-e as especificidades da educação
-escolar indígena.
-
-EXEMPLO 6 — A LÍNGUA DE CADA POVO
-
-A formação de professores indígenas
-deve valorizar as características
-de cada língua.
-
-As línguas não devem ser tratadas
-como se fossem todas iguais.
-
-Uma palavra, uma pronúncia,
-uma estrutura gramatical ou uma forma
-de escrita precisa ser analisada
-de acordo com a língua, a comunidade
-e a fonte de registro.
-
-A comparação entre línguas pode
-contribuir para a pesquisa,
-mas não deve apagar as características
-próprias de cada povo.
-
-EXEMPLO 7 — O PAPEL DAS ORGANIZAÇÕES
-E DAS COMUNIDADES
-
-Universidades, organizações,
-associações e comunidades podem
-participar da produção de materiais
-e do fortalecimento da educação
-escolar indígena.
-
-Esses trabalhos podem envolver:
-
-1. Formação de professores.
-2. Pesquisas linguísticas.
-3. Produção de gramáticas.
-4. Elaboração de dicionários.
-5. Registro de histórias e narrativas.
-6. Produção de materiais didáticos.
-7. Valorização dos conhecimentos tradicionais.
-8. Apoio à revitalização das línguas.
-
-Cada iniciativa deve ser consultada
-considerando sua autoria, seus objetivos
-e a participação das comunidades.
-
-EXEMPLO 8 — AS GRAMÁTICAS NHANDEWA
-
-As publicações de gramática Nhandewa
-constituem referências importantes
-para o estudo da língua.
-
-Os volumes 1 e 2 das Lições de Gramática
-Nhandewa-Guarani estão relacionados
-ao trabalho de formação, pesquisa
-e produção de materiais pedagógicos.
-
-Esses materiais podem auxiliar
-o professor no estudo da ortografia,
-da gramática, da formação das palavras
-e das estruturas linguísticas.
-
-A consulta deve ser acompanhada
-do diálogo com os falantes
-e dos conhecimentos da comunidade.
-
-EXEMPLO 9 — O PROJETO KARAMBÉ
-
-O Projeto Karumbé — Dicionário
-Guarani Nhandewa — busca reunir
-palavras, significados, exemplos,
-categorias, referências e materiais
-de pesquisa em um único espaço digital.
-
-O projeto pode facilitar o trabalho
-dos professores que procuram
-informações sobre a língua
-e desejam organizar materiais
-para uso pedagógico.
-
-A proposta inclui reunir referências
-acadêmicas, gramáticas, vocabulários,
-registros históricos e conhecimentos
-produzidos pelas comunidades.
-
-O dicionário deve continuar sendo
-desenvolvido com atenção à revisão
-linguística, à autoria das fontes
-e à participação dos falantes.
-
-EXEMPLO 10 — UM ESPAÇO ÚNICO DE PESQUISA
-
-Reunir os materiais em um único espaço
-pode facilitar a pesquisa de professores,
-estudantes e membros das comunidades.
-
-O espaço pode incluir:
-
-- Gramáticas e vocabulários.
-- Pesquisas universitárias.
-- Registros históricos.
-- Materiais de formação docente.
-- Estudos de fonologia e morfologia.
-- Histórias e narrativas.
-- Referências de organizações.
-- Produções das comunidades.
-- Materiais do Projeto Karumbé.
-
-A organização deve permitir identificar
-a origem de cada informação,
-a língua estudada, a comunidade
-e o período do registro.
-
-EXEMPLO 11 — PESQUISA COM RESPONSABILIDADE
-
-Reunir materiais não significa
-misturar automaticamente suas formas
-linguísticas.
-
-Cada registro deve apresentar
-sua fonte e seu contexto.
-
-Quando houver diferenças entre
-as descrições acadêmicas e o uso
-dos falantes, essas diferenças
-devem ser investigadas e documentadas
-com respeito.
-
-O conhecimento dos mais velhos,
-dos professores e dos falantes
-deve fazer parte do processo
-de pesquisa e revisão.
-
-EXEMPLO 12 — A CONTINUIDADE DAS LÍNGUAS
-
-A formação de professores,
-as pesquisas acadêmicas,
-as organizações e os projetos
-comunitários contribuem para
-a documentação e a continuidade
-das línguas indígenas.
-
-O fortalecimento de cada língua
-depende do respeito à sua história,
-às suas características próprias
-e à participação de seus falantes.
-
-O Projeto Karumbé pretende contribuir
-para esse processo reunindo referências
-e materiais de pesquisa em um único lugar.
-
-Esse espaço deve estar em constante
-revisão, ampliação e diálogo
-com a comunidade Guarani Nhandewa.
-
-A pesquisa, a educação e a tecnologia
-podem trabalhar juntas para fortalecer
-a transmissão dos conhecimentos
-às novas gerações.
+A língua não pertence aos livros. Pertence
+a quem a fala. E o futuro da língua está
+nas mãos de quem a ensina e de quem a aprende.
 `,
-
     tipo: "projeto",
-
     fonte:
-        "Pesquisas e iniciativas de formação de professores indígenas da USP, estudos linguísticos, Licenciatura Intercultural Indígena da Unifesp, materiais de gramática Nhandewa e Projeto Karumbé.",
-
+        "MagIND/USP; FISPI/USP; LINDI/UNIFESP; Consuelo de Paiva Godinho Costa/UNICAMP; KAMURI; FUNAI; Projeto Karumbé; pesquisa de Tiago Nhandewa/USP.",
     links: [
         {
             titulo: "Magistério Indígena Novo Mundo (MagIND) — Pesquisa histórica na Unesp",
