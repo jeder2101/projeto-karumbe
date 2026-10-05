@@ -316,14 +316,11 @@ O estudo das transformações fonológicas contribui para compreender tanto os r
     categoria: "Transformações",
     periodo: "Gramática histórica",
     titulo: "De pe, be e bo para py e wy",
-
     resumo:
         "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar possíveis transformações nas posposições e nas estruturas gramaticais.",
-
     conteudo: `
 As línguas da família Tupi-Guarani apresentam relações
 históricas entre palavras, sons e estruturas gramaticais.
-
 Durante o estudo dessas relações, podemos encontrar
 formas como pe, be e bo em registros antigos ou em
 outras variedades linguísticas.
@@ -336,21 +333,24 @@ seu significado e o contexto em que são utilizadas.
 ser consideradas simplesmente como substituições
 automáticas umas das outras.
 
-EXEMPLO 1 — A FORMA WY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 1 — A FORMA wy
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Em registros do Nhandewa-Guarani estudados por
-Consuelo de Paiva Godinho Costa, encontramos a forma
+Em registros do Nhandewa-Guarani, encontramos a forma
 wy relacionada à ideia de direção ou destino.
 
 Exemplo registrado:
-
-Txeé + wy = txewy
-Significado apresentado: para mim.
+  Txeé + wy = txewy
+  Significado: para mim
 
 Esse exemplo mostra que a forma wy pode participar
-da construção de uma expressão gramatical.
+da construção de uma expressão gramatical, indicando
+direção ou destino em relação à pessoa.
 
-EXEMPLO 2 — A FORMA PY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 2 — A FORMA py
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A forma py também aparece em descrições e materiais
 gramaticais relacionados ao Nhandewa-Guarani.
@@ -361,25 +361,30 @@ na frase.
 
 Não devemos afirmar que py possui sempre o mesmo
 significado de pe, be ou bo sem consultar o registro
-linguístico específico.
+linguístico específico de cada forma.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 3 — COMPARAÇÃO HISTÓRICA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Pe, be e bo:
-formas que podem ser encontradas em registros
-históricos ou em outras variedades linguísticas.
+  pe, be, bo → formas encontradas em registros
+               históricos e em outras variedades
+               do Guarani
 
-Py e wy:
-formas encontradas em descrições do Nhandewa-Guarani
-e que precisam ser estudadas dentro de suas funções
-gramaticais e de seus contextos de uso.
+  py, wy     → formas encontradas no Nhandewa-Guarani
+               e que precisam ser estudadas dentro
+               de suas funções gramaticais próprias
+               e de seus contextos de uso
 
 A comparação histórica ajuda a investigar como
 determinadas formas podem se modificar ao longo
 do tempo, mas não significa que todas as palavras
-tenham seguido o mesmo processo.
+tenham seguido o mesmo processo. Cada mudança
+precisa ser verificada caso a caso.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 A IMPORTÂNCIA DA PESQUISA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Para compreender essas relações, é necessário
 consultar documentos antigos, estudos linguísticos,
@@ -388,22 +393,18 @@ falantes Nhandewa.
 
 As formas devem ser registradas com sua grafia,
 pronúncia, significado, função gramatical e fonte.
-
 O conhecimento dos mais velhos e dos falantes da
 comunidade é fundamental para verificar como essas
 formas são utilizadas atualmente.
 
-Este conteúdo é apresentado como material de estudo.
+⚠️ Este conteúdo é apresentado como material de estudo.
 As correspondências entre pe, be, bo, py e wy devem
 ser confirmadas por meio de fontes específicas e
 da pesquisa linguística junto à comunidade.
 `,
-
     tipo: "em estudo",
-
     fonte:
-        "Estudos de fonologia e gramática histórica do Nhandewa-Guarani, especialmente os trabalhos de Consuelo de Paiva Godinho Costa.",
-
+        "Consuelo de Paiva Godinho Costa — *Nhandewa Aywu: fonologia do Nhandewa-Guarani* (Dissertação de Mestrado / Museu Nacional dos Povos Indígenas); Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2012.",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
