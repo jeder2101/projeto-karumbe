@@ -1642,28 +1642,42 @@ function escaparHTML(texto) {
 }
 
 function formatarConteudo(texto) {
-  return escaparHTML(texto)
-    .trim()
-    .split(/\n{2,}/)
-    .map(paragrafo => {
-      // ✅ Detecta bloco de correspondência e mantém alinhado
-      if (/OUTROS CASOS DE CORRESPONDÊNCIA/.test(paragrafo)) {
-        return `<pre style="font-family: 'Courier New', Courier, monospace; line-height: 1.6; margin: 1em 0; padding: 10px; background: rgba(0,0,0,0.05); border-radius: 6px; overflow-x: auto;">${paragrafo}</pre>`;
-      }
-      
-      const linhas = paragrafo
-        .split("\n")
-        .map(linha => {
-          if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
-            return `<span class="destaque-exemplo">${linha}</span>`;
-          }
-          return linha;
-        })
-        .join("<br>");
-      return `<p>${linhas}</p>`;
-    })
-    .join("");
+  const trechos = texto.split(/(📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n\n|\n[A-Z0-9]|$))/);
+  
+  return trechos.map(trecho => {
+    if (/📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(trecho)) {
+      const seguro = escaparHTML(trecho);
+      return `<pre style="
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.8;
+        margin: 1em 0;
+        padding: 12px 16px;
+        background: rgba(0,0,0,0.04);
+        border-radius: 8px;
+        overflow-x: auto;
+        white-space: pre;
+      ">${seguro}</pre>`;
+    }
+    
+    return escaparHTML(trecho)
+      .trim()
+      .split(/\n{2,}/)
+      .map(paragrafo => {
+        const linhas = paragrafo
+          .split("\n")
+          .map(linha => {
+            if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+              return `<span class="destaque-exemplo">${linha}</span>`;
+            }
+            return linha;
+          })
+          .join("<br>");
+        return `<p>${linhas}</p>`;
+      })
+      .join("");
+  }).join("");
 }
+
 
 
 function classeTipo(tipo, categoria) {
