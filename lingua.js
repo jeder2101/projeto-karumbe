@@ -516,14 +516,16 @@ direta letra por letra:
   • As formas py e wy resultam de processos sonoros
     que envolvem vogais, aproximantes e ambiente
     nasal — não de substituição automática
+    
 
 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
 
-Tupi      Guarani      Nhandewa-Guarani    Significado
-kwarasy → kwarahy     → kwaray             = sol
-asab    → aha         → aa                 = eu vou
-ambyasy → ambyahy     → ambyay             = fome
-kwese   → kwehe       → kweé               = ontem
+Tupi      Guarani      Nhandewa-Guarani  Significado
+kwarasy → kwarahy     → kwaray           = sol
+asab    → aha         → aa               = eu vou
+ambyasy → ambyahy     → ambyay           = fome
+kwese   → kwehe       → kweé             = ontem
+
 
 A mudança de hy → y, de he → é e de b → zero em
 ambiente final segue lógica semelhante: perda de
@@ -1644,6 +1646,11 @@ function formatarConteudo(texto) {
     .trim()
     .split(/\n{2,}/)
     .map(paragrafo => {
+      // ✅ Detecta bloco de correspondência e mantém alinhado
+      if (/OUTROS CASOS DE CORRESPONDÊNCIA/.test(paragrafo)) {
+        return `<pre style="font-family: 'Courier New', Courier, monospace; line-height: 1.6; margin: 1em 0; padding: 10px; background: rgba(0,0,0,0.05); border-radius: 6px; overflow-x: auto;">${paragrafo}</pre>`;
+      }
+      
       const linhas = paragrafo
         .split("\n")
         .map(linha => {
@@ -1657,6 +1664,7 @@ function formatarConteudo(texto) {
     })
     .join("");
 }
+
 
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
