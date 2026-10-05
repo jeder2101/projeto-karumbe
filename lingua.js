@@ -59,163 +59,213 @@ das crianças e das novas gerações.
 ]
 },
 {
-id: 2,
-categoria: "História da língua",
-periodo: "História",
-titulo: "A trajetória histórica da língua Guarani Nhandewa",
-resumo:
-"A língua Guarani Nhandewa possui uma história relacionada aos povos Tupi-Guarani, aos territórios, às migrações, aos contatos entre comunidades e à transmissão de conhecimentos entre gerações.",
-conteudo: `
+    id: 2,
+    categoria: "História da língua",
+    periodo: "História",
+    titulo: "A trajetória histórica da língua Guarani Nhandewa",
+    resumo:
+        "A língua Guarani Nhandewa possui uma história relacionada aos povos Tupi-Guarani, aos territórios, às migrações, aos contatos entre comunidades e à transmissão de conhecimentos entre gerações.",
+    conteudo: `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. RAÍZES E SIGNIFICAÇÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 A língua Guarani Nhandewa faz parte da história linguística
 dos povos Tupi-Guarani.
+
+A designação "Nhandeva" significa "nossa gente" — do
+nhande + avá —, expressão que os Guarani utilizam para
+se referir ao grupo que compartilha o mesmo caminho e
+a mesma origem. O conjunto de comunidades que formou
+a variedade Nhandewa-Guarani, grafada com "w" segundo
+a ortografia adotada pelas próprias comunidades, descende
+de grupos migrantes saídos da região de fronteira entre
+o atual Mato Grosso do Sul e o Paraguai.
+
 Sua trajetória deve ser compreendida considerando os
 territórios, as comunidades, os deslocamentos históricos,
 as migrações e as relações estabelecidas entre diferentes
 povos e comunidades Guarani.
-A designação "Nhandeva" significa "nossa gente" — do
-nhande + avá —, expressão que os Guarani utilizam para
-se referir ao grupo que compartilha o mesmo caminho e
-a mesma origem. O conjunto de comunidades
-que formou a variedade Nhandewa-Guarani, grafada com
-"w" segundo a ortografia adotada pelas próprias comunidades,
-descende de grupos migrantes saídos da região de fronteira
-entre o atual Mato Grosso do Sul e o Paraguai.
+
 A história de uma língua não acontece de forma isolada.
 Ela acompanha seus falantes e é transmitida entre gerações.
 Por isso, para compreender o Nhandewa-Guarani contemporâneo,
 é necessário observar tanto as continuidades históricas quanto
 as transformações ocorridas ao longo do tempo.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. REGISTROS HISTÓRICOS DA LÍNGUA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Os registros históricos e linguísticos permitem estudar
 aspectos da língua Guarani desde documentos antigos até
 as formas utilizadas pelas comunidades atualmente.
-Entre os registros mais importantes para os estudos históricos
-do Guarani está a obra de Antonio Ruiz de Montoya,
-especialmente o "Tesoro de la lengua guarani", publicado
-em 1639, e a "Arte, y bocabulario de la lengua guarani",
-publicada em 1640. Essas obras constituem registros
-históricos importantes de uma variedade do Guarani registrada
-no período colonial. Entretanto, não devem ser consideradas
-como uma descrição direta do Nhandewa contemporâneo.
-O Apapokúva é reconhecido como um dialeto do Avá-Guarani
-também chamado de Nhandéva, falado no estado do Paraná.
-A descrição feita por Curt Nimuendajú, publicada inicialmente
-em 1914, constitui a primeira análise científica dessa
-língua. Nimuendajú foi aceito e ritualmente batizado
-em 1910 entre os Apapocúva, vindo a conviver diretamente
-com os grupos que protagonizavam as migrações.
+
+Entre os registros mais importantes está a obra de
+Antônio Ruiz de Montoya:
+  • "Tesoro de la lengua guarani" — 1639
+  • "Arte, y bocabulario de la lengua guarani" — 1640
+
+Essas obras constituem registros importantes de uma
+variedade do Guarani do período colonial, mas não
+devem ser consideradas descrição direta do Nhandewa
+contemporâneo.
+
+O Apapokúva é reconhecido como dialeto do Avá-Guarani
+(Nhandéva), falado no Paraná. A descrição científica
+feita por Curt Nimuendajú, publicada em 1914, é a
+primeira análise detalhada dessa língua. Nimuendajú
+foi aceito e ritualmente batizado entre os Apapocúva
+em 1910, convivendo diretamente com os grupos que
+protagonizavam as migrações.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. MIGRAÇÕES E FORMAÇÃO DAS COMUNIDADES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Nimuendajú registrou trajetórias de grupos como os
 Apapocúva, Tañyguá e Oguauíva e descreveu migrações
-associadas à cosmologia Guarani e à busca da
-Yvy Marã e'ỹ — a "Terra sem Mal" —, caminhada que
-partiu do oeste em direção ao leste, ao longo dos
-séculos XIX e XX.
-Essas trajetórias resultaram na formação de comunidades
-que mantiveram contato entre si ao longo de mais de
-um século e meio, gerando uma unidade cultural e
-linguística própria: Laranjinha e Pinhalzinho no
-norte do Paraná; Nimuendaju (Araribá) em Bauru-SP;
-e Bananal, Itariri e Piaçaguera no litoral paulista.
+associadas à busca da Yvy Marã e'ỹ — a "Terra sem Mal".
+Essa caminhada partiu do oeste em direção ao leste,
+ao longo dos séculos XIX e XX.
+
+Delas resultaram comunidades que mantiveram contato
+entre si por mais de um século e meio, formando uma
+unidade cultural e linguística própria:
+  • Laranjinha e Pinhalzinho — Norte do Paraná
+  • Nimuendaju (Araribá) — Bauru / SP
+  • Bananal, Itariri e Piaçaguera — Litoral de São Paulo
+
 Pesquisas contemporâneas mostram que a formação do
 Nhandewa não se resume a uma simples "mistura" de
-línguas. O contato entre os grupos migrantes gerou
-características próprias que se consolidaram ao
-longo de gerações de convívio.
+línguas. O convívio entre grupos gerou características
+próprias que se consolidaram ao longo de gerações.
+
 A língua pode conservar estruturas antigas e, ao mesmo
 tempo, desenvolver sons, vocábulos e usos próprios.
 Cada mudança precisa ser estudada com base em evidências,
 não se devendo atribuir traços de forma automática
 a outros povos ou períodos.
-A pesquisa de Juracilda Veiga destaca a prática do
-"oguatá" — o caminhar — como elemento central que
-une as migrações históricas aos movimentos atuais
-de retorno às terras do antigo Aldeamento do Rio Verde,
-onde se reafirma a presença do Nhandewa.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. OGUATÁ — O CAMINHAR E A MEMÓRIA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A pesquisa de Juracilda Veiga destaca o "oguatá" —
+o caminhar — como elemento central que une as migrações
+históricas aos movimentos atuais de retorno às terras
+do antigo Aldeamento do Rio Verde, onde se reafirma
+a presença do Nhandewa.
+
 A memória familiar também tece essa história. A linhagem
 de Firmino Pedro da Silva, reconhecido como Nhandewa,
 conecta gerações que atravessaram o Rio Paraná e o
 norte do Paraná, chegando até as famílias que hoje
 fortalecem a língua nas aldeias de Tekoa Karugwá.
-Podemos representar esse processo da seguinte maneira:
-Heranças históricas Tupi-Guarani
-↓
-Diversificação dos povos e comunidades Guarani
-↓
-Migrações e deslocamentos (oguatá)
-↓
-Encontros, convívio e redes entre comunidades
-↓
-Transmissão familiar e comunitária
-↓
-Conservação de estruturas e saberes antigos
-↓
-Transformações linguísticas ao longo das gerações
-↓
-Desenvolvimento de características próprias
-↓
-NHANDEWA-GUARANI CONTEMPORÂNEO
-Essa trajetória não é uniforme nem isolada. Estudos
-mais recentes também mostram que os deslocamentos
-Guarani assumiram formas diferentes em cada período:
-fugas frente a colonizadores e bandeirantes, atração
-para as missões jesuíticas, expedições de guerra e
-busca de metais preciosos nos séculos XVI e XVII,
-e as migrações em busca da Terra sem Mal a partir
-do século XIX.
-Por isso, o Nhandewa deve ser estudado em sua própria
-dinâmica: nem tudo que se registra no passado se
-mantém igual, nem tudo que se transforma perde a
-raiz. A língua viva é memória em movimento.
-Os documentos antigos ajudam a compreender as formas
-registradas do Guarani. Os estudos de Nimuendaju
-ajudam a compreender as trajetórias dos grupos.
-As pesquisas atuais aprofundam as relações entre
-passado e presente. E a memória das famílias preserva
-o que nem sempre aparece nos livros.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. TRAJETÓRIA E PROCESSO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Podemos representar esse processo:
+
+  Heranças históricas Tupi-Guarani
+              ↓
+  Diversificação dos povos e comunidades
+              ↓
+  Migrações e deslocamentos (oguatá)
+              ↓
+  Encontros, convívio e redes entre comunidades
+              ↓
+  Transmissão familiar e comunitária
+              ↓
+  Conservação de estruturas e saberes antigos
+              ↓
+  Transformações linguísticas ao longo das gerações
+              ↓
+  Desenvolvimento de características próprias
+              ↓
+      NHANDEWA-GUARANI CONTEMPORÂNEO
+
+Os deslocamentos assumiram formas diferentes em cada período:
+  • Séc. XVI–XVII: fugas frente a colonizadores e bandeirantes,
+    atração para missões jesuíticas, expedições de guerra e
+    busca de metais preciosos
+  • Séc. XIX–XX: migrações em busca da Terra sem Mal
+
+Nem tudo que se registra no passado se mantém igual,
+nem tudo que se transforma perde a raiz. A língua viva
+é memória em movimento.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. FORMAS DE CONHECIMENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Neste projeto, distinguimos:
-DOCUMENTADO — Fontes verificáveis e pesquisas acadêmicas
-MEMÓRIA FAMILIAR — Saberes transmitidos oralmente
-EM PESQUISA — Dados em fase de comparação
-HIPÓTESE — Interpretações a serem confirmadas
+
+  📜 DOCUMENTADO
+  Fontes verificáveis e pesquisas acadêmicas
+
+  💬 MEMÓRIA FAMILIAR
+  Saberes transmitidos oralmente entre gerações
+
+  🔍 EM PESQUISA
+  Dados em fase de comparação com documentos e registros
+
+  💡 HIPÓTESE
+  Interpretações que ainda precisam de evidências
+
+Os documentos antigos ajudam a compreender as formas
+registradas. Os estudos de Nimuendaju ajudam a compreender
+as trajetórias dos grupos. As pesquisas atuais aprofundam
+as relações entre passado e presente. E a memória das
+famílias preserva o que nem sempre aparece nos livros.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONCLUSÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 O Nhandewa não pertence apenas aos registros do passado.
 É uma língua que caminhou com seu povo, atravessou
 rios e gerações, conserva memórias e continua se
 transformando. Estudar sua história é também estudar
 a história das pessoas que a falam.
 `,
-tipo: "documentado",
-fonte:
-"Antonio Ruiz de Montoya; Curt Nimuendajú; Wilmar D'Angelis; Consuelo de Paiva Godinho Costa; Juracilda Veiga; Wolf Dietrich; Rafael Fernandes Mendes Júnior; pesquisas históricas e linguísticas sobre o Guarani e o Nhandewa-Guarani.",
-links: [
-{
-titulo: "A língua apapokúva-guarani registrada por Nimuendajú – Revista Tellus",
-url: "https://www.tellus.ucdb.br/tellus/article/view/34"
+    tipo: "documentado",
+    fonte:
+        "Antonio Ruiz de Montoya; Curt Nimuendajú; Wilmar D'Angelis; Consuelo de Paiva Godinho Costa; Juracilda Veiga; Wolf Dietrich; Rafael Fernandes Mendes Júnior; pesquisas históricas e linguísticas sobre o Guarani e o Nhandewa-Guarani.",
+    links: [
+        {
+            titulo: "A língua apapokúva-guarani registrada por Nimuendajú – Revista Tellus",
+            url: "https://www.tellus.ucdb.br/tellus/article/view/34"
+        },
+        {
+            titulo: "Nhandewa-Guarani – Enciclopédia das Línguas no Brasil – UNICAMP",
+            url: "https://labeurb.unicamp.br/elb/ler/272"
+        },
+        {
+            titulo: "Nimongaraí – O batismo ritual de Nimuendajú",
+            url: "https://periodicos.unb.br/index.php/ling/article/view/16219"
+        },
+        {
+            titulo: "Guarani – Enciclopédia das Línguas no Brasil – UNICAMP",
+            url: "https://labeurb.unicamp.br/elb/ler/252"
+        },
+        {
+            titulo: "Migrações históricas e cosmologia Guarani – Juracilda Veiga",
+            url: "https://www.rau2.ufscar.br/index.php/rau/article/view/87"
+        },
+        {
+            titulo: "Cartografias dos deslocamentos Guarani: séculos XVI e XVII – Revista Mana",
+            url: "https://www.scielo.br/j/mana/a/V6jQBdTrFbQh54qgTWN4xxb/?lang=pt"
+        },
+        {
+            titulo: "Bibliografia do verbete Nhandewa-Guarani – UNICAMP",
+            url: "https://www.labeurb.unicamp.br/elb/ler/273"
+        }
+    ]
 },
-{
-titulo: "Nhandewa-Guarani – Enciclopédia das Línguas no Brasil – UNICAMP",
-url: "https://labeurb.unicamp.br/elb/ler/272"
-},
-{
-titulo: "Nimongaraí – O batismo ritual de Nimuendajú",
-url: "https://periodicos.unb.br/index.php/ling/article/view/16219"
-},
-{
-titulo: "Guarani – Enciclopédia das Línguas no Brasil – UNICAMP",
-url: "https://labeurb.unicamp.br/elb/ler/252"
-},
-{
-titulo: "Migrações históricas e cosmologia Guarani – Juracilda Veiga",
-url: "https://www.rau2.ufscar.br/index.php/rau/article/view/87"
-},
-{
-titulo: "Cartografias dos deslocamentos Guarani: séculos XVI e XVII – Revista Mana",
-url: "https://www.scielo.br/j/mana/a/V6jQBdTrFbQh54qgTWN4xxb/?lang=pt"
-},
-{
-titulo: "Bibliografia do verbete Nhandewa-Guarani – UNICAMP",
-url: "https://www.labeurb.unicamp.br/elb/ler/273"
-}
-]
-},
+
   
 {
     id: 3,
