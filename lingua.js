@@ -220,103 +220,77 @@ url: "https://www.labeurb.unicamp.br/elb/ler/273"
 {
     id: 3,
     categoria: "Transformações",
-    periodo: "Fonologia",
+    periodo: "Sons",
     titulo: "Mudanças nos sons da língua",
-
     resumo:
         "Os sons de uma língua podem apresentar transformações ao longo da história. No Nhandewa-Guarani, estudos registram correspondências entre formas antigas e atuais, além de processos relacionados à nasalidade.",
-
     conteudo: `
-As línguas podem apresentar mudanças nos sons ao longo
-de sua história.
+As línguas podem apresentar mudanças nos sons ao longo de sua história.
+Essas transformações podem ocorrer na pronúncia, na estrutura das palavras e na maneira como determinados sons são realizados em diferentes contextos.
 
-Essas transformações podem ocorrer na pronúncia,
-na estrutura das palavras e na maneira como determinados
-sons são realizados em diferentes contextos.
+O estudo da fonologia do Nhandewa-Guarani permite observar relações entre registros históricos e formas encontradas em comunidades contemporâneas.
 
-O estudo da fonologia do Nhandewa-Guarani permite
-observar relações entre registros históricos e formas
-encontradas em comunidades contemporâneas.
+Consuelo de Paiva Godinho Costa apresenta exemplos de correspondências históricas entre formas do Tupi, do Guarani e do Nhandewa-Guarani.
 
-Consuelo de Paiva Godinho Costa apresenta exemplos
-de correspondências históricas entre formas do Tupi,
-do Guarani e do Nhandewa-Guarani.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Tupi:            kwarasy
+  Guarani:         kwarahy
+  Nhandewa-Guarani: kwaray
+  Significado: sol
 
-EXEMPLO 1 — MUDANÇA EM FORMAS RELACIONADAS AO SOL
+Esse exemplo é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
 
-Tupi: kwarasy
-Guarani: kwarahy
-Nhandewa-Guarani: kwaray
-Significado: sol.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 2 — FORMAS RELACIONADAS À AÇÃO DE IR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Tupi:            asab
+  Guarani:         aha
+  Nhandewa-Guarani: aa
+  Significado: eu vou
 
-Esse exemplo é apresentado em estudos linguísticos
-como uma comparação entre formas registradas em
-diferentes variedades e períodos.
+A comparação mostra alterações na realização de determinados sons. É necessário considerar o registro e a análise linguística de cada forma.
 
-EXEMPLO 2 — MUDANÇA EM FORMAS RELACIONADAS À AÇÃO DE IR
-
-Tupi: asab
-Guarani: aha
-Nhandewa-Guarani: aa
-Significado: eu vou.
-
-A comparação mostra alterações na realização de
-determinados sons. É necessário considerar o registro
-e a análise linguística de cada forma.
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 3 — FORMAS RELACIONADAS À FOME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Tupi:            ambyasy
+  Guarani:         ambyahy
+  Nhandewa-Guarani: ambyay
+  Significado: fome
 
-Tupi: ambyasy
-Guarani: ambyahy
-Nhandewa-Guarani: ambyay
-Significado: fome.
+Esse exemplo permite observar correspondências entre sons presentes em registros diferentes.
 
-Esse exemplo permite observar correspondências
-entre sons presentes em registros diferentes.
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 4 — FORMAS RELACIONADAS AO TEMPO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Tupi:            kwese
+  Guarani:         kwehe
+  Nhandewa-Guarani: kweé
+  Significado: ontem
 
-Tupi: kwese
-Guarani: kwehe
-Nhandewa-Guarani: kweé
-Significado: ontem.
+A comparação entre essas formas ajuda a estudar transformações sonoras ao longo da história.
 
-A comparação entre essas formas ajuda a estudar
-transformações sonoras ao longo da história.
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 A NASALIDADE NA LÍNGUA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A nasalidade é uma característica importante
-na fonologia do Nhandewa-Guarani.
+A nasalidade é uma característica central e distintiva na fonologia do Nhandewa-Guarani.
 
-Estudos descrevem consoantes pré-nasalizadas,
-como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
+Estudos descrevem consoantes pré-nasalizadas, como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
+Em determinados ambientes, consoantes pré-nasalizadas podem apresentar realizações inteiramente nasais.
 
-Em determinados ambientes, consoantes pré-nasalizadas
-podem apresentar realizações nasais.
+Exemplos descritos na pesquisa incluem relações entre formas como mb → m e nd → n, dependendo do ambiente nasal ou oral em que se encontram.
 
-Exemplos descritos na pesquisa incluem relações
-entre formas como mb e m, e nd e n, dependendo
-do ambiente nasal ou oral.
+Esses processos devem ser analisados considerando a palavra completa, os sons vizinhos e o contexto de uso — não se tratam de regras mecânicas que se aplicam igualmente a todos os casos.
 
-Esses processos devem ser analisados considerando
-a palavra completa, os sons vizinhos e o contexto
-em que a forma é utilizada.
+A mudança sonora não significa necessariamente perda da língua. Pelo contrário: faz parte de sua trajetória histórica e da diversidade que caracteriza os povos ao longo do tempo.
 
-A mudança sonora não significa necessariamente
-perda da língua. Ela pode fazer parte da trajetória
-histórica e da diversidade linguística dos povos.
+O estudo das transformações fonológicas contribui para compreender tanto os registros antigos quanto as formas contemporâneas, reforçando a continuidade do Nhandewa-Guarani.
 
-O estudo das transformações fonológicas contribui
-para compreender os registros antigos, as formas
-contemporâneas e a continuidade do Nhandewa-Guarani.
-
-Os exemplos apresentados nesta seção são referências
-para estudo e comparação. Não devem ser utilizados
-como regras absolutas para todas as palavras ou
-para todos os falantes Nhandewa.
+⚠️ Os exemplos apresentados são referências para estudo e comparação. Não devem ser utilizados como regras absolutas para todas as palavras ou para todos os falantes Nhandewa.
 `,
-
     tipo: "documentado",
 
     fonte:
