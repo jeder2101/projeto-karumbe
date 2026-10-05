@@ -520,11 +520,11 @@ direta letra por letra:
 
 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
 
-"Tupi      Guarani      Nhandewa-Guarani  Significado
+Tupi      Guarani      Nhandewa-Guarani  Significado
 kwarasy → kwarahy     → kwaray           = sol
 asab    → aha         → aa               = eu vou
 ambyasy → ambyahy     → ambyay           = fome
-kwese   → kwehe       → kweé             = ontem"
+kwese   → kwehe       → kweé             = ontem
 
 
 A mudança de hy → y, de he → é e de b → zero em
@@ -1642,9 +1642,12 @@ function escaparHTML(texto) {
 }
 
 function formatarConteudo(texto) {
-  const trechos = texto.split(/(📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n\n|\n[A-Z0-9]|$))/);
+  // Captura QUALQUER bloco que comece com 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
+  // e vai até encontrar 2 quebras de linha ou o fim do texto
+  const trechos = texto.split(/(📌 OUTROS CASOS DE CORRESPONDÊNCIA:[\s\S]+?(?=\n{2,}|\n[A-Z0-9]|$|$))/);
   
   return trechos.map(trecho => {
+    // Verifica se este trecho é uma tabela de correspondência
     if (/📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(trecho)) {
       const seguro = escaparHTML(trecho);
       return `<pre style="
@@ -1659,6 +1662,7 @@ function formatarConteudo(texto) {
       ">${seguro}</pre>`;
     }
     
+    // Texto normal — formata como antes
     return escaparHTML(trecho)
       .trim()
       .split(/\n{2,}/)
@@ -1677,6 +1681,7 @@ function formatarConteudo(texto) {
       .join("");
   }).join("");
 }
+
 
 
 
