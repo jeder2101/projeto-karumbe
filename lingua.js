@@ -437,94 +437,127 @@ O estudo das transformações fonológicas contribui para compreender tanto os r
     periodo: "Gramática histórica",
     titulo: "De pe, be e bo para py e wy",
     resumo:
-        "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar possíveis transformações nas posposições e nas estruturas gramaticais.",
+        "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar transformações nas posposições e nas estruturas gramaticais, com destaque para a passagem de pe/be/bo para py e wy.",
     conteudo: `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. RELAÇÕES HISTÓRICAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 As línguas da família Tupi-Guarani apresentam relações
 históricas entre palavras, sons e estruturas gramaticais.
-Durante o estudo dessas relações, podemos encontrar
-formas como pe, be e bo em registros antigos ou em
-outras variedades linguísticas.
+Em registros antigos e em outras variedades do Guarani,
+encontram-se formas como **pe, be e bo**.
 
-No Nhandewa-Guarani, aparecem formas como py e wy,
-que devem ser analisadas considerando sua função,
-seu significado e o contexto em que são utilizadas.
-
-É importante compreender que essas formas não devem
-ser consideradas simplesmente como substituições
-automáticas umas das outras.
+No Nhandewa-Guarani, correspondentes a essas formas,
+aparecem **py e wy**, que não devem ser entendidas como
+simples substituições mecânicas — cada uma tem sua
+função, seu significado e seu contexto de uso.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 1 — A FORMA wy
+2. A FORMA wy — DIREÇÃO E DESTINO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Em registros do Nhandewa-Guarani, encontramos a forma
-wy relacionada à ideia de direção ou destino.
+A forma **wy** está ligada à ideia de direção, destino
+ou referência em relação a alguém/algo.
 
-Exemplo registrado:
-  Txeé + wy = txewy
-  Significado: para mim
+📌 EXEMPLOS REGISTRADOS:
 
-Esse exemplo mostra que a forma wy pode participar
-da construção de uma expressão gramatical, indicando
-direção ou destino em relação à pessoa.
+  Txeé  + wy  = txewy
+  "eu"    "para"  → "para mim"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 2 — A FORMA py
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  pee   + wy  = pemy
+  "vocês" "para"  → "para vocês"
 
-A forma py também aparece em descrições e materiais
-gramaticais relacionados ao Nhandewa-Guarani.
-
-Sua análise deve considerar a palavra completa,
-a função da posposição e o significado produzido
-na frase.
-
-Não devemos afirmar que py possui sempre o mesmo
-significado de pe, be ou bo sem consultar o registro
-linguístico específico de cada forma.
+Esses exemplos mostram que wy funciona como posposição
+que indica direção ou destinatário, correspondendo
+a funções que em outras variedades aparecem com pe,
+be ou bo. A forma pode apresentar variação em ambiente
+nasal: em pemy, wy realiza-se como my [mỹ].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 3 — COMPARAÇÃO HISTÓRICA
+3. A FORMA py — ORIGEM, LOCALIZAÇÃO E Relação
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  pe, be, bo → formas encontradas em registros
-               históricos e em outras variedades
-               do Guarani
+A forma **py** também aparece em contextos onde outras
+variedades do Guarani utilizam pe, be ou bo. Ela
+participa de construções que indicam origem, lugar
+ou relação.
 
-  py, wy     → formas encontradas no Nhandewa-Guarani
-               e que precisam ser estudadas dentro
-               de suas funções gramaticais próprias
-               e de seus contextos de uso
+📌 EXEMPLOS REGISTRADOS E CORRESPONDÊNCIAS:
 
-A comparação histórica ajuda a investigar como
-determinadas formas podem se modificar ao longo
-do tempo, mas não significa que todas as palavras
-tenham seguido o mesmo processo. Cada mudança
-precisa ser verificada caso a caso.
+  Guarani Antigo / outras variedades → Nhandewa-Guarani
+  pe / be / bo                        → py / wy
+
+  oga   "casa"   + bo  → óy   "para a casa / da casa"
+  coang "roça"   + bo  → cóy  "para a roça / da roça"
+  añang "diabo"  + bo  → añãy "para o diabo / do diabo"
+
+Nessas correspondências, o elemento final — grafado
+como bo no Guarani Antigo — realiza-se como y/wy/py
+no Nhandewa, integrando-se à palavra como uma sílaba
+final com valor de posposição.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-A IMPORTÂNCIA DA PESQUISA
+4. A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Para compreender essas relações, é necessário
-consultar documentos antigos, estudos linguísticos,
-gramáticas, vocabulários e os conhecimentos dos
-falantes Nhandewa.
+A pesquisa mostra que o que se passa não é uma troca
+direta letra por letra:
 
-As formas devem ser registradas com sua grafia,
-pronúncia, significado, função gramatical e fonte.
-O conhecimento dos mais velhos e dos falantes da
-comunidade é fundamental para verificar como essas
-formas são utilizadas atualmente.
+  • Em posição final de palavra, o que era g/bo no
+    Guarani Antigo corresponde a y/wy no Nhandewa,
+    interpretado como aproximante /w/ ou /ŷ/ — a
+    "sexta vogal" central alta
 
-⚠️ Este conteúdo é apresentado como material de estudo.
-As correspondências entre pe, be, bo, py e wy devem
-ser confirmadas por meio de fontes específicas e
-da pesquisa linguística junto à comunidade.
+  • A grafia com y por Nimuendaju confirma que se
+    tratava de uma vogal/aproximante, não de uma
+    consoante oclusiva
+
+  • As formas py e wy resultam de processos sonoros
+    que envolvem vogais, aproximantes e ambiente
+    nasal — não de substituição automática
+
+📌 OUTROS CASOS DE CORRESPONDÊNCIA:
+
+  Tupi       Guarani      Nhandewa-Guarani    Significado
+  kwarasy    kwarahy      kwaray              sol
+  asab       aha          aa                  eu vou
+  ambyasy    ambyahy      ambyay              fome
+  kwese      kwehe        kweé                ontem
+
+A mudança de hy → y, de he → é e de b → zero em
+ambiente final segue lógica semelhante: perda de
+consoante intervocálica e manutenção da vogal,
+que pode se aproximar de wy/y.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. CONTEXTO E PRECISÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Não se deve afirmar que py tem SEMPRE o mesmo
+significado de pe, be ou bo. É preciso consultar:
+  ✅ o registro linguístico específico
+  ✅ a função gramatical em cada frase
+  ✅ o ambiente sonoro (oral ou nasal)
+  ✅ a fala dos próprios falantes da comunidade
+
+As correspondências são caminhos de investigação,
+não regras fixas. Cada palavra e cada construção
+precisa ser verificada com as fontes e com quem
+fala a língua.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONCLUSÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+As formas pe, be, bo do passado não desapareceram
+simplesmente: transformaram-se em py, wy, y, my,
+conforme o contexto e a posição. A língua não apaga
+sua história — ela a recria em cada geração.
 `,
     tipo: "em estudo",
     fonte:
-        "Consuelo de Paiva Godinho Costa — *Nhandewa Aywu: fonologia do Nhandewa-Guarani* (Dissertação de Mestrado / Museu Nacional dos Povos Indígenas); Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2012.",
+        "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, 2003/2010.",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
@@ -535,7 +568,8 @@ da pesquisa linguística junto à comunidade.
             url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
         }
     ]
-},
+}
+,
 
 
 {
