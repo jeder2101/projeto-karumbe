@@ -511,7 +511,10 @@ direta letra por letra:
     que envolvem vogais, aproximantes e ambiente
     nasal — não de substituição automática
 
-📌 OUTROS CASOS DE CORRESPONDÊNCIA:
+
+📌 Correspondências entre variedades do Guarani:
+
+Tupi(nambá) | Guarani (“geral”) | Nhandewa-Guarani | Português
 
 kwarasy + kwarahy = kwaray
 "Tupi / Guarani" → "sol"
@@ -525,7 +528,7 @@ ambyasy + ambyahy = ambyay
 kwese + kwehe = kweé
 "Tupi / Guarani" → "ontem"
 
-A mudança de hy → y, de he → é e de b → zero em
+A mudança de hy para y, de he para é e de b para zero em
 ambiente final segue lógica semelhante: perda de
 consoante intervocálica e manutenção da vogal,
 que pode se aproximar de wy/y.
