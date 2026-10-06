@@ -1640,7 +1640,7 @@ function escaparHTML(texto) {
 
 
 /* =========================================================
-   IDENTIFICA UMA LINHA DE EXEMPLO
+   TABELAS AUTOMÁTICAS DE EXEMPLOS
    ========================================================= */
 
 function linhaDeExemplo(linha) {
@@ -1649,8 +1649,7 @@ function linhaDeExemplo(linha) {
 
   if (!original) return null;
 
-
-  // Não transforma títulos, marcadores ou listas
+  // Não transforma marcadores ou títulos
   if (/^[📌⚠️✅•]/u.test(original)) return null;
 
   if (
@@ -1659,106 +1658,6 @@ function linhaDeExemplo(linha) {
   ) {
     return null;
   }
-
-
-  // Não transforma frases explicativas longas
-  if (original.length > 150) {
-    return null;
-  }
-
-
-  /* ---------------------------------------------------------
-     FORMA + ELEMENTO → RESULTADO
-
-     Exemplo:
-     Txeé + wy = txewy
-     pee + wy → pemy
-     --------------------------------------------------------- */
-
-  let m = original.match(
-    /^([^+→=]{1,60}?)\s*\+\s*([^+→=]{1,40}?)\s*(?:→|=)\s*(.{1,120})$/u
-  );
-
-  if (m) {
-
-    const forma = m[1].trim();
-    const elemento = m[2].trim();
-    const resultado = m[3].trim();
-
-    return {
-      tipo: "composicao",
-      forma,
-      elemento,
-      resultado,
-      sentido: ""
-    };
-  }
-
-
-  /* ---------------------------------------------------------
-     FORMA → RESULTADO
-
-     Só aceita quando o lado esquerdo é curto.
-     Isso evita transformar frases explicativas em tabelas.
-     --------------------------------------------------------- */
-
-  m = original.match(
-    /^([^→]{1,60}?)\s*→\s*([^→]{1,100})$/u
-  );
-
-  if (m) {
-
-    const forma = m[1].trim();
-    const resultado = m[2].trim();
-
-    // Evita frases explicativas
-    if (
-      forma.split(/\s+/).length <= 8 &&
-      !/[.!?]$/.test(forma)
-    ) {
-
-      return {
-        tipo: "transformacao",
-        forma,
-        elemento: "",
-        resultado,
-        sentido: ""
-      };
-    }
-  }
-
-
-  /* ---------------------------------------------------------
-     FORMA = RESULTADO
-     --------------------------------------------------------- */
-
-  m = original.match(
-    /^([^=]{1,60}?)\s*=\s*([^=]{1,100})$/u
-  );
-
-  if (m) {
-
-    const forma = m[1].trim();
-    const resultado = m[2].trim();
-
-    if (
-      forma.split(/\s+/).length <= 8 &&
-      !/[.!?]$/.test(forma)
-    ) {
-
-      return {
-        tipo: "transformacao",
-        forma,
-        elemento: "",
-        resultado,
-        sentido: ""
-      };
-    }
-  }
-
-
-  return null;
-}
 
 
   /* ---------------------------------------------------------
@@ -1862,124 +1761,34 @@ function linhaDeExemplo(linha) {
    CRIA A TABELA
    ========================================================= */
 
-/* =========================================================
-   CRIA A TABELA
-   ========================================================= */
-
 function tabelaDeExemplos(linhas) {
 
   const dados = [];
   const consumidos = new Set();
 
-
-  // ========================================================
-  // 1. TABELA DE CORRESPONDÊNCIAS EM TEXTO SIMPLES
-  // ========================================================
-
-  for (let i = 0; i < linhas.length; i++) {
-
-    const linha = linhas[i].trim();
-
-    if (
-      /^Tupi\s+Guarani\s+Nhandewa-Guarani\s+Significado$/i.test(linha)
-    ) {
-
-      let j = i + 1;
-
-      while (j < linhas.length) {
-
-        const atual = linhas[j].trim();
-
-        if (!atual) break;
-
-        const partes = atual.split(/\s+/);
-
-        // Esperamos:
-        // palavra antiga | palavra Nhandewa | resultado | significado
-
-        if (partes.length < 4) break;
-
-        const significado = partes.slice(3).join(" ");
-
-        dados.push({
-          tipo: "correspondencia",
-          forma: partes[0],
-          elemento: partes[1],
-          resultado: partes[2],
-          sentido: significado
-        });
-
-        consumidos.add(j);
-
-        j++;
-      }
-
-      if (dados.length > 0) {
-
-        const cabecalho = `
-          <tr>
-            <th>Tupi Guarani</th>
-            <th>Nhandewa-Guarani</th>
-            <th>Forma</th>
-            <th>Significado</th>
-          </tr>
-        `;
-
-        const corpo = dados.map(item => `
-          <tr>
-            <td>${escaparHTML(item.forma)}</td>
-            <td>${escaparHTML(item.elemento)}</td>
-            <td>${escaparHTML(item.resultado)}</td>
-            <td>${escaparHTML(item.sentido)}</td>
-          </tr>
-        `).join("");
-
-        return `
-          <div class="tabela-exemplo-wrapper">
-            <table class="tabela-exemplo">
-              <thead>
-                ${cabecalho}
-              </thead>
-              <tbody>
-                ${corpo}
-              </tbody>
-            </table>
-          </div>
-        `;
-      }
-    }
-  }
-
-
-  // ========================================================
-  // 2. EXEMPLOS COM +, → OU =
-  // ========================================================
-
-  dados.length = 0;
-
-
   for (let i = 0; i < linhas.length; i++) {
 
     if (consumidos.has(i)) continue;
-
 
     const item = linhaDeExemplo(linhas[i]);
 
     if (!item) continue;
 
 
-    const proxima = (
-      linhas[i + 1] || ""
-    ).trim();
+    /* -------------------------------------------------------
+       Verifica se existe tradução na linha seguinte
 
+       Exemplo:
 
-    // Tradução:
-    // "eu" "para" → "para mim"
+       Txeé + wy = txewy
+       "eu" "para" → "para mim"
+       ------------------------------------------------------- */
+
+    const proxima = (linhas[i + 1] || "").trim();
 
     const traducao = proxima.match(
       /^["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]$/u
     );
-
 
     if (traducao) {
 
@@ -1996,24 +1805,20 @@ function tabelaDeExemplos(linhas) {
   }
 
 
-  // Não cria tabela vazia
   if (dados.length === 0) {
     return null;
   }
 
 
-  // ========================================================
-  // 3. CABEÇALHO
-  // ========================================================
+  /* ---------------------------------------------------------
+     Define o cabeçalho
+     --------------------------------------------------------- */
 
   const temComposicao =
-    dados.some(item =>
-      item.tipo === "composicao"
-    );
+    dados.some(item => item.tipo === "composicao");
 
 
   let cabecalho;
-
 
   if (temComposicao) {
 
@@ -2038,9 +1843,9 @@ function tabelaDeExemplos(linhas) {
   }
 
 
-  // ========================================================
-  // 4. CORPO
-  // ========================================================
+  /* ---------------------------------------------------------
+     Corpo da tabela
+     --------------------------------------------------------- */
 
   const corpo = dados.map(item => {
 
@@ -2068,13 +1873,10 @@ function tabelaDeExemplos(linhas) {
   }).join("");
 
 
-  // ========================================================
-  // 5. RETORNA A TABELA
-  // ========================================================
-
   return `
     <div class="tabela-exemplo-wrapper">
       <table class="tabela-exemplo">
+
         <thead>
           ${cabecalho}
         </thead>
@@ -2082,6 +1884,7 @@ function tabelaDeExemplos(linhas) {
         <tbody>
           ${corpo}
         </tbody>
+
       </table>
     </div>
   `;
@@ -2098,6 +1901,43 @@ function formatarBlocosExemplo(texto) {
 
   const saida = [];
 
+  let tabelaAtual = null;
+
+
+  // ========================================================
+  // FUNÇÃO PARA JUNTAR DUAS TABELAS
+  // ========================================================
+
+  function juntarTabelas(tabela1, tabela2) {
+
+    if (!tabela1) return tabela2;
+    if (!tabela2) return tabela1;
+
+
+    // Pega somente as linhas do <tbody> da segunda tabela
+    const corpo2 = tabela2.match(
+      /<tbody[^>]*>([\s\S]*?)<\/tbody>/i
+    );
+
+
+    // Se não houver tbody, não tenta juntar
+    if (!corpo2) {
+      return tabela1;
+    }
+
+
+    // Insere as linhas da segunda tabela
+    // antes do fechamento do tbody da primeira.
+    return tabela1.replace(
+      /<\/tbody>/i,
+      corpo2[1] + "</tbody>"
+    );
+  }
+
+
+  // ========================================================
+  // PROCESSA OS PARÁGRAFOS
+  // ========================================================
 
   for (const paragrafo of paragrafos) {
 
@@ -2106,11 +1946,21 @@ function formatarBlocosExemplo(texto) {
     const tabela = tabelaDeExemplos(linhas);
 
 
-    // -----------------------------------------------
+    // ------------------------------------------------------
     // NÃO É TABELA
-    // -----------------------------------------------
+    // ------------------------------------------------------
 
     if (!tabela) {
+
+      // Se havia uma tabela aguardando,
+      // coloca ela antes do texto normal.
+      if (tabelaAtual) {
+
+        saida.push(tabelaAtual);
+
+        tabelaAtual = null;
+      }
+
 
       saida.push(paragrafo);
 
@@ -2118,50 +1968,23 @@ function formatarBlocosExemplo(texto) {
     }
 
 
-    // -----------------------------------------------
-    // IDENTIFICA AS LINHAS DOS EXEMPLOS
-    // -----------------------------------------------
+    // ------------------------------------------------------
+    // É TABELA
+    // ------------------------------------------------------
 
     const indicesTabela = new Set();
 
 
+    // Descobre quais linhas pertencem aos exemplos
     linhas.forEach((linha, indice) => {
-
-      // Caso especial: tabela Tupi/Nhandewa
-      if (
-        /^Tupi\s+Guarani\s+Nhandewa-Guarani\s+Significado$/i
-          .test(linha.trim())
-      ) {
-
-        indicesTabela.add(indice);
-
-        let j = indice + 1;
-
-        while (j < linhas.length) {
-
-          const partes = linhas[j].trim().split(/\s+/);
-
-          if (
-            !linhas[j].trim() ||
-            partes.length < 4
-          ) {
-            break;
-          }
-
-          indicesTabela.add(j);
-
-          j++;
-        }
-
-        return;
-      }
-
 
       if (linhaDeExemplo(linha)) {
 
         indicesTabela.add(indice);
 
 
+        // Se a próxima linha for tradução,
+        // também será incorporada à tabela.
         const proxima = (
           linhas[indice + 1] || ""
         ).trim();
@@ -2178,10 +2001,6 @@ function formatarBlocosExemplo(texto) {
     });
 
 
-    // -----------------------------------------------
-    // REMOVE AS LINHAS QUE VIRARAM TABELA
-    // -----------------------------------------------
-
     const bloco = [];
 
     let tabelaInserida = false;
@@ -2192,8 +2011,6 @@ function formatarBlocosExemplo(texto) {
       if (indicesTabela.has(indice)) {
 
         if (!tabelaInserida) {
-
-          bloco.push(tabela);
 
           tabelaInserida = true;
         }
@@ -2206,25 +2023,51 @@ function formatarBlocosExemplo(texto) {
     });
 
 
+    // ------------------------------------------------------
+    // JUNTA COM A TABELA ANTERIOR
+    // ------------------------------------------------------
+
+    if (tabelaAtual) {
+
+      tabelaAtual = juntarTabelas(
+        tabelaAtual,
+        tabela
+      );
+
+    } else {
+
+      tabelaAtual = tabela;
+    }
+
+
+    // ------------------------------------------------------
+    // SE SOBROU TEXTO NORMAL JUNTO DO EXEMPLO
+    // ------------------------------------------------------
+
     const textoRestante = bloco
       .join("\n")
       .trim();
 
 
-    // -----------------------------------------------
-    // SE RESTOU TEXTO, PRESERVA
-    // -----------------------------------------------
-
     if (textoRestante) {
 
+      saida.push(tabelaAtual);
+
+      tabelaAtual = null;
+
       saida.push(textoRestante);
-
-    } else {
-
-      saida.push(tabela);
-
     }
 
+  }
+
+
+  // ========================================================
+  // COLOCA A ÚLTIMA TABELA
+  // ========================================================
+
+  if (tabelaAtual) {
+
+    saida.push(tabelaAtual);
   }
 
 
