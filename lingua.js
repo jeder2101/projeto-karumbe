@@ -1664,7 +1664,7 @@ function escaparHTML(texto) {
 
 
 /* =========================================================
-   TABELAS AUTOMÁTICAS DE EXEMPLOS
+   TABELAS AUTOMÁTICAS DE EXEMPLOS E TÍTULOS ESPECÍFICOS
    ========================================================= */
 
 function linhaDeExemplo(linha) {
@@ -1764,14 +1764,13 @@ function linhaDeExemplo(linha) {
 
 
 /* =========================================================
-   CRIA A TABELA
+   CRIA A TABELA COM O TÍTULO ESPECÍFICO DA REFERÊNCIA
    ========================================================= */
 
-function tabelaDeExemplos(linhas) {
+function tabelaDeExemplos(linhas, contextoGeral = "") {
   const dados = [];
   const consumidos = new Set();
 
-  // Detecta se é a tabela de correspondência
   const blocoCorrespondencia = linhas.some(linha =>
     /📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(linha)
   );
@@ -1791,6 +1790,25 @@ function tabelaDeExemplos(linhas) {
   }
 
   if (dados.length === 0) return null;
+
+  // Atribuição rigorosa do título correto baseado nas referências específicas
+  let tituloTabela = "Exemplos Lingüísticos – Nhandewa-Guarani";
+  const textoLinhasUnidas = linhas.join(" ").toLowerCase();
+  const contextoLower = contextoGeral.toLowerCase();
+
+  if (blocoCorrespondencia) {
+    tituloTabela = "Nhandewa Aywu — Outros Casos de Correspondência Lexical";
+  } else if (textoLinhasUnidas.includes("experimental") || textoLinhasUnidas.includes("consonantal nasality") || contextoLower.includes("experimental")) {
+    tituloTabela = "Consonantal nasality in the variety of Nhandewa-Guarani – Journal of Experimental Phonetics";
+  } else if (textoLinhasUnidas.includes("funai") || textoLinhasUnidas.includes("tese sobre nasalidade") || contextoLower.includes("funai")) {
+    tituloTabela = "Tese sobre fonologia e nasalidade do Nhandewa-Guarani – Biblioteca FUNAI";
+  } else if (textoLinhasUnidas.includes("unicamp") || textoLinhasUnidas.includes("liames") || contextoLower.includes("liames")) {
+    tituloTabela = "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp";
+  } else if (textoLinhasUnidas.includes("apyngwa") || textoLinhasUnidas.includes("nasalização") || contextoLower.includes("apyngwa")) {
+    tituloTabela = "Nhandewa Aywu – Museu Nacional dos Povos Indígenas Apyngwa rupigwa — Nasalização em Nhandewa-Guarani";
+  } else if (textoLinhasUnidas.includes("fenômeno") || textoLinhasUnidas.includes("línguas") || contextoLower.includes("fenômeno")) {
+    tituloTabela = "O fenômeno de nasalidade nas línguas – LIAMES";
+  }
 
   // Escolhe os títulos de coluna corretos
   let cabecalho;
@@ -1857,6 +1875,9 @@ function tabelaDeExemplos(linhas) {
 
   return `
     <div class="tabela-exemplo-wrapper">
+      <div class="tabela-titulo-academico" style="font-weight: bold; margin-bottom: 6px; font-size: 0.95rem; color: #5a3e1b;">
+        📌 ${escaparHTML(tituloTabela)}
+      </div>
       <table class="tabela-exemplo">
         <thead>${cabecalho}</thead>
         <tbody>${corpo}</tbody>
@@ -1896,7 +1917,7 @@ function formatarBlocosExemplo(texto) {
 
   for (const paragrafo of paragrafos) {
     const linhas = paragrafo.split("\n");
-    const tabela = tabelaDeExemplos(linhas);
+    const tabela = tabelaDeExemplos(linhas, paragrafo);
 
     if (!tabela) {
       if (tabelaAtual) {
@@ -1914,7 +1935,7 @@ function formatarBlocosExemplo(texto) {
         indicesTabela.add(indice);
         const proxima = (linhas[indice + 1] || "").trim();
 
-        if (/^["“].*?(?:→|=)\s*["”]$/u.test(proxima)) {
+        if (/^["“].*?(?:→|=)\s*["“]$/u.test(proxima)) {
           indicesTabela.add(indice + 1);
         }
       }
@@ -1959,13 +1980,13 @@ function formatarBlocosExemplo(texto) {
 
 
 /* =========================================================
-   FORMATAÇÃO FINAL DO CONTEÚDO (CORRIGIDO)
+   FORMATAÇÃO FINAL DO CONTEÚDO
    ========================================================= */
 
 function formatarConteudo(texto) {
   if (!texto) return "";
 
-  // 1. Cria as tabelas em HTML estruturado
+  // 1. Cria as tabelas com os títulos específicos corretos
   let resultado = formatarBlocosExemplo(texto);
 
   // 2. Extrai e protege as tabelas geradas substituindo-as por marcadores únicos
@@ -1974,7 +1995,7 @@ function formatarConteudo(texto) {
     /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
     tabela => {
       const indice = tabelas.length;
-      tabelas.push(tabela); // Armazena a tabela HTML crua e intacta
+      tabelas.push(tabela); 
       return `###TABELAMARCADOR${indice}FIM###`;
     }
   );
@@ -1985,10 +2006,10 @@ function formatarConteudo(texto) {
   resultado = resultado.replace(/[ \t]+$/gm, "");
   resultado = resultado.replace(/\n[ \t]*\n[ \t]*\n+/g, "\n\n");
 
-  // 4. Aplica o escaparHTML apenas no texto normal (as tabelas já estão protegidas no array)
+  // 4. Aplica o escaparHTML apenas no texto normal
   resultado = escaparHTML(resultado);
 
-  // 5. Restaura as tabelas originais substituindo de volta os marcadores
+  // 5. Restaura as tabelas originais intactas substituindo os marcadores
   tabelas.forEach((tabela, indice) => {
     resultado = resultado.replace(`###TABELAMARCADOR${indice}FIM###`, tabela);
   });
@@ -2000,12 +2021,10 @@ function formatarConteudo(texto) {
     .filter(bloco => bloco !== "");
 
   return blocos.map(bloco => {
-    // Se o bloco contém uma tabela inteira isolada
     if (bloco.includes("<div class=\"tabela-exemplo-wrapper\">")) {
       return bloco;
     }
 
-    // Se o bloco contém texto comum com formatação de linhas
     const linhas = bloco
       .split("\n")
       .map(linha => {
