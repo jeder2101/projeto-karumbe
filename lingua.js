@@ -1336,9 +1336,6 @@ function fecharHistoria(event) {
   modal.setAttribute("aria-hidden", "true");
   document.body.classList.remove("modal-aberto");
 }
-/* =========================================================
-   FUNÇÕES AUXILIARES
-   ========================================================= */
 function escaparHTML(texto) {
   return String(texto ?? "")
     .replaceAll("&", "&amp;")
@@ -1347,25 +1344,74 @@ function escaparHTML(texto) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
+
 function formatarConteudo(texto) {
-  return escaparHTML(texto)
+  if (!texto) return "";
+
+  // PASSO 1 → Separar blocos de tabela ANTES de escapar
+  const blocosTabela = [];
+  let resultado = texto;
+
+  // Captura QUALQUER bloco começando com 📌
+  resultado = resultado.replace(/(^|\n)📌[^\n]*[\s\S]*?(?=\n{2,}(?:[A-ZÁ-Ú]|ID\s*\d+|\d+\.|$))/gm, (bloco) => {
+    const id = `__TABELA_${blocosTabela.length}__`;
+    blocosTabela.push(bloco);
+    return id;
+  });
+
+  // PASSO 2 → Escapar o resto do texto
+  resultado = escaparHTML(resultado);
+
+  // PASSO 3 → Recolocar tabelas formatadas
+  blocosTabela.forEach((bloco, i) => {
+    const id = `__TABELA_${i}__`;
+    const seguro = escaparHTML(bloco);
+    resultado = resultado.replace(id, `<pre style="font-family: 'Courier New', monospace; line-height: 1.6; margin: 1em 0; padding: 12px 16px; background: rgba(0,0,0,0.05); border-radius: 6px; overflow-x: auto;">${seguro}</pre>`);
+  });
+
+  // PASSO 4 → Formatar parágrafos, quebras e destaques
+  return resultado
     .trim()
     .split(/\n{2,}/)
-    .map(paragrafo => {
-      const linhas = paragrafo
-        .split("\n")
-        .map(linha => {
-          if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
-            return `<span class="destaque-exemplo">${linha}</span>`;
-          }
-          return linha;
-        })
-        .join("<br>");
-      return `<p>${linhas}</p>`;
+    .map(bloco => {
+      if (bloco.startsWith("<pre")) return bloco;
+
+      const linhas = bloco.split("\n").map(linha => {
+        const limpa = linha.trim();
+        // Separadores ─── / ━━━
+        if (/^[─━]{3,}$/.test(limpa)) {
+          return `<hr style="border:none; border-top:2px solid #ddd; margin:1.5em 0;">`;
+        }
+        // Destaque EXEMPLO e 📌
+        if (/^(EXEMPLO|📌)\s*/i.test(limpa)) {
+          return `<span class="destaque-exemplo" style="font-weight:bold; display:block; margin:0.6em 0; color:#ca6f1e;">${linha}</span>`;
+        }
+        return linha;
+      }).join("<br>");
+
+      return `<p style="margin:0.7em 0; line-height:1.7;">${linhas}</p>`;
     })
     .join("");
 }
 
+/* =========================================================
+   FECHAR HISTÓRIA
+   ========================================================= */
+function fecharHistoria(event) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  const modal = document.getElementById("modal-historia");
+  if (!modal) return;
+  modal.classList.remove("ativo");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-aberto");
+}
+
+/* =========================================================
+   FUNÇÃO classeTipo — NÃO ALTERADA
+   ========================================================= */
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
         .toLowerCase()
@@ -1377,29 +1423,17 @@ function classeTipo(tipo, categoria) {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
-    // A categoria é a referência principal para definir a cor.
-    if (cat.includes("apresentacao")) {
-        return "historia-apresentacao";
-    }
-    if (cat.includes("historia")) {
-        return "historia-historia";
-    }
-    if (cat.includes("transformacoes")) {
-        return "historia-transformacoes";
-    }
-    if (cat.includes("sons")) {
-        return "historia-sons";
-    }
-    if (cat.includes("gramatica")) {
-        return "historia-gramatica";
-    }
-    if (cat.includes("continuidade")) {
-        return "historia-continuidade";
-    }
+    if (cat.includes("apresentacao")) return "historia-apresentacao";
+    if (cat.includes("historia")) return "historia-historia";
+    if (cat.includes("transformacoes")) return "historia-transformacoes";
+    if (cat.includes("sons")) return "historia-sons";
+    if (cat.includes("gramatica")) return "historia-gramatica";
+    if (cat.includes("continuidade")) return "historia-continuidade";
     return "historia-continuidade";
 }
+
 /* =========================================================
-   MOSTRAR HISTÓRIAS
+   MOSTRAR HISTÓRIAS — AQUI APARECEM AS 12 CATEGORIAS
    ========================================================= */
 function mostrarHistorias(lista = HISTORIAS_LINGUA) {
   const container = document.getElementById("lista-historias");
@@ -1408,11 +1442,7 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
     return;
   }
   if (!lista.length) {
-    container.innerHTML = `
-      <div class="historia-vazia">
-        Nenhum conteúdo encontrado.
-      </div>
-    `;
+    container.innerHTML = `<div class="historia-vazia">Nenhum conteúdo encontrado.</div>`;
     return;
   }
 container.innerHTML = lista.map(item => `
@@ -1433,12 +1463,8 @@ container.innerHTML = lista.map(item => `
         ${escaparHTML(item.resumo)}
       </p>
       <div class="historia-meta">
-        <span>
-          ${escaparHTML(item.periodo)}
-        </span>
-        <span>
-          ${escaparHTML(item.tipo)}
-        </span>
+        <span>${escaparHTML(item.periodo)}</span>
+        <span>${escaparHTML(item.tipo)}</span>
       </div>
       <button
         class="botao-historia"
@@ -1449,13 +1475,12 @@ container.innerHTML = lista.map(item => `
     </article>
   `).join("");
 }
+
 /* =========================================================
    ABRIR HISTÓRIA
    ========================================================= */
 function abrirHistoria(id) {
-  const item = HISTORIAS_LINGUA.find(
-    historia => historia.id === id
-  );
+  const item = HISTORIAS_LINGUA.find(h => h.id === id);
   if (!item) {
     console.warn("História não encontrada:", id);
     return;
@@ -1466,75 +1491,40 @@ function abrirHistoria(id) {
     console.warn("Elementos do modal não encontrados.");
     return;
   }
-  const linksHTML =
-    item.links && item.links.length
-      ? `
-        <div class="historia-fonte">
-          <strong>Links e referências:</strong>
-          <div style="margin-top: 10px;">
-            ${item.links.map(link => `
-              <p>
-                <a
-                  href="${escaparHTML(link.url)}"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  ${escaparHTML(link.titulo)}
-                </a>
-              </p>
-            `).join("")}
-          </div>
-        </div>
-      `
-      : "";
+  const linksHTML = item.links && item.links.length
+    ? `<div class="historia-fonte">
+         <strong>Links e referências:</strong>
+         <div style="margin-top: 10px;">
+           ${item.links.map(link => `<p><a href="${escaparHTML(link.url)}" target="_blank" rel="noopener noreferrer">${escaparHTML(link.titulo)}</a></p>`).join("")}
+         </div>
+       </div>`
+    : "";
   conteudo.innerHTML = `
-    <span class="historia-categoria">
-      ${escaparHTML(item.categoria)}
-    </span>
-    <h2>
-      ${escaparHTML(item.titulo)}
-    </h2>
+    <span class="historia-categoria">${escaparHTML(item.categoria)}</span>
+    <h2>${escaparHTML(item.titulo)}</h2>
     <div class="historia-meta">
-      <span>
-        ${escaparHTML(item.periodo)}
-      </span>
-      <span>
-        ${escaparHTML(item.tipo)}
-      </span>
+      <span>${escaparHTML(item.periodo)}</span>
+      <span>${escaparHTML(item.tipo)}</span>
     </div>
-    <p class="historia-resumo">
-      <strong>Resumo:</strong><br>
-      ${escaparHTML(item.resumo)}
-    </p>
+    <p class="historia-resumo"><strong>Resumo:</strong><br>${escaparHTML(item.resumo)}</p>
     <div class="texto-historia">
       ${formatarConteudo(item.conteudo)}
-      
       ${item.id === 2 ? `
-        <section class="mapa-nhandewa" style="text-align: center; margin-top: 20px;">
-          <h3>
-            Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá
-          </h3>
-          <p>
-            Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
-          </p>
-          <div style="margin: 20px 0;">
-            <img src="assets/img/Iguatemi (Área de origem).jpg" 
-                 alt="Mapa histórico da trajetória Guarani Nhandewa" 
-                 style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #b7a58d; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+        <section class="mapa-nhandewa" style="text-align:center; margin-top:20px;">
+          <h3>Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá</h3>
+          <p>Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.</p>
+          <div style="margin:20px 0;">
+            <img src="assets/img/Iguatemi (Área de origem).jpg" alt="Mapa histórico da trajetória Guarani Nhandewa" style="max-width:100%; height:auto; border-radius:12px; border:2px solid #b7a58d; box-shadow:0 4px 10px rgba(0,0,0,0.15);">
           </div>
-          <div class="mapa-observacao" style="margin-top: 15px; font-size: 0.9rem; color: #62401f;">
+          <div class="mapa-observacao" style="margin-top:15px; font-size:0.9rem; color:#62401f;">
             <strong>Observação histórica:</strong>
-            <p style="margin-top: 5px;">
-              Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas, este trata do deslocamento de um pequeno grupo de famílias nhandewa.
-            </p>
+            <p style="margin-top:5px;">Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas, este trata do deslocamento de um pequeno grupo de famílias nhandewa.</p>
           </div>
-        </section>
-      ` : ""}
+        </section>` : ""}
     </div>
     <div class="historia-fonte">
       <strong>Fonte:</strong>
-      <p>
-        ${escaparHTML(item.fonte || "Fonte em estudo.")}
-      </p>
+      <p>${escaparHTML(item.fonte || "Fonte em estudo.")}</p>
     </div>
     ${linksHTML}
   `;
@@ -1542,34 +1532,21 @@ function abrirHistoria(id) {
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-aberto");
 }
+
 /* =========================================================
    FILTRO DE PESQUISA
    ========================================================= */
 function filtrarHistorias(termo = "") {
-  const busca = String(termo)
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
-  if (!busca) {
-    mostrarHistorias(HISTORIAS_LINGUA);
-    return;
-  }
+  const busca = String(termo).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  if (!busca) { mostrarHistorias(HISTORIAS_LINGUA); return; }
   const resultado = HISTORIAS_LINGUA.filter(item => {
-    const texto = `
-      ${item.titulo}
-      ${item.resumo}
-      ${item.conteudo}
-      ${item.categoria}
-      ${item.periodo}
-      ${item.tipo}
-    `
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+    const texto = `${item.titulo}${item.resumo}${item.conteudo}${item.categoria}${item.periodo}${item.tipo}`
+      .toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     return texto.includes(busca);
   });
   mostrarHistorias(resultado);
 }
+
 /* =========================================================
    FILTRO POR CATEGORIA
    ========================================================= */
@@ -1578,39 +1555,30 @@ function filtrarCategoriaHistoria(categoria) {
     mostrarHistorias(HISTORIAS_LINGUA);
     return;
   }
-  const resultado = HISTORIAS_LINGUA.filter(
-    item => item.categoria === categoria
-  );
-  mostrarHistorias(resultado);
+  mostrarHistorias(HISTORIAS_LINGUA.filter(item => item.categoria === categoria));
 }
+
 /* =========================================================
-   INICIALIZAÇÃO
+   INICIALIZAÇÃO — AQUI CARREGAM AS 12 CATEGORIAS
    ========================================================= */
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarHistorias(); // <-- Devolva esta linha aqui
+  mostrarHistorias(); // ← ISSO CARREGA TODAS AS CATEGORIAS
   const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
-    campoPesquisa.addEventListener("input", event => {
-      filtrarHistorias(event.target.value);
-    });
+    campoPesquisa.addEventListener("input", e => filtrarHistorias(e.target.value));
   }
   const botaoFechar = document.getElementById("fechar-modal-historia");
   if (botaoFechar) {
-    botaoFechar.addEventListener("click", event => {
-      fecharHistoria(event);
-    });
+    botaoFechar.addEventListener("click", e => fecharHistoria(e));
   }
   const modal = document.getElementById("modal-historia");
   if (modal) {
-    modal.addEventListener("click", event => {
-      if (event.target === modal) {
-        fecharHistoria(event);
-      }
-    });
+    modal.addEventListener("click", e => { if (e.target === modal) fecharHistoria(e); });
   }
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-      fecharHistoria();
-    }
-  });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") fecharHistoria(); });
 });
+
+
+      
+
+
