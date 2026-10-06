@@ -2104,3 +2104,17 @@ p:has(+ .tabela-exemplo-wrapper) {
     }
 
 }
+.historia-paragrafo {
+    display: block;
+    margin: 6px 0;
+    padding: 0;
+    line-height: 1.55;
+}
+
+.historia-paragrafo + .tabela-exemplo-wrapper {
+    margin-top: 6px !important;
+}
+
+.tabela-exemplo-wrapper + .historia-paragrafo {
+    margin-top: 6px !important;
+}
