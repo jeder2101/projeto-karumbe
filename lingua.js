@@ -1786,95 +1786,76 @@ function linhaDeExemplo(linha) {
    ========================================================= */
 
 function tabelaDeExemplos(linhas) {
-
   const dados = [];
   const consumidos = new Set();
 
+  // ✅ Detecta se é a tabela de correspondência
+  const blocoCorrespondencia = linhas.some(linha =>
+    /📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(linha)
+  );
+
   for (let i = 0; i < linhas.length; i++) {
-
     if (consumidos.has(i)) continue;
-
     const item = linhaDeExemplo(linhas[i]);
-
     if (!item) continue;
 
-
-    /* -------------------------------------------------------
-       Verifica se existe tradução na linha seguinte
-
-       Exemplo:
-
-       Txeé + wy = txewy
-       "eu" "para" → "para mim"
-       ------------------------------------------------------- */
-
     const proxima = (linhas[i + 1] || "").trim();
-
-    const traducao = proxima.match(
-      /^["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]$/u
-    );
-
+    const traducao = proxima.match(/^["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]$/u);
     if (traducao) {
-
       item.sentido = traducao[2];
-
       consumidos.add(i + 1);
     }
-
-
-    dados.push({
-      ...item,
-      indice: i
-    });
+    dados.push({ ...item, indice: i });
   }
 
+  if (dados.length === 0) return null;
 
-  if (dados.length === 0) {
-    return null;
-  }
-
-
-  /* ---------------------------------------------------------
-     Define o cabeçalho
-     --------------------------------------------------------- */
-
-  const temComposicao =
-    dados.some(item => item.tipo === "composicao");
-
-
+  // ✅ Escolhe os títulos de coluna corretos
   let cabecalho;
-
-  if (temComposicao) {
-
+  if (blocoCorrespondencia) {
     cabecalho = `
       <tr>
-        <th>Forma</th>
-        <th>Elemento</th>
-        <th>Resultado</th>
+        <th>Tupi</th>
+        <th>Guarani</th>
+        <th>Nhandewa-Guarani</th>
         <th>Significado</th>
       </tr>
     `;
-
   } else {
-
-    cabecalho = `
-      <tr>
-        <th>Forma / exemplo</th>
-        <th>Resultado</th>
-        <th>Significado / observação</th>
-      </tr>
-    `;
+    const temComposicao = dados.some(item => item.tipo === "composicao");
+    if (temComposicao) {
+      cabecalho = `
+        <tr>
+          <th>Forma</th>
+          <th>Elemento</th>
+          <th>Resultado</th>
+          <th>Significado</th>
+        </tr>
+      `;
+    } else {
+      cabecalho = `
+        <tr>
+          <th>Forma / exemplo</th>
+          <th>Resultado</th>
+          <th>Significado / observação</th>
+        </tr>
+      `;
+    }
   }
 
-
-  /* ---------------------------------------------------------
-     Corpo da tabela
-     --------------------------------------------------------- */
-
   const corpo = dados.map(item => {
-
+    if (blocoCorrespondencia) {
+      // Para correspondência: distribui os valores nas 4 colunas
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.elemento || "")}</td>
+          <td>${escaparHTML(item.resultado)}</td>
+          <td>${escaparHTML(item.sentido || "")}</td>
+        </tr>
+      `;
+    }
     if (item.tipo === "composicao") {
-
       return `
         <tr>
           <td>${escaparHTML(item.forma)}</td>
@@ -1884,8 +1865,6 @@ function tabelaDeExemplos(linhas) {
         </tr>
       `;
     }
-
-
     return `
       <tr>
         <td>${escaparHTML(item.forma)}</td>
@@ -1893,26 +1872,18 @@ function tabelaDeExemplos(linhas) {
         <td>${escaparHTML(item.sentido)}</td>
       </tr>
     `;
-
   }).join("");
-
 
   return `
     <div class="tabela-exemplo-wrapper">
       <table class="tabela-exemplo">
-
-        <thead>
-          ${cabecalho}
-        </thead>
-
-        <tbody>
-          ${corpo}
-        </tbody>
-
+        <thead>${cabecalho}</thead>
+        <tbody>${corpo}</tbody>
       </table>
     </div>
   `;
 }
+
 
 
 /* =========================================================
