@@ -2016,13 +2016,82 @@ body {
 
 
 /* =========================================================
+   TABELAS DE EXEMPLOS
+   ========================================================= */
+
+.tabela-exemplo-wrapper {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    overflow-x: auto;
+
+    margin: 4px 0 !important;
+    padding: 0;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabela-exemplo {
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+
+    margin: 0 !important;
+
+    border-collapse: collapse;
+
+    background: #fffdf9;
+
+    font-size: 15px;
+    line-height: 1.35;
+}
+
+.tabela-exemplo th,
+.tabela-exemplo td {
+    padding: 7px 9px;
+
+    border: 1px solid #d8cbb8;
+
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabela-exemplo th {
+    background: #eee5d8;
+    color: #3d3328;
+    font-weight: bold;
+}
+
+.tabela-exemplo td:first-child {
+    font-weight: bold;
+}
+
+.tabela-exemplo tbody tr:nth-child(even) {
+    background: #faf6ef;
+}
+
+
+/* =========================================================
+   ESPAÇAMENTO ENTRE TEXTO E TABELA
+   ========================================================= */
+
+.tabela-exemplo-wrapper + p {
+    margin-top: 4px !important;
+}
+
+p:has(+ .tabela-exemplo-wrapper) {
+    margin-bottom: 4px !important;
+}
+
+
+/* =========================================================
    TELAS PEQUENAS
    ========================================================= */
 
 @media (max-width: 600px) {
 
     .tabela-exemplo-wrapper {
-        margin: 10px 0;
+        margin: 4px 0 !important;
     }
 
     .tabela-exemplo {
@@ -2031,6 +2100,7 @@ body {
 
     .tabela-exemplo th,
     .tabela-exemplo td {
-        padding: 7px 8px;
+        padding: 6px 8px;
     }
+
 }
