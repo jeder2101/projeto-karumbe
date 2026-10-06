@@ -1815,88 +1815,305 @@ function linhaDeExemplo(linha) {
 function tabelaDeExemplos(linhas) {
   const dados = [];
   const consumidos = new Set();
+  const textoBloco = linhas.join("\n");
 
-  // ✅ Detecta se é a tabela de correspondência
-  const blocoCorrespondencia = linhas.some(linha =>
-    /📌 OUTROS CASOS DE CORRESPONDÊNCIA:|CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI/i.test(linha)
-  );
+  /* =========================================================
+     CADA TIPO DE EXEMPLO RECEBE O NOME DAS COLUNAS QUE
+     REALMENTE CORRESPONDE AO CONTEÚDO DA FONTE.
+     Não usar "Forma / Elemento / Resultado / Significado"
+     como padrão para todos os casos.
+     ========================================================= */
+
+  const blocoCorrespondencia =
+    /CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI|OUTROS CASOS DE CORRESPONDÊNCIA/i.test(textoBloco) ||
+    /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco);
+
+  const blocoCorrespondenciaPosposicoes =
+    /Guarani Antigo\s*\/\s*outras variedades\s*→\s*Nhandewa-Guarani|pe\s*\/\s*be\s*\/\s*bo\s*→\s*py\s*\/\s*wy/i.test(textoBloco);
+
+  const blocoPosposicaoWy =
+    /A FORMA wy|Txeé\s*\+\s*wy|pee\s*\+\s*wy/i.test(textoBloco);
+
+  const blocoPosposicaoBo =
+    /oga\s*"casa"\s*\+\s*bo|coang\s*"roça"\s*\+\s*bo|añang\s*"diabo"\s*\+\s*bo/i.test(textoBloco);
+
+  const blocoAlternanciaConsonantal =
+    /\[mba['’]e\].*\+\s*oral\s*=\s*mb|\[mã['’]e\].*\+\s*nasal\s*=\s*m|\[nde\].*\+\s*oral\s*=\s*nd|\[nẽ\].*\+\s*nasal\s*=\s*n/i.test(textoBloco);
+
+  const blocoContrasteOralNasal =
+    /COMPARAÇÃO\s*[—-]\s*oral\s*[×x]\s*nasal|pyta\s*\+\s*oral\s*=\s*ficar|pytã\s*\+\s*nasal\s*=\s*vermelho|tupa\s*\+\s*oral\s*=\s*cama|tupã\s*\+\s*nasal\s*=\s*trovão/i.test(textoBloco);
+
+  const blocoHarmoniaNasal =
+    /EXEMPLO DE ESPALHAMENTO|kuñã\s*\+\s*kwé\s*=\s*kuñãngwé/i.test(textoBloco);
+
+  const blocoGuaraniApapocuva =
+    /Guarani antigo\s*\|\s*Significado\s*\|\s*Apapocuva/i.test(textoBloco) ||
+    /mocañỹhara\s*\+\s*"aquele que mata"/i.test(textoBloco);
+
+  const blocoReducao =
+    /Palavras que perderam sílaba final átona|oga\s*=\s*óy|coang\s*=\s*cóy|añang\s*=\s*añãy|porang\(a\)\s*=\s*porã/i.test(textoBloco);
+
+  const blocoSupinoVy =
+    /Frase\s*\|\s*Tradução\s*\|\s*Sentido de -vy|Ojapó ma oóvy|Opó yvy áno oúvy|Oaqá oóvy|Oguejý oúvy/i.test(textoBloco);
 
   for (let i = 0; i < linhas.length; i++) {
     if (consumidos.has(i)) continue;
+
     const item = linhaDeExemplo(linhas[i]);
     if (!item) continue;
 
     const proxima = (linhas[i + 1] || "").trim();
-    const traducao = proxima.match(/^["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]$/u);
+    const traducao = proxima.match(/^\s*["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]\s*$/u);
+
     if (traducao) {
-      item.sentido = traducao[2];
+      /*
+       * Nas tabelas de alternância consonantal, a linha seguinte
+       * traz o glossário à esquerda e o ambiente à direita:
+       * "coisa, o que" → "oral"
+       * Portanto, o significado é a primeira parte, não a segunda.
+       */
+      item.sentido = blocoAlternanciaConsonantal
+        ? traducao[1]
+        : traducao[2];
+
       consumidos.add(i + 1);
     }
+
+    /* ---------------------------------------------------------
+       Limpeza das linhas em que o significado vem junto da forma.
+       Ex.: oga "casa" + bo = óy "para a casa / da casa"
+       --------------------------------------------------------- */
+    if (blocoPosposicaoBo) {
+      const mForma = item.forma.match(/^(.+?)\s+["“](.+?)["”]\s*$/u);
+      if (mForma) {
+        item.forma = mForma[1].trim();
+      }
+
+      const mResultado = item.resultado.match(/^(.+?)\s+["“](.+?)["”]/u);
+      if (mResultado) {
+        item.resultado = mResultado[1].trim();
+        item.sentido = mResultado[2].trim();
+      }
+    }
+
+    /* ---------------------------------------------------------
+       No supino -vy, as aspas são a tradução e o sentido.
+       --------------------------------------------------------- */
+    if (blocoSupinoVy) {
+      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
+      item.resultado = item.resultado.replace(/^["“]|["”]$/gu, "").trim();
+    }
+
+    /* ---------------------------------------------------------
+       No quadro "Guarani antigo | Significado | Apapocuva",
+       o segundo campo é o significado por definição da fonte.
+       --------------------------------------------------------- */
+    if (blocoGuaraniApapocuva) {
+      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
+    }
+
     dados.push({ ...item, indice: i });
   }
 
   if (dados.length === 0) return null;
 
-  // ✅ Escolhe os títulos de coluna corretos
   let cabecalho;
+  let modoCorpo = "quatro";
+
   if (blocoCorrespondencia) {
     cabecalho = `
       <tr>
         <th>Forma Tupi(nambá)</th>
         <th>Forma Guarani (geral)</th>
         <th>Forma Nhandewa-Guarani</th>
+        <th>Português</th>
+      </tr>
+    `;
+
+  } else if (blocoCorrespondenciaPosposicoes) {
+    cabecalho = `
+      <tr>
+        <th>Guarani Antigo / outras variedades</th>
+        <th>Nhandewa-Guarani</th>
+      </tr>
+    `;
+    modoCorpo = "duas";
+
+  } else if (blocoPosposicaoWy) {
+    cabecalho = `
+      <tr>
+        <th>Forma de base</th>
+        <th>Posposição</th>
+        <th>Forma resultante</th>
+        <th>Função / sentido</th>
+      </tr>
+    `;
+
+  } else if (blocoPosposicaoBo) {
+    cabecalho = `
+      <tr>
+        <th>Forma de base</th>
+        <th>Posposição</th>
+        <th>Forma Nhandewa-Guarani</th>
+        <th>Sentido / relação</th>
+      </tr>
+    `;
+
+  } else if (blocoAlternanciaConsonantal) {
+    cabecalho = `
+      <tr>
+        <th>Forma de base</th>
+        <th>Ambiente</th>
+        <th>Realização</th>
+        <th>Glossário</th>
+      </tr>
+    `;
+
+  } else if (blocoContrasteOralNasal) {
+    cabecalho = `
+      <tr>
+        <th>Forma</th>
+        <th>Ambiente</th>
+        <th>Significado / resultado</th>
+      </tr>
+    `;
+    modoCorpo = "tresContraste";
+
+  } else if (blocoHarmoniaNasal) {
+    cabecalho = `
+      <tr>
+        <th>Forma de base</th>
+        <th>Elemento associado</th>
+        <th>Forma resultante</th>
         <th>Significado</th>
       </tr>
     `;
+
+  } else if (blocoGuaraniApapocuva) {
+    cabecalho = `
+      <tr>
+        <th>Guarani antigo</th>
+        <th>Significado</th>
+        <th>Apapocuva</th>
+      </tr>
+    `;
+    modoCorpo = "tresGuarani";
+
+  } else if (blocoReducao) {
+    cabecalho = `
+      <tr>
+        <th>Forma histórica</th>
+        <th>Forma Nhandewa-Guarani</th>
+        <th>Significado</th>
+      </tr>
+    `;
+    modoCorpo = "tresReducao";
+
+  } else if (blocoSupinoVy) {
+    cabecalho = `
+      <tr>
+        <th>Frase</th>
+        <th>Tradução</th>
+        <th>Sentido de -vy</th>
+      </tr>
+    `;
+    modoCorpo = "tresVy";
+
   } else {
+    /*
+     * Fallback sem usar os antigos nomes genéricos.
+     * Se uma nova tabela aparecer, os nomes continuam linguísticos
+     * e não apresentam "Elemento" como coluna padrão.
+     */
     const temComposicao = dados.some(item => item.tipo === "composicao");
+
     if (temComposicao) {
       cabecalho = `
         <tr>
-          <th>Forma</th>
-          <th>Elemento</th>
-          <th>Resultado</th>
-          <th>Significado</th>
+          <th>Forma de base</th>
+          <th>Componente linguístico</th>
+          <th>Forma resultante</th>
+          <th>Sentido / tradução</th>
         </tr>
       `;
     } else {
       cabecalho = `
         <tr>
-          <th>Forma / exemplo</th>
-          <th>Resultado</th>
-          <th>Significado / observação</th>
+          <th>Forma registrada</th>
+          <th>Forma correspondente</th>
+          <th>Sentido / tradução</th>
         </tr>
       `;
+      modoCorpo = "tres";
     }
   }
 
   const corpo = dados.map(item => {
-    if (blocoCorrespondencia) {
-      // Para correspondência: distribui os valores nas 4 colunas
+    if (modoCorpo === "duas") {
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.resultado)}</td>
+        </tr>
+      `;
+    }
+
+    if (modoCorpo === "tresContraste") {
       return `
         <tr>
           <td>${escaparHTML(item.forma)}</td>
           <td>${escaparHTML(item.elemento || "")}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+        </tr>
+      `;
+    }
+
+    if (modoCorpo === "tresGuarani") {
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.elemento || "")}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+        </tr>
+      `;
+    }
+
+    if (modoCorpo === "tresReducao") {
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+          <td>${escaparHTML(item.sentido || "")}</td>
+        </tr>
+      `;
+    }
+
+    if (modoCorpo === "tresVy") {
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.elemento || "")}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+        </tr>
+      `;
+    }
+
+    if (modoCorpo === "tres") {
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
           <td>${escaparHTML(item.resultado)}</td>
           <td>${escaparHTML(item.sentido || "")}</td>
         </tr>
       `;
     }
-    if (item.tipo === "composicao") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.elemento)}</td>
-          <td>${escaparHTML(item.resultado)}</td>
-          <td>${escaparHTML(item.sentido)}</td>
-        </tr>
-      `;
-    }
+
     return `
       <tr>
         <td>${escaparHTML(item.forma)}</td>
+        <td>${escaparHTML(item.elemento || "")}</td>
         <td>${escaparHTML(item.resultado)}</td>
-        <td>${escaparHTML(item.sentido)}</td>
+        <td>${escaparHTML(item.sentido || "")}</td>
       </tr>
     `;
   }).join("");
