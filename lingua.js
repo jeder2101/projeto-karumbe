@@ -2051,8 +2051,7 @@ function formatarConteudo(texto) {
         .join("<br>");
 
 
-      return `<p>${linhas}</p>`;
-
+     return `<div class="historia-paragrafo">${linhas}</div>`;
     })
     .join("");
 }
