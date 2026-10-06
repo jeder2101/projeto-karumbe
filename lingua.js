@@ -1629,7 +1629,6 @@ function fecharHistoria(event) {
 /* =========================================================
    FUNÇÕES AUXILIARES
    ========================================================= */
-
 function escaparHTML(texto) {
   return String(texto ?? "")
     .replaceAll("&", "&amp;")
@@ -1639,48 +1638,421 @@ function escaparHTML(texto) {
     .replaceAll("'", "&#039;");
 }
 
+
+/* =========================================================
+   TABELAS AUTOMÁTICAS DE EXEMPLOS
+   ========================================================= */
+
+function linhaDeExemplo(linha) {
+
+  const original = linha.trim();
+
+  if (!original) return null;
+
+  // Não transforma marcadores ou títulos
+  if (/^[📌⚠️✅•]/u.test(original)) return null;
+
+  if (
+    /^━━━━━━━━/.test(original) ||
+    /^\d+\./.test(original)
+  ) {
+    return null;
+  }
+
+
+  /* ---------------------------------------------------------
+     FORMA + ELEMENTO → RESULTADO
+     
+     Exemplo:
+     Txeé + wy = txewy
+     pee + wy → pemy
+     --------------------------------------------------------- */
+
+  let m = original.match(
+    /^(.+?)\s*\+\s*(.+?)\s*(?:→|=)\s*(.+)$/u
+  );
+
+  if (m) {
+
+    const forma = m[1].trim();
+    const elemento = m[2].trim();
+    const resultado = m[3].trim();
+
+    if (
+      forma.length <= 60 &&
+      elemento.length <= 40 &&
+      resultado.length <= 120
+    ) {
+      return {
+        tipo: "composicao",
+        forma,
+        elemento,
+        resultado,
+        sentido: ""
+      };
+    }
+  }
+
+
+  /* ---------------------------------------------------------
+     FORMA → RESULTADO
+     
+     Exemplo:
+     palavra → significado
+     --------------------------------------------------------- */
+
+  m = original.match(
+    /^(.+?)\s*→\s*(.+)$/u
+  );
+
+  if (m) {
+
+    const forma = m[1].trim();
+    const resultado = m[2].trim();
+
+    if (
+      forma.length <= 60 &&
+      resultado.length <= 120
+    ) {
+      return {
+        tipo: "transformacao",
+        forma,
+        elemento: "",
+        resultado,
+        sentido: ""
+      };
+    }
+  }
+
+
+  /* ---------------------------------------------------------
+     FORMA = RESULTADO
+     --------------------------------------------------------- */
+
+  m = original.match(
+    /^(.+?)\s*=\s*(.+)$/u
+  );
+
+  if (m) {
+
+    const forma = m[1].trim();
+    const resultado = m[2].trim();
+
+    if (
+      forma.length <= 60 &&
+      resultado.length <= 120
+    ) {
+      return {
+        tipo: "transformacao",
+        forma,
+        elemento: "",
+        resultado,
+        sentido: ""
+      };
+    }
+  }
+
+
+  return null;
+}
+
+
+/* =========================================================
+   CRIA A TABELA
+   ========================================================= */
+
+function tabelaDeExemplos(linhas) {
+
+  const dados = [];
+  const consumidos = new Set();
+
+  for (let i = 0; i < linhas.length; i++) {
+
+    if (consumidos.has(i)) continue;
+
+    const item = linhaDeExemplo(linhas[i]);
+
+    if (!item) continue;
+
+
+    /* -------------------------------------------------------
+       Verifica se existe tradução na linha seguinte
+
+       Exemplo:
+
+       Txeé + wy = txewy
+       "eu" "para" → "para mim"
+       ------------------------------------------------------- */
+
+    const proxima = (linhas[i + 1] || "").trim();
+
+    const traducao = proxima.match(
+      /^["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]$/u
+    );
+
+    if (traducao) {
+
+      item.sentido = traducao[2];
+
+      consumidos.add(i + 1);
+    }
+
+
+    dados.push({
+      ...item,
+      indice: i
+    });
+  }
+
+
+  if (dados.length === 0) {
+    return null;
+  }
+
+
+  /* ---------------------------------------------------------
+     Define o cabeçalho
+     --------------------------------------------------------- */
+
+  const temComposicao =
+    dados.some(item => item.tipo === "composicao");
+
+
+  let cabecalho;
+
+  if (temComposicao) {
+
+    cabecalho = `
+      <tr>
+        <th>Forma</th>
+        <th>Elemento</th>
+        <th>Resultado</th>
+        <th>Significado</th>
+      </tr>
+    `;
+
+  } else {
+
+    cabecalho = `
+      <tr>
+        <th>Forma / exemplo</th>
+        <th>Resultado</th>
+        <th>Significado / observação</th>
+      </tr>
+    `;
+  }
+
+
+  /* ---------------------------------------------------------
+     Corpo da tabela
+     --------------------------------------------------------- */
+
+  const corpo = dados.map(item => {
+
+    if (item.tipo === "composicao") {
+
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.elemento)}</td>
+          <td>${escaparHTML(item.resultado)}</td>
+          <td>${escaparHTML(item.sentido)}</td>
+        </tr>
+      `;
+    }
+
+
+    return `
+      <tr>
+        <td>${escaparHTML(item.forma)}</td>
+        <td>${escaparHTML(item.resultado)}</td>
+        <td>${escaparHTML(item.sentido)}</td>
+      </tr>
+    `;
+
+  }).join("");
+
+
+  return `
+    <div class="tabela-exemplo-wrapper">
+      <table class="tabela-exemplo">
+
+        <thead>
+          ${cabecalho}
+        </thead>
+
+        <tbody>
+          ${corpo}
+        </tbody>
+
+      </table>
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   FORMATA OS BLOCOS DE EXEMPLOS
+   ========================================================= */
+
+function formatarBlocosExemplo(texto) {
+
+  const paragrafos = texto.split(/\n{2,}/);
+
+  const saida = [];
+
+
+  for (const paragrafo of paragrafos) {
+
+    const linhas = paragrafo.split("\n");
+
+    const tabela = tabelaDeExemplos(linhas);
+
+
+    if (!tabela) {
+
+      saida.push(paragrafo);
+
+      continue;
+    }
+
+
+    const indicesTabela = new Set();
+
+
+    // Descobre quais linhas pertencem aos exemplos
+    linhas.forEach((linha, indice) => {
+
+      if (linhaDeExemplo(linha)) {
+
+        indicesTabela.add(indice);
+
+        // Se a próxima linha for tradução,
+        // também será incorporada à tabela.
+        const proxima = (linhas[indice + 1] || "").trim();
+
+        if (
+          /^["“].*?(?:→|=)\s*["”]$/u.test(proxima)
+        ) {
+          indicesTabela.add(indice + 1);
+        }
+      }
+
+    });
+
+
+    const bloco = [];
+
+    let tabelaInserida = false;
+
+
+    linhas.forEach((linha, indice) => {
+
+      if (indicesTabela.has(indice)) {
+
+        if (!tabelaInserida) {
+
+          bloco.push(tabela);
+
+          tabelaInserida = true;
+        }
+
+        return;
+      }
+
+
+      bloco.push(linha);
+    });
+
+
+    saida.push(bloco.join("\n"));
+  }
+
+
+  return saida.join("\n\n");
+}
+
+
+/* =========================================================
+   FORMATAÇÃO FINAL DO CONTEÚDO
+   ========================================================= */
+
 function formatarConteudo(texto) {
+
   if (!texto) return "";
 
-  // Passo 1 → Guarda os blocos de exemplo ANTES de escapar
-  const blocos = [];
-  let resultado = texto;
 
-  // Encontra EXEMPLOS ou CORRESPONDÊNCIAS
-  const regex = /(?:^|\n)(EXEMPLOS|CORRESPONDÊNCIAS)[^\n]*[\s\S]+?(?=\n{2,}[A-ZÁ-Ú]|\n{2,}(?:\d+\.|$))/gim;
-  resultado = resultado.replace(regex, (bloco) => {
-    blocos.push(bloco);
-    return `__BLOCO_${blocos.length - 1}__`;
-  });
+  // Primeiro cria as tabelas.
+  let resultado = formatarBlocosExemplo(texto);
 
-  // Passo 2 → Escapa normalmente
+
+  // Guarda as tabelas para que o HTML delas não seja escapado.
+  const tabelas = [];
+
+  resultado = resultado.replace(
+    /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
+    tabela => {
+
+      tabelas.push(tabela);
+
+      return `__TABELA_${tabelas.length - 1}__`;
+    }
+  );
+
+
+  // Escapa o restante do texto.
   resultado = escaparHTML(resultado);
 
-  // Passo 3 → Recoloca os blocos formatados
-  blocos.forEach((bloco, i) => {
-    const chave = `__BLOCO_${i}__`;
-    const seguro = escaparHTML(bloco);
-    const caixa = `<div style="margin: 1.2em 0;"><pre style="font-family: 'Courier New', monospace; line-height: 1.8; margin: 0; padding: 16px; background: #f9f6f0; border: 1px solid #e0d5c5; border-radius: 10px; overflow-x: auto; white-space: pre;">${seguro}</pre></div>`;
-    resultado = resultado.replaceAll(chave, caixa);
+
+  // Recoloca as tabelas.
+  tabelas.forEach((tabela, indice) => {
+
+    resultado = resultado.replaceAll(
+      `__TABELA_${indice}__`,
+      tabela
+    );
+
   });
 
-  // Passo 4 → Formata parágrafos — igual ao seu original
+
+  // Formata os parágrafos normalmente.
   return resultado
     .trim()
     .split(/\n{2,}/)
     .map(paragrafo => {
-      if (paragrafo.includes("<pre")) return paragrafo;
+
+      if (
+        paragrafo.includes("<table") ||
+        paragrafo.includes("<div class=\"tabela-exemplo-wrapper\">")
+      ) {
+        return paragrafo;
+      }
+
 
       const linhas = paragrafo
         .split("\n")
         .map(linha => {
-          if (/^EXEMPLO\s*\d+/i.test(linha.trim())) {
-            return `<span class="destaque-exemplo">${linha}</span>`;
+
+          if (
+            /^EXEMPLO\s*\d+/i.test(
+              linha.trim()
+            )
+          ) {
+            return `
+              <span class="destaque-exemplo">
+                ${linha}
+              </span>
+            `;
           }
+
           return linha;
+
         })
         .join("<br>");
+
+
       return `<p>${linhas}</p>`;
+
     })
     .join("");
 }
