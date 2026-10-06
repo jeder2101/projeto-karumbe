@@ -1959,56 +1959,78 @@ body {
 
 .tabela-exemplo-wrapper {
     width: 100%;
+    max-width: 100%;
     overflow-x: auto;
-    margin: 18px 0;
+    margin: 12px 0;
     -webkit-overflow-scrolling: touch;
 }
 
 .tabela-exemplo {
-    width: 100%;
-    min-width: 600px;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+
     border-collapse: collapse;
+
     background: #fffdf9;
     border: 1px solid #d8cbb8;
-    border-radius: 10px;
-    overflow: hidden;
-    font-size: 17px;
+
+    font-size: 15px;
+    line-height: 1.35;
 }
 
 .tabela-exemplo th {
-    padding: 13px 14px;
+    padding: 8px 10px;
+
     text-align: left;
+
     background: #eee5d8;
     color: #3d3328;
+
     font-weight: bold;
+
     border: 1px solid #d8cbb8;
+
+    white-space: nowrap;
 }
 
 .tabela-exemplo td {
-    padding: 13px 14px;
-    border: 1px solid #d8cbb8;
-    color: #302820;
-    vertical-align: middle;
-    line-height: 1.5;
-}
+    padding: 8px 10px;
 
-.tabela-exemplo tbody tr:nth-child(even) {
-    background: #faf6ef;
+    border: 1px solid #d8cbb8;
+
+    color: #302820;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
 }
 
 .tabela-exemplo td:first-child {
     font-weight: bold;
 }
 
+.tabela-exemplo tbody tr:nth-child(even) {
+    background: #faf6ef;
+}
+
+
+/* =========================================================
+   TELAS PEQUENAS
+   ========================================================= */
+
 @media (max-width: 600px) {
 
+    .tabela-exemplo-wrapper {
+        margin: 10px 0;
+    }
+
     .tabela-exemplo {
-        min-width: 560px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .tabela-exemplo th,
     .tabela-exemplo td {
-        padding: 11px 12px;
+        padding: 7px 8px;
     }
 }
