@@ -1640,14 +1640,41 @@ function escaparHTML(texto) {
 }
 
 function formatarConteudo(texto) {
-  return escaparHTML(texto)
+  if (!texto) return "";
+
+  // Passo 1 → Guarda os blocos de exemplo ANTES de escapar
+  const blocos = [];
+  let resultado = texto;
+
+  // Encontra EXEMPLOS ou CORRESPONDÊNCIAS
+  const regex = /(?:^|\n)(EXEMPLOS|CORRESPONDÊNCIAS)[^\n]*[\s\S]+?(?=\n{2,}[A-ZÁ-Ú]|\n{2,}(?:\d+\.|$))/gim;
+  resultado = resultado.replace(regex, (bloco) => {
+    blocos.push(bloco);
+    return `__BLOCO_${blocos.length - 1}__`;
+  });
+
+  // Passo 2 → Escapa normalmente
+  resultado = escaparHTML(resultado);
+
+  // Passo 3 → Recoloca os blocos formatados
+  blocos.forEach((bloco, i) => {
+    const chave = `__BLOCO_${i}__`;
+    const seguro = escaparHTML(bloco);
+    const caixa = `<div style="margin: 1.2em 0;"><pre style="font-family: 'Courier New', monospace; line-height: 1.8; margin: 0; padding: 16px; background: #f9f6f0; border: 1px solid #e0d5c5; border-radius: 10px; overflow-x: auto; white-space: pre;">${seguro}</pre></div>`;
+    resultado = resultado.replaceAll(chave, caixa);
+  });
+
+  // Passo 4 → Formata parágrafos — igual ao seu original
+  return resultado
     .trim()
     .split(/\n{2,}/)
     .map(paragrafo => {
+      if (paragrafo.includes("<pre")) return paragrafo;
+
       const linhas = paragrafo
         .split("\n")
         .map(linha => {
-          if (/^EXEMPLO\s+\d+/i.test(linha.trim())) {
+          if (/^EXEMPLO\s*\d+/i.test(linha.trim())) {
             return `<span class="destaque-exemplo">${linha}</span>`;
           }
           return linha;
@@ -1657,6 +1684,7 @@ function formatarConteudo(texto) {
     })
     .join("");
 }
+
 
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
