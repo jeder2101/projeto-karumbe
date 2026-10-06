@@ -406,20 +406,36 @@ O estudo das transformações fonológicas contribui para compreender tanto os r
     tipo: "documentado",
 
     fonte:
-        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES; e Seara, Quadros e Martins, estudo acústico da nasalidade consonantal no Nhandewa-Guarani.",
+        "Consuelo de Paiva Godinho Costa, Nhandewa Aywu: fonologia do Nhandewa-Guarani; Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES; estudos sobre nasalidade consonantal; materiais de gramática pedagógica Nhandewa-Guarani produzidos com participação de professores e falantes Nhandewa.",
 
     links: [
         {
-            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
+            titulo: "Nhandewa Aywu: fonologia do Nhandewa-Guarani — Museu Nacional dos Povos Indígenas/FUNAI",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
+        },
+        {
+            titulo: "Nhandewa Aywu / registro no Repositório da UNICAMP",
+            url: "https://repositorio.unicamp.br/acervo/detalhe/402302"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense — LIAMES/UNICAMP",
             url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
         },
         {
-            titulo: "Consonantal nasality in the variety of Nhandewa-Guarani – Journal of Experimental Phonetics",
+            titulo: "Tese sobre fonologia e nasalidade do Nhandewa-Guarani — Biblioteca FUNAI",
+            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
+        },
+        {
+            titulo: "Consonantal nasality in the variety of Nhandewa-Guarani — Journal of Experimental Phonetics",
             url: "https://revistes.ub.edu/index.php/experimentalphonetics/article/view/43969"
         },
         {
-            titulo: "Tese sobre fonologia e nasalidade do Nhandewa-Guarani – Biblioteca FUNAI",
-            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
+            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
+        },
+        {
+            titulo: "Lições de gramática de Nhandewa/Tupi-Guarani — Caderno de atividades multidisciplinares",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
         }
     ]
 },
@@ -1471,7 +1487,15 @@ a passa adiante.
             titulo: "FUNAI — Revitalização Linguística dos Indígenas de São Paulo",
             url: "https://www.gov.br/funai/pt-br/assuntos/noticias/2013/revitalizacao-linguistica-dos-indigenas-de-sao-paulo"
         }
-    ]
+,
+        {
+            titulo: "Lições de gramática de Nhandewa/Tupi-Guarani — Caderno de atividades multidisciplinares",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
+        },
+        {
+            titulo: "Nhe’ẽ para os Guarani (Nhandewa e Mbya) — 35ª Bienal de São Paulo",
+            url: "https://35.bienal.org.br/nhee-para-os-guarani-nhandewa-e-mbya/"
+        }    ]
 },
 
 {
@@ -1623,7 +1647,11 @@ nas mãos de quem a ensina e de quem a aprende.
             titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
             url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
         }
-    ]
+,
+        {
+            titulo: "Lições de gramática de Nhandewa/Tupi-Guarani — Caderno de atividades multidisciplinares",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
+        }    ]
 },
 ];
 
@@ -1790,7 +1818,7 @@ function tabelaDeExemplos(linhas) {
 
   // ✅ Detecta se é a tabela de correspondência
   const blocoCorrespondencia = linhas.some(linha =>
-    /📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(linha)
+    /📌 OUTROS CASOS DE CORRESPONDÊNCIA:|CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI/i.test(linha)
   );
 
   for (let i = 0; i < linhas.length; i++) {
@@ -1814,9 +1842,9 @@ function tabelaDeExemplos(linhas) {
   if (blocoCorrespondencia) {
     cabecalho = `
       <tr>
-        <th>Tupi</th>
-        <th>Guarani</th>
-        <th>Nhandewa-Guarani</th>
+        <th>Forma Tupi(nambá)</th>
+        <th>Forma Guarani (geral)</th>
+        <th>Forma Nhandewa-Guarani</th>
         <th>Significado</th>
       </tr>
     `;
