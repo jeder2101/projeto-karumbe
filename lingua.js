@@ -1983,20 +1983,24 @@ function formatarBlocosExemplo(texto) {
    FORMATAÇÃO FINAL DO CONTEÚDO
    ========================================================= */
 
+/* =========================================================
+   FORMATAÇÃO FINAL DO CONTEÚDO (CORRIGIDA)
+   ========================================================= */
+
 function formatarConteudo(texto) {
   if (!texto) return "";
 
-  // 1. Cria as tabelas com os títulos específicos corretos
+  // 1. Primeiro cria as tabelas com os títulos corretos
   let resultado = formatarBlocosExemplo(texto);
 
-  // 2. Extrai e protege as tabelas geradas substituindo-as por marcadores únicos
+  // 2. Extrai e protege as tabelas geradas substituindo-as por marcadores temporários seguros
   const tabelas = [];
   resultado = resultado.replace(
     /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
     tabela => {
       const indice = tabelas.length;
-      tabelas.push(tabela); 
-      return `###TABELAMARCADOR${indice}FIM###`;
+      tabelas.push(tabela);
+      return `__MARCADOR_TABELA_${indice}__`;
     }
   );
 
@@ -2006,12 +2010,12 @@ function formatarConteudo(texto) {
   resultado = resultado.replace(/[ \t]+$/gm, "");
   resultado = resultado.replace(/\n[ \t]*\n[ \t]*\n+/g, "\n\n");
 
-  // 4. Aplica o escaparHTML apenas no texto normal
+  // 4. Aplica o escaparHTML APENAS no texto normal (fora das tabelas)
   resultado = escaparHTML(resultado);
 
-  // 5. Restaura as tabelas originais intactas substituindo os marcadores
+  // 5. Restaura as tabelas originais intactas substituindo os marcadores (sem passar por escaparHTML)
   tabelas.forEach((tabela, indice) => {
-    resultado = resultado.replace(`###TABELAMARCADOR${indice}FIM###`, tabela);
+    resultado = resultado.replace(`__MARCADOR_TABELA_${indice}__`, tabela);
   });
 
   // 6. Separa os blocos e monta o HTML final estruturado
@@ -2021,6 +2025,7 @@ function formatarConteudo(texto) {
     .filter(bloco => bloco !== "");
 
   return blocos.map(bloco => {
+    // Se o bloco contém uma tabela já formatada, retorna o bloco diretamente sem envolver em parágrafo de texto
     if (bloco.includes("<div class=\"tabela-exemplo-wrapper\">")) {
       return bloco;
     }
