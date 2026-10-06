@@ -1639,11 +1639,17 @@ function escaparHTML(texto) {
     .replaceAll("'", "&#039;");
 }
 
+
 function formatarConteudo(texto) {
   return escaparHTML(texto)
     .trim()
     .split(/\n{2,}/)
     .map(paragrafo => {
+      // ✅ Detecta bloco de correspondência e mantém alinhado
+      if (/OUTROS CASOS DE CORRESPONDÊNCIA/.test(paragrafo)) {
+        return `<pre style="font-family: 'Courier New', Courier, monospace; line-height: 1.6; margin: 1em 0; padding: 10px; background: rgba(0,0,0,0.05); border-radius: 6px; overflow-x: auto;">${paragrafo}</pre>`;
+      }
+      
       const linhas = paragrafo
         .split("\n")
         .map(linha => {
