@@ -2002,47 +2002,37 @@ function formatarConteudo(texto) {
 
       tabelas.push(tabela);
 
-      return `___TABELA_${indice}___`;
+      return `TABELAMARCADOR${indice}FIM`;
+
     }
   );
 
 
   // ==========================================
-  // 3. LIMPA AS QUEBRAS DE LINHA
+  // 3. LIMPA AS QUEBRAS E OS "\"
   // ==========================================
 
-  // Converte CRLF para LF
   resultado = resultado.replace(/\r\n/g, "\n");
+
+  // Remove "\" usado no final das linhas
+  resultado = resultado.replace(/\\[ \t]*\n/g, "\n");
 
   // Remove espaços no final das linhas
   resultado = resultado.replace(/[ \t]+$/gm, "");
 
-  // Remove linhas que contêm somente espaços
-  resultado = resultado.replace(/^[ \t]+$/gm, "");
-
-  // NUNCA permite mais de uma linha vazia seguida
-  resultado = resultado.replace(/\n{3,}/g, "\n\n");
+  // Remove linhas completamente vazias em excesso
+  resultado = resultado.replace(/\n[ \t]*\n[ \t]*\n+/g, "\n\n");
 
 
   // ==========================================
-  // 4. LIMPA ESPAÇOS AO REDOR DAS TABELAS
-  // ==========================================
-
-  resultado = resultado.replace(
-    /\n*\s*___TABELA_(\d+)___\s*\n*/g,
-    "\n___TABELA_$1___\n"
-  );
-
-
-  // ==========================================
-  // 5. ESCAPA O TEXTO
+  // 4. ESCAPA O TEXTO
   // ==========================================
 
   resultado = escaparHTML(resultado);
 
 
   // ==========================================
-  // 6. SEPARA OS BLOCOS
+  // 5. SEPARA OS BLOCOS
   // ==========================================
 
   const blocos = resultado
@@ -2052,30 +2042,47 @@ function formatarConteudo(texto) {
 
 
   // ==========================================
-  // 7. FORMATA CADA BLOCO
+  // 6. FORMATA OS BLOCOS
   // ==========================================
 
-  const html = blocos.map(bloco => {
+  return blocos.map(bloco => {
 
-    // -------------------------------
-    // É UMA TABELA
-    // -------------------------------
+    // ------------------------------------------
+    // SE O BLOCO POSSUI UMA TABELA
+    // ------------------------------------------
 
-    const matchTabela = bloco.match(
-      /^___TABELA_(\d+)___$/
+    const marcador = bloco.match(
+      /TABELAMARCADOR(\d+)FIM/
     );
 
-    if (matchTabela) {
+    if (marcador) {
 
-      const indice = Number(matchTabela[1]);
+      const indice = Number(marcador[1]);
 
-      return tabelas[indice];
+      // Remove qualquer resto de espaços ou "\"
+      const antes = bloco
+        .replace(/TABELAMARCADOR\d+FIM/g, "")
+        .trim();
+
+      // Se não existe texto junto, retorna somente a tabela
+      if (!antes) {
+        return tabelas[indice];
+      }
+
+      // Caso exista texto junto do marcador,
+      // preserva o texto e coloca a tabela depois.
+      return `
+        <div class="historia-paragrafo">
+          ${antes}
+        </div>
+        ${tabelas[indice]}
+      `;
     }
 
 
-    // -------------------------------
+    // ------------------------------------------
     // TEXTO NORMAL
-    // -------------------------------
+    // ------------------------------------------
 
     const linhas = bloco
       .split("\n")
@@ -2083,18 +2090,22 @@ function formatarConteudo(texto) {
 
         linha = linha.trim();
 
-        // Remove \ que ficaram no final das linhas
-        linha = linha.replace(/\\$/g, "");
+        // Remove "\" restante
+        linha = linha.replace(/\\+$/g, "");
 
-        if (
-          /^EXEMPLO\s*\d+/i.test(linha)
-        ) {
+        if (!linha) {
+          return "";
+        }
+
+        // Destaca EXEMPLO
+        if (/^EXEMPLO\s*\d+/i.test(linha)) {
 
           return `
             <span class="destaque-exemplo">
               ${linha}
             </span>
           `;
+
         }
 
         return linha;
@@ -2104,6 +2115,11 @@ function formatarConteudo(texto) {
       .join("<br>");
 
 
+    if (!linhas) {
+      return "";
+    }
+
+
     return `
       <div class="historia-paragrafo">
         ${linhas}
@@ -2111,9 +2127,6 @@ function formatarConteudo(texto) {
     `;
 
   }).join("");
-
-
-  return html;
 }
 
 function classeTipo(tipo, categoria) {
