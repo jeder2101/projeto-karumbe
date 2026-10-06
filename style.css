@@ -1953,3 +1953,62 @@ body {
   border-bottom: 2px solid #2c4a3e;
   padding-bottom: 4px;
 }
+/* =========================================================
+   TABELAS DE EXEMPLOS LINGUÍSTICOS
+   ========================================================= */
+
+.tabela-exemplo-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 18px 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.tabela-exemplo {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #fffdf9;
+    border: 1px solid #d8cbb8;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.tabela-exemplo th {
+    padding: 13px 14px;
+    text-align: left;
+    background: #eee5d8;
+    color: #3d3328;
+    font-weight: bold;
+    border: 1px solid #d8cbb8;
+}
+
+.tabela-exemplo td {
+    padding: 13px 14px;
+    border: 1px solid #d8cbb8;
+    color: #302820;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+
+.tabela-exemplo tbody tr:nth-child(even) {
+    background: #faf6ef;
+}
+
+.tabela-exemplo td:first-child {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    .tabela-exemplo {
+        min-width: 560px;
+        font-size: 16px;
+    }
+
+    .tabela-exemplo th,
+    .tabela-exemplo td {
+        padding: 11px 12px;
+    }
+}
