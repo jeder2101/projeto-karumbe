@@ -1979,53 +1979,56 @@ function formatarBlocosExemplo(texto) {
 }
 
 
-/* =========================================================
-   FORMATAÇÃO FINAL DO CONTEÚDO
-   ========================================================= */
+
 
 /* =========================================================
-   FORMATAÇÃO FINAL DO CONTEÚDO (CORRIGIDA)
+   FORMATAÇÃO FINAL DO CONTEÚDO (DEFINITIVA E CORRIGIDA)
    ========================================================= */
 
 function formatarConteudo(texto) {
   if (!texto) return "";
 
-  // 1. Primeiro cria as tabelas com os títulos corretos
-  let resultado = formatarBlocosExemplo(texto);
+  // 1. Remove qualquer "</div>" solto que esteja corrompendo as tabelas geradas anteriormente
+  let resultado = texto.replace(/<\/div>\s*(?=━━━━━━━━|EXEMPLO|\n)/g, "");
 
-  // 2. Extrai e protege as tabelas geradas substituindo-as por marcadores temporários seguros
+  // 2. Cria as tabelas com os títulos acadêmicos corretos
+  resultado = formatarBlocosExemplo(resultado);
+
+  // 3. Extrai e protege todas as tabelas geradas substituindo-as por marcadores temporários seguros
   const tabelas = [];
   resultado = resultado.replace(
     /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
     tabela => {
+      // Remove eventuais tags </div> duplicadas ou sobrando dentro do wrapper
+      const tabelaLimpa = tabela.replace(/<\/div>\s*<\/div>/g, "</div>");
       const indice = tabelas.length;
-      tabelas.push(tabela);
+      tabelas.push(tabelaLimpa);
       return `__MARCADOR_TABELA_${indice}__`;
     }
   );
 
-  // 3. Limpa quebras de linha e formatações gerais do texto restante
+  // 4. Limpeza de quebras de linha excessivas do texto restante
   resultado = resultado.replace(/\r\n/g, "\n");
   resultado = resultado.replace(/\\[ \t]*\n/g, "\n");
   resultado = resultado.replace(/[ \t]+$/gm, "");
   resultado = resultado.replace(/\n[ \t]*\n[ \t]*\n+/g, "\n\n");
 
-  // 4. Aplica o escaparHTML APENAS no texto normal (fora das tabelas)
+  // 5. Aplica o escaparHTML APENAS no texto normal (fora das tabelas)
   resultado = escaparHTML(resultado);
 
-  // 5. Restaura as tabelas originais intactas substituindo os marcadores (sem passar por escaparHTML)
+  // 6. Restaura as tabelas originais intactas substituindo os marcadores
   tabelas.forEach((tabela, indice) => {
     resultado = resultado.replace(`__MARCADOR_TABELA_${indice}__`, tabela);
   });
 
-  // 6. Separa os blocos e monta o HTML final estruturado
+  // 7. Separa os blocos e monta o HTML final estruturado
   const blocos = resultado
     .split(/\n{2,}/)
     .map(bloco => bloco.trim())
     .filter(bloco => bloco !== "");
 
   return blocos.map(bloco => {
-    // Se o bloco contém uma tabela já formatada, retorna o bloco diretamente sem envolver em parágrafo de texto
+    // Se o bloco contém uma tabela, renderiza diretamente sem envolver em parágrafo de texto
     if (bloco.includes("<div class=\"tabela-exemplo-wrapper\">")) {
       return bloco;
     }
