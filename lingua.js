@@ -1901,6 +1901,43 @@ function formatarBlocosExemplo(texto) {
 
   const saida = [];
 
+  let tabelaAtual = null;
+
+
+  // ========================================================
+  // FUNÇÃO PARA JUNTAR DUAS TABELAS
+  // ========================================================
+
+  function juntarTabelas(tabela1, tabela2) {
+
+    if (!tabela1) return tabela2;
+    if (!tabela2) return tabela1;
+
+
+    // Pega somente as linhas do <tbody> da segunda tabela
+    const corpo2 = tabela2.match(
+      /<tbody[^>]*>([\s\S]*?)<\/tbody>/i
+    );
+
+
+    // Se não houver tbody, não tenta juntar
+    if (!corpo2) {
+      return tabela1;
+    }
+
+
+    // Insere as linhas da segunda tabela
+    // antes do fechamento do tbody da primeira.
+    return tabela1.replace(
+      /<\/tbody>/i,
+      corpo2[1] + "</tbody>"
+    );
+  }
+
+
+  // ========================================================
+  // PROCESSA OS PARÁGRAFOS
+  // ========================================================
 
   for (const paragrafo of paragrafos) {
 
@@ -1909,13 +1946,31 @@ function formatarBlocosExemplo(texto) {
     const tabela = tabelaDeExemplos(linhas);
 
 
+    // ------------------------------------------------------
+    // NÃO É TABELA
+    // ------------------------------------------------------
+
     if (!tabela) {
+
+      // Se havia uma tabela aguardando,
+      // coloca ela antes do texto normal.
+      if (tabelaAtual) {
+
+        saida.push(tabelaAtual);
+
+        tabelaAtual = null;
+      }
+
 
       saida.push(paragrafo);
 
       continue;
     }
 
+
+    // ------------------------------------------------------
+    // É TABELA
+    // ------------------------------------------------------
 
     const indicesTabela = new Set();
 
@@ -1927,13 +1982,18 @@ function formatarBlocosExemplo(texto) {
 
         indicesTabela.add(indice);
 
+
         // Se a próxima linha for tradução,
         // também será incorporada à tabela.
-        const proxima = (linhas[indice + 1] || "").trim();
+        const proxima = (
+          linhas[indice + 1] || ""
+        ).trim();
+
 
         if (
           /^["“].*?(?:→|=)\s*["”]$/u.test(proxima)
         ) {
+
           indicesTabela.add(indice + 1);
         }
       }
@@ -1952,8 +2012,6 @@ function formatarBlocosExemplo(texto) {
 
         if (!tabelaInserida) {
 
-          bloco.push(tabela);
-
           tabelaInserida = true;
         }
 
@@ -1965,13 +2023,58 @@ function formatarBlocosExemplo(texto) {
     });
 
 
-    saida.push(bloco.join("\n"));
+    // ------------------------------------------------------
+    // JUNTA COM A TABELA ANTERIOR
+    // ------------------------------------------------------
+
+    if (tabelaAtual) {
+
+      tabelaAtual = juntarTabelas(
+        tabelaAtual,
+        tabela
+      );
+
+    } else {
+
+      tabelaAtual = tabela;
+    }
+
+
+    // ------------------------------------------------------
+    // SE SOBROU TEXTO NORMAL JUNTO DO EXEMPLO
+    // ------------------------------------------------------
+
+    const textoRestante = bloco
+      .join("\n")
+      .trim();
+
+
+    if (textoRestante) {
+
+      saida.push(tabelaAtual);
+
+      tabelaAtual = null;
+
+      saida.push(textoRestante);
+    }
+
   }
 
 
-  return saida.join("\n\n");
-}
+  // ========================================================
+  // COLOCA A ÚLTIMA TABELA
+  // ========================================================
 
+  if (tabelaAtual) {
+
+    saida.push(tabelaAtual);
+  }
+
+
+  return saida
+    .filter(bloco => bloco && bloco.trim())
+    .join("\n\n");
+}
 
 /* =========================================================
    FORMATAÇÃO FINAL DO CONTEÚDO
