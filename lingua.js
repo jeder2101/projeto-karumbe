@@ -50,7 +50,7 @@ a compreender as camadas da língua, mas devem ser sempre
 analisados considerando a comunidade, o tempo e o contexto
 em que foram produzidos.
 
-O trabalho de **Consuelo de Paiva Godinho Costa** é uma
+O trabalho de Consuelo de Paiva Godinho Costa é uma
 referência central:
   • "Nhandewa Aywu: fonologia do Nhandewa-Guarani" (2003/2010)
     — primeira sistematização completa da fonologia do dialeto
@@ -355,40 +355,32 @@ Consuelo de Paiva Godinho Costa apresenta exemplos de correspondências históri
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Tupi:            kwarasy
-  Guarani:         kwarahy
-  Nhandewa-Guarani: kwaray
-  Significado: sol
+  kwarasy + kwarahy = kwaray
+  "Tupi / Guarani" → "sol"
 
 Esse exemplo é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 2 — FORMAS RELACIONADAS À AÇÃO DE IR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Tupi:            asab
-  Guarani:         aha
-  Nhandewa-Guarani: aa
-  Significado: eu vou
+  asab + aha = aa
+  "Tupi / Guarani" → "eu vou"
 
 A comparação mostra alterações na realização de determinados sons. É necessário considerar o registro e a análise linguística de cada forma.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 3 — FORMAS RELACIONADAS À FOME
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Tupi:            ambyasy
-  Guarani:         ambyahy
-  Nhandewa-Guarani: ambyay
-  Significado: fome
+  ambyasy + ambyahy = ambyay
+  "Tupi / Guarani" → "fome"
 
 Esse exemplo permite observar correspondências entre sons presentes em registros diferentes.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 4 — FORMAS RELACIONADAS AO TEMPO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Tupi:            kwese
-  Guarani:         kwehe
-  Nhandewa-Guarani: kweé
-  Significado: ontem
+  kwese + kwehe = kweé
+  "Tupi / Guarani" → "ontem"
 
 A comparação entre essas formas ajuda a estudar transformações sonoras ao longo da história.
 
@@ -446,10 +438,10 @@ O estudo das transformações fonológicas contribui para compreender tanto os r
 As línguas da família Tupi-Guarani apresentam relações
 históricas entre palavras, sons e estruturas gramaticais.
 Em registros antigos e em outras variedades do Guarani,
-encontram-se formas como **pe, be e bo**.
+encontram-se formas como pe, be e bo.
 
 No Nhandewa-Guarani, correspondentes a essas formas,
-aparecem **py e wy**, que não devem ser entendidas como
+aparecem (py e wy) que não devem ser entendidas como
 simples substituições mecânicas — cada uma tem sua
 função, seu significado e seu contexto de uso.
 
@@ -457,16 +449,17 @@ função, seu significado e seu contexto de uso.
 2. A FORMA wy — DIREÇÃO E DESTINO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma **wy** está ligada à ideia de direção, destino
+A forma wy está ligada à ideia de direção, destino
 ou referência em relação a alguém/algo.
 
 📌 EXEMPLOS REGISTRADOS:
 
-  Txeé  + wy  = txewy
-  "eu"    "para"  → "para mim"
+📌 EXEMPLOS REGISTRADOS:
 
-  pee   + wy  = pemy
-  "vocês" "para"  → "para vocês"
+Txeé + wy = txewy
+"eu" "para" → "para mim"
+pee + wy = pemy
+"vocês" "para" → "para vocês"
 
 Esses exemplos mostram que wy funciona como posposição
 que indica direção ou destinatário, correspondendo
@@ -478,19 +471,20 @@ nasal: em pemy, wy realiza-se como my [mỹ].
 3. A FORMA py — ORIGEM, LOCALIZAÇÃO E Relação
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma **py** também aparece em contextos onde outras
+A forma py também aparece em contextos onde outras
 variedades do Guarani utilizam pe, be ou bo. Ela
 participa de construções que indicam origem, lugar
 ou relação.
 
 📌 EXEMPLOS REGISTRADOS E CORRESPONDÊNCIAS:
 
-  Guarani Antigo / outras variedades → Nhandewa-Guarani
-  pe / be / bo                        → py / wy
 
-  oga   "casa"   + bo  → óy   "para a casa / da casa"
-  coang "roça"   + bo  → cóy  "para a roça / da roça"
-  añang "diabo"  + bo  → añãy "para o diabo / do diabo"
+Guarani Antigo / outras variedades → Nhandewa-Guarani
+pe / be / bo → py / wy
+
+oga "casa" + bo = óy "para a casa / da casa"
+coang "roça" + bo = cóy "para a roça / da roça"
+añang "diabo" + bo = añãy "para o diabo / do diabo" do diabo"
 
 Nessas correspondências, o elemento final — grafado
 como bo no Guarani Antigo — realiza-se como y/wy/py
@@ -519,11 +513,17 @@ direta letra por letra:
 
 📌 OUTROS CASOS DE CORRESPONDÊNCIA:
 
-  Tupi       Guarani      Nhandewa-Guarani    Significado
-  kwarasy    kwarahy      kwaray              sol
-  asab       aha          aa                  eu vou
-  ambyasy    ambyahy      ambyay              fome
-  kwese      kwehe        kweé                ontem
+kwarasy + kwarahy = kwaray
+"Tupi / Guarani" → "sol"
+
+asab + aha = aa
+"Tupi / Guarani" → "eu vou"
+
+ambyasy + ambyahy = ambyay
+"Tupi / Guarani" → "fome"
+
+kwese + kwehe = kweé
+"Tupi / Guarani" → "ontem"
 
 A mudança de hy → y, de he → é e de b → zero em
 ambiente final segue lógica semelhante: perda de
@@ -590,7 +590,7 @@ a nasalidade é um traço fonológico fundamental:
 ela distingue palavras com sentidos diferentes e
 se espalha ao longo das sílabas.
 
-A oposição **oral × nasal** é a principal distinção
+A oposição (oral × nasal) é a principal distinção
 entre vogais nesta língua — mais do que altura ou
 ponto de articulação.
 
@@ -598,45 +598,51 @@ ponto de articulação.
 2. MÕ — VOGAL NASAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O til (~) sobre a vogal õ indica que ela é **nasal**.
+O til (~) sobre a vogal õ indica que ela é nasal.
 Isso não é apenas detalhe de escrita: muda o sentido.
 
 📌 EXEMPLOS DE VOGAL NASAL:
 
-  pytã      vermelho / rosa / roxo
-  kwã       dedo
-  tupã      trovão / divindade
-  puru'ã    umbigo
-  mã'e      olhar
+  pytã = vermelho / rosa / roxo
+  kwã = dedo
+  tupã = trovão / divindade
+  puru'ã = umbigo
+  mã'e = olhar
 
 A vogal nasal pode também influenciar as consoantes
 vizinhas: /mb/ realiza-se como [m] e /nd/ como [n]
 quando seguida de vogal nasal.
 
-  [mba'e]   coisa, o que     → oral → mb
-  [mã'e]    olhar            → nasal → m
+  [mba'e] + oral = mb
+  "coisa, o que" → "oral"
 
-  [nde]     tua, seu          → oral → nd
-  [nẽ]      teu(s)            → nasal → n
+  [mã'e] + nasal = m
+  "olhar" → "nasal"
+
+  [nde] + oral = nd
+  "tua, seu" → "oral"
+
+  [nẽ] + nasal = n
+  "teu(s)" → "nasal"
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. MÜ — A VOGAL CENTRAL ALTA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma **mü** envolve a vogal **central alta /ɨ/** —
+A forma mü envolve a vogal central alta /ɨ/ —
 chamada "sexta vogal" do Guarani — que pode ser
 oral ou nasal. A grafia varia conforme a convenção:
 
-  • ü ou ˆ → vogal central alta **oral**
-  • ũ ou  ̃ˆ → vogal central alta **nasal**
+  • ü ou ˆ → vogal central alta oral
+  • ũ ou  ̃ˆ → vogal central alta nasal
 
 📌 EXEMPLOS DA VOGAL CENTRAL:
 
-  txe       eu (homem fala)
-  txi       eu (mulher fala) — vogal central alta
-  ky'y      pimenta
-  pytü      ficar
-  pytũ      vermelho / rosa — nasalizada
+  txe = eu (homem fala)
+  txi = eu (mulher fala) — vogal central alta
+  ky'y = pimenta
+  pytü = ficar
+  pytũ = vermelho / rosa — nasalizada
 
 A mesma vogal central pode aparecer nasalizada:
   [tʃẽʔɨ]   eu (oral)
@@ -651,7 +657,7 @@ A mesma vogal central pode aparecer nasalizada:
 4. MU — VOGAL ORAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A ausência de til indica vogal **oral**. Comparando:
+A ausência de til indica vogal oral. Comparando:
 
   mu        (vogal u oral)
   mõ        (vogal o nasal)
@@ -659,19 +665,19 @@ A ausência de til indica vogal **oral**. Comparando:
 
 📌 COMPARAÇÃO — oral × nasal:
 
-  pyta      ficar             → oral
-  pytã      vermelho          → nasal ✅ sentido diferente
+  pyta + oral = ficar
+  pytã + nasal = vermelho — sentido diferente
 
-  tupa      cama              → oral
-  tupã      trovão / Deus     → nasal ✅ sentido diferente
+  tupa + oral = cama
+  tupã + nasal = trovão / Deus — sentido diferente
 
-  kunha     — (variação)
-  kunhã     mulher            → nasal
+  kunha = variação
+  kunhã + nasal = mulher
 
-  pora      —
-  porã      bom, belo         → nasal ✅ muito comum
+  pora = —
+  porã + nasal = bom, belo — muito comum
 
-A escrita sem til **não significa** que nunca sofre
+A escrita sem til não significa que nunca sofre
 influência nasal: a harmonia nasal pode espalhar
 a nasalidade de uma sílaba para outra, mesmo sem
 sinal gráfico visível em todas as vogais.
@@ -680,27 +686,36 @@ sinal gráfico visível em todas as vogais.
 5. NASALIDADE QUE SE ESPALHA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O Nhandewa-Guarani tem **harmonia nasal**: a nasalidade
+O Nhandewa-Guarani tem harmonia nasal: a nasalidade
 se transmite de sílaba em sílaba, atravessando consoantes.
 
 📌 EXEMPLO DE ESPALHAMENTO:
 
-  kuñã + kwé → kuñãngwé
-  "mulher" + "coletivo" → "mulherada"
+  kuñã + kwé = kuñãngwé
+  "mulher" "coletivo" → "mulherada"
 
 A nasalidade de ã influencia o k seguinte, que
 passa a ser pronunciado como ng.
 
 📌 ALTERNÂNCIA CONSOANTAL:
 
-  [mba'e]   coisa      → oral → mb
-  [mã'e]    olhar      → nasal → m
+  [mba'e] + oral = mb
+  "coisa" → "oral"
 
-  [ndé]     teu        → oral → nd
-  [nẽ]      teu        → nasal → n
+  [mã'e] + nasal = m
+  "olhar" → "nasal"
 
-  [j-]      (início)   → oral → dj-
-  [ʲ̃-]      (início)   → nasal → ñ-
+  [ndé] + oral = nd
+  "teu" → "oral"
+
+  [nẽ] + nasal = n
+  "teu" → "nasal"
+
+  [j-] + oral = dj-
+  "(início)" → "oral"
+
+  [ʲ̃-] + nasal = ñ-
+  "(início)" → "nasal"
 
 A mesma raiz muda de forma conforme o ambiente
 nasal ou oral. Por isso, a escrita isolada de uma
@@ -717,7 +732,7 @@ Não existe uma única "forma certa" de escrever:
     com seus professores e lideranças
 
 O importante não é copiar um registro antigo,
-mas compreender **por que** a forma muda:
+mas compreender por que a forma muda:
   ✅ posição da vogal
   ✅ ambiente nasal ou oral
   ✅ decisão ortográfica da comunidade
@@ -756,14 +771,14 @@ nas vozes de quem fala.
 1. O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O /r/ no Nhandewa-Guarani é um **tap alveolar**,
+O /r/ no Nhandewa-Guarani é um tap alveolar,
 não uma vibrante múltipla. Aparece em posição de
 início de sílaba, no começo ou no meio da palavra.
 Não ocorre no final de sílaba ou de palavra.
 
-Em ambiente **oral**, pronuncia-se [r].
-Em ambiente **nasal**, sofre influência da nasalidade
-e realiza-se como [r̃] — um tap **nasalizado**, não
+Em ambiente oral, pronuncia-se [r].
+Em ambiente nasal, sofre influência da nasalidade
+e realiza-se como [r̃] — um tap nasalizado, não
 uma consoante nasal plena [n].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -772,10 +787,12 @@ uma consoante nasal plena [n].
 
 📌 Exemplos — sem influência de nasalidade:
 
-  rery        nome                  → [r] oral
-  rowai       o outro lado, além     → [r] oral
-  piri        taboa / junco          → [r] oral
-  ywyra       árvore                 → [r] oral
+📌 Exemplos — sem influência de nasalidade:
+
+rery = nome
+rowai = o outro lado, além
+piri = taboa / junco
+ywyra = árvore
 
 Nessas palavras, não há vogal nasal próxima,
 e o /r/ mantém sua pronúncia oral.
@@ -784,36 +801,35 @@ e o /r/ mantém sua pronúncia oral.
 3. R NASALIZADO — NÃO É N
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Exemplos com /r/ sob influência nasal:
 
-  põrã        bom, bonito
-  → o til em ã espalha nasalidade também sobre o r
-  → pronúncia: [põr̃ã] — não [põnã]
+ 📌 Exemplos com /r/ sob influência nasal:
 
-  wa'ẽrã      futuro
-  → o ã nasaliza também o r
-  → [wa'ẽr̃ã] — não [wa'ẽnã]
+põrã = bom, bonito
+"pronúncia nasalizada" → "[põr̃ã] — não [põnã]"
 
-  nãporairỹ   não está bom, ruim
-  → nasalidade se estende por toda a palavra
-  → o r é pronunciado com ressonância nasal
+wa'ẽrã = futuro
+"pronúncia nasalizada" → "[wa'ẽr̃ã] — não [wa'ẽnã]"
 
-⚠️ Nimuendaju registrou **n** em alguns desses casos
-ex.: *ponã* em vez de *põrã*. Isso reflete a **impressão
-fonética** de quem ouve em fala rápida — não significa
+nãporairỹ = não está bom, ruim
+"nasalidade" → "se estende por toda a palavra"
+"o r" → "é pronunciado com ressonância nasal"
+
+⚠️ Nimuendaju registrou n em alguns desses casos
+ex.: ponã em vez de põrã. Isso reflete a impressão
+fonética de quem ouve em fala rápida — não significa
 que R se transformou em N. O som continua sendo um
 tap, só que com ressonância nasal: [r̃], não [n].
 
-A própria pesquisadora relata que um falante **corrigiu**
-a grafia *ponã* pronunciando com ênfase o r: *porã*.
-Isso demonstra que para os falantes **não é o mesmo som**.
+A própria pesquisadora relata que um falante corrigiu
+a grafia ponã pronunciando com ênfase o r: porã.
+Isso demonstra que para os falantes não é o mesmo som.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. POR QUE NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ✅ /r/ e /n/ continuam sendo fonemas distintos
-  ✅ A nasalização é **condicionada pelo ambiente**
+  ✅ A nasalização é condicionada pelo ambiente
      — só acontece quando há vogal nasal próxima
   ✅ Em fala lenta, a diferença é clara
   ✅ A grafia com n em registros antigos é transcrição,
@@ -827,7 +843,7 @@ Isso demonstra que para os falantes **não é o mesmo som**.
 5. HARMONIA NASAL E ESPALHAMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A nasalidade no Nhandewa **se espalha** de sílaba
+A nasalidade no Nhandewa se espalha de sílaba
 em sílaba. Uma vogal nasal pode influenciar sons
 em sílabas vizinhas, incluindo o /r/. Por isso:
 
@@ -849,7 +865,7 @@ Ao registrar uma palavra:
   5. Lembrar: a impressão auditiva não é sempre a estrutura
 
 Os registros de Nimuendaju são preciosos, mas
-descrevem a **impressão sonora**, não necessariamente
+descrevem a impressão sonora, não necessariamente
 a distinção que os próprios falantes fazem.
 `,
     tipo: "documentado",
@@ -895,63 +911,77 @@ mas de forma viva: não é só o passado que se reduz,
 
 📌 Palavras que perderam sílaba final átona:
 
-  oga        → óy          casa
-  coang      → cóy         roça
-  añang      → añãy        diabo
-  porang(a)  → porã        bom, bonito
+oga = óy
+"casa"
+
+coang = cóy
+"roça"
+
+añang = añãy
+"diabo"
+
+porang(a) = porã
+"bom, bonito"
 
 📌 Formas de negação:
 
-  eỹma / ỹma → eỹ          sem / não
+eỹma / ỹma = eỹ
+"sem / não"
   → Atualmente: eỹwa em alguns contextos
   A partícula final -ma evoluiu para -wa,
   com valor de generalização ou pluralidade
 
 📌 Posse — redução do elemento -re-:
 
-  cherembireco  → chimbirécó    minha mulher
-  cheremỹmba    → chimỹmbá      meu animal doméstico
+cherembireco = chimbirécó
+"minha mulher"
 
-  O elemento inicial *che-* (meu/minha) passa a *chi-*
-  O elemento *-re-* (relacional) pode desaparecer
-  Mas a forma longa **não desapareceu completamente** —
+cheremỹmba = chimỹmbá
+"meu animal doméstico"
+
+  O elemento inicial che- (meu/minha) passa a chi-
+  O elemento -re- (relacional) pode desaparecer
+  Mas a forma longa não desapareceu completamente —
   ainda é ouvida em falas de pessoas mais velhas
 
 📌 Outros casos registrados:
 
-  mocafíyhara    → mocafíyá       aquele que mata
-  mocafíyharera  → mocafíyaté     aquele que matava
-  cherembireco   → chimbirécó     minha mulher
-  fianderequei   → fíanderyquey   nosso irmão maior
+📌 Guarani antigo | Significado | Apapocuva
 
+mocañỹhara + "aquele que mata" = mocañỹá
+mocañỹharera + "aquele que matava" = mocañỹaté
+cherembireco + "minha mulher" = chimbirécó
+ñanderequeĩ + "nosso irmão maior" = ñanderyqueỹ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. NÃO É APAGAMENTO — É TRANSFORMAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Quando uma sílaba parece desaparecer, pode ser que:
 
-  ✅ Seja apenas **redução na fala rápida**
-  ✅ A vogal átona se **junta à sílaba anterior**
-  ✅ Mude a **grafia**, mas a pronúncia conserve traços
-  ✅ Coexistam **duas formas** — uma mais longa,
+  ✅ Seja apenas redução na fala rápida
+  ✅ A vogal átona se junta à sílaba anterior
+  ✅ Mude a grafia, mas a pronúncia conserve traços
+  ✅ Coexistam duas formas — uma mais longa,
      outra mais curta — faladas por pessoas diferentes
-  ✅ O elemento mude de **função** e não só de forma
+  ✅ O elemento mude de função e não só de forma
 
-Exemplo: *eỹma* → *eỹwa* — não é simples perda
-de -ma, é **substituição** por -wa com valor próprio.
+Exemplo:
+eỹma / ỹma = eỹ
+"sem / não"
+não é simples perda de -ma, é substituição por -wa com valor próprio.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. O ELEMENTO RELACIONAL -RE-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O morfema **-re-** marca relação de posse.
+O morfema -re- marca relação de posse.
 Pode aparecer ou desaparecer conforme:
   • a velocidade da fala
   • a idade do falante
   • a ênfase que se quer dar
   • a região/aldeia
 
-Isso significa que **não há uma "forma certa" única**:
+Isso significa que não há uma "forma certa" única:
   cherembireco  e  chimbirécó  podem ser ouvidas
   de pessoas diferentes na mesma comunidade.
 
@@ -1012,34 +1042,32 @@ e o contexto da fala.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 2. A PARTÍCULA MA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 📌 Junto ao verbo — indica ação em curso:
 
-  aáma        está indo / ia
-  oúma        está vindo / vinha
-  ojapóma     está fazendo / fazia
+aáma = está indo / ia
+oúma = está vindo / vinha
+ojapóma = está fazendo / fazia
 
-  A partícula se liga à raiz verbal e
-  indica que a ação acontece ou acontecia
-  ao longo de um tempo.
+A partícula se liga à raiz verbal e
+indica que a ação acontece ou acontecia
+ao longo de um tempo.
 
 📌 Como palavra separada — confirmação/ênfase:
 
-  Ko kwatiá-re ma.
-  "É mesmo aqui, nesta terra."
+Ko kwatiá-re ma.
+"É mesmo aqui, nesta terra."
 
-  Aqui, ma não se junta ao verbo — aparece
-  sozinha, dando peso, confirmação ou
-  certeza ao que se diz.
+Aqui, ma não se junta ao verbo — aparece
+sozinha, dando peso, confirmação ou
+certeza ao que se diz.
 
 📌 Em negação e finalização:
 
-  eỹma        não / sem (registro histórico)
-  eỹwa        não / sem (uso atual)
+eỹma = não / sem (registro histórico)
+eỹwa = não / sem (uso atual)
 
-  -ma pode evoluir para -wa com valor de
-  generalização ou pluralidade.
-
+-ma pode evoluir para -wa com valor de
+generalização ou pluralidade.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. ESCRIVER JUNTO OU SEPARADO?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1060,8 +1088,8 @@ se ajusta conforme a fala da comunidade.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Em outras variedades do Guarani, pa existe
-com funções específicas. **No Nhandewa, ainda
-está sendo estudada.** Por isso:
+com funções específicas. No Nhandewa, ainda
+está sendo estudada. Por isso:
 
   ⚠️ Não se copia explicação de outra língua
   ⚠️ Cada ocorrência é conferida com falantes
@@ -1116,14 +1144,16 @@ Para ma e pa:
 1. O QUE É O SUPINO VY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Vy aparece **junto a verbos de movimento**
-e indica que uma ação acontece **ao mesmo
-tempo que outra**, ou **no caminho de/para**.
+Vy aparece junto a verbos de movimento
+e indica que uma ação acontece ao mesmo
+tempo que outra, ou no caminho de/para.
 Não é exatamente "quando" — é o movimento
 que acompanha a ação principal.
 
-  ó    = ir          → oóvy    = indo / quando ia
-  u    = vir         → oúvy    = vindo / quando vinha
+ó = ir
+u = vir
+oóvy = indo / quando ia
+oúvy = vindo / quando vinha
 
 A terminação vy liga a ação de ir/vir ao
 contexto em que outra coisa acontece.
@@ -1132,26 +1162,14 @@ contexto em que outra coisa acontece.
 2. EXEMPLOS REGISTRADOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Enquanto ele ia e fazia:
-  Ojapó ma oóvy.
-  "Fazia, enquanto ia."
-  → oóvy = indo / no caminho
+📌 Exemplos do supino vy:
 
-📌 Enquanto ela vinha pulando:
-  Opó yvy áno oúvy.
-  "Pulando, vinha para a terra."
-  → oúvy = vindo / no caminho de volta
+Frase | Tradução | Sentido de -vy
 
-📌 Quando ele atravessou:
-  Oaqá oóvy.
-  "Atravessou, indo."
-  → oóvy = indo / na travessia
-
-📌 Quando ele vinha descendo:
-  Oguejý oúvy.
-  "Descia, vindo."
-  → oúvy = vindo / descendo
-
+Ojapó ma oóvy + "Fazia, enquanto ia." = "indo / no caminho"
+Opó yvy áno oúvy + "Pulando, vinha para a terra." = "vindo / no caminho de volta"
+Oaqá oóvy + "Atravessou, indo." = "indo / na travessia"
+Oguejý oúvy + "Descia, vindo." = "vindo / descendo"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. NÃO É SÓ "QUANDO"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1165,7 +1183,7 @@ mas a língua carrega mais:
   oúvy ≠ só "quando ele veio"
   ✅ "vindo" — o deslocamento é o sentido
 
-Isso liga diretamente à ideia de **oguatá** —
+Isso liga diretamente à ideia de oguatá —
 o caminhar como forma de existir, de buscar,
 de conhecer. A língua carrega o movimento
 em suas próprias estruturas gramaticais.
@@ -1175,7 +1193,7 @@ em suas próprias estruturas gramaticais.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Esses exemplos vêm de narrativas registradas
-por **Curt Nimuendajú** entre os Apapocúva,
+por Curt Nimuendajú entre os Apapocúva,
 publicadas em 1914/1987. Consuelo de Paiva
 Godinho Costa analisa que a estrutura se
 mantém no Nhandewa falado, embora com
@@ -1237,11 +1255,12 @@ com quem fala, com onde se fala, com quando.
 
 📌 Em diferentes contextos, nhe'ẽ pode significar:
 
-  • sopro, respiração, vida
-  • espírito, essência
-  • palavra verdadeira
-  • fala que vem do coração
-  • presença ancestral
+nhe'ẽ | Significado
+sopro, respiração, vida
+espírito, essência
+palavra verdadeira
+fala que vem do coração
+presença ancestral
 
 Não se reduz a uma só tradução. Em Nhandewa,
 em Mbyá, em Kaiowá — a mesma raiz abre
@@ -1255,11 +1274,13 @@ faz viver, o que conecta, o que permanece.
 3. AYWU — fala, palavra, caminho
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 aywu:
-  • fala, conversa
-  • palavra dita
-  • modo de dizer
-  • em Nhandewa: "nossa fala" = Nhandeaywu
+📌 aywu — significados e sentidos:
+
+aywu | Significado
+fala, conversa
+palavra dita
+modo de dizer
+em Nhandewa: "nossa fala" = Nhandeaywu
 
 ⚠️ Em outras variedades do Guarani, a mesma
 palavra tem sentido diferente: em Avanheém
@@ -1274,8 +1295,8 @@ comunidade tece seu próprio sentido.
 Uma palavra pode começar num uso e depois
 alcançar outros:
 
-  Sopro → vida → força → presença → ancestralidade
-  Fala → palavra → ensinamento → caminho → identidade
+Sopro → vida → força → presença → ancestralidade
+Fala → palavra → ensinamento → caminho → identidade
 
 Isso não é "erro" nem "confusão". É como a língua
 respira: cresce junto com o povo que a fala.
@@ -1364,7 +1385,7 @@ em cada página, em cada exemplo.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Nas Convenções Lingüísticas, professores de
-cinco aldeias reuniram-se para **decidir juntos**
+cinco aldeias reuniram-se para decidir juntos
 como escrever — cada um tinha sua grafia,
 e acordaram uma para todos. Isso é fortalecimento:
 não receber de fora, construir junto.
@@ -1468,7 +1489,7 @@ sobre as línguas indígenas. Reunir esses materiais
 em um só lugar é facilitar o acesso de quem
 ensina, de quem pesquisa e de quem quer aprender.
 
-O objetivo **não é substituir** — é aproximar:
+O objetivo não é substituir — é aproximar:
   academia ←→ comunidade
   pesquisa ←→ fala
   passado ←→ presente
