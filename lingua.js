@@ -1981,101 +1981,139 @@ function formatarConteudo(texto) {
 
   if (!texto) return "";
 
+  // ==========================================
+  // 1. CRIA AS TABELAS
+  // ==========================================
 
-  // Primeiro cria as tabelas.
   let resultado = formatarBlocosExemplo(texto);
 
 
-  // Guarda as tabelas para que o HTML delas não seja escapado.
+  // ==========================================
+  // 2. GUARDA AS TABELAS
+  // ==========================================
+
   const tabelas = [];
 
   resultado = resultado.replace(
     /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
     tabela => {
 
+      const indice = tabelas.length;
+
       tabelas.push(tabela);
 
-      return `__TABELA_${tabelas.length - 1}__`;
+      return `___TABELA_${indice}___`;
     }
   );
 
 
-  // ==================================================
-  // REMOVE EXCESSO DE LINHAS VAZIAS
-  // ==================================================
-  // Impede que centenas de quebras de linha virem
-  // centenas de <br> antes das tabelas.
+  // ==========================================
+  // 3. LIMPA AS QUEBRAS DE LINHA
+  // ==========================================
+
+  // Converte CRLF para LF
+  resultado = resultado.replace(/\r\n/g, "\n");
+
+  // Remove espaços no final das linhas
+  resultado = resultado.replace(/[ \t]+$/gm, "");
+
+  // Remove linhas que contêm somente espaços
+  resultado = resultado.replace(/^[ \t]+$/gm, "");
+
+  // NUNCA permite mais de uma linha vazia seguida
+  resultado = resultado.replace(/\n{3,}/g, "\n\n");
+
+
+  // ==========================================
+  // 4. LIMPA ESPAÇOS AO REDOR DAS TABELAS
+  // ==========================================
+
   resultado = resultado.replace(
-    /\n[ \t]*\n(?:[ \t]*\n)*/g,
-    "\n\n"
+    /\n*\s*___TABELA_(\d+)___\s*\n*/g,
+    "\n___TABELA_$1___\n"
   );
 
 
-  // Remove espaços/quebras imediatamente antes
-  // e depois dos marcadores das tabelas.
-  resultado = resultado.replace(
-    /\n*\s*(__TABELA_\d+__)\s*\n*/g,
-    "\n\n$1\n\n"
-  );
+  // ==========================================
+  // 5. ESCAPA O TEXTO
+  // ==========================================
 
-
-  // Escapa o restante do texto.
   resultado = escaparHTML(resultado);
 
 
-  // Recoloca as tabelas.
-  tabelas.forEach((tabela, indice) => {
+  // ==========================================
+  // 6. SEPARA OS BLOCOS
+  // ==========================================
 
-    resultado = resultado.replaceAll(
-      `__TABELA_${indice}__`,
-      tabela
+  const blocos = resultado
+    .split(/\n{2,}/)
+    .map(bloco => bloco.trim())
+    .filter(bloco => bloco !== "");
+
+
+  // ==========================================
+  // 7. FORMATA CADA BLOCO
+  // ==========================================
+
+  const html = blocos.map(bloco => {
+
+    // -------------------------------
+    // É UMA TABELA
+    // -------------------------------
+
+    const matchTabela = bloco.match(
+      /^___TABELA_(\d+)___$/
     );
 
-  });
+    if (matchTabela) {
+
+      const indice = Number(matchTabela[1]);
+
+      return tabelas[indice];
+    }
 
 
-  // Formata os parágrafos normalmente.
-  return resultado
-    .trim()
-    .split(/\n{2,}/)
-    .map(paragrafo => {
+    // -------------------------------
+    // TEXTO NORMAL
+    // -------------------------------
 
-      if (
-        paragrafo.includes("<table") ||
-        paragrafo.includes(
-          '<div class="tabela-exemplo-wrapper">'
-        )
-      ) {
-        return paragrafo;
-      }
+    const linhas = bloco
+      .split("\n")
+      .map(linha => {
 
+        linha = linha.trim();
 
-      const linhas = paragrafo
-        .split("\n")
-        .map(linha => {
+        // Remove \ que ficaram no final das linhas
+        linha = linha.replace(/\\$/g, "");
 
-          if (
-            /^EXEMPLO\s*\d+/i.test(
-              linha.trim()
-            )
-          ) {
-            return `
-              <span class="destaque-exemplo">
-                ${linha}
-              </span>
-            `;
-          }
+        if (
+          /^EXEMPLO\s*\d+/i.test(linha)
+        ) {
 
-          return linha;
+          return `
+            <span class="destaque-exemplo">
+              ${linha}
+            </span>
+          `;
+        }
 
-        })
-        .join("<br>");
+        return linha;
+
+      })
+      .filter(linha => linha !== "")
+      .join("<br>");
 
 
-      return `<div class="historia-paragrafo">${linhas}</div>`;
+    return `
+      <div class="historia-paragrafo">
+        ${linhas}
+      </div>
+    `;
 
-    })
-    .join("");
+  }).join("");
+
+
+  return html;
 }
 
 function classeTipo(tipo, categoria) {
