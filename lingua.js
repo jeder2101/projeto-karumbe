@@ -1668,7 +1668,6 @@ function escaparHTML(texto) {
    ========================================================= */
 
 function linhaDeExemplo(linha) {
-
   const original = linha.trim();
 
   if (!original) return null;
@@ -1683,21 +1682,14 @@ function linhaDeExemplo(linha) {
     return null;
   }
 
-
   /* ---------------------------------------------------------
      FORMA + ELEMENTO → RESULTADO
-     
-     Exemplo:
-     Txeé + wy = txewy
-     pee + wy → pemy
      --------------------------------------------------------- */
-
   let m = original.match(
     /^(.+?)\s*\+\s*(.+?)\s*(?:→|=)\s*(.+)$/u
   );
 
   if (m) {
-
     const forma = m[1].trim();
     const elemento = m[2].trim();
     const resultado = m[3].trim();
@@ -1717,20 +1709,14 @@ function linhaDeExemplo(linha) {
     }
   }
 
-
   /* ---------------------------------------------------------
      FORMA → RESULTADO
-     
-     Exemplo:
-     palavra → significado
      --------------------------------------------------------- */
-
   m = original.match(
     /^(.+?)\s*→\s*(.+)$/u
   );
 
   if (m) {
-
     const forma = m[1].trim();
     const resultado = m[2].trim();
 
@@ -1748,17 +1734,14 @@ function linhaDeExemplo(linha) {
     }
   }
 
-
   /* ---------------------------------------------------------
      FORMA = RESULTADO
      --------------------------------------------------------- */
-
   m = original.match(
     /^(.+?)\s*=\s*(.+)$/u
   );
 
   if (m) {
-
     const forma = m[1].trim();
     const resultado = m[2].trim();
 
@@ -1775,7 +1758,6 @@ function linhaDeExemplo(linha) {
       };
     }
   }
-
 
   return null;
 }
@@ -1789,7 +1771,7 @@ function tabelaDeExemplos(linhas) {
   const dados = [];
   const consumidos = new Set();
 
-  // ✅ Detecta se é a tabela de correspondência
+  // Detecta se é a tabela de correspondência
   const blocoCorrespondencia = linhas.some(linha =>
     /📌 OUTROS CASOS DE CORRESPONDÊNCIA:/.test(linha)
   );
@@ -1810,7 +1792,7 @@ function tabelaDeExemplos(linhas) {
 
   if (dados.length === 0) return null;
 
-  // ✅ Escolhe os títulos de coluna corretos
+  // Escolhe os títulos de coluna corretos
   let cabecalho;
   if (blocoCorrespondencia) {
     cabecalho = `
@@ -1845,7 +1827,6 @@ function tabelaDeExemplos(linhas) {
 
   const corpo = dados.map(item => {
     if (blocoCorrespondencia) {
-      // Para correspondência: distribui os valores nas 4 colunas
       return `
         <tr>
           <td>${escaparHTML(item.forma)}</td>
@@ -1891,341 +1872,175 @@ function tabelaDeExemplos(linhas) {
    ========================================================= */
 
 function formatarBlocosExemplo(texto) {
-
   const paragrafos = texto.split(/\n{2,}/);
-
   const saida = [];
-
   let tabelaAtual = null;
 
-
-  // ========================================================
-  // FUNÇÃO PARA JUNTAR DUAS TABELAS
-  // ========================================================
-
   function juntarTabelas(tabela1, tabela2) {
-
     if (!tabela1) return tabela2;
     if (!tabela2) return tabela1;
 
-
-    // Pega somente as linhas do <tbody> da segunda tabela
     const corpo2 = tabela2.match(
       /<tbody[^>]*>([\s\S]*?)<\/tbody>/i
     );
 
-
-    // Se não houver tbody, não tenta juntar
     if (!corpo2) {
       return tabela1;
     }
 
-
-    // Insere as linhas da segunda tabela
-    // antes do fechamento do tbody da primeira.
     return tabela1.replace(
       /<\/tbody>/i,
       corpo2[1] + "</tbody>"
     );
   }
 
-
-  // ========================================================
-  // PROCESSA OS PARÁGRAFOS
-  // ========================================================
-
   for (const paragrafo of paragrafos) {
-
     const linhas = paragrafo.split("\n");
-
     const tabela = tabelaDeExemplos(linhas);
 
-
-    // ------------------------------------------------------
-    // NÃO É TABELA
-    // ------------------------------------------------------
-
     if (!tabela) {
-
-      // Se havia uma tabela aguardando,
-      // coloca ela antes do texto normal.
       if (tabelaAtual) {
-
         saida.push(tabelaAtual);
-
         tabelaAtual = null;
       }
-
-
       saida.push(paragrafo);
-
       continue;
     }
 
-
-    // ------------------------------------------------------
-    // É TABELA
-    // ------------------------------------------------------
-
     const indicesTabela = new Set();
 
-
-    // Descobre quais linhas pertencem aos exemplos
     linhas.forEach((linha, indice) => {
-
       if (linhaDeExemplo(linha)) {
-
         indicesTabela.add(indice);
+        const proxima = (linhas[indice + 1] || "").trim();
 
-
-        // Se a próxima linha for tradução,
-        // também será incorporada à tabela.
-        const proxima = (
-          linhas[indice + 1] || ""
-        ).trim();
-
-
-        if (
-          /^["“].*?(?:→|=)\s*["”]$/u.test(proxima)
-        ) {
-
+        if (/^["“].*?(?:→|=)\s*["”]$/u.test(proxima)) {
           indicesTabela.add(indice + 1);
         }
       }
-
     });
 
-
     const bloco = [];
-
     let tabelaInserida = false;
 
-
     linhas.forEach((linha, indice) => {
-
       if (indicesTabela.has(indice)) {
-
         if (!tabelaInserida) {
-
           tabelaInserida = true;
         }
-
         return;
       }
-
-
       bloco.push(linha);
     });
 
-
-    // ------------------------------------------------------
-    // JUNTA COM A TABELA ANTERIOR
-    // ------------------------------------------------------
-
     if (tabelaAtual) {
-
-      tabelaAtual = juntarTabelas(
-        tabelaAtual,
-        tabela
-      );
-
+      tabelaAtual = juntarTabelas(tabelaAtual, tabela);
     } else {
-
       tabelaAtual = tabela;
     }
 
-
-    // ------------------------------------------------------
-    // SE SOBROU TEXTO NORMAL JUNTO DO EXEMPLO
-    // ------------------------------------------------------
-
-    const textoRestante = bloco
-      .join("\n")
-      .trim();
-
+    const textoRestante = bloco.join("\n").trim();
 
     if (textoRestante) {
-
       saida.push(tabelaAtual);
-
       tabelaAtual = null;
-
       saida.push(textoRestante);
     }
-
   }
-
-
-  // ========================================================
-  // COLOCA A ÚLTIMA TABELA
-  // ========================================================
 
   if (tabelaAtual) {
-
     saida.push(tabelaAtual);
   }
-
 
   return saida
     .filter(bloco => bloco && bloco.trim())
     .join("\n\n");
 }
 
+
 /* =========================================================
-   FORMATAÇÃO FINAL DO CONTEÚDO
+   FORMATAÇÃO FINAL DO CONTEÚDO (CORRIGIDO)
    ========================================================= */
 
 function formatarConteudo(texto) {
-
   if (!texto) return "";
 
-  // ==========================================
-  // 1. CRIA AS TABELAS
-  // ==========================================
-
+  // 1. Cria as tabelas em HTML estruturado
   let resultado = formatarBlocosExemplo(texto);
 
-
-  // ==========================================
-  // 2. GUARDA AS TABELAS
-  // ==========================================
-
+  // 2. Extrai e protege as tabelas geradas substituindo-as por marcadores únicos
   const tabelas = [];
-
   resultado = resultado.replace(
     /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
     tabela => {
-
       const indice = tabelas.length;
-
-      tabelas.push(tabela);
-
-      return `TABELAMARCADOR${indice}FIM`;
-
+      tabelas.push(tabela); // Armazena a tabela HTML crua e intacta
+      return `###TABELAMARCADOR${indice}FIM###`;
     }
   );
 
-
-  // ==========================================
-  // 3. LIMPA AS QUEBRAS E OS "\"
-  // ==========================================
-
+  // 3. Limpa quebras de linha e formatações gerais do texto restante
   resultado = resultado.replace(/\r\n/g, "\n");
-
-  // Remove "\" usado no final das linhas
   resultado = resultado.replace(/\\[ \t]*\n/g, "\n");
-
-  // Remove espaços no final das linhas
   resultado = resultado.replace(/[ \t]+$/gm, "");
-
-  // Remove linhas completamente vazias em excesso
   resultado = resultado.replace(/\n[ \t]*\n[ \t]*\n+/g, "\n\n");
 
-
-  // ==========================================
-  // 4. ESCAPA O TEXTO
-  // ==========================================
-
+  // 4. Aplica o escaparHTML apenas no texto normal (as tabelas já estão protegidas no array)
   resultado = escaparHTML(resultado);
 
+  // 5. Restaura as tabelas originais substituindo de volta os marcadores
+  tabelas.forEach((tabela, indice) => {
+    resultado = resultado.replace(`###TABELAMARCADOR${indice}FIM###`, tabela);
+  });
 
-  // ==========================================
-  // 5. SEPARA OS BLOCOS
-  // ==========================================
-
+  // 6. Separa os blocos e monta o HTML final estruturado
   const blocos = resultado
     .split(/\n{2,}/)
     .map(bloco => bloco.trim())
     .filter(bloco => bloco !== "");
 
-
-  // ==========================================
-  // 6. FORMATA OS BLOCOS
-  // ==========================================
-
   return blocos.map(bloco => {
-
-    // ------------------------------------------
-    // SE O BLOCO POSSUI UMA TABELA
-    // ------------------------------------------
-
-    const marcador = bloco.match(
-      /TABELAMARCADOR(\d+)FIM/
-    );
-
-    if (marcador) {
-
-      const indice = Number(marcador[1]);
-
-      // Remove qualquer resto de espaços ou "\"
-      const antes = bloco
-        .replace(/TABELAMARCADOR\d+FIM/g, "")
-        .trim();
-
-      // Se não existe texto junto, retorna somente a tabela
-      if (!antes) {
-        return tabelas[indice];
-      }
-
-      // Caso exista texto junto do marcador,
-      // preserva o texto e coloca a tabela depois.
-      return `
-        <div class="historia-paragrafo">
-          ${antes}
-        </div>
-        ${tabelas[indice]}
-      `;
+    // Se o bloco contém uma tabela inteira isolada
+    if (bloco.includes("<div class=\"tabela-exemplo-wrapper\">")) {
+      return bloco;
     }
 
-
-    // ------------------------------------------
-    // TEXTO NORMAL
-    // ------------------------------------------
-
+    // Se o bloco contém texto comum com formatação de linhas
     const linhas = bloco
       .split("\n")
       .map(linha => {
-
         linha = linha.trim();
-
-        // Remove "\" restante
         linha = linha.replace(/\\+$/g, "");
 
-        if (!linha) {
-          return "";
-        }
+        if (!linha) return "";
 
-        // Destaca EXEMPLO
         if (/^EXEMPLO\s*\d+/i.test(linha)) {
-
           return `
             <span class="destaque-exemplo">
               ${linha}
             </span>
           `;
-
         }
 
         return linha;
-
       })
       .filter(linha => linha !== "")
       .join("<br>");
 
-
-    if (!linhas) {
-      return "";
-    }
-
+    if (!linhas) return "";
 
     return `
       <div class="historia-paragrafo">
         ${linhas}
       </div>
     `;
-
   }).join("");
 }
+
+
+/* =========================================================
+   RESTANTE DAS FUNÇÕES (CATEGORIAS, MODAL, FILTROS)
+   ========================================================= */
 
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
@@ -2234,43 +2049,15 @@ function classeTipo(tipo, categoria) {
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
 
-    const t = (tipo || "")
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim();
-
-    // A categoria é a referência principal para definir a cor.
-    if (cat.includes("apresentacao")) {
-        return "historia-apresentacao";
-    }
-
-    if (cat.includes("historia")) {
-        return "historia-historia";
-    }
-
-    if (cat.includes("transformacoes")) {
-        return "historia-transformacoes";
-    }
-
-    if (cat.includes("sons")) {
-        return "historia-sons";
-    }
-
-    if (cat.includes("gramatica")) {
-        return "historia-gramatica";
-    }
-
-    if (cat.includes("continuidade")) {
-        return "historia-continuidade";
-    }
+    if (cat.includes("apresentacao")) return "historia-apresentacao";
+    if (cat.includes("historia")) return "historia-historia";
+    if (cat.includes("transformacoes")) return "historia-transformacoes";
+    if (cat.includes("sons")) return "historia-sons";
+    if (cat.includes("gramatica")) return "historia-gramatica";
+    if (cat.includes("continuidade")) return "historia-continuidade";
 
     return "historia-continuidade";
 }
-
-/* =========================================================
-   MOSTRAR HISTÓRIAS
-   ========================================================= */
 
 function mostrarHistorias(lista = HISTORIAS_LINGUA) {
   const container = document.getElementById("lista-historias");
@@ -2289,7 +2076,7 @@ function mostrarHistorias(lista = HISTORIAS_LINGUA) {
     return;
   }
 
-container.innerHTML = lista.map(item => `
+  container.innerHTML = lista.map(item => `
     <article
       class="card-historia ${classeTipo(item.tipo, item.categoria)}"
       role="button"
@@ -2311,12 +2098,8 @@ container.innerHTML = lista.map(item => `
       </p>
 
       <div class="historia-meta">
-        <span>
-          ${escaparHTML(item.periodo)}
-        </span>
-        <span>
-          ${escaparHTML(item.tipo)}
-        </span>
+        <span>${escaparHTML(item.periodo)}</span>
+        <span>${escaparHTML(item.tipo)}</span>
       </div>
 
       <button
@@ -2329,15 +2112,8 @@ container.innerHTML = lista.map(item => `
   `).join("");
 }
 
-
-/* =========================================================
-   ABRIR HISTÓRIA
-   ========================================================= */
-
 function abrirHistoria(id) {
-  const item = HISTORIAS_LINGUA.find(
-    historia => historia.id === id
-  );
+  const item = HISTORIAS_LINGUA.find(historia => historia.id === id);
 
   if (!item) {
     console.warn("História não encontrada:", id);
@@ -2352,18 +2128,14 @@ function abrirHistoria(id) {
     return;
   }
 
-  const linksHTML =
-    item.links && item.links.length
-      ? `
+  const linksHTML = item.links && item.links.length
+    ? `
         <div class="historia-fonte">
           <strong>Links e referências:</strong>
           <div style="margin-top: 10px;">
             ${item.links.map(link => `
               <p>
-                <a
-                  href="${escaparHTML(link.url)}"
-                  target="_blank"
-                  rel="noopener noreferrer">
+                <a href="${escaparHTML(link.url)}" target="_blank" rel="noopener noreferrer">
                   ${escaparHTML(link.titulo)}
                 </a>
               </p>
@@ -2371,7 +2143,7 @@ function abrirHistoria(id) {
           </div>
         </div>
       `
-      : "";
+    : "";
 
   conteudo.innerHTML = `
     <span class="historia-categoria">
@@ -2383,12 +2155,8 @@ function abrirHistoria(id) {
     </h2>
 
     <div class="historia-meta">
-      <span>
-        ${escaparHTML(item.periodo)}
-      </span>
-      <span>
-        ${escaparHTML(item.tipo)}
-      </span>
+      <span>${escaparHTML(item.periodo)}</span>
+      <span>${escaparHTML(item.tipo)}</span>
     </div>
 
     <p class="historia-resumo">
@@ -2401,12 +2169,8 @@ function abrirHistoria(id) {
       
       ${item.id === 2 ? `
         <section class="mapa-nhandewa" style="text-align: center; margin-top: 20px;">
-          <h3>
-            Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá
-          </h3>
-          <p>
-            Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
-          </p>
+          <h3>Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá</h3>
+          <p>Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.</p>
           <div style="margin: 20px 0;">
             <img src="assets/img/Iguatemi (Área de origem).jpg" 
                  alt="Mapa histórico da trajetória Guarani Nhandewa" 
@@ -2424,9 +2188,7 @@ function abrirHistoria(id) {
 
     <div class="historia-fonte">
       <strong>Fonte:</strong>
-      <p>
-        ${escaparHTML(item.fonte || "Fonte em estudo.")}
-      </p>
+      <p>${escaparHTML(item.fonte || "Fonte em estudo.")}</p>
     </div>
 
     ${linksHTML}
@@ -2436,11 +2198,6 @@ function abrirHistoria(id) {
   modal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-aberto");
 }
-
-
-/* =========================================================
-   FILTRO DE PESQUISA
-   ========================================================= */
 
 function filtrarHistorias(termo = "") {
   const busca = String(termo)
@@ -2461,21 +2218,13 @@ function filtrarHistorias(termo = "") {
       ${item.categoria}
       ${item.periodo}
       ${item.tipo}
-    `
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+    `.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     return texto.includes(busca);
   });
 
   mostrarHistorias(resultado);
 }
-
-
-/* =========================================================
-   FILTRO POR CATEGORIA
-   ========================================================= */
 
 function filtrarCategoriaHistoria(categoria) {
   if (!categoria || categoria.toLowerCase() === "todas") {
@@ -2490,13 +2239,8 @@ function filtrarCategoriaHistoria(categoria) {
   mostrarHistorias(resultado);
 }
 
-
-/* =========================================================
-   INICIALIZAÇÃO
-   ========================================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarHistorias(); // <-- Devolva esta linha aqui
+  mostrarHistorias();
 
   const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
