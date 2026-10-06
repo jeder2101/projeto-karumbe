@@ -1664,7 +1664,7 @@ function formatarConteudo(texto) {
     })
     .join("");
 }
-}
+
 
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
