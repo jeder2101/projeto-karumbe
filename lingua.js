@@ -2000,6 +2000,25 @@ function formatarConteudo(texto) {
   );
 
 
+  // ==================================================
+  // REMOVE EXCESSO DE LINHAS VAZIAS
+  // ==================================================
+  // Impede que centenas de quebras de linha virem
+  // centenas de <br> antes das tabelas.
+  resultado = resultado.replace(
+    /\n[ \t]*\n(?:[ \t]*\n)*/g,
+    "\n\n"
+  );
+
+
+  // Remove espaços/quebras imediatamente antes
+  // e depois dos marcadores das tabelas.
+  resultado = resultado.replace(
+    /\n*\s*(__TABELA_\d+__)\s*\n*/g,
+    "\n\n$1\n\n"
+  );
+
+
   // Escapa o restante do texto.
   resultado = escaparHTML(resultado);
 
@@ -2023,7 +2042,9 @@ function formatarConteudo(texto) {
 
       if (
         paragrafo.includes("<table") ||
-        paragrafo.includes("<div class=\"tabela-exemplo-wrapper\">")
+        paragrafo.includes(
+          '<div class="tabela-exemplo-wrapper">'
+        )
       ) {
         return paragrafo;
       }
@@ -2051,11 +2072,11 @@ function formatarConteudo(texto) {
         .join("<br>");
 
 
-     return `<div class="historia-paragrafo">${linhas}</div>`;
+      return `<div class="historia-paragrafo">${linhas}</div>`;
+
     })
     .join("");
 }
-
 
 function classeTipo(tipo, categoria) {
     const cat = (categoria || "")
