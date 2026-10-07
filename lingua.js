@@ -351,16 +351,16 @@ As línguas podem apresentar mudanças nos sons ao longo de sua história. Essas
 EXEMPLOS DE CORRESPONDÊNCIAS SONORAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 kwarasy + kwarahy = kwaray
-  "Tupi / Guarani" → "sol"
+"Tupi / Guarani" → "sol"
 
-  asab + aha = aa
-  "Tupi / Guarani" → "eu vou"
+asab + aha = aa
+"Tupi / Guarani" → "eu vou"
 
-  ambyasy + ambyahy = ambyay
-  "Tupi / Guarani" → "fome"
+ambyasy + ambyahy = ambyay
+"Tupi / Guarani" → "fome"
 
-  kwese + kwehe = kweé
-  "Tupi / Guarani" → "ontem"
+kwese + kwehe = kweé
+"Tupi / Guarani" → "ontem"
 
 Estes exemplos, apresentados em estudos linguísticos por Consuelo de Paiva Godinho Costa, demonstram as comparações entre formas registradas em diferentes variedades e períodos, evidenciando as alterações na realização de determinados sons.
 
@@ -503,7 +503,6 @@ direta letra por letra:
 
 📌 Correspondências entre variedades do Guarani:
 
-Tupi(nambá) | Guarani (“geral”) | Nhandewa-Guarani | Português
 
 kwarasy + kwarahy = kwaray
 "Tupi / Guarani" → "sol"
@@ -1798,7 +1797,6 @@ function tabelaDeExemplos(linhas) {
      ========================================================= */
 
 const blocoCorrespondencia =
-    /CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI|OUTROS CASOS DE CORRESPONDÊNCIA|EXEMPLOS DE CORRESPONDÊNCIAS SONORAS/i.test(textoBloco) ||
     /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
     /asab\s*\+\s*aha\s*=\s*aa/i.test(textoBloco) ||
     /ambyasy\s*\+\s*ambyahy\s*=\s*ambyay/i.test(textoBloco) ||
