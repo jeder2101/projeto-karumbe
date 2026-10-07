@@ -2268,13 +2268,18 @@ function tabelaDeExemplos(linhas) {
 
 
 /* =========================================================
-   TABELAS AUTOMÁTICAS DE EXEMPLOS (ISOLADAS POR BLOCO)
+   CRIA A TABELA
    ========================================================= */
 
 function tabelaDeExemplos(linhas) {
   const dados = [];
   const consumidos = new Set();
   const textoBloco = linhas.join("\n");
+
+  /* =========================================================
+     CADA TIPO DE EXEMPLO RECEBE O NOME DAS COLUNAS QUE
+     REALMENTE CORRESPONDE AO CONTEÚDO DA FONTE.
+     ========================================================= */
 
   const blocoCorrespondencia =
     /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
@@ -2310,6 +2315,12 @@ function tabelaDeExemplos(linhas) {
 
   const blocoSupinoVy =
     /Frase\s*\|\s*Tradução\s*\|\s*Sentido de -vy|Ojapó ma oóvy|Opó yvy áno oúvy|Oaqá oóvy|Oguejý oúvy/i.test(textoBloco);
+
+  // Nova regra adicionada para o bloco Orais / Nasais lado a lado
+  const blocoOraisNasaisDuasColunas =
+    /ORAIS\s+NASAIS/i.test(textoBloco) ||
+    /pyta\s+"ficar".*pytã\s+"vermelho"/i.test(textoBloco) ||
+    /tupa\s+"cama".*tūpã\s+"trovão"/i.test(textoBloco);
 
   for (let i = 0; i < linhas.length; i++) {
     if (consumidos.has(i)) continue;
@@ -2367,6 +2378,7 @@ function tabelaDeExemplos(linhas) {
         <th>Português</th>
       </tr>
     `;
+
   } else if (blocoCorrespondenciaPosposicoes) {
     cabecalho = `
       <tr>
@@ -2375,6 +2387,7 @@ function tabelaDeExemplos(linhas) {
       </tr>
     `;
     modoCorpo = "duas";
+
   } else if (blocoPosposicaoWy) {
     cabecalho = `
       <tr>
@@ -2384,6 +2397,7 @@ function tabelaDeExemplos(linhas) {
         <th>Função / sentido</th>
       </tr>
     `;
+
   } else if (blocoPosposicaoBo) {
     cabecalho = `
       <tr>
@@ -2393,6 +2407,7 @@ function tabelaDeExemplos(linhas) {
         <th>Sentido / relação</th>
       </tr>
     `;
+
   } else if (blocoAlternanciaConsonantal) {
     cabecalho = `
       <tr>
@@ -2402,6 +2417,7 @@ function tabelaDeExemplos(linhas) {
         <th>Glossário</th>
       </tr>
     `;
+
   } else if (blocoContrasteOralNasal) {
     cabecalho = `
       <tr>
@@ -2411,6 +2427,7 @@ function tabelaDeExemplos(linhas) {
       </tr>
     `;
     modoCorpo = "tresContraste";
+
   } else if (blocoHarmoniaNasal) {
     cabecalho = `
       <tr>
@@ -2420,6 +2437,7 @@ function tabelaDeExemplos(linhas) {
         <th>Significado</th>
       </tr>
     `;
+
   } else if (blocoGuaraniApapocuva) {
     cabecalho = `
       <tr>
@@ -2429,6 +2447,7 @@ function tabelaDeExemplos(linhas) {
       </tr>
     `;
     modoCorpo = "tresGuarani";
+
   } else if (blocoReducao) {
     cabecalho = `
       <tr>
@@ -2438,6 +2457,7 @@ function tabelaDeExemplos(linhas) {
       </tr>
     `;
     modoCorpo = "tresReducao";
+
   } else if (blocoSupinoVy) {
     cabecalho = `
       <tr>
@@ -2447,8 +2467,19 @@ function tabelaDeExemplos(linhas) {
       </tr>
     `;
     modoCorpo = "tresVy";
+
+  } else if (blocoOraisNasaisDuasColunas) {
+    cabecalho = `
+      <tr>
+        <th>Orais</th>
+        <th>Nasais</th>
+      </tr>
+    `;
+    modoCorpo = "oraisNasaisDuasColunas";
+
   } else {
     const temComposicao = dados.some(item => item.tipo === "composicao");
+
     if (temComposicao) {
       cabecalho = `
         <tr>
@@ -2472,18 +2503,61 @@ function tabelaDeExemplos(linhas) {
 
   const corpo = dados.map(item => {
     if (modoCorpo === "duas") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.resultado)}</td></tr>`;
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.resultado)}</td>
+        </tr>
+      `;
     }
+
     if (modoCorpo === "tresContraste" || modoCorpo === "tresGuarani" || modoCorpo === "tresVy") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.elemento || "")}</td><td>${escaparHTML(item.resultado || "")}</td></tr>`;
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.elemento || "")}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+        </tr>
+      `;
     }
+
     if (modoCorpo === "tresReducao") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.resultado || "")}</td><td>${escaparHTML(item.sentido || "")}</td></tr>`;
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+          <td>${escaparHTML(item.sentido || "")}</td>
+        </tr>
+      `;
     }
+
     if (modoCorpo === "tres") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.resultado)}</td><td>${escaparHTML(item.sentido || "")}</td></tr>`;
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${escaparHTML(item.resultado)}</td>
+          <td>${escaparHTML(item.sentido || "")}</td>
+        </tr>
+      `;
     }
-    return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.elemento || "")}</td><td>${escaparHTML(item.resultado)}</td><td>${escaparHTML(item.sentido || "")}</td></tr>`;
+
+    if (modoCorpo === "oraisNasaisDuasColunas") {
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)} ${item.sentido ? `"${escaparHTML(item.sentido)}"` : ""}</td>
+          <td>${escaparHTML(item.resultado || "")}</td>
+        </tr>
+      `;
+    }
+
+    return `
+      <tr>
+        <td>${escaparHTML(item.forma)}</td>
+        <td>${escaparHTML(item.elemento || "")}</td>
+        <td>${escaparHTML(item.resultado)}</td>
+        <td>${escaparHTML(item.sentido || "")}</td>
+      </tr>
+    `;
   }).join("");
 
   return `
@@ -2495,7 +2569,6 @@ function tabelaDeExemplos(linhas) {
     </div>
   `;
 }
-
 
 /* =========================================================
    FORMATA OS BLOCOS DE EXEMPLOS (SEPARAÇÃO POR SEÇÕES)
