@@ -759,10 +759,10 @@ R NASALIZADO — NÃO É N
  Exemplos com /r/ sob influência nasal:
 
 põrã = bom, bonito
-"pronúncia nasalizada" → "[põr̃ã] — não [põnã]"
+"pronúncia nasalizada" → "põr̃ã — não põnã"
 
 wa'ẽrã = futuro
-"pronúncia nasalizada" → "[wa'ẽr̃ã] — não [wa'ẽnã]"
+"pronúncia nasalizada" → "wa'ẽr̃ã — não wa'ẽnã"
 
 nãporairỹ = não está bom, ruim
 "nasalidade" → "se estende por toda a palavra"
@@ -800,7 +800,7 @@ A nasalidade no Nhandewa se espalha de sílaba
 em sílaba. Uma vogal nasal pode influenciar sons
 em sílabas vizinhas, incluindo o /r/. Por isso:
 
-  põrã → a nasalidade de ã atinge o r → [põr̃ã]
+  põrã → a nasalidade de ã atinge o r → põr̃ã
 
 O processo é:
   Vogal nasal → espalha nasalidade → /r/ fica nasalizado
@@ -875,16 +875,19 @@ añang = añãy
 
 porang(a) = porã
 "bom, bonito"
-
-Formas de negação:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Formas de negação:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 eỹma / ỹma = eỹ
 "sem / não"
   → Atualmente: eỹwa em alguns contextos
   A partícula final -ma evoluiu para -wa,
   com valor de generalização ou pluralidade
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   Posse — redução do elemento -re-:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Posse — redução do elemento -re-:
 
 cherembireco = chimbirécó
 "minha mulher"
@@ -896,8 +899,9 @@ cheremỹmba = chimỹmbá
   O elemento -re- (relacional) pode desaparecer
   Mas a forma longa não desapareceu completamente —
   ainda é ouvida em falas de pessoas mais velhas
-
- Outros casos registrados:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    Outros casos registrados:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
  Guarani antigo | Significado | Apapocuva
 
@@ -1004,8 +1008,9 @@ ojapóma = está fazendo / fazia
 A partícula se liga à raiz verbal e
 indica que a ação acontece ou acontecia
 ao longo de um tempo.
-
- Como palavra separada — confirmação/ênfase:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Como palavra separada — confirmação/ênfase:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Ko kwatiá-re ma.
 "É mesmo aqui, nesta terra."
@@ -1013,8 +1018,10 @@ Ko kwatiá-re ma.
 Aqui, ma não se junta ao verbo — aparece
 sozinha, dando peso, confirmação ou
 certeza ao que se diz.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    Em negação e finalização:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- Em negação e finalização:
 
 eỹma = não / sem (registro histórico)
 eỹwa = não / sem (uso atual)
