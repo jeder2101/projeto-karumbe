@@ -345,61 +345,27 @@ a história das pessoas que a falam.
     resumo:
         "Os sons de uma língua podem apresentar transformações ao longo da história. No Nhandewa-Guarani, estudos registram correspondências entre formas antigas e atuais, além de processos relacionados à nasalidade.",
     conteudo: `
-As línguas podem apresentar mudanças nos sons ao longo de sua história.
-Essas transformações podem ocorrer na pronúncia, na estrutura das palavras e na maneira como determinados sons são realizados em diferentes contextos.
-
-O estudo da fonologia do Nhandewa-Guarani permite observar relações entre registros históricos e formas encontradas em comunidades contemporâneas.
-
-Consuelo de Paiva Godinho Costa apresenta exemplos de correspondências históricas entre formas do Tupi, do Guarani e do Nhandewa-Guarani.
+As línguas podem apresentar mudanças nos sons ao longo de sua história. Essas transformações ocorrem na pronúncia, na estrutura das palavras e na maneira como os sons são realizados em diferentes contextos, permitindo observar relações entre registros históricos e formas contemporâneas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
+EXEMPLOS DE CORRESPONDÊNCIAS SONORAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  kwarasy + kwarahy = kwaray
-  "Tupi / Guarani" → "sol"
+  • kwarasy + kwarahy = kwaray ("sol")
+  • asab + aha = aa ("eu vou")
+  • ambyasy + ambyahy = ambyay ("fome")
+  • kwese + kwehe = kweé ("ontem")
 
-Esse exemplo é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 2 — FORMAS RELACIONADAS À AÇÃO DE IR
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  asab + aha = aa
-  "Tupi / Guarani" → "eu vou"
-
-A comparação mostra alterações na realização de determinados sons. É necessário considerar o registro e a análise linguística de cada forma.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 3 — FORMAS RELACIONADAS À FOME
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ambyasy + ambyahy = ambyay
-  "Tupi / Guarani" → "fome"
-
-Esse exemplo permite observar correspondências entre sons presentes em registros diferentes.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 4 — FORMAS RELACIONADAS AO TEMPO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  kwese + kwehe = kweé
-  "Tupi / Guarani" → "ontem"
-
-A comparação entre essas formas ajuda a estudar transformações sonoras ao longo da história.
+Estes exemplos, apresentados em estudos linguísticos por Consuelo de Paiva Godinho Costa, demonstram as comparações entre formas registradas em diferentes variedades e períodos, evidenciando as alterações na realização de determinados sons.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 A NASALIDADE NA LÍNGUA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A nasalidade é uma característica central e distintiva na fonologia do Nhandewa-Guarani.
+A nasalidade é uma característica central e distintiva na fonologia do Nhandewa-Guarani. Estudos descrevem consoantes pré-nasalizadas (como mb, nd, ŋg) e nasais (como m, n, ɲ), que podem apresentar realizações inteiramente nasais dependendo do ambiente (ex.: mb → m e nd → n).
 
-Estudos descrevem consoantes pré-nasalizadas, como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
-Em determinados ambientes, consoantes pré-nasalizadas podem apresentar realizações inteiramente nasais.
+Esses processos devem ser analisados considerando a palavra completa, os sons vizinhos e o contexto de uso — não se tratando de regras mecânicas aplicáveis a todos os casos.
 
-Exemplos descritos na pesquisa incluem relações entre formas como mb → m e nd → n, dependendo do ambiente nasal ou oral em que se encontram.
-
-Esses processos devem ser analisados considerando a palavra completa, os sons vizinhos e o contexto de uso — não se tratam de regras mecânicas que se aplicam igualmente a todos os casos.
-
-A mudança sonora não significa necessariamente perda da língua. Pelo contrário: faz parte de sua trajetória histórica e da diversidade que caracteriza os povos ao longo do tempo.
-
-O estudo das transformações fonológicas contribui para compreender tanto os registros antigos quanto as formas contemporâneas, reforçando a continuidade do Nhandewa-Guarani.
+A mudança sonora não significa perda da língua, mas sim parte de sua trajetória histórica e da diversidade que caracteriza os povos ao longo do tempo.
 
 ⚠️ Os exemplos apresentados são referências para estudo e comparação. Não devem ser utilizados como regras absolutas para todas as palavras ou para todos os falantes Nhandewa.
 `,
@@ -438,7 +404,7 @@ O estudo das transformações fonológicas contribui para compreender tanto os r
             url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
         }
     ]
-},
+}
 {
     id: 4,
     categoria: "Transformações",
