@@ -865,7 +865,7 @@ Guarani Antigo para Nhandewa
 
 Palavras que perderam sílaba final átona:
 
-oga + "óy" = casa
+oga +  óy = casa
 
 coang = cóy
 "roça"
