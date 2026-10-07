@@ -961,7 +961,7 @@ mas o rio continua correndo.
             url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
         }
     ]
-}
+},
 
 {
     id: 9,
