@@ -350,10 +350,17 @@ As línguas podem apresentar mudanças nos sons ao longo de sua história. Essas
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLOS DE CORRESPONDÊNCIAS SONORAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  • kwarasy + kwarahy = kwaray ("sol")
-  • asab + aha = aa ("eu vou")
-  • ambyasy + ambyahy = ambyay ("fome")
-  • kwese + kwehe = kweé ("ontem")
+kwarasy + kwarahy = kwaray
+  "Tupi / Guarani" → "sol"
+
+  asab + aha = aa
+  "Tupi / Guarani" → "eu vou"
+
+  ambyasy + ambyahy = ambyay
+  "Tupi / Guarani" → "fome"
+
+  kwese + kwehe = kweé
+  "Tupi / Guarani" → "ontem"
 
 Estes exemplos, apresentados em estudos linguísticos por Consuelo de Paiva Godinho Costa, demonstram as comparações entre formas registradas em diferentes variedades e períodos, evidenciando as alterações na realização de determinados sons.
 
