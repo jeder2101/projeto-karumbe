@@ -404,7 +404,7 @@ A mudança sonora não significa perda da língua, mas sim parte de sua trajetó
             url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
         }
     ]
-}
+},
 {
     id: 4,
     categoria: "Transformações",
