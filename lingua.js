@@ -2034,52 +2034,72 @@ function tabelaDeExemplos(linhas) {
 
 
 /* =========================================================
-   FORMATA OS BLOCOS DE EXEMPLOS (ATUALIZADO PARA UNIFICAR TABELAS)
+   FORMATA OS BLOCOS DE EXEMPLOS (SUPORTE GERAL PARA MÚLTIPLAS TABELAS)
    ========================================================= */
 
 function formatarBlocosExemplo(texto) {
-  // Extrai todas as linhas globais do texto
-  const linhasGerais = texto.split("\n");
-  const indicesExemplosGlobais = new Set();
+  const linhas = texto.split("\n");
+  const resultadoLinhas = [];
+  let blocoAtual = [];
 
-  // Mapeia todas as linhas que são exemplos ou traduções em todo o texto
-  linhasGerais.forEach((linha, indice) => {
-    if (linhaDeExemplo(linha)) {
-      indicesExemplosGlobais.add(indice);
+  const processarBlocoAcumulado = (linhasBloco) => {
+    if (linhasBloco.length === 0) return "";
+    
+    const indicesExemplos = new Set();
+    linhasBloco.forEach((linha, indice) => {
+      if (linhaDeExemplo(linha)) {
+        indicesExemplos.add(indice);
 
-      const proxima = (linhasGerais[indice + 1] || "").trim();
-      if (/^["“].*?(?:→|=)\s*["”]$/u.test(proxima)) {
-        indicesExemplosGlobais.add(indice + 1);
+        const proxima = (linhasBloco[indice + 1] || "").trim();
+        if (/^["“].*?(?:→|=)\s*["”]$/u.test(proxima)) {
+          indicesExemplos.add(indice + 1);
+        }
       }
-    }
-  });
-
-  // Se houver exemplos, gera uma tabela única unificada com todas as linhas coletadas
-  if (indicesExemplosGlobais.size > 0) {
-    const linhasTabela = [];
-    indicesExemplosGlobais.forEach(idx => {
-      linhasTabela.push(linhasGerais[idx]);
     });
 
-    const tabelaUnica = tabelaDeExemplos(linhasTabela);
+    if (indicesExemplos.size === 0) {
+      return linhasBloco.join("\n");
+    }
 
-    // Substitui os blocos de exemplos no texto original pelo marcador da tabela única
-    // e mantém o restante do texto intacto
-    let textoFiltrado = linhasGerais.map((linha, idx) => {
-      if (indicesExemplosGlobais.has(idx)) {
-        return "___MARCADOR_TABELA_UNICA___";
+    const linhasTabela = [];
+    indicesExemplos.forEach(idx => {
+      linhasTabela.push(linhasBloco[idx]);
+    });
+
+    const tabelaGerada = tabelaDeExemplos(linhasTabela);
+
+    let blocoFormatado = linhasBloco.map((linha, idx) => {
+      if (indicesExemplos.has(idx)) {
+        return "___MARCADOR_TABELA___";
       }
       return linha;
     }).join("\n");
 
-    // Remove marcadores duplicados consecutivos e insere a tabela unica onde estava o primeiro marcador
-    textoFiltrado = textoFiltrado.replace(/(___MARCADOR_TABELA_UNICA___\s*)+/g, "\n\n___MARCADOR_TABELA_UNICA___\n\n");
-    textoFiltrado = textoFiltrado.replace("___MARCADOR_TABELA_UNICA___", `\n\n${tabelaUnica}\n\n`);
+    blocoFormatado = blocoFormatado.replace(/(___MARCADOR_TABELA___\s*)+/g, "\n\n___MARCADOR_TABELA___\n\n");
+    blocoFormatado = blocoFormatado.replace("___MARCADOR_TABELA___", `\n\n${tabelaGerada}\n\n`);
 
-    return textoFiltrado;
+    return blocoFormatado;
+  };
+
+  for (let i = 0; i < linhas.length; i++) {
+    const linha = linhas[i];
+    
+    if (/^(EXEMPLO\s*\d+|[📌⚠️✅•]|━━━━━━━━|\d+\.)/i.test(linha.trim()) && blocoAtual.length > 0) {
+      const temExemplo = blocoAtual.some(l => linhaDeExemplo(l));
+      if (temExemplo) {
+        resultadoLinhas.push(processarBlocoAcumulado(blocoAtual));
+        blocoAtual = [];
+      }
+    }
+    
+    blocoAtual.push(linha);
   }
 
-  return texto;
+  if (blocoAtual.length > 0) {
+    resultadoLinhas.push(processarBlocoAcumulado(blocoAtual));
+  }
+
+  return resultadoLinhas.join("\n");
 }
 
 
