@@ -587,7 +587,9 @@ EXEMPLOS DE VOGAL NASAL:
 A vogal nasal pode também influenciar as consoantes
 vizinhas: /mb/ realiza-se como [m] e /nd/ como [n]
 quando seguida de vogal nasal.
-
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Exemplos:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   mba'e + oral = mb
   "coisa, o que" → "oral"
 
