@@ -1685,10 +1685,6 @@ function linhaDeExemplo(linha) {
 
   /* ---------------------------------------------------------
      FORMA + ELEMENTO → RESULTADO
-     
-     Exemplo:
-     Txeé + wy = txewy
-     pee + wy → pemy
      --------------------------------------------------------- */
 
   let m = original.match(
@@ -1719,9 +1715,6 @@ function linhaDeExemplo(linha) {
 
   /* ---------------------------------------------------------
      FORMA → RESULTADO
-     
-     Exemplo:
-     palavra → significado
      --------------------------------------------------------- */
 
   m = original.match(
@@ -1792,15 +1785,14 @@ function tabelaDeExemplos(linhas) {
   /* =========================================================
      CADA TIPO DE EXEMPLO RECEBE O NOME DAS COLUNAS QUE
      REALMENTE CORRESPONDE AO CONTEÚDO DA FONTE.
-     Não usar "Forma / Elemento / Resultado / Significado"
-     como padrão para todos os casos.
      ========================================================= */
 
-const blocoCorrespondencia =
+  const blocoCorrespondencia =
     /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
     /asab\s*\+\s*aha\s*=\s*aa/i.test(textoBloco) ||
     /ambyasy\s*\+\s*ambyahy\s*=\s*ambyay/i.test(textoBloco) ||
-    /kwese\s*\+\s*kwehe\s*=\s*kweé/i.test(textoBloco);
+    /kwese\s*\+\s*kwehe\s*=\s*kweé/i.test(textoBloco) ||
+    /EXEMPLOS DE CORRESPONDÊNCIAS SONORAS/i.test(textoBloco);
 
   const blocoCorrespondenciaPosposicoes =
     /Guarani Antigo\s*\/\s*outras variedades\s*→\s*Nhandewa-Guarani|pe\s*\/\s*be\s*\/\s*bo\s*→\s*py\s*\/\s*wy/i.test(textoBloco);
@@ -1840,12 +1832,6 @@ const blocoCorrespondencia =
     const traducao = proxima.match(/^\s*["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]\s*$/u);
 
     if (traducao) {
-      /*
-       * Nas tabelas de alternância consonantal, a linha seguinte
-       * traz o glossário à esquerda e o ambiente à direita:
-       * "coisa, o que" → "oral"
-       * Portanto, o significado é a primeira parte, não a segunda.
-       */
       item.sentido = blocoAlternanciaConsonantal
         ? traducao[1]
         : traducao[2];
@@ -1853,10 +1839,6 @@ const blocoCorrespondencia =
       consumidos.add(i + 1);
     }
 
-    /* ---------------------------------------------------------
-       Limpeza das linhas em que o significado vem junto da forma.
-       Ex.: oga "casa" + bo = óy "para a casa / da casa"
-       --------------------------------------------------------- */
     if (blocoPosposicaoBo) {
       const mForma = item.forma.match(/^(.+?)\s+["“](.+?)["”]\s*$/u);
       if (mForma) {
@@ -1870,18 +1852,11 @@ const blocoCorrespondencia =
       }
     }
 
-    /* ---------------------------------------------------------
-       No supino -vy, as aspas são a tradução e o sentido.
-       --------------------------------------------------------- */
     if (blocoSupinoVy) {
       item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
       item.resultado = item.resultado.replace(/^["“]|["”]$/gu, "").trim();
     }
 
-    /* ---------------------------------------------------------
-       No quadro "Guarani antigo | Significado | Apapocuva",
-       o segundo campo é o significado por definição da fonte.
-       --------------------------------------------------------- */
     if (blocoGuaraniApapocuva) {
       item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
     }
@@ -1994,11 +1969,6 @@ const blocoCorrespondencia =
     modoCorpo = "tresVy";
 
   } else {
-    /*
-     * Fallback sem usar os antigos nomes genéricos.
-     * Se uma nova tabela aparecer, os nomes continuam linguísticos
-     * e não apresentam "Elemento" como coluna padrão.
-     */
     const temComposicao = dados.some(item => item.tipo === "composicao");
 
     if (temComposicao) {
@@ -2032,17 +2002,7 @@ const blocoCorrespondencia =
       `;
     }
 
-    if (modoCorpo === "tresContraste") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.elemento || "")}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "tresGuarani") {
+    if (modoCorpo === "tresContraste" || modoCorpo === "tresGuarani" || modoCorpo === "tresVy") {
       return `
         <tr>
           <td>${escaparHTML(item.forma)}</td>
@@ -2058,16 +2018,6 @@ const blocoCorrespondencia =
           <td>${escaparHTML(item.forma)}</td>
           <td>${escaparHTML(item.resultado || "")}</td>
           <td>${escaparHTML(item.sentido || "")}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "tresVy") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.elemento || "")}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
         </tr>
       `;
     }
@@ -2103,191 +2053,55 @@ const blocoCorrespondencia =
 }
 
 
-
 /* =========================================================
-   FORMATA OS BLOCOS DE EXEMPLOS
+   FORMATA OS BLOCOS DE EXEMPLOS (ATUALIZADO PARA UNIFICAR TABELAS)
    ========================================================= */
 
 function formatarBlocosExemplo(texto) {
+  // Extrai todas as linhas globais do texto
+  const linhasGerais = texto.split("\n");
+  const indicesExemplosGlobais = new Set();
 
-  const paragrafos = texto.split(/\n{2,}/);
+  // Mapeia todas as linhas que são exemplos ou traduções em todo o texto
+  linhasGerais.forEach((linha, indice) => {
+    if (linhaDeExemplo(linha)) {
+      indicesExemplosGlobais.add(indice);
 
-  const saida = [];
-
-  let tabelaAtual = null;
-
-
-  // ========================================================
-  // FUNÇÃO PARA JUNTAR DUAS TABELAS
-  // ========================================================
-
-  function juntarTabelas(tabela1, tabela2) {
-
-    if (!tabela1) return tabela2;
-    if (!tabela2) return tabela1;
-
-
-    // Pega somente as linhas do <tbody> da segunda tabela
-    const corpo2 = tabela2.match(
-      /<tbody[^>]*>([\s\S]*?)<\/tbody>/i
-    );
-
-
-    // Se não houver tbody, não tenta juntar
-    if (!corpo2) {
-      return tabela1;
-    }
-
-
-    // Insere as linhas da segunda tabela
-    // antes do fechamento do tbody da primeira.
-    return tabela1.replace(
-      /<\/tbody>/i,
-      corpo2[1] + "</tbody>"
-    );
-  }
-
-
-  // ========================================================
-  // PROCESSA OS PARÁGRAFOS
-  // ========================================================
-
-  for (const paragrafo of paragrafos) {
-
-    const linhas = paragrafo.split("\n");
-
-    const tabela = tabelaDeExemplos(linhas);
-
-
-    // ------------------------------------------------------
-    // NÃO É TABELA
-    // ------------------------------------------------------
-
-    if (!tabela) {
-
-      // Se havia uma tabela aguardando,
-      // coloca ela antes do texto normal.
-      if (tabelaAtual) {
-
-        saida.push(tabelaAtual);
-
-        tabelaAtual = null;
+      const proxima = (linhasGerais[indice + 1] || "").trim();
+      if (/^["“].*?(?:→|=)\s*["”]$/u.test(proxima)) {
+        indicesExemplosGlobais.add(indice + 1);
       }
-
-
-      saida.push(paragrafo);
-
-      continue;
     }
+  });
 
-
-    // ------------------------------------------------------
-    // É TABELA
-    // ------------------------------------------------------
-
-    const indicesTabela = new Set();
-
-
-    // Descobre quais linhas pertencem aos exemplos
-    linhas.forEach((linha, indice) => {
-
-      if (linhaDeExemplo(linha)) {
-
-        indicesTabela.add(indice);
-
-
-        // Se a próxima linha for tradução,
-        // também será incorporada à tabela.
-        const proxima = (
-          linhas[indice + 1] || ""
-        ).trim();
-
-
-        if (
-          /^["“].*?(?:→|=)\s*["”]$/u.test(proxima)
-        ) {
-
-          indicesTabela.add(indice + 1);
-        }
-      }
-
+  // Se houver exemplos, gera uma tabela única unificada com todas as linhas coletadas
+  if (indicesExemplosGlobais.size > 0) {
+    const linhasTabela = [];
+    indicesExemplosGlobais.forEach(idx => {
+      linhasTabela.push(linhasGerais[idx]);
     });
 
+    const tabelaUnica = tabelaDeExemplos(linhasTabela);
 
-    const bloco = [];
-
-    let tabelaInserida = false;
-
-
-    linhas.forEach((linha, indice) => {
-
-      if (indicesTabela.has(indice)) {
-
-        if (!tabelaInserida) {
-
-          tabelaInserida = true;
-        }
-
-        return;
+    // Substitui os blocos de exemplos no texto original pelo marcador da tabela única
+    // e mantém o restante do texto intacto
+    let textoFiltrado = linhasGerais.map((linha, idx) => {
+      if (indicesExemplosGlobais.has(idx)) {
+        return "___MARCADOR_TABELA_UNICA___";
       }
+      return linha;
+    }).join("\n");
 
+    // Remove marcadores duplicados consecutivos e insere a tabela unica onde estava o primeiro marcador
+    textoFiltrado = textoFiltrado.replace(/(___MARCADOR_TABELA_UNICA___\s*)+/g, "\n\n___MARCADOR_TABELA_UNICA___\n\n");
+    textoFiltrado = textoFiltrado.replace("___MARCADOR_TABELA_UNICA___", `\n\n${tabelaUnica}\n\n`);
 
-      bloco.push(linha);
-    });
-
-
-    // ------------------------------------------------------
-    // JUNTA COM A TABELA ANTERIOR
-    // ------------------------------------------------------
-
-    if (tabelaAtual) {
-
-      tabelaAtual = juntarTabelas(
-        tabelaAtual,
-        tabela
-      );
-
-    } else {
-
-      tabelaAtual = tabela;
-    }
-
-
-    // ------------------------------------------------------
-    // SE SOBROU TEXTO NORMAL JUNTO DO EXEMPLO
-    // ------------------------------------------------------
-
-    const textoRestante = bloco
-      .join("\n")
-      .trim();
-
-
-    if (textoRestante) {
-
-      saida.push(tabelaAtual);
-
-      tabelaAtual = null;
-
-      saida.push(textoRestante);
-    }
-
+    return textoFiltrado;
   }
 
-
-  // ========================================================
-  // COLOCA A ÚLTIMA TABELA
-  // ========================================================
-
-  if (tabelaAtual) {
-
-    saida.push(tabelaAtual);
-  }
-
-
-  return saida
-    .filter(bloco => bloco && bloco.trim())
-    .join("\n\n");
+  return texto;
 }
+
 
 /* =========================================================
    FORMATAÇÃO FINAL DO CONTEÚDO
@@ -2458,7 +2272,6 @@ function classeTipo(tipo, categoria) {
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
 
-    // A categoria é a referência principal para definir a cor.
     if (cat.includes("apresentacao")) {
         return "historia-apresentacao";
     }
@@ -2714,7 +2527,7 @@ function filtrarCategoriaHistoria(categoria) {
    ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-  mostrarHistorias(); // <-- Devolva esta linha aqui
+  mostrarHistorias();
 
   const campoPesquisa = document.getElementById("pesquisa-historias");
   if (campoPesquisa) {
