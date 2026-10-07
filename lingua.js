@@ -888,6 +888,10 @@ Forma registrada | Forma correspondente | Tradução
   Mas a forma longa não desapareceu completamente —
   ainda é ouvida em falas de pessoas mais velhas.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 📌 Outros casos registrados (Guarani antigo / Apapocuva):
 
 • mocañỹhara ("aquele que mata") = mocañỹá
@@ -909,7 +913,7 @@ Quando uma sílaba parece desaparecer, pode ser que:
   ✅ O elemento mude de função e não só de forma
 
 Exemplo:
-eỹma / ỹma = eỹ ("sem / não")
+eỹma / ỹma / eỹ = ("sem / não")
 não é simples perda de -ma, é substituição por -wa com valor próprio.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
