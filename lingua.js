@@ -416,93 +416,86 @@ A mudança sonora não significa perda da língua, mas sim parte de sua trajetó
     id: 4,
     categoria: "Transformações",
     periodo: "Gramática histórica",
-    titulo: "De pe, be e bo para py e wy",
-    resumo:
-        "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar transformações nas posposições e nas estruturas gramaticais, com destaque para a passagem de pe/be/bo para py e wy.",
+    titulo: "Fonologia e Transformações: De pe, be e bo para py e wy",
+    resumo: "A análise fonológica detalhada da variedade Nhandewa-Guarani abrange o inventário vocálico, oposições fonológicas e a evolução histórica das posposições e estruturas gramaticais.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. RELAÇÕES HISTÓRICAS
+INVENTÁRIO VOCÁLICO E OPOSIÇÕES FONOLÓGICAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-As línguas da família Tupi-Guarani apresentam relações
-históricas entre palavras, sons e estruturas gramaticais.
-Em registros antigos e em outras variedades do Guarani,
-encontram-se formas como pe, be e bo.
+Estudos de referência sobre a fonologia da variedade Nhandewa-Guarani destacam o inventário de vogais orais e nasais e o contraste oclusivo/nasal:
 
-No Nhandewa-Guarani, correspondentes a essas formas,
-aparecem (py e wy) que não devem ser entendidas como
-simples substituições mecânicas — cada uma tem sua
-função, seu significado e seu contexto de uso.
+EXEMPLO 1
+Inventário Vocálico - Vogais Orais e Nasais
+
+i / ĩ = oral / nasal fechada alta
+e / ẽ = oral / nasal média alta
+a / ã = oral / nasal baixa central
+o / õ = oral / nasal média alta posterior
+u / ũ = oral / nasal alta posterior
+y / ỹ = oral / nasal alta central não arredondada
+
+EXEMPLO 2
+Pares Mínimos e Contraste Oclusivo / Nasal
+
+pa / mba'e = oclusiva bilabial / nasal bilabial
+ta / nda = oclusiva alveolar / nasal alveolar
+ka / nga = oclusiva velar / nasal velar
+
+EXEMPLO 3
+Exemplos Léxicos e Variações
+
+oga / óy = casa
+coga / cóy = roça
+kwarasy / kwaray = sol
+asab / aa = eu vou
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. A FORMA wy — DIREÇÃO E DESTINO
+RELAÇÕES HISTÓRICAS E AS POSPOSIÇÕES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma wy está ligada à ideia de direção, destino
-ou referência em relação a alguém/algo.
+As línguas da família Tupi-Guarani apresentam relações históricas entre palavras, sons e estruturas gramaticais. Em registros antigos e em outras variedades do Guarani, encontram-se formas como pe, be e bo.
 
-📌 EXEMPLOS REGISTRADOS:
+No Nhandewa-Guarani, correspondentes a essas formas, aparecem py e wy, que não devem ser entendidas como simples substituições mecânicas — cada uma tem sua função, seu significado e seu contexto de uso.
 
-📌 EXEMPLOS REGISTRADOS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3A FORMA wy — DIREÇÃO E DESTINO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A forma wy está ligada à ideia de direção, destino ou referência em relação a alguém ou algo.
 
 Txeé + wy = txewy
 "eu" "para" → "para mim"
+
 pee + wy = pemy
 "vocês" "para" → "para vocês"
 
-Esses exemplos mostram que wy funciona como posposição
-que indica direção ou destinatário, correspondendo
-a funções que em outras variedades aparecem com pe,
-be ou bo. A forma pode apresentar variação em ambiente
-nasal: em pemy, wy realiza-se como my [mỹ].
+Esses exemplos mostram que wy funciona como posposição que indica direção ou destinatário, correspondendo a funções que em outras variedades aparecem com pe, be ou bo. A forma pode apresentar variação em ambiente nasal: em pemy, wy realiza-se como my [mỹ].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. A FORMA py — ORIGEM, LOCALIZAÇÃO E Relação
+A FORMA py — ORIGEM, LOCALIZAÇÃO E RELAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma py também aparece em contextos onde outras
-variedades do Guarani utilizam pe, be ou bo. Ela
-participa de construções que indicam origem, lugar
-ou relação.
-
-📌 EXEMPLOS REGISTRADOS E CORRESPONDÊNCIAS:
-
+A forma py também aparece em contextos onde outras variedades do Guarani utilizam pe, be ou bo. Ela participa de construções que indicam origem, lugar ou relação.
 
 Guarani Antigo / outras variedades → Nhandewa-Guarani
 pe / be / bo → py / wy
 
 oga "casa" + bo = óy "para a casa / da casa"
 coang "roça" + bo = cóy "para a roça / da roça"
-añang "diabo" + bo = añãy "para o diabo / do diabo" do diabo"
+añang "diabo" + bo = añãy "para o diabo / do diabo"
 
-Nessas correspondências, o elemento final — grafado
-como bo no Guarani Antigo — realiza-se como y/wy/py
-no Nhandewa, integrando-se à palavra como uma sílaba
-final com valor de posposição.
+Nessas correspondências, o elemento final — grafado como bo no Guarani Antigo — realiza-se como y/wy/py no Nhandewa, integrando-se à palavra como uma sílaba final com valor de posposição.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
+A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A pesquisa mostra que o que se passa não é uma troca
-direta letra por letra:
+A pesquisa mostra que o que se passa não é uma troca direta letra por letra:
 
-  • Em posição final de palavra, o que era g/bo no
-    Guarani Antigo corresponde a y/wy no Nhandewa,
-    interpretado como aproximante /w/ ou /ŷ/ — a
-    "sexta vogal" central alta
-
-  • A grafia com y por Nimuendaju confirma que se
-    tratava de uma vogal/aproximante, não de uma
-    consoante oclusiva
-
-  • As formas py e wy resultam de processos sonoros
-    que envolvem vogais, aproximantes e ambiente
-    nasal — não de substituição automática
-
-
-📌 Correspondências entre variedades do Guarani:
-
+• Em posição final de palavra, o que era g/bo no Guarani Antigo corresponde a y/wy no Nhandewa, interpretado como aproximante /w/ ou /ŷ/ — a "sexta vogal" central alta
+• A grafia com y por Nimuendaju confirma que se tratava de uma vogal ou aproximante, não de uma consoante oclusiva
+• As formas py e wy resultam de processos sonoros que envolvem vogais, aproximantes e ambiente nasal — não de substituição automática
 
 kwarasy + kwarahy = kwaray
 "Tupi / Guarani" → "sol"
@@ -516,39 +509,27 @@ ambyasy + ambyahy = ambyay
 kwese + kwehe = kweé
 "Tupi / Guarani" → "ontem"
 
-A mudança de hy para y, de he para é e de b para zero em
-ambiente final segue lógica semelhante: perda de
-consoante intervocálica e manutenção da vogal,
-que pode se aproximar de wy/y.
+A mudança de hy para y, de he para é e de b para zero em ambiente final segue lógica semelhante: perda de consoante intervocálica e manutenção da vogal, que pode se aproximar de wy/y.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. CONTEXTO E PRECISÃO
+CONTEXTO E PRECISÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Não se deve afirmar que py tem SEMPRE o mesmo
-significado de pe, be ou bo. É preciso consultar:
-  ✅ o registro linguístico específico
-  ✅ a função gramatical em cada frase
-  ✅ o ambiente sonoro (oral ou nasal)
-  ✅ a fala dos próprios falantes da comunidade
+Não se deve afirmar que py tem SEMPRE o mesmo significado de pe, be ou bo. É preciso consultar:
+• O registro linguístico específico
+• A função gramatical em cada frase
+• O ambiente sonoro (oral ou nasal)
+• A fala dos próprios falantes da comunidade
 
-As correspondências são caminhos de investigação,
-não regras fixas. Cada palavra e cada construção
-precisa ser verificada com as fontes e com quem
-fala a língua.
+As correspondências são caminhos de investigação, não regras fixas. Cada palavra e cada construção precisa ser verificada com as fontes e com quem fala a língua.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CONCLUSÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-As formas pe, be, bo do passado não desapareceram
-simplesmente: transformaram-se em py, wy, y, my,
-conforme o contexto e a posição. A língua não apaga
-sua história — ela a recria em cada geração.
-`,
-    tipo: "em estudo",
-    fonte:
-        "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, 2003/2010.",
+As formas pe, be, bo do passado não desapareceram simplesmente: transformaram-se em py, wy, y, my, conforme o contexto e a posição. A língua não apaga sua história — ela a recria em cada geração.
+    `,
+    fonte: "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, Museu Nacional dos Povos Indígenas.",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
@@ -559,8 +540,7 @@ sua história — ela a recria em cada geração.
             url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
         }
     ]
-}
-,
+},
 
 
 {
