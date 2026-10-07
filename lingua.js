@@ -434,14 +434,18 @@ a / ã = oral / nasal baixa central
 o / õ = oral / nasal média alta posterior
 u / ũ = oral / nasal alta posterior
 y / ỹ = oral / nasal alta central não arredondada
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 2
 Pares Mínimos e Contraste Oclusivo / Nasal
 
 pa / mba'e = oclusiva bilabial / nasal bilabial
 ta / nda = oclusiva alveolar / nasal alveolar
 ka / nga = oclusiva velar / nasal velar
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 3
 Exemplos Léxicos e Variações
 
@@ -459,7 +463,7 @@ As línguas da família Tupi-Guarani apresentam relações históricas entre pal
 No Nhandewa-Guarani, correspondentes a essas formas, aparecem py e wy, que não devem ser entendidas como simples substituições mecânicas — cada uma tem sua função, seu significado e seu contexto de uso.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3A FORMA wy — DIREÇÃO E DESTINO
+A FORMA wy — DIREÇÃO E DESTINO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A forma wy está ligada à ideia de direção, destino ou referência em relação a alguém ou algo.
