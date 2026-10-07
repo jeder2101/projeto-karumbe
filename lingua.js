@@ -859,13 +859,13 @@ mas de forma viva: não é só o passado que se reduz,
 é a língua que se renova a cada geração.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLOS DE REDUÇÃO — Guarani Antigo → Nhandewa
+EXEMPLOS DE REDUÇÃO 
+Guarani Antigo para Nhandewa
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Palavras que perderam sílaba final átona:
 
-oga = óy
-"casa"
+oga + "óy" = casa
 
 coang = cóy
 "roça"
