@@ -1797,9 +1797,12 @@ function tabelaDeExemplos(linhas) {
      como padrão para todos os casos.
      ========================================================= */
 
-  const blocoCorrespondencia =
-    /CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI|OUTROS CASOS DE CORRESPONDÊNCIA/i.test(textoBloco) ||
-    /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco);
+const blocoCorrespondencia =
+    /CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI|OUTROS CASOS DE CORRESPONDÊNCIA|EXEMPLOS DE CORRESPONDÊNCIAS SONORAS/i.test(textoBloco) ||
+    /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
+    /asab\s*\+\s*aha\s*=\s*aa/i.test(textoBloco) ||
+    /ambyasy\s*\+\s*ambyahy\s*=\s*ambyay/i.test(textoBloco) ||
+    /kwese\s*\+\s*kwehe\s*=\s*kweé/i.test(textoBloco);
 
   const blocoCorrespondenciaPosposicoes =
     /Guarani Antigo\s*\/\s*outras variedades\s*→\s*Nhandewa-Guarani|pe\s*\/\s*be\s*\/\s*bo\s*→\s*py\s*\/\s*wy/i.test(textoBloco);
