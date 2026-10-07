@@ -849,7 +849,7 @@ a distinção que os próprios falantes fazem.
         "Comparando o Guarani Antigo com o Nhandewa contemporâneo, observa-se redução de sílabas finais átonas e de elementos internos. Isso não é perda, mas transformação — formas longas e reduzidas podem coexistir na fala das comunidades.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-O QUE MUDA E O QUE PERMANECE
+1. O QUE MUDA E O QUE PERMANECE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 As línguas do ramo Guarani tendem a perder
@@ -859,59 +859,44 @@ mas de forma viva: não é só o passado que se reduz,
 é a língua que se renova a cada geração.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLOS DE REDUÇÃO 
-Guarani Antigo para Nhandewa
+2. EXEMPLOS DE REDUÇÃO — Guarani Antigo → Nhandewa
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Palavras que perderam sílaba final átona:
+📌 Palavras que perderam sílaba final átona:
 
-oga +  óy = casa
+• oga = óy ("casa")
+• coang = cóy ("roça")
+• añang = añãy ("diabo")
+• porang(a) = porã ("bom, bonito")
 
-coang = cóy
-"roça"
+📌 Formas de negação:
 
-añang = añãy
-"diabo"
-
-porang(a) = porã
-"bom, bonito"
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Formas de negação:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-eỹma / ỹma = eỹ
-"sem / não"
+• eỹma / ỹma = eỹ ("sem / não")
   → Atualmente: eỹwa em alguns contextos
   A partícula final -ma evoluiu para -wa,
-  com valor de generalização ou pluralidade
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   Posse — redução do elemento -re-:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  com valor de generalização ou pluralidade.
 
+📌 Posse — redução do elemento -re-:
 
-cherembireco = chimbirécó
-"minha mulher"
-
-cheremỹmba = chimỹmbá
-"meu animal doméstico"
+Forma registrada | Forma correspondente | Tradução
+--- | --- | ---
+**cherembireco** | chimbirécó | "minha mulher"
+**cheremỹmba** | chimỹmbá | "meu animal doméstico"
 
   O elemento inicial che- (meu/minha) passa a chi-
   O elemento -re- (relacional) pode desaparecer
   Mas a forma longa não desapareceu completamente —
-  ainda é ouvida em falas de pessoas mais velhas
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    Outros casos registrados:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ainda é ouvida em falas de pessoas mais velhas.
 
- Guarani antigo | Significado | Apapocuva
+📌 Outros casos registrados (Guarani antigo / Apapocuva):
 
-mocañỹhara + "aquele que mata" = mocañỹá
-mocañỹharera + "aquele que matava" = mocañỹaté
-cherembireco + "minha mulher" = chimbirécó
-ñanderequeĩ + "nosso irmão maior" = ñanderyqueỹ
+• mocañỹhara ("aquele que mata") = mocañỹá
+• mocañỹharera ("aquele que matava") = mocañỹaté
+• cherembireco ("minha mulher") = chimbirécó
+• ñanderequeĩ ("nosso irmão maior") = ñanderyqueỹ
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-NÃO IS APAGAMENTO — É TRANSFORMAÇÃO
+3. NÃO É APAGAMENTO — É TRANSFORMAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Quando uma sílaba parece desaparecer, pode ser que:
@@ -924,12 +909,11 @@ Quando uma sílaba parece desaparecer, pode ser que:
   ✅ O elemento mude de função e não só de forma
 
 Exemplo:
-eỹma / ỹma = eỹ
-"sem / não"
+eỹma / ỹma = eỹ ("sem / não")
 não é simples perda de -ma, é substituição por -wa com valor próprio.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-O ELEMENTO RELACIONAL -RE-
+4. O ELEMENTO RELACIONAL -RE-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O morfema -re- marca relação de posse.
@@ -944,7 +928,7 @@ Isso significa que não há uma "forma certa" única:
   de pessoas diferentes na mesma comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-COMO ESTUDAR AS MUDANÇAS
+5. COMO ESTUDAR AS MUDANÇAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Ao comparar formas antigas e atuais:
@@ -977,120 +961,7 @@ mas o rio continua correndo.
             url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
         }
     ]
-},
-{
-    id: 8,
-    categoria: "Gramática",
-    periodo: "Partículas",
-    titulo: "As partículas ma e pa — presença e investigação",
-    resumo:
-        "A partícula ma aparece em construções verbais e como elemento independente. Pa é tema de investigação — não se deve transferir automaticamente seu significado de outras variedades do Guarani para o Nhandewa.",
-    conteudo: `
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- O QUE SÃO AS PARTÍCULAS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-São pequenas palavras ou elementos que dão
-sentido, modo, tempo ou relação à frase.
-Não têm significado sozinhas — adquirem
-função no contato com o verbo, o nome
-e o contexto da fala.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   A PARTÍCULA MA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Junto ao verbo — indica ação em curso:
-
-aáma = está indo / ia
-oúma = está vindo / vinha
-ojapóma = está fazendo / fazia
-
-A partícula se liga à raiz verbal e
-indica que a ação acontece ou acontecia
-ao longo de um tempo.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  Como palavra separada — confirmação/ênfase:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Ko kwatiá-re ma.
-"É mesmo aqui, nesta terra."
-
-Aqui, ma não se junta ao verbo — aparece
-sozinha, dando peso, confirmação ou
-certeza ao que se diz.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    Em negação e finalização:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-
-eỹma = não / sem (registro histórico)
-eỹwa = não / sem (uso atual)
-
--ma pode evoluir para -wa com valor de
-generalização ou pluralidade.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   ESCRIVER JUNTO OU SEPARADO?
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Os professores Nhandewa, nas Convenções
-Lingüísticas, decidiram:
-
-  ✅ Junto → quando forma uma só pronúncia
-             com o verbo (aáma, oúma)
-  ✅ Separado → quando tem pronúncia própria
-                e destaque na frase
-
-Não é regra fixa para sempre — a escrita
-se ajusta conforme a fala da comunidade.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   A PARTÍCULA PA — EM INVESTIGAÇÃO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Em outras variedades do Guarani, pa existe
-com funções específicas. No Nhandewa, ainda
-está sendo estudada. Por isso:
-
-  ⚠️ Não se copia explicação de outra língua
-  ⚠️ Cada ocorrência é conferida com falantes
-  ⚠️ O contexto completo da frase é observado
-  ⚠️ A grafia pode variar conforme a fonte
-
-Mesma forma gráfica ≠ mesma função gramatical.
-A palavra escrita igual pode ter significado
-diferente em cada povo.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   COMO ESTUDAR COM RESPEITO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Para ma e pa:
-  1. Anotar a frase completa, não só a partícula
-  2. Ouvir a pronúncia: tem acento próprio?
-  3. Perguntar: "o que muda com e sem ela?"
-  4. Comparar com outras aldeias
-  5. Conferir nas Lições de Gramática
-  6. Respeitar: o que ainda não se sabe,
-     não se inventa — se anota "em estudo"
-`,
-    tipo: "documentado",
-    fonte:
-        "Lições de Gramática Nhandewa-Guarani, volume I, seção sobre composições verbais e partículas; Consuelo de Paiva Godinho Costa (2003), p.62–65 sobre elementos de ligação e aspectuais.",
-    links: [
-        {
-            titulo: "Lições de Gramática Nhandewa-Guarani – Volume I",
-            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
-        },
-        {
-            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
-            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
-        },
-        {
-            titulo: "Materiais de Gramática Nhandewa – Museu Nacional dos Povos Indígenas",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
-        }
-    ]
-},
+}
 
 {
     id: 9,
