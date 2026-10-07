@@ -2301,7 +2301,8 @@ function tabelaDeExemplos(linhas) {
     /\[mba['’]e\].*\+\s*oral\s*=\s*mb|\[mã['’]e\].*\+\s*nasal\s*=\s*m|\[nde\].*\+\s*oral\s*=\s*nd|\[nẽ\].*\+\s*nasal\s*=\s*n/i.test(textoBloco);
 
   const blocoContrasteOralNasal =
-    /COMPARAÇÃO\s*[—-]\s*oral\s*[×x]\s*nasal|pyta\s*\+\s*oral\s*=\s*ficar|pytã\s*\+\s*nasal\s*=\s*vermelho|tupa\s*\+\s*oral\s*=\s*cama|tupã\s*\+\s*nasal\s*=\s*trovão/i.test(textoBloco);
+    /COMPARAÇÃO\s*[—-]\s*oral\s*[×x]\s*nasal|pyta\s*\+\s*oral\s*=\s*ficar|pytã\s*\+\s*nasal\s*=\s*vermelho|tupa\s*\+\s*oral\s*=\s*cama|tupã\s*\+\s*nasal\s*=\s*trovão/i.test(textoBloco) ||
+    /COMPARAÇÃO\s*—\s*oral\s*×\s*nasal/i.test(textoBloco);
 
   const blocoHarmoniaNasal =
     /EXEMPLO DE ESPALHAMENTO|kuñã\s*\+\s*kwé\s*=\s*kuñãngwé/i.test(textoBloco);
@@ -2316,11 +2317,14 @@ function tabelaDeExemplos(linhas) {
   const blocoSupinoVy =
     /Frase\s*\|\s*Tradução\s*\|\s*Sentido de -vy|Ojapó ma oóvy|Opó yvy áno oúvy|Oaqá oóvy|Oguejý oúvy/i.test(textoBloco);
 
-  // Nova regra adicionada para o bloco Orais / Nasais lado a lado
   const blocoOraisNasaisDuasColunas =
     /ORAIS\s+NASAIS/i.test(textoBloco) ||
     /pyta\s+"ficar".*pytã\s+"vermelho"/i.test(textoBloco) ||
     /tupa\s+"cama".*tūpã\s+"trovão"/i.test(textoBloco);
+
+  // Novos padrões detectados no texto de Mõ, Mü e Mu
+  const blocoVogalNasal = /EXEMPLOS DE VOGAL NASAL/i.test(textoBloco);
+  const blocoVogalCentral = /EXEMPLOS DA VOGAL CENTRAL/i.test(textoBloco);
 
   for (let i = 0; i < linhas.length; i++) {
     if (consumidos.has(i)) continue;
@@ -2477,6 +2481,17 @@ function tabelaDeExemplos(linhas) {
     `;
     modoCorpo = "oraisNasaisDuasColunas";
 
+  } else if (blocoVogalNasal || blocoVogalCentral) {
+    // Cabeçalho padronizado e compreensivo para seções de vogais (Mõ, Mü, Mu)
+    cabecalho = `
+      <tr>
+        <th>Forma registrada</th>
+        <th>Ambiente / Descrição</th>
+        <th>Sentido / tradução</th>
+      </tr>
+    `;
+    modoCorpo = "tresVogaisEstudo";
+
   } else {
     const temComposicao = dados.some(item => item.tipo === "composicao");
 
@@ -2490,19 +2505,31 @@ function tabelaDeExemplos(linhas) {
         </tr>
       `;
     } else {
-      cabecalho = `
-        <tr>
-          <th>Forma registrada</th>
-          <th>Forma correspondente</th>
-          <th>Sentido / tradução</th>
-        </tr>
-      `;
-      modoCorpo = "tres";
+      const temTraducaoGeral = dados.some(item => item.sentido && item.sentido.trim() !== "");
+      
+      if (temTraducaoGeral) {
+        cabecalho = `
+          <tr>
+            <th>Forma registrada</th>
+            <th>Forma correspondente</th>
+            <th>Sentido / tradução</th>
+          </tr>
+        `;
+        modoCorpo = "tres";
+      } else {
+        cabecalho = `
+          <tr>
+            <th>Forma registrada</th>
+            <th>Forma correspondente</th>
+          </tr>
+        `;
+        modoCorpo = "duasSemTraducao";
+      }
     }
   }
 
   const corpo = dados.map(item => {
-    if (modoCorpo === "duas") {
+    if (modoCorpo === "duas" || modoCorpo === "duasSemTraducao") {
       return `
         <tr>
           <td>${escaparHTML(item.forma)}</td>
@@ -2531,12 +2558,30 @@ function tabelaDeExemplos(linhas) {
       `;
     }
 
-    if (modoCorpo === "tres") {
+    if (modoCorpo === "tresVogaisEstudo") {
       return `
         <tr>
           <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.resultado)}</td>
-          <td>${escaparHTML(item.sentido || "")}</td>
+          <td>${escaparHTML(item.elemento || "")}</td>
+          <td>${escaparHTML(item.resultado || item.sentido || "")}</td>
+        </tr>
+      `;
+    }
+
+    if (modoCorpo === "tres") {
+      const colCorrespondente = item.resultado && item.resultado.trim() !== "" 
+        ? escaparHTML(item.resultado) 
+        : escaparHTML(item.sentido || "");
+
+      const colSentido = item.resultado && item.resultado.trim() !== "" 
+        ? escaparHTML(item.sentido || "") 
+        : "";
+
+      return `
+        <tr>
+          <td>${escaparHTML(item.forma)}</td>
+          <td>${colCorrespondente}</td>
+          <td>${colSentido}</td>
         </tr>
       `;
     }
