@@ -1900,30 +1900,6 @@ function analisarLinhaAssociada(linha) {
 
 
 /* =========================================================
-   CABEÇALHO AUTOMÁTICO
-   ========================================================= */
-
-function cabecalhoAutomatico(quantidade) {
-  /*
-   * Não cria cabeçalhos genéricos.
-   *
-   * As tabelas do Projeto Karumbé devem usar,
-   * preferencialmente, os nomes que aparecem
-   * no próprio conteúdo do exemplo.
-   *
-   * Quando não houver cabeçalho explícito,
-   * retornamos células vazias para não inventar
-   * informações que não existem no material.
-   */
-
-  return Array.from(
-    { length: quantidade },
-    () => ""
-  );
-}
-
-
-/* =========================================================
    EXTRAI ANOTAÇÃO ENTRE ASPAS
    ========================================================= */
 
