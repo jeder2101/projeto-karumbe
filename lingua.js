@@ -608,175 +608,394 @@ de acordo com cada palavra e cada contexto.
 {
     id: 5,
     categoria: "Sons",
-    periodo: "Nasalidade e escrita",
-    titulo: "Mõ, mü e mu — vogais nasais, orais e representação",
+    periodo: "Nasalidade e harmonia nasal",
+    titulo: "Nasalidade — vogais orais, nasais e harmonia nasal",
+
     resumo:
-        "As formas mõ, mü e mu ilustram como a nasalidade e a posição da vogal se refletem na escrita e na fala; no Nhandewa-Guarani, a oposição oral/nasal é fundamental e pode alterar o sentido da palavra.",
+        "No Nhandewa-Guarani, a nasalidade constitui uma oposição fonológica importante entre vogais orais e nasais. A nasalidade também participa de processos de harmonia nasal, envolvendo vogais nasais, segmentos pré-nasalizados e diferentes realizações consonantais.",
+
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. ESCREVER O QUE SE FALA
+1. A NASALIDADE NO NHANDEWA-GUARANI
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A escrita de uma língua procura representar os sons
-utilizados pelos seus falantes. No Nhandewa-Guarani,
-a nasalidade é um traço fonológico fundamental:
-ela distingue palavras com sentidos diferentes e
-se espalha ao longo das sílabas.
+A nasalização é apresentada no estudo como um dos
+fatos cruciais da fonologia do Nhandewa-Guarani.
 
-A oposição (oral × nasal) é a principal distinção
-entre vogais nesta língua — mais do que altura ou
-ponto de articulação.
+A pesquisa mostra que a língua possui uma oposição
+fonológica importante entre vogais orais e vogais
+nasais, especialmente em posição tônica.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. MÕ — VOGAL NASAL
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+A autora também analisa a relação entre nasalidade,
+consoantes pré-nasalizadas e harmonia nasal.
 
-O til (~) sobre a vogal õ indica que ela é nasal.
-Isso não é apenas detalhe de escrita: muda o sentido.
+O estudo considera que a nasalidade pode ter origem
+em dois tipos principais de elementos:
 
-📌 EXEMPLOS DE VOGAL NASAL:
+• consoantes pré-nasalizadas;
+• vogais subjacentemente nasais.
 
-Forma | Significado
-pytã | vermelho / rosa / roxo
-kwã | dedo
-tupã | trovão / divindade
-puru'ã | umbigo
-mã'e | olhar
-
-A vogal nasal pode também influenciar as consoantes
-vizinhas: /mb/ realiza-se como [m] e /nd/ como [n]
-quando seguida de vogal nasal.
-
-Forma | Ambiente | Realização
-[mba'e] | oral | mb
-[mã'e] | nasal | m
-[nde] | oral | nd
-[nẽ] | nasal | n
+Esses elementos funcionam como centros dispersores
+de nasalidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. MÜ — A VOGAL CENTRAL ALTA
+VOGAIS NASAIS E VOGAIS ORAIS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma mü envolve a vogal central alta /ɨ/ —
-chamada "sexta vogal" do Guarani — que pode ser
-oral ou nasal. A grafia varia conforme a convenção:
+A pesquisa mostra que a nasalidade é distintiva entre
+vogais acentuadas.
 
-Forma | Representação
-ü ou ˆ | vogal central alta oral
-ũ ou ̃ˆ | vogal central alta nasal
+São apresentados pares em que a nasalidade modifica
+o significado da palavra.
 
-📌 EXEMPLOS DA VOGAL CENTRAL:
+EXEMPLOS APRESENTADOS NO ESTUDO:
 
-Forma | Significado
-txe | eu (homem fala)
-txi | eu (mulher fala) — vogal central alta
-ky'y | pimenta
-pytü | ficar
-pytũ | vermelho / rosa — nasal
+Forma oral | Forma nasal | Significado
+tupa | tüpã | cama / trovão
+mbae | mãe | coisa, o que / olhar
 
-A mesma vogal central pode aparecer nasalizada:
+Esses pares mostram que a diferença entre uma vogal
+oral e uma vogal nasal não é apenas uma diferença
+de pronúncia.
 
-[tʃẽʔɨ] | eu (oral)
-[tʃẽʔĩ] | em contexto nasal, sofre influência
+A nasalidade pode estabelecer contraste de significado.
 
-⚠️ O sinal sobre a vogal não é sempre o mesmo:
+O estudo afirma que, no Nhandewa-Guarani, as vogais
+que perderam historicamente uma coda nasal tornaram-se
+vogais nasais subjacentes.
 
-  • Nimuendajú usava y para a vogal central
-  • Em convenções recentes, pode aparecer como ɨ, ü, ĩ, ũ
-  • A grafia depende da decisão de cada comunidade
+Dessa maneira, estabelece-se uma oposição fonológica
+entre vogais orais e nasais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. MU — VOGAL ORAL
+OS SEGMENTOS PRÉ-NASALIZADOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A ausência de til indica vogal oral. Comparando:
+Outro ponto importante da análise são os segmentos
+pré-nasalizados.
 
-Forma | Tipo
-mu | vogal u oral
-mõ | vogal o nasal
-mü / mũ | vogal central alta, oral ou nasal
+No Nhandewa-Guarani, a pesquisa considera como
+fonemas mb e nd.
 
-📌 COMPARAÇÃO — ORAL × NASAL:
+Esses segmentos apresentam realizações diferentes
+dependendo do ambiente vocálico.
 
-Forma | Valor
-pyta | ficar
-pytã | vermelho — sentido diferente
-tupa | cama
-tupã | trovão / Deus — sentido diferente
-kunha | variação
-kunhã | mulher
-pora | —
-porã | bom, belo — muito comum
+Diante de vogais orais, mantêm a combinação mb e nd.
 
-A escrita sem til não significa que nunca sofre
-influência nasal: a harmonia nasal pode espalhar
-a nasalidade de uma sílaba para outra, mesmo sem
-sinal gráfico visível em todas as vogais.
+Diante de vogais nasais, podem apresentar uma
+realização mais nasal.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. NASALIDADE QUE SE ESPALHA
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ALTERNÂNCIA:
 
-O Nhandewa-Guarani tem harmonia nasal: a nasalidade
-se transmite de sílaba em sílaba, atravessando consoantes.
+Segmento | Ambiente oral | Ambiente nasal
+mb | mb | m
+nd | nd | n
 
-📌 EXEMPLO DE ESPALHAMENTO:
+Assim, a realização m pode ser entendida como uma
+realização de mb em ambiente nasal.
 
-Forma | Composição | Resultado
-kuñã + kwé | "mulher" + "coletivo" | kuñãngwé
-kuñã + kwé | mulher + coletivo | "mulherada"
+Da mesma maneira, n pode ser entendida como uma
+realização de nd em ambiente nasal.
 
-A nasalidade de ã influencia o k seguinte, que
-passa a ser pronunciado como ng.
+A interpretação apresentada no estudo considera que
+essas realizações podem ser explicadas pelo
+espalhamento da nasalidade.
 
-📌 ALTERNÂNCIA CONSOANTAL:
-
-Forma | Ambiente | Realização
-[mba'e] | oral | mb
-[mã'e] | nasal | m
-[ndé] | oral | nd
-[nẽ] | nasal | n
-[j-] | oral | dj-
-[ʲ̃-] | nasal | ñ-
-
-A mesma raiz muda de forma conforme o ambiente
-nasal ou oral. Por isso, a escrita isolada de uma
-letra não conta toda a história.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. ESCREVER É DECIDIR JUNTOS
+A ALTERNÂNCIA NASAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Não existe uma única "forma certa" de escrever:
+A pesquisa também observa uma alternância entre
+realizações orais e nasais em determinados contextos.
 
-  • Nimuendajú: usava y para a vogal central
-  • Montoya (século XVII): grafias próprias da época
-  • Convenções atuais: decididas pelas comunidades
-    com seus professores e lideranças
+Esse padrão está relacionado ao ambiente vocálico
+e aos processos de nasalidade da língua.
 
-O importante não é copiar um registro antigo,
-mas compreender por que a forma muda:
+EXEMPLO DO ESTUDO:
 
-  ✅ posição da vogal
-  ✅ ambiente nasal ou oral
-  ✅ decisão ortográfica da comunidade
-  ✅ tradição de cada família e aldeia
+A pesquisa identifica uma alternância entre uma
+realização oral e uma realização nasal do marcador
+de pessoa.
 
-As formas mõ, mü e mu são caminhos de estudo,
-não regras fixas. A pronúncia viva está sempre
-nas vozes de quem fala.
+O estudo apresenta também a forma:
+
+djagwata = nós andamos
+
+Esses dados são utilizados para observar a relação
+entre nasalidade, marcadores de pessoa e formas
+verbais.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OS SEGMENTOS NASAIS VELARES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O estudo apresenta também segmentos nasais
+relacionados a sons velares.
+
+Essas realizações podem surgir por processos
+morfofonológicos envolvendo determinados sons
+em ambiente nasal.
+
+EXEMPLOS APRESENTADOS:
+
+iwi'kwa = sepultura
+
+peti'ngua = cachimbo
+
+O primeiro exemplo está relacionado às formas
+iwi' = terra" e kwa = buraco.
+
+O segundo exemplo apresenta uma realização nasal
+em ambiente relacionado à harmonia nasal.
+
+O estudo também registra uma forma correspondente
+a meu nariz.
+
+Esses dados são utilizados para discutir a relação
+entre nasalidade, vozeamento e processos
+morfofonológicos.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. HARMONIA NASAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A harmonia nasal ocupa uma parte importante do estudo.
+
+A pesquisa explica que, ao analisar o espalhamento
+da nasalidade, é necessário observar:
+
+• fonte da nasalidade;
+• alvo do espalhamento;
+• segmentos transparentes;
+• segmentos opacos;
+• direção do espalhamento;
+• domínio do espalhamento.
+
+No Nhandewa-Guarani, as fontes de nasalidade
+consideradas são principalmente as consoantes
+pré-nasalizadas e as vogais nasais.
+
+As consoantes plenamente nasais apresentam também
+efeitos sobre as vogais imediatamente vizinhas.
+
+O estudo distingue, portanto, diferentes processos
+envolvidos na nasalidade.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DIREÇÃO DO ESPALHAMENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Na interpretação proposta para o Nhandewa-Guarani,
+a nasalidade proveniente das consoantes
+pré-nasalizadas espalha-se para a esquerda.
+
+Já a nasalidade proveniente das vogais nasais pode
+espalhar-se para a esquerda e para a direita, até
+o limite do domínio considerado.
+
+RESUMO DA INTERPRETAÇÃO:
+
+Fonte | Direção do espalhamento
+Consoante pré-nasalizada | para a esquerda
+Vogal nasal | esquerda e direita
+
+A autora ressalta que a questão do domínio do
+espalhamento nasal continua sendo discutida na
+literatura.
+
+O chamado "grupo de acento" é adotado como referência
+para o domínio do espalhamento, embora a própria
+pesquisa ressalte que essa questão permanece aberta
+a novas investigações.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NASALIDADE CATEGÓRICA E GRADIENTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O estudo distingue diferentes graus de nasalização.
+
+A nasalidade presente no centro nasal, como nas
+vogais nasais e nos segmentos pré-nasalizados,
+possui caráter fonológico e distintivo.
+
+Ao afastar-se desse centro, a nasalização pode
+diminuir gradualmente.
+
+Dessa maneira, a pesquisa distingue:
+
+• nasalidade fonológica, categórica;
+• nasalização fonética, que pode apresentar
+  diminuição gradual.
+
+Essa distinção é importante para compreender por que
+nem toda nasalização observada na fala possui
+necessariamente o mesmo valor fonológico.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+NASALIDADE E ACENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A pesquisa relaciona a nasalidade também à posição
+tônica.
+
+São apresentados exemplos em que palavras e
+expressões podem apresentar diferentes efeitos
+de nasalidade.
+
+EXEMPLOS DO ESTUDO:
+
+Expressão | Forma de leitura | Significado
+nde + cabelo | nde'i'awi | seu cabelo
+nde + pety | ne'peti | seu fumo
+nda- + oky + -iri | ndaokyri | sem chuva
+nda- + porã + -iri | nãpo'iri | feio, ruim
+nhande + djaryi | pãnde djaryi | nossa avó
+nhande + tamõi | pãne tamõi | nosso avô, nosso velho
+
+Esses exemplos são utilizados para observar a relação
+entre nasalidade, acento e os diferentes elementos
+que formam o grupo de acento.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+A ORIGEM HISTÓRICA DA NASALIDADE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Uma parte importante da proposta da pesquisa é
+diacrônica.
+
+A autora relaciona algumas vogais nasais atuais
+à perda histórica de consoantes nasais que ocupavam
+posição de coda.
+
+Segundo essa interpretação, uma consoante nasal
+presente historicamente na coda deixou de fazer parte
+da estrutura segmental da palavra, mas a nasalidade
+permaneceu associada à vogal.
+
+Assim, uma antiga estrutura com coda nasal teria
+contribuído para o surgimento de uma vogal nasal
+subjacente no Nhandewa-Guarani.
+
+A pesquisa utiliza essa análise para explicar a
+oposição atual entre vogais orais e nasais.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+UM EXEMPLO DA ANÁLISE HISTÓRICA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A pesquisa apresenta uma relação histórica envolvendo
+a forma Tupinambá e a forma correspondente em
+Nhandewa-Guarani.
+
+EXEMPLO:
+
+Tupinambá | Nhandewa-Guarani
+põrã | porã
+
+A interpretação proposta é que a antiga consoante
+nasal em posição de coda deixou de possuir uma
+posição segmental, permanecendo o traço nasal
+associado à vogal.
+
+O estudo relaciona esse processo à perda histórica
+das codas consonantais ocorrida na diferenciação
+entre os ramos Tupi e Guarani.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+A PROPOSTA PARA O NHANDEWA-GUARANI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+A proposta apresentada no estudo pode ser resumida
+em dois pontos principais:
+
+1. A nasalidade proveniente de uma consoante nasal
+   em início de sílaba espalha-se para a esquerda.
+
+2. A nasalidade das vogais, relacionada historicamente
+   a uma consoante nasal apagada em posição de coda,
+   pode espalhar-se para a esquerda e para a direita,
+   dentro do limite do domínio.
+
+A autora conclui que as vogais que perderam a coda
+nasal tornaram-se nasais subjacentes.
+
+Por isso, a oposição entre vogal oral e vogal nasal
+é considerada fundamental na análise fonológica
+do Nhandewa-Guarani.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CONCLUSÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+O estudo mostra que a nasalidade no Nhandewa-Guarani
+não deve ser entendida apenas como uma característica
+de pronúncia.
+
+Ela participa da estrutura fonológica da língua,
+estabelecendo oposição entre vogais orais e nasais,
+influenciando realizações consonantais e participando
+da harmonia nasal.
+
+Os exemplos:
+
+tu'pa / tü'pã
+
+e
+
+mba'e / mã'e
+
+mostram que a nasalidade pode produzir contraste
+de significado.
+
+As alternâncias:
+
+mb → m
+
+e
+
+nd → n
+
+mostram a relação entre o ambiente nasal e a
+realização dos segmentos.
+
+A pesquisa também observa alternâncias como:
+
+dja- → nya-
+
+relacionadas ao ambiente nasal.
+
+Além disso, a pesquisa propõe uma explicação histórica
+para as vogais nasais atuais, relacionando-as à perda
+de antigas codas nasais.
+
+Assim, a nasalidade constitui um dos elementos
+centrais para compreender a fonologia do
+Nhandewa-Guarani.
 `,
+
     tipo: "em estudo",
+
     fonte:
-        "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, p.75–97, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, 2003/2010.",
+        "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, especialmente o capítulo 3.1 — Nasalização: o fato crucial.",
+
     links: [
         {
-            titulo: "Apyngwa rupigwa — Nasalização em Nhandewa-Guarani",
-            url: "https://repositorio.unicamp.br/acervo/detalhe/402302"
+            titulo:
+                "Nhandewa Aywu / registro no Repositório da UNICAMP",
+            url:
+                "https://repositorio.unicamp.br/acervo/detalhe/402302"
         },
         {
-            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense — LIAMES",
-            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+            titulo:
+                "Fonologia do Nhandewa-Guarani Paulista-Paranaense — LIAMES/UNICAMP",
+            url:
+                "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo:
+                "Tese — Fonologia e nasalidade do Nhandewa-Guarani — Biblioteca FUNAI",
+            url:
+                "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
         }
     ]
 },
