@@ -1904,33 +1904,21 @@ function analisarLinhaAssociada(linha) {
    ========================================================= */
 
 function cabecalhoAutomatico(quantidade) {
-  const modelos = {
-    2: [
-      "Forma de origem",
-      "Forma resultante"
-    ],
-
-    3: [
-      "Forma de base",
-      "Componente linguístico",
-      "Forma resultante"
-    ],
-
-    4: [
-      "Forma de base",
-      "Componente linguístico",
-      "Forma resultante",
-      "Sentido / tradução"
-    ]
-  };
-
-  if (modelos[quantidade]) {
-    return modelos[quantidade];
-  }
+  /*
+   * Não cria cabeçalhos genéricos.
+   *
+   * As tabelas do Projeto Karumbé devem usar,
+   * preferencialmente, os nomes que aparecem
+   * no próprio conteúdo do exemplo.
+   *
+   * Quando não houver cabeçalho explícito,
+   * retornamos células vazias para não inventar
+   * informações que não existem no material.
+   */
 
   return Array.from(
     { length: quantidade },
-    (_, i) => `Campo ${i + 1}`
+    () => ""
   );
 }
 
@@ -2128,7 +2116,6 @@ function quantidadeColunasAutomaticaParaLinha(
   return quantidade;
 }
 
-
 /* =========================================================
    CRIA HTML DA TABELA
    ========================================================= */
@@ -2146,93 +2133,155 @@ function criarTabelaHTML(
 
   let quantidadeColunas;
 
+  /*
+   * Se existe um cabeçalho escrito no próprio conteúdo,
+   * usa exatamente esse cabeçalho.
+   */
   if (
-    cabecalhoFonte?.length
+    Array.isArray(cabecalhoFonte) &&
+    cabecalhoFonte.length
   ) {
     quantidadeColunas =
       cabecalhoFonte.length;
   } else {
+    /*
+     * Sem cabeçalho explícito, apenas calcula
+     * quantas colunas os exemplos possuem.
+     */
     quantidadeColunas =
       Math.max(
         ...linhas.map(
           linha =>
-            linha.celulas.length
+            Array.isArray(linha.celulas)
+              ? linha.celulas.length
+              : 0
         )
       );
   }
 
-  let cabecalhos =
-    cabecalhoFonte?.slice() ||
-    cabecalhoAutomatico(
-      quantidadeColunas
-    );
-
-  while (
-    cabecalhos.length <
-    quantidadeColunas
+  if (
+    !quantidadeColunas ||
+    quantidadeColunas < 1
   ) {
-    cabecalhos.push(
-      `Campo ${cabecalhos.length + 1}`
-    );
+    return null;
   }
+
+  /*
+   * Cabeçalho somente quando ele realmente
+   * veio do conteúdo.
+   *
+   * NÃO cria:
+   * Campo 1
+   * Campo 2
+   * Campo 3
+   * etc.
+   */
+  let cabecalhos = [];
 
   if (
-    cabecalhos.length >
-    quantidadeColunas
+    Array.isArray(cabecalhoFonte) &&
+    cabecalhoFonte.length
   ) {
     cabecalhos =
-      cabecalhos.slice(
-        0,
-        quantidadeColunas
-      );
+      cabecalhoFonte
+        .map(
+          titulo =>
+            String(titulo ?? "").trim()
+        )
+        .slice(
+          0,
+          quantidadeColunas
+        );
   }
 
+  /*
+   * Cria o corpo da tabela.
+   */
   const corpo =
-    linhas.map(
-      linha => {
-        let celulas =
-          linha.celulas.slice(
-            0,
+    linhas
+      .map(
+        linha => {
+
+          let celulas =
+            Array.isArray(linha.celulas)
+              ? linha.celulas.slice(
+                  0,
+                  quantidadeColunas
+                )
+              : [];
+
+          while (
+            celulas.length <
             quantidadeColunas
-          );
+          ) {
+            celulas.push("");
+          }
 
-        while (
-          celulas.length <
-          quantidadeColunas
-        ) {
-          celulas.push("");
+          return `
+            <tr>
+              ${celulas
+                .map(
+                  celula =>
+                    `<td>${escaparHTML(celula)}</td>`
+                )
+                .join("")}
+            </tr>
+          `;
         }
+      )
+      .join("");
 
-        return `
-          <tr>
-            ${celulas
-              .map(
-                celula =>
-                  `<td>${escaparHTML(celula)}</td>`
-              )
-              .join("")}
-          </tr>
-        `;
-      }
-    ).join("");
+  /*
+   * SE HOUVER CABEÇALHO REAL,
+   * cria <thead>.
+   */
+  if (
+    cabecalhos.length >= 2
+  ) {
 
+    while (
+      cabecalhos.length <
+      quantidadeColunas
+    ) {
+      cabecalhos.push("");
+    }
+
+    return `
+      <div class="tabela-exemplo-wrapper">
+        <table class="tabela-exemplo">
+
+          <thead>
+            <tr>
+              ${cabecalhos
+                .map(
+                  titulo =>
+                    `<th>${escaparHTML(titulo)}</th>`
+                )
+                .join("")}
+            </tr>
+          </thead>
+
+          <tbody>
+            ${corpo}
+          </tbody>
+
+        </table>
+      </div>
+    `;
+  }
+
+  /*
+   * SEM CABEÇALHO:
+   * mostra somente os dados.
+   */
   return `
     <div class="tabela-exemplo-wrapper">
       <table class="tabela-exemplo">
-        <thead>
-          <tr>
-            ${cabecalhos
-              .map(
-                titulo =>
-                  `<th>${escaparHTML(titulo)}</th>`
-              )
-              .join("")}
-          </tr>
-        </thead>
 
         <tbody>
           ${corpo}
         </tbody>
+
       </table>
     </div>
   `;
@@ -2257,24 +2306,21 @@ function pareceRotuloDeCabecalho(
     estrutura.partes.join(" ");
 
   /*
-   * CORREÇÃO:
-   * JavaScript não possui modificador /x.
+   * Palavras que indicam que a linha
+   * possui função de cabeçalho.
+   *
+   * Não usamos mais letras maiúsculas
+   * como critério, pois uma frase normal
+   * também pode começar com maiúscula.
    */
 
   const palavrasDeCabecalho =
-    /\b(?:forma|guarani|nhandewa|tupi|português|portugues|significado|tradução|traducao|sentido|frase|ambiente|glossário|glossario|origem|resultante|posposição|posposicao|elemento|componente)\b/i;
+    /\b(?:forma|guarani|nhandewa|tupi|português|portugues|significado|tradução|traducao|sentido|frase|ambiente|glossário|glossario|origem|resultante|posposição|posposicao|elemento|componente|base|resultado)\b/i;
 
-  const temMaiuscula =
-    /[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/u.test(
-      texto
-    );
-
-  return (
-    palavrasDeCabecalho.test(texto) ||
-    temMaiuscula
+  return palavrasDeCabecalho.test(
+    texto
   );
 }
-
 
 /* =========================================================
    CABEÇALHO ESTRUTURAL
@@ -2343,18 +2389,32 @@ function linhaPareceCabecalhoTabela(
       linhas[indice] || ""
     );
 
-  if (!cabecalho) {
+  /*
+   * Não existe estrutura de cabeçalho.
+   */
+  if (
+    !cabecalho ||
+    cabecalho.length < 2
+  ) {
     return false;
   }
 
+  /*
+   * Verifica se existe pelo menos uma linha
+   * estruturada logo abaixo.
+   */
   for (
     let i = indice + 1;
     i < linhas.length;
     i++
   ) {
+
     const candidata =
       linhas[i];
 
+    /*
+     * Ignora linhas vazias.
+     */
     if (
       !limparLinhaEstrutural(
         candidata
@@ -2363,16 +2423,33 @@ function linhaPareceCabecalhoTabela(
       continue;
     }
 
-    return Boolean(
+    /*
+     * A linha seguinte precisa possuir
+     * uma estrutura que possa virar dados
+     * da tabela.
+     */
+    const estrutura =
       analisarLinhaEstrutural(
         candidata
-      )
-    );
+      );
+
+    if (
+      estrutura
+    ) {
+      return true;
+    }
+
+    /*
+     * Encontrou conteúdo, mas não é uma
+     * linha estrutural. Portanto, a linha
+     * anterior não deve ser tratada como
+     * cabeçalho de tabela.
+     */
+    return false;
   }
 
   return false;
 }
-
 
 /* =========================================================
    FORMATA OS BLOCOS DE EXEMPLOS
@@ -2394,12 +2471,21 @@ function formatarBlocosExemplo(
   while (
     i < linhas.length
   ) {
+
     const linhaAtual =
-      linhas[i];
+      linhas[i].trim();
 
 
     /* =====================================================
        1. CABEÇALHO EXPLÍCITO COM "|"
+       
+       Exemplo:
+       
+       Guarani | Nhandewa | Português
+       ava     | ava      | pessoa
+       
+       O cabeçalho será exatamente aquele escrito
+       no conteúdo.
        ===================================================== */
 
     const cabecalho =
@@ -2414,6 +2500,7 @@ function formatarBlocosExemplo(
         i
       )
     ) {
+
       let j = i + 1;
 
       const dados = [];
@@ -2423,6 +2510,7 @@ function formatarBlocosExemplo(
       while (
         j < linhas.length
       ) {
+
         if (
           !limparLinhaEstrutural(
             linhas[j]
@@ -2472,21 +2560,31 @@ function formatarBlocosExemplo(
           j++;
         }
 
-        dados.push({
-          celulas:
-            normalizarLinhaParaTabela(
-              estrutura,
-              associada,
-              cabecalho.length
-            )
-        });
+        const celulas =
+          normalizarLinhaParaTabela(
+            estrutura,
+            associada,
+            cabecalho.length
+          );
+
+        if (celulas) {
+          dados.push({
+            celulas
+          });
+        }
 
         j++;
       }
 
+      /*
+       * Só cria a tabela quando realmente
+       * existem dados abaixo do cabeçalho.
+       */
+
       if (
         dados.length
       ) {
+
         resultado.push(
           criarTabelaHTML(
             dados,
@@ -2495,6 +2593,7 @@ function formatarBlocosExemplo(
         );
 
         i = j;
+
         continue;
       }
     }
@@ -2502,6 +2601,11 @@ function formatarBlocosExemplo(
 
     /* =====================================================
        2. CABEÇALHO ESTRUTURAL SEM "|"
+       
+       IMPORTANTE:
+       Aqui NÃO usamos cabecalhoAutomatico().
+       
+       O próprio conteúdo define o cabeçalho.
        ===================================================== */
 
     if (
@@ -2510,217 +2614,85 @@ function formatarBlocosExemplo(
         i
       )
     ) {
+
       const estruturaCabecalho =
         analisarLinhaEstrutural(
           linhaAtual
         );
 
-      const cabecalhoEstrutural =
-        estruturaCabecalho.partes.slice();
-
-      const dados = [];
-
-      let j = i + 1;
-
-      while (
-        j < linhas.length
+      if (
+        estruturaCabecalho
       ) {
-        if (
-          !limparLinhaEstrutural(
-            linhas[j]
-          )
+
+        const cabecalhoEstrutural =
+          estruturaCabecalho.partes.slice();
+
+        const dados = [];
+
+        let j = i + 1;
+
+        while (
+          j < linhas.length
         ) {
-          j++;
-          continue;
-        }
 
-        const estrutura =
-          analisarLinhaEstrutural(
-            linhas[j]
-          );
+          if (
+            !limparLinhaEstrutural(
+              linhas[j]
+            )
+          ) {
+            j++;
+            continue;
+          }
 
-        if (
-          !estrutura ||
-          estrutura.assinatura !==
-            estruturaCabecalho.assinatura
-        ) {
-          break;
-        }
+          const estrutura =
+            analisarLinhaEstrutural(
+              linhas[j]
+            );
 
-        dados.push({
-          celulas:
+          if (
+            !estrutura ||
+            estrutura.assinatura !==
+              estruturaCabecalho.assinatura
+          ) {
+            break;
+          }
+
+          const celulas =
             normalizarLinhaParaTabela(
               estrutura,
               null,
               cabecalhoEstrutural.length
-            )
-        });
-
-        j++;
-      }
-
-      if (
-        dados.length
-      ) {
-        resultado.push(
-          criarTabelaHTML(
-            dados,
-            cabecalhoEstrutural
-          )
-        );
-
-        i = j;
-        continue;
-      }
-    }
-
-
-    /* =====================================================
-       3. TABELA SEM CABEÇALHO
-       ===================================================== */
-
-    const estruturaInicial =
-      analisarLinhaEstrutural(
-        linhaAtual
-      );
-
-    if (
-      estruturaInicial
-    ) {
-      const dados = [];
-
-      let j = i;
-
-      const assinatura =
-        estruturaInicial.assinatura;
-
-      /*
-       * Primeiro coletamos todas as linhas.
-       * Só depois definimos a quantidade de colunas.
-       * Isso evita perder informação quando uma linha
-       * posterior possui mais campos.
-       */
-
-      const estruturasColetadas = [];
-
-      while (
-        j < linhas.length
-      ) {
-        if (
-          !limparLinhaEstrutural(
-            linhas[j]
-          )
-        ) {
-          let k = j + 1;
-
-          while (
-            k < linhas.length &&
-            !limparLinhaEstrutural(
-              linhas[k]
-            )
-          ) {
-            k++;
-          }
-
-          const futura =
-            analisarLinhaEstrutural(
-              linhas[k] || ""
             );
 
-          if (
-            futura &&
-            futura.assinatura ===
-              assinatura
-          ) {
-            j = k;
-            continue;
+          if (celulas) {
+            dados.push({
+              celulas
+            });
           }
-
-          break;
-        }
-
-        const estrutura =
-          analisarLinhaEstrutural(
-            linhas[j]
-          );
-
-        if (
-          !estrutura ||
-          estrutura.assinatura !==
-            assinatura
-        ) {
-          break;
-        }
-
-        let associada = null;
-
-        const seguinte =
-          linhas[j + 1] || "";
-
-        const possivelAssociada =
-          analisarLinhaAssociada(
-            seguinte
-          );
-
-        if (
-          possivelAssociada
-        ) {
-          associada =
-            possivelAssociada;
 
           j++;
         }
 
-        estruturasColetadas.push({
-          estrutura,
-          associada
-        });
-
-        j++;
-      }
-
-      if (
-        estruturasColetadas.length
-      ) {
-        let quantidadeColunas =
-          Math.max(
-            ...estruturasColetadas.map(
-              registro =>
-                quantidadeColunasAutomaticaParaLinha(
-                  registro.estrutura,
-                  registro.associada
-                )
-            )
-          );
-
-        estruturasColetadas.forEach(
-          registro => {
-            dados.push({
-              celulas:
-                normalizarLinhaParaTabela(
-                  registro.estrutura,
-                  registro.associada,
-                  quantidadeColunas
-                )
-            });
-          }
-        );
-
         if (
           dados.length
         ) {
+
           resultado.push(
             criarTabelaHTML(
-              dados
+              dados,
+              cabecalhoEstrutural
             )
           );
 
           i = j;
+
           continue;
         }
       }
     }
 
+
+ 
 
     /* =====================================================
        NÃO É TABELA
