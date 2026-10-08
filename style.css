@@ -1234,8 +1234,7 @@ body {
 
 /* =====================================================
    CORES TEMÁTICAS DOS CARDS
-   IMPORTANTE:
-   Cada categoria possui UMA única regra.
+   Cada categoria possui sua própria cor.
 ===================================================== */
 
 
@@ -1247,15 +1246,21 @@ body {
 #lista-historias .card-historia.historia-apresentacao {
     background: linear-gradient(
         145deg,
-        #4a3b0a,
-        #2a2105
+        #d6b52a,
+        #9b7d12
     ) !important;
 
-    border-left: 6px solid #f1c40f !important;
+    border-left: 6px solid #ffe066 !important;
 }
 
 #lista-historias .card-historia.historia-apresentacao:hover {
-    border-left-color: #ffe066 !important;
+    background: linear-gradient(
+        145deg,
+        #e5c43c,
+        #b08e18
+    ) !important;
+
+    border-left-color: #fff1a8 !important;
 }
 
 
@@ -1267,15 +1272,21 @@ body {
 #lista-historias .card-historia.historia-historia {
     background: linear-gradient(
         145deg,
-        #3b281c,
-        #21150e
+        #795548,
+        #4e342e
     ) !important;
 
-    border-left: 6px solid #8d6e63 !important;
+    border-left: 6px solid #bcaaa4 !important;
 }
 
 #lista-historias .card-historia.historia-historia:hover {
-    border-left-color: #bcaaa4 !important;
+    background: linear-gradient(
+        145deg,
+        #8d6e63,
+        #5d4037
+    ) !important;
+
+    border-left-color: #d7ccc8 !important;
 }
 
 
@@ -1287,15 +1298,21 @@ body {
 #lista-historias .card-historia.historia-transformacoes {
     background: linear-gradient(
         145deg,
-        #4a260b,
-        #291304
+        #d87519,
+        #9c4f0d
     ) !important;
 
-    border-left: 6px solid #ff9800 !important;
+    border-left: 6px solid #ffb74d !important;
 }
 
 #lista-historias .card-historia.historia-transformacoes:hover {
-    border-left-color: #ffb74d !important;
+    background: linear-gradient(
+        145deg,
+        #e68928,
+        #b85f12
+    ) !important;
+
+    border-left-color: #ffd180 !important;
 }
 
 
@@ -1307,15 +1324,21 @@ body {
 #lista-historias .card-historia.historia-sons {
     background: linear-gradient(
         145deg,
-        #301448,
-        #1b0929
+        #7045a0,
+        #47266d
     ) !important;
 
-    border-left: 6px solid #9c27b0 !important;
+    border-left: 6px solid #c084fc !important;
 }
 
 #lista-historias .card-historia.historia-sons:hover {
-    border-left-color: #ce63dc !important;
+    background: linear-gradient(
+        145deg,
+        #8054b5,
+        #55317e
+    ) !important;
+
+    border-left-color: #e0b3ff !important;
 }
 
 
@@ -1327,38 +1350,48 @@ body {
 #lista-historias .card-historia.historia-gramatica {
     background: linear-gradient(
         145deg,
-        #0b2938,
-        #041822
+        #1976a8,
+        #0d4f70
     ) !important;
 
-    border-left: 6px solid #00b0ff !important;
+    border-left: 6px solid #64b5f6 !important;
 }
 
 #lista-historias .card-historia.historia-gramatica:hover {
-    border-left-color: #40c4ff !important;
+    background: linear-gradient(
+        145deg,
+        #2187ba,
+        #125e83
+    ) !important;
+
+    border-left-color: #90caf9 !important;
 }
 
 
 /* -----------------------------------------------------
-   11 e 12 — CONTINUIDADE
+   6 — CONTINUIDADE
    VERDE
 ----------------------------------------------------- */
 
 #lista-historias .card-historia.historia-continuidade {
     background: linear-gradient(
         145deg,
-        #0b3522,
-        #072215
+        #39734f,
+        #245236
     ) !important;
 
-    border-left: 6px solid #00c853 !important;
+    border-left: 6px solid #81c995 !important;
 }
 
 #lista-historias .card-historia.historia-continuidade:hover {
-    border-left-color: #69f0ae !important;
+    background: linear-gradient(
+        145deg,
+        #47865d,
+        #2d6543
+    ) !important;
+
+    border-left-color: #a5d6a7 !important;
 }
-
-
 /* =====================================================
    MODAL DE HISTÓRIA
 ===================================================== */
