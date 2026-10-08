@@ -2017,59 +2017,77 @@ body {
 
 /* =========================================================
    TABELAS DE EXEMPLOS
+   AJUSTE PARA O NOVO SISTEMA DE TABELAS
    ========================================================= */
 
 .tabela-exemplo-wrapper {
     display: block;
-    width: fit-content;
-    max-width: 100%;
-    overflow-x: auto;
 
-    margin: 4px 0 !important;
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    margin: 6px 0 !important;
     padding: 0;
 
     -webkit-overflow-scrolling: touch;
 }
 
 .tabela-exemplo {
-    width: auto;
-    max-width: 100%;
-    min-width: 0;
+    width: max-content;
+    min-width: 100%;
+    max-width: none;
 
     margin: 0 !important;
 
     border-collapse: collapse;
+    border-spacing: 0;
 
     background: #fffdf9;
 
     font-size: 15px;
     line-height: 1.35;
+
+    color: #302820;
 }
 
 .tabela-exemplo th,
 .tabela-exemplo td {
-    padding: 7px 9px;
+    padding: 7px 10px;
 
     border: 1px solid #d8cbb8;
 
     text-align: left;
     vertical-align: middle;
+
+    white-space: nowrap;
 }
 
 .tabela-exemplo th {
     background: #eee5d8;
+
     color: #3d3328;
-    font-weight: bold;
+
+    font-weight: 700;
+}
+
+.tabela-exemplo td {
+    color: #302820;
 }
 
 .tabela-exemplo td:first-child {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .tabela-exemplo tbody tr:nth-child(even) {
     background: #faf6ef;
 }
 
+.tabela-exemplo tbody tr:hover {
+    background: #f2eadf;
+}
 
 /* =========================================================
    ESPAÇAMENTO ENTRE TEXTO E TABELA
