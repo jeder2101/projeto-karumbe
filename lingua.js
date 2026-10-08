@@ -361,7 +361,7 @@ Consuelo de Paiva Godinho Costa apresenta exemplos de correspondências históri
 EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Tupi(nambá) | Guarani geral | Nhandewa Guarani | Português
-kwarasy + kwarahy | kwarahy | kwaray | sol
+kwarasy  | kwarahy | kwaray | sol
 
 
 
