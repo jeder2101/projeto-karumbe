@@ -2933,87 +2933,37 @@ function classeTipo(
   tipo = "",
   categoria = ""
 ) {
-  const texto =
-    `${tipo} ${categoria}`
+  const categoriaNormalizada =
+    String(categoria ?? "")
       .toLowerCase()
       .normalize("NFD")
-      .replace(
-        /[\u0300-\u036f]/g,
-        ""
-      );
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
 
-  if (
-    texto.includes("apresentacao")
-  ) {
-    return "historia-apresentacao";
+  switch (categoriaNormalizada) {
+
+    case "apresentacao":
+      return "historia-apresentacao";
+
+    case "historia":
+      return "historia-historia";
+
+    case "transformacoes":
+      return "historia-transformacoes";
+
+    case "sons":
+      return "historia-sons";
+
+    case "gramatica":
+      return "historia-gramatica";
+
+    case "continuidade":
+      return "historia-continuidade";
+
+    default:
+      return "";
   }
-
-  if (
-    texto.includes("historia")
-  ) {
-    return "historia-historia";
-  }
-
-  if (
-    texto.includes("transformacao")
-  ) {
-    return "historia-transformacoes";
-  }
-
-  if (
-    texto.includes("som")
-  ) {
-    return "historia-sons";
-  }
-
-  if (
-    texto.includes("gramatica")
-  ) {
-    return "historia-gramatica";
-  }
-
-  if (
-    texto.includes("continuidade")
-  ) {
-    return "historia-continuidade";
-  }
-
-  return "";
-}function classeTipo(tipo = "", categoria = "") {
-
-  const categoriaNormalizada = String(categoria ?? "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim();
-
-  if (categoriaNormalizada === "apresentacao") {
-    return "historia-apresentacao";
-  }
-
-  if (categoriaNormalizada === "historia") {
-    return "historia-historia";
-  }
-
-  if (categoriaNormalizada === "transformacoes") {
-    return "historia-transformacoes";
-  }
-
-  if (categoriaNormalizada === "sons") {
-    return "historia-sons";
-  }
-
-  if (categoriaNormalizada === "gramatica") {
-    return "historia-gramatica";
-  }
-
-  if (categoriaNormalizada === "continuidade") {
-    return "historia-continuidade";
-  }
-
-  return "";
 }
-
 
 /* =========================================================
    MOSTRAR HISTÓRIAS
