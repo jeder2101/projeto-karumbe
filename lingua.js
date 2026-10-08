@@ -2496,14 +2496,45 @@ function formatarBlocosExemplo(
           continue;
         }
 
-        const estrutura =
-          analisarLinhaEstrutural(
-            linhas[j]
-          );
+       let estrutura =
+  analisarLinhaEstrutural(
+    linhas[j]
+  );
 
-        if (!estrutura) {
-          break;
-        }
+/*
+ * Também aceita linhas de tabela
+ * separadas por "|".
+ *
+ * Exemplo:
+ * pytã | vermelho
+ * kwã  | dedo
+ */
+if (
+  !estrutura
+) {
+
+  const colunasLinha =
+    separarColunasCabecalho(
+      linhas[j]
+    );
+
+  if (
+    colunasLinha &&
+    colunasLinha.length >= 2
+  ) {
+    estrutura = {
+      tipo: "tabela",
+      assinatura:
+        `tabela-${colunasLinha.length}`,
+      partes:
+        colunasLinha
+    };
+  }
+}
+
+if (!estrutura) {
+  break;
+}
 
         if (!assinatura) {
           assinatura =
