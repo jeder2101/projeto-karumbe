@@ -2434,10 +2434,29 @@ function pareceRotuloDeCabecalho(
     estrutura.partes.join(" ");
 
 
-  const palavrasDeCabecalho =
-    /\b(forma|guarani|nhandewa|tupi|português|portugues|significado|tradução|traducao|sentido|frase|ambiente|glossário|glossario|origem|resultante|posposição|posposicao|elemento|componente)\b/i;
-
-
+    const palavrasDeCabecalho =
+    /\b(
+      forma|
+      guarani|
+      nhandewa|
+      tupi|
+      português|
+      portugues|
+      significado|
+      tradução|
+      traducao|
+      sentido|
+      frase|
+      ambiente|
+      glossário|
+      glossario|
+      origem|
+      resultante|
+      posposição|
+      posposicao|
+      elemento|
+      componente
+    )\b/ix;
   const temMaiuscula =
     /[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/u.test(
       texto
