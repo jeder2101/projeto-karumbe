@@ -358,40 +358,17 @@ O estudo da fonologia do Nhandewa-Guarani permite observar relações entre regi
 Consuelo de Paiva Godinho Costa apresenta exemplos de correspondências históricas entre formas do Tupi, do Guarani e do Nhandewa-Guarani.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
+EXEMPLO 1 — FORMAS RELACIONADAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Tupi(nambá) | Guarani geral | Nhandewa Guarani | Português
 kwarasy  | kwarahy | kwaray | sol
+asab | aha | aa | eu vou
+ambyasy| ambyahy | ambyay | fome
+kwese | kwehe | kweé | ontem
 
-
-
-Esse exemplo é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 2 — FORMAS RELACIONADAS À AÇÃO DE IR
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Tupi(nambá) | Guarani geral | Nhandewa Guarani | Português
- asab | aha | aa | eu vou
-
-
-A comparação mostra alterações na realização de determinados sons. É necessário considerar o registro e a análise linguística de cada forma.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 3 — FORMAS RELACIONADAS À FOME
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-ambyasy + ambyahy = ambyay
-"Tupi / Guarani" → "fome"
-
-Esse exemplo permite observar correspondências entre sons presentes em registros diferentes.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 4 — FORMAS RELACIONADAS AO TEMPO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-kwese + kwehe = kweé
-"Tupi / Guarani" → "ontem"
-
+Esses exemplos é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
+A comparação mostra alterações na realização de determinados sons. 
+É necessário considerar o registro e a análise linguística de cada forma pois permite observar correspondências entre sons presentes em registros diferentes.
 A comparação entre essas formas ajuda a estudar transformações sonoras ao longo da história.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
