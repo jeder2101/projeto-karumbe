@@ -420,7 +420,7 @@ O estudo das transformações fonológicas contribui para compreender tanto os r
         "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar transformações nas posposições e nas estruturas gramaticais, com destaque para a passagem de pe/be/bo para py e wy.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. RELAÇÕES HISTÓRICAS
+RELAÇÕES HISTÓRICAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 As línguas da família Tupi-Guarani apresentam relações
@@ -434,7 +434,7 @@ simples substituições mecânicas — cada uma tem sua
 função, seu significado e seu contexto de uso.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. A FORMA wy — DIREÇÃO E DESTINO
+A FORMA wy — DIREÇÃO E DESTINO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A forma wy está ligada à ideia de direção, destino
@@ -442,12 +442,12 @@ ou referência em relação a alguém/algo.
 
 📌 EXEMPLOS REGISTRADOS:
 
-Forma | Correspondência
+Guarani Nhandewa | Correspondência
 Txeé + wy | txewy
-"eu" + "para" | "para mim"
+Eu + para | para mim
 
-pee + wy | pemy
-"vocês" + "para" | "para vocês"
+Pee + wy | pemy
+vocês + para | "para vocês
 
 Esses exemplos mostram que wy funciona como posposição
 que indica direção ou destinatário, correspondendo
@@ -455,10 +455,10 @@ a funções que em outras variedades aparecem com pe,
 be ou bo.
 
 A forma pode apresentar variação em ambiente nasal:
-em pemy, wy realiza-se como my [mỹ].
+em pemy, wy realiza-se como my mỹ.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. A FORMA py — ORIGEM, LOCALIZAÇÃO E RELAÇÃO
+A FORMA py — ORIGEM, LOCALIZAÇÃO E RELAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A forma py também aparece em contextos onde outras
@@ -466,19 +466,16 @@ variedades do Guarani utilizam pe, be ou bo. Ela
 participa de construções que indicam origem, lugar
 ou relação.
 
-📌 EXEMPLOS REGISTRADOS E CORRESPONDÊNCIAS:
+EXEMPLOS REGISTRADOS E CORRESPONDÊNCIAS:
 
 Guarani Antigo / outras variedades | Nhandewa-Guarani
 pe / be / bo | py / wy
-
-oga + bo | óy
-"casa" + "bo" | "para a casa / da casa"
-
+oga + bo   | óy
+casa + bo  | para a casa / da casa
 coang + bo | cóy
-"roça" + "bo" | "para a roça / da roça"
-
+roça + bo  | para a roça / da roça
 añang + bo | añãy
-"diabo" + "bo" | "para o diabo / do diabo"
+diabo + bo | para o diabo / do diabo
 
 Nessas correspondências, o elemento final — grafado
 como bo no Guarani Antigo — realiza-se como y/wy/py
@@ -486,7 +483,7 @@ no Nhandewa, integrando-se à palavra como uma sílaba
 final com valor de posposição.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
+A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A pesquisa mostra que o que se passa não é uma troca
@@ -505,7 +502,7 @@ direta letra por letra:
     que envolvem vogais, aproximantes e ambiente
     nasal — não de substituição automática
 
-📌 CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI:
+CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI:
 
 Tupi(nambá) | Guarani ("geral") | Nhandewa-Guarani | Português
 kwarasy + kwarahy | kwaray | kwaray | sol
@@ -519,7 +516,7 @@ consoante intervocálica e manutenção da vogal,
 que pode se aproximar de wy/y.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. CONTEXTO E PRECISÃO
+CONTEXTO E PRECISÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Não se deve afirmar que py tem SEMPRE o mesmo
