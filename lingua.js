@@ -1683,36 +1683,15 @@ function escaparHTML(texto) {
 
 
 /* =========================================================
-   TABELAS AUTOMÁTICAS
-   ESTRUTURA INFERIDA DO PRÓPRIO TEXTO
-   =========================================================
-
-   REGRAS:
-
-   1. Cabeçalhos com "|" são usados exatamente como escritos.
-      Exemplo:
-      Tupi(nambá) | Guarani ("geral") | Nhandewa-Guarani | Português
-
-   2. A + B = C
-      A + B → C
-      gera 3 campos.
-
-   3. A → B
-      A = B
-      gera 2 campos.
-
-   4. Se houver informação associada entre aspas,
-      ela pode criar uma coluna adicional.
-
-   5. O código NÃO usa ID, número da história ou nome
-      específico de tabela.
-
-   6. Tabelas diferentes não são misturadas quando
-      a estrutura muda.
-
-   7. O cabeçalho é determinado pelo próprio formato
-      encontrado na informação.
+   NORMALIZA TEXTO PARA PESQUISA
    ========================================================= */
+
+function normalizarTexto(texto) {
+  return String(texto ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
 
 
 /* =========================================================
@@ -1720,13 +1699,11 @@ function escaparHTML(texto) {
    ========================================================= */
 
 function limparLinhaEstrutural(linha) {
-
   return String(linha ?? "")
     .trim()
     .replace(/^\\+$/g, "")
     .replace(/^\s*[•●▪]\s*/u, "")
     .trim();
-
 }
 
 
@@ -1735,16 +1712,13 @@ function limparLinhaEstrutural(linha) {
    ========================================================= */
 
 function tirarAspasExternas(valor) {
-
   const texto = String(valor ?? "").trim();
 
   if (/^["“‘][\s\S]*["”’]$/u.test(texto)) {
-
     return texto
       .replace(/^["“‘]/u, "")
       .replace(/["”’]$/u, "")
       .trim();
-
   }
 
   return texto;
@@ -1756,7 +1730,6 @@ function tirarAspasExternas(valor) {
    ========================================================= */
 
 function separarColunasCabecalho(linha) {
-
   const original = limparLinhaEstrutural(linha);
 
   if (!original.includes("|")) {
@@ -1772,7 +1745,7 @@ function separarColunasCabecalho(linha) {
     return null;
   }
 
-  // Não transforma URL em tabela
+  // Nunca transforma URLs em tabelas.
   if (
     partes.some(
       parte => /^https?:\/\//i.test(parte)
@@ -1790,24 +1763,23 @@ function separarColunasCabecalho(linha) {
    ========================================================= */
 
 function analisarLinhaEstrutural(linha) {
-
   const original = limparLinhaEstrutural(linha);
 
   if (!original) {
     return null;
   }
 
-  // Marcadores nunca são exemplos de tabela
+  // Marcadores não são linhas de tabela.
   if (/^[📌⚠️✅]/u.test(original)) {
     return null;
   }
 
-  // Separadores
+  // Separadores.
   if (/^━━━━━━━━/.test(original)) {
     return null;
   }
 
-  // Títulos numerados
+  // Títulos numerados.
   if (/^\d+\./.test(original)) {
     return null;
   }
@@ -1815,7 +1787,6 @@ function analisarLinhaEstrutural(linha) {
 
   /* ---------------------------------------------------------
      FORMA + ELEMENTO → RESULTADO
-     FORMA + ELEMENTO = RESULTADO
      --------------------------------------------------------- */
 
   let m = original.match(
@@ -1823,25 +1794,15 @@ function analisarLinhaEstrutural(linha) {
   );
 
   if (m) {
-
     return {
-
       tipo: "composicao",
-
       assinatura: "composicao",
-
       partes: [
-
         tirarAspasExternas(m[1]),
-
         tirarAspasExternas(m[2]),
-
         tirarAspasExternas(m[3])
-
       ]
-
     };
-
   }
 
 
@@ -1854,23 +1815,14 @@ function analisarLinhaEstrutural(linha) {
   );
 
   if (m) {
-
     return {
-
       tipo: "transformacao",
-
       assinatura: "duas",
-
       partes: [
-
         tirarAspasExternas(m[1]),
-
         tirarAspasExternas(m[2])
-
       ]
-
     };
-
   }
 
 
@@ -1883,23 +1835,14 @@ function analisarLinhaEstrutural(linha) {
   );
 
   if (m) {
-
     return {
-
       tipo: "transformacao",
-
       assinatura: "duas",
-
       partes: [
-
         tirarAspasExternas(m[1]),
-
         tirarAspasExternas(m[2])
-
       ]
-
     };
-
   }
 
   return null;
@@ -1911,7 +1854,6 @@ function analisarLinhaEstrutural(linha) {
    ========================================================= */
 
 function analisarLinhaAssociada(linha) {
-
   const original = limparLinhaEstrutural(linha);
 
   if (!original) {
@@ -1919,59 +1861,38 @@ function analisarLinhaAssociada(linha) {
   }
 
 
-  /* ---------------------------------------------------------
-     "forma" → "tradução"
-     --------------------------------------------------------- */
+  /* "forma" → "tradução" */
 
   let m = original.match(
     /^["“](.+?)["”]\s*(?:→|=)\s*["“](.+?)["”]$/u
   );
 
   if (m) {
-
     return {
-
       tipo: "associada",
-
       partes: [
-
         m[1].trim(),
-
         m[2].trim()
-
       ]
-
     };
-
   }
 
 
-  /* ---------------------------------------------------------
-     "campo 1" "campo 2" → "resultado"
-     --------------------------------------------------------- */
+  /* "campo 1" "campo 2" → "resultado" */
 
   m = original.match(
     /^["“](.+?)["”]\s+["“](.+?)["”]\s*(?:→|=)\s*["“](.+?)["”]$/u
   );
 
   if (m) {
-
     return {
-
       tipo: "associada",
-
       partes: [
-
         m[1].trim(),
-
         m[2].trim(),
-
         m[3].trim()
-
       ]
-
     };
-
   }
 
   return null;
@@ -1983,9 +1904,7 @@ function analisarLinhaAssociada(linha) {
    ========================================================= */
 
 function cabecalhoAutomatico(quantidade) {
-
   const modelos = {
-
     2: [
       "Forma de origem",
       "Forma resultante"
@@ -2003,20 +1922,16 @@ function cabecalhoAutomatico(quantidade) {
       "Forma resultante",
       "Sentido / tradução"
     ]
-
   };
 
   if (modelos[quantidade]) {
-
     return modelos[quantidade];
-
   }
 
   return Array.from(
     { length: quantidade },
     (_, i) => `Campo ${i + 1}`
   );
-
 }
 
 
@@ -2025,7 +1940,6 @@ function cabecalhoAutomatico(quantidade) {
    ========================================================= */
 
 function extrairAnotacaoExtremidade(valor) {
-
   const texto = String(valor ?? "").trim();
 
   const m = texto.match(
@@ -2033,25 +1947,16 @@ function extrairAnotacaoExtremidade(valor) {
   );
 
   if (!m) {
-
     return {
-
       principal: texto,
-
       anotacao: ""
-
     };
-
   }
 
   return {
-
     principal: m[1].trim(),
-
     anotacao: m[2].trim()
-
   };
-
 }
 
 
@@ -2064,9 +1969,7 @@ function normalizarLinhaParaTabela(
   associada,
   quantidadeColunas
 ) {
-
   let base = estrutura.partes.slice();
-
   let anotacao = "";
 
 
@@ -2078,7 +1981,6 @@ function normalizarLinhaParaTabela(
     base.length >= 3 &&
     quantidadeColunas >= 4
   ) {
-
     const inicio =
       extrairAnotacaoExtremidade(base[0]);
 
@@ -2087,17 +1989,14 @@ function normalizarLinhaParaTabela(
         base[base.length - 1]
       );
 
-
     base[0] = inicio.principal;
 
     base[base.length - 1] =
       fim.principal;
 
-
     anotacao =
       fim.anotacao ||
       inicio.anotacao;
-
   }
 
 
@@ -2113,25 +2012,16 @@ function normalizarLinhaParaTabela(
     associada.partes?.length &&
     partes.length < quantidadeColunas
   ) {
-
     const existentes =
       partes.map(
         valor =>
-          limparLinhaEstrutural(
-            valor
-          ).toLowerCase()
+          limparLinhaEstrutural(valor).toLowerCase()
       );
-
 
     const candidatos =
       associada.partes
-
-        .map(
-          valor => valor.trim()
-        )
-
+        .map(valor => valor.trim())
         .filter(Boolean)
-
         .filter(
           valor =>
             !existentes.includes(
@@ -2139,19 +2029,12 @@ function normalizarLinhaParaTabela(
             )
         );
 
-
     const escolhido =
       candidatos[candidatos.length - 1];
 
-
     if (escolhido) {
-
-      partes.push(
-        escolhido
-      );
-
+      partes.push(escolhido);
     }
-
   }
 
 
@@ -2163,43 +2046,36 @@ function normalizarLinhaParaTabela(
     anotacao &&
     partes.length < quantidadeColunas
   ) {
-
     partes.push(anotacao);
-
   }
 
 
   /* ---------------------------------------------------------
-     LIMITA O NÚMERO DE COLUNAS
+     LIMITA COLUNAS
      --------------------------------------------------------- */
 
   if (
     partes.length >
     quantidadeColunas
   ) {
-
     partes =
       partes.slice(
         0,
         quantidadeColunas
       );
-
   }
 
 
   /* ---------------------------------------------------------
-     COMPLETA COLUNAS VAZIAS
+     COMPLETA COLUNAS
      --------------------------------------------------------- */
 
   while (
     partes.length <
     quantidadeColunas
   ) {
-
     partes.push("");
-
   }
-
 
   return partes;
 }
@@ -2213,28 +2089,18 @@ function quantidadeColunasAutomaticaParaLinha(
   estrutura,
   associada = null
 ) {
-
   let quantidade =
     estrutura.partes.length;
-
 
   if (
     associada?.partes?.length
   ) {
-
     quantidade += 1;
-
   }
-
-
-  /* ---------------------------------------------------------
-     ANOTAÇÃO ENTRE ASPAS
-     --------------------------------------------------------- */
 
   if (
     estrutura.partes.length >= 3
   ) {
-
     const inicio =
       extrairAnotacaoExtremidade(
         estrutura.partes[0]
@@ -2247,22 +2113,17 @@ function quantidadeColunasAutomaticaParaLinha(
         ]
       );
 
-
     if (
       inicio.anotacao ||
       fim.anotacao
     ) {
-
       quantidade =
         Math.max(
           quantidade,
           estrutura.partes.length + 1
         );
-
     }
-
   }
-
 
   return quantidade;
 }
@@ -2276,29 +2137,21 @@ function criarTabelaHTML(
   linhas,
   cabecalhoFonte = null
 ) {
-
   if (
     !Array.isArray(linhas) ||
     !linhas.length
   ) {
-
     return null;
-
   }
 
-
   let quantidadeColunas;
-
 
   if (
     cabecalhoFonte?.length
   ) {
-
     quantidadeColunas =
       cabecalhoFonte.length;
-
   } else {
-
     quantidadeColunas =
       Math.max(
         ...linhas.map(
@@ -2306,9 +2159,7 @@ function criarTabelaHTML(
             linha.celulas.length
         )
       );
-
   }
-
 
   let cabecalhos =
     cabecalhoFonte?.slice() ||
@@ -2316,53 +2167,41 @@ function criarTabelaHTML(
       quantidadeColunas
     );
 
-
   while (
     cabecalhos.length <
     quantidadeColunas
   ) {
-
     cabecalhos.push(
       `Campo ${cabecalhos.length + 1}`
     );
-
   }
-
 
   if (
     cabecalhos.length >
     quantidadeColunas
   ) {
-
     cabecalhos =
       cabecalhos.slice(
         0,
         quantidadeColunas
       );
-
   }
-
 
   const corpo =
     linhas.map(
       linha => {
-
         let celulas =
           linha.celulas.slice(
             0,
             quantidadeColunas
           );
 
-
         while (
           celulas.length <
           quantidadeColunas
         ) {
-
           celulas.push("");
-
         }
-
 
         return `
           <tr>
@@ -2374,39 +2213,27 @@ function criarTabelaHTML(
               .join("")}
           </tr>
         `;
-
       }
     ).join("");
 
-
   return `
     <div class="tabela-exemplo-wrapper">
-
       <table class="tabela-exemplo">
-
         <thead>
-
           <tr>
-
             ${cabecalhos
               .map(
                 titulo =>
                   `<th>${escaparHTML(titulo)}</th>`
               )
               .join("")}
-
           </tr>
-
         </thead>
 
         <tbody>
-
           ${corpo}
-
         </tbody>
-
       </table>
-
     </div>
   `;
 }
@@ -2419,57 +2246,33 @@ function criarTabelaHTML(
 function pareceRotuloDeCabecalho(
   estrutura
 ) {
-
   if (
     !estrutura ||
     !estrutura.partes?.length
   ) {
-
     return false;
-
   }
-
 
   const texto =
     estrutura.partes.join(" ");
 
+  /*
+   * CORREÇÃO:
+   * JavaScript não possui modificador /x.
+   */
 
-    const palavrasDeCabecalho =
-    /\b(
-      forma|
-      guarani|
-      nhandewa|
-      tupi|
-      português|
-      portugues|
-      significado|
-      tradução|
-      traducao|
-      sentido|
-      frase|
-      ambiente|
-      glossário|
-      glossario|
-      origem|
-      resultante|
-      posposição|
-      posposicao|
-      elemento|
-      componente
-    )\b/ix;
+  const palavrasDeCabecalho =
+    /\b(?:forma|guarani|nhandewa|tupi|português|portugues|significado|tradução|traducao|sentido|frase|ambiente|glossário|glossario|origem|resultante|posposição|posposicao|elemento|componente)\b/i;
+
   const temMaiuscula =
     /[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/u.test(
       texto
     );
 
-
   return (
-    palavrasDeCabecalho.test(
-      texto
-    ) ||
+    palavrasDeCabecalho.test(texto) ||
     temMaiuscula
   );
-
 }
 
 
@@ -2481,12 +2284,10 @@ function linhaPareceCabecalhoEstrutural(
   linhas,
   indice
 ) {
-
   const estrutura =
     analisarLinhaEstrutural(
       linhas[indice] || ""
     );
-
 
   if (
     !estrutura ||
@@ -2494,47 +2295,36 @@ function linhaPareceCabecalhoEstrutural(
       estrutura
     )
   ) {
-
     return false;
-
   }
-
 
   for (
     let i = indice + 1;
     i < linhas.length;
     i++
   ) {
-
     const candidata =
       linhas[i];
-
 
     if (
       !limparLinhaEstrutural(
         candidata
       )
     ) {
-
       continue;
-
     }
-
 
     const proxima =
       analisarLinhaEstrutural(
         candidata
       );
 
-
     return Boolean(
       proxima &&
       proxima.assinatura ===
         estrutura.assinatura
     );
-
   }
-
 
   return false;
 }
@@ -2548,49 +2338,37 @@ function linhaPareceCabecalhoTabela(
   linhas,
   indice
 ) {
-
   const cabecalho =
     separarColunasCabecalho(
       linhas[indice] || ""
     );
 
-
   if (!cabecalho) {
-
     return false;
-
   }
-
 
   for (
     let i = indice + 1;
     i < linhas.length;
     i++
   ) {
-
     const candidata =
       linhas[i];
-
 
     if (
       !limparLinhaEstrutural(
         candidata
       )
     ) {
-
       continue;
-
     }
-
 
     return Boolean(
       analisarLinhaEstrutural(
         candidata
       )
     );
-
   }
-
 
   return false;
 }
@@ -2603,23 +2381,19 @@ function linhaPareceCabecalhoTabela(
 function formatarBlocosExemplo(
   texto
 ) {
-
   const linhas =
     String(texto ?? "")
       .replace(/\r\n/g, "\n")
       .replace(/\r/g, "\n")
       .split("\n");
 
-
   const resultado = [];
 
   let i = 0;
 
-
   while (
     i < linhas.length
   ) {
-
     const linhaAtual =
       linhas[i];
 
@@ -2633,7 +2407,6 @@ function formatarBlocosExemplo(
         linhaAtual
       );
 
-
     if (
       cabecalho &&
       linhaPareceCabecalhoTabela(
@@ -2641,116 +2414,79 @@ function formatarBlocosExemplo(
         i
       )
     ) {
-
       let j = i + 1;
 
       const dados = [];
 
       let assinatura = null;
 
-
       while (
         j < linhas.length
       ) {
-
         if (
           !limparLinhaEstrutural(
             linhas[j]
           )
         ) {
-
           j++;
-
           continue;
-
         }
-
 
         const estrutura =
           analisarLinhaEstrutural(
             linhas[j]
           );
 
-
         if (!estrutura) {
-
           break;
-
         }
-
 
         if (!assinatura) {
-
           assinatura =
             estrutura.assinatura;
-
         }
-
-
-        /* --------------------------------------------------
-           ESTRUTURA DIFERENTE = NOVA TABELA
-           -------------------------------------------------- */
 
         if (
           estrutura.assinatura !==
           assinatura
         ) {
-
           break;
-
         }
-
 
         let associada = null;
 
-
         const seguinte =
           linhas[j + 1] || "";
-
 
         const possivelAssociada =
           analisarLinhaAssociada(
             seguinte
           );
 
-
         if (
           possivelAssociada
         ) {
-
           associada =
             possivelAssociada;
 
           j++;
-
         }
 
-
         dados.push({
-
           celulas:
             normalizarLinhaParaTabela(
-
               estrutura,
-
               associada,
-
               cabecalho.length
-
             )
-
         });
 
-
         j++;
-
       }
-
 
       if (
         dados.length
       ) {
-
         resultado.push(
           criarTabelaHTML(
             dados,
@@ -2758,21 +2494,14 @@ function formatarBlocosExemplo(
           )
         );
 
-
         i = j;
-
         continue;
-
       }
-
     }
 
 
     /* =====================================================
        2. CABEÇALHO ESTRUTURAL SEM "|"
-       
-       Exemplo:
-       Guarani antigo → Nhandewa-Guarani
        ===================================================== */
 
     if (
@@ -2781,108 +2510,73 @@ function formatarBlocosExemplo(
         i
       )
     ) {
-
       const estruturaCabecalho =
         analisarLinhaEstrutural(
           linhaAtual
         );
 
-
       const cabecalhoEstrutural =
         estruturaCabecalho.partes.slice();
-
 
       const dados = [];
 
       let j = i + 1;
 
-
       while (
         j < linhas.length
       ) {
-
         if (
           !limparLinhaEstrutural(
             linhas[j]
           )
         ) {
-
           j++;
-
           continue;
-
         }
-
 
         const estrutura =
           analisarLinhaEstrutural(
             linhas[j]
           );
 
-
         if (
           !estrutura ||
           estrutura.assinatura !==
             estruturaCabecalho.assinatura
         ) {
-
           break;
-
         }
 
-
         dados.push({
-
           celulas:
             normalizarLinhaParaTabela(
-
               estrutura,
-
               null,
-
               cabecalhoEstrutural.length
-
             )
-
         });
 
-
         j++;
-
       }
-
 
       if (
         dados.length
       ) {
-
         resultado.push(
-
           criarTabelaHTML(
-
             dados,
-
             cabecalhoEstrutural
-
           )
-
         );
 
-
         i = j;
-
         continue;
-
       }
-
     }
 
 
     /* =====================================================
        3. TABELA SEM CABEÇALHO
-       
-       A própria estrutura define
-       a quantidade de colunas.
        ===================================================== */
 
     const estruturaInicial =
@@ -2890,11 +2584,9 @@ function formatarBlocosExemplo(
         linhaAtual
       );
 
-
     if (
       estruturaInicial
     ) {
-
       const dados = [];
 
       let j = i;
@@ -2902,23 +2594,24 @@ function formatarBlocosExemplo(
       const assinatura =
         estruturaInicial.assinatura;
 
+      /*
+       * Primeiro coletamos todas as linhas.
+       * Só depois definimos a quantidade de colunas.
+       * Isso evita perder informação quando uma linha
+       * posterior possui mais campos.
+       */
 
-      let quantidadeColunasAutomatica =
-        null;
-
+      const estruturasColetadas = [];
 
       while (
         j < linhas.length
       ) {
-
         if (
           !limparLinhaEstrutural(
             linhas[j]
           )
         ) {
-
           let k = j + 1;
-
 
           while (
             k < linhas.length &&
@@ -2926,150 +2619,106 @@ function formatarBlocosExemplo(
               linhas[k]
             )
           ) {
-
             k++;
-
           }
-
 
           const futura =
             analisarLinhaEstrutural(
               linhas[k] || ""
             );
 
-
           if (
             futura &&
             futura.assinatura ===
               assinatura
           ) {
-
             j = k;
-
             continue;
-
           }
 
-
           break;
-
         }
-
 
         const estrutura =
           analisarLinhaEstrutural(
             linhas[j]
           );
 
-
         if (
           !estrutura ||
           estrutura.assinatura !==
             assinatura
         ) {
-
           break;
-
         }
-
 
         let associada = null;
 
-
         const seguinte =
           linhas[j + 1] || "";
-
 
         const possivelAssociada =
           analisarLinhaAssociada(
             seguinte
           );
 
-
         if (
           possivelAssociada
         ) {
-
           associada =
             possivelAssociada;
 
           j++;
-
         }
 
-
-        const quantidadeDetectada =
-          quantidadeColunasAutomaticaParaLinha(
-
-            estrutura,
-
-            associada
-
-          );
-
-
-        if (
-          quantidadeColunasAutomatica ===
-          null
-        ) {
-
-          quantidadeColunasAutomatica =
-            quantidadeDetectada;
-
-        } else {
-
-          quantidadeColunasAutomatica =
-            Math.max(
-
-              quantidadeColunasAutomatica,
-
-              quantidadeDetectada
-
-            );
-
-        }
-
-
-        dados.push({
-
-          celulas:
-            normalizarLinhaParaTabela(
-
-              estrutura,
-
-              associada,
-
-              quantidadeColunasAutomatica
-
-            )
-
+        estruturasColetadas.push({
+          estrutura,
+          associada
         });
 
-
         j++;
-
       }
-
 
       if (
-        dados.length
+        estruturasColetadas.length
       ) {
+        let quantidadeColunas =
+          Math.max(
+            ...estruturasColetadas.map(
+              registro =>
+                quantidadeColunasAutomaticaParaLinha(
+                  registro.estrutura,
+                  registro.associada
+                )
+            )
+          );
 
-        resultado.push(
-
-          criarTabelaHTML(
-            dados
-          )
-
+        estruturasColetadas.forEach(
+          registro => {
+            dados.push({
+              celulas:
+                normalizarLinhaParaTabela(
+                  registro.estrutura,
+                  registro.associada,
+                  quantidadeColunas
+                )
+            });
+          }
         );
 
+        if (
+          dados.length
+        ) {
+          resultado.push(
+            criarTabelaHTML(
+              dados
+            )
+          );
 
-        i = j;
-
-        continue;
-
+          i = j;
+          continue;
+        }
       }
-
     }
 
 
@@ -3081,30 +2730,21 @@ function formatarBlocosExemplo(
       linhaAtual
     );
 
-
     i++;
-
   }
-
 
   return resultado.join("\n");
 }
 
-```javascript
+
 /* =========================================================
    FORMATAÇÃO FINAL DO CONTEÚDO
    ========================================================= */
 
 function formatarConteudo(texto) {
-
   if (!texto) {
     return "";
   }
-
-
-  /* =======================================================
-     1. CRIA AS TABELAS
-     ======================================================= */
 
   let resultado =
     formatarBlocosExemplo(
@@ -3112,39 +2752,31 @@ function formatarConteudo(texto) {
     );
 
 
-  /* =======================================================
-     2. GUARDA AS TABELAS
-     ======================================================= */
+  /* ---------------------------------------------------------
+     GUARDA AS TABELAS ANTES DE ESCAPAR O TEXTO
+     --------------------------------------------------------- */
 
   const tabelas = [];
 
-
   resultado =
     resultado.replace(
-
       /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
-
       tabela => {
-
         const indice =
           tabelas.length;
-
 
         tabelas.push(
           tabela
         );
 
-
         return `TABELAMARCADOR${indice}FIM`;
-
       }
-
     );
 
 
-  /* =======================================================
-     3. LIMPEZA
-     ======================================================= */
+  /* ---------------------------------------------------------
+     LIMPEZA
+     --------------------------------------------------------- */
 
   resultado =
     resultado.replace(
@@ -3152,20 +2784,17 @@ function formatarConteudo(texto) {
       "\n"
     );
 
-
   resultado =
     resultado.replace(
       /\\[ \t]*\n/g,
       "\n"
     );
 
-
   resultado =
     resultado.replace(
       /[ \t]+$/gm,
       ""
     );
-
 
   resultado =
     resultado.replace(
@@ -3174,9 +2803,9 @@ function formatarConteudo(texto) {
     );
 
 
-  /* =======================================================
-     4. ESCAPA O TEXTO
-     ======================================================= */
+  /* ---------------------------------------------------------
+     ESCAPA TEXTO
+     --------------------------------------------------------- */
 
   resultado =
     escaparHTML(
@@ -3184,15 +2813,13 @@ function formatarConteudo(texto) {
     );
 
 
-  /* =======================================================
-     5. SEPARA OS BLOCOS
-     ======================================================= */
+  /* ---------------------------------------------------------
+     SEPARA BLOCOS
+     --------------------------------------------------------- */
 
   const blocos =
     resultado
-      .split(
-        /\n{2,}/
-      )
+      .split(/\n{2,}/)
       .map(
         bloco =>
           bloco.trim()
@@ -3203,32 +2830,23 @@ function formatarConteudo(texto) {
       );
 
 
-  /* =======================================================
-     6. RECOLOCA AS TABELAS
-     ======================================================= */
+  /* ---------------------------------------------------------
+     RECOLOCA TABELAS
+     --------------------------------------------------------- */
 
   return blocos
-
     .map(
       bloco => {
-
         const marcador =
           bloco.match(
             /TABELAMARCADOR(\d+)FIM/
           );
 
-
-        /* ---------------------------------------------------
-           BLOCO COM TABELA
-           --------------------------------------------------- */
-
         if (marcador) {
-
           const indice =
             Number(
               marcador[1]
             );
-
 
           const antes =
             bloco
@@ -3238,36 +2856,17 @@ function formatarConteudo(texto) {
               )
               .trim();
 
-
-          /* -----------------------------------------------
-             SOMENTE A TABELA
-             ----------------------------------------------- */
-
           if (!antes) {
-
-            return tabelas[
-              indice
-            ];
-
+            return tabelas[indice];
           }
 
-
-          /* -----------------------------------------------
-             TEXTO + TABELA
-             ----------------------------------------------- */
-
           return `
-
             <div class="historia-paragrafo">
-
               ${antes}
-
             </div>
 
             ${tabelas[indice]}
-
           `;
-
         }
 
 
@@ -3280,7 +2879,6 @@ function formatarConteudo(texto) {
             .split("\n")
             .map(
               linha => {
-
                 linha =
                   linha
                     .trim()
@@ -3289,67 +2887,40 @@ function formatarConteudo(texto) {
                       ""
                     );
 
-
                 if (!linha) {
                   return "";
                 }
-
-
-                /* -------------------------------------------
-                   DESTACA EXEMPLO
-                   ------------------------------------------- */
 
                 if (
                   /^EXEMPLO\s*\d+/i.test(
                     linha
                   )
                 ) {
-
                   return `
-
                     <span class="destaque-exemplo">
-
                       ${linha}
-
                     </span>
-
                   `;
-
                 }
 
-
                 return linha;
-
               }
             )
-            .filter(
-              Boolean
-            )
-            .join(
-              "<br>"
-            );
-
+            .filter(Boolean)
+            .join("<br>");
 
         if (!linhasNormais) {
           return "";
         }
 
-
         return `
-
           <div class="historia-paragrafo">
-
             ${linhasNormais}
-
           </div>
-
         `;
-
       }
     )
-    .filter(
-      Boolean
-    )
+    .filter(Boolean)
     .join("");
 }
 
@@ -3362,7 +2933,6 @@ function classeTipo(
   tipo = "",
   categoria = ""
 ) {
-
   const texto =
     `${tipo} ${categoria}`
       .toLowerCase()
@@ -3372,13 +2942,11 @@ function classeTipo(
         ""
       );
 
-
   if (
     texto.includes("apresentacao")
   ) {
     return "historia-apresentacao";
   }
-
 
   if (
     texto.includes("historia")
@@ -3386,13 +2954,11 @@ function classeTipo(
     return "historia-historia";
   }
 
-
   if (
     texto.includes("transformacao")
   ) {
     return "historia-transformacoes";
   }
-
 
   if (
     texto.includes("som")
@@ -3400,20 +2966,17 @@ function classeTipo(
     return "historia-sons";
   }
 
-
   if (
     texto.includes("gramatica")
   ) {
     return "historia-gramatica";
   }
 
-
   if (
     texto.includes("continuidade")
   ) {
     return "historia-continuidade";
   }
-
 
   return "";
 }
@@ -3426,49 +2989,43 @@ function classeTipo(
 function mostrarHistorias(
   lista = HISTORIAS_LINGUA
 ) {
-
   const container =
     document.getElementById(
       "lista-historias"
     );
 
-
   if (!container) {
-
     console.warn(
       "Elemento #lista-historias não encontrado."
     );
-
     return;
   }
 
-
-  if (!lista.length) {
-
+  if (
+    !Array.isArray(lista) ||
+    !lista.length
+  ) {
     container.innerHTML = `
       <div class="historia-vazia">
         Nenhum conteúdo encontrado.
       </div>
     `;
-
     return;
   }
-
 
   container.innerHTML =
     lista
       .map(
         item => `
-
           <article
             class="card-historia ${classeTipo(item.tipo, item.categoria)}"
             role="button"
             tabindex="0"
             aria-label="Abrir: ${escaparHTML(item.titulo)}"
-            onclick="abrirHistoria(${item.id})"
+            onclick="abrirHistoria(${Number(item.id)})"
             onkeydown="if(event.key === 'Enter' || event.key === ' ') {
               event.preventDefault();
-              abrirHistoria(${item.id});
+              abrirHistoria(${Number(item.id)});
             }">
 
             <span class="historia-categoria">
@@ -3484,80 +3041,112 @@ function mostrarHistorias(
             </p>
 
             <div class="historia-meta">
+              ${
+                item.periodo
+                  ? `<span>${escaparHTML(item.periodo)}</span>`
+                  : ""
+              }
 
-              <span>
-                ${escaparHTML(item.periodo)}
-              </span>
-
-              <span>
-                ${escaparHTML(item.tipo)}
-              </span>
-
+              ${
+                item.tipo
+                  ? `<span>${escaparHTML(item.tipo)}</span>`
+                  : ""
+              }
             </div>
 
             <button
               class="botao-historia"
               type="button"
-              onclick="event.stopPropagation(); abrirHistoria(${item.id})">
-
+              onclick="event.stopPropagation(); abrirHistoria(${Number(item.id)})">
               Ler conteúdo
-
             </button>
 
           </article>
-
         `
       )
       .join("");
 }
 
 
-  /* =======================================================
-     4. ESCAPA O TEXTO
-     ======================================================= */
-
 /* =========================================================
    ABRIR HISTÓRIA
    ========================================================= */
 
 function abrirHistoria(id) {
-  const item = HISTORIAS_LINGUA.find(
-    historia => historia.id === id
-  );
+  const numeroId =
+    Number(id);
+
+  const item =
+    HISTORIAS_LINGUA.find(
+      historia =>
+        Number(historia.id) ===
+        numeroId
+    );
 
   if (!item) {
-    console.warn("História não encontrada:", id);
+    console.warn(
+      "História não encontrada:",
+      id
+    );
     return;
   }
 
-  const modal = document.getElementById("modal-historia");
-  const conteudo = document.getElementById("conteudo-historia");
+  const modal =
+    document.getElementById(
+      "modal-historia"
+    );
 
-  if (!modal || !conteudo) {
-    console.warn("Elementos do modal não encontrados.");
+  const conteudo =
+    document.getElementById(
+      "conteudo-historia"
+    );
+
+  if (
+    !modal ||
+    !conteudo
+  ) {
+    console.warn(
+      "Elementos do modal não encontrados."
+    );
     return;
   }
+
+
+  /* ---------------------------------------------------------
+     LINKS
+     --------------------------------------------------------- */
 
   const linksHTML =
-    item.links && item.links.length
+    Array.isArray(item.links) &&
+    item.links.length
       ? `
         <div class="historia-fonte">
           <strong>Links e referências:</strong>
+
           <div style="margin-top: 10px;">
-            ${item.links.map(link => `
-              <p>
-                <a
-                  href="${escaparHTML(link.url)}"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  ${escaparHTML(link.titulo)}
-                </a>
-              </p>
-            `).join("")}
+            ${item.links
+              .map(
+                link => `
+                  <p>
+                    <a
+                      href="${escaparHTML(link.url)}"
+                      target="_blank"
+                      rel="noopener noreferrer">
+                      ${escaparHTML(link.titulo)}
+                    </a>
+                  </p>
+                `
+              )
+              .join("")}
           </div>
         </div>
       `
       : "";
+
+
+  /* ---------------------------------------------------------
+     CONTEÚDO DO MODAL
+     --------------------------------------------------------- */
 
   conteudo.innerHTML = `
     <span class="historia-categoria">
@@ -3569,12 +3158,17 @@ function abrirHistoria(id) {
     </h2>
 
     <div class="historia-meta">
-      <span>
-        ${escaparHTML(item.periodo)}
-      </span>
-      <span>
-        ${escaparHTML(item.tipo)}
-      </span>
+      ${
+        item.periodo
+          ? `<span>${escaparHTML(item.periodo)}</span>`
+          : ""
+      }
+
+      ${
+        item.tipo
+          ? `<span>${escaparHTML(item.tipo)}</span>`
+          : ""
+      }
     </div>
 
     <p class="historia-resumo">
@@ -3583,44 +3177,115 @@ function abrirHistoria(id) {
     </p>
 
     <div class="texto-historia">
+
       ${formatarConteudo(item.conteudo)}
-      
-      ${item.id === 2 ? `
-        <section class="mapa-nhandewa" style="text-align: center; margin-top: 20px;">
-          <h3>
-            Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá
-          </h3>
-          <p>
-            Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
-          </p>
-          <div style="margin: 20px 0;">
-            <img src="assets/img/Iguatemi (Área de origem).jpg" 
-                 alt="Mapa histórico da trajetória Guarani Nhandewa" 
-                 style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #b7a58d; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
-          </div>
-          <div class="mapa-observacao" style="margin-top: 15px; font-size: 0.9rem; color: #62401f;">
-            <strong>Observação histórica:</strong>
-            <p style="margin-top: 5px;">
-              Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas, este trata do deslocamento de um pequeno grupo de famílias nhandewa.
-            </p>
-          </div>
-        </section>
-      ` : ""}
+
+      ${
+        numeroId === 2
+          ? `
+            <section
+              class="mapa-nhandewa"
+              style="text-align: center; margin-top: 20px;">
+
+              <h3>
+                Mapa histórico da trajetória Guarani Nhandewa da Tekoa Karugwá
+              </h3>
+
+              <p>
+                Representação visual de deslocamentos históricos e regiões associadas aos grupos Guarani Nhandewa.
+              </p>
+
+              <div style="margin: 20px 0;">
+                <img
+                  src="assets/img/Iguatemi (Área de origem).jpg"
+                  alt="Mapa histórico da trajetória Guarani Nhandewa"
+                  style="max-width: 100%; height: auto; border-radius: 12px; border: 2px solid #b7a58d; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+              </div>
+
+              <div
+                class="mapa-observacao"
+                style="margin-top: 15px; font-size: 0.9rem; color: #62401f;">
+
+                <strong>Observação histórica:</strong>
+
+                <p style="margin-top: 5px;">
+                  Os deslocamentos Guarani ocorreram em diferentes períodos e envolveram grupos e trajetórias distintas, este trata do deslocamento de um pequeno grupo de famílias nhandewa.
+                </p>
+
+              </div>
+
+            </section>
+          `
+          : ""
+      }
+
     </div>
 
     <div class="historia-fonte">
+
       <strong>Fonte:</strong>
+
       <p>
-        ${escaparHTML(item.fonte || "Fonte em estudo.")}
+        ${escaparHTML(
+          item.fonte ||
+          "Fonte em estudo."
+        )}
       </p>
+
     </div>
 
     ${linksHTML}
   `;
 
+
+  /* ---------------------------------------------------------
+     ABRE MODAL
+     --------------------------------------------------------- */
+
   modal.classList.add("ativo");
-  modal.setAttribute("aria-hidden", "false");
-  document.body.classList.add("modal-aberto");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  document.body.classList.add(
+    "modal-aberto"
+  );
+}
+
+
+/* =========================================================
+   FECHAR HISTÓRIA
+   ========================================================= */
+
+function fecharHistoria(event) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
+  const modal =
+    document.getElementById(
+      "modal-historia"
+    );
+
+  if (!modal) {
+    return;
+  }
+
+  modal.classList.remove(
+    "ativo"
+  );
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+  document.body.classList.remove(
+    "modal-aberto"
+  );
 }
 
 
@@ -3628,34 +3293,52 @@ function abrirHistoria(id) {
    FILTRO DE PESQUISA
    ========================================================= */
 
-function filtrarHistorias(termo = "") {
-  const busca = String(termo)
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+function filtrarHistorias(
+  termo = ""
+) {
+  const busca =
+    normalizarTexto(
+      termo
+    ).trim();
 
   if (!busca) {
-    mostrarHistorias(HISTORIAS_LINGUA);
+    mostrarHistorias(
+      HISTORIAS_LINGUA
+    );
     return;
   }
 
-  const resultado = HISTORIAS_LINGUA.filter(item => {
-    const texto = `
-      ${item.titulo}
-      ${item.resumo}
-      ${item.conteudo}
-      ${item.categoria}
-      ${item.periodo}
-      ${item.tipo}
-    `
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+  const resultado =
+    HISTORIAS_LINGUA.filter(
+      item => {
 
-    return texto.includes(busca);
-  });
+        const texto = [
+          item.id,
+          item.titulo,
+          item.resumo,
+          item.conteudo,
+          item.categoria,
+          item.periodo,
+          item.tipo,
+          item.fonte
+        ]
+          .join(" ")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(
+            /[\u0300-\u036f]/g,
+            ""
+          );
 
-  mostrarHistorias(resultado);
+        return texto.includes(
+          busca
+        );
+      }
+    );
+
+  mostrarHistorias(
+    resultado
+  );
 }
 
 
@@ -3663,17 +3346,37 @@ function filtrarHistorias(termo = "") {
    FILTRO POR CATEGORIA
    ========================================================= */
 
-function filtrarCategoriaHistoria(categoria) {
-  if (!categoria || categoria.toLowerCase() === "todas") {
-    mostrarHistorias(HISTORIAS_LINGUA);
+function filtrarCategoriaHistoria(
+  categoria
+) {
+  const categoriaNormalizada =
+    normalizarTexto(
+      categoria
+    ).trim();
+
+  if (
+    !categoriaNormalizada ||
+    categoriaNormalizada ===
+      "todas"
+  ) {
+    mostrarHistorias(
+      HISTORIAS_LINGUA
+    );
     return;
   }
 
-  const resultado = HISTORIAS_LINGUA.filter(
-    item => item.categoria === categoria
-  );
+  const resultado =
+    HISTORIAS_LINGUA.filter(
+      item =>
+        normalizarTexto(
+          item.categoria
+        ).trim() ===
+        categoriaNormalizada
+    );
 
-  mostrarHistorias(resultado);
+  mostrarHistorias(
+    resultado
+  );
 }
 
 
@@ -3681,35 +3384,94 @@ function filtrarCategoriaHistoria(categoria) {
    INICIALIZAÇÃO
    ========================================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
-  mostrarHistorias();
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
 
-  const campoPesquisa = document.getElementById("pesquisa-historias");
-  if (campoPesquisa) {
-    campoPesquisa.addEventListener("input", event => {
-      filtrarHistorias(event.target.value);
-    });
-  }
+    /* -----------------------------------------------------
+       MOSTRA OS 12 CARDS
+       ----------------------------------------------------- */
 
-  const botaoFechar = document.getElementById("fechar-modal-historia");
-  if (botaoFechar) {
-    botaoFechar.addEventListener("click", event => {
-      fecharHistoria(event);
-    });
-  }
+    mostrarHistorias();
 
-  const modal = document.getElementById("modal-historia");
-  if (modal) {
-    modal.addEventListener("click", event => {
-      if (event.target === modal) {
-        fecharHistoria(event);
-      }
-    });
-  }
 
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-      fecharHistoria();
+    /* -----------------------------------------------------
+       PESQUISA
+       ----------------------------------------------------- */
+
+    const campoPesquisa =
+      document.getElementById(
+        "pesquisa-historias"
+      );
+
+    if (campoPesquisa) {
+      campoPesquisa.addEventListener(
+        "input",
+        event => {
+          filtrarHistorias(
+            event.target.value
+          );
+        }
+      );
     }
-  });
-});
+
+
+    /* -----------------------------------------------------
+       BOTÃO FECHAR
+       ----------------------------------------------------- */
+
+    const botaoFechar =
+      document.getElementById(
+        "fechar-modal-historia"
+      );
+
+    if (botaoFechar) {
+      botaoFechar.addEventListener(
+        "click",
+        event => {
+          fecharHistoria(event);
+        }
+      );
+    }
+
+
+    /* -----------------------------------------------------
+       FECHAR CLICANDO FORA DO MODAL
+       ----------------------------------------------------- */
+
+    const modal =
+      document.getElementById(
+        "modal-historia"
+      );
+
+    if (modal) {
+      modal.addEventListener(
+        "click",
+        event => {
+          if (
+            event.target === modal
+          ) {
+            fecharHistoria(event);
+          }
+        }
+      );
+    }
+
+
+    /* -----------------------------------------------------
+       ESC
+       ----------------------------------------------------- */
+
+    document.addEventListener(
+      "keydown",
+      event => {
+        if (
+          event.key === "Escape"
+        ) {
+          fecharHistoria();
+        }
+      }
+    );
+
+  }
+);
