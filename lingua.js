@@ -370,9 +370,9 @@ Esse exemplo é apresentado em estudos linguísticos como uma comparação entre
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EXEMPLO 2 — FORMAS RELACIONADAS À AÇÃO DE IR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tupi(nambá) | Guarani geral | Nhandewa Guarani | Português
+ asab | aha | aa | eu vou
 
-asab + aha = aa
-"Tupi / Guarani" → "eu vou"
 
 A comparação mostra alterações na realização de determinados sons. É necessário considerar o registro e a análise linguística de cada forma.
 
