@@ -863,6 +863,8 @@ mas de forma viva: não é só o passado que se reduz,
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📌 Palavras que perderam sílaba final átona:
+oga + óy + óy = kwaray
+"Guarani Antigo / Apapocuva / Nhandewa /  " → "sol"
 
 • oga = óy ("casa")
 • coang = cóy ("roça")
