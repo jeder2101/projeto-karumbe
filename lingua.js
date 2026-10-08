@@ -863,7 +863,7 @@ mas de forma viva: não é só o passado que se reduz,
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 📌 Palavras que perderam sílaba final átona:
-oga / óy / óy = casa
+oga + óy + óy = casa
 "Guarani Antigo / Apapocuva / Nhandewa"  " → "casa"
 
 
