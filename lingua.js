@@ -2979,6 +2979,39 @@ function classeTipo(
   }
 
   return "";
+}function classeTipo(tipo = "", categoria = "") {
+
+  const categoriaNormalizada = String(categoria ?? "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim();
+
+  if (categoriaNormalizada === "apresentacao") {
+    return "historia-apresentacao";
+  }
+
+  if (categoriaNormalizada === "historia") {
+    return "historia-historia";
+  }
+
+  if (categoriaNormalizada === "transformacoes") {
+    return "historia-transformacoes";
+  }
+
+  if (categoriaNormalizada === "sons") {
+    return "historia-sons";
+  }
+
+  if (categoriaNormalizada === "gramatica") {
+    return "historia-gramatica";
+  }
+
+  if (categoriaNormalizada === "continuidade") {
+    return "historia-continuidade";
+  }
+
+  return "";
 }
 
 
