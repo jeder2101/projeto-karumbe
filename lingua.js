@@ -402,7 +402,7 @@ A nasalidade é uma característica central e distintiva na fonologia do Nhandew
 Estudos descrevem consoantes pré-nasalizadas, como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
 Em determinados ambientes, consoantes pré-nasalizadas podem apresentar realizações inteiramente nasais.
 
-Exemplos descritos na pesquisa incluem relações entre formas como mb → m e nd → n, dependendo do ambiente nasal ou oral em que se encontram.
+Exemplos descritos na pesquisa incluem relações entre formas como "mb → m e nd → n", dependendo do ambiente nasal ou oral em que se encontram.
 
 Esses processos devem ser analisados considerando a palavra completa, os sons vizinhos e o contexto de uso — não se tratam de regras mecânicas que se aplicam igualmente a todos os casos.
 
