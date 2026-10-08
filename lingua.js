@@ -3090,7 +3090,7 @@ function formatarBlocosExemplo(
   return resultado.join("\n");
 }
 
-
+```javascript
 /* =========================================================
    FORMATAÇÃO FINAL DO CONTEÚDO
    ========================================================= */
@@ -3190,16 +3190,13 @@ function formatarConteudo(texto) {
 
   const blocos =
     resultado
-
       .split(
         /\n{2,}/
       )
-
       .map(
         bloco =>
           bloco.trim()
       )
-
       .filter(
         bloco =>
           bloco !== ""
@@ -3225,9 +3222,7 @@ function formatarConteudo(texto) {
            BLOCO COM TABELA
            --------------------------------------------------- */
 
-        if (
-          marcador
-        ) {
+        if (marcador) {
 
           const indice =
             Number(
@@ -3237,17 +3232,15 @@ function formatarConteudo(texto) {
 
           const antes =
             bloco
-
               .replace(
                 /TABELAMARCADOR\d+FIM/g,
                 ""
               )
-
               .trim();
 
 
           /* -----------------------------------------------
-             somente a tabela
+             SOMENTE A TABELA
              ----------------------------------------------- */
 
           if (!antes) {
@@ -3260,7 +3253,7 @@ function formatarConteudo(texto) {
 
 
           /* -----------------------------------------------
-             texto + tabela
+             TEXTO + TABELA
              ----------------------------------------------- */
 
           return `
@@ -3284,9 +3277,7 @@ function formatarConteudo(texto) {
 
         const linhasNormais =
           bloco
-
             .split("\n")
-
             .map(
               linha => {
 
@@ -3299,12 +3290,8 @@ function formatarConteudo(texto) {
                     );
 
 
-                if (
-                  !linha
-                ) {
-
+                if (!linha) {
                   return "";
-
                 }
 
 
@@ -3335,22 +3322,16 @@ function formatarConteudo(texto) {
 
               }
             )
-
             .filter(
               Boolean
             )
-
             .join(
               "<br>"
             );
 
 
-        if (
-          !linhasNormais
-        ) {
-
+        if (!linhasNormais) {
           return "";
-
         }
 
 
@@ -3366,12 +3347,75 @@ function formatarConteudo(texto) {
 
       }
     )
-
     .filter(
       Boolean
     )
-
     .join("");
+}
+
+
+/* =========================================================
+   CLASSE VISUAL DA HISTÓRIA
+   ========================================================= */
+
+function classeTipo(
+  tipo = "",
+  categoria = ""
+) {
+
+  const texto =
+    `${tipo} ${categoria}`
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(
+        /[\u0300-\u036f]/g,
+        ""
+      );
+
+
+  if (
+    texto.includes("apresentacao")
+  ) {
+    return "historia-apresentacao";
+  }
+
+
+  if (
+    texto.includes("historia")
+  ) {
+    return "historia-historia";
+  }
+
+
+  if (
+    texto.includes("transformacao")
+  ) {
+    return "historia-transformacoes";
+  }
+
+
+  if (
+    texto.includes("som")
+  ) {
+    return "historia-sons";
+  }
+
+
+  if (
+    texto.includes("gramatica")
+  ) {
+    return "historia-gramatica";
+  }
+
+
+  if (
+    texto.includes("continuidade")
+  ) {
+    return "historia-continuidade";
+  }
+
+
+  return "";
 }
 
 
@@ -3379,63 +3423,98 @@ function formatarConteudo(texto) {
    MOSTRAR HISTÓRIAS
    ========================================================= */
 
-function mostrarHistorias(lista = HISTORIAS_LINGUA) {
-  const container = document.getElementById("lista-historias");
+function mostrarHistorias(
+  lista = HISTORIAS_LINGUA
+) {
+
+  const container =
+    document.getElementById(
+      "lista-historias"
+    );
+
 
   if (!container) {
-    console.warn("Elemento #lista-historias não encontrado.");
+
+    console.warn(
+      "Elemento #lista-historias não encontrado."
+    );
+
     return;
   }
 
+
   if (!lista.length) {
+
     container.innerHTML = `
       <div class="historia-vazia">
         Nenhum conteúdo encontrado.
       </div>
     `;
+
     return;
   }
 
-container.innerHTML = lista.map(item => `
-    <article
-      class="card-historia ${classeTipo(item.tipo, item.categoria)}"
-      role="button"
-      tabindex="0"
-      aria-label="Abrir: ${escaparHTML(item.titulo)}"
-      onclick="abrirHistoria(${item.id})"
-      onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); abrirHistoria(${item.id}); }">
 
-      <span class="historia-categoria">
-        ${escaparHTML(item.categoria)}
-      </span>
+  container.innerHTML =
+    lista
+      .map(
+        item => `
 
-      <h3>
-        ${escaparHTML(item.titulo)}
-      </h3>
+          <article
+            class="card-historia ${classeTipo(item.tipo, item.categoria)}"
+            role="button"
+            tabindex="0"
+            aria-label="Abrir: ${escaparHTML(item.titulo)}"
+            onclick="abrirHistoria(${item.id})"
+            onkeydown="if(event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              abrirHistoria(${item.id});
+            }">
 
-      <p class="historia-resumo">
-        ${escaparHTML(item.resumo)}
-      </p>
+            <span class="historia-categoria">
+              ${escaparHTML(item.categoria)}
+            </span>
 
-      <div class="historia-meta">
-        <span>
-          ${escaparHTML(item.periodo)}
-        </span>
-        <span>
-          ${escaparHTML(item.tipo)}
-        </span>
-      </div>
+            <h3>
+              ${escaparHTML(item.titulo)}
+            </h3>
 
-      <button
-        class="botao-historia"
-        type="button"
-        onclick="event.stopPropagation(); abrirHistoria(${item.id})">
-        Ler conteúdo
-      </button>
-    </article>
-  `).join("");
+            <p class="historia-resumo">
+              ${escaparHTML(item.resumo)}
+            </p>
+
+            <div class="historia-meta">
+
+              <span>
+                ${escaparHTML(item.periodo)}
+              </span>
+
+              <span>
+                ${escaparHTML(item.tipo)}
+              </span>
+
+            </div>
+
+            <button
+              class="botao-historia"
+              type="button"
+              onclick="event.stopPropagation(); abrirHistoria(${item.id})">
+
+              Ler conteúdo
+
+            </button>
+
+          </article>
+
+        `
+      )
+      .join("");
 }
 
+
+  /* =======================================================
+     4. ESCAPA O TEXTO
+     ======================================================= */
 
 /* =========================================================
    ABRIR HISTÓRIA
