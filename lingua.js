@@ -363,8 +363,7 @@ EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
 Tupi(nambá) | Guarani geral | Nhandewa Guarani | Português
 kwarasy + kwarahy | kwarahy | kwaray | sol
 
-kwarasy + kwarahy = kwaray
-"Tupi / Guarani" → "sol"
+
 
 Esse exemplo é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
 
@@ -2353,7 +2352,6 @@ function linhaPareceCabecalhoEstrutural(
   return false;
 }
 
-
 /* =========================================================
    CABEÇALHO COM "|"
    ========================================================= */
@@ -2368,7 +2366,8 @@ function linhaPareceCabecalhoTabela(
     );
 
   /*
-   * Não existe estrutura de cabeçalho.
+   * Precisa existir um cabeçalho
+   * com pelo menos 2 colunas.
    */
   if (
     !cabecalho ||
@@ -2378,8 +2377,8 @@ function linhaPareceCabecalhoTabela(
   }
 
   /*
-   * Verifica se existe pelo menos uma linha
-   * estruturada logo abaixo.
+   * Procura a primeira linha de dados
+   * abaixo do cabeçalho.
    */
   for (
     let i = indice + 1;
@@ -2402,9 +2401,8 @@ function linhaPareceCabecalhoTabela(
     }
 
     /*
-     * A linha seguinte precisa possuir
-     * uma estrutura que possa virar dados
-     * da tabela.
+     * PRIMEIRO:
+     * verifica linhas estruturais tradicionais.
      */
     const estrutura =
       analisarLinhaEstrutural(
@@ -2418,10 +2416,25 @@ function linhaPareceCabecalhoTabela(
     }
 
     /*
-     * Encontrou conteúdo, mas não é uma
-     * linha estrutural. Portanto, a linha
-     * anterior não deve ser tratada como
-     * cabeçalho de tabela.
+     * SEGUNDO:
+     * verifica linhas separadas por "|".
+     */
+    const colunasLinha =
+      separarColunasCabecalho(
+        candidata
+      );
+
+    if (
+      colunasLinha &&
+      colunasLinha.length ===
+        cabecalho.length
+    ) {
+      return true;
+    }
+
+    /*
+     * Encontrou conteúdo que não pertence
+     * à tabela.
      */
     return false;
   }
