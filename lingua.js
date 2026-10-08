@@ -5,7 +5,6 @@
 
 const HISTORIAS_LINGUA = [
 
-  
 {
     id: 1,
     categoria: "Apresentação",
@@ -14,7 +13,7 @@ const HISTORIAS_LINGUA = [
         "A língua Nhandewa-Guarani é memória, identidade, conhecimento e continuidade. Sua história se manifesta na oralidade, nos registros escritos e nas pesquisas, mantendo-se viva entre gerações.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   MAIS DO QUE PALAVRAS
+1. MAIS DO QUE PALAVRAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua Nhandewa-Guarani não é apenas um conjunto de sons
@@ -28,7 +27,7 @@ pertencer, compartilhar, lembrar e recriar. Por isso,
 dizemos: a língua é memória, é identidade, é relação.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   UMA LÍNGUA EM MOVIMENTO
+2. UMA LÍNGUA EM MOVIMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua é viva. Ela é transmitida entre gerações e,
@@ -42,7 +41,7 @@ a continuidade — o fio que une as gerações, mesmo
 quando as formas se transformam.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   CONHECIMENTO E PESQUISA
+3. CONHECIMENTO E PESQUISA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Os registros históricos e os estudos linguísticos ajudam
@@ -52,8 +51,10 @@ em que foram produzidos.
 
 O trabalho de Consuelo de Paiva Godinho Costa é uma
 referência central:
+
   • "Nhandewa Aywu: fonologia do Nhandewa-Guarani" (2003/2010)
     — primeira sistematização completa da fonologia do dialeto
+
   • Artigo na revista LIAMES (2012)
     — análise dos sons, da nasalidade e das estruturas próprias
     do Nhandewa falado em comunidades de São Paulo e do Paraná
@@ -63,11 +64,12 @@ seu ritmo e sua harmonia — em especial a nasalidade,
 característica marcante que distingue o Nhandewa.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   O PROJETO KARUMBÉ
+4. O PROJETO KARUMBÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Este espaço — o Projeto Karumbé — reúne materiais,
 referências, mapas e reflexões com um objetivo:
+
   ✅ apoiar a pesquisa
   ✅ fortalecer o ensino
   ✅ contribuir para a continuidade da língua
@@ -77,21 +79,21 @@ Não se trata apenas de guardar o passado, mas de
 manter a língua presente, acessível e viva.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   QUEM FAZ A LÍNGUA VIVA
+5. QUEM FAZ A LÍNGUA VIVA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua não está nos livros — está nas pessoas:
 
-     Os mais velhos que guardam as histórias,
+  👴 Os mais velhos que guardam as histórias,
      as palavras antigas e os saberes profundos
 
-     Os professores que levam a língua às escolas
+  👩‍🏫 Os professores que levam a língua às escolas
      e às aldeias com dedicação
 
-     As crianças que aprendem, falam e recriam
+  👧 As crianças que aprendem, falam e recriam
      a língua todos os dias
 
-     As famílias que transmitem o Nhandewa
+  👨‍👩‍👧‍👦 As famílias que transmitem o Nhandewa
      no dia a dia, em casa, nas reuniões,
      nas caminhadas e nas festas
 
@@ -137,7 +139,7 @@ caminhou antes e de quem caminhará depois.
         "A língua Guarani Nhandewa possui uma história relacionada aos povos Tupi-Guarani, aos territórios, às migrações, aos contatos entre comunidades e à transmissão de conhecimentos entre gerações.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   RAÍZES E SIGNIFICAÇÃO
+1. RAÍZES E SIGNIFICAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua Guarani Nhandewa faz parte da história linguística
@@ -164,7 +166,7 @@ Por isso, para compreender o Nhandewa-Guarani contemporâneo,
 as transformações ocorridas ao longo do tempo.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   REGISTROS HISTÓRICOS DA LÍNGUA
+2. REGISTROS HISTÓRICOS DA LÍNGUA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Os registros históricos e linguísticos permitem estudar
@@ -173,6 +175,7 @@ as formas utilizadas pelas comunidades atualmente.
 
 Entre os registros mais importantes está a obra de
 Antônio Ruiz de Montoya:
+
   • "Tesoro de la lengua guarani" — 1639
   • "Arte, y bocabulario de la lengua guarani" — 1640
 
@@ -190,7 +193,7 @@ em 1910, convivendo diretamente com os grupos que
 protagonizavam as migrações.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   MIGRAÇÕES E FORMAÇÃO DAS COMUNIDADES
+3. MIGRAÇÕES E FORMAÇÃO DAS COMUNIDADES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Nimuendajú registrou trajetórias de grupos como os
@@ -202,6 +205,7 @@ ao longo dos séculos XIX e XX.
 Delas resultaram comunidades que mantiveram contato
 entre si por mais de um século e meio, formando uma
 unidade cultural e linguística própria:
+
   • Laranjinha e Pinhalzinho — Norte do Paraná
   • Nimuendaju (Araribá) — Bauru / SP
   • Bananal, Itariri e Piaçaguera — Litoral de São Paulo
@@ -218,7 +222,7 @@ não se devendo atribuir traços de forma automática
 a outros povos ou períodos.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   OGUATÁ — O CAMINHAR E A MEMÓRIA
+4. OGUATÁ — O CAMINHAR E A MEMÓRIA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A pesquisa de Juracilda Veiga destaca o "oguatá" —
@@ -234,7 +238,7 @@ norte do Paraná, chegando até as famílias que hoje
 fortalecem a língua nas aldeias de Tekoa Karugwá.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   TRAJETÓRIA E PROCESSO
+5. TRAJETÓRIA E PROCESSO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Podemos representar esse processo:
@@ -258,9 +262,11 @@ Podemos representar esse processo:
       NHANDEWA-GUARANI CONTEMPORÂNEO
 
 Os deslocamentos assumiram formas diferentes em cada período:
+
   • Séc. XVI–XVII: fugas frente a colonizadores e bandeirantes,
     atração para missões jesuíticas, expedições de guerra e
     busca de metais preciosos
+
   • Séc. XIX–XX: migrações em busca da Terra sem Mal
 
 Nem tudo que se registra no passado se mantém igual,
@@ -268,7 +274,7 @@ nem tudo que se transforma perde a raiz. A língua viva
 é memória em movimento.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   FORMAS DE CONHECIMENTO
+6. FORMAS DE CONHECIMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Neste projeto, distinguimos:
@@ -336,7 +342,6 @@ a história das pessoas que a falam.
     ]
 },
 
-  
 {
     id: 3,
     categoria: "Transformações",
@@ -345,195 +350,225 @@ a história das pessoas que a falam.
     resumo:
         "Os sons de uma língua podem apresentar transformações ao longo da história. No Nhandewa-Guarani, estudos registram correspondências entre formas antigas e atuais, além de processos relacionados à nasalidade.",
     conteudo: `
-As línguas podem apresentar mudanças nos sons ao longo de sua história. Essas transformações ocorrem na pronúncia, na estrutura das palavras e na maneira como os sons são realizados em diferentes contextos, permitindo observar relações entre registros históricos e formas contemporâneas.
+As línguas podem apresentar mudanças nos sons ao longo de sua história.
+Essas transformações podem ocorrer na pronúncia, na estrutura das palavras e na maneira como determinados sons são realizados em diferentes contextos.
+
+O estudo da fonologia do Nhandewa-Guarani permite observar relações entre registros históricos e formas encontradas em comunidades contemporâneas.
+
+Consuelo de Paiva Godinho Costa apresenta exemplos de correspondências históricas entre formas do Tupi, do Guarani e do Nhandewa-Guarani.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLOS DE CORRESPONDÊNCIAS SONORAS
+EXEMPLO 1 — FORMAS RELACIONADAS AO SOL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 kwarasy + kwarahy = kwaray
 "Tupi / Guarani" → "sol"
+
+Esse exemplo é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 2 — FORMAS RELACIONADAS À AÇÃO DE IR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 asab + aha = aa
 "Tupi / Guarani" → "eu vou"
 
+A comparação mostra alterações na realização de determinados sons. É necessário considerar o registro e a análise linguística de cada forma.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 3 — FORMAS RELACIONADAS À FOME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ambyasy + ambyahy = ambyay
 "Tupi / Guarani" → "fome"
+
+Esse exemplo permite observar correspondências entre sons presentes em registros diferentes.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLO 4 — FORMAS RELACIONADAS AO TEMPO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 kwese + kwehe = kweé
 "Tupi / Guarani" → "ontem"
 
-Estes exemplos, apresentados em estudos linguísticos por Consuelo de Paiva Godinho Costa, demonstram as comparações entre formas registradas em diferentes variedades e períodos, evidenciando as alterações na realização de determinados sons.
+A comparação entre essas formas ajuda a estudar transformações sonoras ao longo da história.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 A NASALIDADE NA LÍNGUA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A nasalidade é uma característica central e distintiva na fonologia do Nhandewa-Guarani. Estudos descrevem consoantes pré-nasalizadas (como mb, nd, ŋg) e nasais (como m, n, ɲ), que podem apresentar realizações inteiramente nasais dependendo do ambiente (ex.: mb → m e nd → n).
+A nasalidade é uma característica central e distintiva na fonologia do Nhandewa-Guarani.
 
-Esses processos devem ser analisados considerando a palavra completa, os sons vizinhos e o contexto de uso — não se tratando de regras mecânicas aplicáveis a todos os casos.
+Estudos descrevem consoantes pré-nasalizadas, como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
+Em determinados ambientes, consoantes pré-nasalizadas podem apresentar realizações inteiramente nasais.
 
-A mudança sonora não significa perda da língua, mas sim parte de sua trajetória histórica e da diversidade que caracteriza os povos ao longo do tempo.
+Exemplos descritos na pesquisa incluem relações entre formas como mb → m e nd → n, dependendo do ambiente nasal ou oral em que se encontram.
+
+Esses processos devem ser analisados considerando a palavra completa, os sons vizinhos e o contexto de uso — não se tratam de regras mecânicas que se aplicam igualmente a todos os casos.
+
+A mudança sonora não significa necessariamente perda da língua. Pelo contrário: faz parte de sua trajetória histórica e da diversidade que caracteriza os povos ao longo do tempo.
+
+O estudo das transformações fonológicas contribui para compreender tanto os registros antigos quanto as formas contemporâneas, reforçando a continuidade do Nhandewa-Guarani.
 
 ⚠️ Os exemplos apresentados são referências para estudo e comparação. Não devem ser utilizados como regras absolutas para todas as palavras ou para todos os falantes Nhandewa.
 `,
     tipo: "documentado",
 
     fonte:
-        "Consuelo de Paiva Godinho Costa, Nhandewa Aywu: fonologia do Nhandewa-Guarani; Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES; estudos sobre nasalidade consonantal; materiais de gramática pedagógica Nhandewa-Guarani produzidos com participação de professores e falantes Nhandewa.",
+        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES; e Seara, Quadros e Martins, estudo acústico da nasalidade consonantal no Nhandewa-Guarani.",
 
     links: [
         {
-            titulo: "Nhandewa Aywu: fonologia do Nhandewa-Guarani — Museu Nacional dos Povos Indígenas/FUNAI",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/nhandewa-aywu-fonologia-do-nhandewa-guarani"
-        },
-        {
-            titulo: "Nhandewa Aywu / registro no Repositório da UNICAMP",
-            url: "https://repositorio.unicamp.br/acervo/detalhe/402302"
-        },
-        {
-            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense — LIAMES/UNICAMP",
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
             url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
         },
         {
-            titulo: "Tese sobre fonologia e nasalidade do Nhandewa-Guarani — Biblioteca FUNAI",
-            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
-        },
-        {
-            titulo: "Consonantal nasality in the variety of Nhandewa-Guarani — Journal of Experimental Phonetics",
+            titulo: "Consonantal nasality in the variety of Nhandewa-Guarani – Journal of Experimental Phonetics",
             url: "https://revistes.ub.edu/index.php/experimentalphonetics/article/view/43969"
         },
         {
-            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
-            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
-        },
-        {
-            titulo: "Lições de gramática de Nhandewa/Tupi-Guarani — Caderno de atividades multidisciplinares",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
+            titulo: "Tese sobre fonologia e nasalidade do Nhandewa-Guarani – Biblioteca FUNAI",
+            url: "https://biblioteca.funai.gov.br/media/pdf/TESES/MFN-30584.pdf"
         }
     ]
 },
+
 {
     id: 4,
     categoria: "Transformações",
     periodo: "Gramática histórica",
-    titulo: "Fonologia e Transformações: De pe, be e bo para py e wy",
-    resumo: "A análise fonológica detalhada da variedade Nhandewa-Guarani abrange o inventário vocálico, oposições fonológicas e a evolução histórica das posposições e estruturas gramaticais.",
+    titulo: "De pe, be e bo para py e wy",
+    resumo:
+        "A comparação entre formas antigas e formas encontradas no Nhandewa-Guarani permite estudar transformações nas posposições e nas estruturas gramaticais, com destaque para a passagem de pe/be/bo para py e wy.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-INVENTÁRIO VOCÁLICO E OPOSIÇÕES FONOLÓGICAS
+1. RELAÇÕES HISTÓRICAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Estudos de referência sobre a fonologia da variedade Nhandewa-Guarani destacam o inventário de vogais orais e nasais e o contraste oclusivo/nasal:
+As línguas da família Tupi-Guarani apresentam relações
+históricas entre palavras, sons e estruturas gramaticais.
+Em registros antigos e em outras variedades do Guarani,
+encontram-se formas como pe, be e bo.
 
-EXEMPLO 1
-Inventário Vocálico - Vogais Orais e Nasais
-
-i / ĩ = oral / nasal fechada alta
-e / ẽ = oral / nasal média alta
-a / ã = oral / nasal baixa central
-o / õ = oral / nasal média alta posterior
-u / ũ = oral / nasal alta posterior
-y / ỹ = oral / nasal alta central não arredondada
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+No Nhandewa-Guarani, correspondentes a essas formas,
+aparecem py e wy, que não devem ser entendidas como
+simples substituições mecânicas — cada uma tem sua
+função, seu significado e seu contexto de uso.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 2
-Pares Mínimos e Contraste Oclusivo / Nasal
-
-pa / mba'e = oclusiva bilabial / nasal bilabial
-ta / nda = oclusiva alveolar / nasal alveolar
-ka / nga = oclusiva velar / nasal velar
+2. A FORMA wy — DIREÇÃO E DESTINO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-EXEMPLO 3
-Exemplos Léxicos e Variações
+A forma wy está ligada à ideia de direção, destino
+ou referência em relação a alguém/algo.
 
-oga / óy = casa
-coga / cóy = roça
-kwarasy / kwaray = sol
-asab / aa = eu vou
+📌 EXEMPLOS REGISTRADOS:
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-RELAÇÕES HISTÓRICAS E AS POSPOSIÇÕES
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Forma | Correspondência
+Txeé + wy | txewy
+"eu" + "para" | "para mim"
 
-As línguas da família Tupi-Guarani apresentam relações históricas entre palavras, sons e estruturas gramaticais. Em registros antigos e em outras variedades do Guarani, encontram-se formas como pe, be e bo.
+pee + wy | pemy
+"vocês" + "para" | "para vocês"
 
-No Nhandewa-Guarani, correspondentes a essas formas, aparecem py e wy, que não devem ser entendidas como simples substituições mecânicas — cada uma tem sua função, seu significado e seu contexto de uso.
+Esses exemplos mostram que wy funciona como posposição
+que indica direção ou destinatário, correspondendo
+a funções que em outras variedades aparecem com pe,
+be ou bo.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-A FORMA wy — DIREÇÃO E DESTINO
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-A forma wy está ligada à ideia de direção, destino ou referência em relação a alguém ou algo.
-
-Txeé + wy = txewy
-"eu" "para" → "para mim"
-
-pee + wy = pemy
-"vocês" "para" → "para vocês"
-
-Esses exemplos mostram que wy funciona como posposição que indica direção ou destinatário, correspondendo a funções que em outras variedades aparecem com pe, be ou bo. A forma pode apresentar variação em ambiente nasal: em pemy, wy realiza-se como my [mỹ].
+A forma pode apresentar variação em ambiente nasal:
+em pemy, wy realiza-se como my [mỹ].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-A FORMA py — ORIGEM, LOCALIZAÇÃO E RELAÇÃO
+3. A FORMA py — ORIGEM, LOCALIZAÇÃO E RELAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A forma py também aparece em contextos onde outras variedades do Guarani utilizam pe, be ou bo. Ela participa de construções que indicam origem, lugar ou relação.
+A forma py também aparece em contextos onde outras
+variedades do Guarani utilizam pe, be ou bo. Ela
+participa de construções que indicam origem, lugar
+ou relação.
 
-Guarani Antigo / outras variedades → Nhandewa-Guarani
-pe / be / bo → py / wy
+📌 EXEMPLOS REGISTRADOS E CORRESPONDÊNCIAS:
 
-oga "casa" + bo = óy "para a casa / da casa"
-coang "roça" + bo = cóy "para a roça / da roça"
-añang "diabo" + bo = añãy "para o diabo / do diabo"
+Guarani Antigo / outras variedades | Nhandewa-Guarani
+pe / be / bo | py / wy
 
-Nessas correspondências, o elemento final — grafado como bo no Guarani Antigo — realiza-se como y/wy/py no Nhandewa, integrando-se à palavra como uma sílaba final com valor de posposição.
+oga + bo | óy
+"casa" + "bo" | "para a casa / da casa"
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+coang + bo | cóy
+"roça" + "bo" | "para a roça / da roça"
 
-A pesquisa mostra que o que se passa não é uma troca direta letra por letra:
+añang + bo | añãy
+"diabo" + "bo" | "para o diabo / do diabo"
 
-• Em posição final de palavra, o que era g/bo no Guarani Antigo corresponde a y/wy no Nhandewa, interpretado como aproximante /w/ ou /ŷ/ — a "sexta vogal" central alta
-• A grafia com y por Nimuendaju confirma que se tratava de uma vogal ou aproximante, não de uma consoante oclusiva
-• As formas py e wy resultam de processos sonoros que envolvem vogais, aproximantes e ambiente nasal — não de substituição automática
-
-kwarasy + kwarahy = kwaray
-"Tupi / Guarani" → "sol"
-
-asab + aha = aa
-"Tupi / Guarani" → "eu vou"
-
-ambyasy + ambyahy = ambyay
-"Tupi / Guarani" → "fome"
-
-kwese + kwehe = kweé
-"Tupi / Guarani" → "ontem"
-
-A mudança de hy para y, de he para é e de b para zero em ambiente final segue lógica semelhante: perda de consoante intervocálica e manutenção da vogal, que pode se aproximar de wy/y.
+Nessas correspondências, o elemento final — grafado
+como bo no Guarani Antigo — realiza-se como y/wy/py
+no Nhandewa, integrando-se à palavra como uma sílaba
+final com valor de posposição.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-CONTEXTO E PRECISÃO
+4. A INTERPRETAÇÃO: NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Não se deve afirmar que py tem SEMPRE o mesmo significado de pe, be ou bo. É preciso consultar:
-• O registro linguístico específico
-• A função gramatical em cada frase
-• O ambiente sonoro (oral ou nasal)
-• A fala dos próprios falantes da comunidade
+A pesquisa mostra que o que se passa não é uma troca
+direta letra por letra:
 
-As correspondências são caminhos de investigação, não regras fixas. Cada palavra e cada construção precisa ser verificada com as fontes e com quem fala a língua.
+  • Em posição final de palavra, o que era g/bo no
+    Guarani Antigo corresponde a y/wy no Nhandewa,
+    interpretado como aproximante /w/ ou /ŷ/ — a
+    "sexta vogal" central alta
+
+  • A grafia com y por Nimuendaju confirma que se
+    tratava de uma vogal/aproximante, não de uma
+    consoante oclusiva
+
+  • As formas py e wy resultam de processos sonoros
+    que envolvem vogais, aproximantes e ambiente
+    nasal — não de substituição automática
+
+📌 CORRESPONDÊNCIAS ENTRE VARIEDADES DO GUARANI:
+
+Tupi(nambá) | Guarani ("geral") | Nhandewa-Guarani | Português
+kwarasy + kwarahy | kwaray | kwaray | sol
+asab + aha | aa | aa | eu vou
+ambyasy + ambyahy | ambyay | ambyay | fome
+kwese + kwehe | kweé | kweé | ontem
+
+A mudança de hy para y, de he para é e de b para zero em
+ambiente final segue lógica semelhante: perda de
+consoante intervocálica e manutenção da vogal,
+que pode se aproximar de wy/y.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. CONTEXTO E PRECISÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Não se deve afirmar que py tem SEMPRE o mesmo
+significado de pe, be ou bo. É preciso consultar:
+
+  ✅ o registro linguístico específico
+  ✅ a função gramatical em cada frase
+  ✅ o ambiente sonoro (oral ou nasal)
+  ✅ a fala dos próprios falantes da comunidade
+
+As correspondências são caminhos de investigação,
+não regras fixas. Cada palavra e cada construção
+precisa ser verificada com as fontes e com quem
+fala a língua.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CONCLUSÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-As formas pe, be, bo do passado não desapareceram simplesmente: transformaram-se em py, wy, y, my, conforme o contexto e a posição. A língua não apaga sua história — ela a recria em cada geração.
-    `,
-    fonte: "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, Museu Nacional dos Povos Indígenas.",
+As formas pe, be, bo do passado não desapareceram
+simplesmente: transformaram-se em py, wy, y, my,
+conforme o contexto e a posição. A língua não apaga
+sua história — ela a recria em cada geração.
+`,
+    tipo: "em estudo",
+    fonte:
+        "Consuelo de Paiva Godinho Costa — Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES v.3 n.1, 2003/2012; Nhandewa Aywu: fonologia do Nhandewa-Guarani, 2003/2010.",
     links: [
         {
             titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES/Unicamp",
@@ -546,7 +581,6 @@ As formas pe, be, bo do passado não desapareceram simplesmente: transformaram-s
     ]
 },
 
-
 {
     id: 5,
     categoria: "Sons",
@@ -556,7 +590,7 @@ As formas pe, be, bo do passado não desapareceram simplesmente: transformaram-s
         "As formas mõ, mü e mu ilustram como a nasalidade e a posição da vogal se refletem na escrita e na fala; no Nhandewa-Guarani, a oposição oral/nasal é fundamental e pode alterar o sentido da palavra.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ESCREVER O QUE SE FALA
+1. ESCREVER O QUE SE FALA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A escrita de uma língua procura representar os sons
@@ -570,89 +604,85 @@ entre vogais nesta língua — mais do que altura ou
 ponto de articulação.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-MÕ — VOGAL NASAL
+2. MÕ — VOGAL NASAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O til (~) sobre a vogal õ indica que ela é nasal.
 Isso não é apenas detalhe de escrita: muda o sentido.
 
-EXEMPLOS DE VOGAL NASAL:
+📌 EXEMPLOS DE VOGAL NASAL:
 
-  pytã = vermelho / rosa / roxo
-  kwã = dedo
-  tupã = trovão / clima
-  puru'ã = umbigo
-  mã'e = olhar
+Forma | Significado
+pytã | vermelho / rosa / roxo
+kwã | dedo
+tupã | trovão / divindade
+puru'ã | umbigo
+mã'e | olhar
 
 A vogal nasal pode também influenciar as consoantes
 vizinhas: /mb/ realiza-se como [m] e /nd/ como [n]
 quando seguida de vogal nasal.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Exemplos:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  mba'e + oral = mb
-  "coisa, o que" → "oral"
 
-  mã'e + nasal = m
-  "olhar" → "nasal"
-
-  nde + oral = nd
-  "tua, seu" → "oral"
-
-  nẽ + nasal = n
-  "teu(s)" → "nasal"
+Forma | Ambiente | Realização
+[mba'e] | oral | mb
+[mã'e] | nasal | m
+[nde] | oral | nd
+[nẽ] | nasal | n
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-MÜ — A VOGAL CENTRAL ALTA
+3. MÜ — A VOGAL CENTRAL ALTA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A forma mü envolve a vogal central alta /ɨ/ —
 chamada "sexta vogal" do Guarani — que pode ser
 oral ou nasal. A grafia varia conforme a convenção:
 
-  • ü ou ˆ → vogal central alta oral
-  • ũ ou ̃ → vogal central alta nasal
+Forma | Representação
+ü ou ˆ | vogal central alta oral
+ũ ou ̃ˆ | vogal central alta nasal
 
- EXEMPLOS DA VOGAL CENTRAL:
+📌 EXEMPLOS DA VOGAL CENTRAL:
 
-  txe = eu (homem/mulher, conforme variação e grafia)
-  ky'y = pimenta
-  pytü = ficar
-  pytũ = vermelho / rosa — nasalizada
+Forma | Significado
+txe | eu (homem fala)
+txi | eu (mulher fala) — vogal central alta
+ky'y | pimenta
+pytü | ficar
+pytũ | vermelho / rosa — nasal
 
-A mesma vogal central pode aparecer nasalizada em
-contextos de harmonia nasal.
+A mesma vogal central pode aparecer nasalizada:
+
+[tʃẽʔɨ] | eu (oral)
+[tʃẽʔĩ] | em contexto nasal, sofre influência
 
 ⚠️ O sinal sobre a vogal não é sempre o mesmo:
+
   • Nimuendajú usava y para a vogal central
   • Em convenções recentes, pode aparecer como ɨ, ü, ĩ, ũ
   • A grafia depende da decisão de cada comunidade
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-MU — VOGAL ORAL
+4. MU — VOGAL ORAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A ausência de til indica vogal oral. Comparando:
 
-  mu        (vogal u oral)
-  mõ        (vogal o nasal)
-  mü / mũ   (vogal central alta, oral ou nasal)
+Forma | Tipo
+mu | vogal u oral
+mõ | vogal o nasal
+mü / mũ | vogal central alta, oral ou nasal
 
-COMPARAÇÃO — oral × nasal:
+📌 COMPARAÇÃO — ORAL × NASAL:
 
-  pyta + oral = ficar
-  pytã + nasal = vermelho — sentido diferente
-
-  tupa + oral = cama
-  tupã + nasal = trovão / clima — sentido diferente
-
-  kwa + oral = buraco
-  kwã + nasal = dedo
-
-  puru'a + oral = gravidez
-  puru'ã + nasal = umbigo
-
-  porã + nasal = bom, belo — muito comum
+Forma | Valor
+pyta | ficar
+pytã | vermelho — sentido diferente
+tupa | cama
+tupã | trovão / Deus — sentido diferente
+kunha | variação
+kunhã | mulher
+pora | —
+porã | bom, belo — muito comum
 
 A escrita sem til não significa que nunca sofre
 influência nasal: a harmonia nasal pode espalhar
@@ -660,29 +690,41 @@ a nasalidade de uma sílaba para outra, mesmo sem
 sinal gráfico visível em todas as vogais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-NASALIDADE QUE SE ESPALHA
+5. NASALIDADE QUE SE ESPALHA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O Nhandewa-Guarani tem harmonia nasal: a nasalidade
 se transmite de sílaba em sílaba, atravessando consoantes.
 
-EXEMPLO DE ESPALHAMENTO:
+📌 EXEMPLO DE ESPALHAMENTO:
 
-  kuñã + kwé = kuñãngwé
-  "mulher" "coletivo" → "mulherada"
+Forma | Composição | Resultado
+kuñã + kwé | "mulher" + "coletivo" | kuñãngwé
+kuñã + kwé | mulher + coletivo | "mulherada"
 
 A nasalidade de ã influencia o k seguinte, que
 passa a ser pronunciado como ng.
+
+📌 ALTERNÂNCIA CONSOANTAL:
+
+Forma | Ambiente | Realização
+[mba'e] | oral | mb
+[mã'e] | nasal | m
+[ndé] | oral | nd
+[nẽ] | nasal | n
+[j-] | oral | dj-
+[ʲ̃-] | nasal | ñ-
 
 A mesma raiz muda de forma conforme o ambiente
 nasal ou oral. Por isso, a escrita isolada de uma
 letra não conta toda a história.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ESCREVER É DECIDIR JUNTOS
+6. ESCREVER É DECIDIR JUNTOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Não existe uma única "forma certa" de escrever:
+
   • Nimuendajú: usava y para a vogal central
   • Montoya (século XVII): grafias próprias da época
   • Convenções atuais: decididas pelas comunidades
@@ -690,6 +732,7 @@ Não existe uma única "forma certa" de escrever:
 
 O importante não é copiar um registro antigo,
 mas compreender por que a forma muda:
+
   ✅ posição da vogal
   ✅ ambiente nasal ou oral
   ✅ decisão ortográfica da comunidade
@@ -714,7 +757,6 @@ nas vozes de quem fala.
     ]
 },
 
-
 {
     id: 6,
     categoria: "Sons",
@@ -724,7 +766,7 @@ nas vozes de quem fala.
         "No Nhandewa-Guarani, o segmento /r/ pode ser nasalizado em contexto de harmonia nasal. Em fala rápida, essa realização pode confundir-se com [n], mas não são fonemas idênticos — trata-se de um tap nasalizado, não de uma mudança definitiva de R para N.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
+1. O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O /r/ no Nhandewa-Guarani é um tap alveolar,
@@ -738,37 +780,32 @@ e realiza-se como [r̃] — um tap nasalizado, não
 uma consoante nasal plena [n].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-R EM CONTEXTO ORAL
+2. R EM CONTEXTO ORAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+📌 EXEMPLOS — SEM INFLUÊNCIA DE NASALIDADE:
 
-Exemplos — sem influência de nasalidade:
-
-rery = nome
-rowai = o outro lado, além
-piri = taboa / junco
-ywyra = árvore
+Forma | Significado
+rery | nome
+rowai | o outro lado, além
+piri | taboa / junco
+ywyra | árvore
 
 Nessas palavras, não há vogal nasal próxima,
 e o /r/ mantém sua pronúncia oral.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-R NASALIZADO — NÃO É N
+3. R NASALIZADO — NÃO É N
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- Exemplos com /r/ sob influência nasal:
+📌 EXEMPLOS COM /R/ SOB INFLUÊNCIA NASAL:
 
-põrã = bom, bonito
-"pronúncia nasalizada" → "põr̃ã — não põnã"
+Forma | Significado | Pronúncia
+põrã | bom, bonito | [põr̃ã] — não [põnã]
+wa'ẽrã | futuro | [wa'ẽr̃ã] — não [wa'ẽnã]
+nãporairỹ | não está bom, ruim | nasalidade se estende por toda a palavra
 
-wa'ẽrã = futuro
-"pronúncia nasalizada" → "wa'ẽr̃ã — não wa'ẽnã"
-
-nãporairỹ = não está bom, ruim
-"nasalidade" → "se estende por toda a palavra"
-"o r" → "é pronunciado com ressonância nasal"
-
-⚠️ Nimuendaju registrou n em alguns desses casos
+⚠️ Nimuendaju registrou n em alguns desses casos,
 ex.: ponã em vez de põrã. Isso reflete a impressão
 fonética de quem ouve em fala rápida — não significa
 que R se transformou em N. O som continua sendo um
@@ -779,7 +816,7 @@ a grafia ponã pronunciando com ênfase o r: porã.
 Isso demonstra que para os falantes não é o mesmo som.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-POR QUE NÃO É TROCA SIMPLES
+4. POR QUE NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ✅ /r/ e /n/ continuam sendo fonemas distintos
@@ -788,29 +825,34 @@ POR QUE NÃO É TROCA SIMPLES
   ✅ Em fala lenta, a diferença é clara
   ✅ A grafia com n em registros antigos é transcrição,
      não prova de mudança na língua
- Comparação:
-  porã / ponã  → mesma palavra, transcrição diferente
-  pará / paná  → não são intercambiáveis
+
+📌 COMPARAÇÃO:
+
+Forma | Observação
+porã / ponã | mesma palavra, transcrição diferente
+pará / paná | não são intercambiáveis
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-HARMONIA NASAL E ESPALHAMENTO
+5. HARMONIA NASAL E ESPALHAMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A nasalidade no Nhandewa se espalha de sílaba
 em sílaba. Uma vogal nasal pode influenciar sons
 em sílabas vizinhas, incluindo o /r/. Por isso:
 
-  põrã → a nasalidade de ã atinge o r → põr̃ã
+põrã → a nasalidade de ã atinge o r → [põr̃ã]
 
 O processo é:
-  Vogal nasal → espalha nasalidade → /r/ fica nasalizado
-  Mas continua sendo /r/, não vira /n/.
+
+Vogal nasal → espalha nasalidade → /r/ fica nasalizado
+Mas continua sendo /r/, não vira /n/.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-O QUE OUVIMOS E O QUE ESCREVEMOS
+6. O QUE OUVIMOS E O QUE ESCREVEMOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Ao registrar uma palavra:
+
   1. Ouvir a pronúncia em fala lenta e clara
   2. Conferir com o falante: "é r ou é n?"
   3. Observar se há vogal nasal próxima
@@ -859,48 +901,45 @@ mas de forma viva: não é só o passado que se reduz,
 é a língua que se renova a cada geração.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. EXEMPLOS DE REDUÇÃO — Guarani Antigo → Nhandewa
+2. EXEMPLOS DE REDUÇÃO — GUARANI ANTIGO → NHANDEWA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Palavras que perderam sílaba final átona:
-oga + óy + óy = casa
-"Guarani Antigo / Apapocuva / Nhandewa"  " → "casa"
+📌 PALAVRAS QUE PERDERAM SÍLABA FINAL ÁTONA:
 
+Guarani Antigo | Nhandewa | Significado
+oga | óy | casa
+coang | cóy | roça
+añang | añãy | diabo
+porang(a) | porã | bom, bonito
 
-• oga = óy ("casa")
-• coang = cóy ("roça")
-• añang = añãy ("diabo")
-• porang(a) = porã ("bom, bonito")
+📌 FORMAS DE NEGAÇÃO:
 
-📌 Formas de negação:
+Forma histórica | Forma atual | Significado
+eỹma / ỹma | eỹ | sem / não
+eỹma / ỹma | eỹwa | não / sem — uso atual em alguns contextos
 
-• eỹma / ỹma = eỹ ("sem / não")
-  → Atualmente: eỹwa em alguns contextos
-  A partícula final -ma evoluiu para -wa,
-  com valor de generalização ou pluralidade.
+A partícula final -ma evoluiu para -wa,
+com valor de generalização ou pluralidade.
 
-📌 Posse — redução do elemento -re-:
+📌 POSSE — REDUÇÃO DO ELEMENTO -RE-:
 
-Forma registrada | Forma correspondente | Tradução
---- | --- | ---
-**cherembireco** | chimbirécó | "minha mulher"
-**cheremỹmba** | chimỹmbá | "meu animal doméstico"
+Forma longa | Forma reduzida | Significado
+cherembireco | chimbirécó | minha mulher
+cheremỹmba | chimỹmbá | meu animal doméstico
 
   O elemento inicial che- (meu/minha) passa a chi-
   O elemento -re- (relacional) pode desaparecer
-  Mas a forma longa não desapareceu completamente —
-  ainda é ouvida em falas de pessoas mais velhas.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Mas a forma longa não desapareceu completamente —
+ainda é ouvida em falas de pessoas mais velhas.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 OUTROS CASOS REGISTRADOS:
 
-📌 Outros casos registrados (Guarani antigo / Apapocuva):
-
-• mocañỹhara ("aquele que mata") = mocañỹá
-• mocañỹharera ("aquele que matava") = mocañỹaté
-• cherembireco ("minha mulher") = chimbirécó
-• ñanderequeĩ ("nosso irmão maior") = ñanderyqueỹ
+Guarani antigo | Significado | Apapocuva
+mocañỹhara | aquele que mata | mocañỹá
+mocañỹharera | aquele que matava | mocañỹaté
+cherembireco | minha mulher | chimbirécó
+ñanderequeĩ | nosso irmão maior | ñanderyqueỹ
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. NÃO É APAGAMENTO — É TRANSFORMAÇÃO
@@ -916,8 +955,12 @@ Quando uma sílaba parece desaparecer, pode ser que:
   ✅ O elemento mude de função e não só de forma
 
 Exemplo:
-eỹma / ỹma / eỹ = ("sem / não")
-não é simples perda de -ma, é substituição por -wa com valor próprio.
+
+eỹma / ỹma = eỹ
+"sem / não"
+
+não é simples perda de -ma, é substituição por -wa
+com valor próprio.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. O ELEMENTO RELACIONAL -RE-
@@ -925,14 +968,19 @@ não é simples perda de -ma, é substituição por -wa com valor próprio.
 
 O morfema -re- marca relação de posse.
 Pode aparecer ou desaparecer conforme:
+
   • a velocidade da fala
   • a idade do falante
   • a ênfase que se quer dar
   • a região/aldeia
 
 Isso significa que não há uma "forma certa" única:
-  cherembireco  e  chimbirécó  podem ser ouvidas
-  de pessoas diferentes na mesma comunidade.
+
+cherembireco | chimbirécó
+forma longa | forma reduzida
+
+podem ser ouvidas de pessoas diferentes
+na mesma comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 5. COMO ESTUDAR AS MUDANÇAS
@@ -971,6 +1019,123 @@ mas o rio continua correndo.
 },
 
 {
+    id: 8,
+    categoria: "Gramática",
+    periodo: "Partículas",
+    titulo: "As partículas ma e pa — presença e investigação",
+    resumo:
+        "A partícula ma aparece em construções verbais e como elemento independente. Pa é tema de investigação — não se deve transferir automaticamente seu significado de outras variedades do Guarani para o Nhandewa.",
+    conteudo: `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. O QUE SÃO AS PARTÍCULAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+São pequenas palavras ou elementos que dão
+sentido, modo, tempo ou relação à frase.
+Não têm significado sozinhas — adquirem
+função no contato com o verbo, o nome
+e o contexto da fala.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. A PARTÍCULA MA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📌 JUNTO AO VERBO — INDICA AÇÃO EM CURSO:
+
+Forma | Significado
+aáma | está indo / ia
+oúma | está vindo / vinha
+ojapóma | está fazendo / fazia
+
+A partícula se liga à raiz verbal e
+indica que a ação acontece ou acontecia
+ao longo de um tempo.
+
+📌 COMO PALAVRA SEPARADA — CONFIRMAÇÃO/ÊNFASE:
+
+Ko kwatiá-re ma.
+"É mesmo aqui, nesta terra."
+
+Aqui, ma não se junta ao verbo — aparece
+sozinha, dando peso, confirmação ou
+certeza ao que se diz.
+
+📌 EM NEGAÇÃO E FINALIZAÇÃO:
+
+Forma | Significado
+eỹma | não / sem — registro histórico
+eỹwa | não / sem — uso atual
+
+-ma pode evoluir para -wa com valor de
+generalização ou pluralidade.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. ESCREVER JUNTO OU SEPARADO?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Os professores Nhandewa, nas Convenções
+Lingüísticas, decidiram:
+
+  ✅ Junto → quando forma uma só pronúncia
+             com o verbo (aáma, oúma)
+
+  ✅ Separado → quando tem pronúncia própria
+                e destaque na frase
+
+Não é regra fixa para sempre — a escrita
+se ajusta conforme a fala da comunidade.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. A PARTÍCULA PA — EM INVESTIGAÇÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Em outras variedades do Guarani, pa existe
+com funções específicas. No Nhandewa, ainda
+está sendo estudada. Por isso:
+
+  ⚠️ Não se copia explicação de outra língua
+  ⚠️ Cada ocorrência é conferida com falantes
+  ⚠️ O contexto completo da frase é observado
+  ⚠️ A grafia pode variar conforme a fonte
+
+Mesma forma gráfica ≠ mesma função gramatical.
+A palavra escrita igual pode ter significado
+diferente em cada povo.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. COMO ESTUDAR COM RESPEITO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Para ma e pa:
+
+  1. Anotar a frase completa, não só a partícula
+  2. Ouvir a pronúncia: tem acento próprio?
+  3. Perguntar: "o que muda com e sem ela?"
+  4. Comparar com outras aldeias
+  5. Conferir nas Lições de Gramática
+  6. Respeitar: o que ainda não se sabe,
+     não se inventa — se anota "em estudo"
+`,
+    tipo: "documentado",
+    fonte:
+        "Lições de Gramática Nhandewa-Guarani, volume I, seção sobre composições verbais e partículas; Consuelo de Paiva Godinho Costa (2003), p.62–65 sobre elementos de ligação e aspectuais.",
+    links: [
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani – Volume I",
+            url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
+        },
+        {
+            titulo: "Fonologia do Nhandewa-Guarani Paulista-Paranaense – LIAMES",
+            url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
+        },
+        {
+            titulo: "Materiais de Gramática Nhandewa – Museu Nacional dos Povos Indígenas",
+            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
+        }
+    ]
+},
+
+{
     id: 9,
     categoria: "Gramática",
     periodo: "Supino e orações subordinadas",
@@ -979,7 +1144,7 @@ mas o rio continua correndo.
         "A forma vy, ligada aos verbos de movimento ó (ir) e u (vir), introduz orações que expressam tempo e acompanhamento. Vem de registros de Nimuendaju e é chave para compreender a relação entre caminhar e falar no Nhandewa.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   O QUE É O SUPINO VY
+1. O QUE É O SUPINO VY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Vy aparece junto a verbos de movimento
@@ -988,10 +1153,13 @@ tempo que outra, ou no caminho de/para.
 Não é exatamente "quando" — é o movimento
 que acompanha a ação principal.
 
-ó = ir
-u = vir
-oóvy = indo / quando ia
-oúvy = vindo / quando vinha
+📌 FORMAS DO MOVIMENTO:
+
+Forma | Correspondente
+ó | ir
+u | vir
+oóvy | indo / quando ia
+oúvy | vindo / quando vinha
 
 A terminação vy liga a ação de ir/vir ao
 contexto em que outra coisa acontece.
@@ -1000,26 +1168,26 @@ contexto em que outra coisa acontece.
 2. EXEMPLOS REGISTRADOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Exemplos do supino vy:
+📌 Exemplos do supino vy:
 
 Frase | Tradução | Sentido de -vy
+Ojapó ma oóvy | Fazia, enquanto ia. | indo / no caminho
+Opó yvy áno oúvy | Pulando, vinha para a terra. | vindo / no caminho de volta
+Oaqá oóvy | Atravessou, indo. | indo / na travessia
+Oguejý oúvy | Descia, vindo. | vindo / descendo
 
-Ojapó ma oóvy + "Fazia, enquanto ia." = "indo / no caminho"
-Opó yvy áno oúvy + "Pulando, vinha para a terra." = "vindo / no caminho de volta"
-Oaqá oóvy + "Atravessou, indo." = "indo / na travessia"
-Oguejý oúvy + "Descia, vindo." = "vindo / descendo"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   NÃO É SÓ "QUANDO"
+3. NÃO É SÓ "QUANDO"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Traduzir por "quando" ou "enquanto" ajuda,
 mas a língua carrega mais:
 
-  oóvy ≠ só "quando ele foi"
-  ✅ "indo" — o movimento está na palavra
-
-  oúvy ≠ só "quando ele veio"
-  ✅ "vindo" — o deslocamento é o sentido
+Forma | Interpretação
+oóvy | não é só "quando ele foi"
+oóvy | "indo" — o movimento está na palavra
+oúvy | não é só "quando ele veio"
+oúvy | "vindo" — o deslocamento é o sentido
 
 Isso liga diretamente à ideia de oguatá —
 o caminhar como forma de existir, de buscar,
@@ -1027,7 +1195,7 @@ de conhecer. A língua carrega o movimento
 em suas próprias estruturas gramaticais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   FONTE E CONTEXTO
+4. FONTE E CONTEXTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Esses exemplos vêm de narrativas registradas
@@ -1042,7 +1210,7 @@ pequenas variações de pronúncia e grafia.
   ⚠️ O uso atual deve ser confirmado com falantes.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   PARA ESTUDAR
+5. PARA ESTUDAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   1. Identificar o verbo: ó = ir / u = vir
@@ -1079,7 +1247,7 @@ pequenas variações de pronúncia e grafia.
         "Uma palavra não tem sempre um só significado. Pode crescer, se ampliar, ganhar caminhos novos. Nhe'ẽ e aywu mostram como sentido e cultura se tecem juntos nas línguas Guarani.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- UMA PALAVRA, MUITOS CAMINHOS
+1. UMA PALAVRA, MUITOS CAMINHOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Quando dizemos uma palavra, não dizemos só
@@ -1088,17 +1256,17 @@ e o que pode vir a ser. O sentido cresce
 com quem fala, com onde se fala, com quando.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   NHE'Ẽ — vida, espírito, fala, presença
+2. NHE'Ẽ — VIDA, ESPÍRITO, FALA, PRESENÇA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Em diferentes contextos, nhe'ẽ pode significar:
+📌 EM DIFERENTES CONTEXTOS, NHE'Ẽ PODE SIGNIFICAR:
 
 nhe'ẽ | Significado
-sopro, respiração, vida
-espírito, essência
-palavra verdadeira
-fala que vem do coração
-presença ancestral
+nhe'ẽ | sopro, respiração, vida
+nhe'ẽ | espírito, essência
+nhe'ẽ | palavra verdadeira
+nhe'ẽ | fala que vem do coração
+nhe'ẽ | presença ancestral
 
 Não se reduz a uma só tradução. Em Nhandewa,
 em Mbyá, em Kaiowá — a mesma raiz abre
@@ -1109,16 +1277,16 @@ no sentido de algo separado e abstrato. É o que
 faz viver, o que conecta, o que permanece.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   AYWU — fala, palavra, caminho
+3. AYWU — FALA, PALAVRA, CAMINHO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-aywu — significados e sentidos:
+📌 AYWU — SIGNIFICADOS E SENTIDOS:
 
 aywu | Significado
-fala, conversa
-palavra dita
-modo de dizer
-em Nhandewa: "nossa fala" = Nhandeaywu
+aywu | fala, conversa
+aywu | palavra dita
+aywu | modo de dizer
+Nhandeaywu | em Nhandewa: "nossa fala"
 
 ⚠️ Em outras variedades do Guarani, a mesma
 palavra tem sentido diferente: em Avanheém
@@ -1127,20 +1295,21 @@ em um lugar pode ser som em outro — cada
 comunidade tece seu próprio sentido.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   COMO O SENTIDO SE AMPLIA
+4. COMO O SENTIDO SE AMPLIA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Uma palavra pode começar num uso e depois
 alcançar outros:
 
-Sopro → vida → força → presença → ancestralidade
-Fala → palavra → ensinamento → caminho → identidade
+Caminho de sentido | Expansão
+Sopro | vida → força → presença → ancestralidade
+Fala | palavra → ensinamento → caminho → identidade
 
 Isso não é "erro" nem "confusão". É como a língua
 respira: cresce junto com o povo que a fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   NÃO COMPARAR PARA IGUALAR
+5. NÃO COMPARAR PARA IGUALAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ✅ Mesma raiz ≠ mesmo significado
@@ -1156,10 +1325,11 @@ em margens diferentes — a água é a mesma,
 mas o curso muda.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   O SENTIDO ESTÁ NAS PESSOAS
+6. O SENTIDO ESTÁ NAS PESSOAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Para saber o que uma palavra significa:
+
   1. Ouvir a frase inteira
   2. Perguntar ao falante: "o que quis dizer?"
   3. Anotar o contexto: onde, quando, com quem
@@ -1191,7 +1361,7 @@ Para saber o que uma palavra significa:
         "Revitalizar não é só recuperar palavras antigas — é fazer a língua viver no dia a dia. Professores, anciãos, famílias e crianças tecem juntos a continuidade do Nhandewa-Guarani, com gramáticas, escolas e memória viva.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   REVITALIZAR É FAZER VIVER
+1. REVITALIZAR É FAZER VIVER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua não vive em livro. Vive na boca,
@@ -1205,7 +1375,7 @@ que responde em Nhandewa. Revitalizar é:
   ✅ Criar com a língua hoje
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  OS MAIS VELHOS GUARDAM A FONTE
+2. OS MAIS VELHOS GUARDAM A FONTE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Foram os falantes idosos das aldeias Nimuendaju,
@@ -1214,12 +1384,12 @@ que compartilharam a língua para que fosse
 registrada e estudada. Suas vozes permanecem
 em cada página, em cada exemplo.
 
-  "A língua não se perde enquanto houver
-   quem a fale e queira ensinar."
-  — Memória das comunidades
+"A língua não se perde enquanto houver
+quem a fale e queira ensinar."
+— Memória das comunidades
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   OS PROFESSORES FAZEM O CAMINHO
+3. OS PROFESSORES FAZEM O CAMINHO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Nas Convenções Lingüísticas, professores de
@@ -1228,22 +1398,25 @@ como escrever — cada um tinha sua grafia,
 e acordaram uma para todos. Isso é fortalecimento:
 não receber de fora, construir junto.
 
-  O Projeto Gramática Pedagógica:
+📌 O Projeto Gramática Pedagógica:
+
   • Oficinas na Aldeia Nimuendaju
   • Reuniões com falantes e pesquisadores
   • Produção coletiva dos livros
   • Lançamento dos materiais com a comunidade
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   AS GRAMÁTICAS — FERRAMENTAS, NÃO SUBSTITUTAS
+4. AS GRAMÁTICAS — FERRAMENTAS, NÃO SUBSTITUTAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Lições de Gramática Nhandewa-Guarani — Volume 1 (2016)
+📌 Lições de Gramática Nhandewa-Guarani — Volume 1 (2016)
+
   • Apresenta sons, palavras, frases e estruturas
   • Desenvolvido por e com professores indígenas
   • Para ensinar e aprender
 
-  Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2
+📌 Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2
+
   • Dá continuidade, com contribuições do litoral
   • Aprofunda a escrita e os usos
 
@@ -1251,10 +1424,11 @@ não receber de fora, construir junto.
 Quem caminha é quem fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   A TECNOLOGIA AO SERVIÇO DA LÍNGUA
+5. A TECNOLOGIA AO SERVIÇO DA LÍNGUA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O Projeto Karumbé reúne:
+
   • Palavras e seus sentidos
   • Exemplos de uso
   • Referências e fontes
@@ -1266,7 +1440,7 @@ o livro é — um apoio. A vida da língua está
 no encontro entre as pessoas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-   CONTINUIDADE — NÃO É SÓ RECUPERAR
+6. CONTINUIDADE — NÃO É SÓ RECUPERAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Revitalizar não é voltar ao passado. É:
@@ -1306,15 +1480,7 @@ a passa adiante.
             titulo: "FUNAI — Revitalização Linguística dos Indígenas de São Paulo",
             url: "https://www.gov.br/funai/pt-br/assuntos/noticias/2013/revitalizacao-linguistica-dos-indigenas-de-sao-paulo"
         }
-,
-        {
-            titulo: "Lições de gramática de Nhandewa/Tupi-Guarani — Caderno de atividades multidisciplinares",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
-        },
-        {
-            titulo: "Nhe’ẽ para os Guarani (Nhandewa e Mbya) — 35ª Bienal de São Paulo",
-            url: "https://35.bienal.org.br/nhee-para-os-guarani-nhandewa-e-mbya/"
-        }    ]
+    ]
 },
 
 {
@@ -1326,7 +1492,7 @@ a passa adiante.
         "Pesquisas, formações de professores, materiais didáticos e projetos comunitários — um espaço que reúne o que já foi feito para fortalecer o que está sendo construído. O conhecimento cresce quando compartilhado com respeito.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-UNIR O QUE ESTÁ ESPALHADO
+1. UNIR O QUE ESTÁ ESPALHADO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Há décadas, universidades, comunidades,
@@ -1336,63 +1502,73 @@ em um só lugar é facilitar o acesso de quem
 ensina, de quem pesquisa e de quem quer aprender.
 
 O objetivo não é substituir — é aproximar:
-  academia ←→ comunidade
-  pesquisa ←→ fala
-  passado ←→ presente
+
+academia ←→ comunidade
+pesquisa ←→ fala
+passado ←→ presente
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-FORMAÇÃO DE PROFESSORES
+2. FORMAÇÃO DE PROFESSORES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  MagIND — Magistério Indígena Novo Mundo (2002–2003)
+📌 MagIND — Magistério Indígena Novo Mundo (2002–2003)
+
   • Primeira formação específica no estado de SP
   • Parceria USP / Secretaria de Educação SP
 
-  FISPI — Formação Intercultural Superior (2005–2008)
+📌 FISPI — Formação Intercultural Superior (2005–2008)
+
   • Licenciatura voltada a professores indígenas
   • Vinculada à Faculdade de Educação da USP
 
-  LINDI — Licenciatura Intercultural Indígena
+📌 LINDI — Licenciatura Intercultural Indígena
+
   • Em andamento pela UNIFESP
   • Atende Guarani Nhandewa, Mbyá, Kaingang, Terena, Krenak
   • Conhecimentos acadêmicos + saberes tradicionais
 
-  Pesquisa de Tiago Nhandewa (USP)
+📌 Pesquisa de Tiago Nhandewa (USP)
+
   • A perspectiva Guarani na formação docente
   • Ancestralidade, espiritualidade e língua na educação
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PESQUISA LINGUÍSTICA
+3. PESQUISA LINGUÍSTICA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Consuelo de Paiva Godinho Costa — UNICAMP
+📌 Consuelo de Paiva Godinho Costa — UNICAMP
+
   • Nhandewa Aywu (2003) — fonologia completa
   • Artigo LIAMES (2012) — sons, nasalidade, harmonia
   • Base científica para as gramáticas comunitárias
 
-  Outros trabalhos em andamento:
+📌 Outros trabalhos em andamento:
+
   • Fonologia histórica comparada
   • Variação entre aldeias
   • Gramática pedagógica em atualização
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-MATERIAIS PRODUZIDOS PELA COMUNIDADE
+4. MATERIAIS PRODUZIDOS PELA COMUNIDADE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2
+📌 Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2
+
   • Feito por professores, com assessoria linguística
   • Escrito para ensinar na própria língua
   • Disponível livremente para todos
 
-  Cadernos de atividades multidisciplinares
+📌 Cadernos de atividades multidisciplinares
+
   • Ligam língua, cultura, território e história
   • Para uso nas escolas indígenas
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-O PROJETO KARAMBÉ
+5. O PROJETO KARAMBÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Este espaço reúne:
+
   ✅ Gramáticas e vocabulários
   ✅ Artigos e teses
   ✅ Materiais de formação
@@ -1406,7 +1582,7 @@ autoria, data, comunidade. E que, ao
 encontrar, possa voltar à fonte original.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-PESQUISAR COM RESPEITO
+6. PESQUISAR COM RESPEITO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ⚠️ Não misturar variedades diferentes
@@ -1466,12 +1642,9 @@ nas mãos de quem a ensina e de quem a aprende.
             titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
             url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
         }
-,
-        {
-            titulo: "Lições de gramática de Nhandewa/Tupi-Guarani — Caderno de atividades multidisciplinares",
-            url: "https://pesquisa.museudoindio.gov.br/index.php/licoes-de-gramatica-de-nhandewa-tupi-guarani-caderno-de-atividades-multidisciplinares"
-        }    ]
-},
+    ]
+}
+
 ];
 
 /* =========================================================
@@ -1495,10 +1668,10 @@ function fecharHistoria(event) {
   document.body.classList.remove("modal-aberto");
 }
 
-
 /* =========================================================
    FUNÇÕES AUXILIARES
    ========================================================= */
+
 function escaparHTML(texto) {
   return String(texto ?? "")
     .replaceAll("&", "&amp;")
@@ -1510,28 +1683,139 @@ function escaparHTML(texto) {
 
 
 /* =========================================================
-   TABELAS AUTOMÁTICAS DE EXEMPLOS
+   TABELAS AUTOMÁTICAS
+   ESTRUTURA INFERIDA DO PRÓPRIO TEXTO
+   =========================================================
+
+   REGRAS:
+
+   1. Cabeçalhos com "|" são usados exatamente como escritos.
+      Exemplo:
+      Tupi(nambá) | Guarani ("geral") | Nhandewa-Guarani | Português
+
+   2. A + B = C
+      A + B → C
+      gera 3 campos.
+
+   3. A → B
+      A = B
+      gera 2 campos.
+
+   4. Se houver informação associada entre aspas,
+      ela pode criar uma coluna adicional.
+
+   5. O código NÃO usa ID, número da história ou nome
+      específico de tabela.
+
+   6. Tabelas diferentes não são misturadas quando
+      a estrutura muda.
+
+   7. O cabeçalho é determinado pelo próprio formato
+      encontrado na informação.
    ========================================================= */
 
-function linhaDeExemplo(linha) {
 
-  const original = linha.trim();
+/* =========================================================
+   LIMPA UMA LINHA
+   ========================================================= */
 
-  if (!original) return null;
+function limparLinhaEstrutural(linha) {
 
-  // Não transforma marcadores ou títulos
-  if (/^[📌⚠️✅•]/u.test(original)) return null;
+  return String(linha ?? "")
+    .trim()
+    .replace(/^\\+$/g, "")
+    .replace(/^\s*[•●▪]\s*/u, "")
+    .trim();
 
+}
+
+
+/* =========================================================
+   REMOVE ASPAS EXTERNAS
+   ========================================================= */
+
+function tirarAspasExternas(valor) {
+
+  const texto = String(valor ?? "").trim();
+
+  if (/^["“‘][\s\S]*["”’]$/u.test(texto)) {
+
+    return texto
+      .replace(/^["“‘]/u, "")
+      .replace(/["”’]$/u, "")
+      .trim();
+
+  }
+
+  return texto;
+}
+
+
+/* =========================================================
+   DETECTA CABEÇALHO COM "|"
+   ========================================================= */
+
+function separarColunasCabecalho(linha) {
+
+  const original = limparLinhaEstrutural(linha);
+
+  if (!original.includes("|")) {
+    return null;
+  }
+
+  const partes = original
+    .split("|")
+    .map(parte => parte.trim())
+    .filter(Boolean);
+
+  if (partes.length < 2) {
+    return null;
+  }
+
+  // Não transforma URL em tabela
   if (
-    /^━━━━━━━━/.test(original) ||
-    /^\d+\./.test(original)
+    partes.some(
+      parte => /^https?:\/\//i.test(parte)
+    )
   ) {
+    return null;
+  }
+
+  return partes;
+}
+
+
+/* =========================================================
+   ANALISA A ESTRUTURA DE UMA LINHA
+   ========================================================= */
+
+function analisarLinhaEstrutural(linha) {
+
+  const original = limparLinhaEstrutural(linha);
+
+  if (!original) {
+    return null;
+  }
+
+  // Marcadores nunca são exemplos de tabela
+  if (/^[📌⚠️✅]/u.test(original)) {
+    return null;
+  }
+
+  // Separadores
+  if (/^━━━━━━━━/.test(original)) {
+    return null;
+  }
+
+  // Títulos numerados
+  if (/^\d+\./.test(original)) {
     return null;
   }
 
 
   /* ---------------------------------------------------------
      FORMA + ELEMENTO → RESULTADO
+     FORMA + ELEMENTO = RESULTADO
      --------------------------------------------------------- */
 
   let m = original.match(
@@ -1540,23 +1824,24 @@ function linhaDeExemplo(linha) {
 
   if (m) {
 
-    const forma = m[1].trim();
-    const elemento = m[2].trim();
-    const resultado = m[3].trim();
+    return {
 
-    if (
-      forma.length <= 60 &&
-      elemento.length <= 40 &&
-      resultado.length <= 120
-    ) {
-      return {
-        tipo: "composicao",
-        forma,
-        elemento,
-        resultado,
-        sentido: ""
-      };
-    }
+      tipo: "composicao",
+
+      assinatura: "composicao",
+
+      partes: [
+
+        tirarAspasExternas(m[1]),
+
+        tirarAspasExternas(m[2]),
+
+        tirarAspasExternas(m[3])
+
+      ]
+
+    };
+
   }
 
 
@@ -1570,21 +1855,22 @@ function linhaDeExemplo(linha) {
 
   if (m) {
 
-    const forma = m[1].trim();
-    const resultado = m[2].trim();
+    return {
 
-    if (
-      forma.length <= 60 &&
-      resultado.length <= 120
-    ) {
-      return {
-        tipo: "transformacao",
-        forma,
-        elemento: "",
-        resultado,
-        sentido: ""
-      };
-    }
+      tipo: "transformacao",
+
+      assinatura: "duas",
+
+      partes: [
+
+        tirarAspasExternas(m[1]),
+
+        tirarAspasExternas(m[2])
+
+      ]
+
+    };
+
   }
 
 
@@ -1598,943 +1884,1212 @@ function linhaDeExemplo(linha) {
 
   if (m) {
 
-    const forma = m[1].trim();
-    const resultado = m[2].trim();
+    return {
 
-    if (
-      forma.length <= 60 &&
-      resultado.length <= 120
-    ) {
-      return {
-        tipo: "transformacao",
-        forma,
-        elemento: "",
-        resultado,
-        sentido: ""
-      };
-    }
+      tipo: "transformacao",
+
+      assinatura: "duas",
+
+      partes: [
+
+        tirarAspasExternas(m[1]),
+
+        tirarAspasExternas(m[2])
+
+      ]
+
+    };
+
   }
-
 
   return null;
 }
 
 
 /* =========================================================
-   CRIA A TABELA
+   ANALISA INFORMAÇÃO ASSOCIADA
    ========================================================= */
 
-function tabelaDeExemplos(linhas) {
-  const dados = [];
-  const consumidos = new Set();
-  const textoBloco = linhas.join("\n");
+function analisarLinhaAssociada(linha) {
 
-  /* =========================================================
-     CADA TIPO DE EXEMPLO RECEBE O NOME DAS COLUNAS QUE
-     REALMENTE CORRESPONDE AO CONTEÚDO DA FONTE.
-     ========================================================= */
+  const original = limparLinhaEstrutural(linha);
 
-  const blocoCorrespondencia =
-    /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
-    /asab\s*\+\s*aha\s*=\s*aa/i.test(textoBloco) ||
-    /ambyasy\s*\+\s*ambyahy\s*=\s*ambyay/i.test(textoBloco) ||
-    /kwese\s*\+\s*kwehe\s*=\s*kweé/i.test(textoBloco) ||
-    /EXEMPLOS DE CORRESPONDÊNCIAS SONORAS/i.test(textoBloco);
-
-  const blocoCorrespondenciaPosposicoes =
-    /Guarani Antigo\s*\/\s*outras variedades\s*→\s*Nhandewa-Guarani|pe\s*\/\s*be\s*\/\s*bo\s*→\s*py\s*\/\s*wy/i.test(textoBloco);
-
-  const blocoPosposicaoWy =
-    /A FORMA wy|Txeé\s*\+\s*wy|pee\s*\+\s*wy/i.test(textoBloco);
-
-  const blocoPosposicaoBo =
-    /oga\s*"casa"\s*\+\s*bo|coang\s*"roça"\s*\+\s*bo|añang\s*"diabo"\s*\+\s*bo/i.test(textoBloco);
-
-  const blocoAlternanciaConsonantal =
-    /\[mba['’]e\].*\+\s*oral\s*=\s*mb|\[mã['’]e\].*\+\s*nasal\s*=\s*m|\[nde\].*\+\s*oral\s*=\s*nd|\[nẽ\].*\+\s*nasal\s*=\s*n/i.test(textoBloco);
-
-  const blocoContrasteOralNasal =
-    /COMPARAÇÃO\s*[—-]\s*oral\s*[×x]\s*nasal|pyta\s*\+\s*oral\s*=\s*ficar|pytã\s*\+\s*nasal\s*=\s*vermelho|tupa\s*\+\s*oral\s*=\s*cama|tupã\s*\+\s*nasal\s*=\s*trovão/i.test(textoBloco);
-
-  const blocoHarmoniaNasal =
-    /EXEMPLO DE ESPALHAMENTO|kuñã\s*\+\s*kwé\s*=\s*kuñãngwé/i.test(textoBloco);
-
-  const blocoGuaraniApapocuva =
-    /Guarani antigo\s*\|\s*Significado\s*\|\s*Apapocuva/i.test(textoBloco) ||
-    /mocañỹhara\s*\+\s*"aquele que mata"/i.test(textoBloco);
-
-  const blocoReducao =
-    /Palavras que perderam sílaba final átona|oga\s*=\s*óy|coang\s*=\s*cóy|añang\s*=\s*añãy|porang\(a\)\s*=\s*porã/i.test(textoBloco);
-
-  const blocoSupinoVy =
-    /Frase\s*\|\s*Tradução\s*\|\s*Sentido de -vy|Ojapó ma oóvy|Opó yvy áno oúvy|Oaqá oóvy|Oguejý oúvy/i.test(textoBloco);
-
-  for (let i = 0; i < linhas.length; i++) {
-    if (consumidos.has(i)) continue;
-
-    const item = linhaDeExemplo(linhas[i]);
-    if (!item) continue;
-
-    const proxima = (linhas[i + 1] || "").trim();
-    const traducao = proxima.match(/^\s*["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]\s*$/u);
-
-    if (traducao) {
-      item.sentido = blocoAlternanciaConsonantal
-        ? traducao[1]
-        : traducao[2];
-
-      consumidos.add(i + 1);
-    }
-
-    if (blocoPosposicaoBo) {
-      const mForma = item.forma.match(/^(.+?)\s+["“](.+?)["”]\s*$/u);
-      if (mForma) {
-        item.forma = mForma[1].trim();
-      }
-
-      const mResultado = item.resultado.match(/^(.+?)\s+["“](.+?)["”]/u);
-      if (mResultado) {
-        item.resultado = mResultado[1].trim();
-        item.sentido = mResultado[2].trim();
-      }
-    }
-
-    if (blocoSupinoVy) {
-      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
-      item.resultado = item.resultado.replace(/^["“]|["”]$/gu, "").trim();
-    }
-
-    if (blocoGuaraniApapocuva) {
-      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
-    }
-
-    dados.push({ ...item, indice: i });
+  if (!original) {
+    return null;
   }
 
-  if (dados.length === 0) return null;
 
-  let cabecalho;
-  let modoCorpo = "quatro";
+  /* ---------------------------------------------------------
+     "forma" → "tradução"
+     --------------------------------------------------------- */
 
-  if (blocoCorrespondencia) {
-    cabecalho = `
-      <tr>
-        <th>Forma Tupi(nambá)</th>
-        <th>Forma Guarani (geral)</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Português</th>
-      </tr>
-    `;
+  let m = original.match(
+    /^["“](.+?)["”]\s*(?:→|=)\s*["“](.+?)["”]$/u
+  );
 
-  } else if (blocoCorrespondenciaPosposicoes) {
-    cabecalho = `
-      <tr>
-        <th>Guarani Antigo / outras variedades</th>
-        <th>Nhandewa-Guarani</th>
-      </tr>
-    `;
-    modoCorpo = "duas";
+  if (m) {
 
-  } else if (blocoPosposicaoWy) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Posposição</th>
-        <th>Forma resultante</th>
-        <th>Função / sentido</th>
-      </tr>
-    `;
+    return {
 
-  } else if (blocoPosposicaoBo) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Posposição</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Sentido / relação</th>
-      </tr>
-    `;
+      tipo: "associada",
 
-  } else if (blocoAlternanciaConsonantal) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Ambiente</th>
-        <th>Realização</th>
-        <th>Tradução</th>
-      </tr>
-    `;
+      partes: [
 
-  } else if (blocoContrasteOralNasal) {
-    cabecalho = `
-      <tr>
-        <th>Forma</th>
-        <th>Ambiente</th>
-        <th>Significado / resultado</th>
-      </tr>
-    `;
-    modoCorpo = "tresContraste";
+        m[1].trim(),
 
-  } else if (blocoHarmoniaNasal) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Elemento associado</th>
-        <th>Forma resultante</th>
-        <th>Significado</th>
-      </tr>
-    `;
+        m[2].trim()
 
-  } else if (blocoGuaraniApapocuva) {
-    cabecalho = `
-      <tr>
-        <th>Guarani antigo</th>
-        <th>Significado</th>
-        <th>Apapocuva</th>
-      </tr>
-    `;
-    modoCorpo = "tresGuarani";
+      ]
 
-  } else if (blocoReducao) {
-    cabecalho = `
-      <tr>
-        <th>Forma histórica</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Significado</th>
-      </tr>
-    `;
-    modoCorpo = "tresReducao";
+    };
 
-  } else if (blocoSupinoVy) {
-    cabecalho = `
-      <tr>
-        <th>Frase</th>
-        <th>Tradução</th>
-        <th>Sentido de -vy</th>
-      </tr>
-    `;
-    modoCorpo = "tresVy";
-
-  } else {
-    const temComposicao = dados.some(item => item.tipo === "composicao");
-
-    if (temComposicao) {
-      cabecalho = `
-        <tr>
-          <th>Forma de base</th>
-          <th>Componente linguístico</th>
-          <th>Forma resultante</th>
-          <th>Sentido / tradução</th>
-        </tr>
-      `;
-    } else {
-      cabecalho = `
-        <tr>
-          <th>Forma registrada</th>
-          <th>Forma correspondente</th>
-          <th>Sentido / tradução</th>
-        </tr>
-      `;
-      modoCorpo = "tres";
-    }
   }
 
-  const corpo = dados.map(item => {
-    if (modoCorpo === "duas") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.resultado)}</td>
-        </tr>
-      `;
-    }
 
-    if (modoCorpo === "tresContraste" || modoCorpo === "tresGuarani" || modoCorpo === "tresVy") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.elemento || "")}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
-        </tr>
-      `;
-    }
+  /* ---------------------------------------------------------
+     "campo 1" "campo 2" → "resultado"
+     --------------------------------------------------------- */
 
-    if (modoCorpo === "tresReducao") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
-          <td>${escaparHTML(item.sentido || "")}</td>
-        </tr>
-      `;
-    }
+  m = original.match(
+    /^["“](.+?)["”]\s+["“](.+?)["”]\s*(?:→|=)\s*["“](.+?)["”]$/u
+  );
 
-    if (modoCorpo === "tres") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.resultado)}</td>
-          <td>${escaparHTML(item.sentido || "")}</td>
-        </tr>
-      `;
-    }
+  if (m) {
 
-    return `
-      <tr>
-        <td>${escaparHTML(item.forma)}</td>
-        <td>${escaparHTML(item.elemento || "")}</td>
-        <td>${escaparHTML(item.resultado)}</td>
-        <td>${escaparHTML(item.sentido || "")}</td>
-      </tr>
-    `;
-  }).join("");
+    return {
 
-  return `
-    <div class="tabela-exemplo-wrapper">
-      <table class="tabela-exemplo">
-        <thead>${cabecalho}</thead>
-        <tbody>${corpo}</tbody>
-      </table>
-    </div>
-  `;
+      tipo: "associada",
+
+      partes: [
+
+        m[1].trim(),
+
+        m[2].trim(),
+
+        m[3].trim()
+
+      ]
+
+    };
+
+  }
+
+  return null;
 }
 
 
 /* =========================================================
-   TABELAS AUTOMÁTICAS DE EXEMPLOS (ISOLADAS POR BLOCO)
+   CABEÇALHO AUTOMÁTICO
    ========================================================= */
 
-function tabelaDeExemplos(linhas) {
-  const dados = [];
-  const consumidos = new Set();
-  const textoBloco = linhas.join("\n");
+function cabecalhoAutomatico(quantidade) {
+
+  const modelos = {
+
+    2: [
+      "Forma de origem",
+      "Forma resultante"
+    ],
+
+    3: [
+      "Forma de base",
+      "Componente linguístico",
+      "Forma resultante"
+    ],
+
+    4: [
+      "Forma de base",
+      "Componente linguístico",
+      "Forma resultante",
+      "Sentido / tradução"
+    ]
 
-  const blocoCorrespondencia =
-    /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
-    /asab\s*\+\s*aha\s*=\s*aa/i.test(textoBloco) ||
-    /ambyasy\s*\+\s*ambyahy\s*=\s*ambyay/i.test(textoBloco) ||
-    /kwese\s*\+\s*kwehe\s*=\s*kweé/i.test(textoBloco) ||
-    /EXEMPLOS DE CORRESPONDÊNCIAS SONORAS/i.test(textoBloco);
-
-  const blocoCorrespondenciaPosposicoes =
-    /Guarani Antigo\s*\/\s*outras variedades\s*→\s*Nhandewa-Guarani|pe\s*\/\s*be\s*\/\s*bo\s*→\s*py\s*\/\s*wy/i.test(textoBloco);
-
-  const blocoPosposicaoWy =
-    /A FORMA wy|Txeé\s*\+\s*wy|pee\s*\+\s*wy/i.test(textoBloco);
-
-  const blocoPosposicaoBo =
-    /oga\s*"casa"\s*\+\s*bo|coang\s*"roça"\s*\+\s*bo|añang\s*"diabo"\s*\+\s*bo/i.test(textoBloco);
-
-  const blocoAlternanciaConsonantal =
-    /\[mba['’]e\].*\+\s*oral\s*=\s*mb|\[mã['’]e\].*\+\s*nasal\s*=\s*m|\[nde\].*\+\s*oral\s*=\s*nd|\[nẽ\].*\+\s*nasal\s*=\s*n/i.test(textoBloco);
-
-  const blocoContrasteOralNasal =
-    /COMPARAÇÃO\s*[—-]\s*oral\s*[×x]\s*nasal|pyta\s*\+\s*oral\s*=\s*ficar|pytã\s*\+\s*nasal\s*=\s*vermelho|tupa\s*\+\s*oral\s*=\s*cama|tupã\s*\+\s*nasal\s*=\s*trovão/i.test(textoBloco);
-
-  const blocoHarmoniaNasal =
-    /EXEMPLO DE ESPALHAMENTO|kuñã\s*\+\s*kwé\s*=\s*kuñãngwé/i.test(textoBloco);
-
-  const blocoGuaraniApapocuva =
-    /Guarani antigo\s*\|\s*Significado\s*\|\s*Apapocuva/i.test(textoBloco) ||
-    /mocañỹhara\s*\+\s*"aquele que mata"/i.test(textoBloco);
-
-  const blocoReducao =
-    /Palavras que perderam sílaba final átona|oga\s*=\s*óy|coang\s*=\s*cóy|añang\s*=\s*añãy|porang\(a\)\s*=\s*porã/i.test(textoBloco);
-
-  const blocoSupinoVy =
-    /Frase\s*\|\s*Tradução\s*\|\s*Sentido de -vy|Ojapó ma oóvy|Opó yvy áno oúvy|Oaqá oóvy|Oguejý oúvy/i.test(textoBloco);
-
-  for (let i = 0; i < linhas.length; i++) {
-    if (consumidos.has(i)) continue;
-
-    const item = linhaDeExemplo(linhas[i]);
-    if (!item) continue;
-
-    const proxima = (linhas[i + 1] || "").trim();
-    const traducao = proxima.match(/^\s*["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]\s*$/u);
-
-    if (traducao) {
-      item.sentido = blocoAlternanciaConsonantal
-        ? traducao[1]
-        : traducao[2];
-
-      consumidos.add(i + 1);
-    }
-
-    if (blocoPosposicaoBo) {
-      const mForma = item.forma.match(/^(.+?)\s+["“](.+?)["”]\s*$/u);
-      if (mForma) {
-        item.forma = mForma[1].trim();
-      }
-
-      const mResultado = item.resultado.match(/^(.+?)\s+["“](.+?)["”]/u);
-      if (mResultado) {
-        item.resultado = mResultado[1].trim();
-        item.sentido = mResultado[2].trim();
-      }
-    }
-
-    if (blocoSupinoVy) {
-      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
-      item.resultado = item.resultado.replace(/^["“]|["”]$/gu, "").trim();
-    }
-
-    if (blocoGuaraniApapocuva) {
-      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
-    }
-
-    dados.push({ ...item, indice: i });
-  }
-
-  if (dados.length === 0) return null;
-
-  let cabecalho;
-  let modoCorpo = "quatro";
-
-  if (blocoCorrespondencia) {
-    cabecalho = `
-      <tr>
-        <th>Forma Tupi(nambá)</th>
-        <th>Forma Guarani (geral)</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Português</th>
-      </tr>
-    `;
-  } else if (blocoCorrespondenciaPosposicoes) {
-    cabecalho = `
-      <tr>
-        <th>Guarani Antigo / outras variedades</th>
-        <th>Nhandewa-Guarani</th>
-      </tr>
-    `;
-    modoCorpo = "duas";
-  } else if (blocoPosposicaoWy) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Posposição</th>
-        <th>Forma resultante</th>
-        <th>Função / sentido</th>
-      </tr>
-    `;
-  } else if (blocoPosposicaoBo) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Posposição</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Sentido / relação</th>
-      </tr>
-    `;
-  } else if (blocoAlternanciaConsonantal) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Ambiente</th>
-        <th>Realização</th>
-        <th>Glossário</th>
-      </tr>
-    `;
-  } else if (blocoContrasteOralNasal) {
-    cabecalho = `
-      <tr>
-        <th>Forma</th>
-        <th>Ambiente</th>
-        <th>Significado / resultado</th>
-      </tr>
-    `;
-    modoCorpo = "tresContraste";
-  } else if (blocoHarmoniaNasal) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Elemento associado</th>
-        <th>Forma resultante</th>
-        <th>Significado</th>
-      </tr>
-    `;
-  } else if (blocoGuaraniApapocuva) {
-    cabecalho = `
-      <tr>
-        <th>Guarani antigo</th>
-        <th>Significado</th>
-        <th>Apapocuva</th>
-      </tr>
-    `;
-    modoCorpo = "tresGuarani";
-  } else if (blocoReducao) {
-    cabecalho = `
-      <tr>
-        <th>Forma histórica</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Significado</th>
-      </tr>
-    `;
-    modoCorpo = "tresReducao";
-  } else if (blocoSupinoVy) {
-    cabecalho = `
-      <tr>
-        <th>Frase</th>
-        <th>Tradução</th>
-        <th>Sentido de -vy</th>
-      </tr>
-    `;
-    modoCorpo = "tresVy";
-  } else {
-    const temComposicao = dados.some(item => item.tipo === "composicao");
-    if (temComposicao) {
-      cabecalho = `
-        <tr>
-          <th>Forma de base</th>
-          <th>Componente linguístico</th>
-          <th>Forma resultante</th>
-          <th>Sentido / tradução</th>
-        </tr>
-      `;
-    } else {
-      cabecalho = `
-        <tr>
-          <th>Forma registrada</th>
-          <th>Forma correspondente</th>
-          <th>Sentido / tradução</th>
-        </tr>
-      `;
-      modoCorpo = "tres";
-    }
-  }
-
-  const corpo = dados.map(item => {
-    if (modoCorpo === "duas") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.resultado)}</td></tr>`;
-    }
-    if (modoCorpo === "tresContraste" || modoCorpo === "tresGuarani" || modoCorpo === "tresVy") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.elemento || "")}</td><td>${escaparHTML(item.resultado || "")}</td></tr>`;
-    }
-    if (modoCorpo === "tresReducao") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.resultado || "")}</td><td>${escaparHTML(item.sentido || "")}</td></tr>`;
-    }
-    if (modoCorpo === "tres") {
-      return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.resultado)}</td><td>${escaparHTML(item.sentido || "")}</td></tr>`;
-    }
-    return `<tr><td>${escaparHTML(item.forma)}</td><td>${escaparHTML(item.elemento || "")}</td><td>${escaparHTML(item.resultado)}</td><td>${escaparHTML(item.sentido || "")}</td></tr>`;
-  }).join("");
-
-  return `
-    <div class="tabela-exemplo-wrapper">
-      <table class="tabela-exemplo">
-        <thead>${cabecalho}</thead>
-        <tbody>${corpo}</tbody>
-      </table>
-    </div>
-  `;
-}
-
-
-/* =========================================================
-   CRIA A TABELA
-   ========================================================= */
-
-function tabelaDeExemplos(linhas) {
-  const dados = [];
-  const consumidos = new Set();
-  const textoBloco = linhas.join("\n");
-
-  /* =========================================================
-     CADA TIPO DE EXEMPLO RECEBE O NOME DAS COLUNAS QUE
-     REALMENTE CORRESPONDE AO CONTEÚDO DA FONTE.
-     ========================================================= */
-
-  const blocoCorrespondencia =
-    /kwarasy\s*\+\s*kwarahy\s*=\s*kwaray/i.test(textoBloco) ||
-    /asab\s*\+\s*aha\s*=\s*aa/i.test(textoBloco) ||
-    /ambyasy\s*\+\s*ambyahy\s*=\s*ambyay/i.test(textoBloco) ||
-    /kwese\s*\+\s*kwehe\s*=\s*kweé/i.test(textoBloco) ||
-    /EXEMPLOS DE CORRESPONDÊNCIAS SONORAS/i.test(textoBloco);
-
-  const blocoCorrespondenciaPosposicoes =
-    /Guarani Antigo\s*\/\s*outras variedades\s*→\s*Nhandewa-Guarani|pe\s*\/\s*be\s*\/\s*bo\s*→\s*py\s*\/\s*wy/i.test(textoBloco);
-
-  const blocoPosposicaoWy =
-    /A FORMA wy|Txeé\s*\+\s*wy|pee\s*\+\s*wy/i.test(textoBloco);
-
-  const blocoPosposicaoBo =
-    /oga\s*"casa"\s*\+\s*bo|coang\s*"roça"\s*\+\s*bo|añang\s*"diabo"\s*\+\s*bo/i.test(textoBloco);
-
-  const blocoAlternanciaConsonantal =
-    /\[mba['’]e\].*\+\s*oral\s*=\s*mb|\[mã['’]e\].*\+\s*nasal\s*=\s*m|\[nde\].*\+\s*oral\s*=\s*nd|\[nẽ\].*\+\s*nasal\s*=\s*n/i.test(textoBloco);
-
-  const blocoContrasteOralNasal =
-    /COMPARAÇÃO\s*[—-]\s*oral\s*[×x]\s*nasal|pyta\s*\+\s*oral\s*=\s*ficar|pytã\s*\+\s*nasal\s*=\s*vermelho|tupa\s*\+\s*oral\s*=\s*cama|tupã\s*\+\s*nasal\s*=\s*trovão/i.test(textoBloco) ||
-    /COMPARAÇÃO\s*—\s*oral\s*×\s*nasal/i.test(textoBloco);
-
-  const blocoHarmoniaNasal =
-    /EXEMPLO DE ESPALHAMENTO|kuñã\s*\+\s*kwé\s*=\s*kuñãngwé/i.test(textoBloco);
-
-  const blocoGuaraniApapocuva =
-    /Guarani antigo\s*\|\s*Significado\s*\|\s*Apapocuva/i.test(textoBloco) ||
-    /mocañỹhara\s*\+\s*"aquele que mata"/i.test(textoBloco);
-
-  const blocoReducao =
-    /Palavras que perderam sílaba final átona|oga\s*=\s*óy|coang\s*=\s*cóy|añang\s*=\s*añãy|porang\(a\)\s*=\s*porã/i.test(textoBloco);
-
-  const blocoSupinoVy =
-    /Frase\s*\|\s*Tradução\s*\|\s*Sentido de -vy|Ojapó ma oóvy|Opó yvy áno oúvy|Oaqá oóvy|Oguejý oúvy/i.test(textoBloco);
-
-  const blocoOraisNasaisDuasColunas =
-    /ORAIS\s+NASAIS/i.test(textoBloco) ||
-    /pyta\s+"ficar".*pytã\s+"vermelho"/i.test(textoBloco) ||
-    /tupa\s+"cama".*tūpã\s+"trovão"/i.test(textoBloco);
-
-  // Novos padrões detectados no texto de Mõ, Mü e Mu
-  const blocoVogalNasal = /EXEMPLOS DE VOGAL NASAL/i.test(textoBloco);
-  const blocoVogalCentral = /EXEMPLOS DA VOGAL CENTRAL/i.test(textoBloco);
-
-  for (let i = 0; i < linhas.length; i++) {
-    if (consumidos.has(i)) continue;
-
-    const item = linhaDeExemplo(linhas[i]);
-    if (!item) continue;
-
-    const proxima = (linhas[i + 1] || "").trim();
-    const traducao = proxima.match(/^\s*["“](.+?)["”].*?(?:→|=)\s*["“](.+?)["”]\s*$/u);
-
-    if (traducao) {
-      item.sentido = blocoAlternanciaConsonantal
-        ? traducao[1]
-        : traducao[2];
-
-      consumidos.add(i + 1);
-    }
-
-    if (blocoPosposicaoBo) {
-      const mForma = item.forma.match(/^(.+?)\s+["“](.+?)["”]\s*$/u);
-      if (mForma) {
-        item.forma = mForma[1].trim();
-      }
-
-      const mResultado = item.resultado.match(/^(.+?)\s+["“](.+?)["”]/u);
-      if (mResultado) {
-        item.resultado = mResultado[1].trim();
-        item.sentido = mResultado[2].trim();
-      }
-    }
-
-    if (blocoSupinoVy) {
-      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
-      item.resultado = item.resultado.replace(/^["“]|["”]$/gu, "").trim();
-    }
-
-    if (blocoGuaraniApapocuva) {
-      item.elemento = item.elemento.replace(/^["“]|["”]$/gu, "").trim();
-    }
-
-    dados.push({ ...item, indice: i });
-  }
-
-  if (dados.length === 0) return null;
-
-  let cabecalho;
-  let modoCorpo = "quatro";
-
-  if (blocoCorrespondencia) {
-    cabecalho = `
-      <tr>
-        <th>Forma Tupi(nambá)</th>
-        <th>Forma Guarani (geral)</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Português</th>
-      </tr>
-    `;
-
-  } else if (blocoCorrespondenciaPosposicoes) {
-    cabecalho = `
-      <tr>
-        <th>Guarani Antigo / outras variedades</th>
-        <th>Nhandewa-Guarani</th>
-      </tr>
-    `;
-    modoCorpo = "duas";
-
-  } else if (blocoPosposicaoWy) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Posposição</th>
-        <th>Forma resultante</th>
-        <th>Função / sentido</th>
-      </tr>
-    `;
-
-  } else if (blocoPosposicaoBo) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Posposição</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Sentido / relação</th>
-      </tr>
-    `;
-
-  } else if (blocoAlternanciaConsonantal) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Ambiente</th>
-        <th>Realização</th>
-        <th>Glossário</th>
-      </tr>
-    `;
-
-  } else if (blocoContrasteOralNasal) {
-    cabecalho = `
-      <tr>
-        <th>Forma</th>
-        <th>Ambiente</th>
-        <th>Significado / resultado</th>
-      </tr>
-    `;
-    modoCorpo = "tresContraste";
-
-  } else if (blocoHarmoniaNasal) {
-    cabecalho = `
-      <tr>
-        <th>Forma de base</th>
-        <th>Elemento associado</th>
-        <th>Forma resultante</th>
-        <th>Significado</th>
-      </tr>
-    `;
-
-  } else if (blocoGuaraniApapocuva) {
-    cabecalho = `
-      <tr>
-        <th>Guarani antigo</th>
-        <th>Significado</th>
-        <th>Apapocuva</th>
-      </tr>
-    `;
-    modoCorpo = "tresGuarani";
-
-  } else if (blocoReducao) {
-    cabecalho = `
-      <tr>
-        <th>Forma histórica</th>
-        <th>Forma Nhandewa-Guarani</th>
-        <th>Significado</th>
-      </tr>
-    `;
-    modoCorpo = "tresReducao";
-
-  } else if (blocoSupinoVy) {
-    cabecalho = `
-      <tr>
-        <th>Frase</th>
-        <th>Tradução</th>
-        <th>Sentido de -vy</th>
-      </tr>
-    `;
-    modoCorpo = "tresVy";
-
-  } else if (blocoOraisNasaisDuasColunas) {
-    cabecalho = `
-      <tr>
-        <th>Orais</th>
-        <th>Nasais</th>
-      </tr>
-    `;
-    modoCorpo = "oraisNasaisDuasColunas";
-
-  } else if (blocoVogalNasal || blocoVogalCentral) {
-    // Cabeçalho padronizado e compreensivo para seções de vogais (Mõ, Mü, Mu)
-    cabecalho = `
-      <tr>
-        <th>Forma registrada</th>
-        <th>Ambiente / Descrição</th>
-        <th>Sentido / tradução</th>
-      </tr>
-    `;
-    modoCorpo = "tresVogaisEstudo";
-
-  } else {
-    const temComposicao = dados.some(item => item.tipo === "composicao");
-
-    if (temComposicao) {
-      cabecalho = `
-        <tr>
-          <th>Forma de base</th>
-          <th>Componente linguístico</th>
-          <th>Forma resultante</th>
-          <th>Sentido / tradução</th>
-        </tr>
-      `;
-    } else {
-      const temTraducaoGeral = dados.some(item => item.sentido && item.sentido.trim() !== "");
-      
-      if (temTraducaoGeral) {
-        cabecalho = `
-          <tr>
-            <th>Forma registrada</th>
-            <th>Forma correspondente</th>
-            <th>Sentido / tradução</th>
-          </tr>
-        `;
-        modoCorpo = "tres";
-      } else {
-        cabecalho = `
-          <tr>
-            <th>Forma registrada</th>
-            <th>Forma correspondente</th>
-          </tr>
-        `;
-        modoCorpo = "duasSemTraducao";
-      }
-    }
-  }
-
-  const corpo = dados.map(item => {
-    if (modoCorpo === "duas" || modoCorpo === "duasSemTraducao") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.resultado)}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "tresContraste" || modoCorpo === "tresGuarani" || modoCorpo === "tresVy") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.elemento || "")}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "tresReducao") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
-          <td>${escaparHTML(item.sentido || "")}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "tresVogaisEstudo") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${escaparHTML(item.elemento || "")}</td>
-          <td>${escaparHTML(item.resultado || item.sentido || "")}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "tres") {
-      const colCorrespondente = item.resultado && item.resultado.trim() !== "" 
-        ? escaparHTML(item.resultado) 
-        : escaparHTML(item.sentido || "");
-
-      const colSentido = item.resultado && item.resultado.trim() !== "" 
-        ? escaparHTML(item.sentido || "") 
-        : "";
-
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)}</td>
-          <td>${colCorrespondente}</td>
-          <td>${colSentido}</td>
-        </tr>
-      `;
-    }
-
-    if (modoCorpo === "oraisNasaisDuasColunas") {
-      return `
-        <tr>
-          <td>${escaparHTML(item.forma)} ${item.sentido ? `"${escaparHTML(item.sentido)}"` : ""}</td>
-          <td>${escaparHTML(item.resultado || "")}</td>
-        </tr>
-      `;
-    }
-
-    return `
-      <tr>
-        <td>${escaparHTML(item.forma)}</td>
-        <td>${escaparHTML(item.elemento || "")}</td>
-        <td>${escaparHTML(item.resultado)}</td>
-        <td>${escaparHTML(item.sentido || "")}</td>
-      </tr>
-    `;
-  }).join("");
-
-  return `
-    <div class="tabela-exemplo-wrapper">
-      <table class="tabela-exemplo">
-        <thead>${cabecalho}</thead>
-        <tbody>${corpo}</tbody>
-      </table>
-    </div>
-  `;
-}
-
-/* =========================================================
-   FORMATA OS BLOCOS DE EXEMPLOS (SEPARAÇÃO POR SEÇÕES)
-   ========================================================= */
-
-function formatarBlocosExemplo(texto) {
-  const linhas = texto.split("\n");
-  const novasLinhas = [];
-  let grupoAtual = [];
-
-  const processarGrupo = (linhasGrupo) => {
-    if (linhasGrupo.length === 0) return;
-
-    const indicesExemplos = [];
-    linhasGrupo.forEach((linha, idx) => {
-      if (linhaDeExemplo(linha)) {
-        indicesExemplos.push(idx);
-        const proxima = (linhasGrupo[idx + 1] || "").trim();
-        if (/^["“].*?(?:→|=)\s*["”]$/u.test(proxima)) {
-          indicesExemplos.push(idx + 1);
-        }
-      }
-    });
-
-    if (indicesExemplos.length === 0) {
-      novasLinhas.push(...linhasGrupo);
-      return;
-    }
-
-    const linhasTabela = indicesExemplos.map(idx => linhasGrupo[idx]);
-    const tabelaHTML = tabelaDeExemplos(linhasTabela);
-
-    // Mantém o texto que não é exemplo e insere a tabela gerada especificamente para este bloco
-    let inseriuTabela = false;
-    linhasGrupo.forEach((linha, idx) => {
-      if (indicesExemplos.includes(idx)) {
-        if (!inseriuTabela) {
-          novasLinhas.push(tabelaHTML);
-          inseriuTabela = true;
-        }
-      } else {
-        novasLinhas.push(linha);
-      }
-    });
   };
 
-  for (let i = 0; i < linhas.length; i++) {
-    const linha = linhas[i];
-    // Se encontrar títulos, separadores ou marcadores fortes, quebra o grupo de exemplos para não misturar tabelas diferentes
-    if (/^(#{1,6}\s|📌|⚠️|✅|•|━━━━━━━━|\d+\.)/i.test(linha.trim()) && grupoAtual.length > 0) {
-      processarGrupo(grupoAtual);
-      grupoAtual = [];
-    }
-    grupoAtual.push(linha);
+  if (modelos[quantidade]) {
+
+    return modelos[quantidade];
+
   }
 
-  processarGrupo(grupoAtual);
-  return novasLinhas.join("\n");
+  return Array.from(
+    { length: quantidade },
+    (_, i) => `Campo ${i + 1}`
+  );
+
+}
+
+
+/* =========================================================
+   EXTRAI ANOTAÇÃO ENTRE ASPAS
+   ========================================================= */
+
+function extrairAnotacaoExtremidade(valor) {
+
+  const texto = String(valor ?? "").trim();
+
+  const m = texto.match(
+    /^(.+?)\s+["“](.+?)["”]$/u
+  );
+
+  if (!m) {
+
+    return {
+
+      principal: texto,
+
+      anotacao: ""
+
+    };
+
+  }
+
+  return {
+
+    principal: m[1].trim(),
+
+    anotacao: m[2].trim()
+
+  };
+
+}
+
+
+/* =========================================================
+   NORMALIZA LINHA PARA A TABELA
+   ========================================================= */
+
+function normalizarLinhaParaTabela(
+  estrutura,
+  associada,
+  quantidadeColunas
+) {
+
+  let base = estrutura.partes.slice();
+
+  let anotacao = "";
+
+
+  /* ---------------------------------------------------------
+     IDENTIFICA ANOTAÇÃO ACOPLADA
+     --------------------------------------------------------- */
+
+  if (
+    base.length >= 3 &&
+    quantidadeColunas >= 4
+  ) {
+
+    const inicio =
+      extrairAnotacaoExtremidade(base[0]);
+
+    const fim =
+      extrairAnotacaoExtremidade(
+        base[base.length - 1]
+      );
+
+
+    base[0] = inicio.principal;
+
+    base[base.length - 1] =
+      fim.principal;
+
+
+    anotacao =
+      fim.anotacao ||
+      inicio.anotacao;
+
+  }
+
+
+  let partes = base.slice();
+
+
+  /* ---------------------------------------------------------
+     ADICIONA INFORMAÇÃO ASSOCIADA
+     --------------------------------------------------------- */
+
+  if (
+    associada &&
+    associada.partes?.length &&
+    partes.length < quantidadeColunas
+  ) {
+
+    const existentes =
+      partes.map(
+        valor =>
+          limparLinhaEstrutural(
+            valor
+          ).toLowerCase()
+      );
+
+
+    const candidatos =
+      associada.partes
+
+        .map(
+          valor => valor.trim()
+        )
+
+        .filter(Boolean)
+
+        .filter(
+          valor =>
+            !existentes.includes(
+              valor.toLowerCase()
+            )
+        );
+
+
+    const escolhido =
+      candidatos[candidatos.length - 1];
+
+
+    if (escolhido) {
+
+      partes.push(
+        escolhido
+      );
+
+    }
+
+  }
+
+
+  /* ---------------------------------------------------------
+     ADICIONA ANOTAÇÃO
+     --------------------------------------------------------- */
+
+  if (
+    anotacao &&
+    partes.length < quantidadeColunas
+  ) {
+
+    partes.push(anotacao);
+
+  }
+
+
+  /* ---------------------------------------------------------
+     LIMITA O NÚMERO DE COLUNAS
+     --------------------------------------------------------- */
+
+  if (
+    partes.length >
+    quantidadeColunas
+  ) {
+
+    partes =
+      partes.slice(
+        0,
+        quantidadeColunas
+      );
+
+  }
+
+
+  /* ---------------------------------------------------------
+     COMPLETA COLUNAS VAZIAS
+     --------------------------------------------------------- */
+
+  while (
+    partes.length <
+    quantidadeColunas
+  ) {
+
+    partes.push("");
+
+  }
+
+
+  return partes;
+}
+
+
+/* =========================================================
+   DETECTA QUANTIDADE DE COLUNAS
+   ========================================================= */
+
+function quantidadeColunasAutomaticaParaLinha(
+  estrutura,
+  associada = null
+) {
+
+  let quantidade =
+    estrutura.partes.length;
+
+
+  if (
+    associada?.partes?.length
+  ) {
+
+    quantidade += 1;
+
+  }
+
+
+  /* ---------------------------------------------------------
+     ANOTAÇÃO ENTRE ASPAS
+     --------------------------------------------------------- */
+
+  if (
+    estrutura.partes.length >= 3
+  ) {
+
+    const inicio =
+      extrairAnotacaoExtremidade(
+        estrutura.partes[0]
+      );
+
+    const fim =
+      extrairAnotacaoExtremidade(
+        estrutura.partes[
+          estrutura.partes.length - 1
+        ]
+      );
+
+
+    if (
+      inicio.anotacao ||
+      fim.anotacao
+    ) {
+
+      quantidade =
+        Math.max(
+          quantidade,
+          estrutura.partes.length + 1
+        );
+
+    }
+
+  }
+
+
+  return quantidade;
+}
+
+
+/* =========================================================
+   CRIA HTML DA TABELA
+   ========================================================= */
+
+function criarTabelaHTML(
+  linhas,
+  cabecalhoFonte = null
+) {
+
+  if (
+    !Array.isArray(linhas) ||
+    !linhas.length
+  ) {
+
+    return null;
+
+  }
+
+
+  let quantidadeColunas;
+
+
+  if (
+    cabecalhoFonte?.length
+  ) {
+
+    quantidadeColunas =
+      cabecalhoFonte.length;
+
+  } else {
+
+    quantidadeColunas =
+      Math.max(
+        ...linhas.map(
+          linha =>
+            linha.celulas.length
+        )
+      );
+
+  }
+
+
+  let cabecalhos =
+    cabecalhoFonte?.slice() ||
+    cabecalhoAutomatico(
+      quantidadeColunas
+    );
+
+
+  while (
+    cabecalhos.length <
+    quantidadeColunas
+  ) {
+
+    cabecalhos.push(
+      `Campo ${cabecalhos.length + 1}`
+    );
+
+  }
+
+
+  if (
+    cabecalhos.length >
+    quantidadeColunas
+  ) {
+
+    cabecalhos =
+      cabecalhos.slice(
+        0,
+        quantidadeColunas
+      );
+
+  }
+
+
+  const corpo =
+    linhas.map(
+      linha => {
+
+        let celulas =
+          linha.celulas.slice(
+            0,
+            quantidadeColunas
+          );
+
+
+        while (
+          celulas.length <
+          quantidadeColunas
+        ) {
+
+          celulas.push("");
+
+        }
+
+
+        return `
+          <tr>
+            ${celulas
+              .map(
+                celula =>
+                  `<td>${escaparHTML(celula)}</td>`
+              )
+              .join("")}
+          </tr>
+        `;
+
+      }
+    ).join("");
+
+
+  return `
+    <div class="tabela-exemplo-wrapper">
+
+      <table class="tabela-exemplo">
+
+        <thead>
+
+          <tr>
+
+            ${cabecalhos
+              .map(
+                titulo =>
+                  `<th>${escaparHTML(titulo)}</th>`
+              )
+              .join("")}
+
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          ${corpo}
+
+        </tbody>
+
+      </table>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   VERIFICA SE É CABEÇALHO
+   ========================================================= */
+
+function pareceRotuloDeCabecalho(
+  estrutura
+) {
+
+  if (
+    !estrutura ||
+    !estrutura.partes?.length
+  ) {
+
+    return false;
+
+  }
+
+
+  const texto =
+    estrutura.partes.join(" ");
+
+
+  const palavrasDeCabecalho =
+    /\b(
+      forma|
+      guarani|
+      nhandewa|
+      tupi|
+      português|
+      portugues|
+      significado|
+      tradução|
+      traducao|
+      sentido|
+      frase|
+      ambiente|
+      glossário|
+      glossario|
+      origem|
+      resultante|
+      posposição|
+      posposicao|
+      elemento|
+      componente
+    )\b/ix;
+
+
+  const temMaiuscula =
+    /[A-ZÁÉÍÓÚÂÊÔÃÕÇ]/u.test(
+      texto
+    );
+
+
+  return (
+    palavrasDeCabecalho.test(
+      texto
+    ) ||
+    temMaiuscula
+  );
+
+}
+
+
+/* =========================================================
+   CABEÇALHO ESTRUTURAL
+   ========================================================= */
+
+function linhaPareceCabecalhoEstrutural(
+  linhas,
+  indice
+) {
+
+  const estrutura =
+    analisarLinhaEstrutural(
+      linhas[indice] || ""
+    );
+
+
+  if (
+    !estrutura ||
+    !pareceRotuloDeCabecalho(
+      estrutura
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  for (
+    let i = indice + 1;
+    i < linhas.length;
+    i++
+  ) {
+
+    const candidata =
+      linhas[i];
+
+
+    if (
+      !limparLinhaEstrutural(
+        candidata
+      )
+    ) {
+
+      continue;
+
+    }
+
+
+    const proxima =
+      analisarLinhaEstrutural(
+        candidata
+      );
+
+
+    return Boolean(
+      proxima &&
+      proxima.assinatura ===
+        estrutura.assinatura
+    );
+
+  }
+
+
+  return false;
+}
+
+
+/* =========================================================
+   CABEÇALHO COM "|"
+   ========================================================= */
+
+function linhaPareceCabecalhoTabela(
+  linhas,
+  indice
+) {
+
+  const cabecalho =
+    separarColunasCabecalho(
+      linhas[indice] || ""
+    );
+
+
+  if (!cabecalho) {
+
+    return false;
+
+  }
+
+
+  for (
+    let i = indice + 1;
+    i < linhas.length;
+    i++
+  ) {
+
+    const candidata =
+      linhas[i];
+
+
+    if (
+      !limparLinhaEstrutural(
+        candidata
+      )
+    ) {
+
+      continue;
+
+    }
+
+
+    return Boolean(
+      analisarLinhaEstrutural(
+        candidata
+      )
+    );
+
+  }
+
+
+  return false;
+}
+
+
+/* =========================================================
+   FORMATA OS BLOCOS DE EXEMPLOS
+   ========================================================= */
+
+function formatarBlocosExemplo(
+  texto
+) {
+
+  const linhas =
+    String(texto ?? "")
+      .replace(/\r\n/g, "\n")
+      .replace(/\r/g, "\n")
+      .split("\n");
+
+
+  const resultado = [];
+
+  let i = 0;
+
+
+  while (
+    i < linhas.length
+  ) {
+
+    const linhaAtual =
+      linhas[i];
+
+
+    /* =====================================================
+       1. CABEÇALHO EXPLÍCITO COM "|"
+       ===================================================== */
+
+    const cabecalho =
+      separarColunasCabecalho(
+        linhaAtual
+      );
+
+
+    if (
+      cabecalho &&
+      linhaPareceCabecalhoTabela(
+        linhas,
+        i
+      )
+    ) {
+
+      let j = i + 1;
+
+      const dados = [];
+
+      let assinatura = null;
+
+
+      while (
+        j < linhas.length
+      ) {
+
+        if (
+          !limparLinhaEstrutural(
+            linhas[j]
+          )
+        ) {
+
+          j++;
+
+          continue;
+
+        }
+
+
+        const estrutura =
+          analisarLinhaEstrutural(
+            linhas[j]
+          );
+
+
+        if (!estrutura) {
+
+          break;
+
+        }
+
+
+        if (!assinatura) {
+
+          assinatura =
+            estrutura.assinatura;
+
+        }
+
+
+        /* --------------------------------------------------
+           ESTRUTURA DIFERENTE = NOVA TABELA
+           -------------------------------------------------- */
+
+        if (
+          estrutura.assinatura !==
+          assinatura
+        ) {
+
+          break;
+
+        }
+
+
+        let associada = null;
+
+
+        const seguinte =
+          linhas[j + 1] || "";
+
+
+        const possivelAssociada =
+          analisarLinhaAssociada(
+            seguinte
+          );
+
+
+        if (
+          possivelAssociada
+        ) {
+
+          associada =
+            possivelAssociada;
+
+          j++;
+
+        }
+
+
+        dados.push({
+
+          celulas:
+            normalizarLinhaParaTabela(
+
+              estrutura,
+
+              associada,
+
+              cabecalho.length
+
+            )
+
+        });
+
+
+        j++;
+
+      }
+
+
+      if (
+        dados.length
+      ) {
+
+        resultado.push(
+          criarTabelaHTML(
+            dados,
+            cabecalho
+          )
+        );
+
+
+        i = j;
+
+        continue;
+
+      }
+
+    }
+
+
+    /* =====================================================
+       2. CABEÇALHO ESTRUTURAL SEM "|"
+       
+       Exemplo:
+       Guarani antigo → Nhandewa-Guarani
+       ===================================================== */
+
+    if (
+      linhaPareceCabecalhoEstrutural(
+        linhas,
+        i
+      )
+    ) {
+
+      const estruturaCabecalho =
+        analisarLinhaEstrutural(
+          linhaAtual
+        );
+
+
+      const cabecalhoEstrutural =
+        estruturaCabecalho.partes.slice();
+
+
+      const dados = [];
+
+      let j = i + 1;
+
+
+      while (
+        j < linhas.length
+      ) {
+
+        if (
+          !limparLinhaEstrutural(
+            linhas[j]
+          )
+        ) {
+
+          j++;
+
+          continue;
+
+        }
+
+
+        const estrutura =
+          analisarLinhaEstrutural(
+            linhas[j]
+          );
+
+
+        if (
+          !estrutura ||
+          estrutura.assinatura !==
+            estruturaCabecalho.assinatura
+        ) {
+
+          break;
+
+        }
+
+
+        dados.push({
+
+          celulas:
+            normalizarLinhaParaTabela(
+
+              estrutura,
+
+              null,
+
+              cabecalhoEstrutural.length
+
+            )
+
+        });
+
+
+        j++;
+
+      }
+
+
+      if (
+        dados.length
+      ) {
+
+        resultado.push(
+
+          criarTabelaHTML(
+
+            dados,
+
+            cabecalhoEstrutural
+
+          )
+
+        );
+
+
+        i = j;
+
+        continue;
+
+      }
+
+    }
+
+
+    /* =====================================================
+       3. TABELA SEM CABEÇALHO
+       
+       A própria estrutura define
+       a quantidade de colunas.
+       ===================================================== */
+
+    const estruturaInicial =
+      analisarLinhaEstrutural(
+        linhaAtual
+      );
+
+
+    if (
+      estruturaInicial
+    ) {
+
+      const dados = [];
+
+      let j = i;
+
+      const assinatura =
+        estruturaInicial.assinatura;
+
+
+      let quantidadeColunasAutomatica =
+        null;
+
+
+      while (
+        j < linhas.length
+      ) {
+
+        if (
+          !limparLinhaEstrutural(
+            linhas[j]
+          )
+        ) {
+
+          let k = j + 1;
+
+
+          while (
+            k < linhas.length &&
+            !limparLinhaEstrutural(
+              linhas[k]
+            )
+          ) {
+
+            k++;
+
+          }
+
+
+          const futura =
+            analisarLinhaEstrutural(
+              linhas[k] || ""
+            );
+
+
+          if (
+            futura &&
+            futura.assinatura ===
+              assinatura
+          ) {
+
+            j = k;
+
+            continue;
+
+          }
+
+
+          break;
+
+        }
+
+
+        const estrutura =
+          analisarLinhaEstrutural(
+            linhas[j]
+          );
+
+
+        if (
+          !estrutura ||
+          estrutura.assinatura !==
+            assinatura
+        ) {
+
+          break;
+
+        }
+
+
+        let associada = null;
+
+
+        const seguinte =
+          linhas[j + 1] || "";
+
+
+        const possivelAssociada =
+          analisarLinhaAssociada(
+            seguinte
+          );
+
+
+        if (
+          possivelAssociada
+        ) {
+
+          associada =
+            possivelAssociada;
+
+          j++;
+
+        }
+
+
+        const quantidadeDetectada =
+          quantidadeColunasAutomaticaParaLinha(
+
+            estrutura,
+
+            associada
+
+          );
+
+
+        if (
+          quantidadeColunasAutomatica ===
+          null
+        ) {
+
+          quantidadeColunasAutomatica =
+            quantidadeDetectada;
+
+        } else {
+
+          quantidadeColunasAutomatica =
+            Math.max(
+
+              quantidadeColunasAutomatica,
+
+              quantidadeDetectada
+
+            );
+
+        }
+
+
+        dados.push({
+
+          celulas:
+            normalizarLinhaParaTabela(
+
+              estrutura,
+
+              associada,
+
+              quantidadeColunasAutomatica
+
+            )
+
+        });
+
+
+        j++;
+
+      }
+
+
+      if (
+        dados.length
+      ) {
+
+        resultado.push(
+
+          criarTabelaHTML(
+            dados
+          )
+
+        );
+
+
+        i = j;
+
+        continue;
+
+      }
+
+    }
+
+
+    /* =====================================================
+       NÃO É TABELA
+       ===================================================== */
+
+    resultado.push(
+      linhaAtual
+    );
+
+
+    i++;
+
+  }
+
+
+  return resultado.join("\n");
 }
 
 
@@ -2544,195 +3099,283 @@ function formatarBlocosExemplo(texto) {
 
 function formatarConteudo(texto) {
 
-  if (!texto) return "";
-
-  // ==========================================
-  // 1. CRIA AS TABELAS
-  // ==========================================
-
-  let resultado = formatarBlocosExemplo(texto);
+  if (!texto) {
+    return "";
+  }
 
 
-  // ==========================================
-  // 2. GUARDA AS TABELAS
-  // ==========================================
+  /* =======================================================
+     1. CRIA AS TABELAS
+     ======================================================= */
+
+  let resultado =
+    formatarBlocosExemplo(
+      texto
+    );
+
+
+  /* =======================================================
+     2. GUARDA AS TABELAS
+     ======================================================= */
 
   const tabelas = [];
 
-  resultado = resultado.replace(
-    /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
-    tabela => {
 
-      const indice = tabelas.length;
+  resultado =
+    resultado.replace(
 
-      tabelas.push(tabela);
+      /<div class="tabela-exemplo-wrapper">[\s\S]*?<\/div>/g,
 
-      return `TABELAMARCADOR${indice}FIM`;
+      tabela => {
 
-    }
-  );
+        const indice =
+          tabelas.length;
 
 
-  // ==========================================
-  // 3. LIMPA AS QUEBRAS E OS "\"
-  // ==========================================
-
-  resultado = resultado.replace(/\r\n/g, "\n");
-
-  // Remove "\" usado no final das linhas
-  resultado = resultado.replace(/\\[ \t]*\n/g, "\n");
-
-  // Remove espaços no final das linhas
-  resultado = resultado.replace(/[ \t]+$/gm, "");
-
-  // Remove linhas completamente vazias em excesso
-  resultado = resultado.replace(/\n[ \t]*\n[ \t]*\n+/g, "\n\n");
+        tabelas.push(
+          tabela
+        );
 
 
-  // ==========================================
-  // 4. ESCAPA O TEXTO
-  // ==========================================
+        return `TABELAMARCADOR${indice}FIM`;
 
-  resultado = escaparHTML(resultado);
-
-
-  // ==========================================
-  // 5. SEPARA OS BLOCOS
-  // ==========================================
-
-  const blocos = resultado
-    .split(/\n{2,}/)
-    .map(bloco => bloco.trim())
-    .filter(bloco => bloco !== "");
-
-
-  // ==========================================
-  // 6. FORMATA OS BLOCOS
-  // ==========================================
-
-  return blocos.map(bloco => {
-
-    // ------------------------------------------
-    // SE O BLOCO POSSUI UMA TABELA
-    // ------------------------------------------
-
-    const marcador = bloco.match(
-      /TABELAMARCADOR(\d+)FIM/
-    );
-
-    if (marcador) {
-
-      const indice = Number(marcador[1]);
-
-      // Remove qualquer resto de espaços ou "\"
-      const antes = bloco
-        .replace(/TABELAMARCADOR\d+FIM/g, "")
-        .trim();
-
-      // Se não existe texto junto, retorna somente a tabela
-      if (!antes) {
-        return tabelas[indice];
       }
 
-      // Caso exista texto junto do marcador,
-      // preserva o texto e coloca a tabela depois.
-      return `
-        <div class="historia-paragrafo">
-          ${antes}
-        </div>
-        ${tabelas[indice]}
-      `;
-    }
+    );
 
 
-    // ------------------------------------------
-    // TEXTO NORMAL
-    // ------------------------------------------
+  /* =======================================================
+     3. LIMPEZA
+     ======================================================= */
 
-    const linhas = bloco
-      .split("\n")
-      .map(linha => {
+  resultado =
+    resultado.replace(
+      /\r\n/g,
+      "\n"
+    );
 
-        linha = linha.trim();
 
-        // Remove "\" restante
-        linha = linha.replace(/\\+$/g, "");
+  resultado =
+    resultado.replace(
+      /\\[ \t]*\n/g,
+      "\n"
+    );
 
-        if (!linha) {
-          return "";
-        }
 
-        // Destaca EXEMPLO
-        if (/^EXEMPLO\s*\d+/i.test(linha)) {
+  resultado =
+    resultado.replace(
+      /[ \t]+$/gm,
+      ""
+    );
+
+
+  resultado =
+    resultado.replace(
+      /\n[ \t]*\n[ \t]*\n+/g,
+      "\n\n"
+    );
+
+
+  /* =======================================================
+     4. ESCAPA O TEXTO
+     ======================================================= */
+
+  resultado =
+    escaparHTML(
+      resultado
+    );
+
+
+  /* =======================================================
+     5. SEPARA OS BLOCOS
+     ======================================================= */
+
+  const blocos =
+    resultado
+
+      .split(
+        /\n{2,}/
+      )
+
+      .map(
+        bloco =>
+          bloco.trim()
+      )
+
+      .filter(
+        bloco =>
+          bloco !== ""
+      );
+
+
+  /* =======================================================
+     6. RECOLOCA AS TABELAS
+     ======================================================= */
+
+  return blocos
+
+    .map(
+      bloco => {
+
+        const marcador =
+          bloco.match(
+            /TABELAMARCADOR(\d+)FIM/
+          );
+
+
+        /* ---------------------------------------------------
+           BLOCO COM TABELA
+           --------------------------------------------------- */
+
+        if (
+          marcador
+        ) {
+
+          const indice =
+            Number(
+              marcador[1]
+            );
+
+
+          const antes =
+            bloco
+
+              .replace(
+                /TABELAMARCADOR\d+FIM/g,
+                ""
+              )
+
+              .trim();
+
+
+          /* -----------------------------------------------
+             somente a tabela
+             ----------------------------------------------- */
+
+          if (!antes) {
+
+            return tabelas[
+              indice
+            ];
+
+          }
+
+
+          /* -----------------------------------------------
+             texto + tabela
+             ----------------------------------------------- */
 
           return `
-            <span class="destaque-exemplo">
-              ${linha}
-            </span>
+
+            <div class="historia-paragrafo">
+
+              ${antes}
+
+            </div>
+
+            ${tabelas[indice]}
+
           `;
 
         }
 
-        return linha;
 
-      })
-      .filter(linha => linha !== "")
-      .join("<br>");
+        /* ---------------------------------------------------
+           TEXTO NORMAL
+           --------------------------------------------------- */
+
+        const linhasNormais =
+          bloco
+
+            .split("\n")
+
+            .map(
+              linha => {
+
+                linha =
+                  linha
+                    .trim()
+                    .replace(
+                      /\\+$/g,
+                      ""
+                    );
 
 
-    if (!linhas) {
-      return "";
-    }
+                if (
+                  !linha
+                ) {
+
+                  return "";
+
+                }
 
 
-    return `
-      <div class="historia-paragrafo">
-        ${linhas}
-      </div>
-    `;
+                /* -------------------------------------------
+                   DESTACA EXEMPLO
+                   ------------------------------------------- */
 
-  }).join("");
+                if (
+                  /^EXEMPLO\s*\d+/i.test(
+                    linha
+                  )
+                ) {
+
+                  return `
+
+                    <span class="destaque-exemplo">
+
+                      ${linha}
+
+                    </span>
+
+                  `;
+
+                }
+
+
+                return linha;
+
+              }
+            )
+
+            .filter(
+              Boolean
+            )
+
+            .join(
+              "<br>"
+            );
+
+
+        if (
+          !linhasNormais
+        ) {
+
+          return "";
+
+        }
+
+
+        return `
+
+          <div class="historia-paragrafo">
+
+            ${linhasNormais}
+
+          </div>
+
+        `;
+
+      }
+    )
+
+    .filter(
+      Boolean
+    )
+
+    .join("");
 }
 
-function classeTipo(tipo, categoria) {
-    const cat = (categoria || "")
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim();
-
-    const t = (tipo || "")
-        .toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim();
-
-    if (cat.includes("apresentacao")) {
-        return "historia-apresentacao";
-    }
-
-    if (cat.includes("historia")) {
-        return "historia-historia";
-    }
-
-    if (cat.includes("transformacoes")) {
-        return "historia-transformacoes";
-    }
-
-    if (cat.includes("sons")) {
-        return "historia-sons";
-    }
-
-    if (cat.includes("gramatica")) {
-        return "historia-gramatica";
-    }
-
-    if (cat.includes("continuidade")) {
-        return "historia-continuidade";
-    }
-
-    return "historia-continuidade";
-}
 
 /* =========================================================
    MOSTRAR HISTÓRIAS
