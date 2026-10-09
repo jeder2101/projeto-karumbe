@@ -351,6 +351,7 @@ a história das pessoas que a falam.
         "Os sons de uma língua podem apresentar transformações ao longo da história. No Nhandewa-Guarani, estudos registram correspondências entre formas antigas e atuais, além de processos relacionados à nasalidade.",
     conteudo: `
 As línguas podem apresentar mudanças nos sons ao longo de sua história.
+
 Essas transformações podem ocorrer na pronúncia, na estrutura das palavras e na maneira como determinados sons são realizados em diferentes contextos.
 
 O estudo da fonologia do Nhandewa-Guarani permite observar relações entre registros históricos e formas encontradas em comunidades contemporâneas.
@@ -381,6 +382,7 @@ A NASALIDADE NA LÍNGUA
 A nasalidade é uma característica central e distintiva na fonologia do Nhandewa-Guarani.
 
 Estudos descrevem consoantes pré-nasalizadas, como mb, nd e ŋg, e consoantes nasais como m, n e ɲ.
+
 Em determinados ambientes, consoantes pré-nasalizadas podem apresentar realizações inteiramente nasais.
 
 Exemplos descritos na pesquisa incluem relações entre formas como "mb → m e nd → n", dependendo do ambiente nasal ou oral em que se encontram.
@@ -391,12 +393,15 @@ A mudança sonora não significa necessariamente perda da língua. Pelo contrár
 
 O estudo das transformações fonológicas contribui para compreender tanto os registros antigos quanto as formas contemporâneas, reforçando a continuidade do Nhandewa-Guarani.
 
-⚠️ Os exemplos apresentados são referências para estudo e comparação. Não devem ser utilizados como regras absolutas para todas as palavras ou para todos os falantes Nhandewa.
+⚠️ Os exemplos apresentados são referências para estudo e comparação. 
+
+Não devem ser utilizados como regras absolutas para todas as palavras ou para todos os falantes Nhandewa.
 `,
     tipo: "documentado",
 
     fonte:
-        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense, LIAMES; e Seara, Quadros e Martins, estudo acústico da nasalidade consonantal no Nhandewa-Guarani.",
+        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense",
+        "LIAMES; e Seara, Quadros e Martins, estudo acústico da nasalidade consonantal no Nhandewa-Guarani."
 
     links: [
         {
