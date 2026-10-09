@@ -400,8 +400,8 @@ Não devem ser utilizados como regras absolutas para todas as palavras ou para t
     tipo: "documentado",
 
     fonte:
-        "Consuelo de Paiva Godinho Costa, Fonologia do Nhandewa-Guarani Paulista-Paranaense",
-        "LIAMES; e Seara, Quadros e Martins, estudo acústico da nasalidade consonantal no Nhandewa-Guarani."
+        Consuelo de Paiva Godinho Costa Fonologia do Nhandewa Guarani Paulista-Paranaense.
+        LIAMES: e Seara Quadros e Martins estudo acústico da nasalidade consonantal no Nhandewa-Guarani.
 
     links: [
         {
