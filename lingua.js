@@ -367,8 +367,11 @@ ambyasy| ambyahy | ambyay | fome
 kwese | kwehe | kweé | ontem
 
 Esses exemplos é apresentado em estudos linguísticos como uma comparação entre formas registradas em diferentes variedades e períodos.
+
 A comparação mostra alterações na realização de determinados sons. 
+
 É necessário considerar o registro e a análise linguística de cada forma pois permite observar correspondências entre sons presentes em registros diferentes.
+
 A comparação entre essas formas ajuda a estudar transformações sonoras ao longo da história.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
