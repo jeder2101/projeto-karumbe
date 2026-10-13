@@ -1892,6 +1892,10 @@ nas mãos de quem a ensina e de quem a aprende.
             titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
             url: "assets/links/licoes-gramatica-vol2.pdf"
         }
+               {
+            titulo: "Vocabulário tupi-guarani, 1° edição Secretaria da edução do Estado de São Paulo 2010",
+            url: "assets/links/dicionario-tupi guarani.pdf"
+        }
     ]
 }
 
