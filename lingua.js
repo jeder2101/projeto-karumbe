@@ -1885,13 +1885,13 @@ nas mãos de quem a ensina e de quem a aprende.
             url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
         },
 {
-        titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
-        url: "https://kamuri.org.br/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
-    },
-    {
-        titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
-        url: "https://kamuri.org.br/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
-    }
+            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
+            url: "assets/links/licoes-gramatica-vol1.pdf"
+        },
+        {
+            titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
+            url: "assets/links/licoes-gramatica-vol2.pdf"
+        }
     ]
 }
 
