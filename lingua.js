@@ -850,12 +850,12 @@ de nasalidade.
 EXEMPLOS DO ESTUDO:
 
 Expressão | Forma de leitura | Significado
-seu + cabelo | nde'i'awi | seu cabelo
-seu + pety | ne'peti | seu fumo
+seu + cabelo | nde'awý | seu cabelo
+seu + pety | ne'pẽty | seu fumo
 negação- + oky + -iri | ndaokyri | sem chuva
 negação- + porã + -iri | nãpo'iri | feio, ruim
-nossa/nosso + djaryi | pãnde djaryi | nossa avó
-nossa/nosso + tamõi | pãne tamõi | nosso avô, nosso velho
+nossa/nosso + djaryi | nhande djaryi | nossa avó
+nossa/nosso + tamõi | nãnẽ ramõi | nosso avô, nosso velho
 
 Esses exemplos são utilizados para observar a relação
 entre nasalidade, acento e os diferentes elementos
