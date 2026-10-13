@@ -84,16 +84,16 @@ manter a língua presente, acessível e viva.
 
 A língua não está nos livros — está nas pessoas:
 
-  👴 Os mais velhos que guardam as histórias,
+   Os mais velhos que guardam as histórias,
      as palavras antigas e os saberes profundos
 
-  👩‍🏫 Os professores que levam a língua às escolas
+   Os professores que levam a língua às escolas
      e às aldeias com dedicação
 
-  👧 As crianças que aprendem, falam e recriam
+   As crianças que aprendem, falam e recriam
      a língua todos os dias
 
-  👨‍👩‍👧‍👦 As famílias que transmitem o Nhandewa
+   As famílias que transmitem o Nhandewa
      no dia a dia, em casa, nas reuniões,
      nas caminhadas e nas festas
 
@@ -176,8 +176,8 @@ as formas utilizadas pelas comunidades atualmente.
 Entre os registros mais importantes está a obra de
 Antônio Ruiz de Montoya:
 
-  • "Tesoro de la lengua guarani" — 1639
-  • "Arte, y bocabulario de la lengua guarani" — 1640
+  • Tesoro de la lengua guarani — 1639
+  • Arte, y bocabulario de la lengua guarani — 1640
 
 Essas obras constituem registros importantes de uma
 variedade do Guarani do período colonial, mas não
@@ -279,16 +279,16 @@ nem tudo que se transforma perde a raiz. A língua viva
 
 Neste projeto, distinguimos:
 
-  📜 DOCUMENTADO
+   DOCUMENTADO
   Fontes verificáveis e pesquisas acadêmicas
 
-  💬 MEMÓRIA FAMILIAR
+   MEMÓRIA FAMILIAR
   Saberes transmitidos oralmente entre gerações
 
-  🔍 EM PESQUISA
+   EM PESQUISA
   Dados em fase de comparação com documentos e registros
 
-  💡 HIPÓTESE
+   HIPÓTESE
   Interpretações que ainda precisam de evidências
 
 Os documentos antigos ajudam a compreender as formas
@@ -707,28 +707,27 @@ A interpretação apresentada no estudo considera que
 essas realizações podem ser explicadas pelo
 espalhamento da nasalidade.
 
-A ALTERNÂNCIA NASAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+EXEMPLOS — ALTERNÂNCIA NASAL NO NHANDEWA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A pesquisa também observa uma alternância entre
-realizações orais e nasais em determinados contextos.
+ Alternância Labial (/mb/ ⇄ [m]):
+• mba'e + oral = mb ("coisa, o que")
+• mã'ẽ + nasal = m ("olhar")
+• mombo + oral = mb ("jogar")
+• momõ + nasal = m ("onde")
 
-Esse padrão está relacionado ao ambiente vocálico
-e aos processos de nasalidade da língua.
+ Alternância Dental (/nd/ ⇄ [n]):
+• nde + oral = nd ("tua, seu")
+• nẽ + nasal = n ("teu / seus")
+• ndedjuru + oral = nd ("sua boca")
+• nẽpetã + nasal = n ("seu fumo")
 
-EXEMPLO DO ESTUDO:
-
-A pesquisa identifica uma alternância entre uma
-realização oral e uma realização nasal do marcador
-de pessoa.
-
-O estudo apresenta também a forma:
-
-djagwata = nós andamos
-
-Esses dados são utilizados para observar a relação
-entre nasalidade, marcadores de pessoa e formas
-verbais.
+ Alternância em Prefixos e Pessoas:
+• nande-tuwitxa + oral = nd ("nosso chefe")
+• nãnẽ-rāmoĩ + nasal = n ("nosso avô")
+• ndaokyiry + oral = nd ("sem chuva")
+• naporaĩ + nasal = n ("não bom, ruim, feio")
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1016,7 +1015,7 @@ Nhandewa-Guarani.
         "No Nhandewa-Guarani, o segmento /r/ pode ser nasalizado em contexto de harmonia nasal. Em fala rápida, essa realização pode confundir-se com [n], mas não são fonemas idênticos — trata-se de um tap nasalizado, não de uma mudança definitiva de R para N.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
+ O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O /r/ no Nhandewa-Guarani é um tap alveolar,
@@ -1030,10 +1029,10 @@ e realiza-se como [r̃] — um tap nasalizado, não
 uma consoante nasal plena [n].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. R EM CONTEXTO ORAL
+ R EM CONTEXTO ORAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 EXEMPLOS — SEM INFLUÊNCIA DE NASALIDADE:
+ EXEMPLOS — SEM INFLUÊNCIA DE NASALIDADE:
 
 Forma | Significado
 rery | nome
@@ -1045,10 +1044,10 @@ Nessas palavras, não há vogal nasal próxima,
 e o /r/ mantém sua pronúncia oral.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. R NASALIZADO — NÃO É N
+ R NASALIZADO — NÃO É N
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 EXEMPLOS COM /R/ SOB INFLUÊNCIA NASAL:
+ EXEMPLOS COM /R/ SOB INFLUÊNCIA NASAL:
 
 Forma | Significado | Pronúncia
 põrã | bom, bonito | [põr̃ã] — não [põnã]
@@ -1066,7 +1065,7 @@ a grafia ponã pronunciando com ênfase o r: porã.
 Isso demonstra que para os falantes não é o mesmo som.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. POR QUE NÃO É TROCA SIMPLES
+ POR QUE NÃO É TROCA SIMPLES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ✅ /r/ e /n/ continuam sendo fonemas distintos
@@ -1076,14 +1075,14 @@ Isso demonstra que para os falantes não é o mesmo som.
   ✅ A grafia com n em registros antigos é transcrição,
      não prova de mudança na língua
 
-📌 COMPARAÇÃO:
+ COMPARAÇÃO:
 
 Forma | Observação
 porã / ponã | mesma palavra, transcrição diferente
 pará / paná | não são intercambiáveis
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. HARMONIA NASAL E ESPALHAMENTO
+ HARMONIA NASAL E ESPALHAMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A nasalidade no Nhandewa se espalha de sílaba
@@ -1098,7 +1097,7 @@ Vogal nasal → espalha nasalidade → /r/ fica nasalizado
 Mas continua sendo /r/, não vira /n/.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. O QUE OUVIMOS E O QUE ESCREVEMOS
+ O QUE OUVIMOS E O QUE ESCREVEMOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Ao registrar uma palavra:
@@ -1141,7 +1140,7 @@ a distinção que os próprios falantes fazem.
         "Comparando o Guarani Antigo com o Nhandewa contemporâneo, observa-se redução de sílabas finais átonas e de elementos internos. Isso não é perda, mas transformação — formas longas e reduzidas podem coexistir na fala das comunidades.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. O QUE MUDA E O QUE PERMANECE
+ O QUE MUDA E O QUE PERMANECE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 As línguas do ramo Guarani tendem a perder
@@ -1151,10 +1150,10 @@ mas de forma viva: não é só o passado que se reduz,
 é a língua que se renova a cada geração.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. EXEMPLOS DE REDUÇÃO — GUARANI ANTIGO → NHANDEWA
+ EXEMPLOS DE REDUÇÃO — GUARANI ANTIGO → NHANDEWA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 PALAVRAS QUE PERDERAM SÍLABA FINAL ÁTONA:
+ PALAVRAS QUE PERDERAM SÍLABA FINAL ÁTONA:
 
 Guarani Antigo | Nhandewa | Significado
 oga | óy | casa
@@ -1162,7 +1161,7 @@ coang | cóy | roça
 añang | añãy | diabo
 porang(a) | porã | bom, bonito
 
-📌 FORMAS DE NEGAÇÃO:
+ FORMAS DE NEGAÇÃO:
 
 Forma histórica | Forma atual | Significado
 eỹma / ỹma | eỹ | sem / não
@@ -1171,7 +1170,7 @@ eỹma / ỹma | eỹwa | não / sem — uso atual em alguns contextos
 A partícula final -ma evoluiu para -wa,
 com valor de generalização ou pluralidade.
 
-📌 POSSE — REDUÇÃO DO ELEMENTO -RE-:
+ POSSE — REDUÇÃO DO ELEMENTO -RE-:
 
 Forma longa | Forma reduzida | Significado
 cherembireco | chimbirécó | minha mulher
@@ -1183,7 +1182,7 @@ cheremỹmba | chimỹmbá | meu animal doméstico
 Mas a forma longa não desapareceu completamente —
 ainda é ouvida em falas de pessoas mais velhas.
 
-📌 OUTROS CASOS REGISTRADOS:
+ OUTROS CASOS REGISTRADOS:
 
 Guarani antigo | Significado | Apapocuva
 mocañỹhara | aquele que mata | mocañỹá
@@ -1192,7 +1191,7 @@ cherembireco | minha mulher | chimbirécó
 ñanderequeĩ | nosso irmão maior | ñanderyqueỹ
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. NÃO É APAGAMENTO — É TRANSFORMAÇÃO
+ NÃO É APAGAMENTO — É TRANSFORMAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Quando uma sílaba parece desaparecer, pode ser que:
@@ -1213,7 +1212,7 @@ não é simples perda de -ma, é substituição por -wa
 com valor próprio.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. O ELEMENTO RELACIONAL -RE-
+ O ELEMENTO RELACIONAL -RE-
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O morfema -re- marca relação de posse.
@@ -1233,7 +1232,7 @@ podem ser ouvidas de pessoas diferentes
 na mesma comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. COMO ESTUDAR AS MUDANÇAS
+ COMO ESTUDAR AS MUDANÇAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Ao comparar formas antigas e atuais:
@@ -1277,7 +1276,7 @@ mas o rio continua correndo.
         "A partícula ma aparece em construções verbais e como elemento independente. Pa é tema de investigação — não se deve transferir automaticamente seu significado de outras variedades do Guarani para o Nhandewa.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. O QUE SÃO AS PARTÍCULAS
+ O QUE SÃO AS PARTÍCULAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 São pequenas palavras ou elementos que dão
@@ -1287,10 +1286,10 @@ função no contato com o verbo, o nome
 e o contexto da fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. A PARTÍCULA MA
+ A PARTÍCULA MA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 JUNTO AO VERBO — INDICA AÇÃO EM CURSO:
+ JUNTO AO VERBO — INDICA AÇÃO EM CURSO:
 
 Forma | Significado
 aáma | está indo / ia
@@ -1301,7 +1300,7 @@ A partícula se liga à raiz verbal e
 indica que a ação acontece ou acontecia
 ao longo de um tempo.
 
-📌 COMO PALAVRA SEPARADA — CONFIRMAÇÃO/ÊNFASE:
+ COMO PALAVRA SEPARADA — CONFIRMAÇÃO/ÊNFASE:
 
 Ko kwatiá-re ma.
 "É mesmo aqui, nesta terra."
@@ -1310,7 +1309,7 @@ Aqui, ma não se junta ao verbo — aparece
 sozinha, dando peso, confirmação ou
 certeza ao que se diz.
 
-📌 EM NEGAÇÃO E FINALIZAÇÃO:
+ EM NEGAÇÃO E FINALIZAÇÃO:
 
 Forma | Significado
 eỹma | não / sem — registro histórico
@@ -1320,7 +1319,7 @@ eỹwa | não / sem — uso atual
 generalização ou pluralidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. ESCREVER JUNTO OU SEPARADO?
+ ESCREVER JUNTO OU SEPARADO?
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Os professores Nhandewa, nas Convenções
@@ -1336,7 +1335,7 @@ Não é regra fixa para sempre — a escrita
 se ajusta conforme a fala da comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. A PARTÍCULA PA — EM INVESTIGAÇÃO
+ A PARTÍCULA PA — EM INVESTIGAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Em outras variedades do Guarani, pa existe
@@ -1353,7 +1352,7 @@ A palavra escrita igual pode ter significado
 diferente em cada povo.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. COMO ESTUDAR COM RESPEITO
+ COMO ESTUDAR COM RESPEITO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Para ma e pa:
@@ -1394,7 +1393,7 @@ Para ma e pa:
         "A forma vy, ligada aos verbos de movimento ó (ir) e u (vir), introduz orações que expressam tempo e acompanhamento. Vem de registros de Nimuendaju e é chave para compreender a relação entre caminhar e falar no Nhandewa.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. O QUE É O SUPINO VY
+ O QUE É O SUPINO VY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Vy aparece junto a verbos de movimento
@@ -1403,7 +1402,7 @@ tempo que outra, ou no caminho de/para.
 Não é exatamente "quando" — é o movimento
 que acompanha a ação principal.
 
-📌 FORMAS DO MOVIMENTO:
+ FORMAS DO MOVIMENTO:
 
 Forma | Correspondente
 ó | ir
@@ -1415,10 +1414,10 @@ A terminação vy liga a ação de ir/vir ao
 contexto em que outra coisa acontece.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. EXEMPLOS REGISTRADOS
+ EXEMPLOS REGISTRADOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Exemplos do supino vy:
+ Exemplos do supino vy:
 
 Frase | Tradução | Sentido de -vy
 Ojapó ma oóvy | Fazia, enquanto ia. | indo / no caminho
@@ -1427,7 +1426,7 @@ Oaqá oóvy | Atravessou, indo. | indo / na travessia
 Oguejý oúvy | Descia, vindo. | vindo / descendo
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. NÃO É SÓ "QUANDO"
+ NÃO É SÓ "QUANDO"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Traduzir por "quando" ou "enquanto" ajuda,
@@ -1445,7 +1444,7 @@ de conhecer. A língua carrega o movimento
 em suas próprias estruturas gramaticais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. FONTE E CONTEXTO
+ FONTE E CONTEXTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Esses exemplos vêm de narrativas registradas
@@ -1460,7 +1459,7 @@ pequenas variações de pronúncia e grafia.
   ⚠️ O uso atual deve ser confirmado com falantes.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. PARA ESTUDAR
+ PARA ESTUDAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   1. Identificar o verbo: ó = ir / u = vir
@@ -1497,7 +1496,7 @@ pequenas variações de pronúncia e grafia.
         "Uma palavra não tem sempre um só significado. Pode crescer, se ampliar, ganhar caminhos novos. Nhe'ẽ e aywu mostram como sentido e cultura se tecem juntos nas línguas Guarani.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. UMA PALAVRA, MUITOS CAMINHOS
+ UMA PALAVRA, MUITOS CAMINHOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Quando dizemos uma palavra, não dizemos só
@@ -1506,10 +1505,10 @@ e o que pode vir a ser. O sentido cresce
 com quem fala, com onde se fala, com quando.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. NHE'Ẽ — VIDA, ESPÍRITO, FALA, PRESENÇA
+ NHE'Ẽ — VIDA, ESPÍRITO, FALA, PRESENÇA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 EM DIFERENTES CONTEXTOS, NHE'Ẽ PODE SIGNIFICAR:
+ EM DIFERENTES CONTEXTOS, NHE'Ẽ PODE SIGNIFICAR:
 
 nhe'ẽ | Significado
 nhe'ẽ | sopro, respiração, vida
@@ -1527,10 +1526,10 @@ no sentido de algo separado e abstrato. É o que
 faz viver, o que conecta, o que permanece.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. AYWU — FALA, PALAVRA, CAMINHO
+ AYWU — FALA, PALAVRA, CAMINHO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 AYWU — SIGNIFICADOS E SENTIDOS:
+ AYWU — SIGNIFICADOS E SENTIDOS:
 
 aywu | Significado
 aywu | fala, conversa
@@ -1545,7 +1544,7 @@ em um lugar pode ser som em outro — cada
 comunidade tece seu próprio sentido.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. COMO O SENTIDO SE AMPLIA
+ COMO O SENTIDO SE AMPLIA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Uma palavra pode começar num uso e depois
@@ -1559,7 +1558,7 @@ Isso não é "erro" nem "confusão". É como a língua
 respira: cresce junto com o povo que a fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. NÃO COMPARAR PARA IGUALAR
+ NÃO COMPARAR PARA IGUALAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ✅ Mesma raiz ≠ mesmo significado
@@ -1575,7 +1574,7 @@ em margens diferentes — a água é a mesma,
 mas o curso muda.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. O SENTIDO ESTÁ NAS PESSOAS
+ O SENTIDO ESTÁ NAS PESSOAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Para saber o que uma palavra significa:
@@ -1611,7 +1610,7 @@ Para saber o que uma palavra significa:
         "Revitalizar não é só recuperar palavras antigas — é fazer a língua viver no dia a dia. Professores, anciãos, famílias e crianças tecem juntos a continuidade do Nhandewa-Guarani, com gramáticas, escolas e memória viva.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. REVITALIZAR É FAZER VIVER
+ REVITALIZAR É FAZER VIVER
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua não vive em livro. Vive na boca,
@@ -1625,7 +1624,7 @@ que responde em Nhandewa. Revitalizar é:
   ✅ Criar com a língua hoje
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. OS MAIS VELHOS GUARDAM A FONTE
+ OS MAIS VELHOS GUARDAM A FONTE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Foram os falantes idosos das aldeias Nimuendaju,
@@ -1639,7 +1638,7 @@ quem a fale e queira ensinar."
 — Memória das comunidades
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. OS PROFESSORES FAZEM O CAMINHO
+ OS PROFESSORES FAZEM O CAMINHO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Nas Convenções Lingüísticas, professores de
@@ -1648,7 +1647,7 @@ como escrever — cada um tinha sua grafia,
 e acordaram uma para todos. Isso é fortalecimento:
 não receber de fora, construir junto.
 
-📌 O Projeto Gramática Pedagógica:
+ O Projeto Gramática Pedagógica:
 
   • Oficinas na Aldeia Nimuendaju
   • Reuniões com falantes e pesquisadores
@@ -1656,16 +1655,16 @@ não receber de fora, construir junto.
   • Lançamento dos materiais com a comunidade
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. AS GRAMÁTICAS — FERRAMENTAS, NÃO SUBSTITUTAS
+ AS GRAMÁTICAS — FERRAMENTAS, NÃO SUBSTITUTAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Lições de Gramática Nhandewa-Guarani — Volume 1 (2016)
+ Lições de Gramática Nhandewa-Guarani — Volume 1 (2016)
 
   • Apresenta sons, palavras, frases e estruturas
   • Desenvolvido por e com professores indígenas
   • Para ensinar e aprender
 
-📌 Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2
+ Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2
 
   • Dá continuidade, com contribuições do litoral
   • Aprofunda a escrita e os usos
@@ -1674,7 +1673,7 @@ não receber de fora, construir junto.
 Quem caminha é quem fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. A TECNOLOGIA AO SERVIÇO DA LÍNGUA
+ A TECNOLOGIA AO SERVIÇO DA LÍNGUA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O Projeto Karumbé reúne:
@@ -1690,7 +1689,7 @@ o livro é — um apoio. A vida da língua está
 no encontro entre as pessoas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. CONTINUIDADE — NÃO É SÓ RECUPERAR
+ CONTINUIDADE — NÃO É SÓ RECUPERAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Revitalizar não é voltar ao passado. É:
@@ -1742,7 +1741,7 @@ a passa adiante.
         "Pesquisas, formações de professores, materiais didáticos e projetos comunitários — um espaço que reúne o que já foi feito para fortalecer o que está sendo construído. O conhecimento cresce quando compartilhado com respeito.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. UNIR O QUE ESTÁ ESPALHADO
+ UNIR O QUE ESTÁ ESPALHADO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Há décadas, universidades, comunidades,
@@ -1758,63 +1757,63 @@ pesquisa ←→ fala
 passado ←→ presente
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. FORMAÇÃO DE PROFESSORES
+ FORMAÇÃO DE PROFESSORES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 MagIND — Magistério Indígena Novo Mundo (2002–2003)
+ MagIND — Magistério Indígena Novo Mundo (2002–2003)
 
   • Primeira formação específica no estado de SP
   • Parceria USP / Secretaria de Educação SP
 
-📌 FISPI — Formação Intercultural Superior (2005–2008)
+ FISPI — Formação Intercultural Superior (2005–2008)
 
   • Licenciatura voltada a professores indígenas
   • Vinculada à Faculdade de Educação da USP
 
-📌 LINDI — Licenciatura Intercultural Indígena
+ LINDI — Licenciatura Intercultural Indígena
 
   • Em andamento pela UNIFESP
   • Atende Guarani Nhandewa, Mbyá, Kaingang, Terena, Krenak
   • Conhecimentos acadêmicos + saberes tradicionais
 
-📌 Pesquisa de Tiago Nhandewa (USP)
+ Pesquisa de Tiago Nhandewa (USP)
 
   • A perspectiva Guarani na formação docente
   • Ancestralidade, espiritualidade e língua na educação
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. PESQUISA LINGUÍSTICA
+ PESQUISA LINGUÍSTICA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Consuelo de Paiva Godinho Costa — UNICAMP
+ Consuelo de Paiva Godinho Costa — UNICAMP
 
   • Nhandewa Aywu (2003) — fonologia completa
   • Artigo LIAMES (2012) — sons, nasalidade, harmonia
   • Base científica para as gramáticas comunitárias
 
-📌 Outros trabalhos em andamento:
+ Outros trabalhos em andamento:
 
   • Fonologia histórica comparada
   • Variação entre aldeias
   • Gramática pedagógica em atualização
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. MATERIAIS PRODUZIDOS PELA COMUNIDADE
+ MATERIAIS PRODUZIDOS PELA COMUNIDADE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📌 Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2
+ Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2
 
   • Feito por professores, com assessoria linguística
   • Escrito para ensinar na própria língua
   • Disponível livremente para todos
 
-📌 Cadernos de atividades multidisciplinares
+ Cadernos de atividades multidisciplinares
 
   • Ligam língua, cultura, território e história
   • Para uso nas escolas indígenas
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. O PROJETO KARAMBÉ
+ O PROJETO KARAMBÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Este espaço reúne:
@@ -1832,7 +1831,7 @@ autoria, data, comunidade. E que, ao
 encontrar, possa voltar à fonte original.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. PESQUISAR COM RESPEITO
+ PESQUISAR COM RESPEITO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   ⚠️ Não misturar variedades diferentes
@@ -1844,7 +1843,7 @@ encontrar, possa voltar à fonte original.
      é compartilhado
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-7. O FUTURO SE CONSTRÓI JUNTOS
+ O FUTURO SE CONSTRÓI JUNTOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Universidades, escolas, famílias, organizações,
