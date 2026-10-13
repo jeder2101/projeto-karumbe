@@ -429,7 +429,7 @@ Não devem ser utilizados como regras absolutas para todas as palavras ou para t
 
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. MUDANÇAS ENTRE O GUARANI ANTIGO E O NHANDEWA
+MUDANÇAS ENTRE O GUARANI ANTIGO E O NHANDEWA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O estudo compara o Nhandewa-Guarani contemporâneo
@@ -447,7 +447,7 @@ posposições, mudanças de outras consoantes e mudanças
 nas sílabas finais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. MUDANÇA DAS POSPOSIÇÕES
+MUDANÇA DAS POSPOSIÇÕES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O estudo registra especificamente:
@@ -476,7 +476,7 @@ Montoya, ao tratar da declinação dos pronomes,
 registrou a forma chébe.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. A FORMAÇÃO DAS FORMAS FINAIS EM -Y
+A FORMAÇÃO DAS FORMAS FINAIS EM -Y
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Em outra parte da análise, o estudo apresenta palavras
@@ -488,14 +488,14 @@ Os exemplos registrados por Nimuendaju são:
 
 Guarani Antigo | Apapocuva | Nhandewa | Português
 oga   | óy   |  óy  | casa
-coga  | cóy  | koy  | roça
-añang | añãy | anhã | diabo
-coang | coãy | ko´aỹ| agora
+coga  | cóy  | kóy  | roça
+añang | añãy | añãy | diabo
+coang | coãy | coãy | agora
 
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. INTERPRETAÇÃO DAS FORMAS óy E cóy
+INTERPRETAÇÃO DAS FORMAS óy E cóy
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A análise apresentada no estudo relaciona essas formas
@@ -518,7 +518,7 @@ monossílabos oxítonos, com a sílaba final travada
 por uma aproximante.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. DUAS TRANSFORMAÇÕES QUE NÃO DEVEM SER CONFUNDIDAS
+DUAS TRANSFORMAÇÕES QUE NÃO DEVEM SER CONFUNDIDAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O estudo apresenta, portanto, dois conjuntos diferentes
@@ -555,7 +555,7 @@ bo às palavras añang ou coang quando o documento não
 a apresenta dessa maneira.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-6. CONTINUIDADE DA MUDANÇA
+CONTINUIDADE DA MUDANÇA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O estudo afirma que a tendência observada nas
@@ -657,9 +657,8 @@ o significado da palavra.
 
 EXEMPLOS APRESENTADOS NO ESTUDO:
 
-Forma oral | Forma nasal | Significado
-tupa | tüpã | cama / trovão
-mbae | mãe | coisa, o que / olhar
+Forma oral  | tupa / mbae |cama / coisa, o que
+Forma nasal | tüpã / mãe  | trovão / olhar
 
 Esses pares mostram que a diferença entre uma vogal
 oral e uma vogal nasal não é apenas uma diferença
@@ -852,12 +851,12 @@ de nasalidade.
 EXEMPLOS DO ESTUDO:
 
 Expressão | Forma de leitura | Significado
-nde + cabelo | nde'i'awi | seu cabelo
-nde + pety | ne'peti | seu fumo
-nda- + oky + -iri | ndaokyri | sem chuva
-nda- + porã + -iri | nãpo'iri | feio, ruim
-nhande + djaryi | pãnde djaryi | nossa avó
-nhande + tamõi | pãne tamõi | nosso avô, nosso velho
+seu + cabelo | nde'i'awi | seu cabelo
+seu + pety | ne'peti | seu fumo
+negação- + oky + -iri | ndaokyri | sem chuva
+negação- + porã + -iri | nãpo'iri | feio, ruim
+nossa/nosso + djaryi | pãnde djaryi | nossa avó
+nossa/nosso + tamõi | pãne tamõi | nosso avô, nosso velho
 
 Esses exemplos são utilizados para observar a relação
 entre nasalidade, acento e os diferentes elementos
@@ -898,6 +897,7 @@ EXEMPLO:
 
 Tupinambá | Nhandewa-Guarani
 põrã | porã
+bom,bonito,belo|bom, bonito,belo
 
 A interpretação proposta é que a antiga consoante
 nasal em posição de coda deixou de possuir uma
