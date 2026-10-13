@@ -475,110 +475,108 @@
 
 </div>
 
-        <!-- =================================================
-             APOIO INSTITUCIONAL
-        ================================================== -->
-        <footer class="secao-apoio">
+<!-- =================================================
+    APOIO INSTITUCIONAL
+================================================== -->
+<footer class="secao-apoio">
 
-            <span class="titulo-apoio">
-                AS INSTITUIÇÕES APÓIAM ESTA IDEIA:
+    <span class="titulo-apoio">
+        AS INSTITUIÇÕES APÓIAM ESTA IDEIA:
+    </span>
+
+    <div class="logos-apoio">
+
+        <!-- ESCOLA KARUGWÁ -->
+        <a href="instituicao.html?id=escola-karugwa" class="logo-apoio-item" id="btn-escola-karugwa">
+            <img
+                src="assets/logos/escola-karugwa/escola karugwa.png"
+                alt="Escola Karugwá"
+            >
+            <span>
+                E.E.I.ALDEIA KARUGWÁ PEI
             </span>
+        </a>
 
-            <div class="logos-apoio">
+        <!-- TEKOA KARUGWÁ -->
+        <a href="instituicao.html?id=tekoa-karugwa" class="logo-apoio-item" id="btn-tekoa-karugwa">
+            <img
+                src="assets/logos/tekoa-karugwa/tekoa-karugwa.png"
+                alt="Tekoa Karugwa"
+            >
+            <span>
+                TEKOÁ KARUGWÁ
+            </span>
+        </a>
 
-                <!-- ESCOLA KARUGWÁ -->
-                <a href="instituicao.html?id=escola-karugwa" class="logo-apoio-item" id="btn-escola-karugwa">
-                    <img
-                        src="assets/logos/escola-karugwa/escola karugwa.png"
-                        alt="Escola Karugwá"
-                    >
-                    <span>
-                        E.E.I.ALDEIA KARUGWÁ PEI
-                    </span>
-                </a>
-
-                <!-- TEKOA KARUGWÁ -->
-                <a href="instituicao.html?id=tekoa-karugwa" class="logo-apoio-item" id="btn-tekoa-karugwa">
-                    <img
-                        src="assets/logos/tekoa-karugwa/tekoa-karugwa.png"
-                        alt="Tekoa Karugwa"
-                    >
-                    <span>
-                        TEKOÁ KARUGWÁ
-                    </span>
-                </a>
-
-                <!-- ASSOCIAÇÃO CURUCACA -->
-                <a href="instituicao.html?id=associacao-curucaca" class="logo-apoio-item" id="btn-associacao-curucaca">
-                    <img
-                        src="assets/logos/associacao-curucaca/associacao curucaca.png"
-                        alt="Associação Curucaca"
-                    >
-                    <span>
-                        ASSOCIAÇÃO CURUCACA
-                    </span>
-                </a>
-
-            </div>
-
-        </footer>
-
-        <!-- =================================================
-             MODAL DE ACESSO RESTRITO (SENHA + EMAIL)
-        ================================================== -->
-        <div id="modal-senha" class="modal-overlay" style="display: none;">
-            <div class="modal-caixa">
-                <h3>Acesso Restrito: Pesquisa Linguística</h3>
-                <p>Esta seção contém documentação de baixo calão e linguagem de rua para fins de pesquisa e registro.</p>
-                <p><strong>Digite a senha de autorização:</strong></p>
-                <input type="password" id="senha-input" placeholder="Digite a senha">
-                
-                <div class="modal-botoes" style="margin-bottom: 12px;">
-                    <button type="button" class="btn-confirmar" onclick="validarSenha()">Confirmar</button>
-                    <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
-                </div>
-
-                <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; margin-top: 10px; text-align: center;">
-                    <button type="button" onclick="solicitarSenhaEmail()" style="background:none; border:none; color:#5be0ac; text-decoration:underline; font-size:13px; cursor:pointer;">
-                        📧 Não tem a senha? Solicite ao administrador por e-mail
-                    </button>
-                </div>
-            </div>
-        </div>
+        <!-- ASSOCIAÇÃO CURUCACA -->
+        <a href="instituicao.html?id=associacao-curucaca" class="logo-apoio-item" id="btn-associacao-curucaca">
+            <img
+                src="assets/logos/associacao-curucaca/associacao curucaca.png"
+                alt="Associação Curucaca"
+            >
+            <span>
+                ASSOCIAÇÃO CURUCACA
+            </span>
+        </a>
 
     </div>
 
-    <!-- =================================================
-         SCRIPTS DO PROJETO
-    ================================================== -->
+</footer>
+
+<!-- =================================================
+    MODAL DE ACESSO RESTRITO (SENHA + EMAIL)
+================================================== -->
+<div id="modal-senha" class="modal-overlay" style="display: none;">
+    <div class="modal-caixa">
+        <h3>Acesso Restrito: Pesquisa Linguística</h3>
+        <p>Esta seção contém documentação de baixo calão e linguagem de rua para fins de pesquisa e registro.</p>
+        <p><strong>Digite a senha de autorização:</strong></p>
+        <input type="password" id="senha-input" placeholder="Digite a senha">
+        
+        <div class="modal-botoes" style="margin-bottom: 12px;">
+            <button type="button" class="btn-confirmar" onclick="validarSenha()">Confirmar</button>
+            <button type="button" class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+        </div>
+
+        <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 10px; margin-top: 10px; text-align: center;">
+            <button type="button" onclick="solicitarSenhaEmail()" style="background:none; border:none; color:#5be0ac; text-decoration:underline; font-size:13px; cursor:pointer;">
+                📧 Não tem a senha? Solicite ao administrador por e-mail
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- =================================================
+    SCRIPTS DO PROJETO
+================================================== -->
 <script src="dicionario.js"></script>
 <script src="dicionario2.js"></script>
 <script src="dicionario-rua.js"></script>
 <script src="mapa.js"></script>
 <script src="script.js"></script>
 
-    <!-- =================================================
-         REGISTRO DO APLICATIVO
-    ================================================== -->
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function () {
-                navigator.serviceWorker
-                    .register("./service-worker.js")
-                    .then(function () {
-                        console.log(
-                            "Projeto Karumbé: aplicativo preparado!"
-                        );
-                    })
-                    .catch(function (erro) {
-                        console.error(
-                            "Erro ao registrar o aplicativo:",
-                            erro
-                        );
-                    });
-            });
-        }
-    </script>
+<!-- =================================================
+    REGISTRO DO APLICATIVO
+================================================== -->
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker
+                .register("./service-worker.js")
+                .then(function () {
+                    console.log(
+                        "Projeto Karumbé: aplicativo preparado!"
+                    );
+                })
+                .catch(function (erro) {
+                    console.error(
+                        "Erro ao registrar o aplicativo:",
+                        erro
+                    );
+                });
+        });
+    }
+</script>
 
 </body>
 </html>
