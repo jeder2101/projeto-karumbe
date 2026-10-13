@@ -639,8 +639,10 @@ consoantes pré-nasalizadas e harmonia nasal.
 O estudo considera que a nasalidade pode ter origem
 em dois tipos principais de elementos:
 
-• consoantes pré-nasalizadas;
-• vogais subjacentemente nasais.
+- consoantes pré-nasalizadas;
+
+- vogais subjacentemente nasais.
+
 
 Esses elementos funcionam como centros dispersores
 de nasalidade.
@@ -657,8 +659,8 @@ o significado da palavra.
 
 EXEMPLOS APRESENTADOS NO ESTUDO:
 
-Forma oral  | tupa / mbae |cama / coisa, o que
-Forma nasal | tüpã / mãe  | trovão / olhar
+Forma oral  | tupa / mbae | cama / coisa, o que
+Forma nasal | tüpã / mã'ẽ  | trovão / olhar
 
 Esses pares mostram que a diferença entre uma vogal
 oral e uma vogal nasal não é apenas uma diferença
@@ -712,22 +714,34 @@ EXEMPLOS — ALTERNÂNCIA NASAL NO NHANDEWA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
  Alternância Labial (/mb/ ⇄ [m]):
-• mba'e + oral = mb ("coisa, o que")
-• mã'ẽ + nasal = m ("olhar")
-• mombo + oral = mb ("jogar")
-• momõ + nasal = m ("onde")
+- mba'e + oral = mb ("coisa, o que")
+
+- mã'ẽ + nasal = m ("olhar")
+
+- mombo + oral = mb ("jogar")
+
+- momõ + nasal = m ("onde")
+
 
  Alternância Dental (/nd/ ⇄ [n]):
-• nde + oral = nd ("tua, seu")
-• nẽ + nasal = n ("teu / seus")
-• ndedjuru + oral = nd ("sua boca")
-• nẽpetã + nasal = n ("seu fumo")
+- nde + oral = nd ("tua, seu")
+
+- nẽ + nasal = n ("teu / seus")
+
+- ndedjuru + oral = nd ("sua boca")
+
+- nẽpetã + nasal = n ("seu fumo")
+
 
  Alternância em Prefixos e Pessoas:
-• nande-tuwitxa + oral = nd ("nosso chefe")
-• nãnẽ-rāmoĩ + nasal = n ("nosso avô")
-• ndaokyiry + oral = nd ("sem chuva")
-• naporaĩ + nasal = n ("não bom, ruim, feio")
+- nande-tuwitxa + oral = nd ("nosso chefe")
+
+- nãnẽ-rāmoĩ + nasal = n ("nosso avô")
+
+- ndaokyiry + oral = nd ("sem chuva")
+
+- naporaĩ + nasal = n ("não bom, ruim, feio")
+
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -748,7 +762,7 @@ iwi'kwa = sepultura
 peti'ngua = cachimbo
 
 O primeiro exemplo está relacionado às formas
-iwi' = terra" e kwa = buraco.
+iwi' = "terra" e kwa = buraco.
 
 O segundo exemplo apresenta uma realização nasal
 em ambiente relacionado à harmonia nasal.
@@ -769,16 +783,22 @@ A harmonia nasal ocupa uma parte importante do estudo.
 A pesquisa explica que, ao analisar o espalhamento
 da nasalidade, é necessário observar:
 
-• fonte da nasalidade;
-• alvo do espalhamento;
-• segmentos transparentes;
-• segmentos opacos;
-• direção do espalhamento;
-• domínio do espalhamento.
+- fonte da nasalidade;
+
+- alvo do espalhamento;
+
+- segmentos transparentes;
+
+- segmentos opacos;
+
+- direção do espalhamento;
+
+- domínio do espalhamento.
+
 
 No Nhandewa-Guarani, as fontes de nasalidade
 consideradas são principalmente as consoantes
-pré-nasalizadas e as vogais nasais.
+pré-nasalizadas e las vogais nasais.
 
 As consoantes plenamente nasais apresentam também
 efeitos sobre as vogais imediatamente vizinhas.
@@ -828,8 +848,9 @@ diminuir gradualmente.
 
 Dessa maneira, a pesquisa distingue:
 
-• nasalidade fonológica, categórica;
-• nasalização fonética, que pode apresentar
+- nasalidade fonológica, categórica;
+
+- nasalização fonética, que pode apresentar
   diminuição gradual.
 
 Essa distinção é importante para compreender por que
@@ -896,7 +917,7 @@ EXEMPLO:
 
 Tupinambá | Nhandewa-Guarani
 põrã | porã
-bom,bonito,belo|bom, bonito,belo
+bom, bonito, belo | bom, bonito, belo
 
 A interpretação proposta é que a antiga consoante
 nasal em posição de coda deixou de possuir uma
@@ -915,12 +936,12 @@ A proposta apresentada no estudo pode ser resumida
 em dois pontos principais:
 
 1. A nasalidade proveniente de uma consoante nasal
-   em início de sílaba espalha-se para a esquerda.
+    em início de sílaba espalha-se para a esquerda.
 
 2. A nasalidade das vogais, relacionada historicamente
-   a uma consoante nasal apagada em posição de coda,
-   pode espalhar-se para a esquerda e para a direita,
-   dentro do limite do domínio.
+    a uma consoante nasal apagada em posição de coda,
+    pode espalhar-se para a esquerda e para a direita,
+    dentro do limite do domínio.
 
 A autora conclui que as vogais que perderam a coda
 nasal tornaram-se nasais subjacentes.
@@ -963,12 +984,6 @@ nd → n
 
 mostram a relação entre o ambiente nasal e a
 realização dos segmentos.
-
-A pesquisa também observa alternâncias como:
-
-dja- → nya-
-
-relacionadas ao ambiente nasal.
 
 Além disso, a pesquisa propõe uma explicação histórica
 para as vogais nasais atuais, relacionando-as à perda
