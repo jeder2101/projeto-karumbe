@@ -1884,13 +1884,13 @@ nas mãos de quem a ensina e de quem a aprende.
             titulo: "Estudo da fonologia Nhandewa-Guarani — LIAMES/Unicamp",
             url: "https://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/1414"
         },
-  {
+{
         titulo: "Lições de Gramática Nhandewa-Guarani — Volume 1",
-        url: "https://kamuri.org.br/kamuri/materiais/" // Página oficial de downloads da Kamuri
+        url: "https://kamuri.org.br/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-1.pdf"
     },
     {
         titulo: "Lições de Gramática Nhandewa-Guarani — Volume 2",
-        url: "https://kamuri.org.br/kamuri/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
+        url: "https://kamuri.org.br/wp-content/uploads/2020/12/Licoes-de-gramatica-Nhandewa-Guarani-vol-2.pdf"
     }
     ]
 }
