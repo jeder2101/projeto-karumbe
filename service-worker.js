@@ -1,11 +1,19 @@
-const CACHE_NAME = "karumbe-v1";
+const CACHE_NAME = "karumbe-v2"; // Incrementado para v2 para forçar a atualização da cache
 
 const ARQUIVOS = [
     "./",
     "./index.html",
+    "./alfabeto.html",
+    "./historia.html",
+    "./instituicao.html",
+    "./religiao.html",
     "./style.css",
     "./script.js",
     "./dicionario.js",
+    "./dicionario2.js",
+    "./dicionario-rua.js",
+    "./lingua.js",
+    "./religiao.js",
     "./mapa.js",
     "./manifest.json"
 ];
