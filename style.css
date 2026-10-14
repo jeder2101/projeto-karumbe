@@ -365,7 +365,7 @@ body {
 }
 
 .icone-cat {
-    width: 75%; /* A imagem ocupa 75% da largura do card, deixando margens */
+    width: 85%; /* A imagem ocupa 75% da largura do card, deixando margens */
     height: 60%; /* Ocupa a parte superior */
     display: block;
     object-fit: contain; /* Mantém a proporção original da imagem sem distorcer ou cobrir tudo */
