@@ -349,7 +349,7 @@ body {
     border: 1px solid rgba(0, 137, 123, 0.4) !important;
 }
 /* =====================================================
-   AJUSTE DE ILUMINAÇÃO E BRILHO DOS CARTÕES
+   ESTRUTURA DOS ÍCONES E TEXTOS DOS CARTÕES
 ===================================================== */
 
 .icone-wrapper {
@@ -365,36 +365,58 @@ body {
 }
 
 .icone-cat {
-    width: 100%;
-    height: 100%;
+    width: 75%; /* A imagem ocupa 75% da largura do card, deixando margens */
+    height: 60%; /* Ocupa a parte superior */
     display: block;
-    object-fit: cover;
+    object-fit: contain; /* Mantém a proporção original da imagem sem distorcer ou cobrir tudo */
+    margin: 12px auto 0 auto; /* Centrada horizontalmente com margem no topo */
     
-    /* 1. Ajuste de opacidade e modo de fusão para a cor do card se destacar */
-    opacity: 0.82; 
-    mix-blend-mode: overlay; /* Faz a ilustração absorver o gradiente de fundo com brilho */
+    opacity: 1; /* Imagem 100% nítida e com as cores originais */
+    mix-blend-mode: normal; /* Sem misturar cores estranhas */
     
-    transition: transform 0.35s ease, opacity 0.35s ease, filter 0.35s ease;
+    transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .card-categoria:hover .icone-cat {
-    transform: scale(1.05);
-    opacity: 0.95;
-    filter: brightness(1.1); /* Dá um leve destaque de luz ao passar o rato */
+    transform: scale(1.08);
+    filter: brightness(1.05);
 }
 
-/* 2. Sombra inferior suavizada (não apaga a cor do card) */
 .icone-wrapper::after {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.0) 20%,
-        rgba(0, 0, 0, 0.15) 50%,
-        rgba(0, 0, 0, 0.65) 100% /* Reduzido para a cor aparecer melhor */
+        rgba(0, 0, 0, 0.0) 40%,
+        rgba(0, 0, 0, 0.75) 100% /* Sombra apenas na base para o texto destacar */
     );
     pointer-events: none;
+}
+
+.cat-textos {
+    position: absolute;
+    z-index: 5;
+    left: 15px;
+    right: 15px;
+    bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.80);
+}
+
+.cat-nome {
+    font-size: 16px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+.cat-sub {
+    margin-top: 2px;
+    font-size: 11px;
+    line-height: 1.2;
+    opacity: 0.88;
 }
 /* =====================================================
    6. CARDS DE RESULTADOS
