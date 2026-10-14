@@ -255,52 +255,99 @@ body {
    CORES E GRADIENTES DAS CATEGORIAS
 ===================================================== */
 
-/* Cinza / Alfabeto */
+/* Cinza / Neutro */
 .cat-cinza {
     background: linear-gradient(135deg, #2b2b2b, #555555) !important;
     border: 1px solid rgba(150, 150, 150, 0.4) !important;
 }
 
-/* Verde */
+/* Preto Deep */
+.cat-preto {
+    background: linear-gradient(135deg, #0a0a0a, #222222) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Branco / Prata Claro (com texto escuro para contraste) */
+.cat-branco {
+    background: linear-gradient(135deg, #e0e0e0, #ffffff) !important;
+    border: 1px solid rgba(200, 200, 200, 0.8) !important;
+    color: #111111 !important;
+}
+.cat-branco .cat-textos {
+    color: #111111 !important;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Marrom / Castanho */
+.cat-marrom {
+    background: linear-gradient(135deg, #3e2723, #5d4037) !important;
+    border: 1px solid rgba(121, 85, 72, 0.4) !important;
+}
+
+/* Azul Bebé */
+.cat-azul-bebe {
+    background: linear-gradient(135deg, #78909c, #b0bec5) !important;
+    border: 1px solid rgba(207, 216, 220, 0.5) !important;
+}
+
+/* Verde Marca-Texto / Néon */
+.cat-verde-marca-texto {
+    background: linear-gradient(135deg, #76ff03, #aeea00) !important;
+    border: 1px solid rgba(198, 255, 0, 0.6) !important;
+    color: #111111 !important;
+}
+.cat-verde-marca-texto .cat-textos {
+    color: #111111 !important;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Verde Padrão */
 .cat-verde {
-    background: linear-gradient(135deg, #1b4332, #2d6a4f) !important;
+    background: linear-gradient(135deg, #1e4d2b, #388e3c) !important;
+    border: 1px solid rgba(56, 142, 60, 0.4) !important;
 }
 
 /* Laranja */
 .cat-laranja {
-    background: linear-gradient(135deg, #a95527, #d97706) !important;
+    background: linear-gradient(135deg, #8c3812, #e65100) !important;
+    border: 1px solid rgba(230, 81, 0, 0.4) !important;
 }
 
 /* Azul */
 .cat-azul {
-    background: linear-gradient(135deg, #1d3557, #457b9d) !important;
+    background: linear-gradient(135deg, #153e75, #1e88e5) !important;
+    border: 1px solid rgba(30, 136, 229, 0.4) !important;
 }
 
 /* Roxo / Violeta */
 .cat-roxo {
-    background: linear-gradient(135deg, #4a154b, #7b2cbf) !important;
+    background: linear-gradient(135deg, #4a148c, #8e24aa) !important;
+    border: 1px solid rgba(142, 36, 170, 0.4) !important;
 }
 
-/* Vermelho / Vinho */
+/* Vermelho */
 .cat-vermelho {
-    background: linear-gradient(135deg, #7209b7, #b5179e) !important;
+    background: linear-gradient(135deg, #7f1d1d, #d32f2f) !important;
+    border: 1px solid rgba(211, 47, 47, 0.4) !important;
 }
 
 /* Amarelo / Dourado */
 .cat-amarelo {
-    background: linear-gradient(135deg, #b45309, #d97706) !important;
+    background: linear-gradient(135deg, #78350f, #d97706) !important;
+    border: 1px solid rgba(217, 119, 6, 0.4) !important;
 }
 
 /* Rosa / Magenta */
 .cat-rosa {
-    background: linear-gradient(135deg, #8338ec, #ff006e) !important;
+    background: linear-gradient(135deg, #880e4f, #c2185b) !important;
+    border: 1px solid rgba(194, 24, 91, 0.4) !important;
 }
 
 /* Ciano / Turquesa */
 .cat-turquesa {
-    background: linear-gradient(135deg, #005f73, #0a9396) !important;
+    background: linear-gradient(135deg, #004d40, #00897b) !important;
+    border: 1px solid rgba(0, 137, 123, 0.4) !important;
 }
-
 /* =====================================================
    ESTRUTURA DOS ÍCONES E TEXTOS DOS CARTÕES
 ===================================================== */
