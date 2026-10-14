@@ -290,15 +290,15 @@ body {
     border: 1px solid rgba(207, 216, 220, 0.5) !important;
 }
 
-/* Verde Marca-Texto / Néon */
+/* Verde Marca-Texto / Néon (com texto branco) */
 .cat-verde-marca-texto {
     background: linear-gradient(135deg, #76ff03, #aeea00) !important;
     border: 1px solid rgba(198, 255, 0, 0.6) !important;
-    color: #111111 !important;
+    color: #ffffff !important;
 }
 .cat-verde-marca-texto .cat-textos {
-    color: #111111 !important;
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6) !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8) !important;
 }
 
 /* Verde Padrão */
