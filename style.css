@@ -348,8 +348,28 @@ body {
     background: linear-gradient(135deg, #004d40, #00897b) !important;
     border: 1px solid rgba(0, 137, 123, 0.4) !important;
 /* =====================================================
-   ESTRUTURA DOS ÍCONES E TEXTOS DOS CARTÕES
+   ESTRUTURA DOS CARTÕES E ÍCONES (LAYOUT CORRIGIDO)
 ===================================================== */
+
+.card-categoria {
+    position: relative;
+    width: 100%;
+    height: 180px !important; /* Força a altura exata dos cartões */
+    padding: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    cursor: pointer;
+    text-align: left;
+    color: #ffffff;
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.30);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-categoria:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 28px rgba(0, 0, 0, 0.40);
+}
 
 .icone-wrapper {
     position: absolute;
@@ -358,37 +378,43 @@ body {
     height: 100%;
     margin: 0;
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
     overflow: hidden;
     background: transparent;
+    
+    /* Cria uma margem interna de 5px para a cor do gradiente aparecer à volta como moldura */
+    padding: 5px; 
+    box-sizing: border-box;
 }
 
 .icone-cat {
-    width: 75%; /* A imagem ocupa 75% da largura do card, deixando margens */
-    height: 60%; /* Ocupa a parte superior */
+    width: 100%;
+    height: 100%;
     display: block;
-    object-fit: contain; /* Mantém a proporção original da imagem sem distorcer ou cobrir tudo */
-    margin: 12px auto 0 auto; /* Centrada horizontalmente com margem no topo */
+    object-fit: cover; 
+    border-radius: 15px; /* Cantos arredondados internos para a imagem */
     
-    opacity: 1; /* Imagem 100% nítida e com as cores originais */
-    mix-blend-mode: normal; /* Sem misturar cores estranhas */
+    opacity: 1;
+    mix-blend-mode: normal;
     
     transition: transform 0.35s ease, filter 0.35s ease;
 }
 
 .card-categoria:hover .icone-cat {
-    transform: scale(1.08);
+    transform: scale(1.04);
     filter: brightness(1.05);
 }
 
+/* Sombra suave na base para o texto branco destacar perfeitamente */
 .icone-wrapper::after {
     content: "";
     position: absolute;
     inset: 0;
+    border-radius: 20px;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.0) 40%,
-        rgba(0, 0, 0, 0.75) 100% /* Sombra apenas na base para o texto destacar */
+        rgba(0, 0, 0, 0.0) 45%,
+        rgba(0, 0, 0, 0.75) 100%
     );
     pointer-events: none;
 }
@@ -396,13 +422,13 @@ body {
 .cat-textos {
     position: absolute;
     z-index: 5;
-    left: 15px;
-    right: 15px;
+    left: 18px;
+    right: 18px;
     bottom: 12px;
     display: flex;
     flex-direction: column;
     color: #ffffff;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.80);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.85);
 }
 
 .cat-nome {
