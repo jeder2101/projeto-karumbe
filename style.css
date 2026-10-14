@@ -348,13 +348,13 @@ body {
     background: linear-gradient(135deg, #004d40, #00897b) !important;
     border: 1px solid rgba(0, 137, 123, 0.4) !important;
 /* =====================================================
-   ESTRUTURA DOS CARTÕES E ÍCONES (LAYOUT CORRIGIDO)
+   ESTRUTURA DOS CARTÕES E ÍCONES (IMAGEM INTEIRA E CENTRADA)
 ===================================================== */
 
 .card-categoria {
     position: relative;
     width: 100%;
-    height: 180px !important; /* Força a altura exata dos cartões */
+    height: 180px !important;
     padding: 0;
     overflow: hidden;
     border-radius: 20px;
@@ -381,18 +381,17 @@ body {
     border-radius: 20px;
     overflow: hidden;
     background: transparent;
-    
-    /* Cria uma margem interna de 5px para a cor do gradiente aparecer à volta como moldura */
-    padding: 5px; 
-    box-sizing: border-box;
 }
 
 .icone-cat {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; 
-    border-radius: 15px; /* Cantos arredondados internos para a imagem */
+    
+    /* Alterado de cover para contain: garante que a imagem aparece INTEIRA, sem cortes nem zoom gigante */
+    object-fit: contain; 
+    padding: 8px; /* Cria uma margem interna para a cor do gradiente aparecer à volta */
+    box-sizing: border-box;
     
     opacity: 1;
     mix-blend-mode: normal;
@@ -405,7 +404,7 @@ body {
     filter: brightness(1.05);
 }
 
-/* Sombra suave na base para o texto branco destacar perfeitamente */
+/* Sombra suave na base para destacar perfeitamente o texto branco */
 .icone-wrapper::after {
     content: "";
     position: absolute;
@@ -413,8 +412,8 @@ body {
     border-radius: 20px;
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.0) 45%,
-        rgba(0, 0, 0, 0.75) 100%
+        rgba(0, 0, 0, 0.0) 50%,
+        rgba(0, 0, 0, 0.70) 100%
     );
     pointer-events: none;
 }
