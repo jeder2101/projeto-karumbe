@@ -348,28 +348,36 @@
     }
 
     /* =====================================================
-       FORÇA MÁXIMA: LARGURA TOTAL E LEITURA CONFORTÁVEL
+       EXPANSÃO TOTAL DO TEXTO E PARÁGRAFOS DENTRO DO MODAL
        ===================================================== */
-    div.caixa-historia-exclusiva {
+    .modal-historia .caixa-historia-exclusiva {
       width: 95vw !important;
       max-width: 1250px !important;
-      padding: 40px 50px !important;
       box-sizing: border-box !important;
     }
 
-    div.caixa-historia-exclusiva #conteudo-historia,
-    div.caixa-historia-exclusiva .texto-historia,
-    div.caixa-historia-exclusiva .historia-paragrafo,
-    div.caixa-historia-exclusiva p,
-    div.caixa-historia-exclusiva div,
-    div.caixa-historia-exclusiva .tabela-exemplo-wrapper,
-    div.caixa-historia-exclusiva .tabela-exemplo {
+    .caixa-historia-exclusiva #conteudo-historia,
+    .caixa-historia-exclusiva .texto-historia,
+    .caixa-historia-exclusiva .historia-paragrafo,
+    .caixa-historia-exclusiva p,
+    .caixa-historia-exclusiva div,
+    .caixa-historia-exclusiva .tabela-exemplo-wrapper,
+    .caixa-historia-exclusiva .tabela-exemplo {
       width: 100% !important;
       max-width: 100% !important;
       box-sizing: border-box !important;
-      font-size: 1.1rem !important;
-      line-height: 1.85 !important;
-      text-align: left !important;
+    }
+
+    .caixa-historia-exclusiva .texto-historia p,
+    .caixa-historia-exclusiva .historia-paragrafo {
+      font-size: 1.05rem !important;
+      line-height: 1.8 !important;
+      color: #2c221e !important;
+      margin-bottom: 20px !important;
+    }
+
+    .caixa-historia-exclusiva .tabela-exemplo-wrapper {
+      overflow-x: auto !important;
     }
   </style>
 </head>
