@@ -1455,923 +1455,31 @@ body {
 
     border-left-color: #a5d6a7 !important;
 }
+
 /* =====================================================
-   MODAL DE HISTÓRIA (CORREÇÃO DEFINITIVA)
+   MODAL DA HISTÓRIA — CORREÇÃO PARA COMPUTADOR
+   Mantém o celular em tela cheia
 ===================================================== */
 
+/* Fundo do modal */
 .modal-historia {
     display: none;
     position: fixed !important;
     inset: 0 !important;
-    z-index: 10000 !important;
-    background: rgba(4, 15, 12, 0.85) !important;
-    backdrop-filter: blur(5px) !important;
-    padding: 20px !important;
-    overflow-y: auto !important;
-    box-sizing: border-box !important;
-}
 
-.modal-historia.ativo {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* --- COMPUTADOR: LARGURA AMPLA E CONFORTÁVEL --- */
-.caixa-historia {
-    background: #fbf9f4 !important;
-    color: #12261f !important;
-    width: 95vw !important;         /* Ocupa 95% da largura da tela no PC */
-    max-width: 1250px !important;   /* Limite máximo bem amplo */
-    height: auto !important;
-    max-height: 88vh !important;    /* Altura máxima controlada com scroll interno */
-    margin: auto !important;
-    padding: 35px !important;
-    border: 3px solid #234c3e !important;
-    border-radius: 20px !important;
-    position: relative !important;
-    overflow-y: auto !important;
-    box-sizing: border-box !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-#conteudo-historia {
     width: 100% !important;
-    flex: 1 !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    padding-right: 10px !important;
-}
-
-#conteudo-historia,
-#conteudo-historia *,
-.caixa-historia * {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* --- BOTÃO FECHAR DO MODAL --- */
-.fechar-modal-historia,
-#fechar-modal-historia {
-    position: absolute !important;
-    right: 20px !important;
-    top: 15px !important;
-    width: 36px !important;
-    height: 36px !important;
-    border: none !important;
-    border-radius: 50% !important;
-    background: rgba(35, 76, 62, 0.10) !important;
-    color: #234c3e !important;
-    font-size: 32px !important;
-    cursor: pointer !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    z-index: 10 !important;
-    transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
-}
-
-.fechar-modal-historia:hover,
-#fechar-modal-historia:hover {
-    color: #ffffff !important;
-    background: #b71c1c !important;
-    transform: scale(1.05);
-}
-
-/* --- TELA CHEIA COMPLETA NO CELULAR --- */
-@media (max-width: 768px) {
-    .modal-historia {
-        padding: 0 !important;
-    }
-    
-    .modal-historia.ativo {
-        align-items: flex-start !important;
-    }
-
-    .caixa-historia {
-        width: 100vw !important;
-        height: 100vh !important;
-        max-width: 100vw !important;
-        max-height: 100vh !important;
-        border-radius: 0 !important;
-        border: none !important;
-        padding: 50px 18px 20px 18px !important;
-    }
-
-    .fechar-modal-historia,
-    #fechar-modal-historia {
-        top: 12px !important;
-        right: 15px !important;
-        font-size: 38px !important;
-    }
-}
-
-
-/* =====================================================
-   MODAL ATIVO
-===================================================== */
-
-.modal-historia.ativo {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* =====================================================
-   CAIXA DO MODAL (APAGUE ESTE BLOCO ANTIGO DUPLICADO)
-===================================================== */
-.caixa-historia {
-    max-width: 800px;
-    width: 100%;
-    max-height: 85vh;
-
-    margin: auto;
-    padding: 35px;
-
-    background: #fbf9f4 !important;
-
-    color: #12261f !important;
-
-    border: 3px solid #234c3e !important;
-    border-radius: 20px;
-
-    position: relative;
-
-    overflow-y: auto;
-
-    box-sizing: border-box;
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.7);
-}
-
-/* =====================================================
-   BOTÃO FECHAR DO MODAL
-===================================================== */
-
-.fechar-modal-historia,
-#fechar-modal-historia {
-    position: absolute;
-
-    right: 20px;
-    top: 15px;
-
-    width: 36px;
-    height: 36px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: rgba(35, 76, 62, 0.10) !important;
-
-    color: #234c3e !important;
-
-    font-size: 32px;
-
-    cursor: pointer;
-
-    transition:
-        color 0.2s ease,
-        background 0.2s ease,
-        transform 0.2s ease;
-}
-
-
-.fechar-modal-historia:hover,
-#fechar-modal-historia:hover {
-    color: #ffffff !important;
-
-    background: #b71c1c !important;
-
-    transform: scale(1.05);
-}
-
-
-/* =====================================================
-   TÍTULO DO MODAL
-===================================================== */
-
-#conteudo-historia h2,
-.caixa-historia h2 {
-    margin-top: 0;
-
-    padding-right: 40px;
-    padding-bottom: 8px;
-
-    color: #0b3522 !important;
-
-    font-size: 1.7rem;
-
-    font-weight: 700;
-
-    line-height: 1.4;
-
-    border-bottom: 2px solid rgba(11, 53, 34, 0.10);
-}
-
-
-/* =====================================================
-   TEXTOS DO MODAL
-===================================================== */
-
-.texto-historia {
-    margin-top: 20px;
-
-    color: #1a332a !important;
-
-    font-size: 1.05rem;
-
-    line-height: 1.8;
-}
-
-
-#conteudo-historia p {
-    margin-bottom: 18px;
-
-    color: #1a332a !important;
-
-    line-height: 1.8;
-}
-
-
-.caixa-historia h1,
-.caixa-historia h2,
-.caixa-historia h3,
-.caixa-historia h4,
-.caixa-historia p,
-.caixa-historia li {
-    color: #1a332a !important;
-}
-
-
-/* =====================================================
-   ÁREA DO BOTÃO 
-===================================================== */
-
-.area-voltar {
-    display: flex;
-    justify-content: flex-end !important;
-    align-items: center !important;
-    
-    /* Fixa na tela */
-    position: fixed !important;
-    bottom: 20px !important;
-    right: 20px !important;
-    left: auto !important;
-    top: auto !important;
-    
-    width: auto !important; /* Deixa o tamanho ajustado ao conteúdo */
-    z-index: 9999 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-
-/* =====================================================
-   BOTÃO VOLTAR
-===================================================== */
-
-.botao-voltar {
-    display: inline-block;
-
-    padding: 14px 38px;
-
-    background: #235847;
-
-    color: #ffffff;
-
-    border: none;
-    border-radius: 10px;
-
-    text-decoration: none;
-    text-align: center;
-
-    font-size: 16px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition:
-        background 0.2s ease,
-        transform 0.2s ease;
-
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-.botao-voltar:hover {
-    background: #327a64;
-
-    transform: translateY(-2px);
-}
-
-
-/* =====================================================
-   RESPONSIVIDADE
-===================================================== */
-
-
-/* -----------------------------------------------------
-   TELAS ATÉ 1150px
------------------------------------------------------ */
-
-@media (max-width: 1150px) {
-
-    .lista-historias {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-}
-
-
-/* -----------------------------------------------------
-   TELAS ATÉ 768px
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-
-    .lista-vertical {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr)) !important;
-
-        gap: 12px !important;
-    }
-
-
-    .card-categoria {
-        height: 130px !important;
-    }
-
-
-    .cat-nome {
-        font-size: 15px !important;
-    }
-
-
-    .container-card-restrito {
-        grid-column: 1 / -1 !important;
-
-        width: 100% !important;
-    }
-
-
-    .container-card-restrito .card-categoria {
-        width: 100% !important;
-
-        max-width: 100% !important;
-
-        height: 140px !important;
-    }
-}
-
-
-/* -----------------------------------------------------
-   TELAS ATÉ 700px
------------------------------------------------------ */
-
-@media (max-width: 700px) {
-
-    .pagina-historia {
-        width: 94%;
-    }
-
-
-    .lista-historias {
-        grid-template-columns: 1fr;
-
-        gap: 16px;
-    }
-
-
-    .caixa-historia {
-        padding: 25px 20px;
-    }
-}
-
-
-/* -----------------------------------------------------
-   TELAS ATÉ 600px
------------------------------------------------------ */
-
-@media (max-width: 600px) {
-
-    .lista-vertical > .grupo-cartoes-especiais {
-        flex-direction: column !important;
-
-        flex-wrap: nowrap !important;
-
-        align-items: center !important;
-    }
-
-
-    .grupo-cartoes-especiais > .container-card-restrito {
-        width: 280px !important;
-
-        max-width: 280px !important;
-
-        flex: 0 0 auto !important;
-    }
-}
-
-
-/* -----------------------------------------------------
-   TELAS A PARTIR DE 768px
------------------------------------------------------ */
-
-@media (min-width: 768px) {
-
-    .container-card-restrito {
-        grid-column: 1 / -1;
-
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
-
-        width: 100%;
-
-        margin-top: 20px;
-    }
-
-
-    .container-card-restrito .card-categoria {
-        width: 200px;
-
-        max-width: 100%;
-    }
-}
-/* Garante que o texto de dentro do card de história seja visível e branco */
-.card-historia h3,
-.card-historia p,
-.card-historia span {
-    color: #ffffff !important;
-}
-
-/* Mantém o botão invisível apenas para cliques, sem afetar o texto */
-.card-historia .botao-historia {
-    color: transparent !important;
-}
-/* Estilo para o botão/card de História na página inicial com degradê marrom */
-.card-historia, 
-.card.historia, 
-[data-categoria="historia"] {
-  background: linear-gradient(135deg, #5c3a21 0%, #3b2313 100%) !important;
-  color: #ffffff !important;
-  border: 1px solid #7c4d29 !important;
-}
-
-/* Garante que o texto e os detalhes dentro dele fiquem visíveis */
-.card-historia h3, 
-.card-historia p,
-.card-historia span {
-  color: #ffffff !important;
-}
-.cards-etapas-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 15px;
-}
-
-.card-etapa {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    overflow: hidden;
-}
-
-.card-etapa:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* ==========================================
-   ESTILO MODERNO DOS CARDS DE RELIGIÃO (LAYOUT 3x1 HORIZONTAL)
-   ========================================== */
-
-.cards-etapas-container {
-    display: flex;
-    flex-direction: row; /* Coloca os cards lado a lado */
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px; /* Aumenta a largura para comportar os 3 na horizontal */
-    margin: 30px auto;
-    padding: 0 15px;
-    flex-wrap: wrap; /* Permite quebrar linha caso a tela seja menor */
-}
-
-.card-etapa {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    cursor: pointer;
-    overflow: hidden;
-    flex: 1; /* Faz com que os 3 dividam o espaço igualmente */
-    min-width: 300px; /* Garante um tamanho seguro em telas menores */
-    max-width: 360px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card-etapa:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-}
-
-/* Cores das bordas superiores (destaque horizontal) */
-.card-etapa:nth-child(1) { border-top: 6px solid #2d6a4f; border-left: none; }
-.card-etapa:nth-child(2) { border-top: 6px solid #1d3557; border-left: none; }
-.card-etapa:nth-child(3) { border-top: 6px solid #7c4d29; border-left: none; }
-
-.etapa-header {
-    display: flex;
-    align-items: center;
-    padding: 18px 15px;
-    gap: 12px;
-}
-
-.etapa-conteudo {
-    padding: 0 15px;
-    color: #495057;
-    line-height: 1.6;
-    font-size: 0.95rem;
-    border-top: 1px solid #f1f1f1;
-}
-
-
-/* ==========================================
-   ESTILO CORRETO DOS MODALS (BALÕES DE CONTEÚDO)
-   ========================================== */
-.modal-overlay {
-    display: none;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    background-color: rgba(0, 0, 0, 0.75) !important;
-    z-index: 99999 !important;
-    justify-content: center !important;
-    align-items: center !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* --- COMPUTADOR E DESKTOPS --- */
-.modal-conteudo-box {
-    background: #ffffff !important;
-    width: 92% !important;
-    max-width: 1100px !important;  /* Modal bem mais largo no computador */
-    height: auto !important;
-    max-height: 88vh !important;   /* Limita a altura para não sumir da tela */
-    overflow-y: auto !important;   /* Permite rolar o texto dentro do modal */
-    padding: 35px 30px 25px 30px !important;
-    border-radius: 12px !important;
-    position: relative !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
-    box-sizing: border-box !important;
-    margin: auto !important;
-}
-
-.btn-fechar-modal {
-    position: absolute !important;
-    top: 12px !important;
-    right: 18px !important;
-    background: transparent !important;
-    border: none !important;
-    font-size: 1.8rem !important;
-    cursor: pointer !important;
-    color: #495057 !important;
-    line-height: 1 !important;
-    transition: color 0.2s !important;
-    z-index: 1000 !important;
-}
-
-.btn-fechar-modal:hover {
-    color: #e63946 !important;
-}
-
-/* --- CELULAR E TABLETS (TELAS MENORES QUE 768px) --- */
-@media screen and (max-width: 768px) {
-    .modal-overlay {
-        align-items: flex-start !important;
-    }
-
-    .modal-conteudo-box {
-        width: 100vw !important;
-        height: 100vh !important;
-        max-width: 100vw !important;
-        max-height: 100vh !important;
-        border-radius: 0 !important;      /* Cobre os cantos completamente */
-        padding: 50px 20px 25px 20px !important; /* Espaço no topo para o botão fechar */
-        top: 0 !important;
-        left: 0 !important;
-    }
-
-    .btn-fechar-modal {
-        top: 12px !important;
-        right: 15px !important;
-        font-size: 2.2rem !important;     /* Aumenta o X para facilitar o toque no celular */
-    }
-}
-/* =====================================================
-   BOTÃO VOLTAR AO INÍCIO — DICIONÁRIO
-   ===================================================== */
-
-.voltar {
-    position: fixed !important;
-    right: 20px !important;
-    bottom: 20px !important;
-    left: auto !important;
-    top: auto !important;
-
-    z-index: 10000 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    padding: 12px 20px !important;
-
-    background: #1b3a32 !important;
-    color: #ffffff !important;
-
-    border: 1px solid rgba(255, 255, 255, 0.20) !important;
-    border-radius: 24px !important;
-
-    font-size: 14px !important;
-    font-weight: 600 !important;
-
-    cursor: pointer !important;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
-
-    margin: 0 !important;
-
-    transition: transform 0.2s ease,
-                background-color 0.2s ease !important;
-}
-
-.voltar:hover {
-    background: #244e43 !important;
-    transform: translateY(-2px) !important;
-}
-
-/* Celular */
-@media (max-width: 600px) {
-    .voltar {
-        right: 15px !important;
-        bottom: 15px !important;
-        padding: 11px 16px !important;
-        font-size: 13px !important;
-    }
-}
-/* =====================================================
-   BOTÃO VOLTAR — HISTORIA.HTML
-   Centralizado como anteriormente
-   ===================================================== */
-
-.pagina-historia .area-voltar {
-    position: static !important;
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin: 30px 0 !important;
-    padding: 0 !important;
-}
-
-.pagina-historia .botao-voltar {
-    position: static !important;
-    margin: 0 auto !important;
-    left: auto !important;
-    right: auto !important;
-    top: auto !important;
-    bottom: auto !important;
-}
-
-/* =====================================================
-   TÍTULO LIVRO / SEÇÃO MONGARAI
-   ===================================================== */
-.leitor-titulo {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #2c4a3e;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #2c4a3e;
-    padding-bottom: 4px;
-}
-/* =========================================================
-   TABELAS DE EXEMPLOS LINGUÍSTICOS
-   ========================================================= */
-
-.tabela-exemplo-wrapper {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    margin: 12px 0;
-    -webkit-overflow-scrolling: touch;
-}
-
-.tabela-exemplo {
-    width: auto;
-    max-width: 100%;
-    min-width: 0;
-
-    border-collapse: collapse;
-
-    background: #fffdf9;
-    border: 1px solid #d8cbb8;
-
-    font-size: 15px;
-    line-height: 1.35;
-}
-
-.tabela-exemplo th {
-    padding: 8px 10px;
-
-    text-align: left;
-
-    background: #eee5d8;
-    color: #3d3328;
-
-    font-weight: bold;
-
-    border: 1px solid #d8cbb8;
-
-    white-space: nowrap;
-}
-
-.tabela-exemplo td {
-    padding: 8px 10px;
-
-    border: 1px solid #d8cbb8;
-
-    color: #302820;
-
-    vertical-align: middle;
-
-    white-space: nowrap;
-}
-
-.tabela-exemplo td:first-child {
-    font-weight: bold;
-}
-
-.tabela-exemplo tbody tr:nth-child(even) {
-    background: #faf6ef;
-}
-
-
-/* =========================================================
-   TABELAS DE EXEMPLOS
-   ========================================================= */
-
-.tabela-exemplo-wrapper {
-    display: block;
-
-    width: 100%;
-    max-width: 100%;
-
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    margin: 6px 0 !important;
-    padding: 0;
-
-    -webkit-overflow-scrolling: touch;
-}
-
-.tabela-exemplo {
-    width: max-content;
-    min-width: 100%;
-    max-width: none;
-
-    margin: 0 !important;
-
-    border-collapse: collapse;
-    border-spacing: 0;
-
-    background: #fffdf9;
-
-    font-size: 15px;
-    line-height: 1.35;
-
-    color: #302820;
-}
-
-.tabela-exemplo th,
-.tabela-exemplo td {
-    padding: 7px 10px;
-
-    border: 1px solid #d8cbb8;
-
-    text-align: left;
-    vertical-align: middle;
-
-    white-space: nowrap;
-}
-
-.tabela-exemplo th {
-    background: #eee5d8;
-
-    color: #3d3328;
-
-    font-weight: 700;
-}
-
-.tabela-exemplo td {
-    color: #302820;
-}
-
-.tabela-exemplo td:first-child {
-    font-weight: 700;
-}
-
-.tabela-exemplo tbody tr:nth-child(even) {
-    background: #faf6ef;
-}
-
-.tabela-exemplo tbody tr:hover {
-    background: #f2eadf;
-}
-
-/* =========================================================
-   ESPAÇAMENTO ENTRE TEXTO E TABELA
-   ========================================================= */
-
-.tabela-exemplo-wrapper + p {
-    margin-top: 4px !important;
-}
-
-p:has(+ .tabela-exemplo-wrapper) {
-    margin-bottom: 4px !important;
-}
-
-
-/* =========================================================
-   TELAS PEQUENAS
-   ========================================================= */
-
-@media (max-width: 600px) {
-
-    .tabela-exemplo-wrapper {
-        margin: 4px 0 !important;
-    }
-
-    .tabela-exemplo {
-        font-size: 14px;
-    }
-
-    .tabela-exemplo th,
-    .tabela-exemplo td {
-        padding: 6px 8px;
-    }
-
-}
-.historia-paragrafo {
-    display: block;
-    margin: 6px 0;
-    padding: 0;
-    line-height: 1.55;
-}
-
-.historia-paragrafo + .tabela-exemplo-wrapper {
-    margin-top: 6px !important;
-}
-
-.tabela-exemplo-wrapper + .historia-paragrafo {
-    margin-top: 6px !important;
-}
-
-/* =====================================================
-   CORREÇÃO FINAL — MODAL DA HISTÓRIA
-   COMPUTADOR LARGO + CELULAR EM TELA CHEIA
-===================================================== */
-
-/* Fundo que cobre a tela */
-.modal-historia {
-    position: fixed !important;
-    inset: 0 !important;
-    width: 100vw !important;
     height: 100vh !important;
     height: 100dvh !important;
 
     padding: 12px !important;
     overflow: hidden !important;
 
-    display: none;
     box-sizing: border-box !important;
     z-index: 10000 !important;
+
+    background: rgba(4, 15, 12, 0.85) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
 }
 
 /* Modal aberto */
@@ -2381,15 +1489,21 @@ p:has(+ .tabela-exemplo-wrapper) {
     justify-content: center !important;
 }
 
-/* COMPUTADOR: caixa mais larga */
-.caixa-historia {
+/* Caixa principal — computador */
+.modal-historia .caixa-historia {
+    position: relative !important;
+
     width: 96vw !important;
-    max-width: 1600px !important;
+    max-width: 1500px !important;
 
     height: 92vh !important;
     height: 92dvh !important;
+
     max-height: 92vh !important;
     max-height: 92dvh !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
 
     margin: 0 auto !important;
     padding: 30px 32px !important;
@@ -2406,61 +1520,74 @@ p:has(+ .tabela-exemplo-wrapper) {
     border: 2px solid #234c3e !important;
     border-radius: 18px !important;
 
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7) !important;
 }
 
-/* Conteúdo: apenas rolagem vertical */
-#conteudo-historia {
+/* Conteúdo com rolagem vertical independente */
+.modal-historia #conteudo-historia {
     display: block !important;
 
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
+
     flex: 1 1 auto !important;
 
     overflow-y: auto !important;
-    overflow-x: hidden !important;
+    overflow-x: auto !important;
 
-    padding: 0 8px 20px 0 !important;
+    padding: 0 10px 20px 0 !important;
     box-sizing: border-box !important;
+
+    overscroll-behavior: contain;
 }
 
-/* Impede elementos de ultrapassar a caixa */
-#conteudo-historia *,
-.caixa-historia * {
-    box-sizing: border-box !important;
-}
-
-/* Tabelas adaptáveis */
-#conteudo-historia table {
-    width: 100% !important;
-    max-width: 100% !important;
-    table-layout: fixed !important;
-    border-collapse: collapse !important;
-}
-
-#conteudo-historia th,
-#conteudo-historia td {
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
-}
-
-/* Imagens dentro do conteúdo */
-#conteudo-historia img {
+/* Evita que imagens ultrapassem a caixa */
+.modal-historia #conteudo-historia img {
     max-width: 100% !important;
     height: auto !important;
 }
 
-/* CELULAR: ocupa toda a tela */
+/* Tabelas: respeitam a largura disponível */
+.modal-historia #conteudo-historia table {
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+/* Botão fechar */
+.modal-historia .fechar-modal-historia,
+.modal-historia #fechar-modal-historia {
+    position: absolute !important;
+
+    top: 12px !important;
+    right: 16px !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    z-index: 20 !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    background: rgba(35, 76, 62, 0.10) !important;
+    color: #234c3e !important;
+
+    font-size: 32px !important;
+    cursor: pointer !important;
+}
+
+/* =====================================================
+   CELULAR — TELA CHEIA
+===================================================== */
+
 @media (max-width: 768px) {
     .modal-historia {
-        inset: 0 !important;
-        width: 100vw !important;
-        height: 100vh !important;
-        height: 100dvh !important;
-
         padding: 0 !important;
-        overflow: hidden !important;
     }
 
     .modal-historia.ativo {
@@ -2468,12 +1595,13 @@ p:has(+ .tabela-exemplo-wrapper) {
         justify-content: stretch !important;
     }
 
-    .caixa-historia {
+    .modal-historia .caixa-historia {
         width: 100% !important;
         max-width: 100% !important;
 
         height: 100vh !important;
         height: 100dvh !important;
+
         max-height: 100vh !important;
         max-height: 100dvh !important;
 
@@ -2485,23 +1613,14 @@ p:has(+ .tabela-exemplo-wrapper) {
         box-shadow: none !important;
     }
 
-    #conteudo-historia {
+    .modal-historia #conteudo-historia {
         padding-right: 4px !important;
         padding-bottom: 20px !important;
     }
 
-    #conteudo-historia table {
-        font-size: 13px !important;
-    }
-
-    .fechar-modal-historia,
-    #fechar-modal-historia {
-        position: absolute !important;
+    .modal-historia .fechar-modal-historia,
+    .modal-historia #fechar-modal-historia {
         top: 10px !important;
         right: 12px !important;
-
-        width: 40px !important;
-        height: 40px !important;
-        z-index: 20 !important;
     }
 }
