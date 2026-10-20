@@ -176,48 +176,65 @@
     .historia-estudo { border-left: 5px solid #557da8; }
     .historia-projeto { border-left: 5px solid #805a9b; }
 
+/* ================================================
+       MODAL DE HISTÓRIA — CORREÇÃO DEFINITIVA (PC E CELULAR)
+       ================================================ */
     .modal-historia {
       display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      background: rgba(0, 0, 0, 0.70);
-      padding: 20px;
-      overflow-y: auto;
-      box-sizing: border-box;
+      position: fixed !important;
+      inset: 0 !important;
+      z-index: 100000 !important;
+      background: rgba(0, 0, 0, 0.75) !important;
+      padding: 20px !important;
+      overflow-y: auto !important;
+      box-sizing: border-box !important;
     }
     .modal-historia.ativo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
+
+    /* --- COMPUTADOR: LARGURA AMPLA E CONFORTÁVEL --- */
     .caixa-historia {
-      background: #fffaf3;
-      color: #33291f;
-      max-width: 850px;
-      width: 100%;
-      max-height: 85vh;
-      margin: auto;
-      padding: 30px;
-      border-radius: 16px;
-      border: 2px solid #d8c3a5;
-      position: relative;
-      overflow-y: auto;
-      box-sizing: border-box;
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+      background: #fffaf3 !important;
+      color: #33291f !important;
+      width: 92vw !important;        /* Ocupa 92% da largura da tela no PC */
+      max-width: 1250px !important;  /* Limite máximo amplo para aproveitar o monitor */
+      height: auto !important;
+      max-height: 88vh !important;  /* Altura máxima controlada com scroll interno */
+      margin: auto !important;
+      padding: 35px 35px 25px 35px !important;
+      border-radius: 16px !important;
+      border: 2px solid #d8c3a5 !important;
+      position: relative !important;
+      overflow-y: auto !important;
+      box-sizing: border-box !important;
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6) !important;
     }
     .fechar-modal-historia {
-      position: absolute;
-      right: 15px;
-      top: 10px;
-      border: none;
-      background: transparent;
-      font-size: 30px;
-      cursor: pointer;
-      color: #62401f;
+      position: absolute !important;
+      right: 20px !important;
+      top: 15px !important;
+      border: none !important;
+      background: transparent !important;
+      font-size: 32px !important;
+      cursor: pointer !important;
+      color: #62401f !important;
+      z-index: 10 !important;
+      line-height: 1 !important;
     }
     .fechar-modal-historia:hover {
-      color: #a33a26;
+      color: #a33a26 !important;
+    }
+    #conteudo-historia {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .texto-historia {
+      line-height: 1.8;
+      margin-top: 20px;
     }
     #conteudo-historia h2 {
       margin-top: 0;
@@ -226,10 +243,6 @@
       font-size: 1.6rem;
       font-weight: bold;
       line-height: 1.4;
-    }
-    .texto-historia {
-      line-height: 1.8;
-      margin-top: 20px;
     }
     #conteudo-historia p {
       line-height: 1.7;
@@ -287,6 +300,7 @@
     .botao-voltar:hover {
       background: #4f351e;
     }
+
     @media (max-width: 1150px) {
       .lista-historias {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -301,14 +315,35 @@
       .card-historia { padding: 17px; }
       header h1 { font-size: 1.6rem; }
     }
-    @media (max-width: 500px) {
+
+    /* --- CELULAR / TELEMÓVEL: TELA CHEIA TOTAL --- */
+    @media (max-width: 768px) {
+      .modal-historia {
+        padding: 0 !important;
+      }
+      .modal-historia.ativo {
+        align-items: flex-start !important;
+      }
+      .caixa-historia {
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;
+        border: none !important;
+        padding: 50px 18px 20px 18px !important;
+      }
+      .fechar-modal-historia {
+        top: 12px !important;
+        right: 15px !important;
+        font-size: 38px !important;
+      }
       .pagina-historia { width: 92%; padding: 12px 0; }
       header h1 { font-size: 1.35rem; }
       header p { font-size: 0.75rem; }
       .cabecalho-historia h2 { font-size: 1.2rem; }
       .lista-historias { grid-template-columns: 1fr; }
       .card-historia { min-height: 125px; }
-      .caixa-historia { padding: 25px 18px; }
       #conteudo-historia h2 { font-size: 1.3rem; }
     }
   </style>
