@@ -13,7 +13,7 @@ const HISTORIAS_LINGUA = [
         "A língua Nhandewa-Guarani é memória, identidade, conhecimento e continuidade. Sua história se manifesta na oralidade, nos registros escritos e nas pesquisas, mantendo-se viva entre gerações.",
     conteudo: `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. MAIS DO QUE PALAVRAS
+MAIS DO QUE PALAVRAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua Nhandewa-Guarani não é apenas um conjunto de sons
@@ -27,7 +27,7 @@ pertencer, compartilhar, lembrar e recriar. Por isso,
 dizemos: a língua é memória, é identidade, é relação.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-2. UMA LÍNGUA EM MOVIMENTO
+UMA LÍNGUA EM MOVIMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua é viva. Ela é transmitida entre gerações e,
@@ -41,7 +41,7 @@ a continuidade — o fio que une as gerações, mesmo
 quando as formas se transformam.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-3. CONHECIMENTO E PESQUISA
+CONHECIMENTO E PESQUISA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Os registros históricos e os estudos linguísticos ajudam
@@ -64,7 +64,7 @@ seu ritmo e sua harmonia — em especial a nasalidade,
 característica marcante que distingue o Nhandewa.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-4. O PROJETO KARUMBÉ
+O PROJETO KARUMBÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Este espaço — o Projeto Karumbé — reúne materiais,
@@ -79,7 +79,7 @@ Não se trata apenas de guardar o passado, mas de
 manter a língua presente, acessível e viva.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-5. QUEM FAZ A LÍNGUA VIVA
+QUEM FAZ A LÍNGUA VIVA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 A língua não está nos livros — está nas pessoas:
