@@ -2352,3 +2352,156 @@ p:has(+ .tabela-exemplo-wrapper) {
 .tabela-exemplo-wrapper + .historia-paragrafo {
     margin-top: 6px !important;
 }
+
+/* =====================================================
+   CORREÇÃO FINAL — MODAL DA HISTÓRIA
+   COMPUTADOR LARGO + CELULAR EM TELA CHEIA
+===================================================== */
+
+/* Fundo que cobre a tela */
+.modal-historia {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    padding: 12px !important;
+    overflow: hidden !important;
+
+    display: none;
+    box-sizing: border-box !important;
+    z-index: 10000 !important;
+}
+
+/* Modal aberto */
+.modal-historia.ativo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* COMPUTADOR: caixa mais larga */
+.caixa-historia {
+    width: 96vw !important;
+    max-width: 1600px !important;
+
+    height: 92vh !important;
+    height: 92dvh !important;
+    max-height: 92vh !important;
+    max-height: 92dvh !important;
+
+    margin: 0 auto !important;
+    padding: 30px 32px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+
+    background: #fbf9f4 !important;
+    color: #12261f !important;
+
+    border: 2px solid #234c3e !important;
+    border-radius: 18px !important;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+/* Conteúdo: apenas rolagem vertical */
+#conteudo-historia {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    flex: 1 1 auto !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+
+    padding: 0 8px 20px 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Impede elementos de ultrapassar a caixa */
+#conteudo-historia *,
+.caixa-historia * {
+    box-sizing: border-box !important;
+}
+
+/* Tabelas adaptáveis */
+#conteudo-historia table {
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+}
+
+#conteudo-historia th,
+#conteudo-historia td {
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+}
+
+/* Imagens dentro do conteúdo */
+#conteudo-historia img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* CELULAR: ocupa toda a tela */
+@media (max-width: 768px) {
+    .modal-historia {
+        inset: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        height: 100dvh !important;
+
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .modal-historia.ativo {
+        align-items: stretch !important;
+        justify-content: stretch !important;
+    }
+
+    .caixa-historia {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: 100vh !important;
+        height: 100dvh !important;
+        max-height: 100vh !important;
+        max-height: 100dvh !important;
+
+        margin: 0 !important;
+        padding: 58px 16px 16px !important;
+
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+    #conteudo-historia {
+        padding-right: 4px !important;
+        padding-bottom: 20px !important;
+    }
+
+    #conteudo-historia table {
+        font-size: 13px !important;
+    }
+
+    .fechar-modal-historia,
+    #fechar-modal-historia {
+        position: absolute !important;
+        top: 10px !important;
+        right: 12px !important;
+
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 20 !important;
+    }
+}
