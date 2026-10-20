@@ -1582,34 +1582,32 @@ body {
 
 
 /* =====================================================
-   CAIXA DO MODAL (LARGURA AMPLA CORRIGIDA)
+   CAIXA DO MODAL (APAGUE ESTE BLOCO ANTIGO DUPLICADO)
 ===================================================== */
-
 .caixa-historia {
-    width: 95vw !important;
-    max-width: 1250px !important;
-    height: auto !important;
-    max-height: 88vh !important;
+    max-width: 800px;
+    width: 100%;
+    max-height: 85vh;
 
-    margin: auto !important;
-    padding: 35px !important;
+    margin: auto;
+    padding: 35px;
 
     background: #fbf9f4 !important;
+
     color: #12261f !important;
 
     border: 3px solid #234c3e !important;
-    border-radius: 20px !important;
+    border-radius: 20px;
 
-    position: relative !important;
-    overflow-y: auto !important;
+    position: relative;
 
-    box-sizing: border-box !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7) !important;
+    overflow-y: auto;
 
-    display: flex !important;
-    flex-direction: column !important;
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.7);
 }
-
 
 /* =====================================================
    BOTÃO FECHAR DO MODAL
