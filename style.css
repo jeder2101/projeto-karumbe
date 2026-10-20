@@ -1924,64 +1924,74 @@ body {
    ========================================== */
 .modal-overlay {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    z-index: 99999 !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-/* --- COMPUTADOR (TELAS GRANDES) --- */
+/* --- COMPUTADOR E DESKTOPS --- */
 .modal-conteudo-box {
-    background: #ffffff;
-    width: 90%;
-    max-width: 900px; /* Aumentado de 550px para 900px para ficar bem maior no PC */
-    max-height: 85vh; /* Limita a altura a 85% da tela para não sair da visão */
-    overflow-y: auto;  /* Permite rolar o texto dentro do modal caso precise */
-    padding: 30px 30px 25px 30px;
-    border-radius: 12px;
-    position: relative;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
+    background: #ffffff !important;
+    width: 92% !important;
+    max-width: 1100px !important;  /* Modal bem mais largo no computador */
+    height: auto !important;
+    max-height: 88vh !important;   /* Limita a altura para não sumir da tela */
+    overflow-y: auto !important;   /* Permite rolar o texto dentro do modal */
+    padding: 35px 30px 25px 30px !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    box-sizing: border-box !important;
+    margin: auto !important;
 }
 
 .btn-fechar-modal {
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    background: transparent;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #495057;
-    line-height: 1;
-    transition: color 0.2s;
-    z-index: 10; /* Garante que o botão fique visível sobre o conteúdo */
+    position: absolute !important;
+    top: 12px !important;
+    right: 18px !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.8rem !important;
+    cursor: pointer !important;
+    color: #495057 !important;
+    line-height: 1 !important;
+    transition: color 0.2s !important;
+    z-index: 1000 !important;
 }
 
 .btn-fechar-modal:hover {
-    color: #e63946;
+    color: #e63946 !important;
 }
 
-/* --- CELULAR E DISPOSITIVOS MÓVEIS --- */
-@media (max-width: 768px) {
+/* --- CELULAR E TABLETS (TELAS MENORES QUE 768px) --- */
+@media screen and (max-width: 768px) {
+    .modal-overlay {
+        align-items: flex-start !important;
+    }
+
     .modal-conteudo-box {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-        max-height: 100vh;
-        border-radius: 0; /* Remove as bordas arredondadas no celular */
-        padding: 25px 20px 20px 20px; /* Ajusta o espaçamento interno */
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;      /* Cobre os cantos completamente */
+        padding: 50px 20px 25px 20px !important; /* Espaço no topo para o botão fechar */
+        top: 0 !important;
+        left: 0 !important;
     }
 
     .btn-fechar-modal {
-        top: 15px;
-        right: 15px;
-        font-size: 2rem; /* Facilita o toque em telas sensíveis ao toque */
+        top: 12px !important;
+        right: 15px !important;
+        font-size: 2.2rem !important;     /* Aumenta o X para facilitar o toque no celular */
     }
 }
 /* =====================================================
