@@ -1477,41 +1477,38 @@ body {
     justify-content: center !important;
 }
 
-/* CAIXA DO CONTEÚDO NO COMPUTADOR (Mais larga e centralizada) */
+/* --- COMPUTADOR (FORÇAR EXPANSÃO TOTAL) --- */
 .caixa-historia {
     background: #fffaf3 !important;
     color: #33291f !important;
-    width: 92% !important;
-    max-width: 1100px !important; /* Aumentado para o modal ficar amplo no PC */
-    height: auto !important;
-    max-height: 88vh !important;  /* Impede que o modal passe da altura da tela */
+    width: 95vw !important;        /* Ocupa 95% da largura da tela no PC */
+    max-width: 1200px !important;  /* Limite máximo bem amplo */
+    height: 88vh !important;       /* Altura do modal no PC */
     margin: auto !important;
-    padding: 35px 30px 25px 30px !important;
-    border-radius: 16px !important;
-    border: 2px solid #d8c3a5 !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
     position: relative !important;
-    overflow-y: auto !important;  /* Garante rolagem interna para textos longos */
     box-sizing: border-box !important;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5) !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
-.fechar-modal-historia {
-    position: absolute !important;
-    right: 18px !important;
-    top: 14px !important;
-    border: none !important;
-    background: transparent !important;
-    font-size: 32px !important;
-    cursor: pointer !important;
-    color: #62401f !important;
-    z-index: 10 !important;
-    line-height: 1 !important;
+/* DESTRAVA QUALQUER ELEMENTO INJETADO DENTRO DO MODAL */
+#conteudo-historia,
+#conteudo-historia *,
+.caixa-historia *,
+.caixa-historia iframe {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 
-.fechar-modal-historia:hover {
-    color: #a33a26 !important;
+#conteudo-historia {
+    width: 100% !important;
+    flex: 1 !important;
+    overflow-y: auto !important;   /* Rolagem vertical única */
+    overflow-x: hidden !important; /* Remove barra de rolagem horizontal */
+    padding-right: 10px !important;
 }
-
 /* TELA CHEIA COMPLETA NO CELULAR */
 @media (max-width: 768px) {
     .modal-historia.ativo {
