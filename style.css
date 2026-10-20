@@ -1456,7 +1456,7 @@ body {
     border-left-color: #a5d6a7 !important;
 }
 /* =====================================================
-   MODAL DE HISTÓRIA
+   MODAL DE HISTÓRIA (CORREÇÃO DEFINITIVA)
 ===================================================== */
 
 .modal-historia {
@@ -1466,7 +1466,7 @@ body {
     z-index: 10000 !important;
     background: rgba(4, 15, 12, 0.85) !important;
     backdrop-filter: blur(5px) !important;
-    padding: 0 !important;
+    padding: 20px !important;
     overflow-y: auto !important;
     box-sizing: border-box !important;
 }
@@ -1477,40 +1477,75 @@ body {
     justify-content: center !important;
 }
 
-/* --- COMPUTADOR (FORÇAR EXPANSÃO TOTAL) --- */
+/* --- COMPUTADOR: LARGURA AMPLA E CONFORTÁVEL --- */
 .caixa-historia {
-    background: #fffaf3 !important;
-    color: #33291f !important;
-    width: 95vw !important;        /* Ocupa 95% da largura da tela no PC */
-    max-width: 1200px !important;  /* Limite máximo bem amplo */
-    height: 88vh !important;       /* Altura do modal no PC */
+    background: #fbf9f4 !important;
+    color: #12261f !important;
+    width: 95vw !important;         /* Ocupa 95% da largura da tela no PC */
+    max-width: 1250px !important;   /* Limite máximo bem amplo */
+    height: auto !important;
+    max-height: 88vh !important;    /* Altura máxima controlada com scroll interno */
     margin: auto !important;
-    padding: 30px !important;
-    border-radius: 12px !important;
+    padding: 35px !important;
+    border: 3px solid #234c3e !important;
+    border-radius: 20px !important;
     position: relative !important;
+    overflow-y: auto !important;
     box-sizing: border-box !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
     display: flex !important;
     flex-direction: column !important;
-}
-
-/* DESTRAVA QUALQUER ELEMENTO INJETADO DENTRO DO MODAL */
-#conteudo-historia,
-#conteudo-historia *,
-.caixa-historia *,
-.caixa-historia iframe {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
 }
 
 #conteudo-historia {
     width: 100% !important;
     flex: 1 !important;
-    overflow-y: auto !important;   /* Rolagem vertical única */
-    overflow-x: hidden !important; /* Remove barra de rolagem horizontal */
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
     padding-right: 10px !important;
 }
-/* TELA CHEIA COMPLETA NO CELULAR */
+
+#conteudo-historia,
+#conteudo-historia *,
+.caixa-historia * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* --- BOTÃO FECHAR DO MODAL --- */
+.fechar-modal-historia,
+#fechar-modal-historia {
+    position: absolute !important;
+    right: 20px !important;
+    top: 15px !important;
+    width: 36px !important;
+    height: 36px !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: rgba(35, 76, 62, 0.10) !important;
+    color: #234c3e !important;
+    font-size: 32px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 10 !important;
+    transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.fechar-modal-historia:hover,
+#fechar-modal-historia:hover {
+    color: #ffffff !important;
+    background: #b71c1c !important;
+    transform: scale(1.05);
+}
+
+/* --- TELA CHEIA COMPLETA NO CELULAR --- */
 @media (max-width: 768px) {
+    .modal-historia {
+        padding: 0 !important;
+    }
+    
     .modal-historia.ativo {
         align-items: flex-start !important;
     }
@@ -1520,15 +1555,16 @@ body {
         height: 100vh !important;
         max-width: 100vw !important;
         max-height: 100vh !important;
-        border-radius: 0 !important;        /* Cobre as bordas da tela */
+        border-radius: 0 !important;
         border: none !important;
-        padding: 50px 20px 25px 20px !important; /* Dá espaço para o botão X */
+        padding: 50px 18px 20px 18px !important;
     }
 
-    .fechar-modal-historia {
-        top: 15px !important;
+    .fechar-modal-historia,
+    #fechar-modal-historia {
+        top: 12px !important;
         right: 15px !important;
-        font-size: 36px !important;
+        font-size: 38px !important;
     }
 }
 
@@ -2122,18 +2158,19 @@ body {
     right: auto !important;
     top: auto !important;
     bottom: auto !important;
-   /* =====================================================
-   titulo livro/seção mongarai
-   ===================================================== */
 }
+
+/* =====================================================
+   TÍTULO LIVRO / SEÇÃO MONGARAI
+   ===================================================== */
 .leitor-titulo {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #2c4a3e;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #2c4a3e;
-  padding-bottom: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c4a3e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2c4a3e;
+    padding-bottom: 4px;
 }
 /* =========================================================
    TABELAS DE EXEMPLOS LINGUÍSTICOS
