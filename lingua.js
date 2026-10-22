@@ -36,11 +36,11 @@ Os registros históricos e os estudos linguísticos ajudam a compreender as cama
 
 O trabalho de Consuelo de Paiva Godinho Costa é uma referência central:
 
-  • "Nhandewa Aywu: fonologia do Nhandewa-Guarani" (2003/2010)
+  • Nhandewa Aywu: fonologia do Nhandewa-Guarani (2003/2010).
     — primeira sistematização completa da fonologia do dialeto.
 
-  • Artigo na revista LIAMES (2012)
-    — análise dos sons, da nasalidade e das estruturas próprias do Nhandewa falado em comunidades de São Paulo e do Paraná
+  • Artigo na revista LIAMES (2012).
+    — análise dos sons, da nasalidade e das estruturas próprias do Nhandewa falado em comunidades de São Paulo e do Paraná.
 
 Esses estudos mostram como a língua organiza seus sons, seu ritmo e sua harmonia — em especial a nasalidade, característica marcante que distingue o Nhandewa.
 
@@ -50,10 +50,10 @@ O PROJETO KARUMBÉ
 
 Este espaço — o Projeto Karumbé — reúne materiais, referências, mapas e reflexões com um objetivo:
 
-  ✅ apoiar a pesquisa
-  ✅ fortalecer o ensino
-  ✅ contribuir para a continuidade da língua
-  ✅ dar visibilidade ao conhecimento dos falantes
+  ✅ apoiar a pesquisa.
+  ✅ fortalecer o ensino.
+  ✅ contribuir para a continuidade da língua.
+  ✅ dar visibilidade ao conhecimento dos falantes.
 
 Não se trata apenas de guardar o passado, mas de manter a língua presente, acessível e viva.
 
@@ -63,15 +63,15 @@ QUEM FAZ A LÍNGUA VIVA
 
 A língua não está nos livros — está nas pessoas:
 
-Os mais velhos que guardam as histórias, as palavras antigas e os saberes profundos
+✓ Os mais velhos que guardam as histórias, as palavras antigas e os saberes profundos.
 
-Os professores que levam a língua às escolas e às aldeias com dedicação
+✓ Os professores que levam a língua às escolas e às aldeias com dedicação.
 
-As crianças que aprendem, falam e recriam a língua todos os dias
+✓ As crianças que aprendem, falam e recriam a língua todos os dias.
 
-As famílias que transmitem o Nhandewa no dia a dia, em casa, nas reuniões, nas caminhadas e nas festas
+✓ As famílias que transmitem o Nhandewa no dia a dia, em casa, nas reuniões, nas caminhadas e nas festas.
 
-A língua permanece enquanto houver quem a fale, a escute e a passe adiante. Ela não pertence aos registros — pertence ao caminhar.
+✓ A língua permanece enquanto houver quem a fale, a escute e a passe adiante. Ela não pertence aos registros — pertence ao caminhar.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PALAVRA FINAL
