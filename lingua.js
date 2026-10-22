@@ -128,8 +128,8 @@ Os registros históricos e linguísticos permitem estudar aspectos da língua Gu
 
 Entre os registros mais importantes está a obra de Antônio Ruiz de Montoya:
 
-  • Tesoro de la lengua guarani — 1639
-  • Arte, y bocabulario de la lengua guarani — 1640
+  • Tesoro de la lengua guarani — 1639.
+  • Arte, y bocabulario de la lengua guarani — 1640.
 
 Essas obras constituem registros importantes de uma variedade do Guarani do período colonial, mas não devem ser consideradas descrição direta do Nhandewa contemporâneo.
 
@@ -348,19 +348,11 @@ Não devem ser utilizados como regras absolutas para todas as palavras ou para t
 MUDANÇAS ENTRE O GUARANI ANTIGO E O NHANDEWA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O estudo compara o Nhandewa-Guarani contemporâneo
-com o Apapocuva registrado por Curt Nimuendaju e
-com o chamado Guarani Antigo, registrado por Montoya.
+O estudo compara o Nhandewa-Guarani contemporâneo com o Apapocuva registrado por Curt Nimuendaju e com o chamado Guarani Antigo, registrado por Montoya.
 
-A autora utiliza essas comparações para observar
-diferenças históricas entre as variedades e verificar
-quais características são preservadas ou modificadas
-no Nhandewa-Guarani.
+A autora utiliza essas comparações para observar diferenças históricas entre as variedades e verificar quais características são preservadas ou modificadas no Nhandewa-Guarani.
 
-As diferenças apresentadas no estudo incluem mudanças
-vocálicas, mudanças envolvendo /b/, mudanças nas
-posposições, mudanças de outras consoantes e mudanças
-nas sílabas finais.
+As diferenças apresentadas no estudo incluem mudanças vocálicas, mudanças envolvendo /b/, mudanças nas posposições, mudanças de outras consoantes e mudanças nas sílabas finais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 MUDANÇA DAS POSPOSIÇÕES
@@ -377,28 +369,20 @@ tatápe | ao fogo         | tatápy
 chébe  | me, para mim    | chéwy
 ohubo  | vindo, para vir | oúwy
 
-Esses exemplos são apresentados no estudo como uma
-mudança das posposições do Guarani Antigo para as formas
-registradas no Apapocuva.
+Esses exemplos são apresentados no estudo como uma mudança das posposições do Guarani Antigo para as formas registradas no Apapocuva.
 
-Na fala atual dos Nhandewa-Guarani, a tendência
-descrita no estudo ainda se mantém.
+Na fala atual dos Nhandewa-Guarani, a tendência descrita no estudo ainda se mantém.
 
-O estudo observa também uma pequena diferença de
-sílaba tônica no termo chéwy, que é pronunciado
-atualmente como txewy.
+O estudo observa também uma pequena diferença de sílaba tônica no termo chéwy, que é pronunciado atualmente como txewy.
 
-Montoya, ao tratar da declinação dos pronomes,
-registrou a forma chébe.
+Montoya, ao tratar da declinação dos pronomes, registrou a forma chébe.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 A FORMAÇÃO DAS FORMAS FINAIS EM -Y
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Em outra parte da análise, o estudo apresenta palavras
-que podem ser confundidas com paroxítonas. Nelas,
-em vez do simples apagamento da última sílaba átona,
-ocorre uma mudança nessa sílaba final.
+Em outra parte da análise, o estudo apresenta palavras que podem ser confundidas com paroxítonas. 
+Nelas, em vez do simples apagamento da última sílaba átona, ocorre uma mudança nessa sílaba final.
 
 Os exemplos registrados por Nimuendaju são:
 
@@ -417,28 +401,19 @@ INTERPRETAÇÃO DAS FORMAS óy E cóy
 A análise apresentada no estudo relaciona essas formas
 à permanência de uma aproximante na posição final.
 
-O texto observa que, nos exemplos de Nimuendaju,
-a grafia y aparece no lugar em que no Guarani Antigo
-e no Tupi aparece g.
+O texto observa que, nos exemplos de Nimuendaju, a grafia y aparece no lugar em que no Guarani Antigo e no Tupi aparece g.
 
-A interpretação proposta é que essa realização não
-deve ser entendida simplesmente como uma consoante
-oclusiva que permaneceu.
+A interpretação proposta é que essa realização não deve ser entendida simplesmente como uma consoante oclusiva que permaneceu.
 
-O estudo sugere que as formas correspondentes em
-Nhandewa apresentam uma aproximante, relacionada às
-vogais, permanecendo na posição de coda.
+O estudo sugere que as formas correspondentes em Nhandewa apresentam uma aproximante, relacionada às vogais, permanecendo na posição de coda.
 
-Por isso, palavras como óy e kóy são analisadas como
-monossílabos oxítonos, com a sílaba final travada
-por uma aproximante.
+Por isso, palavras como óy e kóy são analisadas como monossílabos oxítonos, com a sílaba final travada por uma aproximante.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 DUAS TRANSFORMAÇÕES QUE NÃO DEVEM SER CONFUNDIDAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O estudo apresenta, portanto, dois conjuntos diferentes
-de exemplos.
+O estudo apresenta, portanto, dois conjuntos diferentes de exemplos.
 
 PRIMEIRO:
 
@@ -463,40 +438,27 @@ coga → cóy
 añang → añãy
 coang → coãy
 
-Os dois conjuntos pertencem à análise histórica da
-língua, mas não representam a mesma regra.
+Os dois conjuntos pertencem à análise histórica da língua, mas não representam a mesma regra.
 
-Por isso, não é correto acrescentar uma posposição
-bo às palavras añang ou coang quando o documento não
-a apresenta dessa maneira.
+Por isso, não é correto acrescentar uma posposição bo às palavras añang ou coang quando o documento não a apresenta dessa maneira.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CONTINUIDADE DA MUDANÇA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O estudo afirma que a tendência observada nas
-posposições ainda se mantém no Nhandewa-Guarani
-contemporâneo.
+O estudo afirma que a tendência observada nas posposições ainda se mantém no Nhandewa-Guarani contemporâneo.
 
-Ao mesmo tempo, a análise mostra que as mudanças
-históricas não podem ser reduzidas a uma simples
-troca automática de letras.
+Ao mesmo tempo, a análise mostra que as mudanças históricas não podem ser reduzidas a uma simples troca automática de letras.
 
-É necessário observar a estrutura da palavra,
-a posição do segmento, a sílaba, a pronúncia e
-a variedade linguística registrada.
+É necessário observar a estrutura da palavra, a posição do segmento, a sílaba, a pronúncia e a variedade linguística registrada.
 
-A comparação entre Guarani Antigo, Apapocuva e
-Nhandewa permite acompanhar essas transformações
-históricas com maior precisão.
+A comparação entre Guarani Antigo, Apapocuva e Nhandewa permite acompanhar essas transformações históricas com maior precisão.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CONCLUSÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O estudo registra uma mudança das posposições
-pe, be e bo para formas como py e wy no Apapocuva
-e no Nhandewa-Guarani.
+O estudo registra uma mudança das posposições pe, be e bo para formas como py e wy no Apapocuva e no Nhandewa-Guarani.
 
 Também registra mudanças em formas finais como:
 
@@ -507,10 +469,7 @@ coang → coãy
 
 Esses exemplos devem ser analisados separadamente.
 
-A comparação histórica mostra que as transformações
-do Nhandewa-Guarani envolvem diferentes processos
-fonológicos e gramaticais, que precisam ser observados
-de acordo com cada palavra e cada contexto.
+A comparação histórica mostra que as transformações do Nhandewa-Guarani envolvem diferentes processos fonológicos e gramaticais, que precisam ser observados de acordo com cada palavra e cada contexto.
 `,
 
     tipo: "em estudo",
