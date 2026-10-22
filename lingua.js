@@ -110,100 +110,58 @@ Estudar a língua Nhandewa-Guarani é reconhecer que ela é memória que se reno
 1. RAÍZES E SIGNIFICAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A língua Guarani Nhandewa faz parte da história linguística
-dos povos Tupi-Guarani.
+A língua Guarani Nhandewa faz parte da história linguística dos povos Tupi-Guarani.
 
-A designação "Nhandeva" significa "nossa gente" — do
-nhande + avá —, expressão que os Guarani utilizam para
-se referir ao grupo que compartilha o mesmo caminho e
-a mesma origem. O conjunto de comunidades que formou
-a variedade Nhandewa-Guarani, grafada com "w" segundo
-a ortografia adotada pelas próprias comunidades, descende
-de grupos migrantes saídos da região de fronteira entre
-o atual Mato Grosso do Sul e o Paraguai.
+A designação "Nhandeva" significa "nossa gente" — do nhande + avá —, expressão que os Guarani utilizam para se referir ao grupo que compartilha o mesmo caminho e a mesma origem. 
+O conjunto de comunidades que formou a variedade Nhandewa-Guarani, grafada com "w" segundo a ortografia adotada pelas próprias comunidades, descende de grupos migrantes saídos da região de fronteira entre o atual Mato Grosso do Sul e o Paraguai.
 
-Sua trajetória deve ser compreendida considerando os
-territórios, as comunidades, os deslocamentos históricos,
-as migrações e as relações estabelecidas entre diferentes
-povos e comunidades Guarani.
+Sua trajetória deve ser compreendida considerando os territórios, as comunidades, os deslocamentos históricos, as migrações e as relações estabelecidas entre diferentes  povos e comunidades Guarani.
 
-A história de uma língua não acontece de forma isolada.
-Ela acompanha seus falantes e é transmitida entre gerações.
-Por isso, para compreender o Nhandewa-Guarani contemporâneo,
-é necessário observar tanto as continuidades históricas quanto
-as transformações ocorridas ao longo do tempo.
+A história de uma língua não acontece de forma isolada. Ela acompanha seus falantes e é transmitida entre gerações.
+Por isso, para compreender o Nhandewa-Guarani contemporâneo, é necessário observar tanto as continuidades históricas quanto as transformações ocorridas ao longo do tempo.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 2. REGISTROS HISTÓRICOS DA LÍNGUA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Os registros históricos e linguísticos permitem estudar
-aspectos da língua Guarani desde documentos antigos até
-as formas utilizadas pelas comunidades atualmente.
+Os registros históricos e linguísticos permitem estudar aspectos da língua Guarani desde documentos antigos até as formas utilizadas pelas comunidades atualmente.
 
-Entre os registros mais importantes está a obra de
-Antônio Ruiz de Montoya:
+Entre os registros mais importantes está a obra de Antônio Ruiz de Montoya:
 
   • Tesoro de la lengua guarani — 1639
   • Arte, y bocabulario de la lengua guarani — 1640
 
-Essas obras constituem registros importantes de uma
-variedade do Guarani do período colonial, mas não
-devem ser consideradas descrição direta do Nhandewa
-contemporâneo.
+Essas obras constituem registros importantes de uma variedade do Guarani do período colonial, mas não devem ser consideradas descrição direta do Nhandewa contemporâneo.
 
-O Apapokúva é reconhecido como dialeto do Avá-Guarani
-(Nhandéva), falado no Paraná. A descrição científica
-feita por Curt Nimuendajú, publicada em 1914, é a
-primeira análise detalhada dessa língua. Nimuendajú
-foi aceito e ritualmente batizado entre os Apapocúva
-em 1910, convivendo diretamente com os grupos que
-protagonizavam as migrações.
+O Apapokúva é reconhecido como dialeto do Avá-Guarani (Nhandéva), falado no Paraná. A descrição científica feita por Curt Nimuendajú, publicada em 1914, é a primeira análise detalhada dessa língua. 
+Nimuendajú foi aceito e ritualmente batizado entre os Apapocúva em 1910, convivendo diretamente com os grupos que protagonizavam as migrações.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 3. MIGRAÇÕES E FORMAÇÃO DAS COMUNIDADES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Nimuendajú registrou trajetórias de grupos como os
-Apapocúva, Tañyguá e Oguauíva e descreveu migrações
-associadas à busca da Yvy Marã e'ỹ — a "Terra sem Mal".
-Essa caminhada partiu do oeste em direção ao leste,
-ao longo dos séculos XIX e XX.
+Nimuendajú registrou trajetórias de grupos como os Apapocúva, Tañyguá e Oguauíva e descreveu migrações associadas à busca da Yvy Marã e'ỹ — a "Terra sem Mal".
+Essa caminhada partiu do oeste em direção ao leste, ao longo dos séculos XIX e XX.
 
-Delas resultaram comunidades que mantiveram contato
-entre si por mais de um século e meio, formando uma
-unidade cultural e linguística própria:
+Delas resultaram comunidades que mantiveram contato entre si por mais de um século e meio, formando uma unidade cultural e linguística própria:
 
-  • Laranjinha e Pinhalzinho — Norte do Paraná
-  • Nimuendaju (Araribá) — Bauru / SP
-  • Bananal, Itariri e Piaçaguera — Litoral de São Paulo
+  • Laranjinha e Pinhalzinho — Norte do Paraná.
+  • Nimuendaju (Araribá) — Bauru / SP.
+  • Bananal, Itariri e Piaçaguera — Litoral de São Paulo.
 
-Pesquisas contemporâneas mostram que a formação do
-Nhandewa não se resume a uma simples "mistura" de
-línguas. O convívio entre grupos gerou características
-próprias que se consolidaram ao longo de gerações.
+Pesquisas contemporâneas mostram que a formação do Nhandewa não se resume a uma simples "mistura" de línguas. 
+O convívio entre grupos gerou características próprias que se consolidaram ao longo de gerações.
 
-A língua pode conservar estruturas antigas e, ao mesmo
-tempo, desenvolver sons, vocábulos e usos próprios.
-Cada mudança precisa ser estudada com base em evidências,
-não se devendo atribuir traços de forma automática
-a outros povos ou períodos.
+A língua pode conservar estruturas antigas e, ao mesmo tempo, desenvolver sons, vocábulos e usos próprios.
+Cada mudança precisa ser estudada com base em evidências, não se devendo atribuir traços de forma automática a outros povos ou períodos.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 4. OGUATÁ — O CAMINHAR E A MEMÓRIA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A pesquisa de Juracilda Veiga destaca o "oguatá" —
-o caminhar — como elemento central que une as migrações
-históricas aos movimentos atuais de retorno às terras
-do antigo Aldeamento do Rio Verde, onde se reafirma
-a presença do Nhandewa.
+A pesquisa de Juracilda Veiga destaca o "oguatá" "o caminhar" — como elemento central que une as migrações históricas aos movimentos atuais de retorno às terras do antigo Aldeamento do Rio Verde, onde se reafirma a presença do Nhandewa.
 
-A memória familiar também tece essa história. A linhagem
-de Firmino Pedro da Silva, reconhecido como Nhandewa,
-conecta gerações que atravessaram o Rio Paraná e o
-norte do Paraná, chegando até as famílias que hoje
-fortalecem a língua nas aldeias de Tekoa Karugwá.
+A memória familiar também tece essa história. A linhagem de Firmino Pedro da Silva, reconhecido como Nhandewa, conecta gerações que atravessaram o Rio Paraná e o norte do Paraná, chegando até as famílias que hoje fortalecem a língua nas aldeias de Tekoa Karugwá.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 5. TRAJETÓRIA E PROCESSO
@@ -231,15 +189,11 @@ Podemos representar esse processo:
 
 Os deslocamentos assumiram formas diferentes em cada período:
 
-  • Séc. XVI–XVII: fugas frente a colonizadores e bandeirantes,
-    atração para missões jesuíticas, expedições de guerra e
-    busca de metais preciosos
+  • Séc. XVI–XVII: fugas frente a colonizadores e bandeirantes, atração para missões jesuíticas, expedições de guerra e busca de metais preciosos
 
   • Séc. XIX–XX: migrações em busca da Terra sem Mal
 
-Nem tudo que se registra no passado se mantém igual,
-nem tudo que se transforma perde a raiz. A língua viva
-é memória em movimento.
+Nem tudo que se registra no passado se mantém igual, nem tudo que se transforma perde a raiz. A língua viva é memória em movimento.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 6. FORMAS DE CONHECIMENTO
@@ -247,33 +201,27 @@ nem tudo que se transforma perde a raiz. A língua viva
 
 Neste projeto, distinguimos:
 
-   DOCUMENTADO
-  Fontes verificáveis e pesquisas acadêmicas
+   ✓ DOCUMENTADO
+  Fontes verificáveis e pesquisas acadêmicas.
 
-   MEMÓRIA FAMILIAR
-  Saberes transmitidos oralmente entre gerações
+   ✓ MEMÓRIA FAMILIAR
+  Saberes transmitidos oralmente entre gerações.
 
-   EM PESQUISA
-  Dados em fase de comparação com documentos e registros
+   ✓ EM PESQUISA
+  Dados em fase de comparação com documentos e registros.
 
-   HIPÓTESE
-  Interpretações que ainda precisam de evidências
+   ✓ HIPÓTESE
+  Interpretações que ainda precisam de evidências.
 
-Os documentos antigos ajudam a compreender as formas
-registradas. Os estudos de Nimuendaju ajudam a compreender
-as trajetórias dos grupos. As pesquisas atuais aprofundam
-as relações entre passado e presente. E a memória das
-famílias preserva o que nem sempre aparece nos livros.
+Os documentos antigos ajudam a compreender as formas registradas. Os estudos de Nimuendaju ajudam a compreender as trajetórias dos grupos. As pesquisas atuais aprofundam as relações entre passado e presente. 
+E a memória das famílias preserva o que nem sempre aparece nos livros.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CONCLUSÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 O Nhandewa não pertence apenas aos registros do passado.
-É uma língua que caminhou com seu povo, atravessou
-rios e gerações, conserva memórias e continua se
-transformando. Estudar sua história é também estudar
-a história das pessoas que a falam.
+É uma língua que caminhou com seu povo, atravessou rios e gerações, conserva memórias e continua se transformando. Estudar sua história é também estudar a história das pessoas que a falam.
 `,
     tipo: "documentado",
     fonte:
