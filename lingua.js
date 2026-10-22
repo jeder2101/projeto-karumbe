@@ -16,67 +16,46 @@ const HISTORIAS_LINGUA = [
 MAIS DO QUE PALAVRAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A língua Nhandewa-Guarani não é apenas um conjunto de sons
-e palavras. Ela carrega consigo a memória dos povos, as
-relações entre famílias, a espiritualidade, os saberes
-tradicionais e as formas próprias de compreender e habitar
-o mundo.
+A língua Nhandewa-Guarani não é apenas um conjunto de sons e palavras. Ela carrega consigo a memória dos povos, as relações entre famílias, a espiritualidade, os saberes tradicionais e as formas próprias de compreender e habitar o mundo.
 
-É por meio da língua que se transmite o que significa
-pertencer, compartilhar, lembrar e recriar. Por isso,
-dizemos: a língua é memória, é identidade, é relação.
+É por meio da língua que se transmite o que significa pertencer, compartilhar, lembrar e recriar. Por isso,dizemos: a língua é memória, é identidade, é relação.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 UMA LÍNGUA EM MOVIMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A língua é viva. Ela é transmitida entre gerações e,
-ao longo do caminho, pode apresentar variações — na
-pronúncia, na grafia, nas estruturas e nos sentidos
-que as palavras adquirem.
+A língua é viva. Ela é transmitida entre gerações e, ao longo do caminho, pode apresentar variações — na pronúncia, na grafia, nas estruturas e nos sentidos que as palavras adquirem.
 
-Isso não significa perda ou desvio: faz parte da
-natureza de toda língua falada. O que permanece é
-a continuidade — o fio que une as gerações, mesmo
-quando as formas se transformam.
+Isso não significa perda ou desvio: faz parte da natureza de toda língua falada. O que permanece é a continuidade — o fio que une as gerações, mesmo quando as formas se transformam.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 CONHECIMENTO E PESQUISA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Os registros históricos e os estudos linguísticos ajudam
-a compreender as camadas da língua, mas devem ser sempre
-analisados considerando a comunidade, o tempo e o contexto
-em que foram produzidos.
+Os registros históricos e os estudos linguísticos ajudam a compreender as camadas da língua, mas devem ser sempre analisados considerando a comunidade, o tempo e o contexto em que foram produzidos.
 
-O trabalho de Consuelo de Paiva Godinho Costa é uma
-referência central:
+O trabalho de Consuelo de Paiva Godinho Costa é uma referência central:
 
   • "Nhandewa Aywu: fonologia do Nhandewa-Guarani" (2003/2010)
-    — primeira sistematização completa da fonologia do dialeto
+    — primeira sistematização completa da fonologia do dialeto.
 
   • Artigo na revista LIAMES (2012)
-    — análise dos sons, da nasalidade e das estruturas próprias
-    do Nhandewa falado em comunidades de São Paulo e do Paraná
+    — análise dos sons, da nasalidade e das estruturas próprias do Nhandewa falado em comunidades de São Paulo e do Paraná
 
-Esses estudos mostram como a língua organiza seus sons,
-seu ritmo e sua harmonia — em especial a nasalidade,
-característica marcante que distingue o Nhandewa.
+Esses estudos mostram como a língua organiza seus sons, seu ritmo e sua harmonia — em especial a nasalidade, característica marcante que distingue o Nhandewa.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 O PROJETO KARUMBÉ
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Este espaço — o Projeto Karumbé — reúne materiais,
-referências, mapas e reflexões com um objetivo:
+Este espaço — o Projeto Karumbé — reúne materiais, referências, mapas e reflexões com um objetivo:
 
   ✅ apoiar a pesquisa
   ✅ fortalecer o ensino
   ✅ contribuir para a continuidade da língua
   ✅ dar visibilidade ao conhecimento dos falantes
 
-Não se trata apenas de guardar o passado, mas de
-manter a língua presente, acessível e viva.
+Não se trata apenas de guardar o passado, mas de manter a língua presente, acessível e viva.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 QUEM FAZ A LÍNGUA VIVA
@@ -84,32 +63,21 @@ QUEM FAZ A LÍNGUA VIVA
 
 A língua não está nos livros — está nas pessoas:
 
-   Os mais velhos que guardam as histórias,
-     as palavras antigas e os saberes profundos
+Os mais velhos que guardam as histórias, as palavras antigas e os saberes profundos
 
-   Os professores que levam a língua às escolas
-     e às aldeias com dedicação
+Os professores que levam a língua às escolas e às aldeias com dedicação
 
-   As crianças que aprendem, falam e recriam
-     a língua todos os dias
+As crianças que aprendem, falam e recriam a língua todos os dias
 
-   As famílias que transmitem o Nhandewa
-     no dia a dia, em casa, nas reuniões,
-     nas caminhadas e nas festas
+As famílias que transmitem o Nhandewa no dia a dia, em casa, nas reuniões, nas caminhadas e nas festas
 
-A língua permanece enquanto houver quem a fale,
-a escute e a passe adiante. Ela não pertence
-aos registros — pertence ao caminhar.
+A língua permanece enquanto houver quem a fale, a escute e a passe adiante. Ela não pertence aos registros — pertence ao caminhar.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PALAVRA FINAL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Estudar a língua Nhandewa-Guarani é reconhecer
-que ela é memória que se renova, identidade que
-se afirma e transformação que continua. Cada
-palavra falada hoje é também a voz de quem
-caminhou antes e de quem caminhará depois.
+Estudar a língua Nhandewa-Guarani é reconhecer que ela é memória que se renova, identidade que se afirma e transformação que continua. Cada palavra falada hoje é também a voz de quem caminhou antes e de quem caminhará depois.
 `,
     tipo: "documentado",
     fonte:
