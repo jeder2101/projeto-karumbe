@@ -398,8 +398,7 @@ coang | coãy | coãy | agora
 INTERPRETAÇÃO DAS FORMAS óy E cóy
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A análise apresentada no estudo relaciona essas formas
-à permanência de uma aproximante na posição final.
+A análise apresentada no estudo relaciona essas formas à permanência de uma aproximante na posição final.
 
 O texto observa que, nos exemplos de Nimuendaju, a grafia y aparece no lugar em que no Guarani Antigo e no Tupi aparece g.
 
@@ -518,8 +517,7 @@ Esses elementos funcionam como centros dispersores de nasalidade.
 VOGAIS NASAIS E VOGAIS ORAIS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A pesquisa mostra que a nasalidade é distintiva entre
-vogais acentuadas.
+A pesquisa mostra que a nasalidade é distintiva entre vogais acentuadas.
 
 São apresentados pares em que a nasalidade modifica o significado da palavra.
 
@@ -599,8 +597,7 @@ iwi'kwa = sepultura
 
 peti'ngua = cachimbo
 
-O primeiro exemplo está relacionado às formas
-iwi' = terra" e kwa = buraco.
+O primeiro exemplo está relacionado às formas: iwi' = terra" e kwa = buraco.
 
 O segundo exemplo apresenta uma realização nasal em ambiente relacionado à harmonia nasal.
 
@@ -660,8 +657,8 @@ Ao afastar-se desse centro, a nasalização pode diminuir gradualmente.
 Dessa maneira, a pesquisa distingue:
 
 • nasalidade fonológica, categórica;
-• nasalização fonética, que pode apresentar
-  diminuição gradual.
+
+• nasalização fonética, que pode apresentar diminuição gradual.
 
 Essa distinção é importante para compreender por que nem toda nasalização observada na fala possui necessariamente o mesmo valor fonológico.
 
@@ -1078,11 +1075,9 @@ eỹwa | não / sem — uso atual
 Os professores Nhandewa, nas Convenções
 Lingüísticas, decidiram:
 
-  ✅ Junto → quando forma uma só pronúncia
-             com o verbo (aáma, oúma)
+  ✅ Junto → quando forma uma só pronúncia com o verbo (aáma, oúma).
 
-  ✅ Separado → quando tem pronúncia própria
-                e destaque na frase
+  ✅ Separado → quando tem pronúncia própria e destaque na frase.
 
 Não é regra fixa para sempre — a escrita se ajusta conforme a fala da comunidade.
 
@@ -1334,11 +1329,11 @@ A língua não vive em livro. Vive na boca,
 no encontro, na história contada, na criança
 que responde em Nhandewa. Revitalizar é:
 
-  ✅ Transmitir entre gerações
-  ✅ Ensinar na escola e na família
-  ✅ Ouvir os mais velhos
-  ✅ Escrever sem perder a fala
-  ✅ Criar com a língua hoje
+  ✓ Transmitir entre gerações
+  ✓ Ensinar na escola e na família
+  ✓ Ouvir os mais velhos
+  ✓ Escrever sem perder a fala
+  ✓ Criar com a língua hoje
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  OS MAIS VELHOS GUARDAM A FONTE
@@ -1349,7 +1344,7 @@ Suas vozes permanecem em cada página, em cada exemplo e está sendo reunida pel
 O Projeto karumbé para que as comunidades não caia em algo que chamamos de "padrão" em que tudo tem que seguir uma "ordem" mas sabemos que cada aldeia tem sua "identidade" e tem quer ser "respeitada".
 
 "A língua não se perde enquanto houver quem a fale e queira ensinar."
-— Memória das comunidades
+✓ Memória das comunidades
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  OS PROFESSORES FAZEM O CAMINHO
@@ -1403,11 +1398,11 @@ O dicionário digital é para a língua o que o livro é — um apoio. A vida da
 
 Revitalizar não é voltar ao passado. É:
 
-  🌱 Manter o que ainda é falado.
-  🌱 Ensinar o que está sendo esquecido.
-  🌱 Criar palavras novas para coisas novas.
-  🌱 Respeitar quem fala diferente.
-  🌱 Deixar a língua crescer.
+  ✓ Manter o que ainda é falado.
+  ✓ Ensinar o que está sendo esquecido.
+  ✓ Criar palavras novas para coisas novas.
+  ✓ Respeitar quem fala diferente.
+  ✓ Deixar a língua crescer.
 
 A língua que atravessou séculos e caminhou por milhares de quilômetros não pára agora.
 Caminha com cada geração que a recebe e a passa adiante.
@@ -1522,12 +1517,12 @@ passado ←→ presente.
 
 Este espaço reúne:
 
-  ✅ Gramáticas e vocabulários.
-  ✅ Artigos e teses.
-  ✅ Materiais de formação.
-  ✅ Registros históricos.
-  ✅ Narrativas e referências.
-  ✅ Produções das comunidades
+  ✓ Gramáticas e vocabulários.
+  ✓ Artigos e teses.
+  ✓ Materiais de formação.
+  ✓ Registros históricos.
+  ✓ Narrativas e referências.
+  ✓ Produções das comunidades
 
 Não é para substituir ninguém. É para que quem busca encontre: fonte, contexto, autoria, data, comunidade. E que, ao encontrar, possa voltar à fonte original.
 
