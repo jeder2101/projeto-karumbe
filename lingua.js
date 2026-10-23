@@ -801,15 +801,12 @@ Assim, a nasalidade constitui um dos elementos centrais para compreender a fonol
  O SEGMENTO /R/ NO SISTEMA FONOLÓGICO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-O /r/ no Nhandewa-Guarani é um tap alveolar,
-não uma vibrante múltipla. Aparece em posição de
-início de sílaba, no começo ou no meio da palavra.
+O /r/ no Nhandewa-Guarani é um tap alveolar, não uma vibrante múltipla. 
+Aparece em posição de início de sílaba, no começo ou no meio da palavra.
 Não ocorre no final de sílaba ou de palavra.
 
 Em ambiente oral, pronuncia-se [r].
-Em ambiente nasal, sofre influência da nasalidade
-e realiza-se como [r̃] — um tap nasalizado, não
-uma consoante nasal plena [n].
+Em ambiente nasal, sofre influência da nasalidade e realiza-se como [r̃] — um tap nasalizado, não uma consoante nasal plena [n].
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  R EM CONTEXTO ORAL
@@ -823,8 +820,7 @@ rowai | o outro lado, além
 piri | taboa / junco
 ywyra | árvore
 
-Nessas palavras, não há vogal nasal próxima,
-e o /r/ mantém sua pronúncia oral.
+Nessas palavras, não há vogal nasal próxima, e o /r/ mantém sua pronúncia oral.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  R NASALIZADO — NÃO É N
@@ -837,14 +833,11 @@ põrã | bom, bonito | [põr̃ã] — não [põnã]
 wa'ẽrã | futuro | [wa'ẽr̃ã] — não [wa'ẽnã]
 nãporairỹ | não está bom, ruim | nasalidade se estende por toda a palavra
 
-⚠️ Nimuendaju registrou n em alguns desses casos,
-ex.: ponã em vez de põrã. Isso reflete a impressão
-fonética de quem ouve em fala rápida — não significa
-que R se transformou em N. O som continua sendo um
-tap, só que com ressonância nasal: [r̃], não [n].
+⚠️ Nimuendaju registrou n em alguns desses casos.
+Exemplo: ponã em vez de põrã. 
+Isso reflete a impressão fonética de quem ouve em fala rápida — não significa que R se transformou em N. O som continua sendo um tap, só que com ressonância nasal: [r̃], não [n].
 
-A própria pesquisadora relata que um falante corrigiu
-a grafia ponã pronunciando com ênfase o r: porã.
+A própria pesquisadora relata que um falante corrigiu a grafia ponã pronunciando com ênfase o r: porã.
 Isso demonstra que para os falantes não é o mesmo som.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -868,11 +861,9 @@ pará / paná | não são intercambiáveis
  HARMONIA NASAL E ESPALHAMENTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-A nasalidade no Nhandewa se espalha de sílaba
-em sílaba. Uma vogal nasal pode influenciar sons
-em sílabas vizinhas, incluindo o /r/. Por isso:
+A nasalidade no Nhandewa se espalha de sílaba em sílaba. Uma vogal nasal pode influenciar sons em sílabas vizinhas, incluindo o /r/. Por isso:
 
-põrã → a nasalidade de ã atinge o r → [põr̃ã]
+põrã → a nasalidade de ã atinge o r → põr̃ã
 
 O processo é:
 
@@ -885,15 +876,13 @@ Mas continua sendo /r/, não vira /n/.
 
 Ao registrar uma palavra:
 
-  1. Ouvir a pronúncia em fala lenta e clara
-  2. Conferir com o falante: "é r ou é n?"
-  3. Observar se há vogal nasal próxima
-  4. Comparar grafitas antigas com a fala atual
-  5. Lembrar: a impressão auditiva não é sempre a estrutura
+  1. Ouvir a pronúncia em fala lenta e clara.
+  2. Conferir com o falante: "é r ou é n?".
+  3. Observar se há vogal nasal próxima.
+  4. Comparar grafitas antigas com a fala atual.
+  5. Lembrar: a impressão auditiva não é sempre a estrutura.
 
-Os registros de Nimuendaju são preciosos, mas
-descrevem a impressão sonora, não necessariamente
-a distinção que os próprios falantes fazem.
+Os registros de Nimuendaju são preciosos, mas descrevem a impressão sonora, não necessariamente a distinção que os próprios falantes fazem.
 `,
     tipo: "documentado",
     fonte:
@@ -926,11 +915,7 @@ a distinção que os próprios falantes fazem.
  O QUE MUDA E O QUE PERMANECE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-As línguas do ramo Guarani tendem a perder
-sílabas finais átonas — um traço que as distingue
-do ramo Tupi. Em Nhandewa, esse processo continua,
-mas de forma viva: não é só o passado que se reduz,
-é a língua que se renova a cada geração.
+As línguas do ramo Guarani tendem a perder sílabas finais átonas — um traço que as distingue do ramo Tupi. Em Nhandewa, esse processo continua, mas de forma viva: não é só o passado que se reduz, é a língua que se renova a cada geração.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  EXEMPLOS DE REDUÇÃO — GUARANI ANTIGO → NHANDEWA
@@ -950,8 +935,7 @@ Forma histórica | Forma atual | Significado
 eỹma / ỹma | eỹ | sem / não
 eỹma / ỹma | eỹwa | não / sem — uso atual em alguns contextos
 
-A partícula final -ma evoluiu para -wa,
-com valor de generalização ou pluralidade.
+A partícula final -ma evoluiu para -wa, com valor de generalização ou pluralidade.
 
  POSSE — REDUÇÃO DO ELEMENTO -RE-:
 
@@ -959,11 +943,10 @@ Forma longa | Forma reduzida | Significado
 cherembireco | chimbirécó | minha mulher
 cheremỹmba | chimỹmbá | meu animal doméstico
 
-  O elemento inicial che- (meu/minha) passa a chi-
-  O elemento -re- (relacional) pode desaparecer
+  O elemento inicial che- (meu/minha) passa a chi-.
+  O elemento -re- (relacional) pode desaparecer.
 
-Mas a forma longa não desapareceu completamente —
-ainda é ouvida em falas de pessoas mais velhas.
+Mas a forma longa não desapareceu completamente — ainda é ouvida em falas de pessoas mais velhas.
 
  OUTROS CASOS REGISTRADOS:
 
@@ -979,20 +962,18 @@ cherembireco | minha mulher | chimbirécó
 
 Quando uma sílaba parece desaparecer, pode ser que:
 
-  ✅ Seja apenas redução na fala rápida
-  ✅ A vogal átona se junta à sílaba anterior
-  ✅ Mude a grafia, mas a pronúncia conserve traços
-  ✅ Coexistam duas formas — uma mais longa,
-     outra mais curta — faladas por pessoas diferentes
-  ✅ O elemento mude de função e não só de forma
+  ✅ Seja apenas redução na fala rápida.
+  ✅ A vogal átona se junta à sílaba anterior.
+  ✅ Mude a grafia, mas a pronúncia conserve traços.
+  ✅ Coexistam duas formas — uma mais longa, outra mais curta — faladas por pessoas diferentes.
+  ✅ O elemento mude de função e não só de forma.
 
 Exemplo:
 
 eỹma / ỹma = eỹ
 "sem / não"
 
-não é simples perda de -ma, é substituição por -wa
-com valor próprio.
+não é simples perda de -ma, é substituição por -wa com valor próprio.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  O ELEMENTO RELACIONAL -RE-
@@ -1001,18 +982,17 @@ com valor próprio.
 O morfema -re- marca relação de posse.
 Pode aparecer ou desaparecer conforme:
 
-  • a velocidade da fala
-  • a idade do falante
-  • a ênfase que se quer dar
-  • a região/aldeia
+  • a velocidade da fala.
+  • a idade do falante.
+  • a ênfase que se quer dar.
+  • a região/aldeia.
 
 Isso significa que não há uma "forma certa" única:
 
 cherembireco | chimbirécó
 forma longa | forma reduzida
 
-podem ser ouvidas de pessoas diferentes
-na mesma comunidade.
+podem ser ouvidas de pessoas diferentes na mesma comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  COMO ESTUDAR AS MUDANÇAS
@@ -1020,16 +1000,14 @@ na mesma comunidade.
 
 Ao comparar formas antigas e atuais:
 
-  1. Identificar cada elemento da palavra
-  2. Verificar se a mudança é geral ou só de alguns falantes
-  3. Ouvir a palavra isolada e dentro de frases
-  4. Perguntar: "as duas formas são usadas?"
-  5. Conferir se a grafia antiga refletia a fala real
-  6. Lembrar: a língua viva tem variação
+  1. Identificar cada elemento da palavra.
+  2. Verificar se a mudança é geral ou só de alguns falantes.
+  3. Ouvir a palavra isolada e dentro de frases.
+  4. Perguntar: "as duas formas são usadas?".
+  5. Conferir se a grafia antiga refletia a fala real.
+  6. Lembrar: a língua viva tem variação.
 
-⚠️ Uma forma reduzida não significa que a língua
-está "se perdendo". É como o rio: a água muda,
-mas o rio continua correndo.
+⚠️ Uma forma reduzida não significa que a língua está "se perdendo". É como o rio: a água muda, mas o rio continua correndo.
 `,
     tipo: "documentado",
     fonte:
@@ -1062,11 +1040,8 @@ mas o rio continua correndo.
  O QUE SÃO AS PARTÍCULAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-São pequenas palavras ou elementos que dão
-sentido, modo, tempo ou relação à frase.
-Não têm significado sozinhas — adquirem
-função no contato com o verbo, o nome
-e o contexto da fala.
+São pequenas palavras ou elementos que dão sentido, modo, tempo ou relação à frase.
+Não têm significado sozinhas — adquirem função no contato com o verbo, o nome e o contexto da fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  A PARTÍCULA MA
@@ -1079,18 +1054,14 @@ aáma | está indo / ia
 oúma | está vindo / vinha
 ojapóma | está fazendo / fazia
 
-A partícula se liga à raiz verbal e
-indica que a ação acontece ou acontecia
-ao longo de um tempo.
+A partícula se liga à raiz verbal e indica que a ação acontece ou acontecia ao longo de um tempo.
 
  COMO PALAVRA SEPARADA — CONFIRMAÇÃO/ÊNFASE:
 
 Ko kwatiá-re ma.
 "É mesmo aqui, nesta terra."
 
-Aqui, ma não se junta ao verbo — aparece
-sozinha, dando peso, confirmação ou
-certeza ao que se diz.
+Aqui, ma não se junta ao verbo — aparece sozinha, dando peso, confirmação ou certeza ao que se diz.
 
  EM NEGAÇÃO E FINALIZAÇÃO:
 
@@ -1098,8 +1069,7 @@ Forma | Significado
 eỹma | não / sem — registro histórico
 eỹwa | não / sem — uso atual
 
--ma pode evoluir para -wa com valor de
-generalização ou pluralidade.
+-ma pode evoluir para -wa com valor de generalização ou pluralidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  ESCREVER JUNTO OU SEPARADO?
@@ -1114,16 +1084,13 @@ Lingüísticas, decidiram:
   ✅ Separado → quando tem pronúncia própria
                 e destaque na frase
 
-Não é regra fixa para sempre — a escrita
-se ajusta conforme a fala da comunidade.
+Não é regra fixa para sempre — a escrita se ajusta conforme a fala da comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  A PARTÍCULA PA — EM INVESTIGAÇÃO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Em outras variedades do Guarani, pa existe
-com funções específicas. No Nhandewa, ainda
-está sendo estudada. Por isso:
+Em outras variedades do Guarani, pa existe com funções específicas. No Nhandewa, ainda está sendo estudada. Por isso:
 
   ⚠️ Não se copia explicação de outra língua
   ⚠️ Cada ocorrência é conferida com falantes
@@ -1131,8 +1098,7 @@ está sendo estudada. Por isso:
   ⚠️ A grafia pode variar conforme a fonte
 
 Mesma forma gráfica ≠ mesma função gramatical.
-A palavra escrita igual pode ter significado
-diferente em cada povo.
+A palavra escrita igual pode ter significado diferente em cada povo.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  COMO ESTUDAR COM RESPEITO
@@ -1140,13 +1106,12 @@ diferente em cada povo.
 
 Para ma e pa:
 
-  1. Anotar a frase completa, não só a partícula
-  2. Ouvir a pronúncia: tem acento próprio?
-  3. Perguntar: "o que muda com e sem ela?"
-  4. Comparar com outras aldeias
-  5. Conferir nas Lições de Gramática
-  6. Respeitar: o que ainda não se sabe,
-     não se inventa — se anota "em estudo"
+  1. Anotar a frase completa, não só a partícula.
+  2. Ouvir a pronúncia: tem acento próprio?.
+  3. Perguntar: "o que muda com e sem ela?".
+  4. Comparar com outras aldeias.
+  5. Conferir nas Lições de Gramática.
+  6. Respeitar: o que ainda não se sabe, não se inventa — se anota "em estudo".
 `,
     tipo: "documentado",
     fonte:
@@ -1179,11 +1144,8 @@ Para ma e pa:
  O QUE É O SUPINO VY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Vy aparece junto a verbos de movimento
-e indica que uma ação acontece ao mesmo
-tempo que outra, ou no caminho de/para.
-Não é exatamente "quando" — é o movimento
-que acompanha a ação principal.
+Vy aparece junto a verbos de movimento e indica que uma ação acontece ao mesmo tempo que outra, ou no caminho de/para.
+Não é exatamente "quando" — é o movimento que acompanha a ação principal.
 
  FORMAS DO MOVIMENTO:
 
@@ -1193,8 +1155,7 @@ u | vir
 oóvy | indo / quando ia
 oúvy | vindo / quando vinha
 
-A terminação vy liga a ação de ir/vir ao
-contexto em que outra coisa acontece.
+A terminação vy liga a ação de ir/vir ao contexto em que outra coisa acontece.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  EXEMPLOS REGISTRADOS
@@ -1212,8 +1173,7 @@ Oguejý oúvy | Descia, vindo. | vindo / descendo
  NÃO É SÓ "QUANDO"
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Traduzir por "quando" ou "enquanto" ajuda,
-mas a língua carrega mais:
+Traduzir por "quando" ou "enquanto" ajuda, mas a língua carrega mais:
 
 Forma | Interpretação
 oóvy | não é só "quando ele foi"
@@ -1221,21 +1181,14 @@ oóvy | "indo" — o movimento está na palavra
 oúvy | não é só "quando ele veio"
 oúvy | "vindo" — o deslocamento é o sentido
 
-Isso liga diretamente à ideia de oguatá —
-o caminhar como forma de existir, de buscar,
-de conhecer. A língua carrega o movimento
-em suas próprias estruturas gramaticais.
+Isso liga diretamente à ideia de oguatá — o caminhar como forma de existir, de buscar, de conhecer. A língua carrega o movimento em suas próprias estruturas gramaticais.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  FONTE E CONTEXTO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Esses exemplos vêm de narrativas registradas
-por Curt Nimuendajú entre os Apapocúva,
-publicadas em 1914/1987. Consuelo de Paiva
-Godinho Costa analisa que a estrutura se
-mantém no Nhandewa falado, embora com
-pequenas variações de pronúncia e grafia.
+Esses exemplos vêm de narrativas registradas por Curt Nimuendajú entre os Apapocúva, publicadas em 1914/1987. 
+Consuelo de Paiva Godinho Costa analisa que a estrutura se mantém no Nhandewa falado, embora com pequenas variações de pronúncia e grafia.
 
   ⚠️ A grafia reflete a época do registro.
   ⚠️ A tradução é interpretação do pesquisador.
@@ -1245,11 +1198,11 @@ pequenas variações de pronúncia e grafia.
  PARA ESTUDAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  1. Identificar o verbo: ó = ir / u = vir
-  2. Observar: vy só aparece com movimento?
-  3. Perguntar: "há diferença entre oó e oóvy?"
-  4. Ouvir em histórias contadas pelos mais velhos
-  5. Lembrar: cada povo pode usar de forma própria
+  1. Identificar o verbo: ó = ir / u = vir.
+  2. Observar: vy só aparece com movimento?.
+  3. Perguntar: "há diferença entre oó e oóvy?".
+  4. Ouvir em histórias contadas pelos mais velhos.
+  5. Lembrar: cada povo pode usar de forma própria.
 `,
     tipo: "documentado",
     fonte:
@@ -1282,10 +1235,7 @@ pequenas variações de pronúncia e grafia.
  UMA PALAVRA, MUITOS CAMINHOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Quando dizemos uma palavra, não dizemos só
-uma coisa. Dizemos o que ela foi, o que é,
-e o que pode vir a ser. O sentido cresce
-com quem fala, com onde se fala, com quando.
+Quando dizemos uma palavra, não dizemos só uma coisa. Dizemos o que ela foi, o que é, e o que pode vir a ser. O sentido cresce com quem fala, com onde se fala, com quando.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  NHE'Ẽ — VIDA, ESPÍRITO, FALA, PRESENÇA
@@ -1300,13 +1250,9 @@ nhe'ẽ | palavra verdadeira
 nhe'ẽ | fala que vem do coração
 nhe'ẽ | presença ancestral
 
-Não se reduz a uma só tradução. Em Nhandewa,
-em Mbyá, em Kaiowá — a mesma raiz abre
-caminhos próprios em cada comunidade.
+Não se reduz a uma só tradução. Em Nhandewa, em Mbyá, em Kaiowá — a mesma raiz abre caminhos próprios em cada comunidade.
 
-Sandra Benites destaca: nhe'ẽ não é "espírito"
-no sentido de algo separado e abstrato. É o que
-faz viver, o que conecta, o que permanece.
+Sandra Benites destaca: nhe'ẽ não é "espírito" no sentido de algo separado e abstrato. É o que faz viver, o que conecta, o que permanece.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  AYWU — FALA, PALAVRA, CAMINHO
@@ -1320,41 +1266,30 @@ aywu | palavra dita
 aywu | modo de dizer
 Nhandeaywu | em Nhandewa: "nossa fala"
 
-⚠️ Em outras variedades do Guarani, a mesma
-palavra tem sentido diferente: em Avanheém
-significa "ruído, barulho". O que é fala
-em um lugar pode ser som em outro — cada
-comunidade tece seu próprio sentido.
+⚠️ Em outras variedades do Guarani, a mesma palavra tem sentido diferente: em Avanheém significa "ruído, barulho". O que é fala em um lugar pode ser som em outro — cada comunidade tece seu próprio sentido.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  COMO O SENTIDO SE AMPLIA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Uma palavra pode começar num uso e depois
-alcançar outros:
+Uma palavra pode começar num uso e depois alcançar outros:
 
 Caminho de sentido | Expansão
 Sopro | vida → força → presença → ancestralidade
 Fala | palavra → ensinamento → caminho → identidade
 
-Isso não é "erro" nem "confusão". É como a língua
-respira: cresce junto com o povo que a fala.
+Isso não é "erro" nem "confusão". É como a língua respira: cresce junto com o povo que a fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  NÃO COMPARAR PARA IGUALAR
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  ✅ Mesma raiz ≠ mesmo significado
-  ✅ Mesma grafia ≠ mesma função
-  ✅ O que significa aqui pode significar lá
-     de maneira diferente
-  ✅ A tradução ajuda, mas não substitui a
-     explicação dos próprios falantes
+  ✅ Mesma raiz ≠ mesmo significado.
+  ✅ Mesma grafia ≠ mesma função.
+  ✅ O que significa aqui pode significar lá de maneira diferente.
+  ✅ A tradução ajuda, mas não substitui a explicação dos próprios falantes.
 
-Não se deve dizer: "em Mbyá significa X,
-então em Nhandewa é igual". É olhar o rio
-em margens diferentes — a água é a mesma,
-mas o curso muda.
+Não se deve dizer: "em Mbyá significa X, então em Nhandewa é igual". É olhar o rio em margens diferentes — a água é a mesma, mas o curso muda.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  O SENTIDO ESTÁ NAS PESSOAS
@@ -1362,12 +1297,11 @@ mas o curso muda.
 
 Para saber o que uma palavra significa:
 
-  1. Ouvir a frase inteira
-  2. Perguntar ao falante: "o que quis dizer?"
-  3. Anotar o contexto: onde, quando, com quem
-  4. Respeitar: pode haver mais de um sentido
-  5. Lembrar: o significado não está no dicionário,
-     está na boca de quem fala
+  1. Ouvir a frase inteira.
+  2. Perguntar ao falante: "o que quis dizer?".
+  3. Anotar o contexto: onde, quando, com quem.
+  4. Respeitar: pode haver mais de um sentido.
+  5. Lembrar: o significado não está no dicionário, está na boca de quem fala.
 `,
     tipo: "em estudo",
     fonte:
@@ -1410,49 +1344,43 @@ que responde em Nhandewa. Revitalizar é:
  OS MAIS VELHOS GUARDAM A FONTE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Foram os falantes idosos das aldeias Nimuendaju,
-Piaçaguera, Itariri, Laranjinha e Pinhalzinho
-que compartilharam a língua para que fosse
-registrada e estudada. Suas vozes permanecem
-em cada página, em cada exemplo.
+Foram os falantes idosos das aldeias Nimuendaju, Piaçaguera, Itariri, Laranjinha e Pinhalzinho que compartilharam a língua para que fosse registrada e estudada. 
+Suas vozes permanecem em cada página, em cada exemplo e está sendo reunida pela aldeia Karugwá com:
+O Projeto karumbé para que as comunidades não caia em algo que chamamos de "padrão" em que tudo tem que seguir uma "ordem" mas sabemos que cada aldeia tem sua "identidade" e tem quer ser "respeitada".
 
-"A língua não se perde enquanto houver
-quem a fale e queira ensinar."
+"A língua não se perde enquanto houver quem a fale e queira ensinar."
 — Memória das comunidades
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  OS PROFESSORES FAZEM O CAMINHO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Nas Convenções Lingüísticas, professores de
-cinco aldeias reuniram-se para decidir juntos
-como escrever — cada um tinha sua grafia,
-e acordaram uma para todos. Isso é fortalecimento:
-não receber de fora, construir junto.
+Nas Convenções Lingüísticas, professores de cinco aldeias reuniram-se para decidir juntos como escrever — cada um tinha sua grafia, e acordaram uma para todos. Isso é fortalecimento: 
+não receber de fora, construir junto ouvindo, falando e contribuindo.
 
  O Projeto Gramática Pedagógica:
 
-  • Oficinas na Aldeia Nimuendaju
-  • Reuniões com falantes e pesquisadores
-  • Produção coletiva dos livros
-  • Lançamento dos materiais com a comunidade
+  • Oficinas na Aldeia Nimuendaju.
+  • Reuniões com falantes e pesquisadores.
+  • Produção coletiva dos livros.
+  • Lançamento dos materiais com a comunidade.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  AS GRAMÁTICAS — FERRAMENTAS, NÃO SUBSTITUTAS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- Lições de Gramática Nhandewa-Guarani — Volume 1 (2016)
+ Lições de Gramática Nhandewa-Guarani — Volume 1 (2016).
 
-  • Apresenta sons, palavras, frases e estruturas
-  • Desenvolvido por e com professores indígenas
-  • Para ensinar e aprender
+  • Apresenta sons, palavras, frases e estruturas.
+  • Desenvolvido por e com professores indígenas.
+  • Para ensinar e aprender.
 
- Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2
+ Lições de Gramática Nhandewa-Tupi-Guarani — Volume 2.
 
-  • Dá continuidade, com contribuições do litoral
-  • Aprofunda a escrita e os usos
+  • Dá continuidade, com contribuições do litoral.
+  • Aprofunda a escrita e os usos.
 
-⚠️ O livro não substitui a fala. É mapa, não caminho.
+⚠️ O livro não substitui a fala. É mapa, não caminho. 
 Quem caminha é quem fala.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1467,9 +1395,7 @@ O Projeto Karumbé reúne:
   • Ligações entre materiais
 
 A tecnologia aproxima, mas não substitui.
-O dicionário digital é para a língua o que
-o livro é — um apoio. A vida da língua está
-no encontro entre as pessoas.
+O dicionário digital é para a língua o que o livro é — um apoio. A vida da língua está no encontro entre as pessoas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  CONTINUIDADE — NÃO É SÓ RECUPERAR
@@ -1477,16 +1403,14 @@ no encontro entre as pessoas.
 
 Revitalizar não é voltar ao passado. É:
 
-  🌱 Manter o que ainda é falado
-  🌱 Ensinar o que está sendo esquecido
-  🌱 Criar palavras novas para coisas novas
-  🌱 Respeitar quem fala diferente
-  🌱 Deixar a língua crescer
+  🌱 Manter o que ainda é falado.
+  🌱 Ensinar o que está sendo esquecido.
+  🌱 Criar palavras novas para coisas novas.
+  🌱 Respeitar quem fala diferente.
+  🌱 Deixar a língua crescer.
 
-A língua que atravessou séculos e caminhou
-por milhares de quilômetros não pára agora.
-Caminha com cada geração que a recebe e
-a passa adiante.
+A língua que atravessou séculos e caminhou por milhares de quilômetros não pára agora.
+Caminha com cada geração que a recebe e a passa adiante.
 `,
     tipo: "projeto",
     fonte:
@@ -1527,73 +1451,70 @@ a passa adiante.
  UNIR O QUE ESTÁ ESPALHADO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Há décadas, universidades, comunidades,
-professores e organizações produzem conhecimento
-sobre as línguas indígenas. Reunir esses materiais
-em um só lugar é facilitar o acesso de quem
-ensina, de quem pesquisa e de quem quer aprender.
+Há décadas, universidades, comunidades, professores e organizações produzem conhecimento sobre as línguas indígenas. 
+Reunir esses materiais em um só lugar é facilitar o acesso de quem ensina, de quem pesquisa e de quem quer aprender.
 
 O objetivo não é substituir — é aproximar:
 
-academia ←→ comunidade
-pesquisa ←→ fala
-passado ←→ presente
+academia ←→ comunidade.
+pesquisa ←→ fala.
+passado ←→ presente.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  FORMAÇÃO DE PROFESSORES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- MagIND — Magistério Indígena Novo Mundo (2002–2003)
+ MagIND — Magistério Indígena Novo Mundo (2002–2003).
 
-  • Primeira formação específica no estado de SP
-  • Parceria USP / Secretaria de Educação SP
+  • Primeira formação específica no estado de SP.
+  • Parceria USP / Secretaria de Educação SP.
 
- FISPI — Formação Intercultural Superior (2005–2008)
+ FISPI — Formação Intercultural Superior (2005–2008).
 
-  • Licenciatura voltada a professores indígenas
-  • Vinculada à Faculdade de Educação da USP
+  • Licenciatura voltada a professores indígenas.
+  • Vinculada à Faculdade de Educação da USP.
 
- LINDI — Licenciatura Intercultural Indígena
+ LINDI — Licenciatura Intercultural Indígena.
 
-  • Em andamento pela UNIFESP
-  • Atende Guarani Nhandewa, Mbyá, Kaingang, Terena, Krenak
-  • Conhecimentos acadêmicos + saberes tradicionais
+  • Em andamento pela UNIFESP.
+  • Atende Guarani Nhandewa, Mbyá, Kaingang, Terena, Krenak.
+  • Conhecimentos acadêmicos + saberes tradicionais.
 
- Pesquisa de Tiago Nhandewa (USP)
+ Pesquisa de Tiago Nhandewa (USP).
 
-  • A perspectiva Guarani na formação docente
-  • Ancestralidade, espiritualidade e língua na educação
+  • A perspectiva Guarani na formação docente.
+  • Ancestralidade, espiritualidade e língua na educação.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  PESQUISA LINGUÍSTICA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- Consuelo de Paiva Godinho Costa — UNICAMP
+ Consuelo de Paiva Godinho Costa — UNICAMP.
 
-  • Nhandewa Aywu (2003) — fonologia completa
-  • Artigo LIAMES (2012) — sons, nasalidade, harmonia
-  • Base científica para as gramáticas comunitárias
+  • Nhandewa Aywu (2003) — fonologia completa.
+  • Artigo LIAMES (2012) — sons, nasalidade, harmonia.
+  • Base científica para as gramáticas comunitárias.
 
  Outros trabalhos em andamento:
 
-  • Fonologia histórica comparada
-  • Variação entre aldeias
-  • Gramática pedagógica em atualização
+  • Fonologia histórica comparada.
+  • Variação entre aldeias.
+  • Gramática pedagógica em atualização.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  MATERIAIS PRODUZIDOS PELA COMUNIDADE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
- Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2
+ Lições de Gramática Nhandewa-Guarani — Vols. 1 e 2.
 
-  • Feito por professores, com assessoria linguística
-  • Escrito para ensinar na própria língua
-  • Disponível livremente para todos
+  • Feito por professores, com assessoria linguística.
+  • Escrito para ensinar na própria língua.
+  • Disponível livremente para todos.
 
- Cadernos de atividades multidisciplinares
+ Cadernos de atividades multidisciplinares.
 
-  • Ligam língua, cultura, território e história
-  • Para uso nas escolas indígenas
+  • Ligam língua, cultura, território e história.
+  • Para uso nas escolas indígenas.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  O PROJETO KARAMBÉ
@@ -1601,42 +1522,33 @@ passado ←→ presente
 
 Este espaço reúne:
 
-  ✅ Gramáticas e vocabulários
-  ✅ Artigos e teses
-  ✅ Materiais de formação
-  ✅ Registros históricos
-  ✅ Narrativas e referências
+  ✅ Gramáticas e vocabulários.
+  ✅ Artigos e teses.
+  ✅ Materiais de formação.
+  ✅ Registros históricos.
+  ✅ Narrativas e referências.
   ✅ Produções das comunidades
 
-Não é para substituir ninguém. É para que
-quem busca encontre: fonte, contexto,
-autoria, data, comunidade. E que, ao
-encontrar, possa voltar à fonte original.
+Não é para substituir ninguém. É para que quem busca encontre: fonte, contexto, autoria, data, comunidade. E que, ao encontrar, possa voltar à fonte original.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  PESQUISAR COM RESPEITO
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  ⚠️ Não misturar variedades diferentes
-  ⚠️ Sempre indicar: de onde vem, quem escreveu, quando
-  ⚠️ Se houver diferença entre fonte e fala atual,
-     registrar ambas — não apagar nenhuma
-  ⚠️ O conhecimento dos mais velhos é a fonte primeira
-  ⚠️ Pedir permissão, reconhecer autoria, cuidar do que
-     é compartilhado
+  ⚠️ Não misturar variedades diferentes.
+  ⚠️ Sempre indicar: de onde vem, quem escreveu, quando.
+  ⚠️ Se houver diferença entre fonte e fala atual, registrar ambas — não apagar nenhuma.
+  ⚠️ O conhecimento dos mais velhos é a fonte primeira.
+  ⚠️ Pedir permissão, reconhecer autoria, cuidar do que é compartilhado.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  O FUTURO SE CONSTRÓI JUNTOS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Universidades, escolas, famílias, organizações,
-poder público — nenhum substitui o outro.
-Cada um tem seu lugar. O mais forte não é
-quem sabe mais, é quem melhor compartilha.
+Universidades, escolas, famílias, organizações, poder público — nenhum substitui o outro.
+Cada um tem seu lugar. O mais forte não é quem sabe mais, é quem melhor compartilha.
 
-A língua não pertence aos livros. Pertence
-a quem a fala. E o futuro da língua está
-nas mãos de quem a ensina e de quem a aprende.
+A língua não pertence aos livros. Pertence a quem a fala. E o futuro da língua está nas mãos de quem a ensina e de quem a aprende.
 `,
     tipo: "projeto",
     fonte:
