@@ -543,6 +543,579 @@ const DICIONARIO2 = [
       "Eles já foram embora da nossa casa e caminharam pela mata à noite.",
       "Vocês virão na minha casa hoje."
     ]
+  },
+    {
+    palavra: "txeé",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Eu (pronome livre, 1ª pessoa do singular).",
+    audio: "assets/audios/txee.mp3",
+    sentido_de: "Pronome independente, usado sozinho ou como resposta a pergunta",
+    falante: "Uso geral",
+    exemplos: [
+      "Txeé Pakowaty-py aikó.",
+      "Txeé adjerowiá.",
+      "Txeé apy aikó."
+    ],
+    traducao: [
+      "Eu moro em Bananal.",
+      "Eu acredito.",
+      "Eu estou aqui."
+    ],
+    nota: "Como forma presa equivale a a- (1ª conj.) ou txe- (2ª conj.)."
+  },
+  {
+    palavra: "ndeé",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Você, tu (pronome livre, 2ª pessoa do singular).",
+    audio: "assets/audios/ndee.mp3",
+    sentido_de: "Pronome independente de 2ª pessoa",
+    falante: "Uso geral",
+    exemplos: [
+      "Ndeé rekaru.",
+      "Ndeé reikwaá.",
+      "Aiko porã! A'e ndee?"
+    ],
+    traducao: [
+      "Você come.",
+      "Você sabe.",
+      "Estou bem! E você?"
+    ],
+    nota: "Forma presa: re- (1ª conj.) ou nde-/ne- (2ª conj.)."
+  },
+  {
+    palavra: "a'e",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Ele, ela; esse, aquele.",
+    audio: "assets/audios/ae.mp3",
+    sentido_de: "3ª pessoa do singular e do plural; também usado como demonstrativo",
+    falante: "Uso geral",
+    exemplos: [
+      "A'e okaru.",
+      "A'e oikwaá.",
+      "A'e omombe'u txewy."
+    ],
+    traducao: [
+      "Ele come.",
+      "Ele sabe.",
+      "Ele me contou."
+    ],
+    nota: "Forma presa: o- (1ª conj.) ou i-/inh- (2ª conj.)."
+  },
+  {
+    palavra: "nhandé",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Nós (inclusivo — inclui o interlocutor).",
+    audio: "assets/audios/nhande.mp3",
+    sentido_de: "1ª pessoa do plural inclusiva",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhandé djakaru.",
+      "Nhandé djaikwaá.",
+      "Nhandé pamẽ djaetxá porã."
+    ],
+    traducao: [
+      "Nós comemos.",
+      "Nós sabemos.",
+      "Todos nós olhamos bem."
+    ],
+    nota: "Forma presa: dja- (1ª conj.) ou nhande-/nhane- (2ª conj.)."
+  },
+  {
+    palavra: "oré",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Nós (exclusivo — não inclui o interlocutor).",
+    audio: "assets/audios/ore.mp3",
+    sentido_de: "1ª pessoa do plural exclusiva",
+    falante: "Uso geral",
+    exemplos: [
+      "Oré rokaru.",
+      "Oré roikwaá.",
+      "Oré roikoá upé-py."
+    ],
+    traducao: [
+      "Nós comemos.",
+      "Nós sabemos.",
+      "Nós moramos ali."
+    ],
+    nota: "Forma presa: ro- (1ª conj.) ou ore- (2ª conj.)."
+  },
+  {
+    palavra: "peẽ",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Vocês (2ª pessoa do plural).",
+    audio: "assets/audios/pee.mp3",
+    sentido_de: "Pronome livre de 2ª pessoa do plural",
+    falante: "Uso geral",
+    exemplos: [
+      "Peẽ pekaru.",
+      "Peẽ peikwaá.",
+      "Peẽ pendu porã pamẽ."
+    ],
+    traducao: [
+      "Vocês comem.",
+      "Vocês sabem.",
+      "Vocês escutam tudo bem."
+    ],
+    nota: "Forma presa: pe- (1ª conj.) ou pende-/pene- (2ª conj.)."
+  },
+  {
+    palavra: "eĩwa",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Eles, elas (3ª pessoa do plural).",
+    audio: "assets/audios/eĩwa.mp3",
+    sentido_de: "Também grafado eiwĩwa'e; variante ewiwã no dialeto de Nimuendajú",
+    falante: "Uso geral",
+    exemplos: [
+      "Eĩwa odjerowiá.",
+      "Eĩwa aỹ otsẽmbá.",
+      "Eĩwa Nhandewa-rupi idjaywu porã."
+    ],
+    traducao: [
+      "Eles acreditam.",
+      "Eles já saíram todos.",
+      "Eles falam bem em Nhandewa."
+    ]
+  },
+
+  // ----------------------------------------------------------
+  // MARCAS PRONOMINAIS DE POSSE
+  // (prefixo preso — sempre colado a um substantivo)
+  // ----------------------------------------------------------
+  {
+    palavra: "txe-",
+    tipo: "prefixo",
+    categoria: "Pronomes",
+    significado: "Marca de posse da 1ª pessoa do singular: 'meu, minha'.",
+    audio: "assets/audios/txe.mp3",
+    sentido_de: "Prefixo de posse — nunca ocorre sozinho",
+    falante: "Uso geral",
+    exemplos: [
+      "txetsy",
+      "txerowá",
+      "txerendá"
+    ],
+    traducao: [
+      "minha mãe",
+      "meu rosto",
+      "minha casa"
+    ],
+    nota: "Mesma forma em substantivos orais e nasais."
+  },
+  {
+    palavra: "nde- / ne-",
+    tipo: "prefixo",
+    categoria: "Pronomes",
+    significado: "Marca de posse da 2ª pessoa do singular: 'teu, tua'.",
+    audio: "assets/audios/nde.mp3",
+    sentido_de: "Prefixo de posse: nde- com orais; ne- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "ndetsy",
+      "neakã",
+      "nerendá"
+    ],
+    traducao: [
+      "tua mãe",
+      "tua cabeça",
+      "tua casa"
+    ],
+    nota: "Regra de nasalização: nde > ne em ambiente nasal."
+  },
+  {
+    palavra: "i- / idj- / inh- / nh-",
+    tipo: "prefixo",
+    categoria: "Pronomes",
+    significado: "Marca de posse da 3ª pessoa: 'dele, dela, deles'.",
+    audio: "assets/audios/i.mp3",
+    sentido_de: "Prefixo de posse: i-/idj-/dj- com orais; inh-/nh- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "itsy",
+      "inhakã",
+      "ikwatiá"
+    ],
+    traducao: [
+      "mãe dele",
+      "cabeça dele",
+      "faca dele"
+    ]
+  },
+  {
+    palavra: "nhande- / nhane-",
+    tipo: "prefixo",
+    categoria: "Pronomes",
+    significado: "Marca de posse da 1ª pessoa do plural inclusiva: 'nosso, nossa'.",
+    audio: "assets/audios/nhande_poss.mp3",
+    sentido_de: "Prefixo de posse: nhande- com orais; nhane- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "nhandetsy",
+      "nhanerendá",
+      "nhanepetỹ"
+    ],
+    traducao: [
+      "nossa mãe",
+      "nossa casa",
+      "nosso fumo"
+    ]
+  },
+  {
+    palavra: "ore- (posse)",
+    tipo: "prefixo",
+    categoria: "Pronomes",
+    significado: "Marca de posse da 1ª pessoa do plural exclusiva: 'nosso, nossa' (sem incluir o interlocutor).",
+    audio: "assets/audios/ore_poss.mp3",
+    sentido_de: "Prefixo de posse — mesma forma em orais e nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "oretsy",
+      "orerendá",
+      "orekwatiá"
+    ],
+    traducao: [
+      "nossa mãe",
+      "nossa casa",
+      "nossa faca"
+    ]
+  },
+  {
+    palavra: "pende- / pene-",
+    tipo: "prefixo",
+    categoria: "Pronomes",
+    significado: "Marca de posse da 2ª pessoa do plural: 'de vocês'.",
+    audio: "assets/audios/pende_poss.mp3",
+    sentido_de: "Prefixo de posse: pende- com orais; pene- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "pendetsy",
+      "penerendá",
+      "penepetỹ"
+    ],
+    traducao: [
+      "mãe de vocês",
+      "casa de vocês",
+      "fumo de vocês"
+    ]
+  },
+
+  // ----------------------------------------------------------
+  // MARCAS DE SUJEITO — 1ª CONJUGAÇÃO
+  // (verbos transitivos e intransitivos, não descritivos)
+  // ----------------------------------------------------------
+  {
+    palavra: "a-",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 1ª pessoa do singular na 1ª conjugação.",
+    audio: "assets/audios/a_verbal.mp3",
+    sentido_de: "Verbos transitivos e intransitivos (não descritivos)",
+    falante: "Uso geral",
+    exemplos: [
+      "akaru",
+      "aikwaá",
+      "agwatá"
+    ],
+    traducao: [
+      "eu como",
+      "eu sei",
+      "eu ando"
+    ],
+    nota: "Negativa correspondente: nda- (ex.: ndakaruiry)."
+  },
+  {
+    palavra: "re-",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 2ª pessoa do singular na 1ª conjugação.",
+    audio: "assets/audios/re_verbal.mp3",
+    sentido_de: "Verbos transitivos e intransitivos",
+    falante: "Uso geral",
+    exemplos: [
+      "rekaru",
+      "reikwaá",
+      "regwatá"
+    ],
+    traducao: [
+      "você come",
+      "você sabe",
+      "você anda"
+    ],
+    nota: "Negativa correspondente: ndere- (ex.: nderekaruiry)."
+  },
+  {
+    palavra: "o-",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 3ª pessoa (singular e plural) na 1ª conjugação.",
+    audio: "assets/audios/o_verbal.mp3",
+    sentido_de: "Verbos transitivos e intransitivos",
+    falante: "Uso geral",
+    exemplos: [
+      "okaru",
+      "oikwaá",
+      "ogwatá"
+    ],
+    traducao: [
+      "ele come",
+      "ele sabe",
+      "ele anda"
+    ],
+    nota: "Negativa correspondente: ndo- (ex.: ndokaruiry)."
+  },
+  {
+    palavra: "dja-",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 1ª pessoa do plural inclusiva na 1ª conjugação.",
+    audio: "assets/audios/dja_verbal.mp3",
+    sentido_de: "Verbos transitivos e intransitivos",
+    falante: "Uso geral",
+    exemplos: [
+      "djakaru",
+      "djaikwaá",
+      "djagwatá"
+    ],
+    traducao: [
+      "nós comemos",
+      "nós sabemos",
+      "nós andamos"
+    ],
+    nota: "Negativa correspondente: ndadja- (ex.: ndadjakaruiry)."
+  },
+  {
+    palavra: "ro-",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 1ª pessoa do plural exclusiva na 1ª conjugação.",
+    audio: "assets/audios/ro_verbal.mp3",
+    sentido_de: "Verbos transitivos e intransitivos",
+    falante: "Uso geral",
+    exemplos: [
+      "rokaru",
+      "roikwaá",
+      "rogwatá"
+    ],
+    traducao: [
+      "nós comemos (excl.)",
+      "nós sabemos (excl.)",
+      "nós andamos (excl.)"
+    ],
+    nota: "Negativa correspondente: ndoro- (ex.: ndorokaruiry)."
+  },
+  {
+    palavra: "pe-",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 2ª pessoa do plural na 1ª conjugação.",
+    audio: "assets/audios/pe_verbal.mp3",
+    sentido_de: "Verbos transitivos e intransitivos",
+    falante: "Uso geral",
+    exemplos: [
+      "pekaru",
+      "peikwaá",
+      "pegwatá"
+    ],
+    traducao: [
+      "vocês comem",
+      "vocês sabem",
+      "vocês andam"
+    ],
+    nota: "Negativa correspondente: nape- (ex.: napekaruiry)."
+  },
+
+  // ----------------------------------------------------------
+  // MARCAS DE SUJEITO — 2ª CONJUGAÇÃO
+  // (verbos descritivos / estados)
+  // ----------------------------------------------------------
+  {
+    palavra: "txe- (descritivo)",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 1ª pessoa do singular na 2ª conjugação (verbos descritivos).",
+    audio: "assets/audios/txe_desc.mp3",
+    sentido_de: "Alguns verbos pedem o relacional -r- antes da raiz",
+    falante: "Uso geral",
+    exemplos: [
+      "txero'y",
+      "txemandu'a",
+      "txekane'õ"
+    ],
+    traducao: [
+      "estou com frio",
+      "eu lembro",
+      "estou cansado"
+    ],
+    nota: "Negativa: ndatxe- (ex.: ndatxero'yiry); com nasal: ndatxemandu'airy."
+  },
+  {
+    palavra: "nde- / ne- (descritivo)",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 2ª pessoa do singular na 2ª conjugação.",
+    audio: "assets/audios/nde_desc.mp3",
+    sentido_de: "nde- com raízes orais; ne- com raízes nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "ndero'y",
+      "nemandu'a",
+      "ndetudjá"
+    ],
+    traducao: [
+      "você está com frio",
+      "você lembra",
+      "você é velho"
+    ],
+    nota: "Negativa: nande- / nane-."
+  },
+  {
+    palavra: "i- / inh- (descritivo)",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 3ª pessoa na 2ª conjugação.",
+    audio: "assets/audios/i_desc.mp3",
+    sentido_de: "i- com orais; inh- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "iro'y",
+      "itudjá",
+      "iporã"
+    ],
+    traducao: [
+      "ele está com frio",
+      "ele é velho",
+      "ele é bonito"
+    ],
+    nota: "Negativa: ndi- (ex.: ndiro'yiry)."
+  },
+  {
+    palavra: "nhande- / nhane- (descritivo)",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 1ª pessoa do plural inclusiva na 2ª conjugação.",
+    audio: "assets/audios/nhande_desc.mp3",
+    sentido_de: "nhande- com orais; nhane- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "nhandero'y",
+      "nhanemandu'a",
+      "nhanekane'õ"
+    ],
+    traducao: [
+      "nós estamos com frio",
+      "nós lembramos",
+      "nós estamos cansados"
+    ],
+    nota: "Negativa: nanhande- / nanhane-."
+  },
+  {
+    palavra: "ore- (descritivo)",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 1ª pessoa do plural exclusiva na 2ª conjugação.",
+    audio: "assets/audios/ore_desc.mp3",
+    sentido_de: "Mesma forma em orais e nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "orero'y",
+      "oremandu'a",
+      "orekane'õ"
+    ],
+    traducao: [
+      "nós estamos com frio (excl.)",
+      "nós lembramos (excl.)",
+      "nós estamos cansados (excl.)"
+    ],
+    nota: "Negativa: nondere- (ex.: ndorero'yiry)."
+  },
+  {
+    palavra: "pende- / pene- (descritivo)",
+    tipo: "prefixo verbal",
+    categoria: "Pronomes",
+    significado: "Marca de sujeito da 2ª pessoa do plural na 2ª conjugação.",
+    audio: "assets/audios/pende_desc.mp3",
+    sentido_de: "pende- com orais; pene- com nasais",
+    falante: "Uso geral",
+    exemplos: [
+      "pendero'y",
+      "penemandu'a",
+      "penekane'õ"
+    ],
+    traducao: [
+      "vocês estão com frio",
+      "vocês lembram",
+      "vocês estão cansados"
+    ],
+    nota: "Negativa: napende- / napene-."
+  },
+
+  // ----------------------------------------------------------
+  // MARCAS DE OBJETO COM CAUSATIVO MBO-
+  // (a marca da 2ª conj. vira objeto quando o sujeito é 3ª pessoa)
+  // ----------------------------------------------------------
+  {
+    palavra: "txe- (objeto)",
+    tipo: "prefixo de objeto",
+    categoria: "Pronomes",
+    significado: "Marca de objeto direto de 1ª pessoa do singular em verbo causativizado.",
+    audio: "assets/audios/txe_obj.mp3",
+    sentido_de: "Verbo da 1ª conjugação com sujeito de 3ª pessoa",
+    falante: "Uso geral",
+    exemplos: [
+      "A'e txemokane'õ.",
+      "Nderu txeetxá.",
+      "Katxuru txeisu'u."
+    ],
+    traducao: [
+      "Ele me fez cansar.",
+      "Teu pai me viu.",
+      "O cachorro me mordeu."
+    ],
+    nota: "Aqui a marca da 2ª conjugação funciona como objeto na 1ª."
+  },
+  {
+    palavra: "nde- / ne- (objeto)",
+    tipo: "prefixo de objeto",
+    categoria: "Pronomes",
+    significado: "Marca de objeto direto de 2ª pessoa do singular em verbo causativizado.",
+    audio: "assets/audios/nde_obj.mp3",
+    sentido_de: "Verbo da 1ª conjugação com sujeito de 3ª pessoa",
+    falante: "Uso geral",
+    exemplos: [
+      "A'e nemokane'õ.",
+      "Katxuru ndesu'u.",
+      "A'e neetxá."
+    ],
+    traducao: [
+      "Ele te fez cansar.",
+      "O cachorro te mordeu.",
+      "Ele te viu."
+    ]
+  },
+  {
+    palavra: "ore- (objeto)",
+    tipo: "prefixo de objeto",
+    categoria: "Pronomes",
+    significado: "Marca de objeto direto de 1ª pessoa do plural exclusiva.",
+    audio: "assets/audios/ore_obj.mp3",
+    sentido_de: "Verbo da 1ª conjugação com sujeito de 3ª pessoa",
+    falante: "Uso geral",
+    exemplos: [
+      "A'e oremokane'õ.",
+      "A'e oreetxá.",
+      "Katxuru oreisu'u."
+    ],
+    traducao: [
+      "Ele nos fez cansar.",
+      "Ele nos viu.",
+      "O cachorro nos mordeu."
+    ]
   }
 ];
 // =====================================================
