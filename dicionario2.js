@@ -553,12 +553,12 @@ const DICIONARIO2 = [
     sentido_de: "Pronome independente, usado sozinho ou como resposta a pergunta",
     falante: "Uso geral",
     exemplos: [
-      "Txeé Pakowaty-py aikó.",
+      "Txeé narã´i-py aikó.",
       "Txeé adjerowiá.",
       "Txeé apy aikó."
     ],
     traducao: [
-      "Eu moro em Bananal.",
+      "Eu moro em laranjinha.",
       "Eu acredito.",
       "Eu estou aqui."
     ],
