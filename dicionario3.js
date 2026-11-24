@@ -3097,36 +3097,21 @@ const DICIONARIO3 = [
     ]
   }
 ];
-
 // =====================================================
-// INTEGRAÇÃO COM NORMALIZAÇÃO (elimina duplicatas)
+// INTEGRAÇÃO DO DICIONÁRIO 3 AO DICIONÁRIO PRINCIPAL
+// (mesmo padrão do dicionario2.js)
 // =====================================================
-function normalizarPalavra(p) {
-  return String(p)
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/['`´’‘]/g, "")
-    .replace(/\s+/g, "")
-    .trim();
-}
 
 if (
-  typeof DICIONARIO !== "undefined" &&
-  Array.isArray(DICIONARIO) &&
-  Array.isArray(DICIONARIO3)
+    typeof DICIONARIO !== "undefined" &&
+    Array.isArray(DICIONARIO) &&
+    Array.isArray(DICIONARIO3)
 ) {
-  const existentes = new Set(
-    DICIONARIO.map(p => normalizarPalavra(p.palavra))
-  );
-  let adicionadas = 0;
-  for (const item of DICIONARIO3) {
-    const chave = normalizarPalavra(item.palavra);
-    if (!existentes.has(chave)) {
-      DICIONARIO.push(item);
-      existentes.add(chave);
-      adicionadas++;
-    }
-  }
-  console.log("Dicionário 3 integrado:", adicionadas, "novos termos.");
+    DICIONARIO.push(...DICIONARIO3);
+
+    console.log(
+        "Dicionário 3 integrado com sucesso:",
+        DICIONARIO3.length,
+        "novos termos adicionados."
+    );
 }
