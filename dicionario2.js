@@ -23514,6 +23514,1635 @@ const DICIONARIO2 = [
       "O caminho é muito comprido.",
       "A árvore é muito alta."
     ]
+  },
+  {
+    palavra: "ẽ'ẽ",
+    tipo: "adjetivo",
+    categoria: "Expressões",
+    significado: "Doce, saboroso.",
+    audio: "assets/audios/ee_doce.mp3",
+    sentido_de: "Sabor adocicado; registro do VB p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Ei ẽ'ẽ.",
+      "Ywyra'a ẽ'ẽ."
+    ],
+    traducao: [
+      "O mel é doce.",
+      "A fruta é doce."
+    ]
+  },
+  {
+    palavra: "eirú",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Abelha; pai do mel.",
+    audio: "assets/audios/eiru_abelha.mp3",
+    sentido_de: "Nome da abelha-macho; registro do VB p. 23.",
+    falante: "Uso geral",
+    exemplos: [
+      "Eirú oĩ ywyra rowa re.",
+      "Eirú oveve ka'agwy rupi."
+    ],
+    traducao: [
+      "A abelha está no tronco da árvore.",
+      "A abelha voa pela mata."
+    ]
+  },
+  {
+    palavra: "eirá",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Papa-mel; animal que come mel.",
+    audio: "assets/audios/eira_papamel.mp3",
+    sentido_de: "Designação de animal que se alimenta de mel; registro do VB p. 23.",
+    falante: "Uso geral",
+    exemplos: [
+      "Eirá oheka ei ka'agwy pype.",
+      "Eirá oiko ywyra rowa re."
+    ],
+    traducao: [
+      "O papa-mel procura mel na mata.",
+      "O papa-mel vive no tronco da árvore."
+    ]
+  },
+  {
+    palavra: "embepiré",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Beiço; lábios.",
+    audio: "assets/audios/embepire.mp3",
+    sentido_de: "Parte anatômica bucal; registro do VB p. 23.",
+    falante: "Uso geral",
+    exemplos: [
+      "Embepiré rasy.",
+      "Aetxa embepiré."
+    ],
+    traducao: [
+      "Os lábios doem.",
+      "Vejo os lábios."
+    ]
+  },
+  {
+    palavra: "emby",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Resíduo; sobra.",
+    audio: "assets/audios/emby_sobra.mp3",
+    sentido_de: "O que resta de algo consumido; registro do VB p. 23.",
+    falante: "Uso geral",
+    exemplos: [
+      "Oĩ emby tembi'u.",
+      "Emby oĩ djapepó-py."
+    ],
+    traducao: [
+      "Tem sobra de comida.",
+      "A sobra está na panela."
+    ]
+  },
+  {
+    palavra: "enheitsyrũ",
+    tipo: "advérbio",
+    categoria: "Expressões",
+    significado: "Em fila; ordenadamente.",
+    audio: "assets/audios/enheitsyru.mp3",
+    sentido_de: "Advérbio de modo coletivo; registro do VB p. 24.",
+    falante: "Uso geral",
+    exemplos: [
+      "Djaá enheitsyrũ!",
+      "Mitãngwé oiko enheitsyrũ."
+    ],
+    traducao: [
+      "Vamos em fila!",
+      "As crianças ficam em fila."
+    ]
+  },
+  {
+    palavra: "epý",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Preço; valor; quanto custa.",
+    audio: "assets/audios/epy_preco.mp3",
+    sentido_de: "Termo comercial; registro do VB p. 24.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mboy epý?",
+      "Epý iporã."
+    ],
+    traducao: [
+      "Quanto é o preço?",
+      "O preço é bom."
+    ]
+  },
+  {
+    palavra: "etsá",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Olho (forma alternativa).",
+    audio: "assets/audios/etsa_olho.mp3",
+    sentido_de: "Órgão da visão; registro do VB p. 24.",
+    falante: "Uso geral",
+    exemplos: [
+      "Etsá rasy.",
+      "Aetxa etsá."
+    ],
+    traducao: [
+      "O olho dói.",
+      "Vejo o olho."
+    ]
+  },
+  {
+    palavra: "ẽtũ",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Cheirar; sentir o cheiro.",
+    audio: "assets/audios/etu_cheirar.mp3",
+    sentido_de: "Verbo de percepção olfativa; registro do VB p. 24.",
+    falante: "Uso geral",
+    exemplos: [
+      "Aẽtũ poty.",
+      "Oẽtũ tembi'u."
+    ],
+    traducao: [
+      "Cheiro a flor.",
+      "Ele cheira a comida."
+    ]
+  },
+  {
+    palavra: "emombe'ú",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Contar; narrar (forma com objeto).",
+    audio: "assets/audios/emombeau.mp3",
+    sentido_de: "Verbo de narração com objeto; registro do VB p. 24.",
+    falante: "Uso geral",
+    exemplos: [
+      "Emombe'ú txe wy!",
+      "Oemombe'ú ymã-gwi."
+    ],
+    traducao: [
+      "Conte para mim!",
+      "Ele contou sobre o passado."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 25-30 — G/GW: palavras de G e GW
+  // ============================================================
+  {
+    palavra: "gwatá",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Andar; caminhar.",
+    audio: "assets/audios/gwata_andar.mp3",
+    sentido_de: "Verbo de locomoção; registro do VB p. 29.",
+    falante: "Uso geral",
+    exemplos: [
+      "Agwatá tape py.",
+      "Ogwatá tekoa rupi."
+    ],
+    traducao: [
+      "Ando pelo caminho.",
+      "Ele anda pela aldeia."
+    ]
+  },
+  {
+    palavra: "gweraá",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Levar (forma alternativa).",
+    audio: "assets/audios/gweraa_levar.mp3",
+    sentido_de: "Verbo de transporte; registro do VB p. 29.",
+    falante: "Uso geral",
+    exemplos: [
+      "Agweraá tembi'u.",
+      "Ogweraá nde-rewé."
+    ],
+    traducao: [
+      "Levo comida.",
+      "Ele leva você."
+    ]
+  },
+  {
+    palavra: "gwyrapá",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Arco (de flecha, grafia do VB).",
+    audio: "assets/audios/gwyrapa_arco.mp3",
+    sentido_de: "Arma tradicional; registro do VB p. 29.",
+    falante: "Uso geral",
+    exemplos: [
+      "Oiporu gwyrapá.",
+      "Gwyrapá iporã."
+    ],
+    traducao: [
+      "Ele usa o arco.",
+      "O arco é bom."
+    ]
+  },
+  {
+    palavra: "gwyra",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Pé; membro inferior (registro alternativo).",
+    audio: "assets/audios/gwyra_pe.mp3",
+    sentido_de: "Parte anatômica; registro do VB p. 29.",
+    falante: "Uso geral",
+    exemplos: [
+      "Gwyra rasy.",
+      "Oiporu gwyra."
+    ],
+    traducao: [
+      "O pé dói.",
+      "Ele usa o pé."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 36-41 — K: palavras de K ausentes
+  // ============================================================
+  {
+    palavra: "ka'i",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Macaco (registro alternativo do VB).",
+    audio: "assets/audios/kai_macaco.mp3",
+    sentido_de: "Primata silvestre; registro do VB p. 36.",
+    falante: "Uso geral",
+    exemplos: [
+      "Ka'i osapukái yvyra rupi.",
+      "Oheka ka'i ka'agwy py."
+    ],
+    traducao: [
+      "O macaco grita na árvore.",
+      "Ele procura o macaco na mata."
+    ]
+  },
+  {
+    palavra: "ka'agwy",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Mata; floresta.",
+    audio: "assets/audios/kaagwy_mata.mp3",
+    sentido_de: "Formação vegetal; registro do VB p. 36.",
+    falante: "Uso geral",
+    exemplos: [
+      "Ka'agwy iporã.",
+      "Aá ka'agwy py."
+    ],
+    traducao: [
+      "A mata é bonita.",
+      "Vou pela mata."
+    ]
+  },
+  {
+    palavra: "kagwi",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Cipó.",
+    audio: "assets/audios/kagwi.mp3",
+    sentido_de: "Planta trepadeira; registro do VB p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kagwi oĩ ywyra rupi.",
+      "Aiporu kagwi."
+    ],
+    traducao: [
+      "O cipó está na árvore.",
+      "Uso o cipó."
+    ]
+  },
+  {
+    palavra: "kandju",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Caju (registro alternativo).",
+    audio: "assets/audios/kandju_caju.mp3",
+    sentido_de: "Fruta nativa; registro do VB p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kandju ipotá.",
+      "Oipyý kandju."
+    ],
+    traducao: [
+      "O caju é gostoso.",
+      "Ele pegou caju."
+    ]
+  },
+  {
+    palavra: "kanhimi",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Árvore de pequeno porte.",
+    audio: "assets/audios/kanhimi.mp3",
+    sentido_de: "Vegetal arbustivo; registro do VB p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kanhimi oĩ koy py.",
+      "Aetxa kanhimi."
+    ],
+    traducao: [
+      "A árvore pequena está na roça.",
+      "Vejo a árvore pequena."
+    ]
+  },
+  {
+    palavra: "kanhõ",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Planta rasteira; erva.",
+    audio: "assets/audios/kanho.mp3",
+    sentido_de: "Vegetação rasteira; registro do VB p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kanhõ oĩ koy py.",
+      "Oiporu kanhõ."
+    ],
+    traducao: [
+      "A erva está na roça.",
+      "Ele usa a erva."
+    ]
+  },
+  {
+    palavra: "kata'ĩ",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Planta medicinal; erva curativa.",
+    audio: "assets/audios/katai_erva.mp3",
+    sentido_de: "Vegetal de uso terapêutico; registro do VB p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kata'ĩ iporã moã awã.",
+      "Oipyý kata'ĩ."
+    ],
+    traducao: [
+      "A erva medicinal é boa para remédio.",
+      "Ele pegou a erva medicinal."
+    ]
+  },
+  {
+    palavra: "kay'u",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Bebida fermentada; cauim.",
+    audio: "assets/audios/kayu_cauim.mp3",
+    sentido_de: "Bebida tradicional; registro do VB p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kay'u iporã.",
+      "Oiporu kay'u."
+    ],
+    traducao: [
+      "O cauim é bom.",
+      "Ele usa o cauim."
+    ]
+  },
+  {
+    palavra: "kesu",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Queixo; mandíbula.",
+    audio: "assets/audios/kesu_queixo.mp3",
+    sentido_de: "Parte anatômica facial; registro do VB p. 38.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kesu rasy.",
+      "Oiporu kesu."
+    ],
+    traducao: [
+      "O queixo dói.",
+      "Ele usa o queixo."
+    ]
+  },
+  {
+    palavra: "kotsé",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Expressão de surpresa, espanto.",
+    audio: "assets/audios/kotse.mp3",
+    sentido_de: "Interjeição; registro do VB p. 39.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kotsé! Mba'ewa ko?",
+      "Kotsé! Aetxa!"
+    ],
+    traducao: [
+      "Uau! O que é isso?",
+      "Puxa! Eu vejo!"
+    ]
+  },
+  {
+    palavra: "kuaray",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Sol (grafia alternativa).",
+    audio: "assets/audios/kuaray_sol.mp3",
+    sentido_de: "Astro; registro do VB p. 40.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kuaray osẽ.",
+      "Kuaray aku."
+    ],
+    traducao: [
+      "O sol nasceu.",
+      "O sol está quente."
+    ]
+  },
+  {
+    palavra: "kutuk",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Espetar; furar.",
+    audio: "assets/audios/kutuk.mp3",
+    sentido_de: "Verbo de perfuração; registro do VB p. 41.",
+    falante: "Uso geral",
+    exemplos: [
+      "Akutuk pira.",
+      "Okutuk ywy."
+    ],
+    traducao: [
+      "Espeto o peixe.",
+      "Ele fura a terra."
+    ]
+  },
+  {
+    palavra: "kyry",
+    tipo: "adjetivo",
+    categoria: "Expressões",
+    significado: "Gordo; grosso.",
+    audio: "assets/audios/kyry_gordo.mp3",
+    sentido_de: "Qualidade física; registro do VB p. 41.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kyry avá.",
+      "Kyry ywyra."
+    ],
+    traducao: [
+      "O homem é gordo.",
+      "A árvore é grossa."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 45-46 — M/MB: palavras de M ausentes
+  // ============================================================
+  {
+    palavra: "ma'ẽ",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Ver; olhar (grafia com apóstrofo).",
+    audio: "assets/audios/mae_ver.mp3",
+    sentido_de: "Verbo de visão; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Ama'ẽ kwaray-re.",
+      "Oma'ẽ tekoa-pe."
+    ],
+    traducao: [
+      "Olho para o sol.",
+      "Ele olha a aldeia."
+    ]
+  },
+  {
+    palavra: "mandu'a",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Lembrar; recordar.",
+    audio: "assets/audios/mandua_lembrar.mp3",
+    sentido_de: "Verbo de memória; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txemandu'a nde rehe.",
+      "Omomandu'a ymã-gwi."
+    ],
+    traducao: [
+      "Eu lembro de você.",
+      "Ele faz lembrar o passado."
+    ]
+  },
+  {
+    palavra: "manduwi",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Amendoim.",
+    audio: "assets/audios/manduwi_amendoim.mp3",
+    sentido_de: "Alimento agrícola; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Manduwi oĩ koy py.",
+      "Aipota manduwi."
+    ],
+    traducao: [
+      "O amendoim está na roça.",
+      "Quero amendoim."
+    ]
+  },
+  {
+    palavra: "mangwá",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Manga.",
+    audio: "assets/audios/mangwa_manga.mp3",
+    sentido_de: "Fruta; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mangwá ipotá.",
+      "Oipyý mangwá."
+    ],
+    traducao: [
+      "A manga é gostosa.",
+      "Ele pegou manga."
+    ]
+  },
+  {
+    palavra: "mapu'a",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Abacaxi.",
+    audio: "assets/audios/mapua_abacaxi.mp3",
+    sentido_de: "Fruta; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mapu'a ipotá.",
+      "Oipyý mapu'a."
+    ],
+    traducao: [
+      "O abacaxi é gostoso.",
+      "Ele pegou abacaxi."
+    ]
+  },
+  {
+    palavra: "marakadja",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Gato do mato (grafia alternativa).",
+    audio: "assets/audios/marakadja.mp3",
+    sentido_de: "Felino silvestre; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Marakadja oiko ka'agwy py.",
+      "Aetxa marakadja."
+    ],
+    traducao: [
+      "O gato do mato vive na mata.",
+      "Vejo o gato do mato."
+    ]
+  },
+  {
+    palavra: "mba'ewa",
+    tipo: "partícula interrogativa",
+    categoria: "Expressões",
+    significado: "O que? (grafia com apóstrofo).",
+    audio: "assets/audios/mbaewa_pergunta.mp3",
+    sentido_de: "Pergunta por coisa; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mba'ewa redjapó?",
+      "Mba'ewa reipotá?"
+    ],
+    traducao: [
+      "O que você faz?",
+      "O que você quer?"
+    ]
+  },
+  {
+    palavra: "mba'emo",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Alguma coisa; qualquer coisa.",
+    audio: "assets/audios/mbaemo_coisa.mp3",
+    sentido_de: "Pronome indefinido; registro do VB p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mba'emo oiko.",
+      "Mba'emo aipota."
+    ],
+    traducao: [
+      "Algo aconteceu.",
+      "Quero alguma coisa."
+    ]
+  },
+  {
+    palavra: "mba'ekwaá",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Sabedoria; conhecimento ancestral.",
+    audio: "assets/audios/mbaekwaa_saber.mp3",
+    sentido_de: "Conceito de saber tradicional; registro do vol. 2 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mba'ekwaá Nhanderu ome'ẽ.",
+      "Mba'ekwaá nhande py.",
+      "Oiporu mba'ekwaá."
+    ],
+    traducao: [
+      "Nhanderu deu a sabedoria.",
+      "A sabedoria está em nós.",
+      "Ele usa a sabedoria."
+    ]
+  },
+  {
+    palavra: "mbeju",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Biju; bolo de mandioca.",
+    audio: "assets/audios/mbeju_biju.mp3",
+    sentido_de: "Prato tradicional; registro do vol. 2 p. 26.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mbeju iporã.",
+      "Djadjaó mbeju."
+    ],
+    traducao: [
+      "O biju é gostoso.",
+      "Fazemos biju."
+    ]
+  },
+  {
+    palavra: "mboapy",
+    tipo: "numeral",
+    categoria: "Expressões",
+    significado: "Três (forma alternativa).",
+    audio: "assets/audios/mboapy_tres.mp3",
+    sentido_de: "Numeral cardinal 3; registro do vol. 2 p. 25.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mboapy áry.",
+      "Mboapy avá ou."
+    ],
+    traducao: [
+      "Três anos.",
+      "Três homens vieram."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 47-50 — N/NH: palavras de N ausentes
+  // ============================================================
+  {
+    palavra: "nambi",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Orelha; orelhas.",
+    audio: "assets/audios/nambi_orelha.mp3",
+    sentido_de: "Parte anatômica da audição; registro do VB p. 47.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nambi rasy.",
+      "Oiporu nambi."
+    ],
+    traducao: [
+      "A orelha dói.",
+      "Ele usa a orelha."
+    ]
+  },
+  {
+    palavra: "nambu",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Nambu; inhambu.",
+    audio: "assets/audios/nambu_ave.mp3",
+    sentido_de: "Ave silvestre; registro do VB p. 47.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nambu oiko ka'agwy py.",
+      "Oporahéi nambu."
+    ],
+    traducao: [
+      "O nambu vive na mata.",
+      "O nambu canta."
+    ]
+  },
+  {
+    palavra: "nhandu",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Aranha grande; aranha caranguejeira.",
+    audio: "assets/audios/nhandu_grande.mp3",
+    sentido_de: "Aracnídeo de grande porte; registro do VB p. 48.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhandu oiko ka'agwy py.",
+      "Nhandu ipoju."
+    ],
+    traducao: [
+      "A aranha grande vive na mata.",
+      "A aranha grande é venenosa."
+    ]
+  },
+  {
+    palavra: "nhandy",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Óleo; azeite (grafia do vol. 2).",
+    audio: "assets/audios/nhandy_oleo.mp3",
+    sentido_de: "Substância líquida; registro do vol. 2 p. 27.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhandy oĩ djapepó py.",
+      "Aipota nhandy."
+    ],
+    traducao: [
+      "O óleo está na panela.",
+      "Quero óleo."
+    ]
+  },
+  {
+    palavra: "nhanderu",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Nosso pai (Deus); Nhanderu.",
+    audio: "assets/audios/nhanderu_pai.mp3",
+    sentido_de: "Entidade suprema; registro do vol. 1 p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhanderu ome'ẽ nhandewy.",
+      "Nhanderu rewé djaywu."
+    ],
+    traducao: [
+      "Nhanderu nos deu.",
+      "Falamos com Nhanderu."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 70-75 — R/T: palavras de R e T ausentes
+  // ============================================================
+  {
+    palavra: "pyapé",
+    tipo: "substantivo",
+    categoria: "Localização",
+    significado: "Caminho; estrada (forma alternativa).",
+    audio: "assets/audios/pyape_caminho.mp3",
+    sentido_de: "Via de circulação; registro do VB p. 70.",
+    falante: "Uso geral",
+    exemplos: [
+      "Pyapé ipuku.",
+      "Agwatá pyapé rupi."
+    ],
+    traducao: [
+      "O caminho é longo.",
+      "Ando pelo caminho."
+    ]
+  },
+  {
+    palavra: "ro'y",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Frio.",
+    audio: "assets/audios/roy_frio.mp3",
+    sentido_de: "Sensação térmica; registro do VB p. 72.",
+    falante: "Uso geral",
+    exemplos: [
+      "Ro'y eté ko'ẽ py.",
+      "Txero'y."
+    ],
+    traducao: [
+      "Faz muito frio hoje cedo.",
+      "Estou com frio."
+    ]
+  },
+  {
+    palavra: "ruguá",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Companheiro; aquele que está junto.",
+    audio: "assets/audios/rugua_companheiro.mp3",
+    sentido_de: "Companhia; registro do vol. 1 p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txe ruguá.",
+      "Oho ruguá rewé."
+    ],
+    traducao: [
+      "Meu companheiro.",
+      "Ele foi com o companheiro."
+    ]
+  },
+  {
+    palavra: "takuarú",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Taquaruçu; bambu grande.",
+    audio: "assets/audios/takuaru.mp3",
+    sentido_de: "Planta de grande porte; registro do VB p. 76.",
+    falante: "Uso geral",
+    exemplos: [
+      "Takuarú oĩ ka'agwy py.",
+      "Oiporu takuarú."
+    ],
+    traducao: [
+      "O bambu grande está na mata.",
+      "Ele usa o bambu grande."
+    ]
+  },
+  {
+    palavra: "tapé",
+    tipo: "substantivo",
+    categoria: "Localização",
+    significado: "Caminho; estrada.",
+    audio: "assets/audios/tape_estrada.mp3",
+    sentido_de: "Via; registro do VB p. 76.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tapé ipuku.",
+      "Agwatá tapé rupi."
+    ],
+    traducao: [
+      "A estrada é longa.",
+      "Ando pela estrada."
+    ]
+  },
+  {
+    palavra: "tataendy",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Luz; fogo aceso.",
+    audio: "assets/audios/tataendy_luz.mp3",
+    sentido_de: "Fenômeno luminoso; registro do vol. 1 p. 55.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tataendy iporã pyhare py.",
+      "Yy-gwi osẽ tataendy."
+    ],
+    traducao: [
+      "A luz é bonita de noite.",
+      "Da água saiu a luz."
+    ]
+  },
+  {
+    palavra: "tekoá",
+    tipo: "substantivo",
+    categoria: "Localização",
+    significado: "Aldeia (grafia alternativa).",
+    audio: "assets/audios/tekoa_ald.mp3",
+    sentido_de: "Lugar de viver; registro do vol. 1 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tekoá iporã.",
+      "Aiko tekoá py."
+    ],
+    traducao: [
+      "A aldeia é bonita.",
+      "Moro na aldeia."
+    ]
+  },
+  {
+    palavra: "tembi'u",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Comida; alimento.",
+    audio: "assets/audios/tembiu_alimento.mp3",
+    sentido_de: "Alimento em geral; registro do VB p. 76.",
+    falante: "Uso geral",
+    exemplos: [
+      "Aipota tembi'u.",
+      "Tembi'u iporã."
+    ],
+    traducao: [
+      "Quero comida.",
+      "A comida é boa."
+    ]
+  },
+  {
+    palavra: "tuty",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Onça; felino grande.",
+    audio: "assets/audios/tuty_onca2.mp3",
+    sentido_de: "Grande felino; registro do VB p. 78.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tuty oiko ka'agwy py.",
+      "Aetxa tuty."
+    ],
+    traducao: [
+      "A onça vive na mata.",
+      "Vejo a onça."
+    ]
+  },
+
+  // ============================================================
+  // VOL. 1 p. 16-19: textos e exercícios
+  // ============================================================
+  {
+    palavra: "nhanembo'e",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Nós educamos; nós ensinamos.",
+    audio: "assets/audios/nhanemboe_educamos.mp3",
+    sentido_de: "1ª pessoa plural inclusiva de -mbo'e; registro do vol. 1 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhanembo'e mitãngwé.",
+      "Nhanembo'e nhandeaywu."
+    ],
+    traducao: [
+      "Educamos as crianças.",
+      "Ensinamos nossa língua."
+    ]
+  },
+  {
+    palavra: "oendu",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Ele escuta; eles escutam.",
+    audio: "assets/audios/oendu_escuta.mp3",
+    sentido_de: "3ª pessoa de -endu; registro do vol. 1 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Oendu ñe'ẽ.",
+      "Oendu mitãngwé."
+    ],
+    traducao: [
+      "Ele escuta a fala.",
+      "Ele escuta as crianças."
+    ]
+  },
+  {
+    palavra: "ãwã",
+    tipo: "partícula",
+    categoria: "Expressões",
+    significado: "Para; a fim de; finalidade.",
+    audio: "assets/audios/awa_finalidade.mp3",
+    sentido_de: "Partícula de finalidade; registro do vol. 1 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Aá wa'ã.",
+      "Okaru ãwã."
+    ],
+    traducao: [
+      "Vou para isto.",
+      "Ele come para isso."
+    ]
+  },
+  {
+    palavra: "porã-we",
+    tipo: "advérbio",
+    categoria: "Expressões",
+    significado: "Para melhor; para ficar bom.",
+    audio: "assets/audios/pora_we.mp3",
+    sentido_de: "Forma adverbial com -we; registro do vol. 1 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhandeaywu porã-we ãwã.",
+      "Nhanderekó porã-we."
+    ],
+    traducao: [
+      "Para nossa língua ficar boa.",
+      "Para nosso modo de vida ficar bom."
+    ]
+  },
+  {
+    palavra: "nhembo'eaty",
+    tipo: "substantivo",
+    categoria: "Localização",
+    significado: "Escola (grafia alternativa).",
+    audio: "assets/audios/nhemboeaty_esc.mp3",
+    sentido_de: "Espaço educativo; registro do vol. 1 p. 31.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhembo'eaty py aá.",
+      "Nhembo'eaty iporã."
+    ],
+    traducao: [
+      "Vou à escola.",
+      "A escola é boa."
+    ]
+  },
+  {
+    palavra: "nimbo'e",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Aprender; estudar.",
+    audio: "assets/audios/nimboe_aprender.mp3",
+    sentido_de: "Verbo reflexivo; registro do vol. 1 p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Animbo'e Nhandewa.",
+      "Onimbo'e py.",
+      "Djanimbo'e."
+    ],
+    traducao: [
+      "Aprendo Nhandewa.",
+      "Ele aprende lá.",
+      "Vamos aprender."
+    ]
+  },
+  {
+    palavra: "opá mba'e",
+    tipo: "expressão",
+    categoria: "Expressões",
+    significado: "Todas as coisas; tudo.",
+    audio: "assets/audios/opa_mbae_tudo.mp3",
+    sentido_de: "Locução totalizante; registro do vol. 1 p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Opá mba'e oetsapé.",
+      "Opá mba'e oiko porã."
+    ],
+    traducao: [
+      "Todas as coisas aparecem.",
+      "Todas as coisas vivem bem."
+    ]
+  },
+  {
+    palavra: "odjerowiá",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Acredita; confia; tem fé.",
+    audio: "assets/audios/odjerowia_confia.mp3",
+    sentido_de: "3ª pessoa de -djerowiá; registro do vol. 1 p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Odjerowiá Nhanderu-re.",
+      "Odjerowiá porã."
+    ],
+    traducao: [
+      "Ele confia em Nhanderu.",
+      "Ele confia bem."
+    ]
+  },
+
+  // ============================================================
+  // VOL. 1 p. 27-29: possuíveis e não possuíveis
+  // ============================================================
+  {
+    palavra: "yvyrá",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Árvore.",
+    audio: "assets/audios/ywyra_arvore.mp3",
+    sentido_de: "Vegetal de tronco; registro do vol. 1 p. 27.",
+    falante: "Uso geral",
+    exemplos: [
+      "Yvyrá ipuku.",
+      "Oĩ yvyrá ka'agwy py."
+    ],
+    traducao: [
+      "A árvore é alta.",
+      "Tem árvore na mata."
+    ]
+  },
+  {
+    palavra: "takwá",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Taquara; bambu.",
+    audio: "assets/audios/takwa_taquara.mp3",
+    sentido_de: "Vegetal; registro do vol. 1 p. 27.",
+    falante: "Uso geral",
+    exemplos: [
+      "Takwá ipuku.",
+      "Oiporu takwá."
+    ],
+    traducao: [
+      "A taquara é alta.",
+      "Ele usa a taquara."
+    ]
+  },
+  {
+    palavra: "jetý",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Batata; batata-doce.",
+    audio: "assets/audios/djety_batata.mp3",
+    sentido_de: "Tubérculo; registro do vol. 1 p. 27.",
+    falante: "Uso geral",
+    exemplos: [
+      "Jetý iporã.",
+      "Oipyý jetý."
+    ],
+    traducao: [
+      "A batata é boa.",
+      "Ele pegou batata."
+    ]
+  },
+  {
+    palavra: "mandi'o",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Mandioca.",
+    audio: "assets/audios/mandio_mandioca.mp3",
+    sentido_de: "Tubérculo; registro do vol. 1 p. 31.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mandi'o oĩ koy py.",
+      "Oipyý mandi'o."
+    ],
+    traducao: [
+      "A mandioca está na roça.",
+      "Ele pegou mandioca."
+    ]
+  },
+  {
+    palavra: "peẽ",
+    tipo: "pronome",
+    categoria: "Pronomes",
+    significado: "Vocês (grafia alternativa).",
+    audio: "assets/audios/pee_vcs.mp3",
+    sentido_de: "Pronome de 2ª pessoa do plural; registro do vol. 1 p. 28.",
+    falante: "Uso geral",
+    exemplos: [
+      "Peẽ pekaru.",
+      "Peẽ peikwaá."
+    ],
+    traducao: [
+      "Vocês comem.",
+      "Vocês sabem."
+    ]
+  },
+  {
+    palavra: "oriwé",
+    tipo: "pós-posição",
+    categoria: "Pós-posições",
+    significado: "Com; junto de (grafia alternativa de -rewé).",
+    audio: "assets/audios/oriwe_com.mp3",
+    sentido_de: "Pós-posição de companhia; registro do vol. 1 p. 22.",
+    falante: "Uso geral",
+    exemplos: [
+      "Agwatá txe oriwé.",
+      "Oú nhande oriwé."
+    ],
+    traducao: [
+      "Ando com ele.",
+      "Ele veio com a gente."
+    ]
+  },
+
+  // ============================================================
+  // VOL. 1 p. 42-43: causativos (formas do texto)
+  // ============================================================
+  {
+    palavra: "ombodjepotá",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Avivou; fez o fogo arder mais.",
+    audio: "assets/audios/ombodjepota_avivou.mp3",
+    sentido_de: "Causativo de -bodjepotá; registro do vol. 1 p. 43.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tatá ombodjepotá.",
+      "Ombodjepotá tatá aku awã."
+    ],
+    traducao: [
+      "O fogo foi avivado.",
+      "Avivou o fogo para esquentar."
+    ]
+  },
+  {
+    palavra: "txemoma'ẽ",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Fez-me ver; mostrou-me.",
+    audio: "assets/audios/txemomae_mostrou.mp3",
+    sentido_de: "Causativo com objeto 1ª pessoa; registro do vol. 1 p. 43.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txedjaryi txemoma'ẽ tatá.",
+      "Txemoma'ẽ porã."
+    ],
+    traducao: [
+      "Minha avó me mostrou o fogo.",
+      "Mostrou-me bem."
+    ]
+  },
+  {
+    palavra: "txemombytá",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Fez-me pegar; mandou-me buscar.",
+    audio: "assets/audios/txemombyta_mandou.mp3",
+    sentido_de: "Causativo com objeto 1ª pessoa; registro do vol. 1 p. 43.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txedjaryi txemombytá manduwi.",
+      "Txemombytá woi."
+    ],
+    traducao: [
+      "Minha avó me mandou pegar mandioca.",
+      "Mandou-me rápido."
+    ]
+  },
+  {
+    palavra: "txemongwera",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Curou-me; fez-me sarar.",
+    audio: "assets/audios/txemongwera_curou.mp3",
+    sentido_de: "Causativo de -mongwera; registro do vol. 1 p. 43.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txemongwera djodjoi.",
+      "Txemongwera poã rewé."
+    ],
+    traducao: [
+      "Curou meu soluço.",
+      "Curou-me com remédio."
+    ]
+  },
+  {
+    palavra: "otxepytyvõ",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Ajudou-me.",
+    audio: "assets/audios/otxepytyvo_ajudoume.mp3",
+    sentido_de: "3ª pessoa com objeto 1ª pessoa; registro do vol. 1 p. 43.",
+    falante: "Uso geral",
+    exemplos: [
+      "Ot xe pytyvõ manduwi djoká awã.",
+      "Ot xe pytyvõ porã."
+    ],
+    traducao: [
+      "Ajudou-me a amarrar a mandioca.",
+      "Ajudou-me bem."
+    ]
+  },
+
+  // ============================================================
+  // VOL. 2 p. 8-16: palavras do texto e glossário
+  // ============================================================
+  {
+    palavra: "rogwapy",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Sentamo-nos (exclusivo).",
+    audio: "assets/audios/rogwapy_sentamos.mp3",
+    sentido_de: "1ª pessoa exclusiva de -gwapy; registro do vol. 2 p. 8.",
+    falante: "Uso geral",
+    exemplos: [
+      "Rogwapy tata rupi.",
+      "Rogwapy porã."
+    ],
+    traducao: [
+      "Sentamo-nos junto ao fogo.",
+      "Sentamo-nos bem."
+    ]
+  },
+  {
+    palavra: "rowaí",
+    tipo: "advérbio",
+    categoria: "Expressões",
+    significado: "Em frente; à frente de.",
+    audio: "assets/audios/rowai_frente.mp3",
+    sentido_de: "Marcador de posição frontal; registro do vol. 2 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Oĩ txe rowaí py.",
+      "Oho nhande rowaí rupi."
+    ],
+    traducao: [
+      "Está na minha frente.",
+      "Ele foi pela nossa frente."
+    ]
+  },
+  {
+    palavra: "kupé",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Costas; parte de trás (grafia alternativa).",
+    audio: "assets/audios/kupe_costas.mp3",
+    sentido_de: "Parte traseira do corpo; registro do vol. 2 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kupe rasy.",
+      "Oĩ txe kupé py."
+    ],
+    traducao: [
+      "As costas doem.",
+      "Está atrás de mim."
+    ]
+  },
+  {
+    palavra: "djodjá",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Outro lado; o lado oposto.",
+    audio: "assets/audios/djodja_lado.mp3",
+    sentido_de: "Termo de posição; registro do vol. 2 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Djodjá regwá.",
+      "Oho djodjá py."
+    ],
+    traducao: [
+      "Do outro lado.",
+      "Ele foi para o outro lado."
+    ]
+  },
+  {
+    palavra: "yké",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Lado; ao lado de.",
+    audio: "assets/audios/yke_lado.mp3",
+    sentido_de: "Marcador de posição lateral; registro do vol. 2 p. 16.",
+    falante: "Uso geral",
+    exemplos: [
+      "Yké regwá.",
+      "Oiko txe yké py."
+    ],
+    traducao: [
+      "Do lado esquerdo.",
+      "Ele vive ao meu lado."
+    ]
+  },
+  {
+    palavra: "nhandereté",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Nosso corpo (inclusivo).",
+    audio: "assets/audios/nhanderete_corpo.mp3",
+    sentido_de: "Corpo coletivo; registro do vol. 2 p. 40.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhandereté marãgatu.",
+      "Nhanhingarekó nhandereté-gwi."
+    ],
+    traducao: [
+      "Nosso corpo é sagrado.",
+      "Cuidamos do nosso corpo."
+    ]
+  },
+  {
+    palavra: "marãe katu",
+    tipo: "expressão",
+    categoria: "Expressões",
+    significado: "Força; energia vital.",
+    audio: "assets/audios/marae_katu2.mp3",
+    sentido_de: "Conceito de energia; registro do vol. 2 p. 45.",
+    falante: "Uso geral",
+    exemplos: [
+      "Nhande marãe katu.",
+      "Djatsyá nhande marãe katu."
+    ],
+    traducao: [
+      "A força é nossa.",
+      "O ciclo anual é a nossa força."
+    ]
+  },
+
+  // ============================================================
+  // VOL. 2 p. 40-43: atividades e vocabulário
+  // ============================================================
+  {
+    palavra: "txetxaí",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Minha avó.",
+    audio: "assets/audios/txetxai_minhaavo.mp3",
+    sentido_de: "Avó; registro do vol. 2 p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txetxaí ou ko'ẽ.",
+      "Aá txetxaí rendá py."
+    ],
+    traducao: [
+      "Minha avó veio hoje cedo.",
+      "Vou à casa da minha avó."
+    ]
+  },
+  {
+    palavra: "txeramaminó",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Meu neto; minha neta.",
+    audio: "assets/audios/txeramamino_neto2.mp3",
+    sentido_de: "Descendente; registro do vol. 2 p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txeramaminó oñembosarái.",
+      "Txeramaminó ou."
+    ],
+    traducao: [
+      "Meu neto brinca.",
+      "Meu neto veio."
+    ]
+  },
+  {
+    palavra: "txeminó",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Minha neta.",
+    audio: "assets/audios/txemino_minhaneta.mp3",
+    sentido_de: "Descendente feminina; registro do vol. 2 p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txeminó odjapo tembi'u.",
+      "Aá txeminó rendá py."
+    ],
+    traducao: [
+      "Minha neta faz comida.",
+      "Vou à casa da minha neta."
+    ]
+  },
+  {
+    palavra: "txera' y txó",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Minha sogra.",
+    audio: "assets/audios/txeraytxo_sogra.mp3",
+    sentido_de: "Mãe do cônjuge; registro do vol. 2 p. 37.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txera'y txó ou.",
+      "Aá txera'y txó rendá py."
+    ],
+    traducao: [
+      "Minha sogra veio.",
+      "Vou à casa da minha sogra."
+    ]
+  },
+  {
+    palavra: "txeradjy mẽ",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Genro (marido da filha, dito pelo pai).",
+    audio: "assets/audios/txeradjy_me_genro.mp3",
+    sentido_de: "Marido da filha; registro do vol. 2 p. 37.",
+    falante: "Pai",
+    exemplos: [
+      "Txeradjy mẽ omba'apó.",
+      "Txeradjy mẽ ou."
+    ],
+    traducao: [
+      "Meu genro trabalha.",
+      "Meu genro veio."
+    ]
+  },
+  {
+    palavra: "txememby mẽ",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Genro (marido da filha, dito pela mãe).",
+    audio: "assets/audios/txememby_me_genro.mp3",
+    sentido_de: "Marido da filha; registro do vol. 2 p. 37.",
+    falante: "Mãe",
+    exemplos: [
+      "Txememby mẽ ou.",
+      "Txememby mẽ oiko tekoa py."
+    ],
+    traducao: [
+      "O genro da minha filha veio.",
+      "O genro da minha filha mora na aldeia."
+    ]
+  },
+
+  // ============================================================
+  // VOL. 2 p. 50-52: cantos e receitas
+  // ============================================================
+  {
+    palavra: "urukure'a",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Coruja (grafia alternativa).",
+    audio: "assets/audios/urukurea_coruja2.mp3",
+    sentido_de: "Ave noturna; registro do vol. 2 p. 49.",
+    falante: "Uso geral",
+    exemplos: [
+      "Urukure'a oporahéi pyhare py.",
+      "Urukure'a oiko ywyty py."
+    ],
+    traducao: [
+      "A coruja canta de noite.",
+      "A coruja vive na serra."
+    ]
+  },
+  {
+    palavra: "popo'i",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Borboletinha.",
+    audio: "assets/audios/popoi_borboletinha.mp3",
+    sentido_de: "Diminutivo de popo; registro do vol. 2 p. 50.",
+    falante: "Uso geral",
+    exemplos: [
+      "Popo'i oveve kapi'i rupi.",
+      "Popo'i iporã."
+    ],
+    traducao: [
+      "A borboletinha voa pelo capim.",
+      "A borboletinha é bonita."
+    ]
+  },
+  {
+    palavra: "mbaipy",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Mbaipy; mingau de milho.",
+    audio: "assets/audios/mbaipy_mingau.mp3",
+    sentido_de: "Prato tradicional; registro do vol. 2 p. 28.",
+    falante: "Uso geral",
+    exemplos: [
+      "Mbaipy iporã.",
+      "Djadjaó mbaipy."
+    ],
+    traducao: [
+      "O mbaipy é gostoso.",
+      "Fazemos mbaipy."
+    ]
+  },
+  {
+    palavra: "jenipapo",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Jenipapo.",
+    audio: "assets/audios/jenipapo.mp3",
+    sentido_de: "Fruta nativa; registro do vol. 2 p. 28.",
+    falante: "Uso geral",
+    exemplos: [
+      "Jenipapo ipotá.",
+      "Oipyý jenipapo."
+    ],
+    traducao: [
+      "O jenipapo é gostoso.",
+      "Ele pegou jenipapo."
+    ]
+  },
+  {
+    palavra: "kanã-re'ẽ",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Caldo de cana; garapa.",
+    audio: "assets/audios/kanaree_garapa.mp3",
+    sentido_de: "Bebida; registro do vol. 2 p. 28.",
+    falante: "Uso geral",
+    exemplos: [
+      "Kanã-re'ẽ ipotá.",
+      "Aipota kanã-re'ẽ."
+    ],
+    traducao: [
+      "O caldo de cana é doce.",
+      "Quero caldo de cana."
+    ]
+  },
+  {
+    palavra: "pó-peté",
+    tipo: "advérbio",
+    categoria: "Expressões",
+    significado: "De uma só vez; uma única vez.",
+    audio: "assets/audios/po_pete_uma.mp3",
+    sentido_de: "Advérbio de modo; registro do vol. 2 p. 51.",
+    falante: "Uso geral",
+    exemplos: [
+      "Pó-peté odjapó.",
+      "Pó-peté omanõ."
+    ],
+    traducao: [
+      "De uma só vez ele fez.",
+      "De uma só vez ele morreu."
+    ]
+  },
+  {
+    palavra: "pakowá djú",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Banana-doce; banana madura.",
+    audio: "assets/audios/pakowa_dju2.mp3",
+    sentido_de: "Variedade de banana; registro do vol. 2 p. 51.",
+    falante: "Uso geral",
+    exemplos: [
+      "Pakowá djú ipotá.",
+      "Djamoĩ pakowá djú tatapyĩ igwy rupi."
+    ],
+    traducao: [
+      "A banana-doce é gostosa.",
+      "Colocamos a banana-doce sob a brasa."
+    ]
+  },
+  {
+    palavra: "pakowá kyry",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Banana-da-terra; banana para assar.",
+    audio: "assets/audios/pakowa_kyry2.mp3",
+    sentido_de: "Variedade de banana; registro do vol. 2 p. 51.",
+    falante: "Uso geral",
+    exemplos: [
+      "Pakowá kyry ipiré.",
+      "Djaetsy pakowá kyry."
+    ],
+    traducao: [
+      "A casca da banana-da-terra.",
+      "Assamos a banana-da-terra."
+    ]
+  },
+  {
+    palavra: "tatapyĩ",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Brasa; carvão em brasa.",
+    audio: "assets/audios/tatapyi_brasa2.mp3",
+    sentido_de: "Fogo brando; registro do vol. 2 p. 51.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tatapyĩ oĩ tata py.",
+      "Djamoĩ pakowá tatapyĩ igwy rupi."
+    ],
+    traducao: [
+      "A brasa está no fogo.",
+      "Colocamos a banana sob a brasa."
+    ]
   }
 ];
 // =====================================================
