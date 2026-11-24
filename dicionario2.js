@@ -26888,6 +26888,586 @@ const DICIONARIO2 = [
       "A casca da banana-da-terra.",
       "Assamos a banana-da-terra."
     ]
+  },
+    // ============================================================
+  // VB p. 9 — A (bloco ainda descoberto)
+  // ============================================================
+  {
+    palavra: "amõe",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Avô.",
+    audio: "assets/audios/amoe_avo.mp3",
+    sentido_de: "Termo de parentesco masculino de geração anterior; VB p. 9.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txeramõĩ ha txamõe oiko tekoa-py.",
+      "Amõe ou txerenda-pe."
+    ],
+    traducao: [
+      "Meu avô e o avô dele moram na aldeia.",
+      "O avô veio na minha casa."
+    ]
+  },
+  {
+    palavra: "anãiri",
+    tipo: "partícula",
+    categoria: "Expressões",
+    significado: "Não (forma BA de ANÃIRI).",
+    audio: "assets/audios/anairi_nao.mp3",
+    sentido_de: "Negação direta; grafia BA do VB p. 9.",
+    falante: "Uso geral",
+    exemplos: [
+      "Anãiri, ndaipotái.",
+      "Anãiri, ndaáai."
+    ],
+    traducao: [
+      "Não, não quero.",
+      "Não, não vou."
+    ]
+  },
+  {
+    palavra: "anãíri",
+    tipo: "partícula",
+    categoria: "Expressões",
+    significado: "Não (forma PI de ANÃIRI).",
+    audio: "assets/audios/anaairi_nao.mp3",
+    sentido_de: "Negação direta; grafia PI do VB p. 9.",
+    falante: "Uso geral",
+    exemplos: [
+      "Anãíri, adjepe'e.",
+      "Anãíri, akaru."
+    ],
+    traducao: [
+      "Não, eu me esquento.",
+      "Não, eu como."
+    ]
+  },
+  {
+    palavra: "angapy'y",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Preocupar; causar preocupação.",
+    audio: "assets/audios/angapyy_preocupar.mp3",
+    sentido_de: "Radical do verbo preocupar; VB p. 9 registra ANGAPY YIRY como forma negativa.",
+    falante: "Uso geral",
+    exemplos: [
+      "Angapy'y ndehe.",
+      "Ndangapy'ýi txerendá re."
+    ],
+    traducao: [
+      "Preocupa-se com você.",
+      "Não se preocupa com minha casa."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 19 — DJ (lacunas do bloco)
+  // ============================================================
+  {
+    palavra: "djoai'a",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Xale.",
+    audio: "assets/audios/djoaia_xale.mp3",
+    sentido_de: "Peça de vestuário feminina; VB p. 19 registra DJOAI'A / DJADJI.",
+    falante: "Uso geral",
+    exemplos: [
+      "Omonde djoai'a ro'y ramõ.",
+      "Djoai'a iporã."
+    ],
+    traducao: [
+      "Ela veste xale quando faz frio.",
+      "O xale é bonito."
+    ]
+  },
+  {
+    palavra: "djadji",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Xale (forma alternativa).",
+    audio: "assets/audios/djadji_xale.mp3",
+    sentido_de: "Peça de vestuário; grafia alternativa do VB p. 19.",
+    falante: "Uso geral",
+    exemplos: [
+      "Omonde djadji.",
+      "Djadji oĩ óga-py."
+    ],
+    traducao: [
+      "Ela veste xale.",
+      "O xale está em casa."
+    ]
+  },
+  {
+    palavra: "djoãri",
+    tipo: "adjetivo",
+    categoria: "Expressões",
+    significado: "Igual.",
+    audio: "assets/audios/djoari_igual.mp3",
+    sentido_de: "Semelhança ou equivalência; VB p. 19 registra DJOÃRI / RAMĨ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Djoãri ko mokõi ao.",
+      "Djoãri nde aiywú ha txeru aiywú."
+    ],
+    traducao: [
+      "Estas duas roupas são iguais.",
+      "É igual a tua fala e a fala do meu pai."
+    ]
+  },
+  {
+    palavra: "djodjaí",
+    tipo: "adjetivo",
+    categoria: "Expressões",
+    significado: "Engraçada; divertida.",
+    audio: "assets/audios/djodjai_engracada.mp3",
+    sentido_de: "Qualidade de humor; VB p. 19 registra DJODJAÍ como forma BA (feminino).",
+    falante: "Uso geral",
+    exemplos: [
+      "Djodjaí ko kunhã.",
+      "Djodjaí ko mitã."
+    ],
+    traducao: [
+      "Esta mulher é engraçada.",
+      "Esta criança é engraçada."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 68 — P (bloco ainda descoberto)
+  // ============================================================
+  {
+    palavra: "py",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Fim; final (forma BA de APYRÉ).",
+    audio: "assets/audios/py_fim_ba.mp3",
+    sentido_de: "Término de algo; grafia BA do VB p. 66.",
+    falante: "Uso geral",
+    exemplos: [
+      "Tape py-pe amaẽ.",
+      "Ysyry py oĩ."
+    ],
+    traducao: [
+      "Cheguei ao fim do caminho.",
+      "Está no fim do rio."
+    ]
+  },
+  {
+    palavra: "padje",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Pajé.",
+    audio: "assets/audios/padje_paje.mp3",
+    sentido_de: "Figura religiosa central; VB p. 66 registra PADJE.",
+    falante: "Uso geral",
+    exemplos: [
+      "Padje oĩ oy-gwatsu-py.",
+      "Padje oñe'ẽ Nhanderu-rewé."
+    ],
+    traducao: [
+      "O pajé está na casa de reza.",
+      "O pajé fala com Nhanderu."
+    ]
+  },
+  {
+    palavra: "pakowa",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Banana.",
+    audio: "assets/audios/pakowa.mp3",
+    sentido_de: "Fruta; grafia sem acento do VB p. 66.",
+    falante: "Uso geral",
+    exemplos: [
+      "Oipyý pakowa.",
+      "Pakowa ipotá."
+    ],
+    traducao: [
+      "Pegou a banana.",
+      "A banana é gostosa."
+    ]
+  },
+  {
+    palavra: "paraí",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Xadrez.",
+    audio: "assets/audios/parai_xadrez.mp3",
+    sentido_de: "Jogo de tabuleiro; VB p. 66 registra PARAÍ / IPARÁ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Djapó paraí.",
+      "Paraí oĩ mesa ári."
+    ],
+    traducao: [
+      "Fazem xadrez.",
+      "O xadrez está sobre a mesa."
+    ]
+  },
+  {
+    palavra: "ipará",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Xadrez (forma PY).",
+    audio: "assets/audios/ipara_xadrez.mp3",
+    sentido_de: "Jogo de tabuleiro; grafia PY do VB p. 66.",
+    falante: "Uso geral",
+    exemplos: [
+      "Djapó ipará.",
+      "Ipará oĩ mesa ári."
+    ],
+    traducao: [
+      "Fazem xadrez.",
+      "O xadrez está sobre a mesa."
+    ]
+  },
+  {
+    palavra: "parakau",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Papagaio.",
+    audio: "assets/audios/parakau_papagaio.mp3",
+    sentido_de: "Ave psitaciforme; VB p. 66 registra PARAKAU (PY/BA).",
+    falante: "Uso geral",
+    exemplos: [
+      "Parakau oñe'ẽ ywyra-py.",
+      "Aetxa parakau."
+    ],
+    traducao: [
+      "O papagaio fala na árvore.",
+      "Vi o papagaio."
+    ]
+  },
+  {
+    palavra: "penguá",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Pedaço; metade.",
+    audio: "assets/audios/pengua_pedaco.mp3",
+    sentido_de: "Parte de um todo; VB p. 68 registra PENGUÁ / PENGWE.",
+    falante: "Uso geral",
+    exemplos: [
+      "Emeẽ txewy penguá.",
+      "Penguá ko mbudjape."
+    ],
+    traducao: [
+      "Dê-me um pedaço.",
+      "Este pão é uma metade."
+    ]
+  },
+  {
+    palavra: "pengwe",
+    tipo: "substantivo",
+    categoria: "Expressões",
+    significado: "Pedaço; metade (forma PI/PY).",
+    audio: "assets/audios/pengwe_pedaco.mp3",
+    sentido_de: "Parte de um todo; grafia PI/PY do VB p. 68.",
+    falante: "Uso geral",
+    exemplos: [
+      "Emeẽ txewy pengwe.",
+      "Pengwe ko mbudjape."
+    ],
+    traducao: [
+      "Dê-me um pedaço.",
+      "Este pão é uma metade."
+    ]
+  },
+  {
+    palavra: "peratú",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Prato (forma PI/PY).",
+    audio: "assets/audios/peratu_prato.mp3",
+    sentido_de: "Utensílio de mesa; VB p. 68 registra PERATÚ / PREATÚ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Peratú oĩ mesa ári.",
+      "Oipoĩ tembi'u peratú-py."
+    ],
+    traducao: [
+      "O prato está sobre a mesa.",
+      "Colocou a comida no prato."
+    ]
+  },
+  {
+    palavra: "preatú",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Prato (forma BA).",
+    audio: "assets/audios/preatu_prato.mp3",
+    sentido_de: "Utensílio de mesa; grafia BA do VB p. 68.",
+    falante: "Uso geral",
+    exemplos: [
+      "Preatú oĩ mesa ári.",
+      "Oipoĩ tembi'u preatú-py."
+    ],
+    traducao: [
+      "O prato está sobre a mesa.",
+      "Colocou a comida no prato."
+    ]
+  },
+  {
+    palavra: "pẽtã",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Fumo (forma PY).",
+    audio: "assets/audios/peta_fumo.mp3",
+    sentido_de: "Planta ritual; VB p. 68 registra PẼTÃ / PETỸ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Pẽtã oĩ óga-py.",
+      "Oiporu pẽtã petyngwá-py."
+    ],
+    traducao: [
+      "O fumo está em casa.",
+      "Usa o fumo no cachimbo."
+    ]
+  },
+  {
+    palavra: "petỹ",
+    tipo: "substantivo",
+    categoria: "Natureza",
+    significado: "Fumo.",
+    audio: "assets/audios/pety_fumo.mp3",
+    sentido_de: "Planta ritual; VB p. 68 e vol. 1 p. 25 registram PETỸ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Petỹ oĩ óga-py.",
+      "Oiporu petỹ petyngwá-py."
+    ],
+    traducao: [
+      "O fumo está em casa.",
+      "Usa o fumo no cachimbo."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 70 — PO / PU (bloco descoberto)
+  // ============================================================
+  {
+    palavra: "potxyatxi",
+    tipo: "adjetivo",
+    categoria: "Expressões",
+    significado: "Raiva; bravo (forma PY).",
+    audio: "assets/audios/potxyatxi_raiva.mp3",
+    sentido_de: "Estado emocional de ira; VB p. 70 registra POTXYATXI.",
+    falante: "Uso geral",
+    exemplos: [
+      "Potxyatxi ko avá.",
+      "Potxyatxi oiko."
+    ],
+    traducao: [
+      "Este homem está com raiva.",
+      "Ele vive com raiva."
+    ]
+  },
+  {
+    palavra: "poyiá",
+    tipo: "substantivo",
+    categoria: "Objetos",
+    significado: "Quilo.",
+    audio: "assets/audios/poyia_quilo.mp3",
+    sentido_de: "Unidade de medida de peso; VB p. 70 registra POYIÁ / MBOYI.",
+    falante: "Uso geral",
+    exemplos: [
+      "Peteĩ poyiá so'o.",
+      "Mokõi poyiá mandi'o."
+    ],
+    traducao: [
+      "Um quilo de carne.",
+      "Dois quilos de mandioca."
+    ]
+  },
+  {
+    palavra: "puã",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Levanta; levantar (forma BA).",
+    audio: "assets/audios/pua_levantar.mp3",
+    sentido_de: "Ação de erguer-se; VB p. 70 registra PUÃ / AUPÍ / AWÝ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Puã ko'ápy.",
+      "Puã woi."
+    ],
+    traducao: [
+      "Levanta aqui.",
+      "Levanta rápido."
+    ]
+  },
+  {
+    palavra: "puka",
+    tipo: "verbo",
+    categoria: "Verbos",
+    significado: "Rir.",
+    audio: "assets/audios/puka_rir.mp3",
+    sentido_de: "Ação de rir; VB p. 70 registra PUKA (PY/BA).",
+    falante: "Uso geral",
+    exemplos: [
+      "Opuka mitã.",
+      "Opuka porã."
+    ],
+    traducao: [
+      "A criança ri.",
+      "Ele ri bem."
+    ]
+  },
+  {
+    palavra: "pupu",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Borboleta (forma BA).",
+    audio: "assets/audios/pupu_borboleta.mp3",
+    sentido_de: "Inseto voador; VB p. 70 registra PUPU (BA) com duplo sentido (fervendo / borboleta).",
+    falante: "Uso geral",
+    exemplos: [
+      "Pupu owewe poty re.",
+      "Pupu oĩ kapi'i-py."
+    ],
+    traducao: [
+      "A borboleta voa na flor.",
+      "A borboleta está no capim."
+    ]
+  },
+  {
+    palavra: "puru'a",
+    tipo: "adjetivo",
+    categoria: "Corpo humano",
+    significado: "Grávida; gestante (forma PI).",
+    audio: "assets/audios/purua_gravida.mp3",
+    sentido_de: "Estado de gestação; VB p. 70 registra PURU'A / PURUÁ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Puru'a ko kunhã.",
+      "Puru'a oiko."
+    ],
+    traducao: [
+      "Esta mulher está grávida.",
+      "Ela está grávida."
+    ]
+  },
+  {
+    palavra: "puruá",
+    tipo: "adjetivo",
+    categoria: "Corpo humano",
+    significado: "Grávida; gestante (forma BA).",
+    audio: "assets/audios/purua_gravida_ba.mp3",
+    sentido_de: "Estado de gestação; grafia BA do VB p. 70.",
+    falante: "Uso geral",
+    exemplos: [
+      "Puruá ko kunhã.",
+      "Puruá oiko."
+    ],
+    traducao: [
+      "Esta mulher está grávida.",
+      "Ela está grávida."
+    ]
+  },
+  {
+    palavra: "py'mẽ",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Chulé.",
+    audio: "assets/audios/pyme_chule.mp3",
+    sentido_de: "Odor dos pés; VB p. 70 registra PY'MẼ.",
+    falante: "Uso geral",
+    exemplos: [
+      "Py'mẽ nde py.",
+      "Py'mẽ oĩ."
+    ],
+    traducao: [
+      "Seu pé está com chulé.",
+      "Está com chulé."
+    ]
+  },
+  {
+    palavra: "pykuãthin",
+    tipo: "substantivo",
+    categoria: "Animais",
+    significado: "Pica-pau (forma BA).",
+    audio: "assets/audios/pykuathin_picapau.mp3",
+    sentido_de: "Ave que perfura troncos; VB p. 70 registra PYKUÃTHIN.",
+    falante: "Uso geral",
+    exemplos: [
+      "Pykuãthin oĩ ywyra rowá re.",
+      "Pykuãthin oñoty ywyra."
+    ],
+    traducao: [
+      "O pica-pau está no tronco.",
+      "O pica-pau perfura a árvore."
+    ]
+  },
+  {
+    palavra: "py'a kwe",
+    tipo: "substantivo",
+    categoria: "Corpo humano",
+    significado: "Fígado (forma PI).",
+    audio: "assets/audios/pya_kwe_figado.mp3",
+    sentido_de: "Órgão interno; VB p. 70 registra PY'A KWE.",
+    falante: "Uso geral",
+    exemplos: [
+      "Py'a kwe oĩ ryé py.",
+      "Py'a kwe rasy."
+    ],
+    traducao: [
+      "O fígado está na barriga.",
+      "O fígado dói."
+    ]
+  },
+
+  // ============================================================
+  // VB p. 84 — TXAI (termo de parentesco ainda descoberto)
+  // ============================================================
+  {
+    palavra: "txai",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Avó (forma BA).",
+    audio: "assets/audios/txai_avo.mp3",
+    sentido_de: "Termo de parentesco feminino; VB p. 82 registra TXAI.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txai ou txerenda-pe.",
+      "Txai oporahéi."
+    ],
+    traducao: [
+      "Minha avó veio na minha casa.",
+      "Minha avó canta."
+    ]
+  },
+  {
+    palavra: "txedjaryi",
+    tipo: "substantivo",
+    categoria: "Família",
+    significado: "Minha avó (forma PI).",
+    audio: "assets/audios/txedjaryi_avo.mp3",
+    sentido_de: "Termo afetivo de avó; VB p. 82 registra TXEDJARYI.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txedjaryi odjapo tembi'u.",
+      "Txedjaryi oikó tekoa-py."
+    ],
+    traducao: [
+      "Minha avó faz a comida.",
+      "Minha avó mora na aldeia."
+    ]
+  },
+  {
+    palavra: "txe a'y aatama",
+    tipo: "expressão",
+    categoria: "Expressões",
+    significado: "Eu já estou indo.",
+    audio: "assets/audios/txeay_aatama.mp3",
+    sentido_de: "Despedida breve ao sair; VB p. 82 registra TXE A'Ý AATAMA.",
+    falante: "Uso geral",
+    exemplos: [
+      "Txe a'y aatama.",
+      "Txe a'y aatama, adjiwyma."
+    ],
+    traducao: [
+      "Eu já estou indo.",
+      "Eu já estou indo, tchau."
+    ]
   }
 ];
 // =====================================================
